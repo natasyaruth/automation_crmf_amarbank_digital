@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_rejectNotVerifiedDukcapilData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2a17ca06-c7ba-4a6d-8415-a2001a714da4</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a4de46c4-9e61-40fc-97a9-c1408ef48e30</id>
+      <masked>false</masked>
+      <name>request_id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>903fa440-30bf-44c3-82d8-7e5df3060dec</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>5ab8e58f-8793-4b23-aa86-1069eec52335</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+</TestCaseEntity>

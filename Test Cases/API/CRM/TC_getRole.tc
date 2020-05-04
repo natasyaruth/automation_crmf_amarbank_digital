@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getRole</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b745067f-6f41-4194-952c-22602e01613c</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>e8f8c97b-2a99-4bc4-98c6-c1e4b977a156</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9eebee57-a763-4a1e-9009-992f810ec48b</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.page</defaultValue>
+      <description></description>
+      <id>906a4b90-323c-46ff-b151-cbe61522f80c</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.size</defaultValue>
+      <description></description>
+      <id>eb49c6d6-0e6e-4406-a11c-34448d31b941</id>
+      <masked>false</masked>
+      <name>size</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.rolename</defaultValue>
+      <description></description>
+      <id>6602f92f-421d-46a6-a9f6-72efdfb5bb66</id>
+      <masked>false</masked>
+      <name>rolename</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Reactivate_Account_1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>93cc2a50-23ea-4382-9052-b8df2ee529c0</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>79ec9e4a-3991-4964-85a8-bda20df42b44</id>
+      <masked>false</masked>
+      <name>NoHp</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7f1a6bba-167d-430b-b4e6-7769b7901dcf</id>
+      <masked>false</masked>
+      <name>NoKTP</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2c735145-05d6-437c-b4cf-8eb747b6a9f9</id>
+      <masked>false</masked>
+      <name>NoRek</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e05bb285-9af6-4843-90b0-ae9f03c6103e</id>
+      <masked>false</masked>
+      <name>NoKartu</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb8a2976-3dfd-49a4-bd96-78ae6eb01b01</id>
+      <masked>false</masked>
+      <name>AccountProperty</name>
+   </variable>
+</TestCaseEntity>

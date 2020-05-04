@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getDetailKYCVideo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fb9cb2dd-0be6-4c52-a690-87f5e036452d</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>7acf3028-4067-4b83-9489-291b6c4ea483</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fc2ba882-6b7b-41d9-9e39-cd677a57335a</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.requestId</defaultValue>
+      <description></description>
+      <id>a8322cb4-772f-4ca4-a35f-9c82840c9c05</id>
+      <masked>false</masked>
+      <name>requestId</name>
+   </variable>
+</TestCaseEntity>

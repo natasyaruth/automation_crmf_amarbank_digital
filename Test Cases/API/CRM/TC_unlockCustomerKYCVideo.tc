@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_unlockCustomerKYCVideo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1437fa96-9f00-4c57-a047-a427408b7dde</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>831bed9f-15de-4829-ab97-51f4c2b4ceef</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.requestId</defaultValue>
+      <description></description>
+      <id>2daa9ef5-aeda-4714-ada1-4d24166e3a7f</id>
+      <masked>false</masked>
+      <name>requestId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>790e0cd2-80da-4cbf-9b1b-2f001477d8d6</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+</TestCaseEntity>

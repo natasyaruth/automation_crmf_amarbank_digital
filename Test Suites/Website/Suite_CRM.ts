@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Suite_CRM</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>d59f515e-e38b-42e1-938a-eff5655ec8a3</testSuiteGuid>
+   <testCaseLink>
+      <guid>eef75110-7301-4f87-8f66-571f0cdde5e9</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c51bcd96-cba5-41e9-a3b8-33fc11f07c4a</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>c51bcd96-cba5-41e9-a3b8-33fc11f07c4a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>e97b3501-6bb5-4fbf-b731-119aa48de4af</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>c51bcd96-cba5-41e9-a3b8-33fc11f07c4a</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>7c411c87-6def-4349-9889-e299a35885c2</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>3039794d-3073-4f4c-9558-a49ce93de31a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b8fa3489-80b6-4933-938a-00f1292491f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCVideoRegistration</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>8c5863b6-8720-43dc-971d-b14676084735</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchKYC</value>
+         <variableId>e3c1387c-6ba5-42bd-a502-9cb468211894</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Address Type</value>
+         <variableId>c7989565-e298-4781-a540-20d3afe9c1eb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Full Address</value>
+         <variableId>3d01ac6e-a0c6-4a50-b5b3-69e3ba3bdd52</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Neighbourhood</value>
+         <variableId>5fc9ab3e-caa2-4d65-b919-cbdcf4614c5f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Hamlet</value>
+         <variableId>4a30aeaf-61c8-4f0e-85fe-10a3e895b739</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Province</value>
+         <variableId>ea9577dd-d7aa-4099-a087-d573a5e71277</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>District</value>
+         <variableId>b05f6e22-39ce-4219-b3f8-7855e619b329</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Subdistrict</value>
+         <variableId>55e0d324-14ca-47d8-8e85-2e9cd601917f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>village</value>
+         <variableId>250238e1-20cc-4103-a028-9e566e4d41ff</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>AdditionalNote</value>
+         <variableId>b53b0ec0-9f04-48e5-a83d-61c4accd51e9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>8c5863b6-8720-43dc-971d-b14676084735</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>History call</value>
+         <variableId>5f3140f5-8fc5-4981-9b18-402e7d05d1b6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>efa194f1-c2c1-4680-82f3-471f3faf3853</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCVerification</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>cffae0a6-2375-4118-bc5b-24024ef18a46</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>cffae0a6-2375-4118-bc5b-24024ef18a46</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchKYC</value>
+         <variableId>c4a9322b-5f84-44d0-b5ba-1de52cae15a9</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>277a3b5f-186e-4c6a-a55e-adb691e35ee8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_CardManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>a1b012f5-1103-4ecc-adc7-f6fe951062b2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_AssignCard</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>32f42e83-577c-4e67-bf89-cd43279b1b32</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>32f42e83-577c-4e67-bf89-cd43279b1b32</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchKYC</value>
+         <variableId>ae66bbe3-bfe1-49bb-bbb6-6cbd869adc42</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

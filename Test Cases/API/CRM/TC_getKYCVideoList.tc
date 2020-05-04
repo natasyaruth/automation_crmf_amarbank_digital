@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getKYCVideoList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0521fbb5-8c77-422b-9135-6336349cd0bb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a9d74e90-74d7-4175-a271-515898649eb8</id>
+      <masked>false</masked>
+      <name>day</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e15cff3e-f835-42f4-9ab8-e188db6f1b2f</id>
+      <masked>false</masked>
+      <name>page</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a18ae17f-8c7e-4b1e-bf10-dbb3410e0c62</id>
+      <masked>false</masked>
+      <name>total</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7608a670-c28a-4f21-a7f0-455da75c4b1d</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>3e00c2c7-4a64-48f3-84ef-e417037dab79</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+</TestCaseEntity>

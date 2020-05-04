@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getRoleForUser</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2a510390-7c34-4ef2-bc26-1240bec0587e</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>35c9ea33-48bc-43b6-9a66-1969458a323b</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1e01c6d1-2d7b-4ee1-9c50-c8d9546aab01</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+</TestCaseEntity>

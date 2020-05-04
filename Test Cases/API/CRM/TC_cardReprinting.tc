@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_cardReprinting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d8c8248-30fb-4c29-b360-adcf0f0bdc5c</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>83cc676a-7980-436a-9d42-9c1321fa90f3</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ac97ec57-4bbf-4600-9a68-2eb87e18a1be</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e341560b-ef62-4303-bbea-362079b80f42</id>
+      <masked>false</masked>
+      <name>requestid</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_cardPrinting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>11fcf463-8577-471d-a7cd-866e23c90fd3</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>059d97e7-fb1e-4228-b62e-f8691af104d2</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5a70c7c4-efef-48ed-b3ae-61cf14d6ba67</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c53f2bd4-a8d7-4e1d-bf02-feafc00e4c00</id>
+      <masked>false</masked>
+      <name>requestid</name>
+   </variable>
+</TestCaseEntity>

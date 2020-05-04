@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_leadsCSRDone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4500bf37-5c08-4613-9bcf-af897ec257eb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9c04cc4f-d358-4690-ad46-fa2facb6e755</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1e5174e8-149c-4c80-9b9a-8cfc0956d7cb</id>
+      <masked>false</masked>
+      <name>phone</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c42b6f78-9eac-411b-8782-0c950ee90ed5</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>54c4ce5d-ef5e-4b18-be96-993b37de4192</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+</TestCaseEntity>

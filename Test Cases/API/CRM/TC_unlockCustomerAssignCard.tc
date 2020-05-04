@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_unlockCustomerAssignCard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccdbd951-a32d-4d06-bb4a-2d3c8a3b59b4</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>add264a9-c696-478d-9da7-83658076029f</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.requestId</defaultValue>
+      <description></description>
+      <id>0153f63e-c102-45e0-b5be-73f97b76e2dd</id>
+      <masked>false</masked>
+      <name>requestId</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d1136ef2-5318-4eda-8247-252515374166</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+</TestCaseEntity>

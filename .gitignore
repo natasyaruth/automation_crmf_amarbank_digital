@@ -1,0 +1,7 @@
+Libs
+Reports/
+.settings/
+Log/
+*.classpath
+appium.Log
+*.project

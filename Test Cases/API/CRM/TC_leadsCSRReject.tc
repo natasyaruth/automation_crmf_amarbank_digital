@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_leadsCSRReject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7cd9f716-30ea-4697-ae2f-862447765dbf</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>af5eb3fa-b0a8-46db-8564-2a7c0cc79c65</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0bd49778-4abc-418f-850d-a38bebf33921</id>
+      <masked>false</masked>
+      <name>rejectreason</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>06b026bf-366d-471c-97cf-0b4f58dc550c</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>4459d0f0-e3b7-4db8-9c38-5e703f670452</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_deleteRole</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>18f6934a-b3d1-4316-8391-271ffd6a479e</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>cedec657-a934-434c-b6dc-28bff373046f</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>04006df6-103b-407d-b4aa-15d3ac157c0c</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.roleId</defaultValue>
+      <description></description>
+      <id>14966488-6285-4c6c-9ffc-90b3c85eb5b7</id>
+      <masked>false</masked>
+      <name>roleId</name>
+   </variable>
+</TestCaseEntity>

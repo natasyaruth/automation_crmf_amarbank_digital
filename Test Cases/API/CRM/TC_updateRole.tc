@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_updateRole</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1b3ccdd-c356-4fe0-a5cb-b63ea6709e96</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7412925f-79fd-4cb0-ac65-b5c8aaf1d268</id>
+      <masked>false</masked>
+      <name>policies</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38f15ff6-dd1d-4333-b643-c49bcbf31a9a</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>1e3fa9b5-251e-4f41-a43e-55d96b9d5909</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.roleId</defaultValue>
+      <description></description>
+      <id>ac9c0214-ca84-4421-900c-9a868a611946</id>
+      <masked>false</masked>
+      <name>roleId</name>
+   </variable>
+</TestCaseEntity>

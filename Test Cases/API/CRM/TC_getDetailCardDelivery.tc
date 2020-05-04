@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getDetailCardDelivery</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>55b9a5af-09c3-4f2e-b6fa-04cda550a63d</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>9d16ce3a-c73c-4dcc-a446-2eb00c4237c3</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>403fb536-10ea-4859-8959-7fec1a5318fd</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.requestId</defaultValue>
+      <description></description>
+      <id>f0c25209-d456-4797-9772-7c749bce2795</id>
+      <masked>false</masked>
+      <name>requestId</name>
+   </variable>
+</TestCaseEntity>

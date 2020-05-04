@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_getDetailLeads</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>885a4b5e-8993-4027-a7dd-ff99fa401cd1</testCaseGuid>
+   <variable>
+      <defaultValue>GlobalVariable.sessionCRM</defaultValue>
+      <description></description>
+      <id>6981705b-67ad-42fb-9959-6a543faee1b2</id>
+      <masked>false</masked>
+      <name>sessionCRM</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>eff4b570-c949-44b6-8f71-b77c848ca4b5</id>
+      <masked>false</masked>
+      <name>expected_status_code</name>
+   </variable>
+   <variable>
+      <defaultValue>GlobalVariable.customerId</defaultValue>
+      <description></description>
+      <id>a5ce3b6c-21df-4c76-8fc6-d1cabc7b2818</id>
+      <masked>false</masked>
+      <name>customerId</name>
+   </variable>
+</TestCaseEntity>
