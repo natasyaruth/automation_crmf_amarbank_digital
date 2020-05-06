@@ -12,4 +12,18 @@
       <masked>false</masked>
       <name>SearchRequestID</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>25a9cc5f-f340-44f2-819e-f723d4d0b14e</id>
+      <masked>false</masked>
+      <name>CardNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>46637ad0-bf68-495a-89a8-df5903312a56</id>
+      <masked>false</masked>
+      <name>CardName</name>
+   </variable>
 </TestCaseEntity>

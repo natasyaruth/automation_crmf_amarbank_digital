@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationReject3</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>040d6103-464d-4ac3-b020-06d310734d01</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>95c30b00-860a-4e22-a193-e9d5ef9f0cde</id>
+      <masked>false</masked>
+      <name>SearchRequestID</name>
+   </variable>
+</TestCaseEntity>

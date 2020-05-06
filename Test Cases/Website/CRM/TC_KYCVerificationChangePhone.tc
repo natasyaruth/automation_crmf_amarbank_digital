@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationChangePhone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>184a34d1-145a-4fb4-ac54-2126f9d15997</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bc3524c1-7788-45e9-a2ab-ff2fc1e17cfb</id>
+      <masked>false</masked>
+      <name>SearchRequestID</name>
+   </variable>
+</TestCaseEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'TxtRequestID' and @name = 'search']</value>
+         <value>//*[@id = 'TxtRequestID']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,12 +18,5 @@
       <name>id</name>
       <type>Main</type>
       <value>TxtRequestID</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>search</value>
    </webElementProperties>
 </WebElementEntity>

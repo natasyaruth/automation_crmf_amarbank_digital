@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LinkRequestID</name>
+   <name>TxtKtpNumberNotChecked</name>
    <tag></tag>
-   <elementGuidId>d21fca17-503f-4f4b-8d42-6912a96bc157</elementGuidId>
+   <elementGuidId>3fee44b8-510a-4301-a0a9-da8dc0d3e54f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'LinkRequestID']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//*[@id = 'TxtKtpNumberNotChecked']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>LinkRequestID</value>
+      <value>TxtKtpNumberNotChecked</value>
    </webElementProperties>
 </WebElementEntity>
