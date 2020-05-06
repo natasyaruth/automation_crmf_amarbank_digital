@@ -14,6 +14,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+
+WebUI.verifyTextPresent('Username', false)
 
 WebUI.setText(findTestObject('Website/CRM/Login/Txt_Username'), Username)
 
