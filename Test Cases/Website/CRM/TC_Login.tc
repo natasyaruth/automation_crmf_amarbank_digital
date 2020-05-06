@@ -8,14 +8,14 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>e97b3501-6bb5-4fbf-b731-119aa48de4af</id>
+      <id>b6bfffbb-7c23-4e7d-bfe6-d43896cd6931</id>
       <masked>false</masked>
       <name>Username</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>7c411c87-6def-4349-9889-e299a35885c2</id>
+      <id>aea27910-c43b-4857-a979-0165ae08cf73</id>
       <masked>false</masked>
       <name>Password</name>
    </variable>

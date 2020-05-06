@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnAccept1']</value>
+         <value>//*[@id = 'BtnAccept3']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnAccept1</value>
+      <value>BtnAccept3</value>
    </webElementProperties>
 </WebElementEntity>

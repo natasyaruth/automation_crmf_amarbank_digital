@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LinkRequestID</name>
+   <name>BtnCancelEdit</name>
    <tag></tag>
-   <elementGuidId>d21fca17-503f-4f4b-8d42-6912a96bc157</elementGuidId>
+   <elementGuidId>ce9fcda5-3131-4282-86e7-a38bc9cd9190</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'LinkRequestID']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//*[@id = 'BtnCancelEdit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>LinkRequestID</value>
+      <value>BtnCancelEdit</value>
    </webElementProperties>
 </WebElementEntity>
