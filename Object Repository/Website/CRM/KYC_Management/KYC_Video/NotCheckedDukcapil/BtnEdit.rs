@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LinkRequestID</name>
+   <name>BtnEdit</name>
    <tag></tag>
-   <elementGuidId>d21fca17-503f-4f4b-8d42-6912a96bc157</elementGuidId>
+   <elementGuidId>8f5d6a32-766b-4200-bf7b-b26f29699a7f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'LinkRequestID']</value>
-      </entry>
-      <entry>
-         <key>CSS</key>
-         <value></value>
+         <value>//*[@id = 'BtnEdit']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>LinkRequestID</value>
+      <value>BtnEdit</value>
    </webElementProperties>
 </WebElementEntity>

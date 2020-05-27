@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnBackToBucketlist']</value>
+         <value>//*[@id = 'BtnCloseModal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnBackToBucketlist</value>
+      <value>BtnCloseModal</value>
    </webElementProperties>
 </WebElementEntity>

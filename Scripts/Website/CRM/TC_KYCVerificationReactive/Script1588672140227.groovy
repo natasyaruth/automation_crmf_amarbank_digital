@@ -14,19 +14,18 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkAssignCard'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkVerification'))
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtReferenceId'), SearchRequestID)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtRequestID'), SearchRequestID)
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/BtnSearch'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkRequestID'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardNumber'), CardNumber)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardName'), CardName)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/BtnSend'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BackToBucketlist'))
 
