@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AssignCMS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a990cb7-9f3f-4e19-a332-0dc71a4c6654</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c565d4f7-57ca-43ef-ad7b-f4fb3baf1804</id>
+      <masked>false</masked>
+      <name>SearchRefID</name>
+   </variable>
+</TestCaseEntity>

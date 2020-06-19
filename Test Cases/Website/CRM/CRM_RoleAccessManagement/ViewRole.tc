@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>ViewRole</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bc8a4399-00b0-44b5-bfc6-ee735b50d174</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2fc8c234-2d9d-42c5-b79e-d4faf7d85444</id>
+      <masked>false</masked>
+      <name>RoleName</name>
+   </variable>
+</TestCaseEntity>
