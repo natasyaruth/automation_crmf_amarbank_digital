@@ -5,3 +5,4 @@ Log/
 *.classpath
 appium.Log
 *.project
+*.class

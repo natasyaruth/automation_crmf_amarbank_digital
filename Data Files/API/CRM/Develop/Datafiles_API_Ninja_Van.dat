@@ -9,6 +9,12 @@
    <dataSourceUrl>Data Files/API/CRM/API_Ninja_Van.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
+   <properties>
+      <entry>
+         <key>readAsString</key>
+         <value>true</value>
+      </entry>
+   </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
    <sheetName>API_Ninja_Van_Dev</sheetName>

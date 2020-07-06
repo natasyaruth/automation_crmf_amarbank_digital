@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Suite_CreateUser</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>b7983f0f-db37-4d3a-8114-946ab6b2fb3c</testSuiteGuid>
+   <testCaseLink>
+      <guid>40b09cf9-6acb-4653-8f5e-f6db06c56a7e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/URL/URL_CRM</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>68cd9ff3-a4e0-4456-9c79-ec7fae14a197</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0ecc6bd4-1c90-4250-9c82-21986c946f05</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0ecc6bd4-1c90-4250-9c82-21986c946f05</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>b6bfffbb-7c23-4e7d-bfe6-d43896cd6931</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0ecc6bd4-1c90-4250-9c82-21986c946f05</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>aea27910-c43b-4857-a979-0165ae08cf73</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>dad4f624-7234-47c1-8e35-0f78071460bc</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_IAManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f0a35b9f-4e67-44ec-b37c-d1cb45fd3d6b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_UserAccessManagement/TC_CreateUser</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>3877c62e-6af8-4554-aa6c-777a81b30aad</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_UserAccessManagement</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>b7c833c2-b5b8-403a-9b0f-879753d3b7aa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>OfficerName</value>
+         <variableId>ae1576e5-50a9-4a48-a8dc-0a8a649e3592</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>OfficeEmail</value>
+         <variableId>7a68aa6e-2e5f-4dfc-a0a2-716fc8d79aff</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Function</value>
+         <variableId>f6e0c1a3-7ce4-4339-ac0b-1b5e3c873bc1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>New Password</value>
+         <variableId>31090fc9-c6fd-452f-b32c-339c196eaf7f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ConfirmPassword</value>
+         <variableId>1fa64c38-2cd3-4196-813d-20c80d472061</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>3877c62e-6af8-4554-aa6c-777a81b30aad</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>RoleAccess</value>
+         <variableId>a76cba53-22b6-4e43-81b5-ec91caeb9519</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

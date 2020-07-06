@@ -14,6 +14,13 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+
+WebUI.verifyTextPresent('Welcome to Senyumku ', false)
+
+WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack'))
 

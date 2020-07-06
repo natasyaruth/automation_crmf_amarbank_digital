@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'TxtOther']</value>
+         <value>//*[@id = 'TxtHistoryCall']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>TxtOther</value>
+      <value>TxtHistoryCall</value>
    </webElementProperties>
 </WebElementEntity>

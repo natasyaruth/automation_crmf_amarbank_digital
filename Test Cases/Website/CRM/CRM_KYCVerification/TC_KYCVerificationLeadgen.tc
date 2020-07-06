@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationLeadgen</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2b2db98f-fd6e-4609-87c7-28f02a999a4f</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6d4f92e0-84eb-49be-aa48-d0b09f645973</id>
+      <masked>false</masked>
+      <name>SearchRequestID</name>
+   </variable>
+</TestCaseEntity>
