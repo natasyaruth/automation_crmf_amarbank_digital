@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Suite_CRM_EndtoEnd_ChangePhone_Reactivation</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>64c8018b-85b4-4594-bc61-e88c7957929e</testSuiteGuid>
+   <testCaseLink>
+      <guid>4b4414ea-d637-4b08-906e-6e7c14526df8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7681a4ee-9213-4946-bc04-3f037ea9c6d2</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>afcb291f-b294-42ab-ad2f-54918f591b18</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_CRM_UserLogin</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>afcb291f-b294-42ab-ad2f-54918f591b18</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>b6bfffbb-7c23-4e7d-bfe6-d43896cd6931</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>afcb291f-b294-42ab-ad2f-54918f591b18</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>aea27910-c43b-4857-a979-0165ae08cf73</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>acefaf5e-943c-4733-833a-a03defb09aaf</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>69237044-c366-418f-9591-22d051d23109</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoChangePhone</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0ff49fab-4610-46c8-84f4-c3b4dae700c5</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>4f330b41-1a17-4825-8da5-714068c9f217</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>AdditionalNote</value>
+         <variableId>a146fd5e-84c8-4e2a-bd94-0c28d8ed86fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Other</value>
+         <variableId>cbc4fdf2-10aa-468e-acd1-0f4ed5c1eb66</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ChangephoneReason</value>
+         <variableId>bbb3e257-6f4c-4105-9d1a-606d34bd985c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>96472950-32de-4895-8517-091f2078fb8d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6a36bf53-e168-4a9d-8642-50790f2d68aa</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoReactivasi</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>71b5e8cc-7992-48c1-8cdb-62aae702209e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>AdditionalNote</value>
+         <variableId>e3ffa357-8804-434a-9070-8d78d736305f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Other</value>
+         <variableId>e88d93e7-3937-4268-baed-af86f97bcd9c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>ChangephoneReason</value>
+         <variableId>f778f7cd-4507-4fda-ad57-d69d27240213</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>feecb654-755f-4bdc-8f14-e9c0c6680714</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>75d1143e-9576-489c-8c60-199453b16a4f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationChangePhone</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0f2c8b83-25b5-4224-8522-39c25a89b32e</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>3-3</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0f2c8b83-25b5-4224-8522-39c25a89b32e</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>bc3524c1-7788-45e9-a2ab-ff2fc1e17cfb</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>cd8f68d8-cd50-4876-b153-e853d7be7412</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>5349a0a8-0bdb-4f2d-9023-bab99efeb32f</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationReactive</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>c553f9ac-a99a-4ef9-9a6a-1b8207a3f50b</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>c553f9ac-a99a-4ef9-9a6a-1b8207a3f50b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>3112816a-74a6-4477-8065-057e397aa7cb</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

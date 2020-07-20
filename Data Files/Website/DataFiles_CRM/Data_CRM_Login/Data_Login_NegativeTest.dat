@@ -9,8 +9,14 @@
    <dataSourceUrl>Data Files/Website/DataFiles_CRM/Data_Login_NegativeTest.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
+   <properties>
+      <entry>
+         <key>readAsString</key>
+         <value>true</value>
+      </entry>
+   </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Data</sheetName>
+   <sheetName>data</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

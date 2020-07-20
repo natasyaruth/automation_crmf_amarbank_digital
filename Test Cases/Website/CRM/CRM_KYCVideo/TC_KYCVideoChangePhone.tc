@@ -12,4 +12,25 @@
       <masked>false</masked>
       <name>SearchRequestID</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a146fd5e-84c8-4e2a-bd94-0c28d8ed86fe</id>
+      <masked>false</masked>
+      <name>AdditionalNote</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cbc4fdf2-10aa-468e-acd1-0f4ed5c1eb66</id>
+      <masked>false</masked>
+      <name>Other</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bbb3e257-6f4c-4105-9d1a-606d34bd985c</id>
+      <masked>false</masked>
+      <name>ChangePhoneReason</name>
+   </variable>
 </TestCaseEntity>

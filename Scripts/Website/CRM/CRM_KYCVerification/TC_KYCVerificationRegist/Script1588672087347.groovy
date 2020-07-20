@@ -22,28 +22,25 @@ WebUI.verifyTextPresent('Data Verification', false)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), SearchRequestID)
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
-WebUI.delay(1)
-
-WebUI.verifyTextPresent('Nasabah Baru', false)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
-CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'), 
-    0)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'))
 
-WebUI.delay(0)
+WebUI.delay(20)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 

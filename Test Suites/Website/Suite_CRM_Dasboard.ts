@@ -9,17 +9,18 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>9b67093b-5dba-4d88-ae08-da994e412916</testSuiteGuid>
    <testCaseLink>
       <guid>4e1e7b46-d87d-4cb4-87b7-9bcd4a7123f1</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Develop_CRM</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>0453fdfa-3821-4f79-9bb4-58b74ddf2d6d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -44,9 +45,42 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>7a7c5c56-d33d-4866-bf8b-365cb90638c5</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login_NegativeTest</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a8e2a88c-8a11-40c3-be52-8286bad8d594</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login_NegativeTest</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>a8e2a88c-8a11-40c3-be52-8286bad8d594</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>a68598e2-d8de-484b-9cb0-77d74844bf83</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>a8e2a88c-8a11-40c3-be52-8286bad8d594</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Password</value>
+         <variableId>02b4a9c7-c5cc-4114-805f-03cd593bbcbf</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>e10b84b7-d2e6-4b74-b10f-5ceca169d30d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc9a7085-59ae-441d-89df-01a0f27d2ef0</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
