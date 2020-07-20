@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'TxtRequestID']</value>
+         <value>//*[@id = 'LinkVerification']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>TxtRequestID</value>
+      <value>LinkVerification</value>
    </webElementProperties>
 </WebElementEntity>
