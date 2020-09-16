@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Nasabah Senyumku_ChangePhone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d01b86b7-428c-491b-9fff-f0584ea0eccb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>34f41ee7-3851-496f-99ab-40361b51ef5d</id>
+      <masked>false</masked>
+      <name>PhoneNumber</name>
+   </variable>
+</TestCaseEntity>

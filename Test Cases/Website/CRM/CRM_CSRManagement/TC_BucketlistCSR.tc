@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_BucketlistCSR</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>53ab4e9a-785c-4191-8c11-cdcba64190ff</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0f93e54c-a404-4763-94b8-4c2b132e0b28</id>
+      <masked>false</masked>
+      <name>SearchPhoneNumber</name>
+   </variable>
+</TestCaseEntity>

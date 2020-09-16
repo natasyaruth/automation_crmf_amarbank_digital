@@ -14,7 +14,7 @@
       <guid>e6d04a75-100c-482f-bec7-4f460689e3c9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4bb662b9-5adb-4f26-bab7-841d749cd2a8</guid>
@@ -46,19 +46,25 @@
    <testCaseLink>
       <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fc9a7085-59ae-441d-89df-01a0f27d2ef0</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>83203ae5-892e-4f8e-9975-08e517ce60bf</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>2d784d70-34e0-4404-903f-f2141cfdc5ee</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -143,15 +149,15 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>dc5c88ce-2a47-44d5-8c73-3c247b1a83b1</guid>
+      <guid>1519f0dc-f2ab-40e2-af6f-ad3a616cd206</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>cc064327-929f-42b6-a30d-ee484abb1e50</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationHaveNotVerifiedEmail</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -170,13 +176,19 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>dc5c88ce-2a47-44d5-8c73-3c247b1a83b1</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
       <guid>52c3b530-b552-41bb-9c2d-7bacc419586d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationRegist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
-         <id>b9f419de-0450-4b73-b4e5-cb9f8da35b6d</id>
+         <id>3c5772a7-e9d5-4d5d-8baf-112ee0333530</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
             <value>1-1</value>
@@ -184,7 +196,7 @@
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>b9f419de-0450-4b73-b4e5-cb9f8da35b6d</testDataLinkId>
+         <testDataLinkId>3c5772a7-e9d5-4d5d-8baf-112ee0333530</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>SearchKYC</value>
          <variableId>3ebd2d6a-c485-46a8-a229-47e5121f5fb7</variableId>
@@ -193,13 +205,13 @@
    <testCaseLink>
       <guid>f8e286e1-78c3-4d99-8b67-e5a74f64363c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b1fae87f-d3bb-4988-a9e7-53befa87d284</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_AssignCard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -232,13 +244,13 @@
    <testCaseLink>
       <guid>8c3a3dea-95c7-4e37-bac7-bb3f995590ab</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d216174f-63fa-4107-bb68-5bfb70f96d45</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardPrinting</testCaseId>
    </testCaseLink>
    <testCaseLink>
@@ -424,7 +436,7 @@
    <testCaseLink>
       <guid>4c35b1ba-6ff4-4c08-8169-8a0926e53b39</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanEnRouteToSortingHub</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -505,7 +517,7 @@
    <testCaseLink>
       <guid>26930aef-0ad8-4ab0-a17b-d29baa823aca</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanSuccessfulDelivery</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -604,13 +616,13 @@
    <testCaseLink>
       <guid>a74e4339-4cb4-4d6a-91b4-ded5430f5e58</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>4a5a9885-9675-4e8a-ad62-eeab8fd93f87</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_DeliveryStatus</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -649,13 +661,13 @@
    <testCaseLink>
       <guid>1b1437ae-1dba-45ac-83bf-6d51d4171aad</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>ff1d79df-a1b9-45c5-99d4-9664f36f69d7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoNotChecked</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -676,13 +688,13 @@
    <testCaseLink>
       <guid>03cf39c7-43d4-4fb1-915d-298611958bb0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>d72f003f-5d8e-40f9-baa6-d6f91a928e4a</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoLeadgen</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -767,15 +779,15 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>1519f0dc-f2ab-40e2-af6f-ad3a616cd206</guid>
+      <guid>3a7d22db-8fc8-464f-b53a-6a62448e4852</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>e32f4a97-6911-4d00-ab7f-ceb613a96999</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationLeadgen</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -796,13 +808,13 @@
    <testCaseLink>
       <guid>aa77b132-6a59-47e3-a890-6e2dbe82de24</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>508598ed-2ed3-4db0-ade1-fbe12d17c790</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_AssignCard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -835,19 +847,19 @@
    <testCaseLink>
       <guid>01af64ac-d19a-4837-9985-faa4bb0fbf22</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>b8ec0c69-2245-49ed-8a08-9c99f795f51b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardPrinting</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>1e401afd-1597-4034-a554-38f8f41ec3d7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanEnRouteToSortingHub</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -928,7 +940,7 @@
    <testCaseLink>
       <guid>2abc306c-339a-43c2-bd52-aebb41073027</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanSuccessfulDelivery</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -1027,13 +1039,13 @@
    <testCaseLink>
       <guid>e5190e83-b887-40ab-8242-7f01484a9439</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
    </testCaseLink>
    <testCaseLink>
       <guid>f8c53984-8836-48b7-9bb6-81f3d1e6d3a0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_DeliveryStatus</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -1067,6 +1079,78 @@
          <type>DATA_COLUMN</type>
          <value>VerifyStatusSuccessDelivery</value>
          <variableId>b397b3fc-f543-452c-ab88-639963e1b97e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>87582edf-c37e-433a-b9d5-35690499334e</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>bee5ae89-6e29-4391-9654-752c6d8524d3</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoChangePhone</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ced9354a-11c7-4cd7-aaf2-45181592fd56</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>ced9354a-11c7-4cd7-aaf2-45181592fd56</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>4f330b41-1a17-4825-8da5-714068c9f217</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a146fd5e-84c8-4e2a-bd94-0c28d8ed86fe</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cbc4fdf2-10aa-468e-acd1-0f4ed5c1eb66</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bbb3e257-6f4c-4105-9d1a-606d34bd985c</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>f14c2d52-1922-4710-9c66-0e928ee3e127</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ab56de53-f6fc-42eb-8adb-7e6570974cc0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>false</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationChangePhone</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>0fb06ed0-3d39-4847-805d-d7de4539bc09</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_ChangePhone</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId>0fb06ed0-3d39-4847-805d-d7de4539bc09</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchRequestID</value>
+         <variableId>bc3524c1-7788-45e9-a2ab-ff2fc1e17cfb</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

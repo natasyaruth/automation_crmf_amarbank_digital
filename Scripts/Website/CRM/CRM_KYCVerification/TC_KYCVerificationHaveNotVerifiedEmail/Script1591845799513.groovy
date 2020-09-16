@@ -31,7 +31,7 @@ WebUI.delay(2)
 'verify text after click button Resend'
 WebUI.verifyTextPresent('Verifikasi email berhasil dikirim', false)
 
-WebUI.delay(60)
+WebUI.delay(30)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
 

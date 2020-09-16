@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//div[@class = 'u-fs-small u-clr-danger u-mg-top-xxsmall']</value>
+         <value>/html/body/div[1]/div/section/div/div/div/form/div[2]/div[2][count(. | //div[@class = 'u-fs-small u-clr-danger u-mg-top-xxsmall']) = count(//div[@class = 'u-fs-small u-clr-danger u-mg-top-xxsmall'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -25,5 +25,12 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[1]/div/section/div/div/div/form/div[2]/div[2]</value>
    </webElementProperties>
 </WebElementEntity>
