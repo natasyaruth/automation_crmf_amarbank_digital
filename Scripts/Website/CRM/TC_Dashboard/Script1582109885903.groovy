@@ -16,11 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
-
-WebUI.verifyTextPresent('Welcome to Senyumku ', false)
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
 
+WebUI.verifyTextPresent(KYCVideo_Detail, false)
+
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack'))
+
+WebUI.verifyTextPresent(KYCVideo_Bucketlist, false)
+
+WebUI.delay(3)
 

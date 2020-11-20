@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Logout</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>05022198-22b3-4ac9-ab7a-639265195a94</testCaseGuid>
+   <variable>
+      <defaultValue>'https://dev-crm-rekol.tunaiku.com/login'</defaultValue>
+      <description></description>
+      <id>5b05df14-fbb4-4573-8105-1604479400ee</id>
+      <masked>false</masked>
+      <name>dev_loginURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/login'</defaultValue>
+      <description></description>
+      <id>7745b3b1-623a-4fab-8a4d-611ec73a12fc</id>
+      <masked>false</masked>
+      <name>Stg_loginURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'Username'</defaultValue>
+      <description></description>
+      <id>38a4f1d9-b56a-405d-bd7c-8e3de970e93e</id>
+      <masked>false</masked>
+      <name>VerifyTextLogin_Username</name>
+   </variable>
+   <variable>
+      <defaultValue>'Password'</defaultValue>
+      <description></description>
+      <id>d36cd093-7f59-4c6e-912c-4eaddbaf1af5</id>
+      <masked>false</masked>
+      <name>VerifyTextLogin_Password</name>
+   </variable>
+</TestCaseEntity>

@@ -89,4 +89,11 @@
       <masked>false</masked>
       <name>Other</name>
    </variable>
+   <variable>
+      <defaultValue>'Hal-hal yang perlu dikonfirmasi dalam proses KYC:'</defaultValue>
+      <description></description>
+      <id>05e40580-46ff-4429-aa0e-3f8f007de784</id>
+      <masked>false</masked>
+      <name>verify_checkbox</name>
+   </variable>
 </TestCaseEntity>

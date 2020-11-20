@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/LinkAssignCMS'))
 
-WebUI.verifyTextPresent('Assign CMS', false)
+WebUI.verifyTextPresent(Verify_Bucketlist, false)
 
 WebUI.setText(findTestObject('Website/CRM/Card Management/Assign CMS/TxtReferenceId'), SearchRefID)
 
@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/LinkReqId1'))
 
-WebUI.verifyTextPresent('Add Card Number', false)
+WebUI.verifyTextPresent(Verify_details, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnCancel'))
 
@@ -36,19 +36,19 @@ WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/LinkReqId1'))
 
-WebUI.verifyTextPresent('Menunggu', false)
+WebUI.verifyTextPresent(Verify_status_waiting, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSend'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnCloseModal'))
 
-WebUI.setText(findTestObject('Website/Card Management/AssignCMS/TxtReferenceId'),SearchRefID)
+WebUI.setText(findTestObject('Website/Card Management/AssignCMS/TxtReferenceId'), SearchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/LinkReqId1'))
 
-WebUI.verifyTextPresent('Selesai', false)
+WebUI.verifyTextPresent(Verify_status_Done, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnBack'))
 

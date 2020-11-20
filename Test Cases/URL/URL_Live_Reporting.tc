@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>URL_Live_Reporting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c2553996-31b9-4188-8b72-adb4d5996b5c</testCaseGuid>
+   <variable>
+      <defaultValue>'https://dev-crm-rekol.tunaiku.com/live-reporting'</defaultValue>
+      <description></description>
+      <id>4f827d27-936d-437f-b19a-85ebf54b4ae8</id>
+      <masked>false</masked>
+      <name>devURL_LiveReporting</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/live-reporting'</defaultValue>
+      <description></description>
+      <id>3f582403-a36e-47f4-9c4b-5017db419069</id>
+      <masked>false</masked>
+      <name>stgURL_LiveReporting</name>
+   </variable>
+</TestCaseEntity>
