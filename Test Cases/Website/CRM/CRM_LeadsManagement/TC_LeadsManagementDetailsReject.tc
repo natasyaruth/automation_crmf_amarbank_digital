@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementDetailsReject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3dfd3674-044b-4310-9b58-9dbbf3a60bf8</testCaseGuid>
+   <variable>
+      <defaultValue>'Ditolak'</defaultValue>
+      <description></description>
+      <id>7131f778-8252-46e5-80ce-25a30fe43638</id>
+      <masked>false</masked>
+      <name>Status</name>
+   </variable>
+</TestCaseEntity>

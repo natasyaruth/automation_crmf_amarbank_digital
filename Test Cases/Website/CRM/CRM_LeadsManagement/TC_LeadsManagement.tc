@@ -173,4 +173,11 @@
       <masked>false</masked>
       <name>CompanyName</name>
    </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>0196bd14-b2c0-49bb-b7a9-a3990ae081b2</id>
+      <masked>false</masked>
+      <name>Verification</name>
+   </variable>
 </TestCaseEntity>

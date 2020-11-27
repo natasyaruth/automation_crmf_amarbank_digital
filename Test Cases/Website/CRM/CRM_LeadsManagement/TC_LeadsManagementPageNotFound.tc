@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementPageNotFound</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4cbc2049-108e-4ad3-93ec-1f597c129968</testCaseGuid>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/leads-managementmm'</defaultValue>
+      <description></description>
+      <id>32ae8308-bbdd-42cc-b880-5aa69ee5a26d</id>
+      <masked>false</masked>
+      <name>invalidURL</name>
+   </variable>
+</TestCaseEntity>

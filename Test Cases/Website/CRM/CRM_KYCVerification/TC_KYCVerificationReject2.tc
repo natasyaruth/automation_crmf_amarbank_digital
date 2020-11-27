@@ -12,4 +12,11 @@
       <masked>false</masked>
       <name>SearchRequestID</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0d64b01e-3959-4ab1-a20c-094fa546523b</id>
+      <masked>false</masked>
+      <name>Other</name>
+   </variable>
 </TestCaseEntity>

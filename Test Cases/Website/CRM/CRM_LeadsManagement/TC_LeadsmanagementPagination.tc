@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsmanagementPagination</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0c15bf4d-1b9d-4a88-ac2d-c1de17d0e90d</testCaseGuid>
+   <variable>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>9f3293e2-ec98-4858-a7bd-f8d5cfb6ce95</id>
+      <masked>false</masked>
+      <name>firstPage</name>
+   </variable>
+   <variable>
+      <defaultValue>'2'</defaultValue>
+      <description></description>
+      <id>4368f59c-33dd-41e6-85bc-cad4ba4aad5f</id>
+      <masked>false</masked>
+      <name>secondPage</name>
+   </variable>
+</TestCaseEntity>

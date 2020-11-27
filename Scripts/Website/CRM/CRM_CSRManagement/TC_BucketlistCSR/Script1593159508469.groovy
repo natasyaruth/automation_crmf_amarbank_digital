@@ -16,6 +16,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.verifyTextPresent('Cari berdasarkan Nama, No. KTP, No. Handphone atau No. Rekening. Tidak harus semua field search diisi', 
+    false)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_All, false)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_NewCustomer, false)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_CustomerSenyumku, false)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'))
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnPreviousPage'))
@@ -27,6 +36,8 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage')
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), SearchPhoneNumber)
 
 WebUI.delay(3)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_NotContinue, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnSearch'))
 

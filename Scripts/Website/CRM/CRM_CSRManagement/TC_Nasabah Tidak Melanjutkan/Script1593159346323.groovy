@@ -16,7 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent('Customer Detail', false)
+WebUI.verifyTextPresent('Nasabah Tidak Melanjutkan', false)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/Linkreferral'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'))
 
@@ -34,6 +38,10 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddre
 
 WebUI.delay(1)
 
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDatareferral'))
+
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
 
 WebUI.delay(1)
@@ -42,7 +50,19 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'))
 
 WebUI.delay(1)
 
+WebUI.verifyTextPresent(Email, false)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditreferral'))
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), Referral)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'))
+
+WebUI.verifyTextPresent(SuccessSaveReferral, false)
 
 WebUI.delay(2)
 
@@ -56,13 +76,69 @@ WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), KTPName)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnCheckKtp'))
+WebUI.delay(2)
 
-WebUI.delay(20)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/DtpKTPBirthDate'), KTPBirthDate)
+
+WebUI.delay(1)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpGender'), KTPGender, false)
+
+WebUI.delay(0)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRT'), KTPNeighbourhood)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRW'), KTPHamlet)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage)
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
+
+WebUI.verifyTextPresent(KTPDistrict, false)
+
+WebUI.delay(2)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, false)
+
+WebUI.delay(1)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, false)
+
+WebUI.delay(1)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, false)
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), KTPCitizenship)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/RbLifetime'))
+
+WebUI.delay(3)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'))
 
-WebUI.delay(20)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataDeliveryAddress'))
 
@@ -78,9 +154,9 @@ WebUI.delay(2)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), FullAddress, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -102,7 +178,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'))
 

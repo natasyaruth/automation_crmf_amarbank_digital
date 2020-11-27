@@ -14,6 +14,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card_Management/LinkCardManagement'))
+
+WebUI.verifyTextPresent(Assign_Card, false)
+
+WebUI.verifyTextPresent(Card_Printing, false)
+
+WebUI.verifyTextPresent(Delivery_Status, false)
+
+WebUI.verifyTextPresent(Assign_CMS, false)
 
