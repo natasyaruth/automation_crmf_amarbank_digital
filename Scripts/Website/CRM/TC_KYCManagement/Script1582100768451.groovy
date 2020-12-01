@@ -16,13 +16,10 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.delay(5)
+WebUI.waitForElementPresent('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement', 3)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
 
-WebUI.delay(5)
+WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(role_KYC_Video, false)
-
-WebUI.delay(3)
-
+WebUI.verifyTextPresent(headerKYCVideoRequest, false)

@@ -28,13 +28,13 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent('Customer Detail', false)
+WebUI.verifyTextPresent(headerCustomerDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenPendingModal'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent('Atur Jadwal', false)
+WebUI.verifyTextPresent(headerAturJadwal, false)
 
 def inputDate = new Date()
 
@@ -56,9 +56,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPending
 
 WebUI.waitForPageLoad(5)
 
-WebUI.delay(2)
-
-WebUI.verifyTextPresent('Leads Management', false)
+WebUI.verifyTextPresent(headerLeadsManagement, false)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

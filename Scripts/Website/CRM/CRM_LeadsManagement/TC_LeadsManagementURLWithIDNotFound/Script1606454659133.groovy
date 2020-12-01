@@ -19,10 +19,10 @@ WebUI.navigateToUrl(invalidIDURL)
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyTextPresent('Nasabah tidak ditemukan', false)
+WebUI.verifyTextPresent(msgUserNotFound, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCloseModal'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyTextPresent('Leads Management', false)
+WebUI.verifyTextPresent(headerLeadsManagement, false)

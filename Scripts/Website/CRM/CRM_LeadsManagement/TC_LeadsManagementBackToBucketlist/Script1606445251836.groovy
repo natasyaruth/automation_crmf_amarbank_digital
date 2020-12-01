@@ -19,4 +19,4 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent('Leads Management', false)
+WebUI.verifyTextPresent(headerLeadsManagement, false)

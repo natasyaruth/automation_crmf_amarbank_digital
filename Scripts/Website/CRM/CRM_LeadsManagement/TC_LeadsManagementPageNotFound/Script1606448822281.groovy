@@ -19,10 +19,10 @@ WebUI.navigateToUrl(invalidURL)
 
 WebUI.waitForPageLoad(3)
 
-WebUI.verifyTextPresent('Halaman ini tidak ditemukan', false)
+WebUI.verifyTextPresent(msgPageNotFound, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyTextPresent('Leads Management', false)
+WebUI.verifyTextPresent(headerLeadsManagement, false)

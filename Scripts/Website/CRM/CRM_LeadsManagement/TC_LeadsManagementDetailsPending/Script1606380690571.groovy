@@ -21,7 +21,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.verifyTextPresent('Leads Management', false)
+WebUI.verifyTextPresent(headerLeadsManagement, false)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -38,7 +38,6 @@ while(flagLoop == false){
 		List<WebElement> listColumn = listRows.get(rows).findElements(By.tagName('td'))
 		for(int column=3;column<4;column++){
 			if(listColumn.get(column).getText().equalsIgnoreCase(Status)){
-				WebUI.delay(2)
 				listColumn.get(5).findElement(By.tagName('a')).click()
 				flagLoop = true
 				break Loop
@@ -47,13 +46,13 @@ while(flagLoop == false){
 	}
 	if(flagLoop == false){
 		WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
-		WebUI.waitForPageLoad(2)
+		WebUI.waitForPageLoad(3)
 	}
 }
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent('Customer Detail', false)
+WebUI.verifyTextPresent(headerCustomerDetail, false)
 
 def actualStatus = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Detail/StatBlue'))
 

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_LeadsManagementDetailsReject</name>
+   <name>TC_LeadsManagementDetailsMustCall</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>3dfd3674-044b-4310-9b58-9dbbf3a60bf8</testCaseGuid>
+   <testCaseGuid>2f29320f-4093-4eb4-b674-e2b3bbe68bf6</testCaseGuid>
    <variable>
-      <defaultValue>'Ditolak'</defaultValue>
+      <defaultValue>'Harus Ditelfon'</defaultValue>
       <description></description>
-      <id>7131f778-8252-46e5-80ce-25a30fe43638</id>
+      <id>4eb24473-f2c7-4fba-be4d-7f6e8d2f4828</id>
       <masked>false</masked>
       <name>Status</name>
    </variable>
    <variable>
       <defaultValue>'Leads Management'</defaultValue>
       <description></description>
-      <id>d6ab115b-c685-4f50-9ff5-2bea3b48133e</id>
+      <id>9985f139-bac5-4dd3-973d-9c2a2f7f1ec3</id>
       <masked>false</masked>
       <name>headerLeadsManagement</name>
    </variable>
    <variable>
       <defaultValue>'Customer Detail'</defaultValue>
       <description></description>
-      <id>5cf796d6-0ea2-4faa-a2dc-afe736e7b58d</id>
+      <id>24986be3-d694-4982-a231-181bd5492184</id>
       <masked>false</masked>
-      <name>headerCustomerDetails</name>
+      <name>headerCustomerDetail</name>
    </variable>
 </TestCaseEntity>

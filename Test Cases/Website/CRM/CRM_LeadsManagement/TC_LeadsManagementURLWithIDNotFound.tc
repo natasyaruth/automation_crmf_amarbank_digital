@@ -12,4 +12,18 @@
       <masked>false</masked>
       <name>invalidIDURL</name>
    </variable>
+   <variable>
+      <defaultValue>'Nasabah tidak ditemukan'</defaultValue>
+      <description></description>
+      <id>0e25d050-accb-4e4b-9c3b-1e0cf4b2d621</id>
+      <masked>false</masked>
+      <name>msgUserNotFound</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>d22f50df-6bee-48f5-95d7-b0aadbb8ff95</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
 </TestCaseEntity>
