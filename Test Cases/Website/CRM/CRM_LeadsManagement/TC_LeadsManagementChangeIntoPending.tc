@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementChangeIntoPending</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>87fbe7ed-6079-4a4b-bfad-07d1c1718217</testCaseGuid>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>7db08a19-d4e9-4bc2-abf3-9df212dc0f60</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>'Atur Jadwal'</defaultValue>
+      <description></description>
+      <id>5f5e2ac3-6177-4970-9639-0784e3c0b21d</id>
+      <masked>false</masked>
+      <name>headerAturJadwal</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>25c040fe-a4fd-4826-85d0-75a8df3de097</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+</TestCaseEntity>

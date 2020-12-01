@@ -12,4 +12,32 @@
       <masked>false</masked>
       <name>SearchPhoneNumber</name>
    </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7df56b8f-3c75-46f5-a538-c4cbf532fa32</id>
+      <masked>false</masked>
+      <name>Filter_All</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>21b2d72a-2419-4039-a5dc-6df72d262dbe</id>
+      <masked>false</masked>
+      <name>Filter_CustomerSenyumku</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a308eff3-ea5f-40c6-886f-2856fbb34471</id>
+      <masked>false</masked>
+      <name>Filter_NewCustomer</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aedb7070-2f03-419e-a917-6ba6182094b5</id>
+      <masked>false</masked>
+      <name>Filter_NotContinue</name>
+   </variable>
 </TestCaseEntity>

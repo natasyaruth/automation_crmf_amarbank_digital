@@ -6,10 +6,24 @@
    <comment></comment>
    <testCaseGuid>e0ead060-6a9d-4827-afe9-0ed963d910cd</testCaseGuid>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'KYC Customer Detail'</defaultValue>
       <description></description>
-      <id>fc9a7085-59ae-441d-89df-01a0f27d2ef0</id>
+      <id>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</id>
       <masked>false</masked>
-      <name>Username</name>
+      <name>headerKYCCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Video Request'</defaultValue>
+      <description></description>
+      <id>6d08b958-71fe-4f46-94df-f5102d97318a</id>
+      <masked>false</masked>
+      <name>headerKYCVideoRequest</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dashboard'</defaultValue>
+      <description></description>
+      <id>ce89f75e-3052-494c-9414-62721765c0cd</id>
+      <masked>false</masked>
+      <name>headerDashboard</name>
    </variable>
 </TestCaseEntity>

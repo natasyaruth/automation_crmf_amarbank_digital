@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementDetailsMustCall</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2f29320f-4093-4eb4-b674-e2b3bbe68bf6</testCaseGuid>
+   <variable>
+      <defaultValue>'Harus Ditelfon'</defaultValue>
+      <description></description>
+      <id>4eb24473-f2c7-4fba-be4d-7f6e8d2f4828</id>
+      <masked>false</masked>
+      <name>Status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>9985f139-bac5-4dd3-973d-9c2a2f7f1ec3</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>24986be3-d694-4982-a231-181bd5492184</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+</TestCaseEntity>

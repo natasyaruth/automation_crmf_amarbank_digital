@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8d44f823-2ead-43a5-b8bc-005b9d027c24</testCaseGuid>
+   <variable>
+      <defaultValue>'https://dev-crm-rekol.tunaiku.com/login'</defaultValue>
+      <description></description>
+      <id>93f3c10f-6c5d-4816-8804-5ea06dc1beb4</id>
+      <masked>false</masked>
+      <name>dev_LoginURL</name>
+   </variable>
 </TestCaseEntity>

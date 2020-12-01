@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationProcessVideoCall</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>040d6103-464d-4ac3-b020-06d310734d01</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>95c30b00-860a-4e22-a193-e9d5ef9f0cde</id>
+      <masked>false</masked>
+      <name>SearchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>'Apakah anda yakin nasabah ini harus melakukan proses KYC'</defaultValue>
+      <description></description>
+      <id>ccf7265e-6edf-46bb-96fa-7c4143755b5c</id>
+      <masked>false</masked>
+      <name>KonfirmationToProcessKYCVideo</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Verification'</defaultValue>
+      <description></description>
+      <id>72cd92b8-8ad6-41c4-aa6a-edc76ea5fb16</id>
+      <masked>false</masked>
+      <name>KYCVerificationBucketlist</name>
+   </variable>
+</TestCaseEntity>

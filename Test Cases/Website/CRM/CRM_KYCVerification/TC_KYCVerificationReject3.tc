@@ -4,12 +4,19 @@
    <name>TC_KYCVerificationReject3</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>040d6103-464d-4ac3-b020-06d310734d01</testCaseGuid>
+   <testCaseGuid>2c171f6c-8d04-40e1-84f5-a036792170b7</testCaseGuid>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>95c30b00-860a-4e22-a193-e9d5ef9f0cde</id>
+      <id>cee19093-7dc7-476d-9581-5c6840864aa4</id>
       <masked>false</masked>
       <name>SearchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a6e5581a-786a-4fa6-be1f-eea7707e9aab</id>
+      <masked>false</masked>
+      <name>Other</name>
    </variable>
 </TestCaseEntity>

@@ -26,4 +26,18 @@
       <masked>false</masked>
       <name>CardName</name>
    </variable>
+   <variable>
+      <defaultValue>'Assign Card'</defaultValue>
+      <description></description>
+      <id>25e29960-d13d-4ef2-a273-8759e36a7168</id>
+      <masked>false</masked>
+      <name>Verify_Bucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>'Add Card Number'</defaultValue>
+      <description></description>
+      <id>11ec43cf-3b6f-49b6-910b-39871e9dd4a3</id>
+      <masked>false</masked>
+      <name>Verify_Details</name>
+   </variable>
 </TestCaseEntity>

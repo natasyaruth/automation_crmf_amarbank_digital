@@ -12,4 +12,18 @@
       <masked>false</masked>
       <name>PhoneNumber</name>
    </variable>
+   <variable>
+      <defaultValue>'No. Handphone berhasil disimpan'</defaultValue>
+      <description></description>
+      <id>d7254a1b-e9b7-4294-9ce2-62538361445f</id>
+      <masked>false</masked>
+      <name>Verify_ChangePhone_Success</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah Senyumku'</defaultValue>
+      <description></description>
+      <id>fed77576-18d1-4b35-8f24-f6bc5df9df54</id>
+      <masked>false</masked>
+      <name>Verify_NasabahSenyumku</name>
+   </variable>
 </TestCaseEntity>
