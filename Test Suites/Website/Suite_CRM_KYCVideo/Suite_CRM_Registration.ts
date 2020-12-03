@@ -9,38 +9,54 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>aeaf4b71-7535-4708-9850-bf102feebf23</testSuiteGuid>
    <testCaseLink>
       <guid>d2327f08-7c01-4e99-94b7-ae18fcfcdd1b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>299deb9a-77f3-41f6-9408-fe7f29befca6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>9d40c38f-05e8-4b39-9893-349a8592c1d9</id>
-         <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_CRM_UserLogin</testDataId>
-      </testDataLink>
       <variableLink>
-         <testDataLinkId>9d40c38f-05e8-4b39-9893-349a8592c1d9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Username</value>
-         <variableId>b6bfffbb-7c23-4e7d-bfe6-d43896cd6931</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8f0bc7d6-ce7b-437f-8142-845221f80d42</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>9d40c38f-05e8-4b39-9893-349a8592c1d9</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Password</value>
-         <variableId>aea27910-c43b-4857-a979-0165ae08cf73</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -48,6 +64,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>84028ff0-f292-4ac7-bb4f-cf568226ac06</guid>
@@ -59,7 +81,7 @@
          <id>c597fc86-9b5f-4bc2-a9cd-e481a6a44422</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>5-5</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
       </testDataLink>
@@ -130,10 +152,16 @@
          <variableId>db998fda-60f9-4833-818e-9c8c202760ec</variableId>
       </variableLink>
       <variableLink>
+         <testDataLinkId>c597fc86-9b5f-4bc2-a9cd-e481a6a44422</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Email</value>
+         <variableId>44d986de-b584-4dcd-8f12-85b3dc45b481</variableId>
+      </variableLink>
+      <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>44d986de-b584-4dcd-8f12-85b3dc45b481</variableId>
+         <variableId>05e40580-46ff-4429-aa0e-3f8f007de784</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

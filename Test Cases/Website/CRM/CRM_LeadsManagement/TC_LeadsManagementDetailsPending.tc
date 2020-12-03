@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementDetailsPending</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>113d6061-34d7-41c5-9d25-4a23c0897887</testCaseGuid>
+   <variable>
+      <defaultValue>'Ditunda'</defaultValue>
+      <description></description>
+      <id>6243be04-6781-45d2-b368-a20603d34db9</id>
+      <masked>false</masked>
+      <name>Status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>499d7d41-cba4-43dc-96c5-39fe29f592fa</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>acdc41c8-3aee-466d-a32e-ef5f579524fe</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+</TestCaseEntity>

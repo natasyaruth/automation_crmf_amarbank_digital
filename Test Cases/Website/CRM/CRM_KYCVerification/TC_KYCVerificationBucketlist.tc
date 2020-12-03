@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationBucketlist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>00eaae05-c68f-4f4e-b1ba-b520b4d15903</testCaseGuid>
+   <variable>
+      <defaultValue>'Data Verification\r\n'</defaultValue>
+      <description></description>
+      <id>52d4834e-98bb-4fb5-8c65-490a49d22898</id>
+      <masked>false</masked>
+      <name>Verify_Bucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6ed1c6fd-529d-41d4-81dd-bc685c13bbb6</id>
+      <masked>false</masked>
+      <name>Email_Type</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a725c43f-bdac-41e1-9c5c-c90b331a3900</id>
+      <masked>false</masked>
+      <name>RequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a245d26e-860f-40c0-b77b-d4c303479b61</id>
+      <masked>false</masked>
+      <name>StartFilterDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9410424f-c211-457b-af6b-5ae7d06d0dd8</id>
+      <masked>false</masked>
+      <name>EndFilterDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'DEDEH HARYANI'</defaultValue>
+      <description></description>
+      <id>9ac28364-ac33-44c0-8f03-5f3d7c1de26b</id>
+      <masked>false</masked>
+      <name>RequestIDName</name>
+   </variable>
+</TestCaseEntity>

@@ -20,7 +20,7 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting'))
 
-WebUI.verifyTextPresent('Card Printing', false)
+WebUI.verifyTextPresent(Verify_Bucketlist, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint'))
 

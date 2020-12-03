@@ -9,12 +9,19 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>6558a006-e064-4dbe-bf1e-79efcd2fb84b</testSuiteGuid>
    <testCaseLink>
       <guid>09be625d-c273-4209-9147-98c22121057d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Develop_CRM</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>93f3c10f-6c5d-4816-8804-5ea06dc1beb4</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>4369a539-23b0-483c-8bf4-1e8c5921a7dc</guid>
@@ -31,16 +38,34 @@
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin</testDataId>
       </testDataLink>
       <variableLink>
-         <testDataLinkId>11ea5d30-67e2-4efd-b3d2-e30d13db743b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Name</value>
-         <variableId>b6bfffbb-7c23-4e7d-bfe6-d43896cd6931</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8f0bc7d6-ce7b-437f-8142-845221f80d42</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>11ea5d30-67e2-4efd-b3d2-e30d13db743b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Password</value>
-         <variableId>aea27910-c43b-4857-a979-0165ae08cf73</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -48,26 +73,11 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>164e421f-ea8c-4d09-9018-9f24c461f895</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoNotChecked</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>52266e84-e033-42de-b05b-df32b47c708e</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>2-2</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_HasNotBeenValidated</testDataId>
-      </testDataLink>
       <variableLink>
-         <testDataLinkId>52266e84-e033-42de-b05b-df32b47c708e</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>SearchKYC</value>
-         <variableId>bb669d47-14e3-4cc3-8fad-ef4fad4f7d95</variableId>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

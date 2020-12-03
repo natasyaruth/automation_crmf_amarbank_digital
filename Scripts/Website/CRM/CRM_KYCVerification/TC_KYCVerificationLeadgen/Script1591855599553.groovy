@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketli
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent('Nasabah Baru', false)
+WebUI.verifyTextPresent('Tunaiku Leadgen', false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
@@ -40,10 +40,9 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/
 
 WebUI.delay(1)
 
-CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'), 
-    0)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'))
 
-WebUI.delay(0)
+WebUI.delay(20)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 

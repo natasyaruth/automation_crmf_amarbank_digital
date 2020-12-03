@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>URL_Staging_CRM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bd5c3c0d-968b-4779-88b0-975bcffd565d</testCaseGuid>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/login'</defaultValue>
+      <description></description>
+      <id>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</id>
+      <masked>false</masked>
+      <name>staging_LoginURL</name>
+   </variable>
+</TestCaseEntity>

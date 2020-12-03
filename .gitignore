@@ -6,3 +6,4 @@ Log/
 appium.Log
 *.project
 *.class
+*.log

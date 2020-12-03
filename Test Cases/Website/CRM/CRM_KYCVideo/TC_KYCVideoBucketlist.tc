@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVideoBucketlist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e92219d6-6829-414f-8e4a-08f77f9b10fd</testCaseGuid>
+   <variable>
+      <defaultValue>'Semua'</defaultValue>
+      <description></description>
+      <id>bd83c76f-9891-4782-a0e2-3900be9083ce</id>
+      <masked>false</masked>
+      <name>Cust_All</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah Baru'</defaultValue>
+      <description></description>
+      <id>abb231e3-bd3c-4db5-936f-581a32f661ef</id>
+      <masked>false</masked>
+      <name>Cust_NasabahBaru</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah Senyumku'</defaultValue>
+      <description></description>
+      <id>26876479-567c-4dba-9886-cd33fc1adf50</id>
+      <masked>false</masked>
+      <name>Cust_NasabahSenyumku</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tunaiku Leadgen'</defaultValue>
+      <description></description>
+      <id>3bc465ed-912d-4486-8b9c-610eaecdee63</id>
+      <masked>false</masked>
+      <name>Cust_TunaikuLeadgen</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senyumku Deposito'</defaultValue>
+      <description></description>
+      <id>dbd4e0ea-9657-4736-9365-dbf2cc377e51</id>
+      <masked>false</masked>
+      <name>Cust_SenyumkuDeposito</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e626d5fc-2353-48c2-b3c6-77d32b234e9b</id>
+      <masked>false</masked>
+      <name>Filter_StartDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a87851a8-05b3-48c6-8f89-54729d97ab2e</id>
+      <masked>false</masked>
+      <name>Filter_EndDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>616d6225-d73e-402d-8c68-c5758fc4b09d</id>
+      <masked>false</masked>
+      <name>SearchKYC</name>
+   </variable>
+</TestCaseEntity>

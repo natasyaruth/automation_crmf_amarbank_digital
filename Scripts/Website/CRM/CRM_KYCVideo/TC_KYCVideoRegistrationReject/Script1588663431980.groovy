@@ -29,7 +29,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel1'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel'))
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), SearchRequestID)
 
@@ -69,11 +69,11 @@ CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAdditionalNote'), AdditionalNote)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel2'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnReject2'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/BtnClose'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel2'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnReject2'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'))
 

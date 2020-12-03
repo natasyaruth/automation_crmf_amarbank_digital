@@ -20,7 +20,7 @@
          <id>facca0b4-6542-468f-b366-3f6744f85aae</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>3-3</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
@@ -101,7 +101,7 @@
          <id>5816d053-96fe-49db-847e-eee59505274a</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>3-3</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
@@ -199,8 +199,8 @@
          <combinationType>ONE</combinationType>
          <id>f0c89d62-2e8d-4779-bca2-8fdbf58f8f2d</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Staging/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
@@ -281,7 +281,7 @@
          <id>8ec2fc01-83fd-4133-8a53-7a2f9386ad6f</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>3-3</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Staging/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>

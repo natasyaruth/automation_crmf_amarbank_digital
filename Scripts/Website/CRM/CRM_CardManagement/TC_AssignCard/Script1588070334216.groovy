@@ -18,7 +18,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkAssignCard'))
 
-WebUI.verifyTextPresent('Assign Card', false)
+WebUI.verifyTextPresent(Verify_Bucketlist, false)
 
 WebUI.delay(1)
 
@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkRequestI
 
 WebUI.delay(1)
 
-WebUI.verifyTextPresent('Add Card Number', false)
+WebUI.verifyTextPresent(Verify_Details, false)
 
 WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardNumber'), CardNumber)
 

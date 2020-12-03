@@ -20,6 +20,15 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/Link
 
 WebUI.delay(3)
 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), CustomerType, 
+    false)
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), StartFilterdate, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), EndFilterDate)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnShow'))
+
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), SearchKYC)
 
 WebUI.delay(1)
@@ -30,13 +39,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnEditEmail'))
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtEmail'), Email)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnSaveEmail'))
-
-WebUI.verifyTextPresent('Hal-hal yang perlu dikonfirmasi dalam proses KYC:', false)
+WebUI.verifyTextPresent(verify_checkbox, false)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), AddressType, false)
 
@@ -92,8 +95,7 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirm
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmail'))
-
+//WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmail'))
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkCardDeliveryAddress'))
@@ -106,8 +108,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkPhotoCapture'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmailConfirmation'))
-
+//WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmailConfirmation'))
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'))
