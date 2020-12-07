@@ -32,7 +32,7 @@ WebUI.verifyTextPresent(headerCustomerDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenPendingModal'))
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/HeaderChangeSchedule'), 5)
 
 WebUI.verifyTextPresent(headerAturJadwal, false)
 
@@ -54,9 +54,9 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOtherNeeds'))
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPendingConfirmation'))
 
-WebUI.waitForPageLoad(5)
+WebUI.waitForPageLoad(8)
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

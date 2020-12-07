@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementContentPopUpPendingReason</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4ec9adf9-62f3-4f23-94ae-da2e7911a1bc</testCaseGuid>
+   <variable>
+      <defaultValue>'Harus Ditelfon'</defaultValue>
+      <description></description>
+      <id>f184dea5-6d42-4f36-8d1c-95fded4e3057</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>9f77f6a1-171e-4a12-b2a7-c81994bca0bf</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>['ChkCallDisconnected', 'ChkOtherNeeds', 'ChkOther']</defaultValue>
+      <description></description>
+      <id>a3d3ab4f-e16e-461b-abeb-8c5af1f21ffe</id>
+      <masked>false</masked>
+      <name>listElement</name>
+   </variable>
+   <variable>
+      <defaultValue>['Telepon terputus', 'Nasabah punya keperluan lain', 'Lainnya']</defaultValue>
+      <description></description>
+      <id>a5e28c28-5001-4335-bc08-e83af05186dd</id>
+      <masked>false</masked>
+      <name>listValue</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>6823ea9a-e991-4b3b-ba90-b2afb97fcb21</id>
+      <masked>false</masked>
+      <name>inputText</name>
+   </variable>
+</TestCaseEntity>

@@ -15,8 +15,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnDataEmail'))
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtEmail'), 3)
+
+WebUI.verifyElementNotClickable(findTestObject('Website/CRM/Leads_Management/Detail/TxtEmail'))
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/TxtEmail'), valueEmail)

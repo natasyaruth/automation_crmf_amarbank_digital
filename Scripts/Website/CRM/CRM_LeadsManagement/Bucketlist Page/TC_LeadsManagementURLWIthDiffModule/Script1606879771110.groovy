@@ -15,20 +15,14 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
-
-WebUI.waitForPageLoad(5)
-
-def getReqID = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtReqID'))
-
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
-
-WebUI.waitForPageLoad(5)
-
-WebUI.verifyTextPresent('Leads Management', false)
-
-WebUI.navigateToUrl(urlStag+'/'+getReqID)
+WebUI.navigateToUrl(invalidURL)
 
 WebUI.waitForPageLoad(3)
 
-WebUI.verifyTextPresent(getReqID, false)
+WebUI.verifyTextPresent(msgForbiddenPage, false)
+
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
+
+WebUI.waitForPageLoad(2)
+
+WebUI.verifyTextPresent(headerLeadsManagement, false)
