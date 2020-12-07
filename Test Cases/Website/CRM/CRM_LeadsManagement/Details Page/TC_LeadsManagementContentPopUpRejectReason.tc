@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementContentPopUpRejectReason</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>39df6314-8472-48c5-81b7-b94fa67a1d37</testCaseGuid>
+   <variable>
+      <defaultValue>'Harus Ditelfon'</defaultValue>
+      <description></description>
+      <id>5c6aa417-b6f0-49c3-be76-a7eef08d8113</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>357e8c09-e6a5-477e-a87a-a3df7f4746f6</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>['ChkNotWantingNewAccount', 'ChkNoReason', 'ChkTooMuchData', 'ChkHaveMoreThanOneAccount', 'ChkOther']</defaultValue>
+      <description></description>
+      <id>1421f917-4912-4abc-b71b-221085e4e0d6</id>
+      <masked>false</masked>
+      <name>listElement</name>
+   </variable>
+   <variable>
+      <defaultValue>['Nasabah tidak ingin membuka rekening baru', 'Nasabah tidak memberikan alasan', 'Terlalu banyak data yang diminta', 'Nasabah punya lebih dari 1 rekening', 'Lainnya']</defaultValue>
+      <description></description>
+      <id>470fb0e7-dcca-4761-bff0-8ff3c3149152</id>
+      <masked>false</masked>
+      <name>listValue</name>
+   </variable>
+   <variable>
+      <defaultValue>'Test'</defaultValue>
+      <description></description>
+      <id>0cfc93ff-d7cb-41b1-b5be-bb023c685d07</id>
+      <masked>false</masked>
+      <name>inputText</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementURLWIthDiffModule</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42a8395f-2118-48de-85d8-c1cd8ecb7d08</testCaseGuid>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>1870d588-b101-4f8a-a6c0-d5495060f855</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management'</defaultValue>
+      <description></description>
+      <id>4949e592-a9a2-40fd-9711-7fb658111cd5</id>
+      <masked>false</masked>
+      <name>invalidURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'Anda tidak memiliki izin untuk mengakses'</defaultValue>
+      <description></description>
+      <id>6fed4712-6028-4393-a8de-72ebd32462c5</id>
+      <masked>false</masked>
+      <name>msgForbiddenPage</name>
+   </variable>
+</TestCaseEntity>

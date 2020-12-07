@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnDetail</name>
+   <name>TxtPendingReason</name>
    <tag></tag>
-   <elementGuidId>a34aa5e0-08da-4688-a9c0-7a2f70f4bae2</elementGuidId>
+   <elementGuidId>838e665b-4cc6-4380-b413-291ac1d82b4a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnDetail1']</value>
+         <value>//*[@id = 'TxtPendingReason']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnDetail1</value>
+      <value>TxtPendingReason</value>
    </webElementProperties>
 </WebElementEntity>
