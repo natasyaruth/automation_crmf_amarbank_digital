@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementCheckNotFillEmail</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e05148e2-5270-4c11-925f-ae31988b263c</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5804f968-fe10-4fd9-9ffe-0a3246ab9397</id>
+      <masked>false</masked>
+      <name>valueEmail</name>
+   </variable>
+</TestCaseEntity>

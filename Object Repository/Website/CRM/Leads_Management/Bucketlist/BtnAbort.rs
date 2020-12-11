@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnDetail</name>
+   <name>BtnAbort</name>
    <tag></tag>
-   <elementGuidId>a34aa5e0-08da-4688-a9c0-7a2f70f4bae2</elementGuidId>
+   <elementGuidId>55c38fb4-6a4f-4f79-8b08-68f7a870bd62</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnDetail1']</value>
+         <value>//*[@id = 'BtnAbort']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnDetail1</value>
+      <value>BtnAbort</value>
    </webElementProperties>
 </WebElementEntity>

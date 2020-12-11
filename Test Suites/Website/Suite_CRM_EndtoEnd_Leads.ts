@@ -75,7 +75,7 @@
       <guid>7ab2aa35-a4a6-4f87-94c7-f21eea1e2553</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/TC_LeadsManagement</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagement</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>eb6140be-ecd5-498c-97f6-c1b5cd091a58</id>

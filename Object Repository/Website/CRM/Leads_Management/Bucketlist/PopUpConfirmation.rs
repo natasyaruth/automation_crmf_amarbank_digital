@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnDetail</name>
+   <name>PopUpConfirmation</name>
    <tag></tag>
-   <elementGuidId>a34aa5e0-08da-4688-a9c0-7a2f70f4bae2</elementGuidId>
+   <elementGuidId>88379b62-bcf5-44b4-aaa7-2acd4719e590</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnDetail1']</value>
+         <value>//*[@class = 'u-ta-center u-pd-large']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnDetail1</value>
+      <value>u-ta-center u-pd-large</value>
    </webElementProperties>
 </WebElementEntity>
