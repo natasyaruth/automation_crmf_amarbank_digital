@@ -44,13 +44,11 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
 
-WebUI.delay(1)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'))
 
-WebUI.delay(1)
-
-WebUI.verifyTextPresent(Email, false)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'))
 
@@ -82,14 +80,6 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlac
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/DtpKTPBirthDate'), KTPBirthDate)
-
-WebUI.delay(1)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpGender'), KTPGender, false)
-
-WebUI.delay(0)
-
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false)
 
 WebUI.delay(1)
@@ -98,21 +88,19 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRT'), KTPNeighbourhood)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), KTPNeighbourhood)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRW'), KTPHamlet)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet)
 
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage)
 
-WebUI.delay(5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
-
-WebUI.verifyTextPresent(KTPDistrict, false)
 
 WebUI.delay(2)
 
@@ -154,11 +142,11 @@ WebUI.delay(2)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), FullAddress, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), Province, false)
 
@@ -253,4 +241,6 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataSelfieAndK
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'))
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnBack'))
 

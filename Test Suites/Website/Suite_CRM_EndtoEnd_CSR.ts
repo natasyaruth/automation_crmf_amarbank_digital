@@ -302,12 +302,6 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>a9fadbec-579c-4885-a92c-b5f21db076bf</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
          <variableId>c9dd5ea4-2de4-48ae-ad16-bf4708125348</variableId>
       </variableLink>
       <variableLink>

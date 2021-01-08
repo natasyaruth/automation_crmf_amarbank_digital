@@ -16,11 +16,11 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Login/LinkLogout'))
+WebUI.click(findTestObject('Website/CRM/Login/linkLogout'))
 
-WebUI.navigateToUrl(Stg_loginURL, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(10)
 
-WebUI.verifyTextPresent(VerifyTextLogin, false)
+WebUI.deleteAllCookies()
 
-WebUI.verifyTextPresent(VerifyTextLogin_Password, false)
+WebUI.closeBrowser()
 

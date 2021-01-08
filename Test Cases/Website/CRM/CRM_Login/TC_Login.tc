@@ -13,7 +13,7 @@
       <name>Btnlogin</name>
    </variable>
    <variable>
-      <defaultValue>'Email atau ponsel'</defaultValue>
+      <defaultValue>'Masukkan email Anda'</defaultValue>
       <description></description>
       <id>90084b35-f3a5-46da-8d0d-446d669b0bbb</id>
       <masked>false</masked>
@@ -41,7 +41,7 @@
       <name>Verify_FieldPassword</name>
    </variable>
    <variable>
-      <defaultValue>'Welcome to Senyumku CRM,'</defaultValue>
+      <defaultValue>'Welcome to Senyumku CRM'</defaultValue>
       <description></description>
       <id>75901125-1c8c-4149-80ee-9d1f9ede82fa</id>
       <masked>false</masked>

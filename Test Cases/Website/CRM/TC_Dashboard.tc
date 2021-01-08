@@ -13,7 +13,7 @@
       <name>KYCVideo_Detail</name>
    </variable>
    <variable>
-      <defaultValue>'Video Verification'</defaultValue>
+      <defaultValue>'KYC Video Request'</defaultValue>
       <description></description>
       <id>6d08b958-71fe-4f46-94df-f5102d97318a</id>
       <masked>false</masked>
