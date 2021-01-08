@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementDetailsReject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3dfd3674-044b-4310-9b58-9dbbf3a60bf8</testCaseGuid>
+   <variable>
+      <defaultValue>'Ditolak'</defaultValue>
+      <description></description>
+      <id>7131f778-8252-46e5-80ce-25a30fe43638</id>
+      <masked>false</masked>
+      <name>Status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>d6ab115b-c685-4f50-9ff5-2bea3b48133e</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>5cf796d6-0ea2-4faa-a2dc-afe736e7b58d</id>
+      <masked>false</masked>
+      <name>headerCustomerDetails</name>
+   </variable>
+</TestCaseEntity>

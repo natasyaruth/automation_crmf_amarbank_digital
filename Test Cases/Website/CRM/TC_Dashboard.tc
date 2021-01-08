@@ -10,13 +10,28 @@
       <description></description>
       <id>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</id>
       <masked>false</masked>
+<<<<<<< HEAD
       <name>KYCVideo_Detail</name>
+=======
+      <name>headerKYCCustomerDetail</name>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
    </variable>
    <variable>
       <defaultValue>'KYC Video Request'</defaultValue>
       <description></description>
       <id>6d08b958-71fe-4f46-94df-f5102d97318a</id>
       <masked>false</masked>
+<<<<<<< HEAD
       <name>KYCVideo_Bucketlist</name>
+=======
+      <name>headerKYCVideoRequest</name>
+   </variable>
+   <variable>
+      <defaultValue>'Dashboard'</defaultValue>
+      <description></description>
+      <id>ce89f75e-3052-494c-9414-62721765c0cd</id>
+      <masked>false</masked>
+      <name>headerDashboard</name>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
    </variable>
 </TestCaseEntity>

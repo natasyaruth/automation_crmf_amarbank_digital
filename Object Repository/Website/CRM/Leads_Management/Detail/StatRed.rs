@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtNeighbourhood</name>
+   <name>StatRed</name>
    <tag></tag>
-   <elementGuidId>df4fb947-d79e-4187-9986-23e874ef2276</elementGuidId>
+   <elementGuidId>5deb510a-9600-4d06-bb80-d7896610e7d6</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'TxtNeighbourhood']</value>
+         <value>//*[@class = 'Button Button--danger Button--rounded']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>TxtNeighbourhood</value>
+      <value>Button Button--danger Button--rounded</value>
    </webElementProperties>
 </WebElementEntity>

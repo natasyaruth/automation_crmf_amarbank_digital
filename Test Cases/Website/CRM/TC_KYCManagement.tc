@@ -10,6 +10,10 @@
       <description></description>
       <id>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</id>
       <masked>false</masked>
+<<<<<<< HEAD
       <name>role_KYC_Video</name>
+=======
+      <name>headerKYCVideoRequest</name>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
    </variable>
 </TestCaseEntity>

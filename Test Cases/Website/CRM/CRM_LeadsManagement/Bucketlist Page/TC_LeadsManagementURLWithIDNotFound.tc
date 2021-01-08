@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementURLWithIDNotFound</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>128e0faf-31c4-4f79-a481-49b6977fa681</testCaseGuid>
+   <variable>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/leads-management/00'</defaultValue>
+      <description></description>
+      <id>73a3c91d-40c1-40fe-b53b-0cffdac33248</id>
+      <masked>false</masked>
+      <name>invalidIDURL</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah tidak ditemukan'</defaultValue>
+      <description></description>
+      <id>0e25d050-accb-4e4b-9c3b-1e0cf4b2d621</id>
+      <masked>false</masked>
+      <name>msgUserNotFound</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>d22f50df-6bee-48f5-95d7-b0aadbb8ff95</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+</TestCaseEntity>

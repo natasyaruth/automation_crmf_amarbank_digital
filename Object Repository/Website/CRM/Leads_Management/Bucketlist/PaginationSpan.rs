@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtHamlet</name>
+   <name>PaginationSpan</name>
    <tag></tag>
-   <elementGuidId>2289451a-7f29-4409-a635-8208829f5ac0</elementGuidId>
+   <elementGuidId>9b8ddb75-e442-42bd-b8ab-08bc23eef14a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'TxtHamlet']</value>
+         <value>//*[@class = 'PaginationSpan']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>TxtHamlet</value>
+      <value>PaginationSpan</value>
    </webElementProperties>
 </WebElementEntity>

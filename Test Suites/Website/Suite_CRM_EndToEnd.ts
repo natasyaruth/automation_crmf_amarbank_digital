@@ -44,12 +44,18 @@
          <combinationType>ONE</combinationType>
          <id>040b1468-e1f3-4e7d-bce8-42b99faf1c86</id>
          <iterationEntity>
+<<<<<<< HEAD
             <iterationType>RANGE</iterationType>
             <value>2-2</value>
+=======
+            <iterationType>ALL</iterationType>
+            <value></value>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
       <variableLink>
+<<<<<<< HEAD
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
@@ -158,6 +164,11 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+=======
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <variableId>8f0bc7d6-ce7b-437f-8142-845221f80d42</variableId>
       </variableLink>
       <variableLink>
@@ -165,6 +176,7 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+<<<<<<< HEAD
       </variableLink>
       <variableLink>
          <testDataLinkId>59535933-55a1-42bd-8762-47bd68ee7a01</testDataLinkId>
@@ -283,16 +295,51 @@
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>369da93f-d631-4ddf-ae45-a8bce177e1c4</id>
+=======
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>040b1468-e1f3-4e7d-bce8-42b99faf1c86</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
+         <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>a6b15a00-5530-47be-9129-25f71f4e5b18</id>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <iterationType>ALL</iterationType>
+            <value></value>
          </iterationEntity>
+<<<<<<< HEAD
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
+=======
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+<<<<<<< HEAD
          <variableId>8d2abf02-a77a-4ce4-af7e-a6762386a2da</variableId>
       </variableLink>
       <variableLink>
@@ -354,11 +401,21 @@
          <type>DATA_COLUMN</type>
          <value>VerifyMotherName</value>
          <variableId>2a5d8a79-62d0-476d-9962-23919619909b</variableId>
+=======
+         <variableId>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>6d08b958-71fe-4f46-94df-f5102d97318a</variableId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+<<<<<<< HEAD
          <variableId>0f9779c6-b4dc-4cab-b4aa-c877847ea3d6</variableId>
       </variableLink>
       <variableLink>
@@ -466,16 +523,46 @@
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>36030a13-1da4-47bf-a5b0-602572cc4368</id>
+=======
+         <variableId>ce89f75e-3052-494c-9414-62721765c0cd</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>7a4d799c-5b56-4bac-b790-d0a50a697741</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationBucketlist</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>043ab206-a00b-4ab1-a78c-41482bb00db1</id>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <iterationType>ALL</iterationType>
+            <value></value>
          </iterationEntity>
+<<<<<<< HEAD
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
+=======
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+<<<<<<< HEAD
          <variableId>bd83c76f-9891-4782-a0e2-3900be9083ce</variableId>
       </variableLink>
       <variableLink>
@@ -529,10 +616,54 @@
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>6df5011c-e4ad-47b9-a84e-7f7449aa0a31</id>
+=======
+         <variableId>52d4834e-98bb-4fb5-8c65-490a49d22898</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>043ab206-a00b-4ab1-a78c-41482bb00db1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Filter_Email</value>
+         <variableId>6ed1c6fd-529d-41d4-81dd-bc685c13bbb6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>043ab206-a00b-4ab1-a78c-41482bb00db1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchKYC</value>
+         <variableId>a725c43f-bdac-41e1-9c5c-c90b331a3900</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>043ab206-a00b-4ab1-a78c-41482bb00db1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Start_Filterdate</value>
+         <variableId>a245d26e-860f-40c0-b77b-d4c303479b61</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>043ab206-a00b-4ab1-a78c-41482bb00db1</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>End_FilterDate</value>
+         <variableId>9410424f-c211-457b-af6b-5ae7d06d0dd8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9ac28364-ac33-44c0-8f03-5f3d7c1de26b</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>369da93f-d631-4ddf-ae45-a8bce177e1c4</id>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
+            <iterationType>ALL</iterationType>
+            <value></value>
          </iterationEntity>
+<<<<<<< HEAD
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
       </testDataLink>
       <variableLink>
@@ -606,11 +737,81 @@
          <type>DATA_COLUMN</type>
          <value>Other</value>
          <variableId>db998fda-60f9-4833-818e-9c8c202760ec</variableId>
+=======
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
+      </testDataLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8d2abf02-a77a-4ce4-af7e-a6762386a2da</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>c26187f5-8895-475b-92bc-d8ae384bf0c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7df45cb2-ffd8-45c0-a221-e9604ed6b16e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>District</value>
+         <variableId>5a034dac-6cea-492e-be3b-501a327c73b8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c35707c3-3eb3-4c86-9a07-7de28c52846e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bafb8b16-18a4-4aa8-8d57-0b6576922fdc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f62c3829-fe1e-4260-bdbc-1770d49b04cf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NIK</value>
+         <variableId>ee41708a-fbbf-4c27-be1d-13e20964948a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>658208ca-4304-4d34-b202-a35d2e59f7d1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>VerifyBirthdate2</value>
+         <variableId>4c76be92-4f7d-4c8f-b157-d60892ae3ff7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>VerifyMotherName</value>
+         <variableId>2a5d8a79-62d0-476d-9962-23919619909b</variableId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+<<<<<<< HEAD
          <variableId>05e40580-46ff-4429-aa0e-3f8f007de784</variableId>
       </variableLink>
    </testCaseLink>
@@ -823,10 +1024,117 @@
          <value>CompanyName</value>
          <variableId>7c451d80-3927-4939-9e8f-a1d01a70f206</variableId>
       </variableLink>
+=======
+         <variableId>0f9779c6-b4dc-4cab-b4aa-c877847ea3d6</variableId>
+      </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>61e3f679-901b-490e-8f9c-18589f70e144</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>NIK</value>
+         <variableId>c760986f-f578-405a-85e0-a1703313338a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Name</value>
+         <variableId>1534df81-cc4b-4fbe-983d-5d407049b60b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Birthplace</value>
+         <variableId>7911ce21-ad91-48ab-bc79-6dc3b234e2d7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Birthdate</value>
+         <variableId>169a8011-b3a4-4186-8f09-c3c972f85c92</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Gender</value>
+         <variableId>3ea9eb22-88be-4bc2-95bf-58ba9eed53ef</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>BloodType</value>
+         <variableId>70f4113c-612f-4408-8f38-97a457d786c0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Address</value>
+         <variableId>6c3b999b-a1ed-4745-a835-c7f7c5dc2f67</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Neighbourhood</value>
+         <variableId>560a5e5a-ad84-4e83-9955-567a39635587</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Hamlet</value>
+         <variableId>d9b670d5-38e5-4a23-80ca-6f88bb292a8b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Village</value>
+         <variableId>daee218a-cd4d-42fb-aa1f-d277a0b85ba8</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>KTP_Religion</value>
+         <variableId>5277a8a1-2a22-409b-ab04-5729cc1460c7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Marital_Status</value>
+         <variableId>f15fec11-4a1b-42e3-bc42-08872cc5d5aa</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Occupation</value>
+         <variableId>ad871d54-3202-44aa-a8c7-040a7a577903</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>KtpCitizenship</value>
+         <variableId>cbc5d343-6603-49e2-a185-6ea03c4ca30b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>369da93f-d631-4ddf-ae45-a8bce177e1c4</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>KTPValidPeriod</value>
+         <variableId>a77dbf39-cda2-46c8-bd7b-2ff0b3d87917</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>481ad6b8-4895-4c44-a7a4-f058297f6147</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_KYCManagement</testCaseId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+<<<<<<< HEAD
          <variableId>046c52fb-12a7-4a05-a76b-2f4817cae698</variableId>
       </variableLink>
       <variableLink>
@@ -913,23 +1221,84 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
+=======
+         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoBucketlist</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>36030a13-1da4-47bf-a5b0-602572cc4368</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>bd83c76f-9891-4782-a0e2-3900be9083ce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>abb231e3-bd3c-4db5-936f-581a32f661ef</variableId>
+      </variableLink>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+<<<<<<< HEAD
          <variableId>5b05df14-fbb4-4573-8105-1604479400ee</variableId>
+=======
+         <variableId>26876479-567c-4dba-9886-cd33fc1adf50</variableId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+<<<<<<< HEAD
          <variableId>7745b3b1-623a-4fab-8a4d-611ec73a12fc</variableId>
+=======
+         <variableId>3bc465ed-912d-4486-8b9c-610eaecdee63</variableId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+<<<<<<< HEAD
          <variableId>53152f1a-ea93-4651-a01e-e684f96e6881</variableId>
+=======
+         <variableId>dbd4e0ea-9657-4736-9365-dbf2cc377e51</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>36030a13-1da4-47bf-a5b0-602572cc4368</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Start_Filterdate</value>
+         <variableId>e626d5fc-2353-48c2-b3c6-77d32b234e9b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>36030a13-1da4-47bf-a5b0-602572cc4368</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>End_FilterDate</value>
+         <variableId>a87851a8-05b3-48c6-8f89-54729d97ab2e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>36030a13-1da4-47bf-a5b0-602572cc4368</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>SearchKYC</value>
+         <variableId>616d6225-d73e-402d-8c68-c5758fc4b09d</variableId>
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

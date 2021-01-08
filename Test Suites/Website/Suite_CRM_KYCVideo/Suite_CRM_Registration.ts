@@ -44,6 +44,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+<<<<<<< HEAD
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
@@ -56,6 +57,8 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+=======
+>>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
       </variableLink>
       <variableLink>
