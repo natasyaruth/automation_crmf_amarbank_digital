@@ -47,11 +47,7 @@ WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
 
-<<<<<<< HEAD
 WebUI.verifyTextPresent(KYCVideo_Detail, false)
-=======
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'), 5)
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 
 WebUI.waitForPageLoad(10)
 
@@ -61,14 +57,7 @@ WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack'))
 
-<<<<<<< HEAD
 WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(KYCVideo_Bucketlist, false)
-=======
-WebUI.waitForPageLoad(5)
-
-WebUI.verifyTextPresent(headerKYCVideoRequest, false)
-
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 

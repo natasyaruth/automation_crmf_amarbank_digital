@@ -42,7 +42,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>8f0bc7d6-ce7b-437f-8142-845221f80d42</variableId>
-<<<<<<< HEAD
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -55,18 +54,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
-=======
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-<<<<<<< HEAD
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
-=======
-         <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>

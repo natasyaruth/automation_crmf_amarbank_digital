@@ -6,11 +6,7 @@
    <comment></comment>
    <testCaseGuid>00eaae05-c68f-4f4e-b1ba-b520b4d15903</testCaseGuid>
    <variable>
-<<<<<<< HEAD:Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationBucketlist.tc
       <defaultValue>'KYC Verification'</defaultValue>
-=======
-      <defaultValue>'Data Verification\r\n'</defaultValue>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8:Test Cases/Website/CRM/CRM_UserAccessManagement/TC_EditUser.tc
       <description></description>
       <id>52d4834e-98bb-4fb5-8c65-490a49d22898</id>
       <masked>false</masked>

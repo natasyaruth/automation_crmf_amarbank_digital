@@ -17,7 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.util.CryptoUtil as CryptoUtil
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD:Scripts/Website/CRM/CRM_Login/TC_Login/Script1605054422016.groovy
 WebUI.verifyTextPresent(Btnlogin, false)
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
@@ -42,44 +41,5 @@ WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(Verify_DasboardPage, false)
 
-=======
-
-WebUI.verifyTextPresent(Btnlogin, false)
-
-WebUI.waitForPageLoad(3)
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.verifyTextPresent(Verify_FieldEmail, false)
-
-WebUI.waitForPageLoad(3)
-
-def data =  findTestData("Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login")
-
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailAccount'), data.getValue('GmailAccount', 1))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.verifyTextPresent(Verify_FieldPassword, false)
-
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), data.getValue("GmailPassword", 1))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
-
-WebUI.waitForPageLoad(3)
-
-WebUI.verifyTextPresent(Verify_DasboardPage, false)
-
-WebUI.waitForPageLoad(3)
-
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8:Scripts/Website/CRM/CRM_RoleAccessManagement/CreateRole/Script1591594849368.groovy
 WebUI.verifyTextPresent(Username, false)
 

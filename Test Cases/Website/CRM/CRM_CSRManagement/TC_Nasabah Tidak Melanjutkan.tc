@@ -197,16 +197,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-<<<<<<< HEAD
-=======
-      <id>a9fadbec-579c-4885-a92c-b5f21db076bf</id>
-      <masked>false</masked>
-      <name>KTPBirthDate</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       <id>c9dd5ea4-2de4-48ae-ad16-bf4708125348</id>
       <masked>false</masked>
       <name>KTPGender</name>

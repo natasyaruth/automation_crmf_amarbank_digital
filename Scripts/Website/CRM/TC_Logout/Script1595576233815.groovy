@@ -16,7 +16,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD:Scripts/Website/CRM/TC_Logout/Script1595576233815.groovy
 WebUI.click(findTestObject('Website/CRM/Login/linkLogout'))
 
 WebUI.delay(10)
@@ -24,13 +23,4 @@ WebUI.delay(10)
 WebUI.deleteAllCookies()
 
 WebUI.closeBrowser()
-=======
-WebUI.click(findTestObject('Website/CRM/Login/LinkLogout'))
-
-WebUI.navigateToUrl(Stg_loginURL, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent(VerifyTextLogin, false)
-
-WebUI.verifyTextPresent(VerifyTextLogin_Password, false)
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8:Scripts/Website/CRM/CRM_Login/TC_Login/Script1582100680968.groovy
 

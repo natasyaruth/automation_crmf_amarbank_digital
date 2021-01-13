@@ -16,21 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-<<<<<<< HEAD
-<<<<<<< HEAD:Scripts/Website/CRM/CRM_Reporting/TC_Reporting/Script1605077691803.groovy
+
 WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
 
 WebUI.verifyTextPresent(Subrole, false)
-=======
-WebUI.click(findTestObject('Website/CRM/Leads_Management/LinkLeadsManagement'))
 
-WebUI.waitForPageLoad(5)
-
-WebUI.verifyTextPresent(headerLeadsManagement, false)
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8:Scripts/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagement/Script1588658916868.groovy
-=======
 WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
 
 WebUI.verifyTextPresent(Subrole, false)
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
+
 

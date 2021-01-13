@@ -5,7 +5,6 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>7dcb7ad4-9d92-4c35-89c5-cbeca48648be</testCaseGuid>
-<<<<<<< HEAD
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>
       <description></description>
@@ -20,46 +19,16 @@
       <masked>false</masked>
       <name>Verify_FieldEmail</name>
    </variable>
-=======
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>
       <description></description>
-<<<<<<< HEAD
       <id>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</id>
       <masked>false</masked>
       <name>GmailAccount</name>
-=======
-      <id>8f0bc7d6-ce7b-437f-8142-845221f80d42</id>
-      <masked>false</masked>
-      <name>Btnlogin</name>
-   </variable>
-   <variable>
-      <defaultValue>'Email atau ponsel'</defaultValue>
-      <description></description>
-      <id>90084b35-f3a5-46da-8d0d-446d669b0bbb</id>
-      <masked>false</masked>
-      <name>Verify_FieldEmail</name>
-   </variable>
-   <variable>
-      <defaultValue>'Masukkan sandi Anda'</defaultValue>
-      <description></description>
-      <id>0a94ab68-60c2-4541-9120-68e2bc66b97a</id>
-      <masked>false</masked>
-      <name>Verify_FieldPassword</name>
-   </variable>
-   <variable>
-      <defaultValue>'Welcome to Senyumku'</defaultValue>
-      <description></description>
-      <id>75901125-1c8c-4149-80ee-9d1f9ede82fa</id>
-      <masked>false</masked>
-      <name>Verify_DasboardPage</name>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-<<<<<<< HEAD
       <id>774ba9ea-d278-493e-92b6-073b2360a3cb</id>
       <masked>false</masked>
       <name>GmailPassword</name>
@@ -83,10 +52,6 @@
       <description></description>
       <id>a379d56d-d8dd-44f8-840b-5ded110f062f</id>
       <masked>false</masked>
-=======
-      <id>a379d56d-d8dd-44f8-840b-5ded110f062f</id>
-      <masked>false</masked>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
       <name>Username</name>
    </variable>
 </TestCaseEntity>

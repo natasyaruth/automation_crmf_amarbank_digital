@@ -39,13 +39,6 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddre
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDatareferral'))
-<<<<<<< HEAD
-=======
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 
 WebUI.delay(1)
 
@@ -86,7 +79,6 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), K
 WebUI.delay(2)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace)
-<<<<<<< HEAD
 
 WebUI.delay(1)
 
@@ -103,50 +95,15 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbour
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet)
-=======
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/DtpKTPBirthDate'), KTPBirthDate)
-
-WebUI.delay(1)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpGender'), KTPGender, false)
-
-WebUI.delay(0)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRT'), KTPNeighbourhood)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRW'), KTPHamlet)
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage)
 
-<<<<<<< HEAD
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
 
-=======
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
-
-WebUI.verifyTextPresent(KTPDistrict, false)
-
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 WebUI.delay(2)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, false)
@@ -189,11 +146,6 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
 
-<<<<<<< HEAD
-=======
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
-
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
 WebUI.delay(2)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
