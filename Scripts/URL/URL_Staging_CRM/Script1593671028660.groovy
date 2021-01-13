@@ -20,6 +20,4 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(staging_LoginURL)
 
-WebUI.waitForPageLoad(5)
-
 WebUI.maximizeWindow()

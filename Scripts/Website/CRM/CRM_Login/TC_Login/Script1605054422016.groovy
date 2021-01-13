@@ -14,44 +14,32 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.util.CryptoUtil as CryptoUtil
 import internal.GlobalVariable as GlobalVariable
-
 
 WebUI.verifyTextPresent(Btnlogin, false)
 
-WebUI.waitForPageLoad(3)
-
 WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
 
-WebUI.waitForPageLoad(3)
+WebUI.waitForPageLoad(100)
 
 WebUI.verifyTextPresent(Verify_FieldEmail, false)
 
-WebUI.waitForPageLoad(3)
-
-def data =  findTestData("Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login")
-
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailAccount'), data.getValue('GmailAccount', 1))
-
-WebUI.waitForPageLoad(3)
+WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailAccount'), CryptoUtil.decode(CryptoUtil.getDefault(GmailAccount)))
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
-WebUI.waitForPageLoad(3)
+WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.verifyTextPresent(Verify_FieldPassword, false)
 
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), data.getValue("GmailPassword", 1))
-
-WebUI.waitForPageLoad(3)
+WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.decode(CryptoUtil.getDefault(GmailPassword)))
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
-WebUI.waitForPageLoad(3)
+WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(Verify_DasboardPage, false)
-
-WebUI.waitForPageLoad(3)
 
 WebUI.verifyTextPresent(Username, false)
 

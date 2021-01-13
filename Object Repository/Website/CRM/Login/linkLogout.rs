@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-
-
-   <name>DrpGender</name>
+   <name>linkLogout</name>
    <tag></tag>
-   <elementGuidId>6769a738-2f45-4cee-926a-21060997bea1</elementGuidId>
+   <elementGuidId>74401f6e-1bda-4bab-a0c1-af2016ecb1aa</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'DrpGender']</value>
-
+         <value>//*[@id = 'LinkLogout']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -20,8 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-
-      <value>DrpGender</value>
-
+      <value>LinkLogout</value>
    </webElementProperties>
 </WebElementEntity>
