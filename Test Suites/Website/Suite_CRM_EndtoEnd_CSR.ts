@@ -302,15 +302,6 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-<<<<<<< HEAD
-=======
-         <variableId>a9fadbec-579c-4885-a92c-b5f21db076bf</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
->>>>>>> 1b9eec7791de5d020e96a84c3dda72e2b2d0e4f8
          <variableId>c9dd5ea4-2de4-48ae-ad16-bf4708125348</variableId>
       </variableLink>
       <variableLink>
