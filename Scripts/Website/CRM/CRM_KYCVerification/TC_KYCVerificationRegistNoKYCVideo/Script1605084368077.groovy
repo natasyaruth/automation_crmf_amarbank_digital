@@ -18,33 +18,21 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
-WebUI.delay(1)
+WebUI.waitForPageLoad(5)
 
 WebUI.verifyTextPresent(Verification_Detail, false)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
-
-WebUI.delay(1)
-
-WebUI.verifyTextPresent(VerifyStep1, false)
-
-WebUI.verifyTextPresent(VerifyKTPData, false)
-
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.delay(1)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'), 0)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.delay(1)
-
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), NIK)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtName'), Name)
 
@@ -52,24 +40,22 @@ WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtBirthPlace'), Birthplace)
 
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DtpBirthDate'), Birthdate)
-
-WebUI.delay(3)
+//WebUI.delay(5)
+//WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DtpBirthDate'), Birthdate)
+WebUI.delay(1)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpGender'), Gender, false)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpBloodType'), BloodType, 
     false)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtAddress'), Address)
 
-WebUI.delay(2)
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRT'), Neighbourhood)
 
@@ -79,18 +65,12 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Detail
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtVillage'), Village)
-
-WebUI.delay(6)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/ListVillageResult1'))
-
-WebUI.delay(5)
-
-WebUI.verifyTextPresent(VerifyDistrict, false)
-
-WebUI.delay(2)
-
+//WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtVillage'), Village)
+//WebUI.waitForElementPresent(findTestObject(null), 6)
+//WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/ListVillageResult1'))
+//WebUI.delay(5)
+//WebUI.verifyTextPresent(VerifyDistrict, false)
+//WebUI.delay(2)
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), Religion, false)
 
 WebUI.delay(3)
@@ -113,7 +93,7 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DtpKTPValidPeriod'), KTPValidPeriod)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbLifetime'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -147,11 +127,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.delay(20)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 10)
 
 WebUI.verifyTextPresent(VerifySuccessKYCVerification, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 
-WebUI.verifyTextPresent('', false)
+WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 

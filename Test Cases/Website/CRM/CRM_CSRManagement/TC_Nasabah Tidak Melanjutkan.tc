@@ -197,13 +197,6 @@
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>a9fadbec-579c-4885-a92c-b5f21db076bf</id>
-      <masked>false</masked>
-      <name>KTPBirthDate</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
       <id>c9dd5ea4-2de4-48ae-ad16-bf4708125348</id>
       <masked>false</masked>
       <name>KTPGender</name>

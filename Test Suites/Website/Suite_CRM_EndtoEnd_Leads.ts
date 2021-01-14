@@ -56,6 +56,18 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
       </variableLink>
       <variableLink>
@@ -69,27 +81,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>7ab2aa35-a4a6-4f87-94c7-f21eea1e2553</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagement</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>eb6140be-ecd5-498c-97f6-c1b5cd091a58</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>1-1</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CSRandLeads/Data_CRM_CSRandLeadsManagement</testDataId>
-      </testDataLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0196bd14-b2c0-49bb-b7a9-a3990ae081b2</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtRW</name>
+   <name>TxtNIK</name>
    <tag></tag>
-   <elementGuidId>2289451a-7f29-4409-a635-8208829f5ac0</elementGuidId>
+   <elementGuidId>297ac28e-82a4-45a7-be80-665698574c5e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'rw']</value>
+         <value>//*[@id = 'TxtNIK']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>rw</value>
+      <value>TxtNIK</value>
    </webElementProperties>
 </WebElementEntity>

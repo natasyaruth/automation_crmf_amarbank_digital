@@ -27,7 +27,11 @@ WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'))
 
+WebUI.waitForElementNotPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 10)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnPreviousPage'))
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'))
 
