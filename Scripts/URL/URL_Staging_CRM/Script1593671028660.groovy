@@ -21,3 +21,6 @@ WebUI.openBrowser('')
 WebUI.navigateToUrl(staging_LoginURL)
 
 WebUI.maximizeWindow()
+
+WebUI.authenticate('https://staging-crm-rekol.tunaiku.com/login', 'senyuman', '20senyumku20', 0)
+

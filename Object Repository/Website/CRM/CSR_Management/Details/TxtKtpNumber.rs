@@ -3,7 +3,7 @@
    <description></description>
    <name>TxtKtpNumber</name>
    <tag></tag>
-   <elementGuidId>86d5022d-5958-4d72-8669-dcf8f0e525e4</elementGuidId>
+   <elementGuidId>2b46f38f-5e9e-4df4-b20e-03151d8bca37</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

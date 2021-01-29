@@ -20,11 +20,13 @@ WebUI.verifyTextPresent(Verify_NasabahSenyumku, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'))
 
-WebUI.delay(2)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
 
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPhonenumber'), 5)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPhonenumber'))
+
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePhonenumber'), 5)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), PhoneNumber)
 

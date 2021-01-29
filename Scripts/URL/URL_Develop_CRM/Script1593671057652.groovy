@@ -20,3 +20,7 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(dev_LoginURL)
 
+WebUI.maximizeWindow()
+
+WebUI.authenticate('https://dev-crm-rekol.tunaiku.com/login', 'senyuman', '20senyumku20', 0)
+

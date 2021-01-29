@@ -28,6 +28,15 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>80aeb324-12cc-4402-9d09-85868a677598</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -41,15 +50,15 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>80aeb324-12cc-4402-9d09-85868a677598</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>80aeb324-12cc-4402-9d09-85868a677598</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
@@ -65,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>80aeb324-12cc-4402-9d09-85868a677598</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
@@ -288,49 +297,49 @@
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>f381e7db-9cb6-4427-9343-5ee15b8bf4de</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>9ab5b44a-e366-47c2-8261-8090e996bc28</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>c9dd5ea4-2de4-48ae-ad16-bf4708125348</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>87eacbc8-f764-4166-bf6d-c85d4f146d3a</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>de97561e-6e7a-4d8e-96d1-31ad9efe63a9</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>dc126b9e-0488-482b-9c8f-1b3829562b94</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>124b7dd3-0490-4590-80ea-33dd635d92cf</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>b9d1cb15-1138-418a-8c15-9f520ffb32aa</variableId>
       </variableLink>
@@ -348,19 +357,19 @@
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>1f902a32-5618-4b9d-9c7d-6c2c5389eb7e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>c0d0cc44-d2f4-4019-bfb2-d749eafa7841</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
+         <type>DATA_COLUMN</type>
          <value></value>
          <variableId>203abfd6-d085-48f4-857a-8c35b815652c</variableId>
       </variableLink>

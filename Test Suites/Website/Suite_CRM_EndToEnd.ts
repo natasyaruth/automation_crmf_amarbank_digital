@@ -95,7 +95,7 @@
    <testCaseLink>
       <guid>ffc4ad80-3a41-4d22-a65f-94acf0008f41</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -131,7 +131,7 @@
    <testCaseLink>
       <guid>cbedd409-5d08-4e08-9356-b4768ca4645b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -143,7 +143,7 @@
    <testCaseLink>
       <guid>49199f36-ebac-49f9-b0ed-16e29cfae0c7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -200,7 +200,7 @@
    <testCaseLink>
       <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -227,7 +227,7 @@
    <testCaseLink>
       <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -278,7 +278,7 @@
    <testCaseLink>
       <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -461,7 +461,7 @@
    <testCaseLink>
       <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -524,7 +524,7 @@
    <testCaseLink>
       <guid>5e5034f5-08f0-41f6-998e-f94c3f39d966</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -911,7 +911,7 @@
    <testCaseLink>
       <guid>fb7bc328-b7a8-4f82-85b3-448a3ced40d8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

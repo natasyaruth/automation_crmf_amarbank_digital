@@ -39,7 +39,8 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage')
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), SearchPhoneNumber)
 
-WebUI.delay(3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), SearchPhoneNumber, 
+    SearchPhoneNumber, 3)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_NotContinue, false)
 
