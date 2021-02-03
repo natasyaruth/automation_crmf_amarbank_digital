@@ -7,13 +7,20 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]//following::ul/li[3]/b</value>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@class = 'u-MarginLeft-small']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-MarginLeft-small</value>
+   </webElementProperties>
 </WebElementEntity>

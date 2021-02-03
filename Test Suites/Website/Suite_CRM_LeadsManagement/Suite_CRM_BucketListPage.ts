@@ -22,6 +22,18 @@
          <value></value>
          <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3fd88256-bc8a-4453-be43-a85c79377a21</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>bce3bdae-2ef2-46b3-8be1-ea3f8ba0eb20</guid>
@@ -117,7 +129,7 @@
       <guid>cde60c1b-78ad-419e-8a28-668e58e4352c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagementURLWIthDiffModule</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagementURLWithDiffModule</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

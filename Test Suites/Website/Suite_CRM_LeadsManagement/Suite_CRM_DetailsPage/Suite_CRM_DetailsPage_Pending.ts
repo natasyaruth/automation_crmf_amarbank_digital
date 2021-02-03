@@ -22,6 +22,18 @@
          <value></value>
          <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3fd88256-bc8a-4453-be43-a85c79377a21</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>158855d6-a6db-4f17-b8bb-d3b578387a8d</guid>
@@ -96,7 +108,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a591dfaa-45de-48d3-a765-fb7974012864</guid>
+      <guid>6364f50f-cc5c-40d7-89f1-0f0299cad566</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Details Page/TC_LeadsManagementContentPopUpPendingReason</testCaseId>
@@ -129,6 +141,144 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>6823ea9a-e991-4b3b-ba90-b2afb97fcb21</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>6cfec6cd-0c50-40d8-8830-0252da619131</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Details Page/TC_LeadsManagementSubmitSinglePendingReason</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>aa72a87a-04b0-4819-8418-4b0dc633bc10</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0bed14df-ab38-406b-852f-804cbab995ba</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52f40a23-a05d-4768-aed9-155ba3a095d7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9fff4086-22f4-42a5-823b-2d6d782d4685</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5ea4288f-6e43-4a26-b641-88e2b8924158</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c1b67a05-8acd-40ae-b60f-df84829e61c6</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>b59d665f-956a-47f8-b798-f818a216cf95</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Details Page/TC_LeadsManagementSubmitMultiPendingReason</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7c78ac76-5251-4efc-9402-af443fdc3f40</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>475cac29-2f09-43ed-bd15-56133ec06af9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>028145b0-c2af-4e64-913c-42fceb04ec08</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>20678ebf-b6cf-43e5-b84c-b52b97e3efc2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e4d49780-5882-4ae2-b127-2031ad8f3257</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d0a112bc-43d9-4758-a00d-43dfee28a25e</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>0301eab1-d98c-4c6e-8886-5d3ef77ec6f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Details Page/TC_LeadsManagementReasonSpecialCase</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6a8d9282-d48f-4a86-8cfc-be8d89224434</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5fffb01c-5947-4314-95ec-c0caba7ff233</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4ff6cf47-d63a-455d-8fa1-00e3bb872844</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>077478a3-8a5f-4fc4-b1e8-1292943a32e3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>485d9faa-29ba-4975-950e-7d12f6b298e9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ac1649a5-bdd9-4a2f-b327-19a8ea169de7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c3294d78-c5bd-4c1e-8b01-e049a7ff4355</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagementBackToBucketlist</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cc67e748-de6d-4a69-8147-7f95d6b6b6b9</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

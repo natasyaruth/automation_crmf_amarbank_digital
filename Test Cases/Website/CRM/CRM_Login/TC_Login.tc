@@ -13,7 +13,7 @@
       <name>Btnlogin</name>
    </variable>
    <variable>
-      <defaultValue>'Email atau ponsel'</defaultValue>
+      <defaultValue>'@amarbank.co.id'</defaultValue>
       <description></description>
       <id>90084b35-f3a5-46da-8d0d-446d669b0bbb</id>
       <masked>false</masked>
