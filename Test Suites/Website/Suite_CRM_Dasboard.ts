@@ -15,12 +15,12 @@
       <guid>af32d9df-f164-4b3e-ac24-aaac68f48846</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Develop_CRM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
+         <variableId>93f3c10f-6c5d-4816-8804-5ea06dc1beb4</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -40,6 +40,15 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>144bc495-cfdd-46a8-8e2a-4a6f0f9f66f3</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -51,6 +60,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>144bc495-cfdd-46a8-8e2a-4a6f0f9f66f3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
+         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>144bc495-cfdd-46a8-8e2a-4a6f0f9f66f3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
+         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -65,17 +86,26 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>144bc495-cfdd-46a8-8e2a-4a6f0f9f66f3</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e5984c61-c772-47c6-a281-12dda7c0bfc7</guid>
+      <guid>a285b9fa-f20b-4038-8496-2b813cfe2752</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>f7fe9db8-a5ea-49c4-848e-f2443ac61b8f</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -87,12 +117,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>6d08b958-71fe-4f46-94df-f5102d97318a</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ce89f75e-3052-494c-9414-62721765c0cd</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

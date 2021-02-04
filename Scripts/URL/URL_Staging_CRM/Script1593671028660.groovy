@@ -20,6 +20,10 @@ WebUI.openBrowser('')
 
 WebUI.maximizeWindow()
 
+<<<<<<< HEAD
 WebUI.navigateToUrl(staging_LoginURL)
 
 WebUI.authenticate(staging_LoginURL, username, password, 0)
+=======
+WebUI.maximizeWindow()
+>>>>>>> d20bff913a79c8ef7a3803afef5ee04995bd7057

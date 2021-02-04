@@ -18,3 +18,5 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/LinkCSRManagement'))
 
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), 20)
+

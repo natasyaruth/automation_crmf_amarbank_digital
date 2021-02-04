@@ -16,7 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+
 WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
 
 WebUI.verifyTextPresent(Subrole, false)
+
+WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
+
+WebUI.verifyTextPresent(Subrole, false)
+
 
