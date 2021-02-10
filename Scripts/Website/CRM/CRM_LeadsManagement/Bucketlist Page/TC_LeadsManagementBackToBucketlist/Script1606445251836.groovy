@@ -19,6 +19,4 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnBack'))
 
 WebUI.waitForPageLoad(8)
 
-//WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/Table'), 10)
-
 WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)

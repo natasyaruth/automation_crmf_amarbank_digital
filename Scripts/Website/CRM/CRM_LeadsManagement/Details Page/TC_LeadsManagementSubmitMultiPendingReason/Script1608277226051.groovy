@@ -66,8 +66,6 @@ WebElement table = driver.findElement(By.xpath('//*[@id="root"]//table/tbody'))
  
 List<WebElement> listRows = table.findElements(By.tagName('tr'))
  
-println('No. of rows: ' + listRows.size())
- 
 boolean flagLoop = false
 Loop:
 while(flagLoop == false){
@@ -82,8 +80,15 @@ while(flagLoop == false){
 		}
 	}
 	if(flagLoop == false){
-		WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
-		WebUI.waitForPageLoad(3)
+		def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan')),
+		    expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
+		if(expectedFirst.equals(expectedLast)){
+			println("Phonenumber: "+noHandphone+" didn't exists on the table")
+			flagLoop = true
+		} else{
+			WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
+		    WebUI.waitForPageLoad(3)
+		}		
 	}
  }
 
