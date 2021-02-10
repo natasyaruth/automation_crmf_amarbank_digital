@@ -28,6 +28,15 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -53,10 +62,22 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
+         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
+         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

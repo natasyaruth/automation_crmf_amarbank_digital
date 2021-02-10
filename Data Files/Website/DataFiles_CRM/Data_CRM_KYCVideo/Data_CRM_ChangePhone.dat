@@ -6,9 +6,9 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>6f8f3847-9249-46f8-8e21-dcf132a002a0</dataFileGUID>
-   <dataSourceUrl>D:\CRMF Automation\tunaiku_crmf_automation\Data Files\Website\DataFiles_CRM\DataExcel_KYCVideo\Data_CRM_Changephone.xlsx</dataSourceUrl>
+   <dataSourceUrl>../../CRMF Automation/tunaiku_crmf_automation/Data Files/Website/DataFiles_CRM/DataExcel_KYCVideo/Data_CRM_Changephone.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
-   <isInternalPath>false</isInternalPath>
+   <isInternalPath>true</isInternalPath>
    <properties>
       <entry>
          <key>readAsString</key>

@@ -37,8 +37,9 @@ WebUI.waitForPageLoad(2)
 
 WebUI.delay(1)
 
-def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan')),
-    expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
+def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan'))
+
+def expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
 
 WebUI.verifyEqual(expectedFirst, expectedLast)
 

@@ -95,7 +95,7 @@
    <testCaseLink>
       <guid>ffc4ad80-3a41-4d22-a65f-94acf0008f41</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -131,7 +131,7 @@
    <testCaseLink>
       <guid>cbedd409-5d08-4e08-9356-b4768ca4645b</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -143,7 +143,7 @@
    <testCaseLink>
       <guid>49199f36-ebac-49f9-b0ed-16e29cfae0c7</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -200,7 +200,7 @@
    <testCaseLink>
       <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -215,19 +215,25 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</variableId>
+         <variableId>3fdda270-3a55-4f9f-8e8d-b6b5821893e0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6d08b958-71fe-4f46-94df-f5102d97318a</variableId>
+         <variableId>b39b1373-7bfd-4aaa-86d4-0dc0f687d7e7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f6262c46-1bfb-4fc6-9c73-31c7c07d57c4</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -278,7 +284,7 @@
    <testCaseLink>
       <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -461,7 +467,7 @@
    <testCaseLink>
       <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -524,7 +530,7 @@
    <testCaseLink>
       <guid>5e5034f5-08f0-41f6-998e-f94c3f39d966</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -663,6 +669,12 @@
          <type>DATA_COLUMN</type>
          <value>Filter Custome Type </value>
          <variableId>aedb7070-2f03-419e-a917-6ba6182094b5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a7e12d13-b5df-472c-821d-a44c76c95b33</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -907,11 +919,17 @@
          <value>KtpCitizenship</value>
          <variableId>203abfd6-d085-48f4-857a-8c35b815652c</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>72ce5562-ae45-458b-8c40-611ee5215ab5</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>fb7bc328-b7a8-4f82-85b3-448a3ced40d8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>

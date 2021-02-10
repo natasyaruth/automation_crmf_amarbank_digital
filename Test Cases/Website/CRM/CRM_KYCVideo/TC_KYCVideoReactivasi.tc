@@ -10,27 +10,27 @@
       <description></description>
       <id>71b5e8cc-7992-48c1-8cdb-62aae702209e</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>e3ffa357-8804-434a-9070-8d78d736305f</id>
       <masked>false</masked>
-      <name>AdditionalNote</name>
+      <name>additionalNote</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>e88d93e7-3937-4268-baed-af86f97bcd9c</id>
       <masked>false</masked>
-      <name>Other</name>
+      <name>other</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>f778f7cd-4507-4fda-ad57-d69d27240213</id>
       <masked>false</masked>
-      <name>ChangePhoneReason</name>
+      <name>changePhoneReason</name>
    </variable>
 </TestCaseEntity>

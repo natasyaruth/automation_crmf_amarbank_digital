@@ -10,14 +10,14 @@
       <description></description>
       <id>5b05df14-fbb4-4573-8105-1604479400ee</id>
       <masked>false</masked>
-      <name>dev_loginURL</name>
+      <name>devLoginURL</name>
    </variable>
    <variable>
       <defaultValue>'https://staging-crm-rekol.tunaiku.com/login'</defaultValue>
       <description></description>
       <id>7745b3b1-623a-4fab-8a4d-611ec73a12fc</id>
       <masked>false</masked>
-      <name>Stg_loginURL</name>
+      <name>stgLoginURL</name>
    </variable>
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>

@@ -32,8 +32,8 @@
          <combinationType>ONE</combinationType>
          <id>144bc495-cfdd-46a8-8e2a-4a6f0f9f66f3</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>3-3</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
@@ -98,13 +98,19 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</variableId>
+         <variableId>3fdda270-3a55-4f9f-8e8d-b6b5821893e0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6d08b958-71fe-4f46-94df-f5102d97318a</variableId>
+         <variableId>b39b1373-7bfd-4aaa-86d4-0dc0f687d7e7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f6262c46-1bfb-4fc6-9c73-31c7c07d57c4</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

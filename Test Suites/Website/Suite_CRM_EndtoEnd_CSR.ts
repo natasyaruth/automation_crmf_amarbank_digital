@@ -130,6 +130,12 @@
          <value>Filter Custome Type </value>
          <variableId>aedb7070-2f03-419e-a917-6ba6182094b5</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a7e12d13-b5df-472c-821d-a44c76c95b33</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b2aab237-96c9-4e15-8887-2c51528f95b4</guid>
@@ -372,6 +378,12 @@
          <type>DATA_COLUMN</type>
          <value></value>
          <variableId>203abfd6-d085-48f4-857a-8c35b815652c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>72ce5562-ae45-458b-8c40-611ee5215ab5</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

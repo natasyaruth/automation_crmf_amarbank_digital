@@ -10,6 +10,6 @@
       <description></description>
       <id>3112816a-74a6-4477-8065-057e397aa7cb</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
    </variable>
 </TestCaseEntity>

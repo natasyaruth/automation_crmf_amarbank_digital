@@ -24,10 +24,19 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bce3bdae-2ef2-46b3-8be1-ea3f8ba0eb20</guid>
+      <guid>4db934c6-e707-4090-8c2b-567aedf2283c</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>7d9af6af-b3e8-4448-81d4-3bee26128822</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>2-2</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -39,6 +48,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7d9af6af-b3e8-4448-81d4-3bee26128822</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
+         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>7d9af6af-b3e8-4448-81d4-3bee26128822</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
+         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -53,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>7d9af6af-b3e8-4448-81d4-3bee26128822</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>

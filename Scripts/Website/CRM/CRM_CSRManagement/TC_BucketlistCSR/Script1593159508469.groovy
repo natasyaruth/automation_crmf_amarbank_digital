@@ -16,14 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent('Cari berdasarkan Nama, No. KTP, No. Handphone atau No. Rekening. Tidak harus semua field search diisi', 
-    false)
+WebUI.verifyTextPresent(headerBucketlistCSR, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_All, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterAll, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_NewCustomer, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNewCustomer, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_CustomerSenyumku, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterCustomerSenyumku, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'))
 
@@ -37,12 +36,12 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'))
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage'))
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), SearchPhoneNumber)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), searchPhoneNumber)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), SearchPhoneNumber, 
-    SearchPhoneNumber, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), searchPhoneNumber, 
+    searchPhoneNumber, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), Filter_NotContinue, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNotContinue, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnSearch'))
 

@@ -15,17 +15,23 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtRequestID'), SearchRequestID)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtRequestID'), searchRequestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
+WebUI.verifyTextPresent(headerKYCVerificationDetail, false)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
+
+WebUI.verifyTextPresent(KTPDataValidation, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnProceedKycVideoCall'))
 
-WebUI.verifyTextPresent(KonfirmationToProcessKYCVideo, false)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSendToVideoCall'), 5)
+
+WebUI.verifyElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSendToVideoCall'))
 
