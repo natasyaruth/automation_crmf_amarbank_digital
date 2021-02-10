@@ -31,7 +31,7 @@ WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent(Verify_FieldPassword, false)
+WebUI.verifyTextPresent(verifyFieldPassword, false)
 
 WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.decode(CryptoUtil.getDefault(gmailPassword)))
 
