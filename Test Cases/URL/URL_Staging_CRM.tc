@@ -12,4 +12,18 @@
       <masked>false</masked>
       <name>stagingLoginURL</name>
    </variable>
+   <variable>
+      <defaultValue>'senyuman'</defaultValue>
+      <description></description>
+      <id>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'20senyumku20'</defaultValue>
+      <description></description>
+      <id>3fd88256-bc8a-4453-be43-a85c79377a21</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
 </TestCaseEntity>

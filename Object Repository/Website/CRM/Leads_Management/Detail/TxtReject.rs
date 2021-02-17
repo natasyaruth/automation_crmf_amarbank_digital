@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtReasonReject</name>
+   <name>TxtReject</name>
    <tag></tag>
-   <elementGuidId>12d47250-ecb9-4246-9041-958c1bfcca42</elementGuidId>
+   <elementGuidId>e8183e2e-7fc2-4d77-bd92-cd6e04726caa</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;root&quot;]//section/div/div/h4</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;outer-root&quot;]//section/h5/b</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

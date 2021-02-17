@@ -22,26 +22,13 @@ import org.openqa.selenium.WebElement as WebElement
 
 WebUI.verifyTextPresent(headerCustomerDetail, false)
 
-WebDriver driver = DriverFactory.getWebDriver()
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnDataPhonenumber'))
+
+noHandphone = WebUI.getAttribute(findTestObject('Website/CRM/Leads_Management/Detail/TxtPhonenumber'), attributeName)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenRejectModal'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
-
-WebElement testLblValue
-int tempArray = 1
-for(int i=0;i<listElement.size();i++){
-	String testObject = 'Website/CRM/Leads_Management/Detail/'+listElement.get(i)
-	testLblValue = driver.findElement(By.xpath('//*[@id="outer-root"]//div['+tempArray+']/label'))
-		
-	WebUI.verifyElementVisible(findTestObject(testObject))	
-    WebUI.verifyEqual(testLblValue.getText(),listValue.get(i))
-	tempArray++
-}			
-
-WebUI.verifyElementNotClickable(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectConfirmation'))
-
-WebUI.verifyElementClickable(findTestObject('Website/CRM/Leads_Management/Detail/BtnCancelRejectConfirmation'))
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOther'))
 
@@ -49,16 +36,48 @@ WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/
 
 WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/TxtRejectReasonModal'), inputText)
 
-WebUI.verifyElementClickable(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectConfirmation'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectConfirmation'))
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCancelRejectConfirmation'))
+WebUI.waitForPageLoad(7)
 
-WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenRejectModal'))
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
+WebElement table = driver.findElement(By.xpath('//*[@id="root"]//table/tbody'))
+ 
+List<WebElement> listRows = table.findElements(By.tagName('tr'))
+ 
+boolean flagLoop = false
+Loop:
+while(flagLoop == false){
+	for (int rows=0;rows<listRows.size();rows++){
+		List<WebElement> listColumn = listRows.get(rows).findElements(By.tagName('td'))
+		for(int column=2;column<3;column++){
+			if(listColumn.get(column).getText().equals(noHandphone)){
+				listColumn.get(5).findElement(By.tagName('a')).click()
+				flagLoop = true
+				break Loop
+			}
+		}
+	}
+	if(flagLoop == false){
+		def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan')),
+		    expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
+		if(expectedFirst.equals(expectedLast)){
+			println("Phonenumber: "+noHandphone+" didn't exists on the table")
+			flagLoop = true
+		} else{
+			WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
+		    WebUI.waitForPageLoad(3)
+		}		
+	}
+ }
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCancelRejectConfirmation'))
+WebUI.waitForPageLoad(5)
 
-WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/StatRed'), status)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), reasonType)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonValueReject'), inputText)

@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.time.LocalDateTime
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -14,54 +13,47 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.apache.commons.lang3.StringUtils
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-def noHandphone = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtNoHandphoneFirstRow')) 
-
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
-
-WebUI.waitForPageLoad(5)
-
 WebUI.verifyTextPresent(headerCustomerDetail, false)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenPendingModal'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnDataPhonenumber'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/HeaderChangeSchedule'), 5)
+noHandphone = WebUI.getAttribute(findTestObject('Website/CRM/Leads_Management/Detail/TxtPhonenumber'), attributeName)
 
-WebUI.verifyTextPresent(headerAturJadwal, false)
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenRejectModal'))
 
-def inputDate = new Date()
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 10)
 
-def calendar = Calendar.getInstance()
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkNotWantingNewAccount'))
 
-calendar.setTime(inputDate)
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkNoReason'))
 
-calendar.add(Calendar.DATE, 1)
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkTooMuchData'))
 
-inputDate = calendar.getTime().format('dd/MM/yyyy')+' 0:00'
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkHaveMoreThanOneAccount'))
 
-WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/DrpPendingSchedule'), inputDate)
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOther'))
 
-WebUI.sendKeys(findTestObject('Website/CRM/Leads_Management/Detail/DrpPendingSchedule'), Keys.chord(Keys.ENTER))
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtRejectReasonModal'), 5)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOtherNeeds'))
+WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/TxtRejectReasonModal'), listText.get(0))
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPendingConfirmation'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectConfirmation'))
 
-WebUI.waitForPageLoad(8)
+WebUI.waitForPageLoad(7)
 
 WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement table = driver.findElement(By.xpath('//*[@id="root"]//table/tbody'))
-
+ 
 List<WebElement> listRows = table.findElements(By.tagName('tr'))
 
 boolean flagLoop = false
@@ -70,12 +62,10 @@ while(flagLoop == false){
 	for (int rows=0;rows<listRows.size();rows++){
 		List<WebElement> listColumn = listRows.get(rows).findElements(By.tagName('td'))
 		for(int column=2;column<3;column++){
-			if(listColumn.get(column).getText().equals(noHandphone)){	
-				def actualJadwal = listColumn.get(4).getText()
-				println actualJadwal
-				WebUI.verifyEqual(actualJadwal, inputDate)	
+			if(listColumn.get(column).getText().equals(noHandphone)){
+				listColumn.get(5).findElement(By.tagName('a')).click()
 				flagLoop = true
-				break Loop			
+				break Loop
 			}
 		}
 	}
@@ -90,4 +80,21 @@ while(flagLoop == false){
 		    WebUI.waitForPageLoad(3)
 		}		
 	}
+ }
+
+WebUI.waitForPageLoad(5)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/StatRed'), status)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), reasonType)
+
+WebElement testElement
+int tempArray = 1
+for(int i=0;i<listText.size();i++){
+	testElement = driver.findElement(By.xpath('//*[@id="root"]//section/div/div/ul/li['+tempArray+']'))
+	WebUI.verifyEqual(testElement.getText(), listText.get(i))
+	tempArray++
 }
+
+
+

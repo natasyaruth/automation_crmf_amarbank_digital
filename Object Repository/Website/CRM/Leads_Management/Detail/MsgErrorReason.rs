@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DrpPendingSchedule</name>
+   <name>MsgErrorReason</name>
    <tag></tag>
-   <elementGuidId>c4168480-507c-4c8c-b9ad-c25413e47e72</elementGuidId>
+   <elementGuidId>91952046-ea2f-4ea4-a305-9a277580d49f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'DtpPendingSchedule']</value>
+         <value>//*[@class = 'u-fs-small u-clr-danger u-mg-top-xxsmall']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>DtpPendingSchedule</value>
+      <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
    </webElementProperties>
 </WebElementEntity>
