@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementSubmitSingleRejectReason</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c44d86c4-8ea7-49cb-8333-2fda42811dbb</testCaseGuid>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>cf775940-f3ee-4a93-b2f0-1aea520f211c</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>'Offline123457890 licenses are for using KSE without the internet. Once generated, the license cannot be revoked or transferred to a different machine.'</defaultValue>
+      <description></description>
+      <id>eb3e729e-38d0-45ab-b801-5a5b72872b12</id>
+      <masked>false</masked>
+      <name>inputText</name>
+   </variable>
+   <variable>
+      <defaultValue>'value'</defaultValue>
+      <description></description>
+      <id>7f987db3-dfd5-4baa-bc6c-548d65c7457f</id>
+      <masked>false</masked>
+      <name>attributeName</name>
+   </variable>
+   <variable>
+      <defaultValue>'Ditolak'</defaultValue>
+      <description></description>
+      <id>18e0c87e-3497-4b54-a5e9-41797537c1af</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alasan Penolakan'</defaultValue>
+      <description></description>
+      <id>3967f2f6-afec-42d4-8e8b-9bce159512ab</id>
+      <masked>false</masked>
+      <name>reasonType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>9e741bed-19ec-464f-8564-099656ec66b3</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+</TestCaseEntity>

@@ -3,7 +3,6 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import java.time.LocalDateTime
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -14,27 +13,22 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
-import org.apache.commons.lang3.StringUtils
+import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-def noHandphone = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtNoHandphoneFirstRow')) 
-
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
-
-WebUI.waitForPageLoad(5)
-
 WebUI.verifyTextPresent(headerCustomerDetail, false)
+
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnDataPhonenumber'))
+
+noHandphone = WebUI.getAttribute(findTestObject('Website/CRM/Leads_Management/Detail/TxtPhonenumber'), attributeName)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenPendingModal'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/HeaderChangeSchedule'), 5)
-
-WebUI.verifyTextPresent(headerAturJadwal, false)
 
 def inputDate = new Date()
 
@@ -50,32 +44,38 @@ WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/DrpPendingSche
 
 WebUI.sendKeys(findTestObject('Website/CRM/Leads_Management/Detail/DrpPendingSchedule'), Keys.chord(Keys.ENTER))
 
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkCallDisconnected'))
+
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOtherNeeds'))
+
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ChkOther'))
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtPendingReason'), 5)
+
+WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/TxtPendingReason'), listText.get(0))
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPendingConfirmation'))
 
-WebUI.waitForPageLoad(8)
+WebUI.waitForPageLoad(7)
 
 WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
 WebElement table = driver.findElement(By.xpath('//*[@id="root"]//table/tbody'))
-
+ 
 List<WebElement> listRows = table.findElements(By.tagName('tr'))
-
+ 
 boolean flagLoop = false
 Loop:
 while(flagLoop == false){
 	for (int rows=0;rows<listRows.size();rows++){
 		List<WebElement> listColumn = listRows.get(rows).findElements(By.tagName('td'))
 		for(int column=2;column<3;column++){
-			if(listColumn.get(column).getText().equals(noHandphone)){	
-				def actualJadwal = listColumn.get(4).getText()
-				println actualJadwal
-				WebUI.verifyEqual(actualJadwal, inputDate)	
+			if(listColumn.get(column).getText().equals(noHandphone)){
+				listColumn.get(5).findElement(By.tagName('a')).click()
 				flagLoop = true
-				break Loop			
+				break Loop
 			}
 		}
 	}
@@ -90,4 +90,21 @@ while(flagLoop == false){
 		    WebUI.waitForPageLoad(3)
 		}		
 	}
+ }
+
+WebUI.waitForPageLoad(5)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/StatBlue'), status)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Detail/TxtReason'), reasonType)
+
+WebElement testElement
+int tempArray = 1
+for(int i=0;i<listText.size();i++){
+	testElement = driver.findElement(By.xpath('//*[@id="root"]//following::p/ul/li['+tempArray+']'))
+	WebUI.verifyEqual(testElement.getText(), listText.get(i))
+	tempArray++
 }
+
+
+

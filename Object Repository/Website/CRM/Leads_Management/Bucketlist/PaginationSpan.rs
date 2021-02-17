@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'PaginationSpan']</value>
+         <value>//*[@class = 'page-current']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>PaginationSpan</value>
+      <value>page-current</value>
    </webElementProperties>
 </WebElementEntity>
