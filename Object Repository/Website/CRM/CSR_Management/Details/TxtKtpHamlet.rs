@@ -3,7 +3,7 @@
    <description></description>
    <name>TxtKtpHamlet</name>
    <tag></tag>
-   <elementGuidId>baf086c8-481d-46ed-8b17-0f30669e51e5</elementGuidId>
+   <elementGuidId>dd90c523-36bd-407e-a6df-e8a641e176fd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>

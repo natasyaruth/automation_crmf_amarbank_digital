@@ -10,41 +10,41 @@
       <description></description>
       <id>52d4834e-98bb-4fb5-8c65-490a49d22898</id>
       <masked>false</masked>
-      <name>Verify_Bucketlist</name>
+      <name>verifyBucketlist</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>6ed1c6fd-529d-41d4-81dd-bc685c13bbb6</id>
       <masked>false</masked>
-      <name>Email_Type</name>
+      <name>emailType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>a725c43f-bdac-41e1-9c5c-c90b331a3900</id>
       <masked>false</masked>
-      <name>RequestID</name>
+      <name>requestID</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>a245d26e-860f-40c0-b77b-d4c303479b61</id>
       <masked>false</masked>
-      <name>StartFilterDate</name>
+      <name>startFilterDate</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>9410424f-c211-457b-af6b-5ae7d06d0dd8</id>
       <masked>false</masked>
-      <name>EndFilterDate</name>
+      <name>endFilterDate</name>
    </variable>
    <variable>
-      <defaultValue>'DEDEH HARYANI'</defaultValue>
+      <defaultValue>''</defaultValue>
       <description></description>
       <id>9ac28364-ac33-44c0-8f03-5f3d7c1de26b</id>
       <masked>false</masked>
-      <name>RequestIDName</name>
+      <name>requestIDName</name>
    </variable>
 </TestCaseEntity>

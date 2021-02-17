@@ -91,6 +91,18 @@
          <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(3, 4)</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
+         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>ee434800-2dc8-4388-b8f4-2cf8fa9c5481</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
+         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>27f9eee9-4807-438f-b8fa-b4e395cbcef2</guid>

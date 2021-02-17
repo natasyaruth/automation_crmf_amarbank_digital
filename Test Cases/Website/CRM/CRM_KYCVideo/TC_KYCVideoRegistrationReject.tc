@@ -10,76 +10,83 @@
       <description></description>
       <id>e3c1387c-6ba5-42bd-a502-9cb468211894</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Video Request'</defaultValue>
+      <description></description>
+      <id>c7b975f5-5664-4bac-b50c-54ce1ada53ea</id>
+      <masked>false</masked>
+      <name>headerBucketlistPage</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>c7989565-e298-4781-a540-20d3afe9c1eb</id>
       <masked>false</masked>
-      <name>AddressType</name>
+      <name>addressType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>3d01ac6e-a0c6-4a50-b5b3-69e3ba3bdd52</id>
       <masked>false</masked>
-      <name>FullAddress</name>
+      <name>fullAddress</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>5fc9ab3e-caa2-4d65-b919-cbdcf4614c5f</id>
       <masked>false</masked>
-      <name>Neighbourhood</name>
+      <name>neighbourhood</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>4a30aeaf-61c8-4f0e-85fe-10a3e895b739</id>
       <masked>false</masked>
-      <name>Hamlet</name>
+      <name>hamlet</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>ea9577dd-d7aa-4099-a087-d573a5e71277</id>
       <masked>false</masked>
-      <name>Province</name>
+      <name>province</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>b05f6e22-39ce-4219-b3f8-7855e619b329</id>
       <masked>false</masked>
-      <name>District</name>
+      <name>district</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>55e0d324-14ca-47d8-8e85-2e9cd601917f</id>
       <masked>false</masked>
-      <name>Subdistrict</name>
+      <name>subdistrict</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>250238e1-20cc-4103-a028-9e566e4d41ff</id>
       <masked>false</masked>
-      <name>Village</name>
+      <name>village</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>b53b0ec0-9f04-48e5-a83d-61c4accd51e9</id>
       <masked>false</masked>
-      <name>AdditionalNote</name>
+      <name>additionalNote</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>b4c77f00-99eb-453a-8477-6b002c3de6fd</id>
       <masked>false</masked>
-      <name>Other</name>
+      <name>other</name>
    </variable>
 </TestCaseEntity>

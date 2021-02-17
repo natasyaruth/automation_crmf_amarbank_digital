@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtRT</name>
+   <name>TxtHamlet</name>
    <tag></tag>
-   <elementGuidId>df4fb947-d79e-4187-9986-23e874ef2276</elementGuidId>
+   <elementGuidId>79c080d8-8e09-4761-9291-9b1fa063ca43</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'rt']</value>
+         <value>//*[@id = 'TxtHamlet']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>id</name>
       <type>Main</type>
-      <value>rt</value>
+      <value>TxtHamlet</value>
    </webElementProperties>
 </WebElementEntity>

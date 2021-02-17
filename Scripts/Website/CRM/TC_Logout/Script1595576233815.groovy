@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/Login/linkLogout'))
 
-WebUI.delay(10)
+WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Login/linkLogout'), 5, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.deleteAllCookies()
 

@@ -10,14 +10,14 @@
       <description></description>
       <id>95c30b00-860a-4e22-a193-e9d5ef9f0cde</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
    </variable>
    <variable>
       <defaultValue>'Apakah anda yakin nasabah ini harus melakukan proses KYC'</defaultValue>
       <description></description>
       <id>ccf7265e-6edf-46bb-96fa-7c4143755b5c</id>
       <masked>false</masked>
-      <name>KonfirmationToProcessKYCVideo</name>
+      <name>konfirmationToProcessKYCVideo</name>
    </variable>
    <variable>
       <defaultValue>'KYC Verification'</defaultValue>
@@ -25,5 +25,19 @@
       <id>72cd92b8-8ad6-41c4-aa6a-edc76ea5fb16</id>
       <masked>false</masked>
       <name>KYCVerificationBucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Customer Detail'</defaultValue>
+      <description></description>
+      <id>d979b51a-11af-424e-a1fc-d6ee1132191d</id>
+      <masked>false</masked>
+      <name>headerKYCVerificationDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d4cfb63d-31b8-4f30-a44b-b0c78ee234da</id>
+      <masked>false</masked>
+      <name>KTPDataValidation</name>
    </variable>
 </TestCaseEntity>

@@ -10,90 +10,90 @@
       <description></description>
       <id>7827ee78-9890-4bbf-8c91-fc6dfad1c919</id>
       <masked>false</masked>
-      <name>SearchKYC</name>
+      <name>searchKYC</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>44d986de-b584-4dcd-8f12-85b3dc45b481</id>
       <masked>false</masked>
-      <name>Email</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>714f7e3a-4be8-4041-ab0e-667432bdc534</id>
-      <masked>false</masked>
-      <name>AddressType</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>40466077-20a2-400a-835f-f85eb3c6d3b7</id>
-      <masked>false</masked>
-      <name>FullAddress</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>fef9cbf1-5e65-4e38-97ec-e14545750971</id>
-      <masked>false</masked>
-      <name>Neighbourhood</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>b48610fa-0e2b-4b09-b913-d9840a9b4578</id>
-      <masked>false</masked>
-      <name>Hamlet</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>b0a6fd50-02c9-4aab-b625-044a059c7ebc</id>
-      <masked>false</masked>
-      <name>Province</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>f01cfd8c-0d3a-4702-8890-a7e639b8deea</id>
-      <masked>false</masked>
-      <name>District</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>e460ce72-71d6-4ee0-9ab7-8877079e488d</id>
-      <masked>false</masked>
-      <name>Subdistrict</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>d6d01127-835c-46de-bc58-5adf299afbc7</id>
-      <masked>false</masked>
-      <name>Village</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>5f7a415a-bcda-4f35-a065-8a185003402b</id>
-      <masked>false</masked>
-      <name>AdditionalNote</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>db998fda-60f9-4833-818e-9c8c202760ec</id>
-      <masked>false</masked>
-      <name>Other</name>
+      <name>email</name>
    </variable>
    <variable>
       <defaultValue>'Hal-hal yang perlu dikonfirmasi dalam proses KYC:'</defaultValue>
       <description></description>
       <id>05e40580-46ff-4429-aa0e-3f8f007de784</id>
       <masked>false</masked>
-      <name>verify_checkbox</name>
+      <name>verifyCheckbox</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>714f7e3a-4be8-4041-ab0e-667432bdc534</id>
+      <masked>false</masked>
+      <name>addressType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>40466077-20a2-400a-835f-f85eb3c6d3b7</id>
+      <masked>false</masked>
+      <name>fullAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fef9cbf1-5e65-4e38-97ec-e14545750971</id>
+      <masked>false</masked>
+      <name>neighbourhood</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b48610fa-0e2b-4b09-b913-d9840a9b4578</id>
+      <masked>false</masked>
+      <name>hamlet</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b0a6fd50-02c9-4aab-b625-044a059c7ebc</id>
+      <masked>false</masked>
+      <name>province</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f01cfd8c-0d3a-4702-8890-a7e639b8deea</id>
+      <masked>false</masked>
+      <name>district</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e460ce72-71d6-4ee0-9ab7-8877079e488d</id>
+      <masked>false</masked>
+      <name>subDistrict</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d6d01127-835c-46de-bc58-5adf299afbc7</id>
+      <masked>false</masked>
+      <name>village</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5f7a415a-bcda-4f35-a065-8a185003402b</id>
+      <masked>false</masked>
+      <name>additionalNote</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>db998fda-60f9-4833-818e-9c8c202760ec</id>
+      <masked>false</masked>
+      <name>other</name>
    </variable>
 </TestCaseEntity>

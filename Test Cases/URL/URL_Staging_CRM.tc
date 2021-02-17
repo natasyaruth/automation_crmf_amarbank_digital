@@ -10,7 +10,7 @@
       <description></description>
       <id>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</id>
       <masked>false</masked>
-      <name>staging_LoginURL</name>
+      <name>stagingLoginURL</name>
    </variable>
    <variable>
       <defaultValue>'senyuman'</defaultValue>

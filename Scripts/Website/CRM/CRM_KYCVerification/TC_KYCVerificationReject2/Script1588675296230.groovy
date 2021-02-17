@@ -16,13 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtRequestID'), SearchRequestID)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtRequestID'), searchRequestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
+WebUI.waitForPageLoad(10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject2'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject2'))
 
@@ -42,9 +46,36 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Rejectio
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkOther'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/TxtOther'), Other)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/TxtOther'), other)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkNotPassVerification'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkCustomerIDNotEKTP'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkIDPhotoNotFound'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkSelfiesNotFound'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkNameNotMatch'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkPhotoNotClear'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkIDPhotoNotClear'), 
+    10)
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/ChkOther'), 10)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/TxtOther'), other)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/BtnSend'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/RejectionReason/BtnCloseModal'))
+
+WebUI.waitForPageLoad(10)
 

@@ -18,37 +18,37 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/LinkAssignCMS'))
 
-WebUI.verifyTextPresent(Verify_Bucketlist, false)
+WebUI.verifyTextPresent(verifyBucketlist, false)
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign CMS/TxtReferenceId'), SearchRefID)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Assign CMS/TxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/LinkReqId1'))
 
-WebUI.verifyTextPresent(Verify_details, false)
+WebUI.verifyTextPresent(verifyDetails, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnCancel'))
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign CMS/TxtReferenceId'), SearchRefID)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Assign CMS/TxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/LinkReqId1'))
 
-WebUI.verifyTextPresent(Verify_status_waiting, false)
+WebUI.verifyTextPresent(verifyStatusWaiting, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSend'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnCloseModal'))
 
-WebUI.setText(findTestObject('Website/Card Management/AssignCMS/TxtReferenceId'), SearchRefID)
+WebUI.setText(findTestObject('Website/Card Management/AssignCMS/TxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/LinkReqId1'))
 
-WebUI.verifyTextPresent(Verify_status_Done, false)
+WebUI.verifyTextPresent(verifyStatusDone, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/AssignCMS/BtnBack'))
 

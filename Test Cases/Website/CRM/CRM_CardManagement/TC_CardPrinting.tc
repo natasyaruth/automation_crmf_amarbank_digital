@@ -10,6 +10,6 @@
       <description></description>
       <id>619157c9-4b2f-4a75-927c-1522db9cbaac</id>
       <masked>false</masked>
-      <name>Verify_Bucketlist</name>
+      <name>verifyBucketlist</name>
    </variable>
 </TestCaseEntity>

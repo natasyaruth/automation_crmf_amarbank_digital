@@ -10,27 +10,27 @@
       <description></description>
       <id>2994d9d1-1e6e-4a3e-bb92-5322c24e5293</id>
       <masked>false</masked>
-      <name>SearchRefID</name>
+      <name>searchRefID</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>714abfb5-21a9-42cf-bfcb-88f53cea75d8</id>
       <masked>false</masked>
-      <name>VerifyRequestID</name>
+      <name>verifyRequestID</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>0ca73235-4abc-43f7-9021-39f82bd59715</id>
       <masked>false</masked>
-      <name>VerifyStatusDeliveryEnRoute</name>
+      <name>verifyStatusDeliveryEnRoute</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>b397b3fc-f543-452c-ab88-639963e1b97e</id>
       <masked>false</masked>
-      <name>VerifyStatusSuccessDelivery</name>
+      <name>verifyStatusSuccessDelivery</name>
    </variable>
 </TestCaseEntity>

@@ -18,5 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(dev_LoginURL)
+WebUI.navigateToUrl(devLoginURL)
+
+WebUI.maximizeWindow()
+
+WebUI.authenticate(GlobalVariable.devHostname, GlobalVariable.authUsername, GlobalVariable.authPassword, 5)
 
