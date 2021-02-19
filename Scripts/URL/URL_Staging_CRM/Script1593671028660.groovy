@@ -18,6 +18,9 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(staging_LoginURL)
+WebUI.navigateToUrl(stagingLoginURL)
 
 WebUI.maximizeWindow()
+
+WebUI.authenticate(GlobalVariable.stagHostname, GlobalVariable.authUsername, GlobalVariable.authPassword, 5)
+

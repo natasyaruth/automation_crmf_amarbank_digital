@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementReasonSpecialCase</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2319f3e5-cdbb-4e51-afcc-819dbff75926</testCaseGuid>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>6a8d9282-d48f-4a86-8cfc-be8d89224434</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>' '</defaultValue>
+      <description></description>
+      <id>5fffb01c-5947-4314-95ec-c0caba7ff233</id>
+      <masked>false</masked>
+      <name>inputText</name>
+   </variable>
+   <variable>
+      <defaultValue>'Offline123457890 licenses are for using KSE without the internet. Once generated, the license cannot be revoked or transferred to a different machine.Test'</defaultValue>
+      <description></description>
+      <id>4ff6cf47-d63a-455d-8fa1-00e3bb872844</id>
+      <masked>false</masked>
+      <name>inputText2</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alasan penolakan wajib diisi'</defaultValue>
+      <description></description>
+      <id>077478a3-8a5f-4fc4-b1e8-1292943a32e3</id>
+      <masked>false</masked>
+      <name>msgErrorEmptyRejectReason</name>
+   </variable>
+   <variable>
+      <defaultValue>150</defaultValue>
+      <description></description>
+      <id>485d9faa-29ba-4975-950e-7d12f6b298e9</id>
+      <masked>false</masked>
+      <name>length</name>
+   </variable>
+   <variable>
+      <defaultValue>'Alasan penundaan wajib diisi'</defaultValue>
+      <description></description>
+      <id>ac1649a5-bdd9-4a2f-b327-19a8ea169de7</id>
+      <masked>false</masked>
+      <name>msgErrorEmptyPendingReason</name>
+   </variable>
+</TestCaseEntity>

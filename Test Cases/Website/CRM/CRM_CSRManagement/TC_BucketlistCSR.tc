@@ -6,38 +6,45 @@
    <comment></comment>
    <testCaseGuid>53ab4e9a-785c-4191-8c11-cdcba64190ff</testCaseGuid>
    <variable>
+      <defaultValue>'CSR Management'</defaultValue>
+      <description></description>
+      <id>a7e12d13-b5df-472c-821d-a44c76c95b33</id>
+      <masked>false</masked>
+      <name>headerBucketlistCSR</name>
+   </variable>
+   <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>0f93e54c-a404-4763-94b8-4c2b132e0b28</id>
       <masked>false</masked>
-      <name>SearchPhoneNumber</name>
+      <name>searchPhoneNumber</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>7df56b8f-3c75-46f5-a538-c4cbf532fa32</id>
       <masked>false</masked>
-      <name>Filter_All</name>
+      <name>filterAll</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>21b2d72a-2419-4039-a5dc-6df72d262dbe</id>
       <masked>false</masked>
-      <name>Filter_CustomerSenyumku</name>
+      <name>filterCustomerSenyumku</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>a308eff3-ea5f-40c6-886f-2856fbb34471</id>
       <masked>false</masked>
-      <name>Filter_NewCustomer</name>
+      <name>filterNewCustomer</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>aedb7070-2f03-419e-a917-6ba6182094b5</id>
       <masked>false</masked>
-      <name>Filter_NotContinue</name>
+      <name>filterNotContinue</name>
    </variable>
 </TestCaseEntity>

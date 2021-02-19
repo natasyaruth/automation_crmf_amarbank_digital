@@ -18,30 +18,24 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkVerification'))
 
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), SearchRequestID)
-
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), searchRequestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
-WebUI.delay(2)
+WebUI.waitForPageLoad(5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.delay(2)
+WebUI.waitForElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'), 5)
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'), 
-    2)
-
-WebUI.delay(10)
+    5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BackToBucketlist'))
 
-WebUI.delay(5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 5)
 

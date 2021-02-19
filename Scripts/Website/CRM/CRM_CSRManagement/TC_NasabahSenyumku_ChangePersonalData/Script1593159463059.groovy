@@ -20,13 +20,68 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPersonalData'
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'))
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), '', false)
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'))
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), '')
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), '')
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), '', false)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), '')
+WebUI.verifyTextNotPresent(motherName, false)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber, 
+    5)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, 3)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName, 3)
+
+WebUI.verifyElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'))
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'))
+
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmploymentData'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'), 5)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'))
+
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, 3)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, 3)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, 3)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, 3)
+
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, false)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, 3)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName, 3)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'))
+
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5)
 

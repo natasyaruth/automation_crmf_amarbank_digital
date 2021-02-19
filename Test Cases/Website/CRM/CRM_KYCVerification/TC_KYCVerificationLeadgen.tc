@@ -10,6 +10,48 @@
       <description></description>
       <id>6d4f92e0-84eb-49be-aa48-d0b09f645973</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>491d6f23-ebb4-4298-a906-5b182bfa0aa7</id>
+      <masked>false</masked>
+      <name>customerType</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4044ac66-4871-4e00-8bb9-e53d315468c9</id>
+      <masked>false</masked>
+      <name>headerDetailKYCVerification</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5008e233-d6c4-45ed-a01b-5328abe4e3e5</id>
+      <masked>false</masked>
+      <name>ktpNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9397d101-eaae-4320-a49f-9bd021a4667f</id>
+      <masked>false</masked>
+      <name>ktpName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>96552c97-e67e-4baa-aba9-21e0ec50cabf</id>
+      <masked>false</masked>
+      <name>birthDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f6a426a4-f995-4a1b-9100-f83efe4ff919</id>
+      <masked>false</masked>
+      <name>motherName</name>
    </variable>
 </TestCaseEntity>

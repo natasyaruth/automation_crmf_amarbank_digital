@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtRT</name>
+   <name>BtnCloseModal</name>
    <tag></tag>
-   <elementGuidId>df4fb947-d79e-4187-9986-23e874ef2276</elementGuidId>
+   <elementGuidId>edcfe0c1-f558-4360-81f4-75fac1dc2bed</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'rt']</value>
+         <value>//*[@id = 'BtnCloseModal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>id</name>
       <type>Main</type>
-      <value>rt</value>
+      <value>BtnCloseModal</value>
    </webElementProperties>
 </WebElementEntity>

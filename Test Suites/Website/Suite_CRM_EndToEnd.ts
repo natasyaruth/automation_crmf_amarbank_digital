@@ -34,6 +34,18 @@
          <value></value>
          <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3fd88256-bc8a-4453-be43-a85c79377a21</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>4bb662b9-5adb-4f26-bab7-841d749cd2a8</guid>
@@ -215,13 +227,19 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b1ca4dbd-b47f-4d3c-b900-2a859ff89afa</variableId>
+         <variableId>3fdda270-3a55-4f9f-8e8d-b6b5821893e0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6d08b958-71fe-4f46-94df-f5102d97318a</variableId>
+         <variableId>b39b1373-7bfd-4aaa-86d4-0dc0f687d7e7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f6262c46-1bfb-4fc6-9c73-31c7c07d57c4</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -664,6 +682,12 @@
          <value>Filter Custome Type </value>
          <variableId>aedb7070-2f03-419e-a917-6ba6182094b5</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a7e12d13-b5df-472c-821d-a44c76c95b33</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d518e89f-ca49-48aa-85d8-10189e3022d4</guid>
@@ -906,6 +930,12 @@
          <type>DATA_COLUMN</type>
          <value>KtpCitizenship</value>
          <variableId>203abfd6-d085-48f4-857a-8c35b815652c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>72ce5562-ae45-458b-8c40-611ee5215ab5</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

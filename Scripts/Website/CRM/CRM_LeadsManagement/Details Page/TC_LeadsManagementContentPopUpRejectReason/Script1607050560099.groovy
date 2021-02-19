@@ -26,7 +26,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenRejectModal'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
 
 WebElement testLblValue
 int tempArray = 1
@@ -53,12 +53,12 @@ WebUI.verifyElementClickable(findTestObject('Website/CRM/Leads_Management/Detail
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCancelRejectConfirmation'))
 
-WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), 5)
+WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenRejectModal'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCancelRejectConfirmation'))
 
-WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReasonReject'), 5)
+WebUI.waitForElementNotVisible(findTestObject('Website/CRM/Leads_Management/Detail/TxtReject'), 5)

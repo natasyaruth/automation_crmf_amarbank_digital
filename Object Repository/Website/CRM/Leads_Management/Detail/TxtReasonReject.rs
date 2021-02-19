@@ -3,11 +3,11 @@
    <description></description>
    <name>TxtReasonReject</name>
    <tag></tag>
-   <elementGuidId>b5fbf9b5-0e4c-46b2-91d2-b3aa2c159352</elementGuidId>
+   <elementGuidId>12d47250-ecb9-4246-9041-958c1bfcca42</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;outer-root&quot;]//h5/b</value>
+         <value>//*[@id=&quot;root&quot;]//section/div/div/h4</value>
       </entry>
       <entry>
          <key>BASIC</key>

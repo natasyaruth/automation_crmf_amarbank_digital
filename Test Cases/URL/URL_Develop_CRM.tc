@@ -10,6 +10,6 @@
       <description></description>
       <id>93f3c10f-6c5d-4816-8804-5ea06dc1beb4</id>
       <masked>false</masked>
-      <name>dev_LoginURL</name>
+      <name>devLoginURL</name>
    </variable>
 </TestCaseEntity>

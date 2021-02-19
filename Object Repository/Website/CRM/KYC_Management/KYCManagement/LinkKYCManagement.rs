@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'LinkKYCManagement']</value>
+         <value>//*[@id = 'LinkKycManagement']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>LinkKYCManagement</value>
+      <value>LinkKycManagement</value>
    </webElementProperties>
 </WebElementEntity>

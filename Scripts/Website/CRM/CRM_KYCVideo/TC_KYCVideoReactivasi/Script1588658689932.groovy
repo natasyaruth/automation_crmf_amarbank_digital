@@ -18,83 +18,104 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), SearchRequestID)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), searchRequestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'))
 
-WebUI.verifyTextPresent(ChangePhoneReason, false)
+WebUI.waitForPageLoad(30)
+
+WebUI.verifyTextPresent(changePhoneReason, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpName'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpName'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpNumber'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpNumber'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBirthDate'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBirthDate'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkMotherName'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkMotherName'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBlockedReason'))
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBlockedReason'), 
+    10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkNewPhoneNumber'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkNewPhoneNumber'), 
+    10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmail'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmail'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkCardDeliveryAddress'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkCardDeliveryAddress'), 
+    10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkPhotoCapture'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkPhotoCapture'), 
+    10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'))
 
-WebUI.delay(2)
+WebUI.waitForImagePresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'), 10)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'))
+CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'), 
+    10)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAdditionalNote'), AdditionalNote)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAdditionalNote'), additionalNote)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnSend'))
 
-WebUI.delay(2)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkDeviceNotCompatible'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkDeviceNotCompatible'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkErrorWavecell'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkErrorWavecell'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNetworkIssues'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNetworkIssues'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkRecordingIsNotClear'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkRecordingIsNotClear'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkPhotosIsNotSame'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkPhotosIsNotSame'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkOther'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkOther'), 10)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), Other)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), other)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), other)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/BtnSend'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/BtnCloseModal'))
 
-WebUI.delay(7)
+WebUI.waitForPageLoad(30)
 

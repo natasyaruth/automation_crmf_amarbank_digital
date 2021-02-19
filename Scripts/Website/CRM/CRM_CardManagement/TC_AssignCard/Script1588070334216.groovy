@@ -18,30 +18,22 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkAssignCard'))
 
-WebUI.verifyTextPresent(Verify_Bucketlist, false)
+WebUI.verifyTextPresent(verifyBucketlist, false)
 
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtReferenceId'), SearchRefID)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/LinkRequestID'))
 
-WebUI.delay(1)
+WebUI.verifyTextPresent(verifyDetails, false)
 
-WebUI.verifyTextPresent(Verify_Details, false)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardNumber'), cardNumber)
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardNumber'), CardNumber)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardName'), CardName)
-
-WebUI.delay(2)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Assign_Card/TxtCardName'), cardName)
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/Card Management/Assign_Card/BtnSend'), 
-    0)
+    10)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign_Card/BtnCloseModal'))
 

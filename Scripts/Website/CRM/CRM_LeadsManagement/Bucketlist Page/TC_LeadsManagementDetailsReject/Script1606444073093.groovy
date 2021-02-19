@@ -33,7 +33,8 @@ println('No. of rows: ' + listRows.size())
 
 boolean flagLoop = false
 
-Loop: while (flagLoop == false) {
+Loop: 
+while (flagLoop == false) {
     for (int rows = 0; rows < listRows.size(); rows++) {
         List<WebElement> listColumn = listRows.get(rows).findElements(By.tagName('td'))
 
@@ -41,22 +42,21 @@ Loop: while (flagLoop == false) {
             if (listColumn.get(column).getText().equalsIgnoreCase(Status)) {
                 listColumn.get(5).findElement(By.tagName('a')).click()
                 flagLoop = true
-                Loop: break
+                break Loop
             }
         }
     }
     
     if (flagLoop == false) {
         WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
-        WebUI.waitForPageLoad(3)
+        WebUI.waitForPageLoad(5)
     }
 }
 
-WebUI.waitForPageLoad(3)
+WebUI.waitForPageLoad(5)
 
 WebUI.verifyTextPresent(headerCustomerDetails, false)
 
 def actualStatus = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Detail/StatRed'))
 
 WebUI.verifyEqual(actualStatus, Status)
-

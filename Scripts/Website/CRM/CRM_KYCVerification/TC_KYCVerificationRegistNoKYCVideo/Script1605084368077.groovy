@@ -20,11 +20,11 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketli
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(Verification_Detail, false)
+WebUI.verifyTextPresent(verificationDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'), 0)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'))
 
@@ -32,38 +32,20 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), NIK)
 
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtName'), name)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtName'), Name)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtBirthPlace'), birthPlace)
 
-WebUI.delay(1)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpGender'), gender, false)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtBirthPlace'), Birthplace)
-
-//WebUI.delay(5)
-//WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DtpBirthDate'), Birthdate)
-WebUI.delay(1)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpGender'), Gender, false)
-
-WebUI.delay(1)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpBloodType'), BloodType, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpBloodType'), bloodType, 
     false)
 
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtAddress'), address)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtAddress'), Address)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRT'), neighbourhood)
 
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRT'), Neighbourhood)
-
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRW'), Hamlet)
-
-WebUI.delay(2)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRW'), hamlet)
 
 //WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtVillage'), Village)
 //WebUI.waitForElementPresent(findTestObject(null), 6)
@@ -71,65 +53,61 @@ WebUI.delay(2)
 //WebUI.delay(5)
 //WebUI.verifyTextPresent(VerifyDistrict, false)
 //WebUI.delay(2)
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), Religion, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), religion, false)
 
-WebUI.delay(3)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), religion, 
+    5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), MaritalStatus, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), maritalStatus, 
     false)
 
-WebUI.delay(3)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), 
+    maritalStatus, 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), Occupation, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), occupation, 
     false)
 
-WebUI.delay(3)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), occupation, 
+    5)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), Citizenship)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), citizenship)
 
-WebUI.delay(3)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), citizenship, 
+    5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbDated'))
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbLifetime'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave'))
 
-WebUI.delay(2)
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave'), 5)
 
-WebUI.verifyTextPresent(VerifySuccessSavedKTP, false)
+WebUI.verifyTextPresent(verifySuccessSavedKTP, false)
 
-WebUI.delay(3)
+WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.verifyTextPresent(VerifyEmailhasverified, false)
-
-WebUI.delay(2)
+WebUI.verifyTextPresent(verifyEmailhasverified, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.delay(5)
+WebUI.verifyElementNotVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1'))
 
-WebUI.verifyTextPresent(Verify_KTPValidation, false)
+WebUI.verifyTextPresent(verifyKTPValidation, false)
 
-WebUI.verifyTextPresent(VerifyNIK, false)
+WebUI.verifyTextPresent(verifyNIK, false)
 
-WebUI.verifyTextPresent(VerifyName, false)
+WebUI.verifyTextPresent(verifyName, false)
 
-WebUI.verifyTextPresent(VerifyBirthdate2, false)
+WebUI.verifyTextPresent(verifyBirthdate2, false)
 
-WebUI.verifyTextPresent(VerifyMotherName, false)
-
-WebUI.delay(2)
+WebUI.verifyTextPresent(verifyMotherName, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 10)
 
-WebUI.verifyTextPresent(VerifySuccessKYCVerification, false)
+WebUI.verifyTextPresent(verifySuccessKYCVerification, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 

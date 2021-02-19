@@ -16,25 +16,17 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting'))
 
-WebUI.verifyTextPresent(Verify_Bucketlist, false)
+WebUI.verifyTextPresent(verifyBucketlist, false)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint'))
-
-WebUI.delay(2)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/BtnPrintCard'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/BtnCloseInformation'))
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Pickup List/ChkDataReprint1'))
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Pickup List/BtnReprint'))
-
-WebUI.delay(3)
 

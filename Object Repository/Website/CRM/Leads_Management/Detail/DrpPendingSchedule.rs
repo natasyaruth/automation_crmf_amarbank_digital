@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'DrpPendingSchedule']</value>
+         <value>//*[@id = 'DtpPendingSchedule']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>DrpPendingSchedule</value>
+      <value>DtpPendingSchedule</value>
    </webElementProperties>
 </WebElementEntity>

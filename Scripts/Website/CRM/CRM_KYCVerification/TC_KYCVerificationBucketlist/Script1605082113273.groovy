@@ -22,11 +22,11 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketli
 
 WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyTextPresent(Verify_Bucketlist, false)
+WebUI.verifyTextPresent(verifyBucketlist, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnNextPage'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnFirstPage'), 4)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnFirstPage'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnLastPage'))
 
@@ -34,28 +34,23 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketli
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnFirstPage'))
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType'), Email_Type, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType'), emailType, 
     false)
 
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType'), 
+    emailType, 3)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpStartFilterDate'), StartFilterDate)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpStartFilterDate'), startFilterDate)
 
-WebUI.delay(2)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpEndFilterDate'), EndFilterDate)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpEndFilterDate'), endFilterDate)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnShow'))
 
-WebUI.delay(1)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 5)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), RequestID)
-
-WebUI.delay(2, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), requestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
-WebUI.verifyTextPresent(RequestIDName, false)
-
-WebUI.delay(1)
+WebUI.verifyTextPresent(requestIDName, false)
 

@@ -18,31 +18,31 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkVerification'))
 
-WebUI.verifyTextPresent('Data Verification', false)
+WebUI.verifyTextPresent(headerDetailKYCVerification, false)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), SearchRequestID)
-
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), searchRequestID)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
-WebUI.delay(1)
+WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent('Tunaiku Leadgen', false)
+WebUI.verifyTextPresent(customerType, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.delay(1)
+WebUI.verifyTextPresent(ktpNumber, false)
+
+WebUI.verifyTextPresent(ktpName, false)
+
+WebUI.verifyTextPresent(birthDate, false)
+
+WebUI.verifyTextPresent(motherName, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept3'))
-
-WebUI.delay(20)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 

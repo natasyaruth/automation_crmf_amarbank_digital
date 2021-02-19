@@ -20,3 +20,5 @@ WebUI.openBrowser('')
 
 WebUI.navigateToUrl(devURL_LiveReporting)
 
+WebUI.maximizeWindow()
+

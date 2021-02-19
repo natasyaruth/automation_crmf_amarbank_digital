@@ -16,231 +16,230 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent('Nasabah Tidak Melanjutkan', false)
+WebUI.verifyTextPresent(customerNotContinue, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/Linkreferral'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'))
-
-WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkEmail'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkKtp'))
-
-WebUI.delay(1)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddress'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDatareferral'))
 
-WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
 
-WebUI.delay(2)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 10)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 5)
 
-WebUI.verifyTextPresent(Email, false)
+WebUI.verifyMatch(email, email, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'))
 
-WebUI.delay(2)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditreferral'))
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), Referral)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), referral)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'))
 
-WebUI.verifyTextPresent(SuccessSaveReferral, false)
+WebUI.verifyTextPresent(successSaveReferral, false)
 
-WebUI.delay(2)
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditKtp'))
 
-WebUI.delay(2)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'), 5)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), KTPNumber)
 
-WebUI.delay(1)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), phoneNumber, phoneNumber, 
+    5)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), KTPName)
 
-WebUI.delay(2)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), KTPName, KTPName, 3)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace)
 
-WebUI.delay(1)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace, 
+    KTPBirthPlace, 3)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false)
 
-WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), 5)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress, 3)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), KTPNeighbourhood)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), KTPNeighbourhood, 
+    3)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet, 3)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 10)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage, 3)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, 3)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, 
+    3)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, 3)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), KTPCitizenship)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), KTPCitizenship, 
+    3, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/RbLifetime'))
 
-WebUI.delay(3)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'))
 
-WebUI.delay(5)
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataDeliveryAddress'))
 
-WebUI.delay(5)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'))
 
-WebUI.delay(2)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), AddressType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), addressType, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), addressType, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), FullAddress, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), fullAddress, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), Neighbourhood, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), neighbourhood, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), neighbourhood, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), Hamlet, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), hamlet, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), Province, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), province, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), province, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), District, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), Subdistrict, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), Village, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, 3)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'))
 
-WebUI.delay(1)
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'))
 
-WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'))
 
-WebUI.delay(2)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), Education, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, false)
 
-WebUI.delay(2)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), MotherName)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), motherName)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), motherName, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), ReferencePhoneNumber)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber, 
+    5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), Religion, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), ReferenceName)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), AccountPurpose, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), accountPurpose, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), accountPurpose, 
+    3)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'))
 
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmploymentData'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'))
 
-WebUI.delay(1)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), SourceIncome, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), WorkType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), CompanyField, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), MonthlyIncome, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, 3)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), JobPosition, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, false)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, 3)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), CompanyName)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName)
 
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName, 3)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'))
 
-WebUI.delay(2)
+WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataSelfieAndKtpImages'))
 
-WebUI.delay(1)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'))
 

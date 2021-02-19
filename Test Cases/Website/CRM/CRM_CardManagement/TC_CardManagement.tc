@@ -10,27 +10,27 @@
       <description></description>
       <id>2d58831d-c62b-46f5-a334-1fec34c9a5c4</id>
       <masked>false</masked>
-      <name>Assign_Card</name>
+      <name>assignCard</name>
    </variable>
    <variable>
       <defaultValue>'Card Printing'</defaultValue>
       <description></description>
       <id>0bba2b7a-4ffc-4362-8cd3-68e725dcdfd1</id>
       <masked>false</masked>
-      <name>Card_Printing</name>
+      <name>cardPrinting</name>
    </variable>
    <variable>
       <defaultValue>'Delivery Status'</defaultValue>
       <description></description>
       <id>9767a600-b9fc-47ec-b679-b2f305e59a23</id>
       <masked>false</masked>
-      <name>Delivery_Status</name>
+      <name>deliveryStatus</name>
    </variable>
    <variable>
       <defaultValue>'Assign CMS'</defaultValue>
       <description></description>
       <id>2203214e-cb12-456d-ab78-8233e46015d8</id>
       <masked>false</masked>
-      <name>Assign_CMS</name>
+      <name>assignCMS</name>
    </variable>
 </TestCaseEntity>

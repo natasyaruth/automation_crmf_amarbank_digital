@@ -10,13 +10,20 @@
       <description></description>
       <id>cee19093-7dc7-476d-9581-5c6840864aa4</id>
       <masked>false</masked>
-      <name>SearchRequestID</name>
+      <name>searchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Customer Detail'</defaultValue>
+      <description></description>
+      <id>c522ae6d-5297-4aaa-8316-c9be60f150a2</id>
+      <masked>false</masked>
+      <name>headerKYCDetail</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>a6e5581a-786a-4fa6-be1f-eea7707e9aab</id>
       <masked>false</masked>
-      <name>Other</name>
+      <name>other</name>
    </variable>
 </TestCaseEntity>

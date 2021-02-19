@@ -18,11 +18,11 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Card_Management/LinkCardManagement'))
 
-WebUI.verifyTextPresent(Assign_Card, false)
+WebUI.verifyTextPresent(assignCard, false)
 
-WebUI.verifyTextPresent(Card_Printing, false)
+WebUI.verifyTextPresent(cardPrinting, false)
 
-WebUI.verifyTextPresent(Delivery_Status, false)
+WebUI.verifyTextPresent(deliveryStatus, false)
 
-WebUI.verifyTextPresent(Assign_CMS, false)
+WebUI.verifyTextPresent(assignCMS, false)
 

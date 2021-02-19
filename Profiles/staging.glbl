@@ -129,4 +129,19 @@
       <initValue>''</initValue>
       <name>hashNinjaVanSuccessfulDelivery</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-crm-rekol.tunaiku.com/login'</initValue>
+      <name>stagHostname</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'senyuman'</initValue>
+      <name>authUsername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'20senyumku20'</initValue>
+      <name>authPassword</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

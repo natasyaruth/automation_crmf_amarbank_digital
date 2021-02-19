@@ -36,51 +36,50 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnF
 
 WebUI.waitForElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnFirstPage'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), Cust_All, false)
-
-WebUI.verifyTextPresent(Cust_All, false)
-
-WebUI.delay(2)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), Cust_NasabahBaru, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerAll, 
     false)
 
-WebUI.verifyTextPresent(Cust_NasabahBaru, false)
+WebUI.verifyTextPresent(customerAll, false)
 
-WebUI.delay(2)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), Cust_NasabahSenyumku, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerNasabahBaru, 
     false)
 
-WebUI.verifyTextPresent(Cust_NasabahSenyumku, false)
+WebUI.verifyTextPresent(customerNasabahBaru, false)
 
 WebUI.delay(2)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), Cust_TunaikuLeadgen, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerNasabahSenyumku, 
     false)
 
-WebUI.verifyTextPresent(Cust_TunaikuLeadgen, false)
+WebUI.verifyTextPresent(customerNasabahSenyumku, false)
 
-WebUI.delay(2)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), Cust_SenyumkuDeposito, 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerTunaikuLeadgen, 
     false)
 
-WebUI.verifyTextPresent(Cust_SenyumkuDeposito, false)
+WebUI.verifyTextPresent(customerTunaikuLeadgen, false)
 
-WebUI.delay(2)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerSenyumkuDeposito, 
+    false)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), Filter_StartDate)
+WebUI.verifyTextPresent(customerSenyumkuDeposito, false)
 
-WebUI.delay(3)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), filterStartDate)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), Filter_EndDate)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), filterStartDate, 
+    5)
 
-WebUI.delay(3)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), filterEndDate)
+
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), filterEndDate, 
+    5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnShow'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), SearchKYC)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 10)
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), searchKYC)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnSearch'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 10)
 

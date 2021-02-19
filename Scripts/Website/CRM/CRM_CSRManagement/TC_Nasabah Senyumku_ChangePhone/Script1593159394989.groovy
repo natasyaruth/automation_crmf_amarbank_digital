@@ -16,19 +16,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent(Verify_NasabahSenyumku, false)
+WebUI.verifyTextPresent(verifyNasabahSenyumku, false)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'))
 
-WebUI.delay(2)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPhonenumber'), 5)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPhonenumber'))
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), PhoneNumber)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePhonenumber'), 5)
+
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), phoneNumber)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePhonenumber'))
 
-WebUI.verifyTextPresent(Verify_ChangePhone_Success, false)
+WebUI.verifyTextPresent(verifyChangePhoneSuccess, false)
 

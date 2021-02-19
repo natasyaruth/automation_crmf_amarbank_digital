@@ -6,18 +6,25 @@
    <comment></comment>
    <testCaseGuid>cebf03e3-8719-43d9-936b-da37233a1c96</testCaseGuid>
    <variable>
+      <defaultValue>'Nasabah Tidak Melanjutkan'</defaultValue>
+      <description></description>
+      <id>72ce5562-ae45-458b-8c40-611ee5215ab5</id>
+      <masked>false</masked>
+      <name>customerNotContinue</name>
+   </variable>
+   <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>e8332311-7580-4509-9adf-51c42832fb95</id>
       <masked>false</masked>
-      <name>PhoneNumber</name>
+      <name>phoneNumber</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>d0a5cb24-e3f4-4b3d-adeb-ac80ab9a37e0</id>
       <masked>false</masked>
-      <name>Email</name>
+      <name>email</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
@@ -38,154 +45,154 @@
       <description></description>
       <id>8f52f7a7-3cb4-4c27-90cf-5ab48637a31f</id>
       <masked>false</masked>
-      <name>AddressType</name>
+      <name>addressType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>800af962-e9f6-4902-b60a-2e3811ac2855</id>
       <masked>false</masked>
-      <name>FullAddress</name>
+      <name>fullAddress</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>d4fffeb9-f8d2-46ec-b6bc-78f1df72e5d3</id>
       <masked>false</masked>
-      <name>Neighbourhood</name>
+      <name>neighbourhood</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>9555d595-a54d-4561-a120-3aebb464f835</id>
       <masked>false</masked>
-      <name>Hamlet</name>
+      <name>hamlet</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>5a02e682-ac32-4985-b4d6-f1d9b9d8a4ab</id>
       <masked>false</masked>
-      <name>Province</name>
+      <name>province</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>0e69631f-a511-428b-a2a4-b06a17dac5c3</id>
       <masked>false</masked>
-      <name>District</name>
+      <name>district</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>706cf75a-cb3a-40da-8bff-040a15c1a82a</id>
       <masked>false</masked>
-      <name>Subdistrict</name>
+      <name>subdistrict</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>f417e27f-1575-447a-9861-3667286c8706</id>
       <masked>false</masked>
-      <name>Village</name>
+      <name>village</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>088f569c-48b5-4616-b868-dbef5943818a</id>
       <masked>false</masked>
-      <name>Education</name>
+      <name>education</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>e25b6cff-1f30-494b-8d4d-128be0a007c2</id>
       <masked>false</masked>
-      <name>MotherName</name>
+      <name>motherName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>3a051ff3-75ab-4dc5-88cc-02599fed1ded</id>
       <masked>false</masked>
-      <name>ReferencePhoneNumber</name>
+      <name>referencePhoneNumber</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>8e791701-b95d-4624-9e5f-b010d27c2462</id>
       <masked>false</masked>
-      <name>Religion</name>
+      <name>religion</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>63bc87a5-e329-4872-9f6d-d606c2eac056</id>
       <masked>false</masked>
-      <name>ReferenceName</name>
+      <name>referenceName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>38397d49-1692-4360-b555-1369cd29c8d3</id>
       <masked>false</masked>
-      <name>AccountPurpose</name>
+      <name>accountPurpose</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>643d0ec4-4cf6-4a9f-bb18-39c4927f2457</id>
       <masked>false</masked>
-      <name>SourceIncome</name>
+      <name>sourceIncome</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>cd243312-65f8-4b28-be1c-3799d4217928</id>
       <masked>false</masked>
-      <name>WorkType</name>
+      <name>workType</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>5bde94b2-dcce-448b-9da0-b14c133758c4</id>
       <masked>false</masked>
-      <name>CompanyField</name>
+      <name>companyField</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>dadbc048-3f27-49ad-bb27-abaf1837274a</id>
       <masked>false</masked>
-      <name>MonthlyIncome</name>
+      <name>monthlyIncome</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>fd10c2ad-e555-43e9-9974-37fff0d942d7</id>
       <masked>false</masked>
-      <name>JobPosition</name>
+      <name>jobPosition</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>7c451d80-3927-4939-9e8f-a1d01a70f206</id>
       <masked>false</masked>
-      <name>CompanyName</name>
+      <name>companyName</name>
    </variable>
    <variable>
       <defaultValue>'Kode Referal berhasil disimpan'</defaultValue>
       <description></description>
       <id>046c52fb-12a7-4a05-a76b-2f4817cae698</id>
       <masked>false</masked>
-      <name>SuccessSaveReferral</name>
+      <name>successSaveReferral</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
       <id>f381e7db-9cb6-4427-9343-5ee15b8bf4de</id>
       <masked>false</masked>
-      <name>Referral</name>
+      <name>referral</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

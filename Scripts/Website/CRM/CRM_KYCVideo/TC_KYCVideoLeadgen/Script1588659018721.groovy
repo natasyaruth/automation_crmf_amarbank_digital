@@ -18,141 +18,134 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
 
-WebUI.delay(3)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), SearchKYC)
-
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), searchKYC)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnSearch'))
 
-WebUI.delay(1)
-
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnEditEmail'))
+WebUI.waitForPageLoad(10)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtEmail'), Email)
+WebUI.verifyElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtEmail'), email, 10)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnSaveEmail'))
+WebUI.verifyTextPresent(verifyKYCconfirmation, false)
 
-WebUI.verifyTextPresent('Hal-hal yang perlu dikonfirmasi dalam proses KYC:', false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), addressType, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), AddressType, false)
-
-WebUI.delay(1)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), addressType, 
+    10)
 
 WebUI.clearText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtFullAdress'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtFullAdress'), FullAddress)
-
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtFullAdress'), fullAddress)
 
 WebUI.clearText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtNeighbourhood'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtNeighbourhood'), Neighbourhood)
-
-WebUI.delay(1)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtNeighbourhood'), neighbourhood)
 
 WebUI.clearText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtHamlet'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtHamlet'), Hamlet)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtHamlet'), hamlet)
 
-WebUI.delay(1)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), province, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), Province, false)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), province, 10)
 
-WebUI.delay(1)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), district, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), District, false)
+WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), district, 0)
 
-WebUI.delay(1)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), subDistrict, false)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), Subdistrict, false)
-
-WebUI.delay(1)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), Village, false)
-
-WebUI.delay(1)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), village, false)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpName'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpName'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpNumber'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpNumber'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBirthDate'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkBirthDate'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkMotherName'))
 
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmail'))
-
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkMotherName'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkCardDeliveryAddress'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkCardDeliveryAddress'), 
+    10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpImage'))
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpImage'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpFace'))
 
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpFace'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkPhotoCapture'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkEmailConfirmation'))
-
-WebUI.delay(1)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkPhotoCapture'), 
+    10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'))
 
-WebUI.delay(2)
+WebUI.waitForImagePresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgKTPKYC'), 10)
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgKTPKYC'), 
-    0)
+    10)
 
-WebUI.delay(2)
+WebUI.verifyImagePresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'))
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'), 
-    0)
+    10)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAdditionalNote'), AdditionalNote)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAdditionalNote'), additionalNote)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnSend'))
 
-WebUI.delay(2)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkDeviceNotCompatible'))
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkDeviceNotCompatible'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkErrorWavecell'))
 
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkErrorWavecell'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNetworkIssues'))
+
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNetworkIssues'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkRecordingIsNotClear'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkRecordingIsNotClear'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkPhotosIsNotSame'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkPhotosIsNotSame'), 10)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkOther'))
 
-WebUI.delay(2)
+WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkOther'), 10)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), Other)
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), other)
+
+WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/TxtOther'), other)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/BtnSend'))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/BtnCloseModal'))
 
-WebUI.delay(30)
+WebUI.waitForPageLoad(30)
 
