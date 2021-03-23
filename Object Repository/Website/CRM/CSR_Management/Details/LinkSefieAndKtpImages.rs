@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@LinkSefieAndKtpImages = '']</value>
+         <value>//*[@id = 'LinkSefieAndKtpImages']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>LinkSefieAndKtpImages</name>
+      <name>id</name>
       <type>Main</type>
-      <value></value>
+      <value>LinkSefieAndKtpImages</value>
    </webElementProperties>
 </WebElementEntity>

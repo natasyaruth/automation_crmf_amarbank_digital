@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'ChkPhotosIsNotSame']</value>
+         <value>//*[@id = 'ChkPhotoIsNotSame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>ChkPhotosIsNotSame</value>
+      <value>ChkPhotoIsNotSame</value>
    </webElementProperties>
 </WebElementEntity>

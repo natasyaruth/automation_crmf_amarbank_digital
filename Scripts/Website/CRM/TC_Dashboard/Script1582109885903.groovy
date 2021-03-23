@@ -14,6 +14,48 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.By as By
+import org.openqa.selenium.WebDriver as WebDriver
+import org.openqa.selenium.WebElement as WebElement
+
+WebUI.verifyTextPresent(headerDashboard, false)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
+
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 2)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
+
+WebUI.verifyTextPresent(headerKYCVideoRequest, false)
+
+WebDriver driver = DriverFactory.getWebDriver()
+
+WebElement table = driver.findElement(By.xpath('//*[@id="root"]//tbody'))
+
+List<WebElement> listRows = table.findElements(By.tagName('tr'))
+
+List<WebElement> listColumn = listRows.get(0).findElements(By.tagName('td'))
+
+listColumn.get(1).findElement(By.tagName('a')).click()
+
+WebUI.waitForPageLoad(5)
+
+WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+
+WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
+
+WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
+
+WebUI.waitForPageLoad(5)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack'))
+
+WebUI.waitForPageLoad(10)
+
+WebUI.verifyTextPresent(headerKYCVideoRequest, false)
 

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_AssignCMS</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0a990cb7-9f3f-4e19-a332-0dc71a4c6654</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c565d4f7-57ca-43ef-ad7b-f4fb3baf1804</id>
+      <masked>false</masked>
+      <name>searchRefID</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assign CMS'</defaultValue>
+      <description></description>
+      <id>dbb88530-919d-4e73-8acc-4cca0da8c9a7</id>
+      <masked>false</masked>
+      <name>verifyBucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>'Add Card Number'</defaultValue>
+      <description></description>
+      <id>cd85cd85-fbab-409f-86f0-4fb33f9835b3</id>
+      <masked>false</masked>
+      <name>verifyDetails</name>
+   </variable>
+   <variable>
+      <defaultValue>'Menunggu'</defaultValue>
+      <description></description>
+      <id>d5e72163-5932-424e-a76f-ec1ccd3772dd</id>
+      <masked>false</masked>
+      <name>verifyStatusWaiting</name>
+   </variable>
+   <variable>
+      <defaultValue>'Selesai'</defaultValue>
+      <description></description>
+      <id>e82ce1b5-5dfb-45a7-b124-c8a558c44b78</id>
+      <masked>false</masked>
+      <name>verifyStatusDone</name>
+   </variable>
+</TestCaseEntity>

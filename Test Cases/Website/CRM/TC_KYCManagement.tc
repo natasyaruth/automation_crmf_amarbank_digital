@@ -5,4 +5,11 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>942e2062-1b9d-4d29-8b1b-bab0a3294486</testCaseGuid>
+   <variable>
+      <defaultValue>'KYC Video Request'</defaultValue>
+      <description></description>
+      <id>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</id>
+      <masked>false</masked>
+      <name>role_KYC_Video</name>
+   </variable>
 </TestCaseEntity>

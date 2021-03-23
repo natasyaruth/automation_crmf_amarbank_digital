@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Nasabah Senyumku_ChangePhone</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d01b86b7-428c-491b-9fff-f0584ea0eccb</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>34f41ee7-3851-496f-99ab-40361b51ef5d</id>
+      <masked>false</masked>
+      <name>phoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'No. Handphone berhasil disimpan'</defaultValue>
+      <description></description>
+      <id>d7254a1b-e9b7-4294-9ce2-62538361445f</id>
+      <masked>false</masked>
+      <name>verifyChangePhoneSuccess</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah Senyumku'</defaultValue>
+      <description></description>
+      <id>fed77576-18d1-4b35-8f24-f6bc5df9df54</id>
+      <masked>false</masked>
+      <name>verifyNasabahSenyumku</name>
+   </variable>
+</TestCaseEntity>

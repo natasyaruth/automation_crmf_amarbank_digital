@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationReject1</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ff3a5cef-b3f6-4e33-8b33-ea00ceac63d8</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c4a9322b-5f84-44d0-b5ba-1de52cae15a9</id>
+      <masked>false</masked>
+      <name>searchRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Customer Detail'</defaultValue>
+      <description></description>
+      <id>5cd5fdc8-eddd-4307-9193-9797343fbd32</id>
+      <masked>false</masked>
+      <name>headerKYCDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a66fef20-424d-41da-b2e9-5d15dcda083b</id>
+      <masked>false</masked>
+      <name>other</name>
+   </variable>
+</TestCaseEntity>

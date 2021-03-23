@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementBackToBucketlist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3636ac2e-99df-4f5b-93e0-b4a048f3a7a4</testCaseGuid>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>cc67e748-de6d-4a69-8147-7f95d6b6b6b9</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_DeliveryStatus</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e1bf0ba0-3831-4842-8eb0-e1b906254728</testCaseGuid>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2994d9d1-1e6e-4a3e-bb92-5322c24e5293</id>
+      <masked>false</masked>
+      <name>searchRefID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>714abfb5-21a9-42cf-bfcb-88f53cea75d8</id>
+      <masked>false</masked>
+      <name>verifyRequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0ca73235-4abc-43f7-9021-39f82bd59715</id>
+      <masked>false</masked>
+      <name>verifyStatusDeliveryEnRoute</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b397b3fc-f543-452c-ab88-639963e1b97e</id>
+      <masked>false</masked>
+      <name>verifyStatusSuccessDelivery</name>
+   </variable>
+</TestCaseEntity>

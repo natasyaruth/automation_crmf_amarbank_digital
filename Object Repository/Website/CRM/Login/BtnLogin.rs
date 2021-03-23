@@ -3,11 +3,11 @@
    <description></description>
    <name>BtnLogin</name>
    <tag></tag>
-   <elementGuidId>d9504086-cd25-48a1-a041-9fecd421c9a3</elementGuidId>
+   <elementGuidId>fc398b7c-6a6f-4223-8cee-f971efcdb313</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLogin' and @type = 'submit']</value>
+         <value>//*[@id = 'BtnLogin']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,12 +18,5 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnLogin</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>submit</value>
    </webElementProperties>
 </WebElementEntity>

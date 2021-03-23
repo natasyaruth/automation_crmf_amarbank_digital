@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementRequestCancel</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>388a8bd8-8cad-441a-b287-ea019f8b927f</testCaseGuid>
+   <variable>
+      <defaultValue>'Customer Detail'</defaultValue>
+      <description></description>
+      <id>4b2aa0ab-8ce7-4fbe-a062-af86ac5b0ecf</id>
+      <masked>false</masked>
+      <name>headerCustomerDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>'Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu'</defaultValue>
+      <description></description>
+      <id>120cd22c-7983-4d46-9e9a-53910ced70d8</id>
+      <masked>false</masked>
+      <name>msgConfirmation</name>
+   </variable>
+   <variable>
+      <defaultValue>'Leads Management'</defaultValue>
+      <description></description>
+      <id>d2329a2f-02ba-4cda-ae22-af2147c1b7fe</id>
+      <masked>false</masked>
+      <name>headerLeadsManagement</name>
+   </variable>
+</TestCaseEntity>

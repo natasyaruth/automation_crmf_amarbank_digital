@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CardPrinting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>031fa63b-7920-4171-beeb-b41dc1099e9b</testCaseGuid>
+   <variable>
+      <defaultValue>'Card Printing'</defaultValue>
+      <description></description>
+      <id>619157c9-4b2f-4a75-927c-1522db9cbaac</id>
+      <masked>false</masked>
+      <name>verifyBucketlist</name>
+   </variable>
+</TestCaseEntity>
