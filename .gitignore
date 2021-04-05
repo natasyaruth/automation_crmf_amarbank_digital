@@ -6,6 +6,6 @@ Log/
 *.classpath
 appium.Log
 *.project
-/bin/
+bin/
 *.class
 *.apk
