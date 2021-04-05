@@ -9,36 +9,27 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import com.kms.katalon.util.CryptoUtil as CryptoUtil
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.waitForPageLoad(100)
+WebUI.verifyTextPresent(headerCustomerDetail, false)
 
-WebUI.verifyTextPresent(btnLogin, false)
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
-
-WebUI.waitForPageLoad(100)
-
-WebUI.verifyTextPresent(verifyFieldEmail, false)
-
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailAccount'), CryptoUtil.decode(CryptoUtil.getDefault(gmailAccount)))
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
-
-WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
-
-WebUI.verifyTextPresent(verifyFieldPassword, false)
-
-WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.decode(CryptoUtil.getDefault(gmailPassword)))
-
-WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Login/GridInfoLogin'), 100)
-
-WebUI.verifyTextPresent(username, false)
+for (int i=0;i<listIdLabelSection.size();i++){
+	
+	String actualLabel = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Detail/'+listIdLabelSection.get(i)))
+	
+	WebUI.verifyEqual(actualLabel, listLabelSection.get(i))
+	
+	WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/'+listButtonSection.get(i)))
+	
+	if(i == 7){
+		WebUI.verifyElementPresent(findTestObject('Website/CRM/Leads_Management/Detail/BtnSendLinkUploadPhotos'), 10)
+	} else(
+		WebUI.verifyTextPresent(listContentSection.get(i), false)
+	)
+	
+	WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/'+listButtonSection.get(i)))				
+}

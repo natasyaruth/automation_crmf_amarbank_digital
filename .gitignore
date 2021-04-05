@@ -2,8 +2,10 @@ Libs
 Reports/
 .settings/
 Log/
+*.log
 *.classpath
 appium.Log
 *.project
+/bin/
 *.class
-*.log
+*.apk

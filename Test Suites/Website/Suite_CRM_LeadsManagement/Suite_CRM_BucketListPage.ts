@@ -91,18 +91,6 @@
          <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(3, 4)</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(1, 4)</value>
-         <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(2, 4)</value>
-         <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>8e1ff0e7-91a2-48fa-a2f7-6398b622d16a</guid>
