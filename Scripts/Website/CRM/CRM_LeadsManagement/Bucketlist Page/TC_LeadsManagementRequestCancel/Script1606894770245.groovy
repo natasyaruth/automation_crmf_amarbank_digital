@@ -19,7 +19,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerCustomerDetail, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
 
@@ -33,4 +33,4 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnAbort'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)

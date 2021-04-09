@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.verifyTextPresent(headerCustomerDetail, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

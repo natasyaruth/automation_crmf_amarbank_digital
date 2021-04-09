@@ -19,11 +19,4 @@
       <masked>false</masked>
       <name>msgPageNotFound</name>
    </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>12b5921d-9293-4f8b-900d-95a557ffc230</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
-   </variable>
 </TestCaseEntity>

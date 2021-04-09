@@ -12,18 +12,4 @@
       <masked>false</masked>
       <name>Status</name>
    </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>d6ab115b-c685-4f50-9ff5-2bea3b48133e</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
-   </variable>
-   <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>5cf796d6-0ea2-4faa-a2dc-afe736e7b58d</id>
-      <masked>false</masked>
-      <name>headerCustomerDetails</name>
-   </variable>
 </TestCaseEntity>

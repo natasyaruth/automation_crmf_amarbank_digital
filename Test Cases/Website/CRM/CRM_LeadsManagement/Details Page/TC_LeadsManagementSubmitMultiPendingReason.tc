@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>1953f665-a70d-488d-90f8-fac4b503b24e</testCaseGuid>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>7c78ac76-5251-4efc-9402-af443fdc3f40</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>'value'</defaultValue>
       <description></description>
       <id>475cac29-2f09-43ed-bd15-56133ec06af9</id>
@@ -32,13 +25,6 @@
       <id>20678ebf-b6cf-43e5-b84c-b52b97e3efc2</id>
       <masked>false</masked>
       <name>reasonType</name>
-   </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>e4d49780-5882-4ae2-b127-2031ad8f3257</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
    </variable>
    <variable>
       <defaultValue>['Offline123457890 licenses are for using KSE without the internet. Once generated, the license cannot be revoked or transferred to a different machine.', 'Telepon terputus', 'Nasabah punya keperluan lain']</defaultValue>

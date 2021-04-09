@@ -5,11 +5,4 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>2ed445c4-a621-4ad2-b9fc-fc2a85196e46</testCaseGuid>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>0196bd14-b2c0-49bb-b7a9-a3990ae081b2</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
-   </variable>
 </TestCaseEntity>

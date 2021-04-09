@@ -17,6 +17,8 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.kms.katalon.util.CryptoUtil as CryptoUtil
 import internal.GlobalVariable as GlobalVariable
 
+WebUI.waitForPageLoad(100)
+
 WebUI.verifyTextPresent(btnLogin, false)
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
@@ -37,9 +39,6 @@ WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.d
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
-WebUI.waitForPageLoad(10)
-
-WebUI.verifyTextPresent(verifyFieldPassword, false)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Login/GridInfoLogin'), 100)
 
 WebUI.verifyTextPresent(username, false)
-

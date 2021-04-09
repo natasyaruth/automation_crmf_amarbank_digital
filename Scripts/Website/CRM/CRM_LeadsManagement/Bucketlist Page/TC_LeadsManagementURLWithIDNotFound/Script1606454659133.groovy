@@ -25,4 +25,4 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnCloseModal'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)

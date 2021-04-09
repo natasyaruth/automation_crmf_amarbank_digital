@@ -19,11 +19,4 @@
       <masked>false</masked>
       <name>msgUserNotFound</name>
    </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>d22f50df-6bee-48f5-95d7-b0aadbb8ff95</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
-   </variable>
 </TestCaseEntity>

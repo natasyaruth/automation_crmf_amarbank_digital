@@ -20,7 +20,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.verifyTextPresent(headerCustomerDetail, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnDataPhonenumber'))
 
@@ -48,7 +48,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectC
 
 WebUI.waitForPageLoad(7)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

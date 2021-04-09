@@ -21,7 +21,7 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -55,7 +55,7 @@ while (flagLoop == false) {
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerCustomerDetails, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 def actualStatus = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Detail/StatRed'))
 
