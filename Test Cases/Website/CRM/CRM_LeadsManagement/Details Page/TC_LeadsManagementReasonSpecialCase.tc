@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>2319f3e5-cdbb-4e51-afcc-819dbff75926</testCaseGuid>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>6a8d9282-d48f-4a86-8cfc-be8d89224434</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>' '</defaultValue>
       <description></description>
       <id>5fffb01c-5947-4314-95ec-c0caba7ff233</id>

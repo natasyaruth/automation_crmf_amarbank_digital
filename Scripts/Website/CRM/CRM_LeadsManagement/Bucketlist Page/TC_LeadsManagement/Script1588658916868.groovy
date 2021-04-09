@@ -20,5 +20,5 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/LinkLeadsManagement'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/Table'), 100)
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)
 

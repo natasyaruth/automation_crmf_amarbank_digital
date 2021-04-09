@@ -33,11 +33,4 @@
       <masked>false</masked>
       <name>listContentSection</name>
    </variable>
-   <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>9e887a0f-cd20-4839-b3dc-39aa3969bda3</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
 </TestCaseEntity>

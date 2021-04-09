@@ -13,13 +13,6 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>9f77f6a1-171e-4a12-b2a7-c81994bca0bf</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>['ChkCallDisconnected', 'ChkOtherNeeds', 'ChkOther']</defaultValue>
       <description></description>
       <id>a3d3ab4f-e16e-461b-abeb-8c5af1f21ffe</id>

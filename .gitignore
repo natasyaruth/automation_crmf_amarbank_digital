@@ -9,3 +9,4 @@ appium.Log
 bin/
 *.class
 *.apk
+settings/internal/

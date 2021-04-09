@@ -15,7 +15,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent(headerCustomerDetail, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 for (int i=0;i<listIdLabelSection.size();i++){
 	

@@ -54,7 +54,7 @@ WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/TxtKtpHamlet')
 
 WebUI.setText(findTestObject('Website/CRM/Leads_Management/Detail/TxtKtpVillage'), village)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ListVillageResult1'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/ListVillageResult', ['index' : GlobalVariable.indexVillage]))
 
 WebUI.selectOptionByValue(findTestObject('Website/CRM/Leads_Management/Detail/DrpKtpReligion'), religion, false)
 

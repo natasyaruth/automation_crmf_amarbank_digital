@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>9df5f1e5-9741-4198-a4cb-9458ff311644</testCaseGuid>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>7c66aaa8-062c-4326-b00b-e074a93bdcb0</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>'value'</defaultValue>
       <description></description>
       <id>c17f1a5e-e6be-4d7d-9871-a9256c7e8792</id>
@@ -32,13 +25,6 @@
       <id>358155cd-12a1-4d64-a559-ab7d98759986</id>
       <masked>false</masked>
       <name>reasonType</name>
-   </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>e244495a-4b4d-4adb-a399-47d9ea7d72d5</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
    </variable>
    <variable>
       <defaultValue>['Offline123457890 licenses are for using KSE without the internet. Once generated, the license cannot be revoked or transferred to a different machine.', 'Nasabah tidak ingin membuka rekening baru', 'Nasabah tidak memberikan alasan', 'Terlalu banyak data yang diminta', 'Nasabah punya lebih dari 1 rekening']</defaultValue>
