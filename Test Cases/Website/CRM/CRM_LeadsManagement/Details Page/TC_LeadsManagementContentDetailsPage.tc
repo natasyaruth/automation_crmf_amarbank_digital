@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_LeadsManagementContentDetailsPage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8d303101-a1af-40d6-ac9a-b2f61b68b263</testCaseGuid>
+   <variable>
+      <defaultValue>['SectionTitlereferralby', 'SectionTitlephonenumber', 'SectionTitleemail', 'SectionTitlektp', 'SectionTitledeliveryaddress', 'SectionTitlepersonaldata', 'SectionTitleemploymentdata', 'SectionTitleimages']</defaultValue>
+      <description></description>
+      <id>0e20ceb5-1eb4-4154-959e-2dc1192cf4ee</id>
+      <masked>false</masked>
+      <name>listIdLabelSection</name>
+   </variable>
+   <variable>
+      <defaultValue>['Kode Referal', 'No. Handphone', 'Email', 'Data KTP', 'Alamat Pengiriman Kartu', 'Data Diri', 'Data Pekerjaan', 'Foto KTP dan Foto Diri']</defaultValue>
+      <description></description>
+      <id>cd8a409b-b070-43c4-87dc-99eba8a13bea</id>
+      <masked>false</masked>
+      <name>listLabelSection</name>
+   </variable>
+   <variable>
+      <defaultValue>['BtnDatareferral', 'BtnDataPhonenumber', 'BtnDataEmail', 'BtnDataKtp', 'BtnDataDeliveryAddress', 'BtnDataPersonalData', 'BtnDataEmploymentData', 'BtnDataSelfieAndKtpImages']</defaultValue>
+      <description></description>
+      <id>307861dc-d699-4545-a572-e9fae3a25c46</id>
+      <masked>false</masked>
+      <name>listButtonSection</name>
+   </variable>
+   <variable>
+      <defaultValue>['Kode Referal', 'No.Handphone', 'Alamat Email', 'No. KTP', 'Tempat pengiriman kartu', 'Tingkat pendidikan tertinggi', 'Sumber pendapatan']</defaultValue>
+      <description></description>
+      <id>e512a284-e444-43e1-a589-2ddf8ff6a3fb</id>
+      <masked>false</masked>
+      <name>listContentSection</name>
+   </variable>
+</TestCaseEntity>

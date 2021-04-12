@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerCustomerDetail, false)
+WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnOpenPendingModal'))
 
@@ -56,7 +56,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPending
 
 WebUI.waitForPageLoad(8)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), headerLeadsManagement)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 

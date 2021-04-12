@@ -18,5 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/Leads_Management/LinkLeadsManagement'))
 
-WebUI.verifyTextPresent(headerLeadsManagement, false)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/Table'), 100)
+
+WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)
 

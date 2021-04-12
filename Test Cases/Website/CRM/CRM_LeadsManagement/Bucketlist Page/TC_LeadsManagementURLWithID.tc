@@ -12,11 +12,4 @@
       <masked>false</masked>
       <name>urlStag</name>
    </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>b39ed581-eaa5-4404-90c7-21e5f50de8af</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
-   </variable>
 </TestCaseEntity>

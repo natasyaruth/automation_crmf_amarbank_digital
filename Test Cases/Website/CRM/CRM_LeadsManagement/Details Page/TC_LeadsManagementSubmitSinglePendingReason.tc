@@ -6,13 +6,6 @@
    <comment></comment>
    <testCaseGuid>b397ff85-fd9a-4a8c-ac59-19734363fd4e</testCaseGuid>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>aa72a87a-04b0-4819-8418-4b0dc633bc10</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>'Offline123457890 licenses are for using KSE without the internet. Once generated, the license cannot be revoked or transferred to a different machine.'</defaultValue>
       <description></description>
       <id>0bed14df-ab38-406b-852f-804cbab995ba</id>
@@ -39,12 +32,5 @@
       <id>5ea4288f-6e43-4a26-b641-88e2b8924158</id>
       <masked>false</masked>
       <name>reasonType</name>
-   </variable>
-   <variable>
-      <defaultValue>'Leads Management'</defaultValue>
-      <description></description>
-      <id>c1b67a05-8acd-40ae-b60f-df84829e61c6</id>
-      <masked>false</masked>
-      <name>headerLeadsManagement</name>
    </variable>
 </TestCaseEntity>

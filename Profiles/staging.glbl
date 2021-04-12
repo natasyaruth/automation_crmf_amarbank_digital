@@ -144,4 +144,19 @@
       <initValue>'20senyumku20'</initValue>
       <name>authPassword</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>indexVillage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Leads Management'</initValue>
+      <name>titleLeadsManagement</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Customer Detail'</initValue>
+      <name>titleCustomerDetails</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

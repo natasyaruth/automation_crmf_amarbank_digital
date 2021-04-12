@@ -13,13 +13,6 @@
       <name>status</name>
    </variable>
    <variable>
-      <defaultValue>'Customer Detail'</defaultValue>
-      <description></description>
-      <id>357e8c09-e6a5-477e-a87a-a3df7f4746f6</id>
-      <masked>false</masked>
-      <name>headerCustomerDetail</name>
-   </variable>
-   <variable>
       <defaultValue>['ChkNotWantingNewAccount', 'ChkNoReason', 'ChkTooMuchData', 'ChkHaveMoreThanOneAccount', 'ChkOther']</defaultValue>
       <description></description>
       <id>1421f917-4912-4abc-b71b-221085e4e0d6</id>
