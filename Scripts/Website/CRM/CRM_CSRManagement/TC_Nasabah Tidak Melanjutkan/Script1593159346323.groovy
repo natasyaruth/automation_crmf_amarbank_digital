@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.verifyTextPresent(customerNotContinue, false)
+WebUI.verifyTextPresent(customerNotContinue, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/Linkreferral'))
 
@@ -30,21 +30,23 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddre
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDatareferral'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyMatch(email, email, false)
+String actualEmail = WebUI.executeJavaScript('return document.querySelector("#TxtEmail").value;', null)
+
+WebUI.verifyMatch(actualEmail, email, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditreferral'))
 
@@ -52,7 +54,7 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), 
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'))
 
-WebUI.verifyTextPresent(successSaveReferral, false)
+WebUI.verifyTextPresent(successSaveReferral, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'), 5)
 
@@ -62,60 +64,60 @@ WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), KTPNumber)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), phoneNumber, phoneNumber, 
-    5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), "value", KTPNumber, 
+    5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), KTPName)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), KTPName, KTPName, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpName'), "value", KTPName, 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), KTPBirthPlace, 
-    KTPBirthPlace, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpBirthPlace'), "value", 
+    KTPBirthPlace, 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), KTPBloodType, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpBloodType'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), KTPAddress, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpAddress'), "value", KTPAddress, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), KTPNeighbourhood)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), KTPNeighbourhood, 
-    3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNeighbourhood'), "value", KTPNeighbourhood, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), KTPHamlet, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpHamlet'), "value", KTPHamlet, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'))
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), "value", KTPVillage, 3, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), KTPReligion, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpReligion'), "value", (KTPReligion.toLowerCase()).capitalize(), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), KTPMaritalStatus, 
-    3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpMaritalStatus'), "value", KTPMaritalStatus, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), KTPOccupation, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpKtpOccupation'), "value", (KTPOccupation.toLowerCase()).capitalize(), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), KTPCitizenship)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), KTPCitizenship, 
-    3, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpCitizenship'), "value", KTPCitizenship, 
+    3, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/RbLifetime'))
 
@@ -125,39 +127,39 @@ WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Deta
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataDeliveryAddress'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'))
 
 WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), addressType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), addressType, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), addressType, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpAddressType'), "value", addressType.toLowerCase(), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), fullAddress, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtFullAddress'), fullAddress, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), neighbourhood, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), neighbourhood, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), neighbourhood, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtNeighbourhood'), "value", neighbourhood, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), hamlet, FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtHamlet'), hamlet, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), province, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), province, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), province, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), "value", province, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), "value", district, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), "value", subdistrict, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), "value", village, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'))
 
@@ -165,37 +167,37 @@ WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Deta
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditPersonalData'))
 
 WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), education, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpEducation'), "value", education, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), motherName)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), motherName, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtMotherName'), "value", motherName, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), referencePhoneNumber, 
-    5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtRefPhonenumber'), "value", referencePhoneNumber, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), religion, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpReligion'), "value", religion, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), referenceName, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtRefName'), "value", referenceName, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), accountPurpose, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), accountPurpose, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), accountPurpose, 
-    3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpAccountPurpose'), "value", accountPurpose, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'))
 
@@ -203,35 +205,35 @@ WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Deta
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmploymentData'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'))
 
 WebUI.waitForElementClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), sourceIncome, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpSourceIncome'), "value", sourceIncome, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), workType, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpWorkType'), "value", workType, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), companyField, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpCompanyField'), "value", companyField, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), monthlyIncome, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpMonthlyIncome'), "value", monthlyIncome, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), jobPosition, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpPosition'), "value", jobPosition, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), companyName, 3)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtCompanyName'), "value", companyName, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'))
 
@@ -239,7 +241,7 @@ WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Deta
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataSelfieAndKtpImages'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'))
 

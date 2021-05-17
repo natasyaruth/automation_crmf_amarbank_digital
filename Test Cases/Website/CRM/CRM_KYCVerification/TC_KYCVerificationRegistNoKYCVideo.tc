@@ -52,7 +52,7 @@
       <description></description>
       <id>f62c3829-fe1e-4260-bdbc-1770d49b04cf</id>
       <masked>false</masked>
-      <name>verify_KTPValidation</name>
+      <name>verifyKTPValidation</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>

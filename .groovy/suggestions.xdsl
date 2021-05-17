@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<projectSuggestions>
+<declaringtype type="java.lang.Object">
+<method isActive="true" isStatic="false" name="toLowerCase" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+<method isActive="true" isStatic="false" name="capitalize" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+<method isActive="true" isStatic="false" name="toUpperCase" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+<method isActive="true" isStatic="false" name="click" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+</projectSuggestions>

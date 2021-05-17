@@ -20,7 +20,7 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketli
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(verificationDetail, false)
+WebUI.verifyTextPresent(verificationDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
@@ -36,10 +36,11 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Detail
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtBirthPlace'), birthPlace)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpGender'), gender, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpGender'), gender, false, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpBloodType'), bloodType, 
-    false)
+    false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtAddress'), address)
 
@@ -47,69 +48,65 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Detail
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRW'), hamlet)
 
-//WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtVillage'), Village)
-//WebUI.waitForElementPresent(findTestObject(null), 6)
-//WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/ListVillageResult1'))
-//WebUI.delay(5)
-//WebUI.verifyTextPresent(VerifyDistrict, false)
-//WebUI.delay(2)
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), religion, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), religion, false, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), religion, 
-    5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpReligion'), 'value', 
+    religion, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), maritalStatus, 
-    false)
+    false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), 
-    maritalStatus, 5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpMaritalStatus'), 
+    'value', maritalStatus, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), occupation, 
-    false)
+    false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), occupation, 
-    5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpOccupation'), 
+    'value', occupation, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), citizenship)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), citizenship, 
-    5)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCitizenship'), 
+    'value', citizenship, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbDated'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbLifetime'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/RbLifetime'), FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave'))
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave'), 5)
 
-WebUI.verifyTextPresent(verifySuccessSavedKTP, false)
+WebUI.verifyTextPresent(verifySuccessSavedKTP, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.verifyTextPresent(verifyEmailhasverified, false)
+WebUI.verifyTextPresent(verifyEmailhasverified, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
 
-WebUI.verifyElementNotVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1'))
+WebUI.verifyElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyKTPValidation, false)
+WebUI.verifyTextPresent(verifyKTPValidation, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyNIK, false)
+WebUI.verifyTextPresent(verifyNIK, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyName, false)
+WebUI.verifyTextPresent(verifyName, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyBirthdate2, false)
+WebUI.verifyTextPresent(verifyBirthdate2, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyMotherName, false)
+WebUI.verifyTextPresent(verifyMotherName, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 10)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 10, 
+    FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifySuccessKYCVerification, false)
+WebUI.verifyTextPresent(verifySuccessKYCVerification, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 
-WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForPageLoad(10)
 
