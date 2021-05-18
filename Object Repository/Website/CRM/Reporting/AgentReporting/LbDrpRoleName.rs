@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DrpGender</name>
+   <name>LbDrpRoleName</name>
    <tag></tag>
-   <elementGuidId>6769a738-2f45-4cee-926a-21060997bea1</elementGuidId>
+   <elementGuidId>db0dd3e9-ed95-44d8-a70f-c726ae539282</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'DrpGender']</value>
+         <value>//*[@class = 'DropdownFilter-label u-MarginRight']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>DrpGender</value>
+      <value>DropdownFilter-label u-MarginRight</value>
    </webElementProperties>
 </WebElementEntity>

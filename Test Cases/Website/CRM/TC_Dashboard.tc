@@ -26,4 +26,11 @@
       <masked>false</masked>
       <name>headerKYCCustomerDetail</name>
    </variable>
+   <variable>
+      <defaultValue>0</defaultValue>
+      <description></description>
+      <id>43847bc7-8791-42dc-83bb-88d1b1c322dc</id>
+      <masked>false</masked>
+      <name>indexNumber</name>
+   </variable>
 </TestCaseEntity>

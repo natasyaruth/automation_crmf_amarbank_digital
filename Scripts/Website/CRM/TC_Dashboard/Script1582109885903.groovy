@@ -21,35 +21,31 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.verifyTextPresent(headerDashboard, false)
+WebUI.verifyTextPresent(headerDashboard, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 2)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
 
-WebUI.verifyTextPresent(headerKYCVideoRequest, false)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebDriver driver = DriverFactory.getWebDriver()
+WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebElement table = driver.findElement(By.xpath('//*[@id="root"]//tbody'))
+List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 10)
 
-List<WebElement> listRows = table.findElements(By.tagName('tr'))
-
-List<WebElement> listColumn = listRows.get(0).findElements(By.tagName('td'))
-
-listColumn.get(1).findElement(By.tagName('a')).click()
+listRequestId.get(indexNumber).click()
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
+WebUI.verifyTextPresent(headerKYCCustomerDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
 
-WebUI.verifyTextPresent(headerKYCCustomerDetail, false)
+WebUI.verifyTextPresent(headerKYCCustomerDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.waitForPageLoad(5)
 
@@ -57,5 +53,5 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack
 
 WebUI.waitForPageLoad(10)
 
-WebUI.verifyTextPresent(headerKYCVideoRequest, false)
+WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
 
