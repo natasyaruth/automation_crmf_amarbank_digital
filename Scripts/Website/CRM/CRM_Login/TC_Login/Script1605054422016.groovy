@@ -19,21 +19,21 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.waitForPageLoad(100)
 
-WebUI.verifyTextPresent(btnLogin, false)
+WebUI.verifyTextPresent(btnLogin, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnLogin'))
 
 WebUI.waitForPageLoad(100)
 
-WebUI.verifyTextPresent(verifyFieldEmail, false)
+WebUI.verifyTextPresent(verifyFieldEmail, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailAccount'), CryptoUtil.decode(CryptoUtil.getDefault(gmailAccount)))
 
 WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
-WebUI.waitForPageLoad(10, FailureHandling.STOP_ON_FAILURE)
+WebUI.waitForPageLoad(10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyFieldPassword, false)
+WebUI.verifyTextPresent(verifyFieldPassword, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.decode(CryptoUtil.getDefault(gmailPassword)))
 
@@ -41,4 +41,4 @@ WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/Login/GridInfoLogin'), 100)
 
-WebUI.verifyTextPresent(username, false)
+WebUI.verifyTextPresent(username, false, FailureHandling.CONTINUE_ON_FAILURE)

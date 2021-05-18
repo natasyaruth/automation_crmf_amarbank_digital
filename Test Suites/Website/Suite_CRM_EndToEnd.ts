@@ -57,7 +57,7 @@
          <id>040b1468-e1f3-4e7d-bce8-42b99faf1c86</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-2</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
@@ -174,7 +174,7 @@
          <id>59535933-55a1-42bd-8762-47bd68ee7a01</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>2-2</value>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
@@ -253,6 +253,12 @@
          <value></value>
          <variableId>f6262c46-1bfb-4fc6-9c73-31c7c07d57c4</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>43847bc7-8791-42dc-83bb-88d1b1c322dc</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
@@ -304,6 +310,12 @@
          <value>namebefore</value>
          <variableId>9ac28364-ac33-44c0-8f03-5f3d7c1de26b</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d56f618d-c71e-426b-a517-7f4375fee2f8</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
@@ -314,8 +326,8 @@
          <combinationType>ONE</combinationType>
          <id>369da93f-d631-4ddf-ae45-a8bce177e1c4</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
       </testDataLink>
@@ -497,8 +509,8 @@
          <combinationType>ONE</combinationType>
          <id>36030a13-1da4-47bf-a5b0-602572cc4368</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
       </testDataLink>
@@ -560,8 +572,8 @@
          <combinationType>ONE</combinationType>
          <id>6df5011c-e4ad-47b9-a84e-7f7449aa0a31</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>1-1</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
       </testDataLink>

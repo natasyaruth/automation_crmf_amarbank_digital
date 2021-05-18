@@ -18,12 +18,12 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'))
 
-WebUI.verifyTextPresent(verifyCheckbox, false)
+WebUI.verifyTextPresent(verifyCheckbox, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), addressType, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), addressType, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), addressType, 
-    10)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpAddressType'), "value", addressType, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.clearText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtFullAdress'))
 
@@ -37,23 +37,23 @@ WebUI.clearText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/Txt
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtHamlet'), hamlet)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), province, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), province, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), province, 10)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpProvince'), "value", province, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), district, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), district, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), district, 10, 
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpDistrict'), "value", district, 10, 
     FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), subDistrict, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), subDistrict, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), subDistrict, 
-    10)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpSubdistrict'), "value", subDistrict, 
+    10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), village, false)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), village, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementHasAttribute(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), village, 10)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/DrpVillage'), "value", village, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/CheckBoxConfirmation/ChkKtpName'))
 
@@ -91,14 +91,14 @@ WebUI.verifyElementChecked(findTestObject('Website/CRM/KYC_Management/KYC_Video/
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'))
 
-WebUI.waitForElementNotVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'), 10)
+WebUI.waitForElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnKYCFinished'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForImagePresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgKTPKYC'), 10)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgKTPKYC'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgKTPKYC'), 
     5)
 
-WebUI.verifyImagePresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'))
+WebUI.verifyElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 CustomKeywords.'com.tunaiku.keyword.ClickUsing_JS.clickUsingJS'(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/ImgSelfieKYC'), 
     5)
@@ -107,7 +107,7 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/TxtAd
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnSend'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/HistoryCall/ChkNotPassVerification'))
 
