@@ -22,5 +22,5 @@ WebUI.navigateToUrl(stagingLoginURL)
 
 WebUI.maximizeWindow()
 
-WebUI.authenticate(GlobalVariable.stagHostname, GlobalVariable.authUsername, GlobalVariable.authPassword, 5)
+WebUI.authenticate(GlobalVariable.siteUrl + "/login", GlobalVariable.authUsername, GlobalVariable.authPassword, 5)
 

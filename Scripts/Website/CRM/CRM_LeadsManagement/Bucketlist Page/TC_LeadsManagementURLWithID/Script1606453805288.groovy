@@ -29,7 +29,7 @@ WebUI.waitForPageLoad(8)
 
 WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
 
-WebUI.navigateToUrl(urlStag+'/'+getReqID)
+WebUI.navigateToUrl(url+'/'+getReqID)
 
 WebUI.waitForPageLoad(3)
 

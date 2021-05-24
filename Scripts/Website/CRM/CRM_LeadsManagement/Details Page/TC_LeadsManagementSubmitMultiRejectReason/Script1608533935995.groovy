@@ -48,6 +48,8 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitRejectC
 
 WebUI.waitForPageLoad(7)
 
+assert WebUI.getUrl() == GlobalVariable.siteUrl + "/leads-management"
+
 WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()

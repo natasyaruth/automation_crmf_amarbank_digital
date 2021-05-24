@@ -17,5 +17,9 @@
 <parameters useNamedArguments="false"/>
 <doc/>
 </method>
+<method isActive="true" isStatic="false" name="substring" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
 </declaringtype>
 </projectSuggestions>
