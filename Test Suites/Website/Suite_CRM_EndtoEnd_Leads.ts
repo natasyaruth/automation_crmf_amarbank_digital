@@ -102,7 +102,7 @@
       <guid>c96027c6-2805-43b2-a00c-21ee06367e42</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_AbortIncompleteProses</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_AbortIncompleteProcess</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>

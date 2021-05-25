@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_AbortIncompleteProses</name>
+   <name>TC_AbortIncompleteProcess</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>09eee3bc-9652-4214-ac24-f08265b3b29a</testCaseGuid>
