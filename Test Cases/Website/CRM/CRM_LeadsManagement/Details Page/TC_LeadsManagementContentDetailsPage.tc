@@ -13,7 +13,7 @@
       <name>listIdLabelSection</name>
    </variable>
    <variable>
-      <defaultValue>['Kode Referal', 'No. Handphone', 'Email', 'Data KTP', 'Alamat Pengiriman Kartu', 'Data Diri', 'Data Pekerjaan', 'Foto KTP dan Foto Diri']</defaultValue>
+      <defaultValue>['Kode Referal', 'No. Handphone', 'Email', 'Data KTP', 'Alamat Pengiriman Kartu', 'Data Diri', 'Data Pekerjaan', 'Foto eKTP dan Foto Diri']</defaultValue>
       <description></description>
       <id>cd8a409b-b070-43c4-87dc-99eba8a13bea</id>
       <masked>false</masked>

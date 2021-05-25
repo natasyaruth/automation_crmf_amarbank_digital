@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>4cbc2049-108e-4ad3-93ec-1f597c129968</testCaseGuid>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/leads-managementmm'</defaultValue>
+      <defaultValue>GlobalVariable.siteUrl + &quot;/leads-managementmm&quot;</defaultValue>
       <description></description>
       <id>32ae8308-bbdd-42cc-b880-5aa69ee5a26d</id>
       <masked>false</masked>

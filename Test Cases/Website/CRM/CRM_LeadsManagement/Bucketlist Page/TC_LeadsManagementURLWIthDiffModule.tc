@@ -6,11 +6,11 @@
    <comment></comment>
    <testCaseGuid>42a8395f-2118-48de-85d8-c1cd8ecb7d08</testCaseGuid>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/kyc-management/video-verification'</defaultValue>
+      <defaultValue>GlobalVariable.siteUrl + &quot;/kyc-management/video-verification&quot;</defaultValue>
       <description></description>
       <id>4949e592-a9a2-40fd-9711-7fb658111cd5</id>
       <masked>false</masked>
-      <name>invalidURL</name>
+      <name>diffModule</name>
    </variable>
    <variable>
       <defaultValue>'Anda tidak memiliki izin untuk mengakses'</defaultValue>
