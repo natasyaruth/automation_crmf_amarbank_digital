@@ -16,11 +16,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+import com.kms.katalon.core.configuration.RunConfiguration
 
-WebUI.navigateToUrl(stagingLoginURL)
+RunConfiguration.setWebDriverPreferencesProperty("args", listValue)
 
-WebUI.maximizeWindow()
-
-WebUI.authenticate(GlobalVariable.siteUrl + "/login", GlobalVariable.authUsername, GlobalVariable.authPassword, 5)
-
+WebUI.openBrowser('https://'+GlobalVariable.authUsername+':'+GlobalVariable.authPassword+'@'+(GlobalVariable.siteUrl.substring(8)))

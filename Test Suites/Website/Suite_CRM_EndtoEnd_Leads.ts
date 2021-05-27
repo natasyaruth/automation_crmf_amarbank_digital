@@ -20,19 +20,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3fd88256-bc8a-4453-be43-a85c79377a21</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
+         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -45,7 +33,7 @@
          <id>31b1325f-bcc4-48ca-a69c-e963d63fa062</id>
          <iterationEntity>
             <iterationType>RANGE</iterationType>
-            <value>4-4</value>
+            <value>5-5</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
