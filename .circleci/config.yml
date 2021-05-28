@@ -32,7 +32,7 @@ jobs:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
           browser_type: Chrome
-    run_test_firefox:
+  run_test_firefox:
     <<: *container_config
     steps:
       - checkout
