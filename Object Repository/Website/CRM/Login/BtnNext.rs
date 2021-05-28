@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'VfPpkd-RLmnJb']</value>
+         <value>//*[@id = 'identifierNext']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>VfPpkd-RLmnJb</value>
+      <value>identifierNext</value>
    </webElementProperties>
 </WebElementEntity>
