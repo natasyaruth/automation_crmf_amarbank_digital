@@ -1,7 +1,6 @@
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.util.CryptoUtil as CryptoUtil
@@ -32,12 +31,13 @@ WebUI.verifyTextPresent(verifyFieldPassword, false, FailureHandling.CONTINUE_ON_
 
 WebUI.sendKeys(findTestObject('Website/CRM/Login/TxtGmailPassword'), CryptoUtil.decode(CryptoUtil.getDefault(gmailPassword)))
 
-WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
+WebUI.click(findTestObject('Website/CRM/Login/BtnPasswordNext'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/Login/GridInfoLogin'), 100)
 
 WebUI.waitForPageLoad(10)
 
-TestObject txtUsername = new TestObject().addProperty("text", ConditionType.CONTAINS, username) 
+TestObject txtUsername = new TestObject().addProperty('text', ConditionType.CONTAINS, username)
 
 WebUI.verifyElementPresent(txtUsername, 10, FailureHandling.CONTINUE_ON_FAILURE)
+
