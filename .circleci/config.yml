@@ -22,7 +22,7 @@ commands:
     steps:
       - run:
           name: Execute Katalon Test Case
-          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="staging" 
+          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" 
 jobs:
   run_test_chrome:
     <<: *container_config
