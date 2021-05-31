@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtGmailAccount</name>
+   <name>BtnPasswordNext</name>
    <tag></tag>
-   <elementGuidId>f475cbb6-27c7-4f6f-ab6c-9458aa38c17f</elementGuidId>
+   <elementGuidId>c50487d5-adc5-4004-af36-41c39f6c294a</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'identifierId']</value>
+         <value>//*[@id = 'passwordNext']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,15 +15,8 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>input</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>identifierId</value>
+      <value>passwordNext</value>
    </webElementProperties>
 </WebElementEntity>

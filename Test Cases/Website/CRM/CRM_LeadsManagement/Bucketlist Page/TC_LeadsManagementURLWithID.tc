@@ -6,10 +6,10 @@
    <comment></comment>
    <testCaseGuid>6f2e8c52-5312-47be-8cf0-4b53e57215b0</testCaseGuid>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/leads-management'</defaultValue>
+      <defaultValue>GlobalVariable.siteUrl + &quot;/leads-management&quot;</defaultValue>
       <description></description>
       <id>2bcf0bd4-e852-4b88-9758-319f202b8502</id>
       <masked>false</masked>
-      <name>urlStag</name>
+      <name>url</name>
    </variable>
 </TestCaseEntity>

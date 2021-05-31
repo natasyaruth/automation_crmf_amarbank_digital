@@ -144,4 +144,9 @@
       <initValue>'20senyumku20'</initValue>
       <name>authPassword</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-crm-rekol.tunaiku.com'</initValue>
+      <name>siteUrl</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

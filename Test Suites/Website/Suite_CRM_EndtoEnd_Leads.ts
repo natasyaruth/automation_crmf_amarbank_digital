@@ -20,19 +20,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7b8cc38c-ce94-4c0f-8a9a-363aa28079ac</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ae8e816b-a955-44aa-9b4a-b4b557eed2bb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>3fd88256-bc8a-4453-be43-a85c79377a21</variableId>
+         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -44,8 +32,8 @@
          <combinationType>ONE</combinationType>
          <id>31b1325f-bcc4-48ca-a69c-e963d63fa062</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
          </iterationEntity>
          <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
       </testDataLink>
@@ -62,15 +50,15 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(1, 4)</value>
+         <testDataLinkId>31b1325f-bcc4-48ca-a69c-e963d63fa062</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(2, 4)</value>
+         <testDataLinkId>31b1325f-bcc4-48ca-a69c-e963d63fa062</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
@@ -86,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(3, 4)</value>
+         <testDataLinkId>31b1325f-bcc4-48ca-a69c-e963d63fa062</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
@@ -97,6 +85,18 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_LeadsManagement</testCaseId>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>c96027c6-2805-43b2-a00c-21ee06367e42</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_LeadsManagement/Bucketlist Page/TC_AbortIncompleteProcess</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>adfb6907-6593-45ec-9dd1-58d332871caf</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>24053ab7-5d2c-4fb3-a7f9-e2970a4b8137</guid>
