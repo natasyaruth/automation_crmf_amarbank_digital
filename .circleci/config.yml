@@ -1,11 +1,14 @@
 version: 2.1
+
 orbs:
   katalon-studio: katalon/katalon-studio@23.0.11
+  
 references:
   container_config: &container_config
     docker:
       - image: katalonstudio/katalon
     resource_class: medium
+    
 commands:
   run_single_testsuite:
     description: "Run Selected Test Suite on a Selected Browser"
@@ -23,6 +26,7 @@ commands:
       - run:
           name: Execute Katalon Test Case
           command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" 
+          
 jobs:
   run_test_chrome:
     <<: *container_config
@@ -31,7 +35,7 @@ jobs:
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
-          browser_type: Chrome
+          browser_type: Chrome (headless)
   run_test_firefox:
     <<: *container_config
     steps:
@@ -39,7 +43,8 @@ jobs:
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
-          browser_type: Firefox
+          browser_type: Firefox (headless)
+          
 workflows:
   build:
     jobs:
@@ -51,6 +56,8 @@ workflows:
                 - CRMF-437
       - run_test_firefox:
           context: Automation
+          requires:
+            - run_test_chrome
           filters:
             branches:
               only:
