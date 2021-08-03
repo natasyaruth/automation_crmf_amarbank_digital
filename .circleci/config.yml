@@ -25,7 +25,7 @@ commands:
           command: rm -rf Reports/*
       - run:
           name: Execute Katalon Test Case
-          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" 
+          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>"  
   run_upload_reports:
     description: "Upload test reports to Katalon TestOps"
     parameters:
@@ -42,7 +42,7 @@ commands:
       - run:
           name: Upload reports to katalon testops
           when: always
-          command: java -jar katalon-report-uploader-0.0.8.jar --projectId=<< parameters.project_id >> --path="<< parameters.project_path >>/Reports" --password=$KATALON_API_KEY --type=katalon
+          command: java -jar katalon-report-uploader-0.0.8.jar --projectId=<< parameters.project_id >> --path="<< parameters.project_path >>/Reports" --password=$KATALON_API_KEY --type=katalon 
           
 jobs:
   run_test_chrome:
@@ -76,7 +76,7 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-437
+                - master
       - run_test_firefox:
           context: Automation
           requires:
@@ -84,4 +84,4 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-437
+                - master
