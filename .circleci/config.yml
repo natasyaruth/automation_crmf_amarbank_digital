@@ -21,6 +21,9 @@ commands:
         default: /root/project
     steps:
       - run:
+          name: Clean report directory
+          command: rm -rf Reports/*
+      - run:
           name: Execute Katalon Test Case
           command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" 
   run_upload_reports:
@@ -36,10 +39,6 @@ commands:
           name: Download katalon report uploader jar
           when: always
           command: wget https://github.com/katalon-studio/report-uploader/releases/download/v0.0.8/katalon-report-uploader-0.0.8.jar
-      - run:
-          name: Cleanup Report Folder
-          when: always
-          command: rm -rf Reports/*
       - run:
           name: Upload reports to katalon testops
           when: always
