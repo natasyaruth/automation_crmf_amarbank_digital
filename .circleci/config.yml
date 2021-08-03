@@ -55,7 +55,7 @@ jobs:
           environment: staging
           browser_type: Chrome (headless)
       - run_upload_reports:
-          project_id: 201268
+          project_id: "201268"
           
   run_test_firefox:
     <<: *container_config
@@ -66,7 +66,7 @@ jobs:
           environment: staging
           browser_type: Firefox (headless)
       - run_upload_reports:
-          project_id: 201268
+          project_id: "201268"
        
           
 workflows:
