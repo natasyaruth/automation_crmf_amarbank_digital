@@ -23,6 +23,27 @@ commands:
       - run:
           name: Execute Katalon Test Case
           command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" 
+  run_upload_reports:
+    description: "Upload test reports to Katalon TestOps"
+    parameters:
+      project_id:
+        type: string
+      project_path:
+        type: string
+        default: /root/project
+    steps:
+      - run:
+          name: Download katalon report uploader jar
+          when: always
+          command: wget https://github.com/katalon-studio/report-uploader/releases/download/v0.0.8/katalon-report-uploader-0.0.8.jar
+      - run:
+          name: Cleanup Report Folder
+          when: always
+          command: rm -rf Reports/*
+      - run:
+          name: Upload reports to katalon testops
+          when: always
+          command: java -jar katalon-report-uploader-0.0.8.jar --projectId=<< parameters.project_id >> --path="<< parameters.project_path >>/Reports" --password=$KATALON_API_KEY --type=katalon
           
 jobs:
   run_test_chrome:
@@ -33,6 +54,9 @@ jobs:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
           browser_type: Chrome (headless)
+      - run_upload_reports:
+          project_id: 201268
+          
   run_test_firefox:
     <<: *container_config
     steps:
@@ -41,6 +65,9 @@ jobs:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
           browser_type: Firefox (headless)
+      - run_upload_reports:
+          project_id: 201268
+       
           
 workflows:
   build:
