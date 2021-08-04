@@ -8,7 +8,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -39,7 +40,9 @@ listRequestId.get(indexNumber).click()
 
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerKYCCustomerDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
+TestObject verifyTextKYCPage = new TestObject().addProperty('text', ConditionType.CONTAINS, headerKYCCustomerDetail)
+
+WebUI.waitForElementVisible(verifyTextKYCPage, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
 
