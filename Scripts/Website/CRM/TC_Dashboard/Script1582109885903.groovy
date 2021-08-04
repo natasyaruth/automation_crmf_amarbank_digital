@@ -26,17 +26,19 @@ WebUI.verifyTextPresent(headerDashboard, false, FailureHandling.CONTINUE_ON_FAIL
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 10)
 
 listRequestId.get(indexNumber).click()
+
+WebUI.refresh()
 
 WebUI.waitForPageLoad(5)
 
@@ -45,6 +47,10 @@ TestObject verifyTextKYCPage = new TestObject().addProperty('text', ConditionTyp
 WebUI.waitForElementVisible(verifyTextKYCPage, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+
+if(WebUI.verifyElementVisible(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'), FailureHandling.OPTIONAL) == false) {
+    WebUI.refresh()
+}
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
 
@@ -57,4 +63,6 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack
 WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.refresh()
 

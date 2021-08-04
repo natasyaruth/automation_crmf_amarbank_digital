@@ -26,7 +26,7 @@ WebUI.click(findTestObject('Website/CRM/Login/BtnNext'))
 
 WebUI.waitForPageLoad(10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.waitForElementVisible(findTestObject('Website/CRM/Login/TxtGmailPassword'), 10)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/Login/TxtGmailPassword'), 30)
 
 // Commented, because of localization in CircleCI
 // WebUI.verifyTextPresent(verifyFieldPassword, false, FailureHandling.CONTINUE_ON_FAILURE)
@@ -41,5 +41,5 @@ WebUI.waitForPageLoad(10)
 
 TestObject txtUsername = new TestObject().addProperty('text', ConditionType.CONTAINS, username)
 
-WebUI.verifyElementPresent(txtUsername, 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyElementPresent(txtUsername, 30, FailureHandling.CONTINUE_ON_FAILURE)
 
