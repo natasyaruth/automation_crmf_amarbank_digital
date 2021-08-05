@@ -483,6 +483,18 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>486e4e97-ca49-4bb5-aa1f-db17f676171c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95c49a39-c5ed-4cb5-8f48-07603fa43ff2</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
