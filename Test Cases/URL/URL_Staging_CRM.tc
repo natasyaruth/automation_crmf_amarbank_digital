@@ -6,7 +6,7 @@
    <comment></comment>
    <testCaseGuid>bd5c3c0d-968b-4779-88b0-975bcffd565d</testCaseGuid>
    <variable>
-      <defaultValue>['start-maximized', 'enable-automation', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', '--no-sandbox', '--disable-infobars', '--disable-extensions']</defaultValue>
+      <defaultValue>['enable-automation', 'user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36', '--no-sandbox', '--disable-infobars', '--disable-extensions']</defaultValue>
       <description></description>
       <id>56816ae0-de95-4d26-b12c-87f914ebfa19</id>
       <masked>false</masked>
