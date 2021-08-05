@@ -52,7 +52,7 @@ jobs:
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
-          browser_type: Chrome (headless)
+          browser_type: Chrome
       - run_upload_reports:
           project_id: "201268"
           
@@ -63,7 +63,7 @@ jobs:
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
-          browser_type: Firefox (headless)
+          browser_type: Firefox
       - run_upload_reports:
           project_id: "201268"
        
