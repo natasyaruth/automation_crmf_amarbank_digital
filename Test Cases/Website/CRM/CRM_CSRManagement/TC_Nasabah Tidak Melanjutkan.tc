@@ -278,4 +278,11 @@
       <masked>false</masked>
       <name>KTPCitizenship</name>
    </variable>
+   <variable>
+      <defaultValue>'Nasabah ini sudah dikunci'</defaultValue>
+      <description></description>
+      <id>dd841883-40bd-4545-acec-500eb084ff61</id>
+      <masked>false</masked>
+      <name>msgDialog</name>
+   </variable>
 </TestCaseEntity>

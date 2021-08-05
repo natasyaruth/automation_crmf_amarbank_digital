@@ -20,13 +20,15 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
+WebUI.refresh()
+
 WebUI.waitForPageLoad(5)
 
 TestObject textVerificationDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, verificationDetail)
 
-WebUI.waitForElementVisible(textVerificationDetail, 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementVisible(textVerificationDetail, 30, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'), 10)
+WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 

@@ -15,10 +15,5 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/LinkCSRManagement'))
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), 20)
-
-Mobile.callTestCase(findTestCase('Website/CRM/TC_AbortIncompleteProcess'), [('msgIncompleteProcess') : msgIncompleteProcess])
+import org.openqa.selenium.Keys as Keys
 
