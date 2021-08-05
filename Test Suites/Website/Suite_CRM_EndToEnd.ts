@@ -665,7 +665,7 @@
    <testCaseLink>
       <guid>d518e89f-ca49-48aa-85d8-10189e3022d4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_Nasabah Tidak Melanjutkan</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
