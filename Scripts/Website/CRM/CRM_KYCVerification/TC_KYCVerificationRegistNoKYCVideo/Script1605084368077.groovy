@@ -26,6 +26,8 @@ TestObject textVerificationDetail = new TestObject().addProperty('text', Conditi
 
 WebUI.waitForElementVisible(textVerificationDetail, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'), 10)
+
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
 WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel'), 5)

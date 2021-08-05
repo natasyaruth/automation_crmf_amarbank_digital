@@ -959,7 +959,7 @@
    <testCaseLink>
       <guid>fb7bc328-b7a8-4f82-85b3-448a3ced40d8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
+      <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
