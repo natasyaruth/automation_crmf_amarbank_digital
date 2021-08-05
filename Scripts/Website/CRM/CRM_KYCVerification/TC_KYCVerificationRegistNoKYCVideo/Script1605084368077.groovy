@@ -111,6 +111,7 @@ if(WebUI.verifyElementVisible(textVerificationModal, FailureHandling.OPTIONAL)) 
     WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
 } else {
     String requestUrl = WebUI.getUrl()
+    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
     KeywordUtil.markWarning('Verification is not success! Please check the face match for: ' + requestUrl)    
 }
 WebUI.waitForPageLoad(10)
