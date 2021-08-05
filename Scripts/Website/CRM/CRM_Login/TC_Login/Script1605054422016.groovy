@@ -43,5 +43,3 @@ TestObject txtUsername = new TestObject().addProperty('text', ConditionType.CONT
 
 WebUI.verifyElementPresent(txtUsername, 30, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setViewPortSize(1536, 719)
-
