@@ -19,35 +19,14 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.verifyTextPresent(customerNotContinue, false, FailureHandling.OPTIONAL)
 
+'Check on Section Referral'
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/Linkreferral'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkEmail'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkKtp'), FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddress'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDatareferral'), FailureHandling.OPTIONAL)
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtReferral'), 5, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'), FailureHandling.OPTIONAL)
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), 5, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'), FailureHandling.OPTIONAL)
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 5, FailureHandling.OPTIONAL)
-
-String actualEmail = WebUI.executeJavaScript('return document.querySelector("#TxtEmail").value;', null)
-
-WebUI.verifyMatch(actualEmail, email, false, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'), FailureHandling.OPTIONAL)
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), 5, FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Website/CRM/CSR_Management/Details/BtnEditreferral'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditreferral'), FailureHandling.OPTIONAL)
 
@@ -57,7 +36,32 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral')
 
 WebUI.verifyTextPresent(successSaveReferral, false, FailureHandling.OPTIONAL)
 
+'Check on Section Phone Number'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPhonenumber'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber'), 5, FailureHandling.OPTIONAL)
+
+'Check on Section Email'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkEmail'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmail'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtEmail'), 5, FailureHandling.OPTIONAL)
+
+String actualEmail = WebUI.executeJavaScript('return document.querySelector("#TxtEmail").value;', null)
+
+WebUI.verifyMatch(actualEmail, email, false, FailureHandling.OPTIONAL)
+
+'Check on Section KTP Data'
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavereferral'), 5, FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkKtp'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpNumber'), 5, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnEditKtp'), FailureHandling.OPTIONAL)
 
@@ -96,9 +100,13 @@ WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/De
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), KTPVillage, FailureHandling.OPTIONAL)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 5, FailureHandling.OPTIONAL)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), 20, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), FailureHandling.OPTIONAL)
+
+if(WebUI.verifyElementNotVisible(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), FailureHandling.OPTIONAL) == false) {
+    WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/ListVillageResult1'), FailureHandling.OPTIONAL)
+}
 
 WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/TxtKtpVillage'), "value", KTPVillage, 3, FailureHandling.OPTIONAL)
 
@@ -126,6 +134,11 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'), Fai
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveKtp'), 5, FailureHandling.OPTIONAL)
 
+'Check on Section Delivery'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkDeliveryAddress'), FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Website/CRM/CSR_Management/Details/BtnDataDeliveryAddress'), 10)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataDeliveryAddress'), FailureHandling.OPTIONAL)
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnEditDeliveryAddress'), 5, FailureHandling.OPTIONAL)
@@ -150,13 +163,19 @@ WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/Drp
 
 WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpProvince'), "value", province, 10, FailureHandling.OPTIONAL)
 
+WebUI.waitForElementNotHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), 'disabled', 10)
+
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), district, false, FailureHandling.OPTIONAL)
 
 WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict'), "value", district, 10, FailureHandling.OPTIONAL)
 
+WebUI.waitForElementNotHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), 'disabled', 10)
+
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), subdistrict, false, FailureHandling.OPTIONAL)
 
 WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Details/DrpSubdistrict'), "value", subdistrict, 10, FailureHandling.OPTIONAL)
+
+WebUI.waitForElementNotHasAttribute(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), 'disabled', 10)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Details/DrpVillage'), village, false, FailureHandling.OPTIONAL)
 
@@ -165,6 +184,11 @@ WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/De
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'), FailureHandling.OPTIONAL)
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveDeliveryAddress'), 5, FailureHandling.OPTIONAL)
+
+'Check on Section Personal Data'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkPersonalData'), FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'), 10)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataPersonalData'), FailureHandling.OPTIONAL)
 
@@ -204,6 +228,11 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalDa
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSavePersonalData'), 5, FailureHandling.OPTIONAL)
 
+'Check on Section Employment Data'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkEmploymentData'), FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmploymentData'), 10)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataEmploymentData'), FailureHandling.OPTIONAL)
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnEditEmploymentData'), 5, FailureHandling.OPTIONAL)
@@ -240,6 +269,11 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmployment
 
 WebUI.waitForElementNotClickable(findTestObject('Website/CRM/CSR_Management/Details/BtnSaveEmploymentData'), 5, FailureHandling.OPTIONAL)
 
+'Check on Section Selfie and KTP Images'
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/LinkSelfieAndKtpImages'), FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Website/CRM/CSR_Management/Details/BtnDataSelfieAndKtpImages'), 10)
+
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnDataSelfieAndKtpImages'), FailureHandling.OPTIONAL)
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'), 5, FailureHandling.OPTIONAL)
@@ -247,4 +281,3 @@ WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Details/B
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnSendLinkUploadPhotos'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Details/BtnBack'), FailureHandling.OPTIONAL)
-

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Nasabah Tidak Melanjutkan</name>
+   <name>TC_CustomerNotContinueRegistration</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>cebf03e3-8719-43d9-936b-da37233a1c96</testCaseGuid>

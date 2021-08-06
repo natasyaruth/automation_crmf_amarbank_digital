@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnDataPersonalData']</value>
+         <value>//*[@id = 'SectionTitlepersonaldata']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnDataPersonalData</value>
+      <value>SectionTitlepersonaldata</value>
    </webElementProperties>
 </WebElementEntity>
