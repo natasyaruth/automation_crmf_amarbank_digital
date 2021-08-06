@@ -600,6 +600,18 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>837aaf69-8ce6-42b7-a9b9-fb7656350858</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcess</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>adfb6907-6593-45ec-9dd1-58d332871caf</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>d8faf6b3-4151-4951-9e5b-0f7b917fe2f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -665,8 +677,8 @@
    <testCaseLink>
       <guid>d518e89f-ca49-48aa-85d8-10189e3022d4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>false</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_Nasabah Tidak Melanjutkan</testCaseId>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CustomerNotContinueRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>9a56d8cb-bb13-41b1-892a-2c74c1200b85</id>

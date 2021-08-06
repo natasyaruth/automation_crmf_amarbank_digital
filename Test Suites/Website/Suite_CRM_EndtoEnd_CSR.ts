@@ -159,7 +159,7 @@
       <guid>b2aab237-96c9-4e15-8887-2c51528f95b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_Nasabah Tidak Melanjutkan</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CustomerNotContinueRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>59807196-05ba-45df-ae0b-0a17d6780ebf</id>
