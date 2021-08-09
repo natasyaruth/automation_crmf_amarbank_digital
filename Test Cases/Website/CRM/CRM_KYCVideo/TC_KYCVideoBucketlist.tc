@@ -61,4 +61,11 @@
       <masked>false</masked>
       <name>searchKYC</name>
    </variable>
+   <variable>
+      <defaultValue>'Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu'</defaultValue>
+      <description></description>
+      <id>6480d785-470a-4e65-bd84-10a0c2cdcdc9</id>
+      <masked>false</masked>
+      <name>msgIncompleteProcess</name>
+   </variable>
 </TestCaseEntity>

@@ -8,8 +8,10 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -18,9 +20,15 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
 
+WebUI.refresh()
+
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(verificationDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
+TestObject textVerificationDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, verificationDetail)
+
+WebUI.waitForElementVisible(textVerificationDetail, 30, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
@@ -30,7 +38,9 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit'))
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), NIK)
+String idNumber = WebUI.executeJavaScript("return document.querySelector('#TxtNIK').value", null)
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), idNumber)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtName'), name)
 
@@ -91,22 +101,21 @@ WebUI.verifyElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Ver
 
 WebUI.verifyTextPresent(verifyKTPValidation, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyNIK, false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.verifyTextPresent(idNumber, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyTextPresent(verifyName, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyTextPresent(verifyBirthdate2, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyTextPresent(verifyMotherName, false, FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 10, 
-    FailureHandling.CONTINUE_ON_FAILURE)
+TestObject textVerificationModal = new TestObject().addProperty('text', ConditionType.CONTAINS, verifySuccessKYCVerification)
 
-WebUI.verifyTextPresent(verifySuccessKYCVerification, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
-
+if(WebUI.verifyElementVisible(textVerificationModal, FailureHandling.OPTIONAL)) {    
+    WebUI.verifyTextPresent(verifySuccessKYCVerification, false, FailureHandling.CONTINUE_ON_FAILURE)
+    
+    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
+} else {
+    String requestUrl = WebUI.getUrl()
+    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
+    KeywordUtil.markWarning('Verification is not success! Please check the face match for: ' + requestUrl)    
+}
 WebUI.waitForPageLoad(10)
-

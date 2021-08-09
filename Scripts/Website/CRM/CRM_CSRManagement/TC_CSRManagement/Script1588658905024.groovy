@@ -20,3 +20,5 @@ WebUI.click(findTestObject('Website/CRM/CSR_Management/LinkCSRManagement'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), 20)
 
+Mobile.callTestCase(findTestCase('Website/CRM/TC_AbortIncompleteProcess'), [('msgIncompleteProcess') : msgIncompleteProcess])
+

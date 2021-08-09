@@ -48,10 +48,10 @@
       <name>requestIDName</name>
    </variable>
    <variable>
-      <defaultValue>'3'</defaultValue>
-      <description>Option for &quot;Semua&quot;</description>
-      <id>d56f618d-c71e-426b-a517-7f4375fee2f8</id>
+      <defaultValue>'1'</defaultValue>
+      <description></description>
+      <id>6cdd8beb-e13c-489f-99d3-b5237e2af857</id>
       <masked>false</masked>
-      <name>optionNumber</name>
+      <name>indexNumber</name>
    </variable>
 </TestCaseEntity>

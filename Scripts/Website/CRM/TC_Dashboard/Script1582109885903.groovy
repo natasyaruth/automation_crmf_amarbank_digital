@@ -8,7 +8,8 @@ import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as Cucumber
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
-import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testdata.TestData
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -25,11 +26,11 @@ WebUI.verifyTextPresent(headerDashboard, false, FailureHandling.CONTINUE_ON_FAIL
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -37,11 +38,19 @@ List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Manag
 
 listRequestId.get(indexNumber).click()
 
+WebUI.refresh()
+
 WebUI.waitForPageLoad(5)
 
-WebUI.verifyTextPresent(headerKYCCustomerDetail, false, FailureHandling.CONTINUE_ON_FAILURE)
+TestObject verifyTextKYCPage = new TestObject().addProperty('text', ConditionType.CONTAINS, headerKYCCustomerDetail)
+
+WebUI.waitForElementVisible(verifyTextKYCPage, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+
+if(WebUI.verifyElementVisible(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'), FailureHandling.OPTIONAL) == false) {
+    WebUI.refresh()
+}
 
 WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
 
@@ -54,4 +63,6 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnBack
 WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.refresh()
 
