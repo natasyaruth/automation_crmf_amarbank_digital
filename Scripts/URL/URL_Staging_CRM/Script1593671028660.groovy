@@ -21,3 +21,7 @@ import com.kms.katalon.core.configuration.RunConfiguration
 RunConfiguration.setWebDriverPreferencesProperty("args", listValue)
 
 WebUI.openBrowser('https://'+GlobalVariable.authUsername+':'+GlobalVariable.authPassword+'@'+(GlobalVariable.siteUrl.substring(8)))
+
+WebUI.navigateToUrl(GlobalVariable.siteUrl)
+
+WebUI.maximizeWindow()

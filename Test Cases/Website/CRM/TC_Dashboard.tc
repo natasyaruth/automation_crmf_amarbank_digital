@@ -33,4 +33,11 @@
       <masked>false</masked>
       <name>indexNumber</name>
    </variable>
+   <variable>
+      <defaultValue>'Detil Nasabah'</defaultValue>
+      <description></description>
+      <id>56a81b19-738b-4871-bc7b-4f41caecaa15</id>
+      <masked>false</masked>
+      <name>textVerification</name>
+   </variable>
 </TestCaseEntity>

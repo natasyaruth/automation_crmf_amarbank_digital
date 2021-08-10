@@ -24,7 +24,7 @@
       <description></description>
       <id>05e40580-46ff-4429-aa0e-3f8f007de784</id>
       <masked>false</masked>
-      <name>verifyCheckbox</name>
+      <name>textVerificationCheckbox</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
@@ -95,5 +95,19 @@
       <id>db998fda-60f9-4833-818e-9c8c202760ec</id>
       <masked>false</masked>
       <name>other</name>
+   </variable>
+   <variable>
+      <defaultValue>'Konfirmasi Alamat Pengiriman Kartu'</defaultValue>
+      <description></description>
+      <id>80a87f00-967e-42a4-b0a8-5e6edcd9c957</id>
+      <masked>false</masked>
+      <name>textVerificationAddressSection</name>
+   </variable>
+   <variable>
+      <defaultValue>'Detail Sesi KYC'</defaultValue>
+      <description></description>
+      <id>c47252ef-c147-4d25-9b2b-10a67ec94a53</id>
+      <masked>false</masked>
+      <name>textVerificationKYCSection</name>
    </variable>
 </TestCaseEntity>

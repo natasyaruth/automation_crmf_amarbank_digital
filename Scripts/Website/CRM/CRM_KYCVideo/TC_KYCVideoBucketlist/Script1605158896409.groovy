@@ -16,7 +16,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
+if (WebUI.verifyElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), FailureHandling.OPTIONAL) == false) {
+    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
+    WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'), 5)  
+}
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkVideoRequest'))
+
+Mobile.callTestCase(findTestCase('Website/CRM/TC_AbortIncompleteProcess'), [('msgIncompleteProcess') : msgIncompleteProcess])
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
@@ -36,15 +42,16 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnF
 
 WebUI.waitForElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnFirstPage'), 5)
 
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), searchKYC)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnSearch'))
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerAll, 
     false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyTextPresent(customerAll, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerNasabahBaru, 
-    false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyTextPresent(customerNasabahBaru, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerNasabahSenyumku, 
     false, FailureHandling.CONTINUE_ON_FAILURE)
@@ -61,23 +68,22 @@ WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/B
 
 WebUI.verifyTextPresent(customerSenyumkuDeposito, false, FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), customerNasabahBaru, 
+    false, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.verifyTextPresent(customerNasabahBaru, false, FailureHandling.CONTINUE_ON_FAILURE)
+
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), filterStartDate)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), "value", filterStartDate, 
-    10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpStartFilterDate'), 
+    'value', filterStartDate, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), filterEndDate)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), "value", filterEndDate, 
-    10, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DtpEndFilterDate'), 'value', 
+    filterEndDate, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnShow'))
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID'), searchKYC)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnSearch'))
 
 WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/LinkRequestID'), 10, FailureHandling.CONTINUE_ON_FAILURE)
 

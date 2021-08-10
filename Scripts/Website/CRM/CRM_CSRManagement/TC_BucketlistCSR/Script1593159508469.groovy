@@ -18,32 +18,40 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.verifyTextPresent(headerBucketlistCSR, false, FailureHandling.CONTINUE_ON_FAILURE)
 
+WebUI.refresh()
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementNotPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 5, FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnPreviousPage'), FailureHandling.OPTIONAL)
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), FailureHandling.OPTIONAL)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage'), FailureHandling.OPTIONAL)
+
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterAll, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNewCustomer, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterCustomerSenyumku, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'))
-
-WebUI.waitForElementNotPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 10)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnPreviousPage'))
-
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'))
-
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage'))
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNotContinue, false, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), searchPhoneNumber)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), searchPhoneNumber, 
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), 'value',
     searchPhoneNumber, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNotContinue, false, FailureHandling.CONTINUE_ON_FAILURE)
-
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnSearch'))
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpStartFilterDate'), startFilterDate)
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpEndFilterDate'), endFilterDate)
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnShow'))
 
 WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnDetail'))
 

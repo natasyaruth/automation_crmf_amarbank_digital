@@ -85,6 +85,12 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CSRManagement</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4bf7f8e2-f2c7-4c34-a18b-7ffd417195bd</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>6ed36dbe-2136-4344-a972-a01a83e4befc</guid>
@@ -136,12 +142,24 @@
          <value></value>
          <variableId>a7e12d13-b5df-472c-821d-a44c76c95b33</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a070eab7-b91d-40da-9dff-3ebd9bf0f709</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6ce8dc86-eed7-424d-b6b7-ca1d4b9d85ba</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b2aab237-96c9-4e15-8887-2c51528f95b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_Nasabah Tidak Melanjutkan</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CustomerNotContinueRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>59807196-05ba-45df-ae0b-0a17d6780ebf</id>
@@ -384,6 +402,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>72ce5562-ae45-458b-8c40-611ee5215ab5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>dd841883-40bd-4545-acec-500eb084ff61</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

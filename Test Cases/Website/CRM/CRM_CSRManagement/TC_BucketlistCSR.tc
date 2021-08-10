@@ -47,4 +47,18 @@
       <masked>false</masked>
       <name>filterNotContinue</name>
    </variable>
+   <variable>
+      <defaultValue>'05/04/2021'</defaultValue>
+      <description></description>
+      <id>a070eab7-b91d-40da-9dff-3ebd9bf0f709</id>
+      <masked>false</masked>
+      <name>startFilterDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'05/08/2021'</defaultValue>
+      <description></description>
+      <id>6ce8dc86-eed7-424d-b6b7-ca1d4b9d85ba</id>
+      <masked>false</masked>
+      <name>endFilterDate</name>
+   </variable>
 </TestCaseEntity>
