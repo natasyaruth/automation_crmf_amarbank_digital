@@ -76,7 +76,7 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-437
+                - master
       - run_test_firefox:
           context: Automation
           requires:
@@ -84,4 +84,4 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-437
+                - master
