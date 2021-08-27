@@ -41,9 +41,15 @@ if(listRequestId.size() > 1) {
     WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnFirstPage'))
 }
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), requestID)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
+if(listRequestId.size() == 1) {
+	WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
+	
+	WebUI.waitForPageLoad(5)
+	
+	WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))	
+	
+	WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), 10)
+}
 
 TestObject verifyTextRequestName = new TestObject().addProperty('text', ConditionType.CONTAINS, requestIDName.toUpperCase())
 
@@ -57,3 +63,7 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucket
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpEndFilterDate'), endFilterDate)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnShow'))
+
+WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), requestID)
+
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
