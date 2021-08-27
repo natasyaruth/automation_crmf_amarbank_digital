@@ -95,6 +95,6 @@ WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Veri
 
 WebUI.verifyTextPresent(verifyEmailhasverified, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.verifyElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), 'value', idNumber, 0)
+WebUI.verifyElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), 'value', idNumber, 10)
 //There is no test step to successfully "accept", please create a new script if needed
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
