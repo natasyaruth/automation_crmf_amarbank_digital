@@ -95,27 +95,6 @@ WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Veri
 
 WebUI.verifyTextPresent(verifyEmailhasverified, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
-
-WebUI.verifyElementNotPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1'), 10, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyTextPresent(verifyKTPValidation, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyTextPresent(idNumber, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.verifyTextPresent(verifyName, false, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
-
-TestObject textVerificationModal = new TestObject().addProperty('text', ConditionType.CONTAINS, verifySuccessKYCVerification)
-
-if(WebUI.verifyElementVisible(textVerificationModal, FailureHandling.OPTIONAL)) {    
-    WebUI.verifyTextPresent(verifySuccessKYCVerification, false, FailureHandling.CONTINUE_ON_FAILURE)
-    
-    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
-} else {
-    String requestUrl = WebUI.getUrl()
-    WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
-    KeywordUtil.markWarning('Verification is not success! Please check the face match for: ' + requestUrl)    
-}
-WebUI.waitForPageLoad(10)
+WebUI.verifyElementAttributeValue(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), 'value', idNumber, 10)
+//There is no test step to successfully "accept", please create a new script if needed
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
