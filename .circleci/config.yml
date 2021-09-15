@@ -34,13 +34,14 @@ commands:
       - run:
           name: Download File
           command: |
-            curl 'https://www.googleapis.com/drive/v3/files/<< parameters.file_id >>/export?mimeType=application%2Fvnd.openxmlformats-officedocument.spreadsheetml.sheet' \
+            curl 'https://www.googleapis.com/drive/v2/files/<< parameters.file_id >>?acknowledgeAbuse=false&alt=media' \
             --header "Authorization: Bearer $ACCESS_TOKEN" \
             --header 'Accept: application/json' \
             --output tmp.xlsx
       - run:
           name: Copy File
-          command: cp tmp.xlsx "<< parameters.location >>"          
+          command: cp tmp.xlsx "<< parameters.location >>"
+             
   run_single_testsuite:
     description: "Run Selected Test Suite on a Selected Browser"
     parameters:
