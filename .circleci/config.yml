@@ -120,7 +120,7 @@ jobs:
     <<: *container_config
     steps:
       - checkout
-      - download-test-data:
+      - download_test_data:
           file_id: 1hxZ4nXbBSOB9K5MMdNqrpxHhP0uNy3Sm
           location: Data Files/Dataset_CRMF.xlsx
       - run_single_testsuite:
