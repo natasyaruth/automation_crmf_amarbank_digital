@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Data_CRM_NasabahBaru</name>
+   <name>Dataset_KYCVideoChangePhone</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>71783ba2-aeec-4d01-84c7-e029876030fb</dataFileGUID>
-   <dataSourceUrl>Data Files/Website/DataFiles_CRM/DataExcel_KYCVideo/Data_CRM_NasabahBaru.xlsx</dataSourceUrl>
+   <dataFileGUID>6f8f3847-9249-46f8-8e21-dcf132a002a0</dataFileGUID>
+   <dataSourceUrl>Data Files/Dataset_CRMF.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
+   <properties>
+      <entry>
+         <key>readAsString</key>
+         <value>true</value>
+      </entry>
+   </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Data</sheetName>
+   <sheetName>KYCVideoChangePhone</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

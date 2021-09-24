@@ -35,7 +35,7 @@
             <iterationType>ALL</iterationType>
             <value></value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Data_CRM_UserLogin</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>

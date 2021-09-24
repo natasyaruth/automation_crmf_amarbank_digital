@@ -35,7 +35,7 @@
             <iterationType>ALL</iterationType>
             <value>5-5</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Data_CRM_UserLogin</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -104,7 +104,7 @@
             <iterationType>RANGE</iterationType>
             <value>5-5</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVerification/Data_CRM_Verification</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Dataset_CRMKYCVerification/Dataset_CRMVerification</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>

@@ -113,7 +113,7 @@
             <iterationType>RANGE</iterationType>
             <value>3-3</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCard</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>1851dd79-5cac-4027-a546-a166e96000cd</testDataLinkId>
@@ -410,7 +410,7 @@
             <iterationType>RANGE</iterationType>
             <value>3-3</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCard</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>de078acb-3e8d-45ea-b833-5e9d602ab452</testDataLinkId>
@@ -449,7 +449,7 @@
             <iterationType>RANGE</iterationType>
             <value>2-2</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCMS</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRM/Dataset_CRMCardManagement/Dataset_CRMAssignCMS</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>ed1d8de3-5f10-4670-b399-f78a1337b69b</testDataLinkId>
