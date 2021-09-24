@@ -116,7 +116,7 @@ jobs:
       - run_upload_reports:
           project_id: "201268"
 
-  run_test_chrome_regression:
+  run_test_crmf_regression:
     <<: *container_config
     steps:
       - checkout
@@ -134,7 +134,7 @@ jobs:
 workflows:
   build:
     jobs:
-      - run_test_chrome_regression:
+      - run_test_crmf_regression:
           context: Automation
           filters:
             branches:
