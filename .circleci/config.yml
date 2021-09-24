@@ -115,14 +115,28 @@ jobs:
           browser_type: Chrome
       - run_upload_reports:
           project_id: "201268"
+
+  run_test_chrome_regression:
+    <<: *container_config
+    steps:
+      - checkout
+      - download-test-data:
+          file_id: 1hxZ4nXbBSOB9K5MMdNqrpxHhP0uNy3Sm
+          location: Data Files/Dataset_CRMF.xlsx
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
+          environment: staging
+          browser_type: Chrome
+      - run_upload_reports:
+          project_id: "201268"
        
           
 workflows:
   build:
     jobs:
-      - run_test_custom_file:
+      - run_test_chrome_regression:
           context: Automation
           filters:
             branches:
               only:
-                - feature/file-download
+                - CRMF-577
