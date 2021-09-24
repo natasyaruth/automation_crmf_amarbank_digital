@@ -139,4 +139,4 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-577
+                - master
