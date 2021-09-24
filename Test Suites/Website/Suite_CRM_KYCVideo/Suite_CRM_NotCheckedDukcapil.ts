@@ -32,10 +32,10 @@
          <combinationType>ONE</combinationType>
          <id>11ea5d30-67e2-4efd-b3d2-e30d13db743b</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRM/Data_CRM_UserLogin</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -50,15 +50,15 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>11ea5d30-67e2-4efd-b3d2-e30d13db743b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>11ea5d30-67e2-4efd-b3d2-e30d13db743b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
@@ -74,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>11ea5d30-67e2-4efd-b3d2-e30d13db743b</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>

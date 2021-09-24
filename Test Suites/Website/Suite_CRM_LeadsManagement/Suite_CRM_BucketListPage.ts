@@ -32,10 +32,10 @@
          <combinationType>ONE</combinationType>
          <id>79f2b497-9617-475d-a080-9c9c4935e8ac</id>
          <iterationEntity>
-            <iterationType>ALL</iterationType>
-            <value></value>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRM/Dataset_CRMLogin/Dataset_Login</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -50,13 +50,13 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>7d9af6af-b3e8-4448-81d4-3bee26128822</testDataLinkId>
+         <testDataLinkId>79f2b497-9617-475d-a080-9c9c4935e8ac</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>GmailAccount</value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>7d9af6af-b3e8-4448-81d4-3bee26128822</testDataLinkId>
+         <testDataLinkId>79f2b497-9617-475d-a080-9c9c4935e8ac</testDataLinkId>
          <type>DATA_COLUMN</type>
          <value>GmailPassword</value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
@@ -74,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>SCRIPT_VARIABLE</type>
-         <value>findTestData(&quot;Website/DataFiles_CRM/Data_CRM_Login/Data_Login&quot;).getValue(3, 4)</value>
+         <testDataLinkId>79f2b497-9617-475d-a080-9c9c4935e8ac</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
