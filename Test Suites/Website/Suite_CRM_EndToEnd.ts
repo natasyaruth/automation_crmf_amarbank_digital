@@ -83,7 +83,7 @@
    <testCaseLink>
       <guid>b4d991c9-e2ef-4ca1-8233-9c5555744677</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -95,7 +95,7 @@
    <testCaseLink>
       <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -140,7 +140,7 @@
    <testCaseLink>
       <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -197,7 +197,7 @@
    <testCaseLink>
       <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -380,7 +380,7 @@
    <testCaseLink>
       <guid>486e4e97-ca49-4bb5-aa1f-db17f676171c</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -392,7 +392,7 @@
    <testCaseLink>
       <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -461,7 +461,7 @@
    <testCaseLink>
       <guid>5e5034f5-08f0-41f6-998e-f94c3f39d966</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCVideo/TC_KYCVideoRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -566,7 +566,7 @@
    <testCaseLink>
       <guid>af2d2b5f-3a56-41d2-95e3-74cc6f988d31</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcess</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -578,7 +578,7 @@
    <testCaseLink>
       <guid>345eff6c-a82d-4752-a53d-39990e897797</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -590,7 +590,7 @@
    <testCaseLink>
       <guid>ab307682-5d1f-447a-a919-790cf5b43594</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CSRManagement</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -602,7 +602,7 @@
    <testCaseLink>
       <guid>837aaf69-8ce6-42b7-a9b9-fb7656350858</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcess</testCaseId>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -614,7 +614,7 @@
    <testCaseLink>
       <guid>d8faf6b3-4151-4951-9e5b-0f7b917fe2f5</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_BucketlistCSR</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -677,7 +677,7 @@
    <testCaseLink>
       <guid>d518e89f-ca49-48aa-85d8-10189e3022d4</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CustomerNotContinueRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
