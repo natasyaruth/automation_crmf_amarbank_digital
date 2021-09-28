@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Data_CRM_ChangePhone</name>
+   <name>Dataset_Login</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>6f8f3847-9249-46f8-8e21-dcf132a002a0</dataFileGUID>
-   <dataSourceUrl>../../CRMF Automation/tunaiku_crmf_automation/Data Files/Website/DataFiles_CRM/DataExcel_KYCVideo/Data_CRM_Changephone.xlsx</dataSourceUrl>
+   <dataFileGUID>b9089bb1-3d56-48ce-9075-7317a8a19524</dataFileGUID>
+   <dataSourceUrl>Data Files/Dataset_CRMF.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <properties>
@@ -17,6 +17,6 @@
    </properties>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>Login</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

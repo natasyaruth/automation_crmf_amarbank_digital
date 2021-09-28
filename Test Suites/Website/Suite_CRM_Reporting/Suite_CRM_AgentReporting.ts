@@ -32,10 +32,10 @@
          <combinationType>ONE</combinationType>
          <id>c2116bd2-5e19-4908-a45a-5b6205f7cd30</id>
          <iterationEntity>
-            <iterationType>SPECIFIC</iterationType>
-            <value>1</value>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_Login/Data_Login</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -74,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>c2116bd2-5e19-4908-a45a-5b6205f7cd30</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Data_CRM_HasNotBeenValidated</name>
+   <name>Dataset_KYCVideoHasNotBeenValidated</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>07b8e2be-0708-467b-932a-fc0b20daacd7</dataFileGUID>
-   <dataSourceUrl>../../CRMF Automation/tunaiku_crmf_automation/Data Files/Website/DataFiles_CRM/DataExcel_KYCVideo/Data_CRM_HasNotBeenValidated.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Dataset_CRMF.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>KYCVideoHasNotBeenValidated</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>
