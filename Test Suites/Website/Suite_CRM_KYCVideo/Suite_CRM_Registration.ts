@@ -95,7 +95,7 @@
             <iterationType>RANGE</iterationType>
             <value>1-1</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_KYCVideo/Data_CRM_NasabahBaru</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoNasabahBaru</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>c597fc86-9b5f-4bc2-a9cd-e481a6a44422</testDataLinkId>

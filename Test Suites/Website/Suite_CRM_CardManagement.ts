@@ -28,6 +28,15 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>55817886-1460-447d-82a7-501bddb0d647</id>
+         <iterationEntity>
+            <iterationType>RANGE</iterationType>
+            <value>5-5</value>
+         </iterationEntity>
+         <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
+      </testDataLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -41,15 +50,15 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>55817886-1460-447d-82a7-501bddb0d647</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailAccount</value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>55817886-1460-447d-82a7-501bddb0d647</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>GmailPassword</value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
@@ -65,9 +74,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>55817886-1460-447d-82a7-501bddb0d647</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
    </testCaseLink>
@@ -113,7 +122,7 @@
             <iterationType>RANGE</iterationType>
             <value>3-3</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCard</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>1851dd79-5cac-4027-a546-a166e96000cd</testDataLinkId>
@@ -410,7 +419,7 @@
             <iterationType>RANGE</iterationType>
             <value>3-3</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCard</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>de078acb-3e8d-45ea-b833-5e9d602ab452</testDataLinkId>
@@ -449,7 +458,7 @@
             <iterationType>RANGE</iterationType>
             <value>2-2</value>
          </iterationEntity>
-         <testDataId>Data Files/Website/DataFiles_CRM/Data_CRM_CardManagement/Data_CRM_AssignCMS</testDataId>
+         <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCMS</testDataId>
       </testDataLink>
       <variableLink>
          <testDataLinkId>ed1d8de3-5f10-4670-b399-f78a1337b69b</testDataLinkId>

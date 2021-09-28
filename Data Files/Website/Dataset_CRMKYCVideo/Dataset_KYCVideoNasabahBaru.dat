@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <DataFileEntity>
    <description></description>
-   <name>Data_CRM_Verification</name>
+   <name>Dataset_KYCVideoNasabahBaru</name>
    <tag></tag>
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
-   <dataFileGUID>054f7495-a755-42ae-960e-e07a2cee70f3</dataFileGUID>
-   <dataSourceUrl>Data Files/Website/DataFiles_CRM/Data_CRM_Verification.xlsx</dataSourceUrl>
+   <dataFileGUID>71783ba2-aeec-4d01-84c7-e029876030fb</dataFileGUID>
+   <dataSourceUrl>Data Files/Dataset_CRMF.xlsx</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <query></query>
    <secureUserAccount>false</secureUserAccount>
-   <sheetName>Sheet1</sheetName>
+   <sheetName>KYCVideoNasabahBaru</sheetName>
    <usingGlobalDBSetting>false</usingGlobalDBSetting>
 </DataFileEntity>

@@ -7,6 +7,41 @@ references:
     resource_class: medium
     
 commands:
+  download_test_data:
+    description: "Downloading Test Data from Google Sheet"
+    parameters:
+      file_id:
+        type: string
+      location:
+        type: string
+    steps:
+      - run:
+          name: Update Repository
+          command: apt update
+      - run:
+          name: Download jq
+          command: apt --assume-yes install jq
+      - run:
+          name: Request Access Token
+          command: |
+            echo 'export RESPONSE=$(curl -X POST -F 'client_id=$GOOGLE_CLIENT_ID' -F 'client_secret=$GOOGLE_CLIENT_SECRET' -F 'grant_type=refresh_token' -F "refresh_token=$GOOGLE_REFRESH_TOKEN" https://oauth2.googleapis.com/token | jq -r '.access_token')' >> $BASH_ENV
+            source $BASH_ENV
+      - run:
+          name: Extract Access Token
+          command: |
+            echo 'export ACCESS_TOKEN=$(echo -e "$RESPONSE" | sed s/\\.\\.//g)' >> $BASH_ENV
+            source $BASH_ENV
+      - run:
+          name: Download File
+          command: |
+            curl 'https://www.googleapis.com/drive/v2/files/<< parameters.file_id >>?acknowledgeAbuse=false&alt=media' \
+            --header "Authorization: Bearer $ACCESS_TOKEN" \
+            --header 'Accept: application/json' \
+            --output tmp.xlsx
+      - run:
+          name: Copy File
+          command: cp tmp.xlsx "<< parameters.location >>"
+             
   run_single_testsuite:
     description: "Run Selected Test Suite on a Selected Browser"
     parameters:
@@ -66,21 +101,41 @@ jobs:
           browser_type: Firefox
       - run_upload_reports:
           project_id: "201268"
+          
+  run_test_custom_file:
+    <<: *container_config
+    steps:
+      - checkout
+      - download_test_data:
+          file_id: 1fRp1sMG1IaHcUQDGHRzyQ5h8qwb-iEF8
+          location: Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin.xlsx
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website/Suite_CRM_Login/Suite_CRM_Login_NegativeTest
+          environment: staging
+          browser_type: Chrome
+      - run_upload_reports:
+          project_id: "201268"
+
+  run_test_crmf_regression:
+    <<: *container_config
+    steps:
+      - checkout
+      - download_test_data:
+          file_id: 1zFSX7vmuWd8cfAS8nW8E7qZK43C3uwGz
+          location: Data Files/Dataset_CRMF.xlsx
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
+          environment: staging
+          browser_type: Chrome
+      - run_upload_reports:
+          project_id: "201268"
        
           
 workflows:
   build:
     jobs:
-      - run_test_chrome:
+      - run_test_crmf_regression:
           context: Automation
-          filters:
-            branches:
-              only:
-                - master
-      - run_test_firefox:
-          context: Automation
-          requires:
-            - run_test_chrome
           filters:
             branches:
               only:
