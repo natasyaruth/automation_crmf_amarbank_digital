@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>GridInfoLogin</name>
+   <name>LoginGridInfoLogin</name>
    <tag></tag>
    <elementGuidId>5a4af8b0-dec2-4450-8153-684b6acec07e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>

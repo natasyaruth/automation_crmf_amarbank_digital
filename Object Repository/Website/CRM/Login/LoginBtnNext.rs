@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnPasswordNext</name>
+   <name>LoginBtnNext</name>
    <tag></tag>
-   <elementGuidId>c50487d5-adc5-4004-af36-41c39f6c294a</elementGuidId>
+   <elementGuidId>dfdeb454-bfb1-4c08-b8d8-77e4392cb162</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'passwordNext']</value>
+         <value>//*[@id = 'identifierNext']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>passwordNext</value>
+      <value>identifierNext</value>
+      <webElementGuid>762fb44b-f4c9-47c5-ad55-b0853cfc013a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

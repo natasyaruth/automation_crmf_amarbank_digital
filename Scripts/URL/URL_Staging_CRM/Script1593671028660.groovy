@@ -18,10 +18,11 @@ import internal.GlobalVariable as GlobalVariable
 
 import com.kms.katalon.core.configuration.RunConfiguration
 
+/* Set up list value set web driver preferences property*/
 RunConfiguration.setWebDriverPreferencesProperty("args", listValue)
 
+/* Set input username & password basic auth on browser web page */
 WebUI.openBrowser('https://'+GlobalVariable.authUsername+':'+GlobalVariable.authPassword+'@'+(GlobalVariable.siteUrl.substring(8)))
 
+/* Set navigate to setup URL */
 WebUI.navigateToUrl(GlobalVariable.siteUrl)
-
-WebUI.maximizeWindow()

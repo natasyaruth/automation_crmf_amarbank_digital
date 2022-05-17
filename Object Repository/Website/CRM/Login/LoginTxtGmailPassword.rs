@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtGmailAccount</name>
+   <name>LoginTxtGmailPassword</name>
    <tag></tag>
-   <elementGuidId>f475cbb6-27c7-4f6f-ab6c-9458aa38c17f</elementGuidId>
+   <elementGuidId>10c14719-fbd0-45d6-a058-622b5a8ebb65</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'identifierId']</value>
+         <value>//input[@name = 'password']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,12 +18,14 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>0b6ce585-3bec-4012-b40b-6680ea4d5472</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>name</name>
       <type>Main</type>
-      <value>identifierId</value>
+      <value>password</value>
+      <webElementGuid>b52dc62e-f564-4ecf-b897-3f97c720d2d8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
