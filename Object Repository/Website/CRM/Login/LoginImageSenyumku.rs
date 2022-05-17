@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LoginImageSenyumku</name>
+   <tag></tag>
+   <elementGuidId>19098d82-537d-4c62-aa9d-4adba0a42ce5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>img.LoginPage-logo.u-mg-bottom-large</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/section/div/div/div/div/img</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@src = '/static/media/senyumku logo.7e359c5b.svg' and @alt = 'logo']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>294cce2e-9b41-4e42-b4f6-f22294a3d50b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>/static/media/senyumku logo.7e359c5b.svg</value>
+      <webElementGuid>1ecf8011-3396-480e-a152-f6c4816c1507</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>alt</name>
+      <type>Main</type>
+      <value>logo</value>
+      <webElementGuid>31175144-e301-4afe-abcc-6e29699e82d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>LoginPage-logo u-mg-bottom-large</value>
+      <webElementGuid>f177fa12-1339-4d78-afde-9fc4a1f6a80f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/section[1]/div[@class=&quot;LoginPage-container&quot;]/div[@class=&quot;LoginPage-wrapper&quot;]/div[@class=&quot;LoginPage-content&quot;]/div[@class=&quot;align--center&quot;]/img[@class=&quot;LoginPage-logo u-mg-bottom-large&quot;]</value>
+      <webElementGuid>3c212b40-8b64-42d6-8d29-a4fcbf4676a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/section/div/div/div/div/img</value>
+      <webElementGuid>81d92071-9ebe-4fae-81b9-ca95a8a7bbfd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>//img[@alt='logo']</value>
+      <webElementGuid>b130824b-1943-4651-8806-64734d16e2ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//img</value>
+      <webElementGuid>ffe2478d-8a93-4691-843a-e6811f1b9e48</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = '/static/media/senyumku logo.7e359c5b.svg' and @alt = 'logo']</value>
+      <webElementGuid>d22c1a17-28f5-4177-a745-0455bf9176ab</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

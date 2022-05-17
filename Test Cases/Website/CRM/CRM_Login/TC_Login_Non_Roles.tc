@@ -1,189 +1,189 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_Login</name>
+   <name>TC_Login_Non_Roles</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>7dcb7ad4-9d92-4c35-89c5-cbeca48648be</testCaseGuid>
+   <testCaseGuid>a6acfb07-a0bb-4c95-bc67-1ab891893cdd</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8f0bc7d6-ce7b-437f-8142-845221f80d42</variableId>
+      <variableId>bed9c2e9-5bab-49fe-9693-313135191f66</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
+      <variableId>8fecc327-d1d9-4fdf-829e-5f339fb743fa</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
+      <variableId>8543a024-bec2-4e28-bea3-bc79630977b8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
+      <variableId>eba29640-7864-45c2-99b0-daa8907e0ce4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0a94ab68-60c2-4541-9120-68e2bc66b97a</variableId>
+      <variableId>901f8294-b6e6-40c7-b3d1-25658a281825</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
+      <variableId>c6173c38-96c4-4774-934d-11e32f9787e7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
+      <variableId>907f8aa6-8f11-48a3-8442-3cf0ba93244e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5f6e4f69-2cba-412b-a6d5-88642fd8d88a</variableId>
+      <variableId>e37304b0-5684-425c-bea1-36f2f057952d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>069ceecd-95d3-4675-9674-eee2becce14d</variableId>
+      <variableId>7ddb2951-25ab-4032-9318-af21ce96e738</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a35d0960-7031-4aa9-8630-fdfbfe54cbc9</variableId>
+      <variableId>c7c69590-0826-4a55-a20d-196ad4d84a8e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8bcaa8f2-5dac-4f07-9607-8495dc2a872f</variableId>
+      <variableId>e5d469a4-36f6-4c3c-bffe-c9f1fa81efc5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8700d631-70c4-47b8-86d7-3c13e3f0ad7a</variableId>
+      <variableId>098c9bc1-8b4d-42c3-9c8c-f2cac6d3376e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3edcce88-ac57-4781-b7a0-0aa145c908b5</variableId>
+      <variableId>334ba6af-1e12-4bad-a360-e2ee17b7372c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>63505095-fc25-405a-a9be-9c1d33dcf4f9</variableId>
+      <variableId>09ab2ecf-9abd-49eb-a2f6-a76a469059c9</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>
       <description></description>
-      <id>8f0bc7d6-ce7b-437f-8142-845221f80d42</id>
+      <id>bed9c2e9-5bab-49fe-9693-313135191f66</id>
       <masked>false</masked>
       <name>btnLoginText</name>
    </variable>
    <variable>
       <defaultValue>'Masukkan email Anda'</defaultValue>
       <description></description>
-      <id>90084b35-f3a5-46da-8d0d-446d669b0bbb</id>
+      <id>8fecc327-d1d9-4fdf-829e-5f339fb743fa</id>
       <masked>false</masked>
       <name>verifyFieldEmail</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 5)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 6)</defaultValue>
       <description></description>
-      <id>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</id>
+      <id>8543a024-bec2-4e28-bea3-bc79630977b8</id>
       <masked>true</masked>
       <name>gmailAccount</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 5)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 6)</defaultValue>
       <description></description>
-      <id>774ba9ea-d278-493e-92b6-073b2360a3cb</id>
+      <id>eba29640-7864-45c2-99b0-daa8907e0ce4</id>
       <masked>false</masked>
       <name>gmailPassword</name>
    </variable>
    <variable>
       <defaultValue>'Masukkan sandi Anda'</defaultValue>
       <description></description>
-      <id>0a94ab68-60c2-4541-9120-68e2bc66b97a</id>
+      <id>901f8294-b6e6-40c7-b3d1-25658a281825</id>
       <masked>false</masked>
       <name>verifyFieldPassword</name>
    </variable>
    <variable>
       <defaultValue>'Welcome to Senyumku CRM'</defaultValue>
       <description></description>
-      <id>75901125-1c8c-4149-80ee-9d1f9ede82fa</id>
+      <id>c6173c38-96c4-4774-934d-11e32f9787e7</id>
       <masked>false</masked>
       <name>verifyDasboardPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 5)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 6)</defaultValue>
       <description></description>
-      <id>a379d56d-d8dd-44f8-840b-5ded110f062f</id>
+      <id>907f8aa6-8f11-48a3-8442-3cf0ba93244e</id>
       <masked>false</masked>
       <name>username</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginImageSenyumku')</defaultValue>
       <description></description>
-      <id>5f6e4f69-2cba-412b-a6d5-88642fd8d88a</id>
+      <id>e37304b0-5684-425c-bea1-36f2f057952d</id>
       <masked>false</masked>
       <name>logoLoginPage</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginBtn')</defaultValue>
       <description></description>
-      <id>069ceecd-95d3-4675-9674-eee2becce14d</id>
+      <id>7ddb2951-25ab-4032-9318-af21ce96e738</id>
       <masked>false</masked>
       <name>btnLogin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginTxtGmailAccount')</defaultValue>
       <description></description>
-      <id>a35d0960-7031-4aa9-8630-fdfbfe54cbc9</id>
+      <id>c7c69590-0826-4a55-a20d-196ad4d84a8e</id>
       <masked>false</masked>
       <name>fieldEmailLogin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginBtnNext')</defaultValue>
       <description></description>
-      <id>8bcaa8f2-5dac-4f07-9607-8495dc2a872f</id>
+      <id>e5d469a4-36f6-4c3c-bffe-c9f1fa81efc5</id>
       <masked>false</masked>
       <name>btnNext</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginTxtGmailPassword')</defaultValue>
       <description></description>
-      <id>8700d631-70c4-47b8-86d7-3c13e3f0ad7a</id>
+      <id>098c9bc1-8b4d-42c3-9c8c-f2cac6d3376e</id>
       <masked>false</masked>
       <name>fieldPasswordLogin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginBtnPasswordNext')</defaultValue>
       <description></description>
-      <id>3edcce88-ac57-4781-b7a0-0aa145c908b5</id>
+      <id>334ba6af-1e12-4bad-a360-e2ee17b7372c</id>
       <masked>false</masked>
       <name>btnPasswordNext</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Login/LoginGridInfoLogin')</defaultValue>
       <description></description>
-      <id>63505095-fc25-405a-a9be-9c1d33dcf4f9</id>
+      <id>09ab2ecf-9abd-49eb-a2f6-a76a469059c9</id>
       <masked>false</masked>
       <name>gridInfoLogin</name>
    </variable>
