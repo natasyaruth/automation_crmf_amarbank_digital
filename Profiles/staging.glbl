@@ -164,4 +164,19 @@
       <initValue>'https://staging-crm-rekol.tunaiku.com'</initValue>
       <name>siteUrl</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'web-api'</initValue>
+      <name>usernameWebApi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <name>passwordWebApi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-registration-svc.otoku.io'</initValue>
+      <name>baseUrlRegOtoku</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

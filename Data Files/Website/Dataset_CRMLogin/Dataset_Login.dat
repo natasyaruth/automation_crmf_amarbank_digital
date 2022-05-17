@@ -6,7 +6,7 @@
    <containsHeaders>true</containsHeaders>
    <csvSeperator></csvSeperator>
    <dataFileGUID>b9089bb1-3d56-48ce-9075-7317a8a19524</dataFileGUID>
-   <dataSourceUrl>Data Files/Dataset_CRMF.xlsx</dataSourceUrl>
+   <dataSourceUrl>Data Files/Dataset_CRMF.xls</dataSourceUrl>
    <driver>ExcelFile</driver>
    <isInternalPath>true</isInternalPath>
    <properties>
