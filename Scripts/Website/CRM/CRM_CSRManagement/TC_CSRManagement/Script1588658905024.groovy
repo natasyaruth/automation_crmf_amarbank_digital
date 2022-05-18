@@ -16,9 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/LinkCSRManagement'))
+WebUI.click(findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), 20)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnNextPage'), 20)
 
 Mobile.callTestCase(findTestCase('Website/CRM/TC_AbortIncompleteProcess'), [('msgIncompleteProcess') : msgIncompleteProcess])
 

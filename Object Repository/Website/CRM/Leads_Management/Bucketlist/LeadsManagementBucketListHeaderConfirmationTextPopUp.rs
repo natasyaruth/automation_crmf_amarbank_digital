@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LeadsManagementBucketListHeaderConfirmationTextPopUp</name>
+   <tag></tag>
+   <elementGuidId>a6cdecb4-a5a3-4b2b-a938-291ca08db537</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='outer-root']/div/div/section/h4</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h4.u-mg-top-base.u-fw-bold.u-fs-xlarge</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h4</value>
+      <webElementGuid>26acf4f2-ba4b-4131-ad12-153a68484cf1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-mg-top-base u-fw-bold u-fs-xlarge</value>
+      <webElementGuid>8ef850c7-7911-434a-9cad-57c3c8d8894e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Konfirmasi</value>
+      <webElementGuid>ba02e11c-999a-4dbf-90a2-d87dda063439</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/h4[@class=&quot;u-mg-top-base u-fw-bold u-fs-xlarge&quot;]</value>
+      <webElementGuid>c165bf36-bc47-40eb-a3c1-f61675bc6bb3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section/h4</value>
+      <webElementGuid>be2ec094-1307-4a4f-9b2c-c75f6aff21b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail'])[1]/following::h4[1]</value>
+      <webElementGuid>4f62f783-d514-496d-8aef-4e056ff11d22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::h4[1]</value>
+      <webElementGuid>5b5e077d-88cd-466a-b580-b7af76e35121</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::h4[1]</value>
+      <webElementGuid>80fa1ef8-efed-4e54-8dd5-dda1f7d785c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Konfirmasi']/parent::*</value>
+      <webElementGuid>bda89262-b127-452a-af52-fade15f4eff7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h4</value>
+      <webElementGuid>a633c8c1-4c6d-4ba5-bf49-aa217e39b31c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h4[(text() = 'Konfirmasi' or . = 'Konfirmasi')]</value>
+      <webElementGuid>7bc240a6-34e5-4ddd-b91e-2259496ac87d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

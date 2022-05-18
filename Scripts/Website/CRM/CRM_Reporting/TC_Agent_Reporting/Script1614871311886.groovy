@@ -15,59 +15,59 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
+WebUI.click(findTestObject('Website/CRM/Reporting/Reporting/ReportingLink'))
 
-WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/LinkAgentReporting'))
+WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLink'))
 
 WebUI.waitForPageLoad(3)
 
 WebUI.verifyTextPresent('Reporting Agent', false)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LbHeaderTitle'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLbHeaderTitle'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LinkBreadcrumpItem'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLinkBreadcrumpItem'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LBDateRangeFilter'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLBDateRangeFilter'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/DtpStartFilterDate'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDtpStartFilterDate'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnShow'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnShow'), 1)
 
 WebUI.verifyTextPresent('Cari nama agent', false)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LbSearchFilter'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLbSearchFilter'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/TxtEmployeeName'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingTxtEmployeeName'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnSearch'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnSearch'), 1)
 
 WebUI.verifyTextPresent('Pilih role', false)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), 1)
 
 WebUI.verifyTextPresent('Semua role', false)
 
-WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'))
+WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'))
 
-WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionKYCVerification, 
+WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionKYCVerification, 
     false)
 
-WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionKYCVerification, 
+WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionKYCVerification, 
     false, 3)
 
-WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionKYCVideo, false)
+WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionKYCVideo, false)
 
-WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionKYCVideo, false)
+WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionKYCVideo, false)
 
-WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionCSR, false, 
+WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionCSR, false, 
     3)
 
-WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionCSR, false, 
+WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionCSR, false, 
     3)
 
-WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionTelesales, false)
+WebUI.selectOptionByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionTelesales, false)
 
-WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/DrpRoleName'), DrpOptionTelesales, 
+WebUI.verifyOptionPresentByValue(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingDrpRoleName'), DrpOptionTelesales, 
     false, 3)
 
 WebUI.refresh()
@@ -88,17 +88,17 @@ WebUI.verifyTextPresent('Selesai', false)
 
 WebUI.verifyTextPresent('Lihat Detail', false)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LbPaginationInfo'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLbPaginationInfo'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnNextPage'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnNextPage'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnLastPage'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnLastPage'), 1)
 
-WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/BtnNextPage'))
+WebUI.click(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnNextPage'))
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/LbPageInfo'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLbPageInfo'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnPreviousPage'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnPreviousPage'), 1)
 
-WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/BtnFirstPage'), 1)
+WebUI.verifyElementPresent(findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingBtnFirstPage'), 1)
 

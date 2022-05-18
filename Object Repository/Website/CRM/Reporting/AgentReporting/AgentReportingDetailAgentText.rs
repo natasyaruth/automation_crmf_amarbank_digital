@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AgentReportingDetailAgentText</name>
+   <tag></tag>
+   <elementGuidId>df554a85-b586-4d84-bc21-e1ef632e896e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div[3]/section/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.Card-title</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>3d2ca8c7-a78d-45e0-a476-0def2871fef0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Card-title</value>
+      <webElementGuid>328bca97-d0e9-4734-a8a0-d49c740cc99f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detail Agent</value>
+      <webElementGuid>6be8dfe0-0baf-4084-8bf8-1ed0c646bb19</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[@class=&quot;AgentDetailBase&quot;]/div[@class=&quot;Card u-MarginBottom-large&quot;]/section[@class=&quot;Card-header u-BgColor-lighter&quot;]/div[@class=&quot;Card-title&quot;]</value>
+      <webElementGuid>16937f8f-4e48-4241-99b3-f0e634cc869a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[3]/section/div</value>
+      <webElementGuid>213f1c6b-5605-4679-80ed-f9121e161451</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tampilkan'])[1]/following::div[2]</value>
+      <webElementGuid>03f0dff8-e308-44e5-8446-b0c76fe24bb3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='s/d'])[1]/following::div[5]</value>
+      <webElementGuid>d17f7aec-acc4-4bb4-ac64-9d8f040f3314</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Agent'])[1]/preceding::div[1]</value>
+      <webElementGuid>731de1a9-e5b8-42b2-a4ba-240426c6e34e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Role Name'])[1]/preceding::div[3]</value>
+      <webElementGuid>3793d102-d225-4e26-aad5-12636de9fbf6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Detail Agent']/parent::*</value>
+      <webElementGuid>2e8ff413-07dd-4d2f-af5e-c0462acf58d1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/section/div</value>
+      <webElementGuid>a47f8f6b-bbdd-4983-828e-cdf57468764f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Detail Agent' or . = 'Detail Agent')]</value>
+      <webElementGuid>5397adb0-315a-46f8-81eb-c89b62af1703</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

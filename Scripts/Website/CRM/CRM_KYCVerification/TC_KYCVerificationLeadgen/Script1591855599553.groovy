@@ -16,7 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkVerification'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink'))
 
 WebUI.verifyTextPresent(headerDetailKYCVerification, false)
 
@@ -24,7 +24,7 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucket
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkRequestID'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'))
 
 WebUI.waitForPageLoad(5)
 

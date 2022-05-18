@@ -5,6 +5,12 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>bd5c3c0d-968b-4779-88b0-975bcffd565d</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>['enable-automation', '--no-sandbox', '--disable-infobars', '--disable-extensions']</defaultValue>
       <description></description>

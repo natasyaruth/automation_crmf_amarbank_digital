@@ -17,12 +17,12 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+WebUI.click(findTestObject('Website/CRM/Dashboard/DashboardLink'))
 
 WebUI.refresh()
 
-if(WebUI.verifyElementVisible(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'), FailureHandling.OPTIONAL) == true) {
-    WebUI.click(findTestObject('Website/CRM/Dashboard/CntrPendingRequestNotification'))
+if(WebUI.verifyElementVisible(findTestObject('Website/CRM/Dashboard/DashboardCntrPendingRequestNotification'), FailureHandling.OPTIONAL) == true) {
+    WebUI.click(findTestObject('Website/CRM/Dashboard/DashboardCntrPendingRequestNotification'))
     
     WebUI.waitForPageLoad(5)
     

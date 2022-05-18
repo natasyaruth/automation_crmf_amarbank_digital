@@ -17,11 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
 
-WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
+WebUI.click(findTestObject('Website/CRM/Reporting/Reporting/ReportingLink'))
 
 WebUI.verifyTextPresent(Subrole, false)
 
-WebUI.click(findTestObject('Website/CRM/Reporting/LinkReporting'))
+WebUI.click(findTestObject('Website/CRM/Reporting/Reporting/ReportingLink'))
 
 WebUI.verifyTextPresent(Subrole, false)
 
