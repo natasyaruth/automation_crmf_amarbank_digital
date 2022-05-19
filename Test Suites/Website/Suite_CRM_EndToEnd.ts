@@ -16,6 +16,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -37,6 +38,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -79,12 +81,55 @@
          <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5f6e4f69-2cba-412b-a6d5-88642fd8d88a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>069ceecd-95d3-4675-9674-eee2becce14d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a35d0960-7031-4aa9-8630-fdfbfe54cbc9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8bcaa8f2-5dac-4f07-9607-8495dc2a872f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8700d631-70c4-47b8-86d7-3c13e3f0ad7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3edcce88-ac57-4781-b7a0-0aa145c908b5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>63505095-fc25-405a-a9be-9c1d33dcf4f9</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b4d991c9-e2ef-4ca1-8233-9c5555744677</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -96,7 +141,7 @@
       <guid>ed23af8a-77a6-413b-bdaf-f4fd2173fd7d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
-      <testCaseId>Test Cases/Website/CRM/TC_Dashboard</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_Dashboard/TC_Dashboard</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>a6b15a00-5530-47be-9129-25f71f4e5b18</id>
@@ -106,6 +151,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -151,6 +197,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMKYCVerification/Dataset_CRMVerification</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -208,6 +255,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMKYCVerification/Dataset_CRMVerification</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -382,6 +430,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -403,6 +452,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoNasabahBaru</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -472,6 +522,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoNasabahBaru</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>6df5011c-e4ad-47b9-a84e-7f7449aa0a31</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -568,6 +619,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -580,6 +632,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcessFromDashboard</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -592,6 +645,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/TC_CSRManagement</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -604,6 +658,7 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/TC_AbortIncompleteProcess</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -625,6 +680,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CSRManagement/Dataset_CSRManagement</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>181a6d77-34be-4e6d-b2db-53e38eecbfb3</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -688,6 +744,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CSRManagement/Dataset_CSRManagement</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>9a56d8cb-bb13-41b1-892a-2c74c1200b85</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -933,24 +990,19 @@
       <guid>fb7bc328-b7a8-4f82-85b3-448a3ced40d8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/TC_Logout</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>5b05df14-fbb4-4573-8105-1604479400ee</variableId>
+         <variableId>427aee94-b04c-4d8c-b3c4-c64a99bd2699</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7745b3b1-623a-4fab-8a4d-611ec73a12fc</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>53152f1a-ea93-4651-a01e-e684f96e6881</variableId>
+         <variableId>469c9a65-336a-46ce-92ec-13754252de72</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

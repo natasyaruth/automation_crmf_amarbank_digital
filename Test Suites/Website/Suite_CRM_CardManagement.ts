@@ -15,12 +15,13 @@
       <guid>c573c9a9-a9f0-4eb8-b6c1-7c755ab1a8de</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_Develop_CRM</testCaseId>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>93f3c10f-6c5d-4816-8804-5ea06dc1beb4</variableId>
+         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
@@ -37,6 +38,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -79,12 +81,55 @@
          <value>Username</value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5f6e4f69-2cba-412b-a6d5-88642fd8d88a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>069ceecd-95d3-4675-9674-eee2becce14d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a35d0960-7031-4aa9-8630-fdfbfe54cbc9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8bcaa8f2-5dac-4f07-9607-8495dc2a872f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8700d631-70c4-47b8-86d7-3c13e3f0ad7a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3edcce88-ac57-4781-b7a0-0aa145c908b5</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>63505095-fc25-405a-a9be-9c1d33dcf4f9</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>b31e13df-5c4a-431c-95d0-87d8de776efe</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -124,6 +169,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>1851dd79-5cac-4027-a546-a166e96000cd</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -158,8 +204,9 @@
    <testCaseLink>
       <guid>a85d00c6-5ca4-46b6-bff2-38502e30e513</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -188,8 +235,9 @@
    <testCaseLink>
       <guid>229cd509-8c2b-476b-a9cb-142b8f41fb13</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardPrinting</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -200,7 +248,7 @@
    <testCaseLink>
       <guid>8937bee3-600f-4ea6-b3da-c76c957546df</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanEnRouteToSortingHub</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -211,6 +259,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>91431af9-917d-4fae-b640-38a6f7cc23bb</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -281,7 +330,7 @@
    <testCaseLink>
       <guid>1339a1f8-5c00-4f56-8f3d-f6b6a01e00be</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/API/CRM/TC_ninjaVanSuccessfulDelivery</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -292,6 +341,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>a5b66df6-443f-4b2b-80ba-1ff7083e10c5</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -380,8 +430,9 @@
    <testCaseLink>
       <guid>494a48b1-8e0c-4cf2-a130-13c004284002</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
@@ -410,7 +461,7 @@
    <testCaseLink>
       <guid>3e9f9f1f-e4e2-49c8-8e2d-80fe53eadc01</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_DeliveryStatus</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -421,6 +472,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCard</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>de078acb-3e8d-45ea-b833-5e9d602ab452</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -449,7 +501,7 @@
    <testCaseLink>
       <guid>c44f7526-ee2a-41d3-82f3-00ce86547f49</guid>
       <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
+      <isRun>false</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_AssignCMS</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
@@ -460,6 +512,7 @@
          </iterationEntity>
          <testDataId>Data Files/Website/Dataset_CRMCardManagement/Dataset_CRMAssignCMS</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>ed1d8de3-5f10-4670-b399-f78a1337b69b</testDataLinkId>
          <type>DATA_COLUMN</type>

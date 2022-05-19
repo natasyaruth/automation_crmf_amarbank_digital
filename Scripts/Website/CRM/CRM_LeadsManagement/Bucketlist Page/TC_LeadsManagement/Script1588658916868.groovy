@@ -16,9 +16,9 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/LinkLeadsManagement'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/LeadsManagement/LeadsManagementLink'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/Table'), 100)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListTable'), 100)
 
 WebUI.verifyTextPresent(GlobalVariable.titleLeadsManagement, false)
 

@@ -16,7 +16,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Card_Management/LinkCardManagement'))
+WebUI.click(findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink'))
 
 WebUI.verifyTextPresent(assignCard, false)
 

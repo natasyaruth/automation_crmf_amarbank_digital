@@ -58,7 +58,7 @@ WebUI.click(findTestObject('Website/CRM/Leads_Management/Detail/BtnSubmitPending
 
 WebUI.waitForPageLoad(7)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/HeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListHeaderLeadsManagement'), GlobalVariable.titleLeadsManagement)
 
 WebDriver driver = DriverFactory.getWebDriver()
 
@@ -80,13 +80,13 @@ while(flagLoop == false){
 		}
 	}
 	if(flagLoop == false){
-		def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan')),
-		    expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
+		def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPaginationSpan')),
+		    expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListTxtLastPage'))
 		if(expectedFirst.equals(expectedLast)){
 			println("Phonenumber: "+noHandphone+" didn't exists on the table")
 			flagLoop = true
 		} else{
-			WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
+			WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnNextPage'))
 		    WebUI.waitForPageLoad(3)
 		}		
 	}

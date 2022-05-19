@@ -11,7 +11,6 @@
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -22,5 +21,6 @@
       <name>id</name>
       <type>Main</type>
       <value>LinkRequestID</value>
+      <webElementGuid>d126cb61-c63a-4f71-86b5-b6d7e5a490f5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

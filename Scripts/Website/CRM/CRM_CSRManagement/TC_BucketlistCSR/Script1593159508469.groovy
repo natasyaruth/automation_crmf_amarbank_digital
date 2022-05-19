@@ -20,38 +20,38 @@ WebUI.verifyTextPresent(headerBucketlistCSR, false, FailureHandling.CONTINUE_ON_
 
 WebUI.refresh()
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnLastPage'), FailureHandling.OPTIONAL)
 
-WebUI.waitForElementNotPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 5, FailureHandling.OPTIONAL)
+WebUI.waitForElementNotPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnLastPage'), 5, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnPreviousPage'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnPreviousPage'), FailureHandling.OPTIONAL)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnLastPage'), 5, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnLastPage'), 5, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnNextPage'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnNextPage'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnFirstPage'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnFirstPage'), FailureHandling.OPTIONAL)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterAll, false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilter'), filterAll, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNewCustomer, false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilter'), filterNewCustomer, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterCustomerSenyumku, false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilter'), filterCustomerSenyumku, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/DrpFilter'), filterNotContinue, false, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilter'), filterNotContinue, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), searchPhoneNumber)
+WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtSearchPhoneNumber'), searchPhoneNumber)
 
-WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/TxtSearchPhoneNumber'), 'value',
+WebUI.waitForElementAttributeValue(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtSearchPhoneNumber'), 'value',
     searchPhoneNumber, 10, FailureHandling.CONTINUE_ON_FAILURE)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnSearch'))
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnSearch'))
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpStartFilterDate'), startFilterDate)
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DtpEndFilterDate'), endFilterDate)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnShow'))
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnShow'))
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/BtnDetail'))
+WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetail'))
 

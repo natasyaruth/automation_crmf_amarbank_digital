@@ -11,3 +11,4 @@ bin/
 *.apk
 settings/internal/
 .cache
+*.meta

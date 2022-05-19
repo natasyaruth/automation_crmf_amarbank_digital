@@ -19,7 +19,7 @@ else
 'Abort incomplete process if any'
 KeywordUtil.logInfo("Abort the incomplete process!")
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnAbort'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnAbort'))
 
 }
 
