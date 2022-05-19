@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LiveReportingHeaderLiveReportingElement</name>
+   <tag></tag>
+   <elementGuidId>bc9d64dc-eb68-4447-82d6-68b9e2ec9d6b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.Heading-3</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>87343ced-96d2-4b44-b7c5-1b2bfd7f486f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Heading-3</value>
+      <webElementGuid>c38363ed-eaab-4aee-a44d-01d7362b6056</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>LIVE REPORTING CRM FUNDING</value>
+      <webElementGuid>2afdc723-14bc-4eb5-ae68-d2596717e4a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[@class=&quot;Container Container--fullWidth&quot;]/h1[@class=&quot;Heading-3&quot;]</value>
+      <webElementGuid>d2babc1d-5445-45b4-bebe-09c5849952d9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/h1</value>
+      <webElementGuid>97279929-2558-4210-bae4-ea86f4b7e86c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Video'])[1]/preceding::h1[1]</value>
+      <webElementGuid>4821ffee-96df-4953-8876-8cb2db243555</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Verification'])[1]/preceding::h1[2]</value>
+      <webElementGuid>443be83c-d0d6-473a-b354-29b53eedbcef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='LIVE REPORTING CRM FUNDING']/parent::*</value>
+      <webElementGuid>8580f834-1900-47c7-9232-546bc3b13a0c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>70045dce-b15a-4ac7-a09e-b794a943936e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'LIVE REPORTING CRM FUNDING' or . = 'LIVE REPORTING CRM FUNDING')]</value>
+      <webElementGuid>663215a7-b183-4c30-ab84-1c00555ac1e4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

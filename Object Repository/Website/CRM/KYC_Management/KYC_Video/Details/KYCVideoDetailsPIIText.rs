@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>KYCVideoDetailsPIIText</name>
+   <tag></tag>
+   <elementGuidId>4f1e8db0-4d47-469a-9d5f-443c9e492943</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/section/form/div[2]/section/div</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6e668bc0-04d0-4cff-8e33-274e49a617a5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Card-title</value>
+      <webElementGuid>b974324a-3696-4dc8-a57c-054dead93824</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>PII (Personally Identifying Information)</value>
+      <webElementGuid>fa313394-2524-445a-bddc-b1614e0c511d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;VideoDetailContent&quot;]/form[1]/div[@class=&quot;Card u-MarginBottom&quot;]/section[@class=&quot;Card-header u-BgColor-lighter&quot;]/div[@class=&quot;Card-title&quot;]</value>
+      <webElementGuid>8f5fdb61-668b-4791-bdf8-5dd725b19e1a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/section/form/div[2]/section/div</value>
+      <webElementGuid>2562e65a-ec53-46df-b2e1-6673323776f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang diproses'])[1]/following::div[2]</value>
+      <webElementGuid>2587af4b-b897-44c9-83cc-76322e5ba229</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reaktivasi'])[1]/following::div[2]</value>
+      <webElementGuid>7882ca7d-60c0-45d4-b1bb-93e2dc126d4a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor KTP'])[1]/preceding::div[1]</value>
+      <webElementGuid>1ccf7aa1-b428-4114-bb30-723a1d547c27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama di KTP'])[1]/preceding::div[2]</value>
+      <webElementGuid>2879663b-abe0-433e-8c95-7b67874f8699</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='PII (Personally Identifying Information)']/parent::*</value>
+      <webElementGuid>da286a06-bb3c-4c3e-946a-55a77827b9cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/section/div</value>
+      <webElementGuid>69639abd-3bfa-417e-afe1-2ddacebfbbff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'PII (Personally Identifying Information)' or . = 'PII (Personally Identifying Information)')]</value>
+      <webElementGuid>26320aa0-2ab6-42cd-a79b-53612b0d75df</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

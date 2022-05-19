@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>KYCVideoDetailsCustomerInProcessText</name>
+   <tag></tag>
+   <elementGuidId>412d429f-d717-440a-a9f6-9e58a64f2f84</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>p.u-mg-bottom-base</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='outer-root']/div/div/section/p</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>4f102c74-345a-466e-8401-86fccec809e7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-mg-bottom-base</value>
+      <webElementGuid>183e83fd-d248-4520-aa24-cfb023bce0b4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu</value>
+      <webElementGuid>aab086dd-8f48-4468-a2ad-61a9f3d3495a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/p[@class=&quot;u-mg-bottom-base&quot;]</value>
+      <webElementGuid>255da8ef-3e05-4bf8-a139-11af14b20c22</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section/p</value>
+      <webElementGuid>345b257a-da06-40f1-84c4-50a9d7edacda</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Konfirmasi'])[1]/following::p[1]</value>
+      <webElementGuid>7b380527-d91e-4dd5-b8c3-887ac4dd4fdf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::p[1]</value>
+      <webElementGuid>25c945d0-694c-4953-a070-5009420af1b0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::p[1]</value>
+      <webElementGuid>070c1c1e-e14a-4e1f-8a49-ceadfb128aab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu']/parent::*</value>
+      <webElementGuid>b9d473f6-73e0-480d-be07-5c1092372188</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p</value>
+      <webElementGuid>d9b8c023-f92a-4898-904d-52e6233f6ab1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu' or . = 'Nasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahulu')]</value>
+      <webElementGuid>3504fa5e-6308-4da7-bfbe-f3ed96fd8e1f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LeadsManagementBucketListHeaderDetailCustomer</name>
+   <tag></tag>
+   <elementGuidId>d2f7de31-aa6d-4a1e-aa36-22b62c882859</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/section/section/div/section/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.Card-title</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4861ed94-7d52-4065-9ebc-9045eef36273</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Card-title</value>
+      <webElementGuid>65af9dab-8b1e-4a9c-9356-8bff9cde5b65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detil Nasabah</value>
+      <webElementGuid>59f207a2-f307-410e-affd-2a0afdcf9b15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/section[@class=&quot;wrapper has--navigation&quot;]/section[@class=&quot;CustomerDetail-content&quot;]/div[@class=&quot;Card u-MarginBottom-large&quot;]/section[@class=&quot;Card-header u-bg-lighter&quot;]/div[@class=&quot;Card-title&quot;]</value>
+      <webElementGuid>eaf31ec6-6b87-4efb-ae56-96ea72e1c456</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/section/section/div/section/div</value>
+      <webElementGuid>5dedf96c-6d4c-416a-80e7-7f8db53cc382</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[1]/following::div[2]</value>
+      <webElementGuid>502844aa-74a6-498c-b7b9-87cbdccbc235</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Leads Management'])[2]/following::div[2]</value>
+      <webElementGuid>0b47788b-e394-43ee-b9e6-929993266ecd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/preceding::div[1]</value>
+      <webElementGuid>5b3fc807-010c-4d76-b669-7d788feb1cdd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[1]/preceding::div[3]</value>
+      <webElementGuid>8e370f3e-3c5f-4c6d-ad48-bf3c8ac42988</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Detil Nasabah']/parent::*</value>
+      <webElementGuid>bbdf9ff3-4fab-420f-8408-fe92271bc707</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/section/div</value>
+      <webElementGuid>ef1b2aac-5500-4981-93e2-25321f5735a4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Detil Nasabah' or . = 'Detil Nasabah')]</value>
+      <webElementGuid>06ebb244-1ca8-49fb-a62d-b18045f59db4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

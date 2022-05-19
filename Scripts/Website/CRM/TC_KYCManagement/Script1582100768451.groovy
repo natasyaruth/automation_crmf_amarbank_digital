@@ -16,9 +16,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'), 10)
+WebUI.waitForElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink'), 10)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYCManagement/LinkKYCManagement'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/LinkVerification'), 10)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink'), 10)
 

@@ -15,13 +15,13 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/LinkDeliveryStatus'))
+WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink'))
 
 WebUI.setText(findTestObject('Website/CRM/Card Management/Delivery Status/TxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnSearch'))
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/LinkReqId1'))
+WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLinkReqId1'))
 
 WebUI.verifyTextPresent(verifyRequestID, false)
 

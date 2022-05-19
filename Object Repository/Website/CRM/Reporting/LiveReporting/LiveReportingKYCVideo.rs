@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LiveReportingKYCVideo</name>
+   <tag></tag>
+   <elementGuidId>bb64eaab-6919-49c2-b57a-1cc7c582626c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div/div/section/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.LiveReportingTitle</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>bc955e3e-be19-4333-b196-926ac856b0a2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>LiveReportingTitle</value>
+      <webElementGuid>36ea180e-22d6-483e-8378-b45d6d85c053</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>KYC Video</value>
+      <webElementGuid>d496e9a1-3655-4f45-a0ce-542ecca02172</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[@class=&quot;Container Container--fullWidth&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-6&quot;]/div[1]/section[@class=&quot;section&quot;]/div[@class=&quot;section__header&quot;]/h1[@class=&quot;LiveReportingTitle&quot;]</value>
+      <webElementGuid>873b1c4e-fa47-4d3e-a9e8-b6ed78c73d78</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div/div/section/div/h1</value>
+      <webElementGuid>fa592f01-d83c-4f6b-877f-b964a34b211c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LIVE REPORTING CRM FUNDING'])[1]/following::h1[1]</value>
+      <webElementGuid>f498bab7-2b25-4454-a98b-93ea3ffae1ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Verification'])[1]/preceding::h1[1]</value>
+      <webElementGuid>a47cbfb0-0d42-41ef-b73f-9fbb8ad75e4d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bulk Printing'])[1]/preceding::h1[2]</value>
+      <webElementGuid>2139163d-32f5-4538-b74f-2991908ad607</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='KYC Video']/parent::*</value>
+      <webElementGuid>cd33d8d0-48f0-4ace-ac9e-4d2faa0568df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/h1</value>
+      <webElementGuid>033f756b-2dc7-478a-9ddc-bcc21fc4a2f8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'KYC Video' or . = 'KYC Video')]</value>
+      <webElementGuid>4eae939e-d872-403a-8251-b4aa7152eedc</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

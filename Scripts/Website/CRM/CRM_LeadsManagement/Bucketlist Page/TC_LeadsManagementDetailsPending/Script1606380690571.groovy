@@ -45,7 +45,7 @@ while(flagLoop == false){
 		}
 	}
 	if(flagLoop == false){
-		WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
+		WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnNextPage'))
 		WebUI.waitForPageLoad(3)
 	}
 }

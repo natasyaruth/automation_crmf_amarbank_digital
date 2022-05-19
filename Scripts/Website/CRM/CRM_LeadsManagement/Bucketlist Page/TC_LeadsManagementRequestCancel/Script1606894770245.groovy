@@ -15,21 +15,21 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnDetail'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnDetail'))
 
 WebUI.waitForPageLoad(5)
 
 WebUI.verifyTextPresent(GlobalVariable.titleCustomerDetails, false)
 
-WebUI.click(findTestObject('Website/CRM/Dashboard/LinkDashboard'))
+WebUI.click(findTestObject('Website/CRM/Dashboard/DashboardLink'))
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/LinkLeadsManagement'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/LeadsManagement/LeadsManagementLink'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/PopUpConfirmation'), 5)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPopUpConfirmation'), 5)
 
 WebUI.verifyTextPresent(msgConfirmation, false)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnAbort'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnAbort'))
 
 WebUI.waitForPageLoad(5)
 

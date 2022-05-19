@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LiveReportingKYCVerification</name>
+   <tag></tag>
+   <elementGuidId>ea537d28-bb30-41f2-9a2f-65ae929420ec</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div[2]/div/section/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>22e527ab-4c0f-48f1-bf88-aa642665fefa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>LiveReportingTitle</value>
+      <webElementGuid>18ef7fed-2304-4fc0-a4f1-8569a11a6184</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>KYC Verification</value>
+      <webElementGuid>49525790-da26-4ba0-994a-fa354d3b53e1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[@class=&quot;Container Container--fullWidth&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-6&quot;]/div[1]/section[@class=&quot;section&quot;]/div[@class=&quot;section__header&quot;]/h1[@class=&quot;LiveReportingTitle&quot;]</value>
+      <webElementGuid>ea1c8f05-e9dd-4ebd-be82-41888425731d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div[2]/div/section/div/h1</value>
+      <webElementGuid>11a03936-e2f7-45a3-9f33-f7f85f80eae7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Video'])[1]/following::h1[1]</value>
+      <webElementGuid>d35ced4f-37df-45b6-aba6-fdcf3cac417a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LIVE REPORTING CRM FUNDING'])[1]/following::h1[2]</value>
+      <webElementGuid>2480b457-50dc-40e7-b70d-66afc32592b4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Bulk Printing'])[1]/preceding::h1[1]</value>
+      <webElementGuid>fba1f871-2a7c-4ff6-87a8-96ee303d0a43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery Status'])[1]/preceding::h1[2]</value>
+      <webElementGuid>6246d5e5-c8e4-4eb3-a497-ead3040e3b74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='KYC Verification']/parent::*</value>
+      <webElementGuid>55a304fc-2500-4374-8886-2b1c8abd5243</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/section/div/h1</value>
+      <webElementGuid>ea379d92-6e2f-449b-8c4d-cfcb4b3b4d83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'KYC Verification' or . = 'KYC Verification')]</value>
+      <webElementGuid>9d1b8956-fb41-4810-aa9a-c8289f69e821</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

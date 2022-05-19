@@ -19,33 +19,33 @@ import org.openqa.selenium.By as By
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnNextPage'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnNextPage'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan'), secondPage)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPaginationSpan'), secondPage)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnPreviousPage'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnPreviousPage'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan'), firstPage)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPaginationSpan'), firstPage)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnLastPage'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnLastPage'))
 
 WebUI.waitForPageLoad(2)
 
 WebUI.delay(1)
 
-def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan'))
+def expectedFirst = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPaginationSpan'))
 
-def expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/TxtLastPage'))
+def expectedLast = WebUI.getText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListTxtLastPage'))
 
 WebUI.verifyEqual(expectedFirst, expectedLast)
 
-WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/BtnFirstPage'))
+WebUI.click(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListBtnFirstPage'))
 
 WebUI.waitForPageLoad(2)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/PaginationSpan'), firstPage)
+WebUI.verifyElementText(findTestObject('Website/CRM/Leads_Management/Bucketlist/LeadsManagementBucketListPaginationSpan'), firstPage)
 

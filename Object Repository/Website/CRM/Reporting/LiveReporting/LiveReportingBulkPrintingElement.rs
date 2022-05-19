@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LiveReportingBulkPrintingElement</name>
+   <tag></tag>
+   <elementGuidId>482a1426-f373-4fd2-8518-b3c819965c27</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/div/div[3]/div/section/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>4f7f5945-b52e-44f6-8483-6a6496ffdc1a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>LiveReportingTitle</value>
+      <webElementGuid>ed83f6d9-9e8b-40a2-8c15-65a2daf65683</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Bulk Printing</value>
+      <webElementGuid>188318b7-298c-40f5-85f7-55f2d0a1f510</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[@class=&quot;Container Container--fullWidth&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-6&quot;]/div[1]/section[@class=&quot;section&quot;]/div[@class=&quot;section__header&quot;]/h1[@class=&quot;LiveReportingTitle&quot;]</value>
+      <webElementGuid>34fe78b9-3e48-4349-ad90-ac754561c0c9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/div/div[3]/div/section/div/h1</value>
+      <webElementGuid>38b7bed2-566f-4964-8e77-cce4382ff388</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Verification'])[1]/following::h1[1]</value>
+      <webElementGuid>1ea58a6e-79ed-4c3f-93f3-1c13e0967316</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Video'])[1]/following::h1[2]</value>
+      <webElementGuid>ed08e31f-093f-43ca-9dd3-4da0fbf1fb9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery Status'])[1]/preceding::h1[1]</value>
+      <webElementGuid>a0124a36-e155-4c36-89f7-89663c8ccbd1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::h1[2]</value>
+      <webElementGuid>f888993a-e98f-4833-8c87-13b9433dd375</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Bulk Printing']/parent::*</value>
+      <webElementGuid>cbc00663-b6f0-4f25-8547-22fa7ad8d0c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/div/section/div/h1</value>
+      <webElementGuid>380c8844-918b-4af4-9590-84da47c747e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'Bulk Printing' or . = 'Bulk Printing')]</value>
+      <webElementGuid>408d525a-8b6f-4f2f-a847-0eeef3027827</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
