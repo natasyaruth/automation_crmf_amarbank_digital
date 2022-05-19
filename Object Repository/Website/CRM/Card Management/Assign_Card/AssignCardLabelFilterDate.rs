@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardLabelFilterDate</name>
+   <tag></tag>
+   <elementGuidId>e0b97873-881f-477c-8cb2-760f28999bea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div/div/div[2]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.DateRangeFilter-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>7b4935af-3c51-4ba1-b46f-17c23634c77d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DateRangeFilter-label</value>
+      <webElementGuid>457d5e79-351c-44a4-b9f1-cc00b911f96f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Filter Tanggal</value>
+      <webElementGuid>79c7dbaf-4a80-481e-a33d-a6de967cc2d6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex u-FlexWrap u-jc-between&quot;]/div[@class=&quot;u-Flex u-jc-between&quot;]/div[@class=&quot;DateRangeFilter&quot;]/label[@class=&quot;DateRangeFilter-label&quot;]</value>
+      <webElementGuid>aae90478-eb06-4e74-84fc-559541f01e89</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div/div[2]/label</value>
+      <webElementGuid>c92220cc-d195-4861-9bcf-2985bd827378</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cari Request ID atau Ref ID nasabah'])[1]/following::label[1]</value>
+      <webElementGuid>2bd13829-fed3-448f-b32f-38f5d7cd7770</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[3]/following::label[2]</value>
+      <webElementGuid>cbecf525-9f30-4dbb-9dff-eb2ef34af0e7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='s/d'])[1]/preceding::label[1]</value>
+      <webElementGuid>8967cd06-52b5-45e5-8899-9998c45ace6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tampilkan'])[1]/preceding::label[1]</value>
+      <webElementGuid>37e88082-6510-443a-98bd-b69732b0fb5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Filter Tanggal']/parent::*</value>
+      <webElementGuid>4f8f1db1-da23-4935-abdf-1170a7631a69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/label</value>
+      <webElementGuid>a4093830-6626-4861-8c0c-4fed7935ded2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Filter Tanggal' or . = 'Filter Tanggal')]</value>
+      <webElementGuid>441fff4e-b535-48be-8763-72f5f5be00a4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
