@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104916</description>
+   <name>TC_AssignCardSearchCardTypeNewCard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>45e8d2fd-7dad-4797-8f76-bfcab04dabb9</testCaseGuid>
+</TestCaseEntity>

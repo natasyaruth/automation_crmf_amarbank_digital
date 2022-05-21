@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104909</description>
+   <name>TC_AssignCardSearchByDateNotFindData</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d07e3661-8b28-4937-bc11-b55a5f42d0e8</testCaseGuid>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>f7272c96-3208-4837-8932-6b7953d2eebe</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>4549bc2a-694e-40c3-a515-fbec9a7626a2</id>
+      <masked>false</masked>
+      <name>menuAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLabelFilterDate')</defaultValue>
+      <description></description>
+      <id>22764a30-99a6-486a-8c8b-5e39423a3392</id>
+      <masked>false</masked>
+      <name>labelDateElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Filter Tanggal'</defaultValue>
+      <description></description>
+      <id>1c54ebfc-a3ec-4311-9a7f-6ceaa0a0c7d8</id>
+      <masked>false</masked>
+      <name>labelDateText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFieldDateStart')</defaultValue>
+      <description></description>
+      <id>e4805ebd-cced-45fb-ad7f-4e782fca2d6e</id>
+      <masked>false</masked>
+      <name>fieldDateFromElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFieldDateEnd')</defaultValue>
+      <description></description>
+      <id>17620fe4-260f-49b8-a7fb-779fec8c2a1f</id>
+      <masked>false</masked>
+      <name>fieldDateEndElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'1/5/2022'</defaultValue>
+      <description></description>
+      <id>2e6d5928-e3d9-4eba-a1da-d2687af15a39</id>
+      <masked>false</masked>
+      <name>inputStartEndNotFindDateText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnFilterShow')</defaultValue>
+      <description></description>
+      <id>09f1aa2a-5081-4f68-bb12-3b4078f5729f</id>
+      <masked>false</masked>
+      <name>btnShowFilterElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardOverFlowNotificationNotFind')</defaultValue>
+      <description></description>
+      <id>1ca0acfd-b648-4759-833b-1e6b13112c10</id>
+      <masked>false</masked>
+      <name>overFlowNotificationElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardOopsNotificationNotFindText')</defaultValue>
+      <description></description>
+      <id>8792d1d8-1aef-45d6-b8bf-1ce57c0641a8</id>
+      <masked>false</masked>
+      <name>oopsNotificationElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Oops, Hasil pencarian tidak ditemukan'</defaultValue>
+      <description></description>
+      <id>f0a114d4-f3bd-4285-8250-0d2f1060f071</id>
+      <masked>false</masked>
+      <name>oopsNotificationText</name>
+   </variable>
+</TestCaseEntity>
