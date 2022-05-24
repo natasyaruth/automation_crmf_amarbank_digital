@@ -17,3 +17,32 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+/* We want to verify menu card management element*/
+WebUI.verifyElementPresent(menuCardManagementElement, 5)
+
+/* We want to click menu card management to exand sub menu*/
+WebUI.click(menuCardManagementElement)
+
+/* We want to verify menu assign card element*/
+WebUI.verifyElementPresent(menuAssignCardElement, 5)
+
+/* We want to click menu assign card element*/
+WebUI.click(menuAssignCardElement)
+
+/* We want to verify the label "Filter by request new card"*/
+WebUI.verifyElementPresent(labelFilterByRequestCard, 5)
+
+/* We want to check element visibility */
+WebUI.verifyElementPresent(cardTypeDropDown, 5)
+
+/* We want to select and choose card type dropdown for "permintaan kartu baru"*/
+WebUI.selectOptionByLabel(cardTypeDropDown, requestNewCardText, false)
+
+/* We want to verify filter for "Kartu baru"*/
+WebUI.verifyElementPresent(firstRowCardTypeElement, 5)
+
+/* We want to verify filter new card*/
+WebUI.verifyElementText(firstRowCardTypeElement, requestNewCardText)
+
+/* We want capture new card*/
+WebUI.takeScreenshot()

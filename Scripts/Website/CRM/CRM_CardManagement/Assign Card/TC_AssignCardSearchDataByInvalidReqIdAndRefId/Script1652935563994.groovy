@@ -53,6 +53,19 @@ WebUI.verifyElementText(oopsNotificationElement, oopsNotificationText)
 /* We want capture the result*/
 WebUI.takeScreenshot()
 
+/* We want to click dashboard to process the assign card is clean because we have some issue in html element
+ * when we try to clean text the ref or req id then we set for input ref ID then we gonna failed test*/
+WebUI.verifyElementPresent(menuDashboard, 5)
+
+/* We want to click menu dashboard*/
+WebUI.click(menuDashboard)
+
+/* We want to verify menu assign card element*/
+WebUI.verifyElementPresent(menuAssignCardElement, 5)
+
+/* We want to click menu assign card element*/
+WebUI.click(menuAssignCardElement)
+
 /* We want verify field from request ID */
 WebUI.verifyElementPresent(fieldReqIdElement, 5)
 

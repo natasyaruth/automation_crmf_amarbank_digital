@@ -71,6 +71,12 @@
       <value></value>
       <variableId>0c7f754b-0a31-4985-9591-7455995a955f</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3dd5d5de-886e-4e8a-90d3-9ae802f196c6</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -147,5 +153,12 @@
       <id>0c7f754b-0a31-4985-9591-7455995a955f</id>
       <masked>false</masked>
       <name>oopsNotificationText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>3dd5d5de-886e-4e8a-90d3-9ae802f196c6</id>
+      <masked>false</masked>
+      <name>menuDashboard</name>
    </variable>
 </TestCaseEntity>

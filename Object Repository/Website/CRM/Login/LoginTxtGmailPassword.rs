@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@name = 'password']</value>
+         <value>id(&quot;password&quot;)/div[@class=&quot;aCsJod oJeWuf&quot;]/div[@class=&quot;aXBtI Wic03c&quot;]/div[@class=&quot;Xb9hP&quot;]/input[@class=&quot;whsOnd zHQkBf&quot;][count(. | //input[@name = 'password' and @autocomplete = 'current-password']) = count(//input[@name = 'password' and @autocomplete = 'current-password'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>0b6ce585-3bec-4012-b40b-6680ea4d5472</webElementGuid>
+      <webElementGuid>8cc7a6d7-a90a-4a0b-a3dc-c498eab2078e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,22 @@
       <name>name</name>
       <type>Main</type>
       <value>password</value>
-      <webElementGuid>b52dc62e-f564-4ecf-b897-3f97c720d2d8</webElementGuid>
+      <webElementGuid>202c0413-4080-4df1-817d-04314a113997</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;password&quot;)/div[@class=&quot;aCsJod oJeWuf&quot;]/div[@class=&quot;aXBtI Wic03c&quot;]/div[@class=&quot;Xb9hP&quot;]/input[@class=&quot;whsOnd zHQkBf&quot;]</value>
+      <webElementGuid>19eae47b-2d55-42d4-82f9-be5ded8e19d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>current-password</value>
+      <webElementGuid>cb4968f1-03e0-49ca-b9dc-f759bd433fa5</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
