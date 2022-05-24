@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssignCardFirstRowDate</name>
+   <name>AssignCardSenyumkuOnBucketListText</name>
    <tag></tag>
-   <elementGuidId>2e3e106e-fe05-4fda-9465-34c75cd6fef1</elementGuidId>
+   <elementGuidId>cb3a9e96-1ecb-439d-980f-ca2ac3b96dd9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//td[(text() = 'Senyumku' or . = 'Senyumku')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[2]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>039f885d-aa83-4216-b12f-a3ed4b6eb505</webElementGuid>
+      <webElementGuid>1616c890-d7cf-4749-9214-a9c4a6ab6dd8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>1c23a006-02ba-413c-a040-e1b79ea8766c</webElementGuid>
+      <webElementGuid>3e5c7bb5-e70c-4541-9559-17907f74d21a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>19/5/2022</value>
-      <webElementGuid>2bce8448-fffe-4faf-95f4-f9a0fff7acfc</webElementGuid>
+      <value>Senyumku</value>
+      <webElementGuid>24b0d6ee-2517-4c38-9bd1-e96a0114aaf7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,70 +46,62 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>fa805735-dbee-4001-a348-6d530c5fdffa</webElementGuid>
+      <webElementGuid>32d02be0-e21c-42c4-9882-4fa7b1fded29</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[6]</value>
-      <webElementGuid>b7f0ab1a-a4e6-40c4-9294-8c384ca88373</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[7]</value>
+      <webElementGuid>ebb2b8b2-1cdb-44a2-b819-2410a92f79a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu Baru'])[2]/following::td[1]</value>
-      <webElementGuid>016d498a-72d6-49e2-b55c-d432d19a791d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Permintaan Kartu Baru'])[2]/following::td[2]</value>
+      <webElementGuid>d8a54348-7353-4bce-affd-a4c9cef2a848</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DENA DAVINA BVC'])[1]/following::td[2]</value>
-      <webElementGuid>8ebecd4d-59b0-42de-9604-c838059dcd1d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LINDA SUGIARTY'])[1]/following::td[3]</value>
+      <webElementGuid>3cebf179-63db-4f70-82ac-a5b16f3b9cb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tunaiku Disbursement'])[2]/preceding::td[1]</value>
-      <webElementGuid>b88d378f-a13c-4f93-a6b8-64e1f260d09b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[1]</value>
+      <webElementGuid>eb610297-4b7a-4eb3-a953-a20bcf51ae9a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[2]</value>
-      <webElementGuid>de880a5a-3e8e-4529-aa6c-2e27906f76ce</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='19/5/2022']/parent::*</value>
-      <webElementGuid>79e86d67-622c-46e7-a59b-dec6c2439bcb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='PANGERAN GANTENG'])[1]/preceding::td[5]</value>
+      <webElementGuid>ccce6959-67bf-4fb3-b67a-3be4601866f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[6]</value>
-      <webElementGuid>a2487287-9b36-4663-8ef4-602ff03401c6</webElementGuid>
+      <value>//td[7]</value>
+      <webElementGuid>2138f365-7013-45c3-b659-40772786c29b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '19/5/2022' or . = '19/5/2022')]</value>
-      <webElementGuid>e1b3bade-d20f-49cc-8021-04b74f217f9d</webElementGuid>
+      <value>//td[(text() = 'Senyumku' or . = 'Senyumku')]</value>
+      <webElementGuid>240ce531-c3ed-4634-b56c-4ab43c545f34</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssignCardFirstRowDate</name>
+   <name>AssignCardTunaikuDisbursementOnBucketListText</name>
    <tag></tag>
-   <elementGuidId>2e3e106e-fe05-4fda-9465-34c75cd6fef1</elementGuidId>
+   <elementGuidId>0daef620-cc85-4395-8818-761ca23d6a14</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
+         <key>XPATH</key>
+         <value>//td[(text() = 'Tunaiku Disbursement' or . = 'Tunaiku Disbursement')]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[2]</value>
+         <key>CSS</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>039f885d-aa83-4216-b12f-a3ed4b6eb505</webElementGuid>
+      <webElementGuid>e81aef09-3cda-482d-8fb6-51b18ae3c161</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>1c23a006-02ba-413c-a040-e1b79ea8766c</webElementGuid>
+      <webElementGuid>f3ba7596-4a32-4aef-a412-961216bbe5a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>19/5/2022</value>
-      <webElementGuid>2bce8448-fffe-4faf-95f4-f9a0fff7acfc</webElementGuid>
+      <value>Tunaiku Disbursement</value>
+      <webElementGuid>c6ff5cc3-448a-49a1-9325-d78785ae6783</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,70 +46,62 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>fa805735-dbee-4001-a348-6d530c5fdffa</webElementGuid>
+      <webElementGuid>4ccdb96e-7914-4ddc-b5ed-0e8264aaf085</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[6]</value>
-      <webElementGuid>b7f0ab1a-a4e6-40c4-9294-8c384ca88373</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[7]</value>
+      <webElementGuid>5f8e0be1-914b-4461-a8eb-eea83b5200f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu Baru'])[2]/following::td[1]</value>
-      <webElementGuid>016d498a-72d6-49e2-b55c-d432d19a791d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu Baru'])[2]/following::td[2]</value>
+      <webElementGuid>9cfe8283-0e66-4900-9726-a591c11294f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='DENA DAVINA BVC'])[1]/following::td[2]</value>
-      <webElementGuid>8ebecd4d-59b0-42de-9604-c838059dcd1d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BANGKIT SANJAYA'])[1]/following::td[3]</value>
+      <webElementGuid>c27c7b67-3a71-4a01-8703-536d1daddb50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tunaiku Disbursement'])[2]/preceding::td[1]</value>
-      <webElementGuid>b88d378f-a13c-4f93-a6b8-64e1f260d09b</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[1]</value>
+      <webElementGuid>fd81e2d1-b961-46e2-92a5-05b05f96d7e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[2]</value>
-      <webElementGuid>de880a5a-3e8e-4529-aa6c-2e27906f76ce</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='19/5/2022']/parent::*</value>
-      <webElementGuid>79e86d67-622c-46e7-a59b-dec6c2439bcb</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='VINA RAMADHANI'])[1]/preceding::td[5]</value>
+      <webElementGuid>2d99cdac-905a-47d8-a906-105eb0f205d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//td[6]</value>
-      <webElementGuid>a2487287-9b36-4663-8ef4-602ff03401c6</webElementGuid>
+      <value>//td[7]</value>
+      <webElementGuid>9515f0a3-2604-4872-9c50-436a8279142b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//td[(text() = '19/5/2022' or . = '19/5/2022')]</value>
-      <webElementGuid>e1b3bade-d20f-49cc-8021-04b74f217f9d</webElementGuid>
+      <value>//td[(text() = 'Tunaiku Disbursement' or . = 'Tunaiku Disbursement')]</value>
+      <webElementGuid>04a40b8e-0c3f-48de-9e3c-7b638302437b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
