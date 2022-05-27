@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardOopsNotificationNotFindText</name>
+   <tag></tag>
+   <elementGuidId>b45fe8d2-123c-4dee-9148-d559f7323732</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.u-FontWeight-bold.u-FontSize-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8ff77ee0-41ac-4278-8123-53a6e5f2f067</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-FontWeight-bold u-FontSize-large</value>
+      <webElementGuid>0b303ba7-f68f-428e-9833-2eb31275c0d7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Oops, Hasil pencarian tidak ditemukan</value>
+      <webElementGuid>e6723d75-642e-495f-928f-a0447b3e94c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]/div[@class=&quot;u-MarginLeft-xlarge&quot;]/div[@class=&quot;u-FontWeight-bold u-FontSize-large&quot;]</value>
+      <webElementGuid>8ee8ec29-d9e6-4111-b12e-83a6c2aa7ce7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td/div/div</value>
+      <webElementGuid>3a2d0efb-0ed3-4691-a780-89c67bb04cb8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='State Process'])[1]/following::div[2]</value>
+      <webElementGuid>151a38ad-2b4d-4d14-94ec-014e8af3eaf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Customer Origin'])[1]/following::div[2]</value>
+      <webElementGuid>7f08c526-770e-4d5b-868e-bb8a90a7ec23</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pastikan Anda telah memasukkan data yang dicari dengan benar.'])[1]/preceding::div[1]</value>
+      <webElementGuid>a1738326-2473-4ffa-b487-e3fb07062331</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::div[3]</value>
+      <webElementGuid>9b9375ae-2535-4afa-a4d3-e557374a1725</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Oops, Hasil pencarian tidak ditemukan']/parent::*</value>
+      <webElementGuid>4c05d141-0c72-4851-8420-6107f51449eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div</value>
+      <webElementGuid>ec20e89a-168a-4391-8272-ab477d4264e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Oops, Hasil pencarian tidak ditemukan' or . = 'Oops, Hasil pencarian tidak ditemukan')]</value>
+      <webElementGuid>a27df5dc-46af-4f2a-b222-3df53e820197</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

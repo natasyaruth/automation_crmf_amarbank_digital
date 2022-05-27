@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104909</description>
+   <name>TC_AssignCardSearchDataByRefId</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f3b334e7-3d82-4c33-8c38-a90c9a19005a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08b42547-b91a-4b0e-a8dd-3b6bc00ff2e0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7d283b90-3ffb-4c37-957d-b1c0c8d06c5d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>85cad0db-84f0-48df-8fd4-840909e4f729</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cc13fbe7-3a43-43d4-b6fa-5f450e69ecd4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8bb18e40-a29d-4227-81e8-e0b2eb4ddfcb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8f99bd0c-8973-4558-8e2f-9ea3213689fa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>10936b08-803e-492f-9950-ae11ebb556a2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6c73c90e-2228-4e8f-9189-b04a556f9100</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>08b42547-b91a-4b0e-a8dd-3b6bc00ff2e0</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>7d283b90-3ffb-4c37-957d-b1c0c8d06c5d</id>
+      <masked>false</masked>
+      <name>menuAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLabelFindReqIDCustomer')</defaultValue>
+      <description></description>
+      <id>85cad0db-84f0-48df-8fd4-840909e4f729</id>
+      <masked>false</masked>
+      <name>labelRefIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Cari Request ID atau Ref ID nasabah'</defaultValue>
+      <description></description>
+      <id>cc13fbe7-3a43-43d4-b6fa-5f450e69ecd4</id>
+      <masked>false</masked>
+      <name>labelRefIdText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardTxtReferenceId')</defaultValue>
+      <description></description>
+      <id>8bb18e40-a29d-4227-81e8-e0b2eb4ddfcb</id>
+      <masked>false</masked>
+      <name>fieldRefIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFirstRequestIdElement')</defaultValue>
+      <description></description>
+      <id>8f99bd0c-8973-4558-8e2f-9ea3213689fa</id>
+      <masked>false</masked>
+      <name>firstRefIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnSearch')</defaultValue>
+      <description></description>
+      <id>10936b08-803e-492f-9950-ae11ebb556a2</id>
+      <masked>false</masked>
+      <name>btnSearchRefId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFirstNameIdElement')</defaultValue>
+      <description></description>
+      <id>6c73c90e-2228-4e8f-9189-b04a556f9100</id>
+      <masked>false</masked>
+      <name>firstNameIdElement</name>
+   </variable>
+</TestCaseEntity>

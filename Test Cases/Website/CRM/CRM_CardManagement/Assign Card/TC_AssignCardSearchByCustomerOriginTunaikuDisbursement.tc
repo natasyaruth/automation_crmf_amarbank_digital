@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104922</description>
+   <name>TC_AssignCardSearchByCustomerOriginTunaikuDisbursement</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9669176a-d74f-4e8b-aacc-53bca19bd277</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a9ad16ed-96ca-4bac-a885-717ec6f142fa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>755928ac-9ee7-477a-ae60-73dc6b726772</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>31e8307c-a757-423e-a188-6ade770549d7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>974c0783-62fc-496b-8f5d-d428ae5cd632</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>38b5b674-d531-4ec2-82d0-5e271e2a86e9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60eae138-f310-4bdd-8b0a-af11390b25ba</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6601bbc4-4e8d-4607-b5d9-e905e4a13687</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>a9ad16ed-96ca-4bac-a885-717ec6f142fa</id>
+      <masked>false</masked>
+      <name>menuCardManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>755928ac-9ee7-477a-ae60-73dc6b726772</id>
+      <masked>false</masked>
+      <name>menuAssignCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLabelFilterByCustomerOrigin')</defaultValue>
+      <description></description>
+      <id>31e8307c-a757-423e-a188-6ade770549d7</id>
+      <masked>false</masked>
+      <name>labelFilterByCustomerOriginElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Filter by Customer Origin'</defaultValue>
+      <description></description>
+      <id>974c0783-62fc-496b-8f5d-d428ae5cd632</id>
+      <masked>false</masked>
+      <name>labelFilterByCustomerOriginText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFieldFilterByCustomer')</defaultValue>
+      <description></description>
+      <id>38b5b674-d531-4ec2-82d0-5e271e2a86e9</id>
+      <masked>false</masked>
+      <name>fieldFilterByCustomerElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Tunaiku Disbursement'</defaultValue>
+      <description></description>
+      <id>60eae138-f310-4bdd-8b0a-af11390b25ba</id>
+      <masked>false</masked>
+      <name>tunaikuDisbursementText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardTunaikuDisbursementOnBucketListText')</defaultValue>
+      <description></description>
+      <id>6601bbc4-4e8d-4607-b5d9-e905e4a13687</id>
+      <masked>false</masked>
+      <name>tunaikuDisbursementDataBucketList</name>
+   </variable>
+</TestCaseEntity>

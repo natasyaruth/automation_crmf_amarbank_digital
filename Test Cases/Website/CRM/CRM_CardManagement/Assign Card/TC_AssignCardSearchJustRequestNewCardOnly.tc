@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104935</description>
+   <name>TC_AssignCardSearchJustRequestNewCardOnly</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41dbee63-fa3b-4aca-b4c0-f9045376a499</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1786438d-6b0a-494b-be39-ac39a30524b5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>31be52ee-8fd3-4d4e-8104-62ed4779e7d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7bee6ea6-2e95-4552-a565-739c5833013a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b3cea494-cbeb-4ff7-9298-26dd4dd28598</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d605a38c-d6df-4d6a-9f39-15d15bbf6231</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>63b89852-d894-487f-8f70-c505c3ee0781</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>1786438d-6b0a-494b-be39-ac39a30524b5</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>31be52ee-8fd3-4d4e-8104-62ed4779e7d4</id>
+      <masked>false</masked>
+      <name>menuAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLabelFilterRequestCard')</defaultValue>
+      <description></description>
+      <id>7bee6ea6-2e95-4552-a565-739c5833013a</id>
+      <masked>false</masked>
+      <name>labelFilterByRequestCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardDrpSrtByCardStatus')</defaultValue>
+      <description></description>
+      <id>b3cea494-cbeb-4ff7-9298-26dd4dd28598</id>
+      <masked>false</masked>
+      <name>cardTypeDropDown</name>
+   </variable>
+   <variable>
+      <defaultValue>'Permintaan Kartu Baru'</defaultValue>
+      <description></description>
+      <id>d605a38c-d6df-4d6a-9f39-15d15bbf6231</id>
+      <masked>false</masked>
+      <name>requestNewCardText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardRequestNewCardElement')</defaultValue>
+      <description></description>
+      <id>63b89852-d894-487f-8f70-c505c3ee0781</id>
+      <masked>false</masked>
+      <name>firstRowCardTypeElement</name>
+   </variable>
+</TestCaseEntity>

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssignCardTextConfirmationPopUp</name>
+   <name>AssignCardPageExpectedText</name>
    <tag></tag>
-   <elementGuidId>d27aac65-145e-4e94-9704-53e007a8dacf</elementGuidId>
+   <elementGuidId>c5cc64dc-8f88-494b-851a-ad29e751537d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='outer-root']/div/div/section/h4</value>
+         <value>//li[(text() = '5' or . = '5')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>h4.u-mg-top-base.u-fw-bold.u-fs-xlarge</value>
+         <value>li.TablePagination-page.TablePagination-current</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h4</value>
-      <webElementGuid>6dad1782-4e2a-4d4c-8a9b-5cd2fb69325e</webElementGuid>
+      <value>li</value>
+      <webElementGuid>b6912470-db44-4c19-b148-b9bf2b54694b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>u-mg-top-base u-fw-bold u-fs-xlarge</value>
-      <webElementGuid>939f055f-fbc6-4f16-808f-cce9afe6d455</webElementGuid>
+      <value>TablePagination-page TablePagination-current</value>
+      <webElementGuid>8126010b-23ca-4cd4-a5e6-e8afe9a82c0a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Konfirmasi</value>
-      <webElementGuid>5ff8616c-5c73-40a4-84dc-ac1e1c1bea21</webElementGuid>
+      <value>5</value>
+      <webElementGuid>5e7bc0b6-7ee9-4fb6-9fe6-2a345b6758ae</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/h4[@class=&quot;u-mg-top-base u-fw-bold u-fs-xlarge&quot;]</value>
-      <webElementGuid>6e949ece-1646-4ec9-94ff-f5a988a48c48</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;TablePagination&quot;]/div[@class=&quot;TablePagination-list&quot;]/ul[1]/li[@class=&quot;TablePagination-page TablePagination-current&quot;]</value>
+      <webElementGuid>8d87a957-e07c-4512-b6cb-887ccff7283b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='outer-root']/div/div/section/h4</value>
-      <webElementGuid>616198e6-caa9-42fd-bf4d-9cdc730338be</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/section/div[2]/div[2]/ul/li[3]</value>
+      <webElementGuid>0835c9c7-2a78-4fe0-985e-6e2d902303f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang diproses'])[1]/following::h4[1]</value>
-      <webElementGuid>0d1bf4f7-84e9-43b2-a8f7-1b11847afbf3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[10]/following::li[3]</value>
+      <webElementGuid>bef37d27-76c2-4bd2-82aa-0d949967afa0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::h4[1]</value>
-      <webElementGuid>e2319c75-299f-4c6c-9bfa-a1820b6cda1e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tunaiku Disbursement'])[10]/following::li[3]</value>
+      <webElementGuid>6f4687b1-59d4-4c01-bb1c-b1c1db92208e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::h4[1]</value>
-      <webElementGuid>9c6da041-5c4b-4ecc-bceb-2e1676674fb7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::li[4]</value>
+      <webElementGuid>d7206bc4-d0e0-4a2d-ad11-f6541db8620c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Konfirmasi']/parent::*</value>
-      <webElementGuid>9199611f-bf8b-4db0-a163-5fe3b6768e35</webElementGuid>
+      <value>//*/text()[normalize-space(.)='5']/parent::*</value>
+      <webElementGuid>bff3e42e-0342-401f-a34b-faf098ed0d1d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h4</value>
-      <webElementGuid>035cccf7-ac26-442c-9a17-657edf90cc77</webElementGuid>
+      <value>//div[2]/ul/li[3]</value>
+      <webElementGuid>44d8de69-ae82-459a-9b7e-234ec2dac6a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h4[(text() = 'Konfirmasi' or . = 'Konfirmasi')]</value>
-      <webElementGuid>342a0f47-6443-411c-a396-4e40c6c29d65</webElementGuid>
+      <value>//li[(text() = '5' or . = '5')]</value>
+      <webElementGuid>95c36a5c-6c77-48dc-9488-eb9ababd1e7b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

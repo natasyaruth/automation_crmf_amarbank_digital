@@ -84,14 +84,11 @@ WebUI.verifyElementPresent(btnBatalProcess, 10)
 /* we want to capture the alert action*/
 WebUI.takeScreenshot(FailureHandling.OPTIONAL)
 
+/* We want to verify button "batal" proses*/
+WebUI.verifyElementPresent(btnBatalProcess, 5)
+
 /* we want to click button batal process*/
 WebUI.click(btnBatalProcess)
-
-/* we want check dashboard menu element*/
-WebUI.verifyElementPresent(dashboardMenuElement, 10)
-
-/* we want to click dashboard menu*/
-WebUI.click(dashboardMenuElement)
 
 /* we want capture the pending notification request*/
 WebUI.takeScreenshot(FailureHandling.OPTIONAL)

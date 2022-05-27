@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssignCardTextConfirmationPopUp</name>
+   <name>AssignCardTunaikuDisbursementOnBucketListText</name>
    <tag></tag>
-   <elementGuidId>d27aac65-145e-4e94-9704-53e007a8dacf</elementGuidId>
+   <elementGuidId>0daef620-cc85-4395-8818-761ca23d6a14</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='outer-root']/div/div/section/h4</value>
+         <value>//td[(text() = 'Tunaiku Disbursement' or . = 'Tunaiku Disbursement')]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>h4.u-mg-top-base.u-fw-bold.u-fs-xlarge</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,87 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h4</value>
-      <webElementGuid>6dad1782-4e2a-4d4c-8a9b-5cd2fb69325e</webElementGuid>
+      <value>td</value>
+      <webElementGuid>e81aef09-3cda-482d-8fb6-51b18ae3c161</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>u-mg-top-base u-fw-bold u-fs-xlarge</value>
-      <webElementGuid>939f055f-fbc6-4f16-808f-cce9afe6d455</webElementGuid>
+      <value>Table-cell</value>
+      <webElementGuid>f3ba7596-4a32-4aef-a412-961216bbe5a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Konfirmasi</value>
-      <webElementGuid>5ff8616c-5c73-40a4-84dc-ac1e1c1bea21</webElementGuid>
+      <value>Tunaiku Disbursement</value>
+      <webElementGuid>c6ff5cc3-448a-49a1-9325-d78785ae6783</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/h4[@class=&quot;u-mg-top-base u-fw-bold u-fs-xlarge&quot;]</value>
-      <webElementGuid>6e949ece-1646-4ec9-94ff-f5a988a48c48</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>4ccdb96e-7914-4ddc-b5ed-0e8264aaf085</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='outer-root']/div/div/section/h4</value>
-      <webElementGuid>616198e6-caa9-42fd-bf4d-9cdc730338be</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[7]</value>
+      <webElementGuid>5f8e0be1-914b-4461-a8eb-eea83b5200f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang diproses'])[1]/following::h4[1]</value>
-      <webElementGuid>0d1bf4f7-84e9-43b2-a8f7-1b11847afbf3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu Baru'])[2]/following::td[2]</value>
+      <webElementGuid>9cfe8283-0e66-4900-9726-a591c11294f7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::h4[1]</value>
-      <webElementGuid>e2319c75-299f-4c6c-9bfa-a1820b6cda1e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='BANGKIT SANJAYA'])[1]/following::td[3]</value>
+      <webElementGuid>c27c7b67-3a71-4a01-8703-536d1daddb50</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::h4[1]</value>
-      <webElementGuid>9c6da041-5c4b-4ecc-bceb-2e1676674fb7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[1]/preceding::td[1]</value>
+      <webElementGuid>fd81e2d1-b961-46e2-92a5-05b05f96d7e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Konfirmasi']/parent::*</value>
-      <webElementGuid>9199611f-bf8b-4db0-a163-5fe3b6768e35</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='VINA RAMADHANI'])[1]/preceding::td[5]</value>
+      <webElementGuid>2d99cdac-905a-47d8-a906-105eb0f205d8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h4</value>
-      <webElementGuid>035cccf7-ac26-442c-9a17-657edf90cc77</webElementGuid>
+      <value>//td[7]</value>
+      <webElementGuid>9515f0a3-2604-4872-9c50-436a8279142b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h4[(text() = 'Konfirmasi' or . = 'Konfirmasi')]</value>
-      <webElementGuid>342a0f47-6443-411c-a396-4e40c6c29d65</webElementGuid>
+      <value>//td[(text() = 'Tunaiku Disbursement' or . = 'Tunaiku Disbursement')]</value>
+      <webElementGuid>04a40b8e-0c3f-48de-9e3c-7b638302437b</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
