@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104936</description>
+   <name>TC_AssignCardDetailCustomerBackToBucketList</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36b8dbb6-102c-4b6f-9b09-6c0e70c0e542</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8038ff12-bafa-4c53-aafe-5171eff9dede</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c4b5c846-9cfe-49f0-b138-1ddb00f61382</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4deee108-2875-4830-9eae-da6812ba2d5c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>647e88bb-31f9-4b92-b24a-f3ecb7a599c0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>65455b51-b367-49bc-a549-b4f77afe7201</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c1c61abf-4aa1-4d9c-8270-e1e81a02bf61</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2dbe6008-b6c9-4029-9392-72a1ba8af9b6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7bfd7923-911d-40de-bb8e-585aa6425f22</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b8033aa8-8807-405c-a080-a578e73abe77</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>8038ff12-bafa-4c53-aafe-5171eff9dede</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>c4b5c846-9cfe-49f0-b138-1ddb00f61382</id>
+      <masked>false</masked>
+      <name>menuAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardRequestIdDetail')</defaultValue>
+      <description></description>
+      <id>4deee108-2875-4830-9eae-da6812ba2d5c</id>
+      <masked>false</masked>
+      <name>requestIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardHeaderCustomerDetailElement')</defaultValue>
+      <description></description>
+      <id>647e88bb-31f9-4b92-b24a-f3ecb7a599c0</id>
+      <masked>false</masked>
+      <name>headerCustomerDetailElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Detil Nasabah'</defaultValue>
+      <description></description>
+      <id>65455b51-b367-49bc-a549-b4f77afe7201</id>
+      <masked>false</masked>
+      <name>headerCustomerDetailText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardRequestIdTextElement')</defaultValue>
+      <description></description>
+      <id>c1c61abf-4aa1-4d9c-8270-e1e81a02bf61</id>
+      <masked>false</masked>
+      <name>headerRequestIdTextElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnBackRequestId')</defaultValue>
+      <description></description>
+      <id>2dbe6008-b6c9-4029-9392-72a1ba8af9b6</id>
+      <masked>false</masked>
+      <name>btnBackElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardDrpSrtByCardStatus')</defaultValue>
+      <description></description>
+      <id>7bfd7923-911d-40de-bb8e-585aa6425f22</id>
+      <masked>false</masked>
+      <name>fieldFilterCardType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Kartu Baru'</defaultValue>
+      <description></description>
+      <id>b8033aa8-8807-405c-a080-a578e73abe77</id>
+      <masked>false</masked>
+      <name>fieldFilterCardText</name>
+   </variable>
+</TestCaseEntity>
