@@ -87,5 +87,25 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/Suite_CRM_CardManagement/Suite_CRM_Assign_Card_Detail_Customer_Page/Suite_CRM_Assign_Card_Detail_Customer_Page_T104959</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>staging</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_CardManagement/Suite_CRM_Assign_Card_Detail_Customer_Page/Suite_CRM_Assign_Card_Detail_Customer_Page_T104960</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>staging</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_CardManagement/Suite_CRM_Assign_Card_Detail_Customer_Page/Suite_CRM_Assign_Card_Detail_Customer_Page_T104961</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
