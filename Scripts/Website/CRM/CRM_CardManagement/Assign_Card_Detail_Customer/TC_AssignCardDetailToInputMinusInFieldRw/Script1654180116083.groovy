@@ -10,11 +10,13 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
+import javassist.compiler.ast.Keyword
 import net.bytebuddy.utility.RandomString
 
 import org.openqa.selenium.Keys as Keys
@@ -31,6 +33,17 @@ WebUI.verifyElementPresent(menuAssignCardElement, 5)
 
 /* We want to click menu assign card element*/
 WebUI.click(menuAssignCardElement)
+
+/* We want handling the execption in Assign Card if available when the process is locked*/
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+	KeywordUtil.logInfo("User is locked condition")
+	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
+	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
+	WebUI.click(btnCancelPopUpElement)
+}else {
+	KeywordUtil.logInfo("User is unlock")
+	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
+}
 
 /* We want to choose type card is " kartu baru"*/
 WebUI.selectOptionByLabel(fieldCardTypeElement, fieldCardTypeLabel, false)
