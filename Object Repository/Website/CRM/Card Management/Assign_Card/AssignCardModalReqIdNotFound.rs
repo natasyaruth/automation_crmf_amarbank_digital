@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardModalReqIdNotFound</name>
+   <tag></tag>
+   <elementGuidId>c6bfbb65-6ba6-4cf0-9081-7f456f3e4e58</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='outer-root']/div/div/section</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.u-ta-center.u-pd-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>section</value>
+      <webElementGuid>8b729318-3d38-4ebf-933b-5b56c744f1af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-ta-center u-pd-large</value>
+      <webElementGuid>19eef2f6-c5bb-4197-a83e-2078169f5e04</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nasabah tidak ditemukanKembali </value>
+      <webElementGuid>7268d8b8-605f-4bae-8cd9-c9a9d6770a66</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]</value>
+      <webElementGuid>7f6b71e4-6c84-4658-9c02-f8b28a1b1327</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section</value>
+      <webElementGuid>c6c85b09-5adb-48e3-afea-686f09415589</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[2]/following::section[1]</value>
+      <webElementGuid>4c82636c-50a8-4881-b128-d72f70179566</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[2]/following::section[1]</value>
+      <webElementGuid>bca73973-fd47-41d6-aff6-a7d393bfa13f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/section</value>
+      <webElementGuid>13c02a8e-0c6e-44fc-9ef3-a55c224371fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//section[(text() = 'Nasabah tidak ditemukanKembali ' or . = 'Nasabah tidak ditemukanKembali ')]</value>
+      <webElementGuid>5bbbb087-db93-4178-9de9-388da0a7f4cb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

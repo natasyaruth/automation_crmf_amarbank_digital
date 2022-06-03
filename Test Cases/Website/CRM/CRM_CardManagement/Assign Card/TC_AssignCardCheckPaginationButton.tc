@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104929</description>
+   <name>TC_AssignCardCheckPaginationButton</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1329d6f7-7ec6-4217-8d2b-35b36c521aac</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>217b9bba-b329-44da-8430-7d21825da134</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7676f530-1c21-4a3d-a436-31bac6571551</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>96b849b5-cac7-437b-9256-5506fd65f3b8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4f166668-07da-4f8e-a13e-6383bce75c73</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bf8b0d7b-2893-46fa-8a47-d14903d9a145</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6a3fe4f3-a1d5-4a49-a739-90f90cf6f67c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>217b9bba-b329-44da-8430-7d21825da134</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>7676f530-1c21-4a3d-a436-31bac6571551</id>
+      <masked>false</masked>
+      <name>menuAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnNextPageassign-card')</defaultValue>
+      <description></description>
+      <id>96b849b5-cac7-437b-9256-5506fd65f3b8</id>
+      <masked>false</masked>
+      <name>btnNextPageElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnLastPageassign-card')</defaultValue>
+      <description></description>
+      <id>4f166668-07da-4f8e-a13e-6383bce75c73</id>
+      <masked>false</masked>
+      <name>btnLastPageElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnPreviousPageassign-card')</defaultValue>
+      <description></description>
+      <id>bf8b0d7b-2893-46fa-8a47-d14903d9a145</id>
+      <masked>false</masked>
+      <name>btnPreviousPageElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnFirstPageassign-card')</defaultValue>
+      <description></description>
+      <id>6a3fe4f3-a1d5-4a49-a739-90f90cf6f67c</id>
+      <masked>false</masked>
+      <name>btnFirstPageElement</name>
+   </variable>
+</TestCaseEntity>

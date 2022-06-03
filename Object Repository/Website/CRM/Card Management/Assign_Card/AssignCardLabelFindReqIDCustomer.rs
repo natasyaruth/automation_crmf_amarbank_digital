@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardLabelFindReqIDCustomer</name>
+   <tag></tag>
+   <elementGuidId>c0c16d5d-745e-4899-a558-d1e2179c1140</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div/div/div/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>label.SearchFilter-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>64095ae4-4d5c-415c-8188-ee2d4117d354</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>TxtRefId</value>
+      <webElementGuid>2f639c83-8322-415b-b4bc-f6db249d2810</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>SearchFilter-label</value>
+      <webElementGuid>1555da1e-e4c9-4903-80d4-bbe91bb24e1c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Cari Request ID atau Ref ID nasabah</value>
+      <webElementGuid>8b78a7f0-92b2-4976-a5c7-8057b0a7f73c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex u-FlexWrap u-jc-between&quot;]/div[@class=&quot;u-Flex u-jc-between&quot;]/div[@class=&quot;SearchFilter CardManagementFilter-searchFilter u-MarginRight&quot;]/label[@class=&quot;SearchFilter-label&quot;]</value>
+      <webElementGuid>004b2249-819f-4f3c-bd27-8a66d9573e81</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div/div/label</value>
+      <webElementGuid>6130fefa-f1a4-4941-a14a-4ea193416b3c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[3]/following::label[1]</value>
+      <webElementGuid>ce0c7be1-ea5d-429d-a893-de4ec7f38189</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[1]/following::label[1]</value>
+      <webElementGuid>2c42e739-e73a-48e5-8817-570cb6de8b18</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter Tanggal'])[1]/preceding::label[1]</value>
+      <webElementGuid>915986db-5d96-4b4c-8364-0cb67ebbf903</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='s/d'])[1]/preceding::label[2]</value>
+      <webElementGuid>ba284786-490f-4ce1-9bb2-28d479511a61</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Cari Request ID atau Ref ID nasabah']/parent::*</value>
+      <webElementGuid>033dc7b1-fa13-4ce3-bee6-ad4e24616f3d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//label</value>
+      <webElementGuid>9a74929d-3f12-4acc-9ca3-28845fe397d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Cari Request ID atau Ref ID nasabah' or . = 'Cari Request ID atau Ref ID nasabah')]</value>
+      <webElementGuid>bdd24739-ea55-4b55-8f0a-1265a394fd32</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

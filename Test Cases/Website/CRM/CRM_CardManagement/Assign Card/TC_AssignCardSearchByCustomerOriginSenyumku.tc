@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104921</description>
+   <name>TC_AssignCardSearchByCustomerOriginSenyumku</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3c4d9f52-e544-40c4-bb5c-e17404e5442f</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7b554db4-ef3a-4a00-a108-089ff075d801</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3a3a8910-b170-455d-b39e-01d23adb37e7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a7738dda-976f-4f53-a21d-b8dce238251b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cf85fd30-4804-4403-9246-6e0a1a1f7087</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>222ce1b8-ff91-41cb-9239-6235043a7229</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>178cc683-b627-4a58-817c-946cc110d50c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b71f4cc2-78ec-48b7-a8ec-45e9b79dff0d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>7b554db4-ef3a-4a00-a108-089ff075d801</id>
+      <masked>false</masked>
+      <name>menuCardManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>3a3a8910-b170-455d-b39e-01d23adb37e7</id>
+      <masked>false</masked>
+      <name>menuAssignCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLabelFilterByCustomerOrigin')</defaultValue>
+      <description></description>
+      <id>a7738dda-976f-4f53-a21d-b8dce238251b</id>
+      <masked>false</masked>
+      <name>labelFilterByCustomerOriginElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Filter by Customer Origin'</defaultValue>
+      <description></description>
+      <id>cf85fd30-4804-4403-9246-6e0a1a1f7087</id>
+      <masked>false</masked>
+      <name>labelFilterByCustomerOriginText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardFieldFilterByCustomer')</defaultValue>
+      <description></description>
+      <id>222ce1b8-ff91-41cb-9239-6235043a7229</id>
+      <masked>false</masked>
+      <name>fieldFilterByCustomerElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senyumku'</defaultValue>
+      <description></description>
+      <id>178cc683-b627-4a58-817c-946cc110d50c</id>
+      <masked>false</masked>
+      <name>senyumkuLabelText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardSenyumkuOnBucketListText')</defaultValue>
+      <description></description>
+      <id>b71f4cc2-78ec-48b7-a8ec-45e9b79dff0d</id>
+      <masked>false</masked>
+      <name>senyumkuDataOnBucketList</name>
+   </variable>
+</TestCaseEntity>

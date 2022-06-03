@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AssignCardTextConfirmationPopUp</name>
+   <name>AssignCardHeaderAssignCardText</name>
    <tag></tag>
-   <elementGuidId>d27aac65-145e-4e94-9704-53e007a8dacf</elementGuidId>
+   <elementGuidId>eb0ed98a-1b15-405d-a386-28df421c9e9d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='outer-root']/div/div/section/h4</value>
+         <value>//div[@id='root']/div/div/section/div/h1</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>h4.u-mg-top-base.u-fw-bold.u-fs-xlarge</value>
+         <value>h1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,87 +21,79 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>h4</value>
-      <webElementGuid>6dad1782-4e2a-4d4c-8a9b-5cd2fb69325e</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>u-mg-top-base u-fw-bold u-fs-xlarge</value>
-      <webElementGuid>939f055f-fbc6-4f16-808f-cce9afe6d455</webElementGuid>
+      <value>h1</value>
+      <webElementGuid>a66cad43-619e-4532-bddd-16c576cb166c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Konfirmasi</value>
-      <webElementGuid>5ff8616c-5c73-40a4-84dc-ac1e1c1bea21</webElementGuid>
+      <value>Assign Card</value>
+      <webElementGuid>a6df0de3-3d93-41b6-9a65-2384818e3d2c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/h4[@class=&quot;u-mg-top-base u-fw-bold u-fs-xlarge&quot;]</value>
-      <webElementGuid>6e949ece-1646-4ec9-94ff-f5a988a48c48</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/h1[1]</value>
+      <webElementGuid>6622b32c-2d9d-46b0-99d3-fb3d59733b52</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='outer-root']/div/div/section/h4</value>
-      <webElementGuid>616198e6-caa9-42fd-bf4d-9cdc730338be</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/h1</value>
+      <webElementGuid>e6ffdc61-96d4-4916-ba5d-30e445246755</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang diproses'])[1]/following::h4[1]</value>
-      <webElementGuid>0d1bf4f7-84e9-43b2-a8f7-1b11847afbf3</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::h1[1]</value>
+      <webElementGuid>8a53d846-ee85-4e9c-98a5-d7d2d2af564e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::h4[1]</value>
-      <webElementGuid>e2319c75-299f-4c6c-9bfa-a1820b6cda1e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Leads Management'])[1]/following::h1[1]</value>
+      <webElementGuid>9b3eb37b-b8b9-4d24-b6c4-e265d3ed98fb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::h4[1]</value>
-      <webElementGuid>9c6da041-5c4b-4ecc-bceb-2e1676674fb7</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Card Management'])[2]/preceding::h1[1]</value>
+      <webElementGuid>59f71004-3928-4c6c-a60a-270904315c7f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Konfirmasi']/parent::*</value>
-      <webElementGuid>9199611f-bf8b-4db0-a163-5fe3b6768e35</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[1]/preceding::h1[1]</value>
+      <webElementGuid>5c262d6b-821b-4b83-8109-b6e385cbbb3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//h4</value>
-      <webElementGuid>035cccf7-ac26-442c-9a17-657edf90cc77</webElementGuid>
+      <value>//h1</value>
+      <webElementGuid>9dd26d53-8d23-4f17-a58e-44fe224507fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//h4[(text() = 'Konfirmasi' or . = 'Konfirmasi')]</value>
-      <webElementGuid>342a0f47-6443-411c-a396-4e40c6c29d65</webElementGuid>
+      <value>//h1[(text() = 'Assign Card' or . = 'Assign Card')]</value>
+      <webElementGuid>98912ae4-3b79-455e-832f-4b983ec9f0a5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

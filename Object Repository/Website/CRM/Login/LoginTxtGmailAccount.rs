@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//input[@id = 'identifierId']</value>
+         <value>id(&quot;identifierId&quot;)[count(. | //input[@id = 'identifierId' and @type = 'email' and @autocomplete = 'username']) = count(//input[@id = 'identifierId' and @type = 'email' and @autocomplete = 'username'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,7 +18,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>acd5bfae-f27e-4d9b-810e-ebf798a1eb52</webElementGuid>
+      <webElementGuid>0a327787-19a9-43b8-b794-c71a9877b85b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -26,6 +26,30 @@
       <name>id</name>
       <type>Main</type>
       <value>identifierId</value>
-      <webElementGuid>3c331b21-f058-4d4d-8d6d-3bebc49525be</webElementGuid>
+      <webElementGuid>90700f84-e50c-445e-b58e-f13c95dfb583</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>email</value>
+      <webElementGuid>1b818e38-077a-4131-a5db-dc8948cb1c63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>autocomplete</name>
+      <type>Main</type>
+      <value>username</value>
+      <webElementGuid>b567c2a9-7960-4c7d-8606-9c3819e262c1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;identifierId&quot;)</value>
+      <webElementGuid>0238745c-d499-46ac-97af-4dafbefde3f2</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

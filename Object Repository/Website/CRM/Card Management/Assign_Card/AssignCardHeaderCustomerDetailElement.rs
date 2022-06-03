@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardHeaderCustomerDetailElement</name>
+   <tag></tag>
+   <elementGuidId>7fb0f381-29c8-453a-93c6-20dc015c9567</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[(text() = 'Detil Nasabah' or . = 'Detil Nasabah')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.Card-title</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>184c6e87-78b3-4d04-bc2d-4252a7c4a654</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Card-title</value>
+      <webElementGuid>4e34c2ff-055d-4761-9aba-235b94c53061</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Detil Nasabah</value>
+      <webElementGuid>95108040-dd45-4520-970a-c5388a62d04a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Card u-MarginBottom u-MarginTop&quot;]/section[@class=&quot;Card-header u-BgColor-lighter&quot;]/div[@class=&quot;Card-title&quot;]</value>
+      <webElementGuid>464ceb4b-c942-435e-810b-c2de9577ea47</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[2]/section/div</value>
+      <webElementGuid>28b45db2-0c71-4114-9846-e7e46b6daf95</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[2]/following::div[2]</value>
+      <webElementGuid>dd722fe6-74cf-416a-a8d2-ee312db13f1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[2]/following::div[2]</value>
+      <webElementGuid>e4b33612-8423-4350-b881-583840b4173a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/preceding::div[1]</value>
+      <webElementGuid>cf754042-c3a8-457e-a712-6a22f7f786af</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reference ID'])[1]/preceding::div[4]</value>
+      <webElementGuid>5f571c57-0ae2-4b4b-b14a-9935646d8ae1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Detil Nasabah']/parent::*</value>
+      <webElementGuid>45227d64-8015-412b-952d-257663a19def</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/section/div</value>
+      <webElementGuid>6cd23f06-02fc-421a-a8fc-3b9e2c6e1cc6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Detil Nasabah' or . = 'Detil Nasabah')]</value>
+      <webElementGuid>3b0cc844-4297-4ef9-ac80-3bbcdee1c45b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
