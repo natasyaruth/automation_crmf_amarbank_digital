@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardDetailLabelProvinceElement</name>
+   <tag></tag>
+   <elementGuidId>f113cbab-7cad-4813-a79d-5e8f9a5136fe</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.Grid.Grid-md-6.u-pd-left.u-pd-right.u-pd-bottom > div.Form-field > label.Form-label</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//label[(text() = 'Provinsi' or . = 'Provinsi')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>eb780ea1-9486-4c97-9ef5-e2ddda5bce7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Form-label</value>
+      <webElementGuid>48dc6be2-20a4-49ab-abfa-a77f2db7df7f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Provinsi</value>
+      <webElementGuid>aed7c313-5fd0-404d-8cc5-f2a13abe7e60</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Card u-MarginBottom&quot;]/section[@class=&quot;Card-body&quot;]/form[1]/div[@class=&quot;Grids Grids--gapless&quot;]/div[@class=&quot;Grid Grid-md-6 u-pd-left u-pd-right u-pd-bottom&quot;]/div[@class=&quot;Form-field&quot;]/label[@class=&quot;Form-label&quot;]</value>
+      <webElementGuid>986da88e-9fbf-4140-946a-6d3beeb0443f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[3]/div[2]/div/section[2]/form/div[5]/div/div/label</value>
+      <webElementGuid>b0389790-bd0f-40aa-84e8-0773b9ec6c43</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[1]/following::label[1]</value>
+      <webElementGuid>da6fe2bc-229b-4e35-b51f-4a27d403ce7f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[1]/following::label[2]</value>
+      <webElementGuid>ebe92a15-b2be-43b3-bdf1-b83fc97eafae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kabupaten/kota'])[1]/preceding::label[1]</value>
+      <webElementGuid>f8205adb-f587-40dc-b48d-a1aa6190ee8c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kecamatan'])[1]/preceding::label[2]</value>
+      <webElementGuid>2852af29-fc56-4172-a7ad-f908203d8588</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Provinsi']/parent::*</value>
+      <webElementGuid>bf4ad5ac-43fb-4273-9361-15d7695f9a00</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div/div/label</value>
+      <webElementGuid>52cee4f4-e6aa-4356-9629-5573cd0bcb49</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Provinsi' or . = 'Provinsi')]</value>
+      <webElementGuid>db0c68cc-953c-4ebe-8e35-ca1e736249d8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

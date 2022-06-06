@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardDetailAlertFullAddressEmptyElement</name>
+   <tag></tag>
+   <elementGuidId>7fad9d47-a94f-4801-82cf-6ca71d6aa1f0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.u-fs-small.u-clr-danger.u-mg-top-xxsmall</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[2]/div[2]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>b151601a-5b5c-4aa7-85db-8fea81d92b4f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
+      <webElementGuid>809530f5-0618-43de-a820-940ce9b32a08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Alamat lengkap wajib diisi</value>
+      <webElementGuid>f00c6fd3-91ae-46c6-862f-ead4cef9d331</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Card u-MarginBottom&quot;]/section[@class=&quot;Card-body&quot;]/form[1]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
+      <webElementGuid>f306efd5-4bce-46de-b064-12b4ed66dc21</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[3]/div[2]/div/section[2]/form/div[2]/div[2]</value>
+      <webElementGuid>fac5199a-2a9a-4332-9659-5ce6517e89f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat lengkap'])[1]/following::div[3]</value>
+      <webElementGuid>cd640b33-1be5-4b0e-b243-bb6275f4bf0e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat pengiriman kartu'])[1]/following::div[6]</value>
+      <webElementGuid>bf6b896b-2439-4ef0-a327-8165e19262cd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[1]/preceding::div[2]</value>
+      <webElementGuid>ae6e2e08-bf3f-4499-aef7-e08d523c695a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[1]/preceding::div[5]</value>
+      <webElementGuid>4663a600-9a4c-4925-be26-c3f6397af8c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Alamat lengkap wajib diisi']/parent::*</value>
+      <webElementGuid>2dc9c016-7b2d-4044-967e-f3681b41b443</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]</value>
+      <webElementGuid>ad2eb558-5e07-4102-8157-ef91da505186</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Alamat lengkap wajib diisi' or . = 'Alamat lengkap wajib diisi')]</value>
+      <webElementGuid>c1716bc6-6e5a-48ce-8c3f-7a236476fc97</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
