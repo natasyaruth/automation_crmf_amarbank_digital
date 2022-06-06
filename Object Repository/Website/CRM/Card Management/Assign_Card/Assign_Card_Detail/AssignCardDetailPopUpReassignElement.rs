@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardDetailPopUpReassignElement</name>
+   <tag></tag>
+   <elementGuidId>868d60c1-0e31-45b9-9f00-25a38ff8ad76</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='outer-root']/div/div/section</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.u-ta-center.u-pd-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>section</value>
+      <webElementGuid>30418532-2de7-464a-bcad-904de5d4b6f0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-ta-center u-pd-large</value>
+      <webElementGuid>78f8167a-fc25-4f44-a11f-ea3d69cd8f8e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>KonfirmasiApakah Anda yakin untuk Re-Assign kartu?Re-Assign Batal </value>
+      <webElementGuid>8ca3695f-d6ba-46be-b932-7b6c1c727bfc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]</value>
+      <webElementGuid>c5eac455-de9b-413a-a6fa-b3851dd7c2a6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section</value>
+      <webElementGuid>6cfdabe5-a65c-4363-ab23-3640ed74f2d0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[1]/following::section[1]</value>
+      <webElementGuid>d9c2e0f8-b5ee-4a48-be57-09cfd32b4334</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[1]/following::section[1]</value>
+      <webElementGuid>3e2a9c21-7a68-4b25-b99e-46b18f003f78</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/section</value>
+      <webElementGuid>7d2abb26-d16b-4e15-a7ac-e683a74abd97</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//section[(text() = 'KonfirmasiApakah Anda yakin untuk Re-Assign kartu?Re-Assign Batal ' or . = 'KonfirmasiApakah Anda yakin untuk Re-Assign kartu?Re-Assign Batal ')]</value>
+      <webElementGuid>b3f4276d-56af-4d6f-9fa5-0b216907bd5e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
