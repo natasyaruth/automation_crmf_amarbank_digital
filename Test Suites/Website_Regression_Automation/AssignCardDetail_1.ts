@@ -3,7 +3,7 @@
    <description>AssignCardDetail_1</description>
    <name>AssignCardDetail_1</name>
    <tag></tag>
-   <delayBetweenInstances>5</delayBetweenInstances>
+   <delayBetweenInstances>2</delayBetweenInstances>
    <executionMode>PARALLEL</executionMode>
    <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
