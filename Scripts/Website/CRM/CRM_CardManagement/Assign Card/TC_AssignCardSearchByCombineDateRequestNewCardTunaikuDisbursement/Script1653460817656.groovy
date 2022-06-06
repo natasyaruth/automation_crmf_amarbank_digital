@@ -70,8 +70,11 @@ WebUI.click(btnShowFilterElement)
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
+/* We want to get date text from first line / row*/
+currentDateExisting = WebUI.getText(firstRowDateElement)
+
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, expectedDateElement)
+WebUI.verifyElementText(firstRowDateElement, currentDateExisting)
 
 /* We want to verify check the request new card*/
 for (int i = 0; i < 10; i++) {
