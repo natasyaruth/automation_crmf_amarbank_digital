@@ -241,12 +241,6 @@
          <value></value>
          <variableId>96b774b6-a8ae-4089-a15b-df6a849149c9</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>47ba8e7f-70e1-435c-afd2-357cf333295e</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>34039d12-466e-42d1-a6ff-4f6151601011</guid>
