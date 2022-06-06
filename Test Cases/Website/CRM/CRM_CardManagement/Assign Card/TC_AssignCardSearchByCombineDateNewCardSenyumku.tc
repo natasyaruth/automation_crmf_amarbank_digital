@@ -113,12 +113,6 @@
       <value></value>
       <variableId>b0cbb1b0-c334-4aee-850d-a50ad36fb4bd</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>ab686862-eed1-44b2-bedb-e15575008df0</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -244,12 +238,5 @@
       <id>b0cbb1b0-c334-4aee-850d-a50ad36fb4bd</id>
       <masked>false</masked>
       <name>senyumkuCustomerOriginText</name>
-   </variable>
-   <variable>
-      <defaultValue>'27/1/2022'</defaultValue>
-      <description></description>
-      <id>ab686862-eed1-44b2-bedb-e15575008df0</id>
-      <masked>false</masked>
-      <name>expectedDateText</name>
    </variable>
 </TestCaseEntity>

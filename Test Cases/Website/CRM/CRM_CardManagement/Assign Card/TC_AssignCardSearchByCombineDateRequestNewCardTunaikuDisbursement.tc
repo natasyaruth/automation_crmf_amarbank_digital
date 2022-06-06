@@ -113,12 +113,6 @@
       <value></value>
       <variableId>e8a1dbd9-d089-4e46-bafa-c3128c9c3d49</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>3e1ea79d-850a-48d4-bb2b-2d9b2ddb46c0</variableId>
-   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -244,12 +238,5 @@
       <id>e8a1dbd9-d089-4e46-bafa-c3128c9c3d49</id>
       <masked>false</masked>
       <name>tunaikuDisbursementCustomerOriginText</name>
-   </variable>
-   <variable>
-      <defaultValue>'30/3/2022'</defaultValue>
-      <description></description>
-      <id>3e1ea79d-850a-48d4-bb2b-2d9b2ddb46c0</id>
-      <masked>false</masked>
-      <name>expectedDateElement</name>
    </variable>
 </TestCaseEntity>

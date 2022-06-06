@@ -34,13 +34,13 @@ WebUI.click(menuAssignCardElement)
 /* We want verify element field start date*/
 WebUI.verifyElementPresent(fieldDateFromElement, 5)
 
-/* We want input start date example date "11/05/2022"*/
+/* We want input start date example date "1/3/2022"*/
 WebUI.setText(fieldDateFromElement, inputStartDateText)
 
 /* We want verify element field end date*/
 WebUI.verifyElementPresent(fieldDateEndElement, 5)
 
-/* We want input end date example date "19/05/2022"*/
+/* We want input end date example date "20/5/2022"*/
 WebUI.setText(fieldDateEndElement, inputEndDateText)
 
 /* We want verify button "Tampilkan" */
@@ -70,8 +70,11 @@ WebUI.click(btnShowFilterElement)
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
+/* We want to get date text from first line / row*/
+currentDateExisting = WebUI.getText(firstRowDateElement)
+
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, expectedDateElement)
+WebUI.verifyElementText(firstRowDateElement, currentDateExisting)
 
 /* We want to verify check the request new card*/
 for (int i = 0; i < 10; i++) {
