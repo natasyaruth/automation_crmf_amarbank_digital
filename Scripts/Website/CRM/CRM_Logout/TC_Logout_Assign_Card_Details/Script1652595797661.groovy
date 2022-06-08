@@ -29,8 +29,17 @@ WebUI.verifyElementPresent(menuAssignCard, 5)
 /* We want to click menu Assign Card page*/
 WebUI.click(menuAssignCard)
 
-/* We will verify the element request ID */
-WebUI.verifyElementPresent(requestID, 5)
+if (WebUI.verifyElementPresent(popUpNotificationElement, 5, FailureHandling.OPTIONAL)) {
+	/* We see text "konfirmasi" process assign card*/
+	WebUI.verifyElementText(confirmationPopUpNotificationElement, confirmationPopUpNotificationText)
+	/* We want to click "batal" to process next assign card*/
+	WebUI.click(btnAbortPopUpNotificationElement)
+	/* We will verify the element request ID */
+	WebUI.verifyElementPresent(requestID, 5)
+} else {
+	/* We will verify the element request ID */
+	WebUI.verifyElementPresent(requestID, 5)
+}
 
 /* We will click the second request ID*/
 WebUI.click(requestID)
@@ -73,20 +82,37 @@ WebUI.takeScreenshot()
 
 /*-----------------------------------------------------------------------*/
 /* We just want unblock the process assign card to process next test*/
-/* We want to check from Menu Card Management page*/
-WebUI.verifyElementPresent(menuCardManagement, 5)
-/* We want to click menu to expand the menu card management */
-WebUI.click(menuCardManagement)
-/* We want to identify the element menu Assign Card*/
-WebUI.verifyElementPresent(menuAssignCard, 5)
-/* We want to click menu Assign Card page*/
-WebUI.click(menuAssignCard)
-/* We see the notification continue the process*/
-WebUI.waitForElementVisible(popUpNotificationElement, 5)
-/* We see text "konfirmasi" process assign card*/
-WebUI.verifyElementText(confirmationPopUpNotificationElement, confirmationPopUpNotificationText)
-/* We want to click "batal" to process next assign card*/
-WebUI.click(btnAbortPopUpNotificationElement)
+if (WebUI.verifyElementVisible(menuAssignCard, FailureHandling.OPTIONAL)) {
+	/* We want to click menu Assign Card page*/
+	WebUI.click(menuAssignCard)
+	if (WebUI.verifyElementPresent(popUpNotificationElement, 5, FailureHandling.OPTIONAL)) {
+		/* We see text "konfirmasi" process assign card*/
+		WebUI.verifyElementText(confirmationPopUpNotificationElement, confirmationPopUpNotificationText)
+		/* We want to click "batal" to process next assign card*/
+		WebUI.click(btnAbortPopUpNotificationElement)
+	} else {
+		/* We will verify the element request ID */
+		WebUI.verifyElementPresent(requestID, 5)
+	}
+} else {
+	/* We want to check from Menu Card Management page*/
+	WebUI.verifyElementPresent(menuCardManagement, 5)
+	/* We want to click menu to expand the menu card management */
+	WebUI.click(menuCardManagement)
+	/* We want to identify the element menu Assign Card*/
+	WebUI.verifyElementPresent(menuAssignCard, 5)
+	/* We want to click menu Assign Card page*/
+	WebUI.click(menuAssignCard)
+	if (WebUI.verifyElementPresent(popUpNotificationElement, 5, FailureHandling.OPTIONAL)) {
+		/* We see text "konfirmasi" process assign card*/
+		WebUI.verifyElementText(confirmationPopUpNotificationElement, confirmationPopUpNotificationText)
+		/* We want to click "batal" to process next assign card*/
+		WebUI.click(btnAbortPopUpNotificationElement)
+	} else {
+		/* We will verify the element request ID */
+		WebUI.verifyElementPresent(requestID, 5)
+	}
+}
 /*-----------------------------------------------------------------------*/
 
 /* Delete all cookies */

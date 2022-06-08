@@ -101,6 +101,12 @@
       <value></value>
       <variableId>1bb66751-c1e0-496d-b5a8-aa392fe7c634</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54bfbad5-d19a-4e47-927a-387f453dbfb4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -212,5 +218,12 @@
       <id>1bb66751-c1e0-496d-b5a8-aa392fe7c634</id>
       <masked>false</masked>
       <name>btnBatalProcess</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>54bfbad5-d19a-4e47-927a-387f453dbfb4</id>
+      <masked>false</masked>
+      <name>menuDashboardElement</name>
    </variable>
 </TestCaseEntity>
