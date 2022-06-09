@@ -185,6 +185,12 @@
       <value></value>
       <variableId>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c233c076-1819-4db3-b1ae-4186a87f55f5</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>

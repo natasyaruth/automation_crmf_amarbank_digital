@@ -20,17 +20,20 @@ import net.bytebuddy.utility.RandomString
 import org.openqa.selenium.Keys as Keys
 import org.apache.commons.lang.RandomStringUtils
 
-/* We want to verify menu card management element*/
-WebUI.verifyElementPresent(menuCardManagementElement, 5)
-
-/* We want to click menu card management to exand sub menu*/
-WebUI.click(menuCardManagementElement)
-
-/* We want to verify menu assign card element*/
-WebUI.verifyElementPresent(menuAssignCardElement, 5)
-
-/* We want to click menu assign card element*/
-WebUI.click(menuAssignCardElement)
+/* We want to makesure we can identify element assign card*/
+if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+	/* We want to click menu assign card element*/
+	WebUI.click(menuAssignCardElement)
+} else {
+	/* We want to verify menu card management element*/
+	WebUI.verifyElementPresent(menuCardManagementElement, 5)
+	/* We want to click menu card management to exand sub menu*/
+	WebUI.click(menuCardManagementElement)
+	/* We want to verify menu assign card element*/
+	WebUI.verifyElementPresent(menuAssignCardElement, 5)
+	/* We want to click menu assign card element*/
+	WebUI.click(menuAssignCardElement)
+}
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
 if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
@@ -118,3 +121,6 @@ WebUI.click(btnCancelElement)
 
 /* We want to click button "kembali" just for unblock the process*/
 WebUI.click(btnBackToCardManagementElement)
+
+/* We want to refresh for the next process*/
+WebUI.refresh()

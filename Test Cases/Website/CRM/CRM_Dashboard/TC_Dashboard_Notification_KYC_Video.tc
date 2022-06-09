@@ -83,6 +83,12 @@
       <value></value>
       <variableId>cf0cda00-af3d-48c0-9ce8-9d3cf89d7d50</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>535df6a0-d8d5-47e2-8365-bfdfd02ddb78</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -173,5 +179,12 @@
       <id>cf0cda00-af3d-48c0-9ce8-9d3cf89d7d50</id>
       <masked>false</masked>
       <name>idleCallsTab</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>535df6a0-d8d5-47e2-8365-bfdfd02ddb78</id>
+      <masked>false</masked>
+      <name>menuDashboardElement</name>
    </variable>
 </TestCaseEntity>

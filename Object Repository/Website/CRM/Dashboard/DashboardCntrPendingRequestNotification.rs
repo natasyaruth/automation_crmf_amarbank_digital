@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value></value>
+         <value>//section/div/div/section/div</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@id = 'CntrPendingRequestNotification']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,6 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>CntrPendingRequestNotification</value>
-      <webElementGuid>fcc7560e-5480-4158-b6c2-82e5c409af31</webElementGuid>
+      <webElementGuid>301d7664-c082-4ed5-a376-8b0e756faeb7</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
