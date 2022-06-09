@@ -14,22 +14,36 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.thoughtworks.selenium.webdriven.commands.GetText
+
 import internal.GlobalVariable
 import javassist.compiler.ast.Keyword
 
 import org.openqa.selenium.Keys as Keys
 
-/* We want to verify menu card management element*/
-WebUI.verifyElementPresent(menuCardManagementElement, 5)
+/* We want to makesure we can identify element assign card*/
+if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+	/* We want to click menu assign card element*/
+	WebUI.click(menuAssignCardElement)
+} else {
+	/* We want to verify menu card management element*/
+	WebUI.verifyElementPresent(menuCardManagementElement, 5)
+	/* We want to click menu card management to exand sub menu*/
+	WebUI.click(menuCardManagementElement)
+	/* We want to verify menu assign card element*/
+	WebUI.verifyElementPresent(menuAssignCardElement, 5)
+	/* We want to click menu assign card element*/
+	WebUI.click(menuAssignCardElement)
+}
 
-/* We want to click menu card management to exand sub menu*/
-WebUI.click(menuCardManagementElement)
-
-/* We want to verify menu assign card element*/
-WebUI.verifyElementPresent(menuAssignCardElement, 5)
-
-/* We want to click menu assign card element*/
-WebUI.click(menuAssignCardElement)
+/* We want handling the execption in Assign Card if available when the process is locked*/
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
+	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
+	WebUI.click(btnCancelPopUpElement)
+}else {
+	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
+}
 
 /* We want verify element field start date*/
 WebUI.verifyElementPresent(fieldDateFromElement, 5)
@@ -70,8 +84,11 @@ WebUI.click(btnShowFilterElement)
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
+/* We want to expect first date same as we can see*/
+expectedDateText = WebUI.getText(firstRowDateElement)
+
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, inputEndDateText)
+WebUI.verifyElementText(firstRowDateElement, expectedDateText)
 
 /* We want to verify check the new card*/
 for (int i = 0; i < 10; i++) {
@@ -163,3 +180,6 @@ for (int i = 0; i < 10; i++) {
 	WebUI.click(btnNextPage)
 	}
 }
+
+/* We want to refresh for the next process*/
+WebUI.refresh()

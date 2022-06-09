@@ -71,6 +71,48 @@
       <value></value>
       <variableId>5bb94d44-c9aa-4aa6-a88c-8249dd57e451</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e33d491f-dd8d-4b78-a50a-d39c14a9f8af</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>00280901-027a-4b9f-b77c-c5fa11f127bf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80ec3557-0c44-4979-97c8-fe2fdac8d7ad</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e6169e0b-44f1-4a57-bd5f-c97ef0fddb01</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>caa48338-5a12-4a7c-8d72-7c2bf963cb6b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>360b2c26-a741-4f34-b551-8bbcb78eeeb3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -147,5 +189,54 @@
       <id>5bb94d44-c9aa-4aa6-a88c-8249dd57e451</id>
       <masked>false</masked>
       <name>btnAbortText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardPopUpNotification')</defaultValue>
+      <description></description>
+      <id>e33d491f-dd8d-4b78-a50a-d39c14a9f8af</id>
+      <masked>false</masked>
+      <name>blockBylockedUserElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardTextConfirmationPopUp')</defaultValue>
+      <description></description>
+      <id>00280901-027a-4b9f-b77c-c5fa11f127bf</id>
+      <masked>false</masked>
+      <name>alertConfirmationPopUpElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Konfirmasi'</defaultValue>
+      <description></description>
+      <id>80ec3557-0c44-4979-97c8-fe2fdac8d7ad</id>
+      <masked>false</masked>
+      <name>alertConfirmationPopUpText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardPopUpAbortBtn')</defaultValue>
+      <description></description>
+      <id>e6169e0b-44f1-4a57-bd5f-c97ef0fddb01</id>
+      <masked>false</masked>
+      <name>btnCancelPopUpElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Batal'</defaultValue>
+      <description></description>
+      <id>caa48338-5a12-4a7c-8d72-7c2bf963cb6b</id>
+      <masked>false</masked>
+      <name>btnCancelPopUpText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardHeaderAssignCardText')</defaultValue>
+      <description></description>
+      <id>360b2c26-a741-4f34-b551-8bbcb78eeeb3</id>
+      <masked>false</masked>
+      <name>headerAssignCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>'Assign Card'</defaultValue>
+      <description></description>
+      <id>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</id>
+      <masked>false</masked>
+      <name>headerAssignCardText</name>
    </variable>
 </TestCaseEntity>
