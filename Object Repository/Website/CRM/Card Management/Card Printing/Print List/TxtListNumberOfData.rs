@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtListNumberOfData</name>
+   <tag></tag>
+   <elementGuidId>7dee61d1-5f23-4c54-aeb2-a21c81c67224</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.TablePagination-info</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div/div[3]/div[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>74ff1935-0dc5-4a2d-867a-7c6aef301c7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>TablePagination-info</value>
+      <webElementGuid>8ec21ea2-e1e1-4422-876b-ec7d6abe9ae7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1 - 7 of 7 lists</value>
+      <webElementGuid>25239b2c-7888-41fb-8ed3-bc4ebb68b1b6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Tabs&quot;]/div[@class=&quot;Tabs-pane&quot;]/div[@class=&quot;TablePagination&quot;]/div[@class=&quot;TablePagination-info&quot;]</value>
+      <webElementGuid>5e2204a2-543f-4a03-b1f1-c8a60666185f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div/div[3]/div</value>
+      <webElementGuid>60a92015-0d82-4a5c-9cb1-ea5894d371ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Permintaan Kartu Baru'])[6]/following::div[2]</value>
+      <webElementGuid>3dc3a88b-f266-4dc6-ab6c-c9f70e9d99f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='External'])[7]/following::div[2]</value>
+      <webElementGuid>7815de1f-fe5e-4a88-abd8-154b64848c47</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cetak Kartu'])[1]/preceding::div[3]</value>
+      <webElementGuid>0231728e-c6f2-4ac4-bb2b-a4e15c991cf0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[3]/div</value>
+      <webElementGuid>214813cb-aaf6-462d-9120-06e34e58da33</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '1 - 7 of 7 lists' or . = '1 - 7 of 7 lists')]</value>
+      <webElementGuid>6165ff5b-0b43-4f93-a26b-e0005375295d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
