@@ -159,7 +159,7 @@ jobs:
           auth_option: NO_PROXY
           system_option: NO_PROXY
           desire_capabilities: true
-          auto_update:true
+          auto_update: true
       - run_upload_reports:
           project_id: "201268"    
           
