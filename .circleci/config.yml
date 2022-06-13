@@ -136,7 +136,7 @@ jobs:
       - run_upload_reports:
           project_id: "201268"
           
-   run_test_crmf_senyumku_regression:
+  run_test_crmf_senyumku_regression:
     <<: *container_config
     steps:
       - checkout
