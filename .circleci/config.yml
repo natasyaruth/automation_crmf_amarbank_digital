@@ -65,9 +65,9 @@ commands:
       system_option:
         type: string
       desire_capabilities:
-        type: string
+        type: boolean
       auto_update:
-        type: string
+        type: boolean
       
     steps:
       - run:
