@@ -17,11 +17,17 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
 
+/* We want to force to wait the page loaded*/
+WebUI.waitForPageLoad(10)
+
 /* We will check availability logo when login page*/
-WebUI.waitForElementVisible(logoLoginPage, 100)
+WebUI.verifyElementPresent(logoLoginPage, 5)
 
 /* we will check availability button login in login page */
 WebUI.waitForElementVisible(btnLogin, 10)
+
+/* we want to check element is present*/
+WebUI.verifyElementPresent(btnLogin, 5)
 
 /* we will verify text in button login */
 WebUI.verifyTextPresent(btnLoginText, false)
