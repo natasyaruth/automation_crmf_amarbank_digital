@@ -163,10 +163,28 @@ jobs:
       - run_upload_reports:
           project_id: "201268"
           
+  run_test_crmf_senyumku_login_test:
+    <<: *container_config
+    steps:
+      - checkout
+      - download_test_data:
+          file_id: 1zFSX7vmuWd8cfAS8nW8E7qZK43C3uwGz
+          location: Data Files/Dataset_CRMF.xls
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website_Regression_Automation/Login
+          environment: staging
+          browser_type: Chrome
+          auth_option: NO_PROXY
+          system_option: NO_PROXY
+          desire_capabilities: true
+          auto_update: true
+      - run_upload_reports:
+          project_id: "201268"
+          
 workflows:
   build:
     jobs:
-      - run_test_chrome:
+      - run_test_crmf_senyumku_login_test:
           context: Automation
           filters:
             branches:
