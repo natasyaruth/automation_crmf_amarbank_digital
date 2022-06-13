@@ -60,13 +60,22 @@ commands:
       project_path:
         type: string
         default: /root/project
+      auth_option:
+      	type: string
+      system_option:
+      	type: string
+      desire_capabilities:
+      	type: string
+      auto_update:
+      	type: string
+      
     steps:
       - run:
           name: Clean report directory
           command: rm -rf Reports/*
       - run:
           name: Execute Katalon Test Case
-          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true  
+          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" -proxy.auth.option=<< parameters.auth_option >> -proxy.system.option=<< parameters.system_option >> -proxy.system.applyToDesiredCapabilities=<< parameters.desire_capabilities >> -webui.autoUpdateDrivers= << parameters.auto_update >>  
   run_upload_reports:
     description: "Upload test reports to Katalon TestOps"
     parameters:
@@ -136,7 +145,7 @@ jobs:
       - run_upload_reports:
           project_id: "201268"
           
-   run_test_crmf_senyumku_regression:
+  run_test_crmf_senyumku_regression:
     <<: *container_config
     steps:
       - checkout
@@ -147,6 +156,10 @@ jobs:
           testsuite_name: Test Suites/Website_Regression_Automation/SenyumkuRegression
           environment: staging
           browser_type: Chrome
+          auth_option: NO_PROXY
+          system_option: NO_PROXY
+          desire_capabilities: true
+          auto_update: true
       - run_upload_reports:
           project_id: "201268"    
           
