@@ -18,5 +18,4 @@ public class ClickUsing_JS {
 		JavascriptExecutor executor = ((driver) as JavascriptExecutor)
 		executor.executeScript('arguments[0].click()', element)
 	}
-	
 }
