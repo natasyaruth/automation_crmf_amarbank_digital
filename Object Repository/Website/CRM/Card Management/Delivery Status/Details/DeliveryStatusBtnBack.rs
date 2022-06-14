@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnSearch</name>
+   <name>DeliveryStatusBtnBack</name>
    <tag></tag>
-   <elementGuidId>8e9edc5a-6bae-44f1-8bc1-cd91f5d11015</elementGuidId>
+   <elementGuidId>cbc80d86-0dc5-4227-b3e7-22bf3bd909cf</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnSearch']</value>
+         <value>//*[@id = 'BtnBack']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnSearch</value>
+      <value>BtnBack</value>
+      <webElementGuid>0cdafdf5-dcc1-445e-ab0b-d5274fc4b2f8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

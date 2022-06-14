@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>DeliveryStatusLinkReqId1</name>
+   <name>DeliveryStatusBtnReqId1</name>
    <tag></tag>
    <elementGuidId>c4ad6427-9720-42b7-ae14-bb8cecafb647</elementGuidId>
    <selectorCollection>

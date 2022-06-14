@@ -121,14 +121,14 @@
       <name>dashboardText</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLinkReqId1')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnReqId1')</defaultValue>
       <description></description>
       <id>cf187562-de89-4950-bf32-9309e619a9d9</id>
       <masked>false</masked>
       <name>requestID</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusDataNasabahElement')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Details/DeliveryStatusDataNasabahElement')</defaultValue>
       <description></description>
       <id>d51ef75e-573d-4848-88ff-7db29df69a83</id>
       <masked>false</masked>

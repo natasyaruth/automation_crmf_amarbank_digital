@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnPreviousPage</name>
+   <name>DeliveryStatusDrpSortByRequestType</name>
    <tag></tag>
-   <elementGuidId>f27445bd-e61a-4db8-a9bf-39c6e756794f</elementGuidId>
+   <elementGuidId>9476b288-be17-4f8a-bf15-0c93cb0ae43f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnPreviousPage']</value>
+         <value>//*[@id = 'DrpSortByRequestType']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnPreviousPage</value>
+      <value>DrpSortByRequestType</value>
+      <webElementGuid>d24681d6-3402-4651-9400-044a95deae43</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
