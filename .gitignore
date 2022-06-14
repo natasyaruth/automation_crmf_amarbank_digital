@@ -9,6 +9,6 @@ appium.Log
 bin/
 *.class
 *.apk
-settings/internal/
+settings/internal/*.properties
 .cache
 *.meta
