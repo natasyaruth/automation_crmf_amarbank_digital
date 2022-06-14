@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Card_Printing_DirectToTypoURL</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f5aa009e-4999-4472-9a87-43d892694ad0</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e5a9c9e5-27b0-41ce-9e49-a98d2d3b79a0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0e632f4f-15b4-4950-b662-854a76187676</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d18cf259-1166-4ab8-9e1d-0d0580e8aeff</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'/card-management/card-printingpp'</defaultValue>
+      <description></description>
+      <id>e5a9c9e5-27b0-41ce-9e49-a98d2d3b79a0</id>
+      <masked>false</masked>
+      <name>urlInvalidCardprinting</name>
+   </variable>
+   <variable>
+      <defaultValue>'Halaman ini tidak ditemukan'</defaultValue>
+      <description></description>
+      <id>0e632f4f-15b4-4950-b662-854a76187676</id>
+      <masked>false</masked>
+      <name>textPageNotFound</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/BtnBack')</defaultValue>
+      <description></description>
+      <id>d18cf259-1166-4ab8-9e1d-0d0580e8aeff</id>
+      <masked>false</masked>
+      <name>btnBack</name>
+   </variable>
+</TestCaseEntity>
