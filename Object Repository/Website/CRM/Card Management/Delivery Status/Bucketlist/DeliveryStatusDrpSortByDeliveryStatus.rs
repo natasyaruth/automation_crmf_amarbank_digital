@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLastPage</name>
+   <name>DeliveryStatusDrpSortByDeliveryStatus</name>
    <tag></tag>
-   <elementGuidId>a3d76d9e-1b6a-4007-86a2-ec67a27f69b5</elementGuidId>
+   <elementGuidId>4ab0c694-d953-4e1b-8f64-9414b83909d9</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLastPage']</value>
+         <value>//*[@id = 'DrpSortByDeliveryStatus']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLastPage</value>
+      <value>DrpSortByDeliveryStatus</value>
+      <webElementGuid>5ee58c40-53e1-4cd4-9300-218532cd0652</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

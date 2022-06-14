@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnNextPage</name>
+   <name>DeliveryStatusTxtReferenceId</name>
    <tag></tag>
-   <elementGuidId>aa07de7e-ec74-493c-88e8-5a3a289efafa</elementGuidId>
+   <elementGuidId>466cef79-c11b-4de1-a530-1077fc7ce954</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnNextPage']</value>
+         <value>//*[@id = 'TxtRefId']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnNextPage</value>
+      <value>TxtRefId</value>
+      <webElementGuid>f2f35350-74c0-4d25-9e06-92f50af27f50</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

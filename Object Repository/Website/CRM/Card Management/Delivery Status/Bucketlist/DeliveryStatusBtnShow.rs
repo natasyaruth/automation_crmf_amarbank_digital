@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnFirstPage</name>
+   <name>DeliveryStatusBtnShow</name>
    <tag></tag>
-   <elementGuidId>278cd1a9-18dd-4cc3-8d52-dd6bb0efe71b</elementGuidId>
+   <elementGuidId>84a57cb4-84af-4592-b0de-3ba2d5a16c7f</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnFirstPage']</value>
+         <value>//*[@id = 'BtnShow']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnFirstPage</value>
+      <value>BtnShow</value>
+      <webElementGuid>38f07917-85fd-492f-b736-b11f995c6e5f</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

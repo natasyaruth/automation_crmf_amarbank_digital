@@ -9,25 +9,35 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink'))
+/* We want to check from menu card management*/
+WebUI.verifyElementPresent(menuCardManagement, 5)
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtReferenceId'), searchRefID)
+/* We want to click menu to expand the menu card management */
+WebUI.click(menuCardManagement)
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnSearch'))
+/* We want to identify the element menu delivery status*/
+WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnReqId1'))
+/* We want to click menu delivery status page*/
+WebUI.click(menuDeliveryStatus)
 
-WebUI.verifyTextPresent(verifyRequestID, false)
+/* We want to verify text in Bucketlist*/
+WebUI.verifyTextPresent(DeliveryStatusText, false)
 
-WebUI.verifyTextPresent(verifyStatusDeliveryEnRoute, false)
+/* We will verify that filter delivery status is exist*/
+WebUI.verifyElementPresent(FilterDeliveryStatus, 5)
 
-WebUI.verifyTextPresent(verifyStatusSuccessDelivery, false)
+/* We will capture filter delivery status value "Gagal Kirim"*/
+WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByDeliveryStatus'), 
+    FilterDeliveryStatus_Gagal_Kirim, false)
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliverystatusBtnBack'))
-
+/* We will select delivery status value "Gagal Kirim"*/
+WebUI.takeScreenshot()

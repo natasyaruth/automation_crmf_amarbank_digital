@@ -6,12 +6,12 @@
    <elementGuidId>29480c40-ad00-455b-8b17-90edd31b1b40</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h3</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/section/div/div/section/div/h3</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

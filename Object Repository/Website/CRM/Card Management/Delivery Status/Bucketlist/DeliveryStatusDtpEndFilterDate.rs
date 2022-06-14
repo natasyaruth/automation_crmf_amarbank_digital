@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnBack</name>
+   <name>DeliveryStatusDtpEndFilterDate</name>
    <tag></tag>
-   <elementGuidId>cbc80d86-0dc5-4227-b3e7-22bf3bd909cf</elementGuidId>
+   <elementGuidId>e4c7c7ac-08fb-4cfc-bc60-030e8542622d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnBack']</value>
+         <value>//*[@id = 'DtpEndFilterDate']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnBack</value>
+      <value>DtpEndFilterDate</value>
+      <webElementGuid>a6ad8bdd-acc2-46e0-befe-9ba0a7d116d4</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
