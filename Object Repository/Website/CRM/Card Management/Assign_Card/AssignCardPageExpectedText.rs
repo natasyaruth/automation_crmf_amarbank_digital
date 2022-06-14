@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardPageExpectedText</name>
+   <tag></tag>
+   <elementGuidId>c5cc64dc-8f88-494b-851a-ad29e751537d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[(text() = '5' or . = '5')]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.TablePagination-page.TablePagination-current</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>li</value>
+      <webElementGuid>b6912470-db44-4c19-b148-b9bf2b54694b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>TablePagination-page TablePagination-current</value>
+      <webElementGuid>8126010b-23ca-4cd4-a5e6-e8afe9a82c0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>5</value>
+      <webElementGuid>5e7bc0b6-7ee9-4fb6-9fe6-2a345b6758ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;TablePagination&quot;]/div[@class=&quot;TablePagination-list&quot;]/ul[1]/li[@class=&quot;TablePagination-page TablePagination-current&quot;]</value>
+      <webElementGuid>8d87a957-e07c-4512-b6cb-887ccff7283b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/section/div[2]/div[2]/ul/li[3]</value>
+      <webElementGuid>0835c9c7-2a78-4fe0-985e-6e2d902303f4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menunggu'])[10]/following::li[3]</value>
+      <webElementGuid>bef37d27-76c2-4bd2-82aa-0d949967afa0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tunaiku Disbursement'])[10]/following::li[3]</value>
+      <webElementGuid>6f4687b1-59d4-4c01-bb1c-b1c1db92208e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::li[4]</value>
+      <webElementGuid>d7206bc4-d0e0-4a2d-ad11-f6541db8620c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='5']/parent::*</value>
+      <webElementGuid>bff3e42e-0342-401f-a34b-faf098ed0d1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/ul/li[3]</value>
+      <webElementGuid>44d8de69-ae82-459a-9b7e-234ec2dac6a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//li[(text() = '5' or . = '5')]</value>
+      <webElementGuid>95c36a5c-6c77-48dc-9488-eb9ababd1e7b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

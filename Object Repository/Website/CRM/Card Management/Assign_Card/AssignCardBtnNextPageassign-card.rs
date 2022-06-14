@@ -7,7 +7,11 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnNextPageassign-card']</value>
+         <value>id(&quot;BtnNextPageassign-card&quot;)[count(. | //*[@id = 'BtnNextPageassign-card']) = count(//*[@id = 'BtnNextPageassign-card'])]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//li[@id = 'BtnNextPageassign-card']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -18,6 +22,14 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnNextPageassign-card</value>
-      <webElementGuid>ee76f1f9-345c-4fa3-b50b-9c75c0e9c219</webElementGuid>
+      <webElementGuid>50981143-67c8-440a-aabf-65866fddbdae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;BtnNextPageassign-card&quot;)</value>
+      <webElementGuid>0e739c60-0a87-4e53-8afd-2369db6a8b3c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

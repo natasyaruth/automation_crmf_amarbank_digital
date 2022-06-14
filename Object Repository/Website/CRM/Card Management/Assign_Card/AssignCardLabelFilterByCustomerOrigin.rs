@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardLabelFilterByCustomerOrigin</name>
+   <tag></tag>
+   <elementGuidId>0cb542af-1994-41de-b703-70aa1cc961e3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div/div[2]/div[2]/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>07567686-0dc8-46e8-aa4c-246e1feb819a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>DrpSortByCustomerOrigin</value>
+      <webElementGuid>4e65e777-c557-4138-a8d0-55725cb5392f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DropdownFilter-label u-MarginRight</value>
+      <webElementGuid>ce0fa091-e162-4059-8dd6-8905947bd339</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Filter by Customer Origin</value>
+      <webElementGuid>060e0833-3ddd-4099-aed8-88691c16fab2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex u-FlexWrap u-jc-between&quot;]/div[@class=&quot;u-Flex u-ai-center&quot;]/div[@class=&quot;DropdownFilter&quot;]/label[@class=&quot;DropdownFilter-label u-MarginRight&quot;]</value>
+      <webElementGuid>d5a29cb0-905a-4f07-be9c-aaa5cb08f424</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div[2]/div[2]/label</value>
+      <webElementGuid>e3721d27-2cea-464f-9d3b-22a7a3f5ca7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter by Request Card Type'])[1]/following::label[1]</value>
+      <webElementGuid>0721bfb2-010f-4b8b-a640-78cca44d8e62</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tampilkan'])[1]/following::label[2]</value>
+      <webElementGuid>5ca72f9d-8348-4487-85de-7d808bcf4665</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No'])[1]/preceding::label[1]</value>
+      <webElementGuid>347a4a71-527e-4165-838f-5302b048f6dd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/preceding::label[1]</value>
+      <webElementGuid>19d8a023-dd00-4e52-85b0-2de51ccfddb5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Filter by Customer Origin']/parent::*</value>
+      <webElementGuid>8d8ca2e7-e67a-4ab1-b1c1-d5f92faae303</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/label</value>
+      <webElementGuid>44bd0dd4-d8b7-4870-82f5-09a8c5356e4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Filter by Customer Origin' or . = 'Filter by Customer Origin')]</value>
+      <webElementGuid>61038680-4790-4d44-8230-4fe8551b94fd</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

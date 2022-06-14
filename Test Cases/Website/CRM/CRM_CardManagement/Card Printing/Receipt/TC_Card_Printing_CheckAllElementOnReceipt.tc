@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Card_Printing_CheckAllElementOnReceipt</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>972f981c-a8ea-416a-9561-a1cbb423707a</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4972eb02-0ec1-4e8f-af01-a1b05d4592b4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4162dbd2-a4a8-4e58-a549-aa3bfbacc3a3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33f34bc5-3a41-4eb9-ae40-3ee9dd7ee9a2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fd629ab7-95ae-4600-a324-9037009ac13b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>68534f82-7a33-4011-ad33-63f345008c9f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TabAirwayBill')</defaultValue>
+      <description></description>
+      <id>4972eb02-0ec1-4e8f-af01-a1b05d4592b4</id>
+      <masked>false</masked>
+      <name>tabAirwayBill</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/DrpAirwayBillList')</defaultValue>
+      <description></description>
+      <id>4162dbd2-a4a8-4e58-a549-aa3bfbacc3a3</id>
+      <masked>false</masked>
+      <name>drpAirwayBillList</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/DrpDataInPageAirwayBill')</defaultValue>
+      <description></description>
+      <id>33f34bc5-3a41-4eb9-ae40-3ee9dd7ee9a2</id>
+      <masked>false</masked>
+      <name>drpDataInPageAirwayBill</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ChkDataAirwayBill1')</defaultValue>
+      <description></description>
+      <id>fd629ab7-95ae-4600-a324-9037009ac13b</id>
+      <masked>false</masked>
+      <name>chkDataAirwayBill</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/BtnAirwayBillPrint')</defaultValue>
+      <description></description>
+      <id>68534f82-7a33-4011-ad33-63f345008c9f</id>
+      <masked>false</masked>
+      <name>btnAirwayBillPrint</name>
+   </variable>
+</TestCaseEntity>

@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h4</value>
-      <webElementGuid>2581c9d7-5bc0-472b-86c3-b7f99c6518a0</webElementGuid>
+      <webElementGuid>6dad1782-4e2a-4d4c-8a9b-5cd2fb69325e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-mg-top-base u-fw-bold u-fs-xlarge</value>
-      <webElementGuid>9820c755-11cd-4b0c-aca7-9a954c61ad9f</webElementGuid>
+      <webElementGuid>939f055f-fbc6-4f16-808f-cce9afe6d455</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Konfirmasi</value>
-      <webElementGuid>611b3577-2449-444e-972f-d84a33ab32a0</webElementGuid>
+      <webElementGuid>5ff8616c-5c73-40a4-84dc-ac1e1c1bea21</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]/h4[@class=&quot;u-mg-top-base u-fw-bold u-fs-xlarge&quot;]</value>
-      <webElementGuid>d92e3abf-a7a0-4876-958f-bdc27564bc87</webElementGuid>
+      <webElementGuid>6e949ece-1646-4ec9-94ff-f5a988a48c48</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='outer-root']/div/div/section/h4</value>
-      <webElementGuid>517be31e-0363-448e-932e-5cbd1aadc187</webElementGuid>
+      <webElementGuid>616198e6-caa9-42fd-bf4d-9cdc730338be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang diproses'])[1]/following::h4[1]</value>
-      <webElementGuid>5da8aaef-ac0a-4d04-ad9c-c655861fe7fb</webElementGuid>
+      <webElementGuid>0d1bf4f7-84e9-43b2-a8f7-1b11847afbf3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan'])[1]/preceding::h4[1]</value>
-      <webElementGuid>cde6719e-4e14-440b-a1ab-3791dad45613</webElementGuid>
+      <webElementGuid>e2319c75-299f-4c6c-9bfa-a1820b6cda1e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::h4[1]</value>
-      <webElementGuid>f7d25656-d05e-4a4a-ae31-7bf63d0171f3</webElementGuid>
+      <webElementGuid>9c6da041-5c4b-4ecc-bceb-2e1676674fb7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Konfirmasi']/parent::*</value>
-      <webElementGuid>765dad05-8ab2-41a7-9b4e-a0a9bad80e6c</webElementGuid>
+      <webElementGuid>9199611f-bf8b-4db0-a163-5fe3b6768e35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h4</value>
-      <webElementGuid>6ef025a6-acb0-43d4-ab98-b7a9ed748011</webElementGuid>
+      <webElementGuid>035cccf7-ac26-442c-9a17-657edf90cc77</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h4[(text() = 'Konfirmasi' or . = 'Konfirmasi')]</value>
-      <webElementGuid>6ab75630-2b57-41a7-b06e-944cf0cfceb6</webElementGuid>
+      <webElementGuid>342a0f47-6443-411c-a396-4e40c6c29d65</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

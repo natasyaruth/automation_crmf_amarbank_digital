@@ -24,20 +24,29 @@ WebUI.waitForElementVisible(headerDashboardElement, 10)
 /* we want check the text as we know is dashboard */
 WebUI.verifyTextPresent(headerDashboardText, false)
 
-/* we want to verify element on KYC menu*/
-WebUI.verifyElementPresent(menuKYCManagement, 10)
-
-/* we want to click the KYC menu*/
-WebUI.click(menuKYCManagement)
-
-/* we want to verify element on KYC video request*/
-WebUI.verifyElementPresent(videoKYCRequest, 10)
+/* We want handle if we have notification to continue kyc process*/
+if (WebUI.verifyElementPresent(notificationVideoPendingElement, 5, FailureHandling.OPTIONAL)) {
+	kycVideoText = WebUI.getText(notificationVideoPendingElement)
+	WebUI.verifyElementText(notificationVideoPendingElement, kycVideoText)
+	WebUI.click(notificationVideoPendingElement)
+	WebUI.verifyElementPresent(btnBackVideoRequestElement, 5)
+	WebUI.click(btnBackVideoRequestElement)
+}else {
+	if (WebUI.verifyElementVisible(videoKYCRequest, FailureHandling.OPTIONAL)) {
+		/* We want goes to access video kyc request*/		
+		WebUI.verifyElementPresent(videoKYCRequest, 5)
+		WebUI.click(videoKYCRequest)
+	} else {
+		/* we want to verify element on KYC video request*/
+		WebUI.verifyElementPresent(menuKYCManagement, 10)
+		WebUI.click(menuKYCManagement)
+		WebUI.verifyElementPresent(videoKYCRequest, 5)
+		WebUI.click(videoKYCRequest)
+	}
+}
 
 /* we want to capture KYC Management and KYC Video Request*/
 WebUI.takeScreenshot()
-
-/* we want to click the video kyc request*/
-WebUI.click(videoKYCRequest)
 
 /* we want to choose the idle calls tab*/
 WebUI.verifyElementPresent(idleCallsTab, 10)
@@ -92,3 +101,9 @@ WebUI.verifyElementPresent(btnBackVideoRequestElement, 10)
 
 /* we want to click button "kembali" to makesure the request id is unlock*/
 WebUI.click(btnBackVideoRequestElement)
+
+/* We want to verify to menu dashboard*/
+WebUI.verifyElementPresent(menuDashboardElement, 5)
+
+/* We want to click back to dashboard*/
+WebUI.click(menuDashboardElement)

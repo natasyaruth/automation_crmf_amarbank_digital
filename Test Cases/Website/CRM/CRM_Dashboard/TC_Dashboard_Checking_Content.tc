@@ -107,6 +107,18 @@
       <value></value>
       <variableId>00d78ace-81b6-4024-b5b0-4e915c48f3b8</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87d91617-4745-4878-ad7a-dc161ea20923</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f2562e87-ebbd-4244-911c-fbc89e1ad975</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -225,5 +237,19 @@
       <id>00d78ace-81b6-4024-b5b0-4e915c48f3b8</id>
       <masked>false</masked>
       <name>idleCallsTab</name>
+   </variable>
+   <variable>
+      <defaultValue>'Anda memiliki pending request Silakan klik disini'</defaultValue>
+      <description></description>
+      <id>87d91617-4745-4878-ad7a-dc161ea20923</id>
+      <masked>false</masked>
+      <name>notificationVideoPendingText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>f2562e87-ebbd-4244-911c-fbc89e1ad975</id>
+      <masked>false</masked>
+      <name>menuDashboardElement</name>
    </variable>
 </TestCaseEntity>

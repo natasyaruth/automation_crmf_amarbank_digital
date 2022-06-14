@@ -23,8 +23,17 @@ WebUI.verifyElementPresent(menuCSRManagement, 5)
 /* We want to click menu to CSR Management Page */
 WebUI.click(menuCSRManagement)
 
-/* We verify we are in CSR Management page */
-WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+if (WebUI.waitForElementVisible(headerConfirmationElement, 5, FailureHandling.OPTIONAL)) {
+	/* We want to verify header "konfirmasi" Text*/
+	WebUI.verifyElementText(headerConfirmationElement, headerConfirmationText)
+	/* We want to click button abort or "batal" */
+	WebUI.click(btnCancelNotification)
+	/* We verify we are in CSR Management page */
+	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+} else {
+	/* We verify we are in CSR Management page */
+	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+}
 
 /* We will back to dashboard if don't get the request ID */
 WebUI.verifyElementPresent(requestID, 5)
@@ -68,21 +77,21 @@ WebUI.verifyTextPresent(dashboard, false)
 /* We will capture pending request has been showing after login */
 WebUI.takeScreenshot()
 
-/*--------------------------------------------------------------------------------------------------*/
-/* We want to unblock process on CSR Management Details so 
- * I Will to process the CSR Management again with purposed for next process
- * not blocked*/
-/* We want to verify menu CSR Management*/
-WebUI.verifyElementPresent(menuCSRManagement, 5)
+/* We want to unblock process on CSR Management Details*/
 /* We want to click the menu CSR Management*/
 WebUI.click(menuCSRManagement)
-/* We want to wait until element visible for header "Konfirmasi" text*/
-WebUI.waitForElementVisible(headerConfirmationElement, 5)
-/* We want to verify header "konfirmasi" Text*/
-WebUI.verifyElementText(headerConfirmationElement, headerConfirmationText)
-/* We want to click button abort or "batal" */
-WebUI.click(btnCancelNotification)
-/*-------------------------------------------------------------------------------------------------*/
+
+if (WebUI.waitForElementVisible(headerConfirmationElement, 5, FailureHandling.OPTIONAL)) {
+	/* We want to verify header "konfirmasi" Text*/
+	WebUI.verifyElementText(headerConfirmationElement, headerConfirmationText)
+	/* We want to click button abort or "batal" */
+	WebUI.click(btnCancelNotification)
+} else {
+	/* Delete all cookies */
+	WebUI.deleteAllCookies()
+	/* Close the browser */
+	WebUI.closeBrowser()
+}
 
 /* Delete all cookies */
 WebUI.deleteAllCookies()

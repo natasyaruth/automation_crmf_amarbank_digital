@@ -16,17 +16,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting'))
+/* We will click sub side menu Card Printing*/
+WebUI.click(linkCardPrinting)
 
+/* We will check availability element Tab Printlist*/
+WebUI.waitForElementPresent(tabPrintList, 10, FailureHandling.OPTIONAL)
+
+/* We will check availability text of 'Card Printing'*/
 WebUI.verifyTextPresent(verifyBucketlist, false)
-
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint'))
-
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/BtnPrintCard'))
-
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Print List/BtnCloseInformation'))
-
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Pickup List/ChkDataReprint1'))
-
-WebUI.click(findTestObject('Website/CRM/Card Management/Card Printing/Pickup List/BtnReprint'))
-
