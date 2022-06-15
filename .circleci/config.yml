@@ -93,7 +93,8 @@ commands:
           name: Upload reports to katalon testops
           when: always
           command: java -jar katalon-report-uploader-0.0.8.jar --projectId=<< parameters.project_id >> --path="<< parameters.project_path >>/Reports" --password=$KATALON_API_KEY --type=katalon 
-          
+
+#This part we could add more than 1 , and it become list of automation running in circleCi          
 jobs:
   run_test_chrome:
     <<: *container_config
