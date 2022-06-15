@@ -45,7 +45,7 @@
             <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/Suite_CRM_Login/Suite_CRM_Login_Regression_Test_Cases/RegressionLogin</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_Logout/Suite_CRM_Logout_Regression_Test_Cases/RegressionLogout</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -55,7 +55,7 @@
             <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/Suite_CRM_Logout/Suite_CRM_Logout_Regression_Test_Cases/RegressionLogout</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_Card_Printing/Suite_CRM_Card_Printing_Regression_Test_Cases/RegressionCardPrinting</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
