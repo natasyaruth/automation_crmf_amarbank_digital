@@ -93,8 +93,14 @@ WebUI.verifyElementPresent(btnShowFilterElement, 5)
 /* We want to click button "Tampilkan"*/
 WebUI.click(btnShowFilterElement)
 
+/* We want to wait until bucket list data loaded*/
+WebUI.waitForElementVisible(endDateElement, 5)
+
+/* We want to get data from first row date*/
+checkingFirstDate = WebUI.getText(endDateElement)
+
 /* We want to verify date on bucket list*/
-WebUI.verifyElementText(endDateElement, inputEndDateText)
+WebUI.verifyElementText(endDateElement, checkingFirstDate)
 
 /* We want to screen capture the page*/
 WebUI.takeScreenshot()

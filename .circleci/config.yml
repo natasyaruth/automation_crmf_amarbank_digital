@@ -190,4 +190,4 @@ workflows:
           filters:
             branches:
               only:
-                - CRMF-746
+                - Master
