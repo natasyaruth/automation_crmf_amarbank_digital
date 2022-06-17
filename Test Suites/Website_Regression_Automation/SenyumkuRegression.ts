@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_CRM_Assign_Card_Regression_Test_Cases/RegressionAssignCardBucketList</testSuiteEntity>
@@ -22,7 +22,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/Suite_CRM_CardManagement/Suite_CRM_Assign_Card_Detail_Customer_Page/Suite_CRM_Assign_Card_Detail_Customer_Page_Regression_Test_Cases/RegressionCustomerPage</testSuiteEntity>
@@ -32,7 +32,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/Suite_CRM_Dashboard/Suite_CRM_Dashboard_Regression_Test_Cases/RegressionDashboard</testSuiteEntity>
@@ -42,20 +42,20 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/Suite_CRM_Login/Suite_CRM_Login_Regression_Test_Cases/RegressionLogin</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_Logout/Suite_CRM_Logout_Regression_Test_Cases/RegressionLogout</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Firefox (headless)</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/Suite_CRM_Logout/Suite_CRM_Logout_Regression_Test_Cases/RegressionLogout</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_Card_Printing/Suite_CRM_Card_Printing_Regression_Test_Cases/RegressionCardPrinting</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
