@@ -62,6 +62,9 @@ WebUI.takeScreenshot()
 /* We want click button "Tampilkan"*/
 WebUI.click(btnShowFilterElement)
 
+/* We want wait element until visible*/
+WebUI.waitForElementVisible(firstRowDateElement, 5)
+
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 

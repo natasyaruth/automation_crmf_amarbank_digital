@@ -17,11 +17,11 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink'))
 
-WebUI.setText(findTestObject('Website/CRM/Card Management/Delivery Status/TxtReferenceId'), searchRefID)
+WebUI.setText(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtReferenceId'), searchRefID)
 
 WebUI.click(findTestObject('Website/CRM/Card Management/Assign CMS/BtnSearch'))
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLinkReqId1'))
+WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnReqId1'))
 
 WebUI.verifyTextPresent(verifyRequestID, false)
 
@@ -29,5 +29,5 @@ WebUI.verifyTextPresent(verifyStatusDeliveryEnRoute, false)
 
 WebUI.verifyTextPresent(verifyStatusSuccessDelivery, false)
 
-WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/BtnBack'))
+WebUI.click(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliverystatusBtnBack'))
 

@@ -1,4 +1,7 @@
 version: 2.1
+
+description: >
+  Executing Katalon tests with your CircleCI CI/CD pipeline easily with the Katalon Docker
   
 references:
   container_config: &container_config
@@ -15,6 +18,9 @@ commands:
       location:
         type: string
     steps:
+      - run:
+          name: unlist chrome repository
+          command: mv /etc/apt/sources.list.d/google-chrome.list /etc/apt/sources.list.d/google-chrome.list-copy
       - run:
           name: Update Repository
           command: apt update
@@ -54,13 +60,22 @@ commands:
       project_path:
         type: string
         default: /root/project
+      auth_option:
+        type: string
+      system_option:
+        type: string
+      desire_capabilities:
+        type: boolean
+      auto_update:
+        type: boolean
+      
     steps:
       - run:
           name: Clean report directory
           command: rm -rf Reports/*
       - run:
           name: Execute Katalon Test Case
-          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuitePath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>"  
+          command: katalonc.sh -browserType="<< parameters.browser_type >>" -projectPath="<< parameters.project_path >>/CRMF.prj" -apiKey="$KATALON_API_KEY" -retry=0 -testSuiteCollectionPath="<< parameters.testsuite_name >>" -executionProfile="<< parameters.environment >>" --config -proxy.auth.option=<< parameters.auth_option >> -proxy.system.option=<< parameters.system_option >> -proxy.system.applyToDesiredCapabilities=<< parameters.desire_capabilities >> -webui.autoUpdateDrivers= << parameters.auto_update >>  
   run_upload_reports:
     description: "Upload test reports to Katalon TestOps"
     parameters:
@@ -78,14 +93,15 @@ commands:
           name: Upload reports to katalon testops
           when: always
           command: java -jar katalon-report-uploader-0.0.8.jar --projectId=<< parameters.project_id >> --path="<< parameters.project_path >>/Reports" --password=$KATALON_API_KEY --type=katalon 
-          
+
+#This part we could add more than 1 , and it become list of automation running in circleCi          
 jobs:
   run_test_chrome:
     <<: *container_config
     steps:
       - checkout
       - run_single_testsuite:
-          testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
+          testsuite_name: Test Suites/Website_Regression_Automation/Login
           environment: staging
           browser_type: Chrome
       - run_upload_reports:
@@ -108,7 +124,7 @@ jobs:
       - checkout
       - download_test_data:
           file_id: 1fRp1sMG1IaHcUQDGHRzyQ5h8qwb-iEF8
-          location: Data Files/Website/DataFiles_CRM/Data_CRM_UserLogin.xlsx
+          location: Data Files/Website/Dataset_CRMLogin/Dataset_Login
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_Login/Suite_CRM_Login_NegativeTest
           environment: staging
@@ -122,21 +138,56 @@ jobs:
       - checkout
       - download_test_data:
           file_id: 1zFSX7vmuWd8cfAS8nW8E7qZK43C3uwGz
-          location: Data Files/Dataset_CRMF.xlsx
+          location: Data Files/Dataset_CRMF.xls
       - run_single_testsuite:
           testsuite_name: Test Suites/Website/Suite_CRM_EndToEnd
           environment: staging
           browser_type: Chrome
       - run_upload_reports:
           project_id: "201268"
-       
+          
+  run_test_crmf_senyumku_regression:
+    <<: *container_config
+    steps:
+      - checkout
+      - download_test_data:
+          file_id: 1zFSX7vmuWd8cfAS8nW8E7qZK43C3uwGz
+          location: Data Files/Dataset_CRMF.xls
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website_Regression_Automation/SenyumkuRegression
+          environment: staging
+          browser_type: Chrome
+          auth_option: NO_PROXY
+          system_option: NO_PROXY
+          desire_capabilities: true
+          auto_update: true
+      - run_upload_reports:
+          project_id: "201268"
+          
+  run_test_crmf_senyumku_login_test:
+    <<: *container_config
+    steps:
+      - checkout
+      - download_test_data:
+          file_id: 1zFSX7vmuWd8cfAS8nW8E7qZK43C3uwGz
+          location: Data Files/Dataset_CRMF.xls
+      - run_single_testsuite:
+          testsuite_name: Test Suites/Website/Suite_CRM_Login/Suite_CRM_Login_Regression_Test_Cases/RegressionLogin
+          environment: staging
+          browser_type: Chrome
+          auth_option: NO_PROXY
+          system_option: NO_PROXY
+          desire_capabilities: true
+          auto_update: true
+      - run_upload_reports:
+          project_id: "201268"
           
 workflows:
   build:
     jobs:
-      - run_test_crmf_regression:
+      - run_test_crmf_senyumku_regression:
           context: Automation
           filters:
             branches:
               only:
-                - master
+                - Master
