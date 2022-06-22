@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105015</description>
+   <name>TC_Card_Printing_CheckFilteringStatusFailedReceipt</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e8b9a41d-21e4-45b2-a0e4-ccea18107e67</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>626af6e5-222f-403a-87db-ea082a40f5b3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4ac965a2-f724-456f-a2e6-b828e82768ec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef4220f2-7197-4937-b4d6-02608ae02397</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fd963461-34fc-4383-a6db-6fe88fed2d28</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1ebdc55a-2ab6-447a-8914-31bd02e978ab</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3e2f7a3e-95c2-497b-b842-1300fc60a9d7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b9585f65-d596-4ca6-ab05-52550ff80565</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')</defaultValue>
+      <description></description>
+      <id>626af6e5-222f-403a-87db-ea082a40f5b3</id>
+      <masked>false</masked>
+      <name>menuCardPrintingElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>4ac965a2-f724-456f-a2e6-b828e82768ec</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/CardPrintingHeaderCardPrint')</defaultValue>
+      <description></description>
+      <id>ef4220f2-7197-4937-b4d6-02608ae02397</id>
+      <masked>false</masked>
+      <name>headerCardPrintingPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TabAirwayBill')</defaultValue>
+      <description></description>
+      <id>fd963461-34fc-4383-a6db-6fe88fed2d28</id>
+      <masked>false</masked>
+      <name>tabResiElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptFirstRowReqId')</defaultValue>
+      <description></description>
+      <id>1ebdc55a-2ab6-447a-8914-31bd02e978ab</id>
+      <masked>false</masked>
+      <name>firstReqIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/DrpAirwayBillList')</defaultValue>
+      <description></description>
+      <id>3e2f7a3e-95c2-497b-b842-1300fc60a9d7</id>
+      <masked>false</masked>
+      <name>drpDwnFilterStatusElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TxtFirstRowColoumnRequestCardType')</defaultValue>
+      <description></description>
+      <id>b9585f65-d596-4ca6-ab05-52550ff80565</id>
+      <masked>false</masked>
+      <name>firstRowNewCardElement</name>
+   </variable>
+</TestCaseEntity>

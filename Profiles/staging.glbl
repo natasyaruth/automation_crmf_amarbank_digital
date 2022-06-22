@@ -176,7 +176,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-registration-svc.otoku.io'</initValue>
+      <initValue>'https://staging-api-crm-svc.otoku.io'</initValue>
       <name>baseUrlRegOtoku</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Card_Printing_CheckDataAirwayBillSelectedOnly</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5e32fab3-7fb5-403a-a955-b5cf61c1cfcc</testCaseGuid>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')</defaultValue>
+      <description></description>
+      <id>1a6ff670-825c-4cab-bbc1-c117bd8072f2</id>
+      <masked>false</masked>
+      <name>menuCardPrintingElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>888b76c7-b8d6-4b1e-8779-26da788788ee</id>
+      <masked>false</masked>
+      <name>menuCardManagementElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/CardPrintingHeaderCardPrint')</defaultValue>
+      <description></description>
+      <id>887945a0-f5bd-4ed9-808e-2dd359f1d808</id>
+      <masked>false</masked>
+      <name>headerCardPrintingPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TabAirwayBill')</defaultValue>
+      <description></description>
+      <id>a2e93be6-717a-4e47-9ca3-ee2b0bedf03d</id>
+      <masked>false</masked>
+      <name>tabResiElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptFirstRowReqId')</defaultValue>
+      <description></description>
+      <id>7393d406-08ee-4dbb-b42d-459e296f31ba</id>
+      <masked>false</masked>
+      <name>firstReqIdElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptFirstRowName')</defaultValue>
+      <description></description>
+      <id>99fd5845-4e6a-4c3a-a967-a74c0aabeb78</id>
+      <masked>false</masked>
+      <name>firstNameElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ChkDataAirwayBill1')</defaultValue>
+      <description></description>
+      <id>cf12c09d-99a2-4db5-8fa5-0e708a41c69e</id>
+      <masked>false</masked>
+      <name>chkFirstDataResiElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/BtnAirwayBillPrint')</defaultValue>
+      <description></description>
+      <id>5bc6929b-112a-4976-a5a8-7d25cb02b38f</id>
+      <masked>false</masked>
+      <name>btnPrintReceiptElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptAlertInformationPrintReceipt')</defaultValue>
+      <description></description>
+      <id>953df4e1-39e5-43de-8306-424428dfaba1</id>
+      <masked>false</masked>
+      <name>alertTextInformationElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptTotalDataProcessing')</defaultValue>
+      <description></description>
+      <id>78773071-ac83-4372-853e-a68094b19e9e</id>
+      <masked>false</masked>
+      <name>totalDataElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptTotalDataProcessing')</defaultValue>
+      <description></description>
+      <id>15583656-d522-4b6d-b90f-3e8d853ec29d</id>
+      <masked>false</masked>
+      <name>successDataElement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptBtnCloseInformation')</defaultValue>
+      <description></description>
+      <id>5c3c0960-d650-4be4-8dbc-662f0400ec5e</id>
+      <masked>false</masked>
+      <name>btnCloseAlert</name>
+   </variable>
+</TestCaseEntity>
