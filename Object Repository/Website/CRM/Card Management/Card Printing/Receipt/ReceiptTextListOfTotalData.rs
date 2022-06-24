@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ReceiptTextListOfTotalData</name>
+   <tag></tag>
+   <elementGuidId>042bf583-2765-4ea3-9a44-6f03fea5530e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Cetak Resi'])[1]/preceding::div[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.TablePagination-info</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c8b2dd06-86f6-44e7-8b56-1f0c6a4f229c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>TablePagination-info</value>
+      <webElementGuid>59a0e263-a5cb-4932-96bd-eecb5e428bcb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1 - 8 of 8 lists</value>
+      <webElementGuid>a1f32c21-bf55-4168-9b36-dadd647074c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Tabs&quot;]/div[@class=&quot;Tabs-pane&quot;]/div[@class=&quot;TablePagination&quot;]/div[@class=&quot;TablePagination-info&quot;]</value>
+      <webElementGuid>c7f56a6f-69d2-4362-9edb-28463f35d2ca</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div/div[3]/div</value>
+      <webElementGuid>d383cfad-22fb-441e-84c1-848e6ad6b499</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DONE'])[8]/following::div[2]</value>
+      <webElementGuid>e58c8669-f281-40e8-9629-6d63b5332d6e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu Baru'])[7]/following::div[2]</value>
+      <webElementGuid>962c4931-3408-4c2a-8f51-943e1206a913</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cetak Resi'])[1]/preceding::div[3]</value>
+      <webElementGuid>e6fa8f8f-0214-4a30-92a1-e615584f85d8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[3]/div</value>
+      <webElementGuid>8c06b0e6-fc18-4628-a19d-5a181a0be6c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '1 - 8 of 8 lists' or . = '1 - 8 of 8 lists')]</value>
+      <webElementGuid>2a997f7d-ce6d-4d84-bd3b-af6858f21138</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
