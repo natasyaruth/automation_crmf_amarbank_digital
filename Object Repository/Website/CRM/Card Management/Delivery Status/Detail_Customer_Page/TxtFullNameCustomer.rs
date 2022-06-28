@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtFullNameCustomer</name>
+   <tag></tag>
+   <elementGuidId>862cd538-fa89-459a-89bb-afdbf447f1f2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div[2]/div/section[2]/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.DataDisplay.u-MarginBottom > div.DataDisplay-value</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>8f748a94-c5de-40b7-9a7c-69bffd344c65</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DataDisplay-value</value>
+      <webElementGuid>03867709-4783-4247-834b-615b8c7a74b3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>IIN URIYAH SALSABILA RAMDANI TRYSE REZZA BIANTONG</value>
+      <webElementGuid>b16606b6-0ec4-4194-b83f-de4da8c10e4a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex&quot;]/div[@class=&quot;Card u-MarginBottom DeliveryStatusDetail&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;DataDisplay u-MarginBottom&quot;]/div[@class=&quot;DataDisplay-value&quot;]</value>
+      <webElementGuid>a78f5a14-bd44-4df0-a8a1-f89fa51dd73b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[2]/div/section[2]/div/div</value>
+      <webElementGuid>f48534f3-1b9d-405d-9016-0b63e705e48c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[1]/following::div[1]</value>
+      <webElementGuid>e72ed41b-0ffd-47b7-8f72-ee8e817436cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Nasabah'])[2]/following::div[2]</value>
+      <webElementGuid>365a5a30-d27e-4f55-8c68-53f9e6b2c70b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipe Permintaan Kartu'])[1]/preceding::div[1]</value>
+      <webElementGuid>296e1f57-4bf9-4500-be5f-c6408e47130c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Permintaan Kartu Baru'])[1]/preceding::div[1]</value>
+      <webElementGuid>2247525b-23c1-496c-a00c-c1007b9483fe</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='IIN URIYAH SALSABILA RAMDANI TRYSE REZZA BIANTONG']/parent::*</value>
+      <webElementGuid>8d590b0e-de94-4b7d-a77e-4df71d64f92f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/section[2]/div/div</value>
+      <webElementGuid>2cd86001-19dd-4e57-abaf-b5f263be3ed6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'IIN URIYAH SALSABILA RAMDANI TRYSE REZZA BIANTONG' or . = 'IIN URIYAH SALSABILA RAMDANI TRYSE REZZA BIANTONG')]</value>
+      <webElementGuid>cd61ea29-2ba2-4cc0-ab0c-78a4691fc502</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

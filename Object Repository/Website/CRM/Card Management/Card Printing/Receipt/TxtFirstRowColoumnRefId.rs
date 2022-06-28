@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtFirstRowColoumnRefId</name>
+   <tag></tag>
+   <elementGuidId>777decea-d07b-4b9f-9a52-0123fd1bebd5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Courier Type'])[1]/following::td[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e0c6a310-2585-40bf-a566-397accdc8d91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Table-cell</value>
+      <webElementGuid>ba8af64b-a4fe-4578-86d6-5cb261c5193a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>1003</value>
+      <webElementGuid>5d8751bb-e796-439b-aab6-19980478ba4e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Tabs&quot;]/div[@class=&quot;Tabs-pane&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>f69c21b0-c30d-489f-bae5-40dafb8115a7</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div/div/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>6ccd05df-a725-49d8-9aee-10d67dbd0f09</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request Card Type'])[1]/following::td[4]</value>
+      <webElementGuid>8d42cc26-fb46-4ace-aa35-d97dd00d44b2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Courier Type'])[1]/following::td[4]</value>
+      <webElementGuid>17591421-aa1b-4057-9347-c737e3daeef3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='YANTI PURWATI'])[1]/preceding::td[1]</value>
+      <webElementGuid>fdbec6ff-b6f9-415e-a7cf-708c792fd184</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='External'])[1]/preceding::td[2]</value>
+      <webElementGuid>4df6a044-facb-417a-b21f-5adf2f2c02db</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='1003']/parent::*</value>
+      <webElementGuid>5c6d33b4-1b37-4d60-bd56-c6fcf76cb935</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[4]</value>
+      <webElementGuid>4c4de231-0a6e-41e0-bec7-495dc1d6c422</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '1003' or . = '1003')]</value>
+      <webElementGuid>9a87837e-9477-4978-99a1-7ef797b47ebe</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtFirstInfoShippingHistory</name>
+   <tag></tag>
+   <elementGuidId>4059c3f6-5b24-48d8-b10b-99814adbe411</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Riwayat Kiriman'])[1]/following::p[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>p.state-text</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>d3bf643f-eeb4-4310-a42b-10c62d5f4294</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>state-text</value>
+      <webElementGuid>e32d7e11-9684-4141-bb98-943db9d74def</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Staging</value>
+      <webElementGuid>1357b0a1-7a7e-4023-9da6-9e52ef78ad3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;DeliveryHistory-wrapper u-MarginBottom&quot;]/div[@class=&quot;Card&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;DeliveryHistory-item section__content full--border&quot;]/ul[@class=&quot;list tracking&quot;]/li[1]/div[@class=&quot;tracking-block-wrapper&quot;]/div[@class=&quot;tracking-block&quot;]/div[@class=&quot;grid visible&quot;]/div[@class=&quot;grid-item w--70&quot;]/p[@class=&quot;state-text&quot;]</value>
+      <webElementGuid>c0dde2f4-6732-4d59-ba37-14b534ebb8de</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[3]/div/section[2]/div/ul/li/div[2]/div/div/div[2]/p</value>
+      <webElementGuid>874d436f-9a6e-4745-b77b-8248f9a6cfe4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Riwayat Kiriman'])[1]/following::p[2]</value>
+      <webElementGuid>03e15109-737b-4ab0-98c7-7075cd7ff7f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[2]/following::p[2]</value>
+      <webElementGuid>7bcdfb01-ded6-4133-a60d-85e7fdd255c1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kembali'])[1]/preceding::p[17]</value>
+      <webElementGuid>f9597043-3d65-44ed-a0e6-655c172d8aa6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::p[17]</value>
+      <webElementGuid>0c1fd2b0-8d7c-4ef0-9ad2-2beb44a5931d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Staging']/parent::*</value>
+      <webElementGuid>51d6dcc6-59cd-40cb-bded-ae75b8bdd2cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/p</value>
+      <webElementGuid>7333b286-6bce-4563-ad8e-e765c22c6d96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Staging' or . = 'Staging')]</value>
+      <webElementGuid>e1ae71b5-4be7-415d-b5d3-f714e5c3f3ae</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

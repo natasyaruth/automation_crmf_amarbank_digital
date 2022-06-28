@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtHeaderDeliveryStatusPage</name>
+   <tag></tag>
+   <elementGuidId>7556d65a-ac44-4bf3-a840-4497e6fa5dea</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h1</value>
+      <webElementGuid>24a8c48a-7cf6-4e1f-85f4-b2e1da863565</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Delivery Status</value>
+      <webElementGuid>db570ea5-26a2-4ccf-99c1-1a0bd3f0b907</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/h1[1]</value>
+      <webElementGuid>813c3aa1-e274-4c1e-9dd5-eec03867813a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/h1</value>
+      <webElementGuid>f83ddf81-02f2-453d-b8f0-9e35716c5191</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::h1[1]</value>
+      <webElementGuid>f12bc2be-498b-440a-82a1-c94d46d599e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Leads Management'])[1]/following::h1[1]</value>
+      <webElementGuid>450f31fb-e2a5-41d8-8d8c-40e7bfb0de3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Card Management'])[2]/preceding::h1[1]</value>
+      <webElementGuid>dbed8f9d-aec4-416b-9a50-f17e9682f3c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[1]/preceding::h1[1]</value>
+      <webElementGuid>ab0ac18a-542e-45c8-9d2c-e05dd33c2302</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h1</value>
+      <webElementGuid>963e77a2-c41c-44cd-a395-ecd93ed55cdd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h1[(text() = 'Delivery Status' or . = 'Delivery Status')]</value>
+      <webElementGuid>b6dcfa52-6ea2-421a-87bf-656fa6e36355</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

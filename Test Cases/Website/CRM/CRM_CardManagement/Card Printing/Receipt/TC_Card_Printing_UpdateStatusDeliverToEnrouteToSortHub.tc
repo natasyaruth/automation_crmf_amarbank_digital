@@ -39,55 +39,61 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>08bf5ed2-3b9a-4a83-85de-63c016cfe525</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>3feb7b50-6f1c-4864-8500-bed1fa5c9202</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>27782c76-919c-431d-9bcc-cd957e8e41b8</variableId>
+      <variableId>8f9581b3-ccf2-4e96-9154-2082ac96fd7d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>932bb0db-c6c5-460e-9d66-282b02082079</variableId>
+      <variableId>1751d1ab-686e-4e7e-8527-e1469be42024</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e294d419-7399-4cb0-9841-e91bdd192d70</variableId>
+      <variableId>555bba9b-18a6-48db-8483-160b09189bf3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b6c97b0a-a3ac-4477-82cd-46e053807f01</variableId>
+      <variableId>2a389f31-d9c5-44f9-bd1b-4b42be54f567</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e2c543f1-b851-484c-b7bb-26ace538fcc4</variableId>
+      <variableId>f07a166b-dac6-43f9-ad4a-3b609edce662</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b7948116-ca17-4d7d-99e4-bcc4352edd56</variableId>
+      <variableId>2a4a568f-64b3-4961-b483-4dd8640147ca</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e0259c24-6c3c-499f-96d3-692174d0a0b4</variableId>
+      <variableId>6d116570-74f1-4943-bef2-7e75e36da7bd</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c97bfd17-97e9-41bb-8a01-5b0007a0a3a0</variableId>
+      <variableId>586e5db6-c02c-4dfd-900e-3e19fc33630b</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')</defaultValue>
@@ -111,80 +117,87 @@
       <name>headerCardPrintingPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TabAirwayBill')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/TabCardReprint')</defaultValue>
       <description></description>
       <id>8a3b7f2e-8f81-42d4-a9dc-a87b27cce10b</id>
       <masked>false</masked>
-      <name>tabResiElement</name>
+      <name>tabReprint</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptFirstRowReqId')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/TxtFirstRowReprint')</defaultValue>
       <description></description>
       <id>21f4a091-e2da-499a-bb43-22a626fcecfa</id>
       <masked>false</masked>
       <name>firstReqIdElement</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptFirstRowName')</defaultValue>
+      <defaultValue>['Pending Pickup', 'En-route to Sorting Hub']</defaultValue>
+      <description></description>
+      <id>08bf5ed2-3b9a-4a83-85de-63c016cfe525</id>
+      <masked>false</masked>
+      <name>listStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink')</defaultValue>
       <description></description>
       <id>3feb7b50-6f1c-4864-8500-bed1fa5c9202</id>
       <masked>false</masked>
-      <name>firstNameElement</name>
+      <name>menuDeliveryStatus</name>
    </variable>
    <variable>
-      <defaultValue>[findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ChkDataAirwayBill1'), findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ChkDataAirwayBill2'), findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ChkDataAirwayBill3')]</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtHeaderDeliveryStatusPage')</defaultValue>
       <description></description>
-      <id>27782c76-919c-431d-9bcc-cd957e8e41b8</id>
+      <id>8f9581b3-ccf2-4e96-9154-2082ac96fd7d</id>
       <masked>false</masked>
-      <name>listDataPrint</name>
+      <name>headerDeliveryStatus</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/BtnAirwayBillPrint')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtReferenceId')</defaultValue>
       <description></description>
-      <id>932bb0db-c6c5-460e-9d66-282b02082079</id>
+      <id>1751d1ab-686e-4e7e-8527-e1469be42024</id>
       <masked>false</masked>
-      <name>btnPrintReceiptElement</name>
+      <name>fieldFindReqId</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptAlertInformationPrintReceipt')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtFirstRowData')</defaultValue>
       <description></description>
-      <id>e294d419-7399-4cb0-9841-e91bdd192d70</id>
+      <id>555bba9b-18a6-48db-8483-160b09189bf3</id>
       <masked>false</masked>
-      <name>alertTextInformationElement</name>
+      <name>firstRowReqId</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptTotalDataProcessing')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtHeaderDeliveryDetailPage')</defaultValue>
       <description></description>
-      <id>b6c97b0a-a3ac-4477-82cd-46e053807f01</id>
+      <id>2a389f31-d9c5-44f9-bd1b-4b42be54f567</id>
       <masked>false</masked>
-      <name>totalDataElement</name>
+      <name>headerDeliveryDetail</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptTotalDataProcessing')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtShippingHistory')</defaultValue>
       <description></description>
-      <id>e2c543f1-b851-484c-b7bb-26ace538fcc4</id>
+      <id>f07a166b-dac6-43f9-ad4a-3b609edce662</id>
       <masked>false</masked>
-      <name>successDataElement</name>
+      <name>headerHistoryTracking</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptBtnCloseInformation')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtFirstInfoShippingHistory')</defaultValue>
       <description></description>
-      <id>b7948116-ca17-4d7d-99e4-bcc4352edd56</id>
+      <id>2a4a568f-64b3-4961-b483-4dd8640147ca</id>
       <masked>false</masked>
-      <name>btnCloseAlert</name>
+      <name>firstRowShippingHistory</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/ReceiptTotalDataFailed')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/BtnBackToDeliveryStatusPage')</defaultValue>
       <description></description>
-      <id>e0259c24-6c3c-499f-96d3-692174d0a0b4</id>
+      <id>6d116570-74f1-4943-bef2-7e75e36da7bd</id>
       <masked>false</masked>
-      <name>failedDataElement</name>
+      <name>btnBackToDelveryPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('API_Postman_Collection/Postman_collection/Postman/DELIVERY STATUS/update status ninja van enroute in delivery', [('base_url_crm_otoku') : GlobalVariable.base_url_crm_otoku])</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/BtnSearch')</defaultValue>
       <description></description>
-      <id>c97bfd17-97e9-41bb-8a01-5b0007a0a3a0</id>
+      <id>586e5db6-c02c-4dfd-900e-3e19fc33630b</id>
       <masked>false</masked>
-      <name>test</name>
+      <name>btnSearchReqId</name>
    </variable>
 </TestCaseEntity>

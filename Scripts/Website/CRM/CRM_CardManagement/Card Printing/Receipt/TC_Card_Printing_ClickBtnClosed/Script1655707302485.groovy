@@ -25,6 +25,7 @@ import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 import java.io.File;
 import com.kms.katalon.core.logging.KeywordLogger;
+import com.kms.katalon.core.util.KeywordUtil;
 
 /* We want to makesure we can identify element assign card*/
 if (WebUI.verifyElementVisible(menuCardPrintingElement, FailureHandling.OPTIONAL)) {
@@ -98,5 +99,15 @@ WebUI.verifyElementText(headerCardPrintingPage, "Card Printing")
 WebUI.verifyElementPresent(tabResiElement, 5)
 /* We want capture it*/
 WebUI.takeScreenshot()
+/* We want to delete file after downloaded*/
+KeywordUtil keylogger = new KeywordUtil()
+File deleteFile = new File("Download Path/")
+File[] deleteListFile = deleteFile.listFiles()
+for (File delAwb :deleteListFile) {
+	keylogger.logInfo(delAwb.getName())
+	if (delAwb.getName().contains("airwaybill")) {
+		delAwb.delete()
+	}
+}
 /* We want refresh page*/
 WebUI.refresh()

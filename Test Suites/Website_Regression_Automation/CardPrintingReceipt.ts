@@ -85,6 +85,16 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Website/Suite_CRM_Card_Printing/Suite_CRM_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105013</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>staging</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/Suite_CRM_Card_Printing/Suite_CRM_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105014</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>

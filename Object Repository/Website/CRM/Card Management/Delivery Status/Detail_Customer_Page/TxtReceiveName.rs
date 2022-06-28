@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtReceiveName</name>
+   <tag></tag>
+   <elementGuidId>fddc7de6-d2f9-4fc2-80e9-66d1ff627efb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama'])[1]/following::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div > div.DataDisplay.u-MarginBottom > div.DataDisplay-value</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6d470484-16ad-4e64-aafc-d99fb1abd69d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DataDisplay-value</value>
+      <webElementGuid>030cc3ea-d022-4d65-a557-d5b1a899c779</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>-</value>
+      <webElementGuid>09a1cdeb-0261-4232-929b-6650e99ecfe6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex&quot;]/div[@class=&quot;DeliveryStatusDetail u-ai-flexStart&quot;]/div[@class=&quot;Card u-MarginLeft u-MarginBottom&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;u-Flex&quot;]/div[1]/div[@class=&quot;DataDisplay u-MarginBottom&quot;]/div[@class=&quot;DataDisplay-value&quot;]</value>
+      <webElementGuid>77348b1d-6a3a-405f-9f40-f5115626c8e3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[2]/div[2]/div/section[2]/div/div/div/div</value>
+      <webElementGuid>4cbf0c60-0f84-46f1-a385-e5280eaf734d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama'])[1]/following::div[1]</value>
+      <webElementGuid>ee23a038-365b-4888-9998-5b3cfdf3e540</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Penerima Kartu'])[1]/following::div[4]</value>
+      <webElementGuid>311b7ef4-d15c-497c-9068-926f3da6bd0f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No. Handphone'])[1]/preceding::div[1]</value>
+      <webElementGuid>159cd80d-7421-43d3-965d-0d64e532d85e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[2]/preceding::div[1]</value>
+      <webElementGuid>0ceeacc9-7f2e-4452-a0b4-e4bc7d594ed0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='-']/parent::*</value>
+      <webElementGuid>2ca1011e-5a24-43ef-834e-27f0109d131b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[2]/div/div/div/div</value>
+      <webElementGuid>f172a8c2-a11a-469a-966a-44ba12f155a0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '-' or . = '-')]</value>
+      <webElementGuid>5a1b395f-b08f-45f5-b1be-4115854d1226</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
