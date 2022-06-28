@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>https://bankamar.testrail.io/index.php?/tests/view/105014</description>
-   <name>Suite_CRM_Card_Printing_Receipt_T105014</name>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105013</description>
+   <name>Suite_CRM_Card_Printing_Receipt_T105013</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>60749de5-5446-47d5-9d5d-f499e2306bfd</testSuiteGuid>
+   <testSuiteGuid>e460be5a-f414-4975-9eb6-e3487b31c9e7</testSuiteGuid>
    <testCaseLink>
-      <guid>cb92be49-5359-4949-8fa4-67433424a30d</guid>
+      <guid>0ea26484-a837-4dbd-ba34-1ed09cb2f7b3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -25,7 +25,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>7bc37917-12f5-4e3d-81be-2bffafd41c26</guid>
+      <guid>a864d3b7-3f9c-4ec7-ba40-7b02bd4a7259</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -116,68 +116,104 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>2bf73bb1-b264-4b32-a714-142b2a04e468</guid>
+      <guid>b482e8d4-3c4b-4aec-bff6-ce59c94b4432</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Receipt/TC_Card_Printing_CheckFilteringStatusNewReceipt</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Receipt/TC_Card_Printing_UpdateStatusDeliverToEnrouteToSortHub</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>d43261fa-add6-40e8-8023-aaa7c425b4e9</variableId>
+         <variableId>ffed6eb3-21c5-4d8b-aa8c-1d5feaf3b124</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fb2b1023-de35-4e15-ab17-e3b6aa0c666a</variableId>
+         <variableId>54d006eb-ae43-4a0e-9ec5-cad47962cc53</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c596872d-2a5f-4463-b5c4-345ee995a31f</variableId>
+         <variableId>6cae3898-304b-4404-a418-6acf914010b5</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>1e33e00e-d077-4347-a3d9-53adc2dc4c72</variableId>
+         <variableId>8a3b7f2e-8f81-42d4-a9dc-a87b27cce10b</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>37756a29-f1d5-493f-a53f-c1b930713020</variableId>
+         <variableId>21f4a091-e2da-499a-bb43-22a626fcecfa</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>64ab5e91-2609-467a-a7f6-c51f089cb292</variableId>
+         <variableId>08bf5ed2-3b9a-4a83-85de-63c016cfe525</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fdb75963-6b78-496c-8ca3-805c082ff046</variableId>
+         <variableId>3feb7b50-6f1c-4864-8500-bed1fa5c9202</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>90f67d82-8489-415b-becd-ea67f3d11c82</variableId>
+         <variableId>8f9581b3-ccf2-4e96-9154-2082ac96fd7d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c0624305-e429-435e-898f-523ab68baae1</variableId>
+         <variableId>1751d1ab-686e-4e7e-8527-e1469be42024</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>555bba9b-18a6-48db-8483-160b09189bf3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2a389f31-d9c5-44f9-bd1b-4b42be54f567</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f07a166b-dac6-43f9-ad4a-3b609edce662</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2a4a568f-64b3-4961-b483-4dd8640147ca</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6d116570-74f1-4943-bef2-7e75e36da7bd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>586e5db6-c02c-4dfd-900e-3e19fc33630b</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8e670555-96de-427d-b872-23fc7f90ace4</guid>
+      <guid>376aa6e0-aff1-4a81-9e71-f2d3c5073ebc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>

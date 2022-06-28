@@ -83,6 +83,11 @@ WebUI.waitForElementVisible(firstReqIdElement, 5)
 /* We want to get text from first request ID*/
 String requestId = WebUI.getText(firstReqIdElement)
 println(requestId)
+/* We want to get text from first reference ID*/
+WebUI.waitForElementVisible(firstRefIdElement, 5)
+/* We want to get text from first reference ID*/
+String referenceId = WebUI.getText(firstRefIdElement)
+println(firstRefIdElement)
 /*--------------------------------------------------------------------------------------*/
 /* We want to process from Page cetak ulang to delivery status*/
 for (int i=0;i<2;i++) {
@@ -152,6 +157,13 @@ WebUI.click(firstRowReqId)
 WebUI.waitForElementVisible(headerDeliveryDetail, 5)
 /* We want to check the page by text*/
 WebUI.verifyElementText(headerDeliveryDetail, "Delivery Detail")
+/* We want to get text from first reference ID*/
+WebUI.waitForElementVisible(valueRefIdDeliveryDetailElement, 5)
+/* We want to get text from first reference ID*/
+String newReferenceId = WebUI.getText(valueRefIdDeliveryDetailElement)
+println(newReferenceId)
+/* We want makesure reference ID still same*/
+WebUI.verifyMatch(referenceId, newReferenceId, false)
 /* We want to check the coloumn history tracking*/
 WebUI.verifyElementText(headerHistoryTracking, "Riwayat Kiriman")
 /* We want to check first row shipping history*/

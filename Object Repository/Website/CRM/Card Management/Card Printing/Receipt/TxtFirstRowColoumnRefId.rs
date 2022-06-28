@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtShippingHistory</name>
+   <name>TxtFirstRowColoumnRefId</name>
    <tag></tag>
-   <elementGuidId>e5beac9d-7317-4b65-b6cc-b77d5332de66</elementGuidId>
+   <elementGuidId>777decea-d07b-4b9f-9a52-0123fd1bebd5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/section/div/div[3]/div/section/div/h3</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Courier Type'])[1]/following::td[4]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>p.state-text</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>p</value>
-      <webElementGuid>12ed3d61-0ac0-4bb5-b6a9-d0157f891b30</webElementGuid>
+      <value>td</value>
+      <webElementGuid>e0c6a310-2585-40bf-a566-397accdc8d91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>state-text</value>
-      <webElementGuid>4e513f89-9878-42c5-8837-06474cedf4a0</webElementGuid>
+      <value>Table-cell</value>
+      <webElementGuid>ba8af64b-a4fe-4578-86d6-5cb261c5193a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Staging</value>
-      <webElementGuid>4cf6284d-d22b-4443-a84b-5309fcd7b19f</webElementGuid>
+      <value>1003</value>
+      <webElementGuid>5d8751bb-e796-439b-aab6-19980478ba4e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;DeliveryHistory-wrapper u-MarginBottom&quot;]/div[@class=&quot;Card&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;DeliveryHistory-item section__content full--border&quot;]/ul[@class=&quot;list tracking&quot;]/li[1]/div[@class=&quot;tracking-block-wrapper&quot;]/div[@class=&quot;tracking-block&quot;]/div[@class=&quot;grid visible&quot;]/div[@class=&quot;grid-item w--70&quot;]/p[@class=&quot;state-text&quot;]</value>
-      <webElementGuid>a4f2a917-1ae7-45f9-a4a5-77b8f6a08264</webElementGuid>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Tabs&quot;]/div[@class=&quot;Tabs-pane&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>f69c21b0-c30d-489f-bae5-40dafb8115a7</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/section/div/div[3]/div/section[2]/div/ul/li/div[2]/div/div/div[2]/p</value>
-      <webElementGuid>a23871b4-65ae-481d-a1a9-65d10106882d</webElementGuid>
+      <value>//div[@id='root']/div/div/section/div/div/div/div[2]/table/tbody/tr/td[4]</value>
+      <webElementGuid>6ccd05df-a725-49d8-9aee-10d67dbd0f09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Riwayat Kiriman'])[1]/following::p[2]</value>
-      <webElementGuid>0900e76b-f1cf-4117-9436-252b5f8077ae</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request Card Type'])[1]/following::td[4]</value>
+      <webElementGuid>8d42cc26-fb46-4ace-aa35-d97dd00d44b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[2]/following::p[2]</value>
-      <webElementGuid>b5fe263f-6e6d-4997-bfc9-b77bd5908d69</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Courier Type'])[1]/following::td[4]</value>
+      <webElementGuid>17591421-aa1b-4057-9347-c737e3daeef3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kembali'])[1]/preceding::p[17]</value>
-      <webElementGuid>4984d7b1-aed3-42af-8f66-a8e31e194897</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='YANTI PURWATI'])[1]/preceding::td[1]</value>
+      <webElementGuid>fdbec6ff-b6f9-415e-a7cf-708c792fd184</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::p[17]</value>
-      <webElementGuid>cc33af63-a260-4850-8e49-32356f11ba6e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='External'])[1]/preceding::td[2]</value>
+      <webElementGuid>4df6a044-facb-417a-b21f-5adf2f2c02db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Staging']/parent::*</value>
-      <webElementGuid>2affa3bd-fbe0-4b2e-a2e9-772e57cb7c75</webElementGuid>
+      <value>//*/text()[normalize-space(.)='1003']/parent::*</value>
+      <webElementGuid>5c6d33b4-1b37-4d60-bd56-c6fcf76cb935</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/p</value>
-      <webElementGuid>d4a65fc0-6c4b-4294-89b8-c5195b4dfa9a</webElementGuid>
+      <value>//td[4]</value>
+      <webElementGuid>4c4de231-0a6e-41e0-bec7-495dc1d6c422</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//p[(text() = 'Staging' or . = 'Staging')]</value>
-      <webElementGuid>2ee53857-5baa-4629-af6e-c75a1154cf3b</webElementGuid>
+      <value>//td[(text() = '1003' or . = '1003')]</value>
+      <webElementGuid>9a87837e-9477-4978-99a1-7ef797b47ebe</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

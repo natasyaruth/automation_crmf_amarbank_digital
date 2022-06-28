@@ -128,7 +128,7 @@
       <name>headerTextPageElement</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtFirstRowDataColumn')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtFirstRowData')</defaultValue>
       <description></description>
       <id>15f80764-16d3-4951-895a-7d68f0644821</id>
       <masked>false</masked>

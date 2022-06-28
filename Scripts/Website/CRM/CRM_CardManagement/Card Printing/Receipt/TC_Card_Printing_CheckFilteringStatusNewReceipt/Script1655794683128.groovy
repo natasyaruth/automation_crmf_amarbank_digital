@@ -10,7 +10,8 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webservice.keyword.builtin.ContainsStringKeyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -66,17 +67,25 @@ WebUI.waitForElementVisible(firstReqIdElement, 5)
 WebUI.waitForElementVisible(drpDwnFilterStatusElement, 5)
 /* We want to select filter drp down "new Receipt"*/
 WebUI.selectOptionByLabel(drpDwnFilterStatusElement, "Baru", false)
+/* We want to verify element visible*/
+WebUI.waitForElementVisible(firstRowNewCardElement, 5)
 /* We want to check data available or no*/
-KeywordLogger keylogger = new KeywordLogger()
-if (WebUI.waitForElementVisible(firstRowNewCardElement, 5, FailureHandling.OPTIONAL)) {
-	/* We want to verify element and text of first row*/
-	WebUI.verifyElementText(firstRowNewCardElement, "Kartu Baru")
-	def textFirstRowRequestCard = WebUI.getText(firstRowNewCardElement)
-	keylogger.logInfo("Data has been show by filter " +textFirstRowRequestCard)
-}else {
-	def textFirstRowRequestCard = WebUI.getText(firstRowNewCardElement)
-	keylogger.logInfo("Data didn't show by filter " +textFirstRowRequestCard)
-}
+KeywordUtil keyWordUtil = new KeywordUtil()
+for (int i = 0; i < 5; i++) {
+if (true) {
+	WebUI.verifyElementText(verifyTextNewCardElement, "Kartu Baru", FailureHandling.OPTIONAL)
+	break;
+	/* We want capture it for the right process*/
+	WebUI.takeScreenshot()
+} else if (true) {
+	/* We want to verify button next page*/
+	WebUI.verifyElementPresent(btnNextPageElement, 5 ,FailureHandling.OPTIONAL)
+	/* We want to click button next page*/
+	WebUI.click(btnNextPageElement)
+	keyWordUtil.logInfo("We still not found we check in other pages")
+} else {
+	keyWordUtil.logInfo("We stop in this step because we not found the button next pages", FailureHandling.STOP_ON_FAILURE)
+}}
 /* We want to capture*/
 WebUI.takeScreenshot()
 /* We want refresh page*/

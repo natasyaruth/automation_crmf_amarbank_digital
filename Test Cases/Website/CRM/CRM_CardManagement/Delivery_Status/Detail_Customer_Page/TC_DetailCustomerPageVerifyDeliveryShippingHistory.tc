@@ -1,242 +1,281 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>https://bankamar.testrail.io/index.php?/tests/view/104898</description>
-   <name>TC_DetailCustomerPageVerifyDetailDeliveryStatusSent</name>
+   <name>TC_DetailCustomerPageVerifyDeliveryShippingHistory</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>e5919c70-559a-4f52-a6b2-654ee731163b</testCaseGuid>
+   <testCaseGuid>dd8bd993-57d5-4ac8-b52c-16bc43dc19c4</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>58b4ee38-d8e1-440f-9037-3008f3be0585</variableId>
+      <variableId>d32fa974-5d4d-4f95-b9c9-e7f8fd7c3ca9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>dbeb4ac5-5fc2-4710-8952-85a14927e3f4</variableId>
+      <variableId>9a8c93e4-02d4-42e6-8e31-6aa5c240d06b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>534b1da5-8512-4774-ab7f-e1e29cba44f2</variableId>
+      <variableId>375601d0-a8f8-4129-b845-41e253a26f71</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f6d5d3d5-bd5c-4658-a056-e8cef3faa0a6</variableId>
+      <variableId>7b1a6b57-2a9c-4b32-8622-139225fdd1e1</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>95cfd6ee-4bf9-487c-adb2-8a4068f581fa</variableId>
+      <variableId>685988e1-8994-4a1c-838d-7666d66e5d5f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>596365fe-cd83-4cda-ac29-438020c37302</variableId>
+      <variableId>5ced8984-f0a8-48b4-9b5f-a0e97f48c7fa</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f0772430-d813-403d-b897-6ad3540f96c8</variableId>
+      <variableId>c0faa60c-d150-4a57-a5f1-6a76b82ca83a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>68367891-2e0a-4173-8577-fa73e965239f</variableId>
+      <variableId>af01aa50-eae7-429e-a912-f11a4a0eaa1a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>87906979-66a6-4346-835c-5273b9881fc9</variableId>
+      <variableId>a4b48113-656d-4f5a-99c6-daf70ee698f6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a502c5e1-13d6-46e8-82e7-eb2a80a192e3</variableId>
+      <variableId>4d383e6e-6020-4e46-a4e5-f812e0e86f5d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>af61eb20-3885-4269-8aa4-3f34aa808528</variableId>
+      <variableId>85d25411-5b8b-4e3c-a0b7-bd849e1aa2bc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b86cf4f6-42bb-43d5-a7a0-180359135c56</variableId>
+      <variableId>bbbef341-db56-4752-84e7-9c57fa1ea1e0</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>690c2139-acd6-4e4f-af2a-d3a221ccd529</variableId>
+      <variableId>a124dfc2-bd3f-40c3-8f1f-7893d519eb07</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>df0ff99e-bef5-4cf0-b1eb-3a76f7663826</variableId>
+      <variableId>576a3ce5-7593-41f5-bb28-2f4309b7110f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b415b64f-ede2-460a-9d00-63f6d12ac46d</variableId>
+      <variableId>d7cc237a-f2f0-4082-9da1-01389125c101</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a84431c6-f0fa-40b6-9979-51a6857aab5e</variableId>
+      <variableId>b217a91f-e5de-4c8c-918b-66be48da4e48</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5066ff67-e2ca-4ad9-95e3-dbc68a864f44</variableId>
+      <variableId>16d2e19e-1aa8-47b7-9e22-590551023d97</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3cdebab8-3c51-42ae-b7d4-cca01d8d0365</variableId>
+      <variableId>27c6c551-72ca-4806-a375-7e80ed6a5d31</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e5884a4f-2f7e-42e8-a2cb-f126ca55de7c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95001477-9ac6-4d48-87b5-27f2c1f3774b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3f4cf02f-3852-43ef-93cd-a3d14fa78b90</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink')</defaultValue>
       <description></description>
-      <id>58b4ee38-d8e1-440f-9037-3008f3be0585</id>
+      <id>d32fa974-5d4d-4f95-b9c9-e7f8fd7c3ca9</id>
       <masked>false</masked>
       <name>menuDeliveryStatusElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtHeaderDeliveryStatusPage')</defaultValue>
       <description></description>
-      <id>dbeb4ac5-5fc2-4710-8952-85a14927e3f4</id>
+      <id>9a8c93e4-02d4-42e6-8e31-6aa5c240d06b</id>
       <masked>false</masked>
       <name>headerTextPageElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtFirstRowData')</defaultValue>
       <description></description>
-      <id>534b1da5-8512-4774-ab7f-e1e29cba44f2</id>
+      <id>375601d0-a8f8-4129-b845-41e253a26f71</id>
       <masked>false</masked>
       <name>firstColoumnRequestIdElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
-      <id>f6d5d3d5-bd5c-4658-a056-e8cef3faa0a6</id>
+      <id>7b1a6b57-2a9c-4b32-8622-139225fdd1e1</id>
       <masked>false</masked>
       <name>menuCardManagementElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DrpFilterRequestCardTypeElement')</defaultValue>
       <description></description>
-      <id>95cfd6ee-4bf9-487c-adb2-8a4068f581fa</id>
+      <id>685988e1-8994-4a1c-838d-7666d66e5d5f</id>
       <masked>false</masked>
       <name>drpDwnFilterDeliveryStatusElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtHeaderDeliveryDetailPage')</defaultValue>
       <description></description>
-      <id>596365fe-cd83-4cda-ac29-438020c37302</id>
+      <id>5ced8984-f0a8-48b4-9b5f-a0e97f48c7fa</id>
       <masked>false</masked>
       <name>headerTextDetailElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtRequestIdCustomerDetail')</defaultValue>
       <description></description>
-      <id>f0772430-d813-403d-b897-6ad3540f96c8</id>
+      <id>c0faa60c-d150-4a57-a5f1-6a76b82ca83a</id>
       <masked>false</masked>
       <name>valueOfReqId</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtRefIdCustDetail')</defaultValue>
       <description></description>
-      <id>68367891-2e0a-4173-8577-fa73e965239f</id>
+      <id>af01aa50-eae7-429e-a912-f11a4a0eaa1a</id>
       <masked>false</masked>
       <name>valueOfRefId</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtReceivedInfo')</defaultValue>
       <description></description>
-      <id>87906979-66a6-4346-835c-5273b9881fc9</id>
+      <id>a4b48113-656d-4f5a-99c6-daf70ee698f6</id>
       <masked>false</masked>
       <name>pickupTextElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtFullNameCustomer')</defaultValue>
       <description></description>
-      <id>a502c5e1-13d6-46e8-82e7-eb2a80a192e3</id>
+      <id>4d383e6e-6020-4e46-a4e5-f812e0e86f5d</id>
       <masked>false</masked>
       <name>customerNameElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtRequestCard')</defaultValue>
       <description></description>
-      <id>af61eb20-3885-4269-8aa4-3f34aa808528</id>
+      <id>85d25411-5b8b-4e3c-a0b7-bd849e1aa2bc</id>
       <masked>false</masked>
       <name>valueCardTypeElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtReceiveName')</defaultValue>
       <description></description>
-      <id>b86cf4f6-42bb-43d5-a7a0-180359135c56</id>
+      <id>bbbef341-db56-4752-84e7-9c57fa1ea1e0</id>
       <masked>false</masked>
       <name>valueNameReceiveCardElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtPhoneNumber')</defaultValue>
       <description></description>
-      <id>690c2139-acd6-4e4f-af2a-d3a221ccd529</id>
+      <id>a124dfc2-bd3f-40c3-8f1f-7893d519eb07</id>
       <masked>false</masked>
       <name>valuePhoneNumberReceiveCardElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/ImgReceiveCard')</defaultValue>
       <description></description>
-      <id>df0ff99e-bef5-4cf0-b1eb-3a76f7663826</id>
+      <id>576a3ce5-7593-41f5-bb28-2f4309b7110f</id>
       <masked>false</masked>
       <name>imageOfReceiveNumber</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtShippingHistory')</defaultValue>
       <description></description>
-      <id>b415b64f-ede2-460a-9d00-63f6d12ac46d</id>
+      <id>d7cc237a-f2f0-4082-9da1-01389125c101</id>
       <masked>false</masked>
       <name>headerTextShippingHistoryElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtFirstInfoShippingHistory')</defaultValue>
       <description></description>
-      <id>a84431c6-f0fa-40b6-9979-51a6857aab5e</id>
+      <id>b217a91f-e5de-4c8c-918b-66be48da4e48</id>
       <masked>false</masked>
       <name>messageFirstRowElement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/BtnBackToDeliveryStatusPage')</defaultValue>
       <description></description>
-      <id>5066ff67-e2ca-4ad9-95e3-dbc68a864f44</id>
+      <id>16d2e19e-1aa8-47b7-9e22-590551023d97</id>
       <masked>false</masked>
       <name>btnBackDeliveryStatus</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Detail_Customer_Page/TxtReceiptNumber')</defaultValue>
       <description></description>
-      <id>3cdebab8-3c51-42ae-b7d4-cca01d8d0365</id>
+      <id>27c6c551-72ca-4806-a375-7e80ed6a5d31</id>
       <masked>false</masked>
       <name>valueReceiptNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>'En-route to Sorting Hub'</defaultValue>
+      <description></description>
+      <id>e5884a4f-2f7e-42e8-a2cb-f126ca55de7c</id>
+      <masked>false</masked>
+      <name>preStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Successful Delivery'</defaultValue>
+      <description></description>
+      <id>95001477-9ac6-4d48-87b5-27f2c1f3774b</id>
+      <masked>false</masked>
+      <name>existStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://tinyurl.com/34cpme86'</defaultValue>
+      <description></description>
+      <id>3f4cf02f-3852-43ef-93cd-a3d14fa78b90</id>
+      <masked>false</masked>
+      <name>imageCust</name>
    </variable>
 </TestCaseEntity>

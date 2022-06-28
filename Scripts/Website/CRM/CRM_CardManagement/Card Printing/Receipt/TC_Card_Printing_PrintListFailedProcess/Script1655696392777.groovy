@@ -105,5 +105,15 @@ WebUI.waitForElementVisible(btnCloseAlert, 5)
 WebUI.takeScreenshot()
 /* We want to click button close notification*/
 WebUI.click(btnCloseAlert)
+/* We want to delete file after downloaded*/
+KeywordUtil keylogger = new KeywordUtil()
+File deleteFile = new File("Download Path/")
+File[] deleteListFile = deleteFile.listFiles()
+for (File delAwb :deleteListFile) {
+	keylogger.logInfo(delAwb.getName())
+	if (delAwb.getName().contains("airwaybill")) {
+		delAwb.delete()
+	}
+}
 /* We want refresh page*/
 WebUI.refresh()
