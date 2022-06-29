@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtRequestCard</name>
+   <tag></tag>
+   <elementGuidId>99a41350-635e-4049-80f5-175c99c0a6cb</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/div[2]/div/section[2]/div[2]/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>f282ee4b-1b0a-41d2-b815-90d150491ef9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DataDisplay-value</value>
+      <webElementGuid>b1efbbe8-6256-4665-838e-b05ab232f355</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Permintaan Kartu Baru</value>
+      <webElementGuid>eaa47574-7a99-4257-bc23-62a92b3843eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex&quot;]/div[@class=&quot;Card u-MarginBottom DeliveryStatusDetail&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;DataDisplay u-MarginBottom&quot;]/div[@class=&quot;DataDisplay-value&quot;]</value>
+      <webElementGuid>e1c6cd67-65fc-4dc4-bbb0-107ac1215120</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[2]/div/section[2]/div[2]/div</value>
+      <webElementGuid>770b94c9-2ddd-4045-8685-52e8a269a553</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipe Permintaan Kartu'])[1]/following::div[1]</value>
+      <webElementGuid>a96e373f-8a9f-4ec2-9683-39e1517371a7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='IIN URIYAH SALSABILA RAMDANI TRYSE REZZA BIANTONG'])[1]/following::div[2]</value>
+      <webElementGuid>b068a98e-e9dd-4ec2-99ec-4f0ec05b26a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat Pengiriman Kartu'])[1]/preceding::div[1]</value>
+      <webElementGuid>bc94e367-a7ac-4831-aac1-3966be0c404f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor Resi'])[1]/preceding::div[3]</value>
+      <webElementGuid>bfacea91-50dc-483c-89bb-eed34bcd41e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Permintaan Kartu Baru']/parent::*</value>
+      <webElementGuid>6475e9b9-a9d8-48e3-95c1-e8b2e7cfc902</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[2]/div[2]/div</value>
+      <webElementGuid>93d1bd0c-4029-439a-aa99-c5080125937b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Permintaan Kartu Baru' or . = 'Permintaan Kartu Baru')]</value>
+      <webElementGuid>7a708fe8-fe0c-4d89-88a5-15d3ce352b1a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
