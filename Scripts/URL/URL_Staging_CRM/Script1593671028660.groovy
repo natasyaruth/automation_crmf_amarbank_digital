@@ -15,14 +15,15 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import internal.GlobalVariable as GlobalVariable
-
-import com.kms.katalon.core.configuration.RunConfiguration
+import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 /* Set up list value set web driver preferences property*/
-RunConfiguration.setWebDriverPreferencesProperty("args", listValue)
+RunConfiguration.setWebDriverPreferencesProperty('args', listValue)
 
 /* Set input username & password basic auth on browser web page */
-WebUI.openBrowser('https://'+GlobalVariable.authUsername+':'+GlobalVariable.authPassword+'@'+(GlobalVariable.siteUrl.substring(8)))
+WebUI.openBrowser((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + GlobalVariable.siteUrl.substring(
+        8))
 
 /* Set navigate to setup URL */
 WebUI.navigateToUrl(GlobalVariable.siteUrl)
+

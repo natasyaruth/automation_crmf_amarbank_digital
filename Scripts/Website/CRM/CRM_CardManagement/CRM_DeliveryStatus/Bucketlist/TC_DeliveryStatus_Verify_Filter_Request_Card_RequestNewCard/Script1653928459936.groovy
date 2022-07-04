@@ -38,7 +38,7 @@ WebUI.verifyElementPresent(FilterRequestCardType, 5)
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByRequestType'), 
     FilterRequestCardType_RequestNewCard, false)
 
-/* We will select Request Card type value "Kartu Baru"*/
+/* We will select Request Card type value "Permintaan Kartu Baru"*/
 WebUI.verifyOptionSelectedByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByRequestType'), 
     FilterRequestCardType_RequestNewCard, false, 5)
 

@@ -29,6 +29,8 @@ WebUI.verifyElementPresent(menuDeliveryStatus, 10)
 /* We want to click menu delivery status page*/
 WebUI.click(menuDeliveryStatus)
 
+WebUI.waitForElementVisible(ButtonSearch, 10)
+
 /* We want to verify text in Bucketlist*/
 WebUI.verifyTextPresent(DeliveryStatusText, false)
 
