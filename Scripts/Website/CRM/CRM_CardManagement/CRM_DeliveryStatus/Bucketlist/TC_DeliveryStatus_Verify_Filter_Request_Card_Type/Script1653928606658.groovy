@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /* We want to check from menu card management*/
+WebUI.verifyElementVisible(findTestObject(null))
+
 WebUI.verifyElementPresent(menuCardManagement, 5)
 
 /* We want to click menu to expand the menu card management */
@@ -33,7 +35,7 @@ WebUI.click(menuDeliveryStatus)
 WebUI.verifyTextPresent(DeliveryStatusText, false)
 
 /* We will verify that filter request card type is exist*/
-WebUI.verifyElementPresent(FilterRequestCardType,5)
+WebUI.verifyElementPresent(FilterRequestCardType, 5)
 
 /* We will select Request Card type value "Semua"*/
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByRequestType'), 
@@ -55,3 +57,4 @@ WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery S
 
 /* We will capture Request Card type value "Permintaan Kartu Baru"*/
 WebUI.takeScreenshot()
+

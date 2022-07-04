@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105017</description>
    <name>TC_DeliveryStatus_Verify_Tab_Delivery_Status_Page</name>
    <tag></tag>
    <comment></comment>

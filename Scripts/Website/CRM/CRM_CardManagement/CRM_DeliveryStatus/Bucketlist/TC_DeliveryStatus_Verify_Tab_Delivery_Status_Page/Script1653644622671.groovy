@@ -17,7 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/* We want to check from menu card management*/
+/* We want to check menu card management is visible*/
+WebUI.waitForElementVisible(menuCardManagement, 10)
+
+WebUI.verifyElementVisible(menuCardManagement, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.waitForElementPresent(menuCardManagement, 10)
 
 WebUI.verifyElementPresent(menuCardManagement, 5)
@@ -26,34 +30,55 @@ WebUI.verifyElementPresent(menuCardManagement, 5)
 WebUI.click(menuCardManagement)
 
 /* We want to identify the element menu delivery status*/
+WebUI.waitForElementVisible(menuDeliveryStatus, 10)
+
+WebUI.verifyElementVisible(menuDeliveryStatus, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 
 /* We want to click menu delivery status page*/
 WebUI.click(menuDeliveryStatus)
 
+/* We wait for bucketlist delivery status is opened */
+WebUI.waitForElementVisible(FilterRequestCardType, 10)
+
 WebUI.waitForElementPresent(FilterRequestCardType, 10)
 
-/* We want to verify text in Bucketlist*/
 WebUI.verifyTextPresent(DeliveryStatusText, false)
 
 /* We will verify that searchfield in bucketlist page is exist*/
+WebUI.verifyElementVisible(TextfieldSearchRefID, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(TextfieldSearchRefID, 5)
 
 /* We will verify that filter start date in bucketlist page is exist*/
+WebUI.verifyElementVisible(FilterStartDate, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(FilterStartDate, 5)
 
 /* We will verify that filter end date in bucketlist page is exist*/
+WebUI.verifyElementVisible(FilterEndDate, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(FilterEndDate, 5)
 
 /* We will verify that button Show in bucketlist page is exist*/
+WebUI.verifyElementVisible(ButtonShow, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(ButtonShow, 5)
 
 /* We will verify that filter delivery status in bucketlist page is exist*/
+WebUI.verifyElementVisible(FilterDeliveryStatus, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(FilterDeliveryStatus, 5)
 
 /* We will verify that filter request card type in bucketlist page is exist*/
+WebUI.verifyElementVisible(FilterRequestCardType, FailureHandling.STOP_ON_FAILURE)
+
 WebUI.verifyElementPresent(FilterRequestCardType, 5)
 
 /* We will capture delivery status page */
 WebUI.takeScreenshot()
+
+/* We will refresh the page*/
+WebUI.refresh()
 

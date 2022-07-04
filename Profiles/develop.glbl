@@ -132,7 +132,7 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://dev-crm-rekol.tunaiku.com/login'</initValue>
-      <name>devHostname</name>
+      <name>stagHostname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -146,7 +146,42 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com'</initValue>
+      <initValue>'1'</initValue>
+      <name>indexVillage</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Leads Management'</initValue>
+      <name>titleLeadsManagement</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Customer Detail'</initValue>
+      <name>titleCustomerDetails</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-crm-rekol.tunaiku.com'</initValue>
       <name>siteUrl</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'web-api'</initValue>
+      <name>usernameWebApi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <name>passwordWebApi</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-api-crm-svc.otoku.io'</initValue>
+      <name>baseUrlRegOtoku</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-crm-rekol.tunaiku.com/card-management/delivery-status/11'</initValue>
+      <name>UrlDeliveryNotFound</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -25,10 +25,7 @@ import internal.GlobalVariable as GlobalVariable
 
 //body
 
-String dataApi =
-'{"shipper_id": '+ shipper_id +
-',"status": "'+ status_success +
-'","previous_status": "'+ previous_status_success +
+String dataApi ='{"shipper_id": '+ shipper_id +',"status": "'+ status_success +'","previous_status": "'+ previous_status_success +
 '","shipper_order_ref_no": "'+ shipper_order_ref_no +
 '","timestamp": "'+ timestamp_success +
 '","order_id": "'+ id +

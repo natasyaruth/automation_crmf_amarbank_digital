@@ -9,6 +9,7 @@
    <pageLoadTimeout>30</pageLoadTimeout>
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>93debcff-610b-42f8-9b11-0b1ee03dcd38</testSuiteGuid>
    <testCaseLink>
       <guid>9621a87d-f6e2-4f16-ad52-81caf6040fb8</guid>
@@ -24,6 +25,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>facca0b4-6542-468f-b366-3f6744f85aae</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -105,6 +107,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Develop/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>5816d053-96fe-49db-847e-eee59505274a</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -204,6 +207,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Staging/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>f0c89d62-2e8d-4779-bca2-8fdbf58f8f2d</testDataLinkId>
          <type>DATA_COLUMN</type>
@@ -285,6 +289,7 @@
          </iterationEntity>
          <testDataId>Data Files/API/CRM/Staging/Datafiles_API_Ninja_Van</testDataId>
       </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId>8ec2fc01-83fd-4133-8a53-7a2f9386ad6f</testDataLinkId>
          <type>DATA_COLUMN</type>
