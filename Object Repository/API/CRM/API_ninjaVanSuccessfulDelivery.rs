@@ -6,7 +6,6 @@
    <elementGuidId>62bdbb15-5952-4236-b8dc-9a037f5a9713</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -21,7 +20,6 @@
       <name>Content-Type</name>
       <type>Main</type>
       <value>application/json</value>
-      <webElementGuid>2268ee65-ce16-4af9-955e-438f8bb93849</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -29,9 +27,7 @@
       <name>X-NINJAVAN-HMAC-SHA256</name>
       <type>Main</type>
       <value>${hashNinjaVanSuccessfulDelivery}</value>
-      <webElementGuid>d63802f8-586b-4e75-b57d-fc2301533e61</webElementGuid>
    </httpHeaderProperties>
-   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>${hostnameCRM}card/webhook</restUrl>
@@ -39,10 +35,7 @@
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
-   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
-   <socketTimeout>-1</socketTimeout>
-   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.hostnameCRM</defaultValue>
       <description></description>
