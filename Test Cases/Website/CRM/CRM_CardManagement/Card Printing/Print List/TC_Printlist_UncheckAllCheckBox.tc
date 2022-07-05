@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Printlist_UncheckAllCheckBox</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1482328e-5ecc-4071-9e94-685bf0e19590</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e590d599-ebfa-4dd3-877c-7a4abf615ae9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>48bd6943-3383-4f88-9e0e-2c80c00014fd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>daf44a0a-3591-4a9e-9a87-c52cde11fbfc</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkAllPrint')</defaultValue>
+      <description></description>
+      <id>e590d599-ebfa-4dd3-877c-7a4abf615ae9</id>
+      <masked>false</masked>
+      <name>chkAllPrint</name>
+   </variable>
+   <variable>
+      <defaultValue>[findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint2'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint3'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint4'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint5'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint6'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint7'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint8'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint9'), findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint10')]</defaultValue>
+      <description></description>
+      <id>48bd6943-3383-4f88-9e0e-2c80c00014fd</id>
+      <masked>false</masked>
+      <name>listCheckBoxPrintList</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Print List/BtnPrintCard')</defaultValue>
+      <description></description>
+      <id>daf44a0a-3591-4a9e-9a87-c52cde11fbfc</id>
+      <masked>false</masked>
+      <name>btnCardPrint</name>
+   </variable>
+</TestCaseEntity>
