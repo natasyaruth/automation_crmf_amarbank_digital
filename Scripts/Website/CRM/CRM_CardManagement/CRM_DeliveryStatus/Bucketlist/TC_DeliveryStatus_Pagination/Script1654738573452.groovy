@@ -30,7 +30,7 @@ WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 WebUI.click(menuDeliveryStatus)
 
 /* We want to verify text in Bucketlist*/
-WebUI.verifyTextPresent(DeliveryStatusText, false)
+WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 
 /* We will verify that searchfield in bucketlist page is exist*/
 WebUI.verifyElementPresent(TextfieldSearchRefID, 5)

@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /* We want to check from menu card management*/
-WebUI.verifyElementVisible(findTestObject(null))
+WebUI.verifyElementVisible(menuCardManagement)
 
 WebUI.verifyElementPresent(menuCardManagement, 5)
 
@@ -32,7 +32,7 @@ WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 WebUI.click(menuDeliveryStatus)
 
 /* We want to verify text in Bucketlist*/
-WebUI.verifyTextPresent(DeliveryStatusText, false)
+WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 
 /* We will verify that filter request card type is exist*/
 WebUI.verifyElementPresent(FilterRequestCardType, 5)

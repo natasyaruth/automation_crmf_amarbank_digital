@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105032</description>
+   <name>TC_DeliveryStatus_Verify_Data_After_Hit_NinjaVan_Sorting</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d9d219f9-d898-4693-9a73-aee6a8437860</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7f19e812-0ebd-40a8-8d40-a71865d7fae5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>625f669f-984f-4dbe-b43c-80a690b90091</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>42c90537-f47f-4820-b037-cff18bfb05bc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0018028b-4069-46d3-a939-9ce09c2782af</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f289d18-b430-425d-bb6a-3d4674f71c71</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94b793a6-7efc-453d-af10-1f70dd738719</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cf637e41-7d76-4480-a1e4-4c5eb70910b2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ece1bc33-5da9-47a1-af46-b2f9d43f4b74</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>7f19e812-0ebd-40a8-8d40-a71865d7fae5</id>
+      <masked>false</masked>
+      <name>menuCardManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink')</defaultValue>
+      <description></description>
+      <id>625f669f-984f-4dbe-b43c-80a690b90091</id>
+      <masked>false</masked>
+      <name>menuDeliveryStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtHeaderBucketlist')</defaultValue>
+      <description></description>
+      <id>42c90537-f47f-4820-b037-cff18bfb05bc</id>
+      <masked>false</masked>
+      <name>DeliveryStatusText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtReferenceId')</defaultValue>
+      <description></description>
+      <id>0018028b-4069-46d3-a939-9ce09c2782af</id>
+      <masked>false</masked>
+      <name>TextfieldSearchRefID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnSearch')</defaultValue>
+      <description></description>
+      <id>2f289d18-b430-425d-bb6a-3d4674f71c71</id>
+      <masked>false</masked>
+      <name>ButtonSearch</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnReqId1')</defaultValue>
+      <description></description>
+      <id>94b793a6-7efc-453d-af10-1f70dd738719</id>
+      <masked>false</masked>
+      <name>RequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtStatusSorting')</defaultValue>
+      <description></description>
+      <id>cf637e41-7d76-4480-a1e4-4c5eb70910b2</id>
+      <masked>false</masked>
+      <name>DeliveryStatusSorting</name>
+   </variable>
+   <variable>
+      <defaultValue>'Penyortiran'</defaultValue>
+      <description></description>
+      <id>ece1bc33-5da9-47a1-af46-b2f9d43f4b74</id>
+      <masked>false</masked>
+      <name>TxtSorting</name>
+   </variable>
+</TestCaseEntity>

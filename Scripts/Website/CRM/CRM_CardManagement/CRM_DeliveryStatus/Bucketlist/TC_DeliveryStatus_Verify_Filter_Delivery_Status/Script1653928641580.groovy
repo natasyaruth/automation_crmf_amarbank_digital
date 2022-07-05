@@ -30,7 +30,7 @@ WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 WebUI.click(menuDeliveryStatus)
 
 /* We want to verify text in Bucketlist*/
-WebUI.verifyTextPresent(DeliveryStatusText, false)
+WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 
 /* We will verify that filter delivery status is exist*/
 WebUI.verifyElementPresent(FilterDeliveryStatus, 5)
@@ -53,14 +53,12 @@ WebUI.takeScreenshot()
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByDeliveryStatus'), 
     FilterDeliveryStatus_Penyortiran, false)
 
-
 /* We will capture filter delivery status value "Penyortiran"*/
 WebUI.takeScreenshot()
 
 /* We will select delivery status value "Pengiriman"*/
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByDeliveryStatus'), 
     FilterDeliveryStatus_Pengiriman, false)
-
 
 /* We will capture filter delivery status value "Pengiriman"*/
 WebUI.takeScreenshot()
