@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105017</description>
    <name>TC_DeliveryStatus_Verify_Tab_Delivery_Status_Page</name>
    <tag></tag>
    <comment></comment>
@@ -134,7 +134,7 @@
       <name>menuDeliveryStatus</name>
    </variable>
    <variable>
-      <defaultValue>'Delivery Status'</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtHeaderBucketlist')</defaultValue>
       <description></description>
       <id>616a3e1d-e0fc-440e-b91a-2ce3bd7b6bb2</id>
       <masked>false</masked>

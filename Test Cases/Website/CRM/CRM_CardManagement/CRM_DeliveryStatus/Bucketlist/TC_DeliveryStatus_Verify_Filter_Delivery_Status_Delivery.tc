@@ -134,7 +134,7 @@
       <name>menuDeliveryStatus</name>
    </variable>
    <variable>
-      <defaultValue>'Delivery Status'</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtHeaderBucketlist')</defaultValue>
       <description></description>
       <id>d6374ad9-fd69-4738-8997-38f456f799b0</id>
       <masked>false</masked>

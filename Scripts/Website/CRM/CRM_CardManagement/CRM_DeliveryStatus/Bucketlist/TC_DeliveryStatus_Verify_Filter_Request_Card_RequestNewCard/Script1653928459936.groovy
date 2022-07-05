@@ -30,7 +30,7 @@ WebUI.verifyElementPresent(menuDeliveryStatus, 5)
 WebUI.click(menuDeliveryStatus)
 
 /* We want to verify text in Bucketlist*/
-WebUI.verifyTextPresent(DeliveryStatusText, false)
+WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 
 /* We will verify that filter request card type is exist*/
 WebUI.verifyElementPresent(FilterRequestCardType, 5)
@@ -38,7 +38,7 @@ WebUI.verifyElementPresent(FilterRequestCardType, 5)
 WebUI.selectOptionByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByRequestType'), 
     FilterRequestCardType_RequestNewCard, false)
 
-/* We will select Request Card type value "Kartu Baru"*/
+/* We will select Request Card type value "Permintaan Kartu Baru"*/
 WebUI.verifyOptionSelectedByLabel(findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusDrpSortByRequestType'), 
     FilterRequestCardType_RequestNewCard, false, 5)
 

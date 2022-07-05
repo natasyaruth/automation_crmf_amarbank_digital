@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DeliveryStatusTabelBucketlist</name>
+   <tag></tag>
+   <elementGuidId>69543237-6942-4825-a123-74e7938f91da</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/section/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.u-Overflow-auto</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>fd8d0ab0-138d-43fd-9f41-3543286bb5ea</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-Overflow-auto</value>
+      <webElementGuid>fdf0c95c-1d1f-44f6-8014-503a9e4e7e0c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>NoRequest IDRef IDNameRequest Card TypeRequest DateCourier TypeDelivery Status110001356 1015DENA DAVINA NBCKartu Baru29/6/2022ExternalPenyortiran210001354 1013BOIMS HGDKartu Baru29/6/2022ExternalUnknown310001353 1012HARUKA HENDRABRATA SAKAKartu Baru27/6/2022ExternalTerkirim410001350 1009ANDERS AAS CSWKartu Baru22/6/2022ExternalTerkirim510001348 1007DENA DAVINA VCZKartu Baru21/6/2022ExternalTerkirim610001347 1006DENA DAVINA LKJKartu Baru21/6/2022ExternalTerkirim710001346 1005ANDERS AAS CUSTKartu Baru21/6/2022ExternalTerkirim810001345 1004SANDY SANDORO ZXXKartu Baru21/6/2022ExternalTerkirim910001344 1003YANTI PURWATIKartu Baru21/6/2022ExternalTerkirim1010001343 1002PUTRA SLAMET PURNOMO KENCONOKartu Baru21/6/2022ExternalTerkirim</value>
+      <webElementGuid>a8c50830-a18f-4af9-be89-fe9d5b8c40e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]</value>
+      <webElementGuid>0e6d8994-48c8-4468-9004-0c3457d0845d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/section/div</value>
+      <webElementGuid>4686eaac-e881-4c51-8392-3ae3fda0b9f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter Delivery Status'])[1]/following::div[2]</value>
+      <webElementGuid>8f9eb3b7-672d-4edf-9335-6c596128d691</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter Request Card Type'])[1]/following::div[4]</value>
+      <webElementGuid>62de4468-0bea-4990-89d0-69688eaf2034</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/section/div</value>
+      <webElementGuid>4b547119-63e8-44de-96bd-b10d1c4ae4ec</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'NoRequest IDRef IDNameRequest Card TypeRequest DateCourier TypeDelivery Status110001356 1015DENA DAVINA NBCKartu Baru29/6/2022ExternalPenyortiran210001354 1013BOIMS HGDKartu Baru29/6/2022ExternalUnknown310001353 1012HARUKA HENDRABRATA SAKAKartu Baru27/6/2022ExternalTerkirim410001350 1009ANDERS AAS CSWKartu Baru22/6/2022ExternalTerkirim510001348 1007DENA DAVINA VCZKartu Baru21/6/2022ExternalTerkirim610001347 1006DENA DAVINA LKJKartu Baru21/6/2022ExternalTerkirim710001346 1005ANDERS AAS CUSTKartu Baru21/6/2022ExternalTerkirim810001345 1004SANDY SANDORO ZXXKartu Baru21/6/2022ExternalTerkirim910001344 1003YANTI PURWATIKartu Baru21/6/2022ExternalTerkirim1010001343 1002PUTRA SLAMET PURNOMO KENCONOKartu Baru21/6/2022ExternalTerkirim' or . = 'NoRequest IDRef IDNameRequest Card TypeRequest DateCourier TypeDelivery Status110001356 1015DENA DAVINA NBCKartu Baru29/6/2022ExternalPenyortiran210001354 1013BOIMS HGDKartu Baru29/6/2022ExternalUnknown310001353 1012HARUKA HENDRABRATA SAKAKartu Baru27/6/2022ExternalTerkirim410001350 1009ANDERS AAS CSWKartu Baru22/6/2022ExternalTerkirim510001348 1007DENA DAVINA VCZKartu Baru21/6/2022ExternalTerkirim610001347 1006DENA DAVINA LKJKartu Baru21/6/2022ExternalTerkirim710001346 1005ANDERS AAS CUSTKartu Baru21/6/2022ExternalTerkirim810001345 1004SANDY SANDORO ZXXKartu Baru21/6/2022ExternalTerkirim910001344 1003YANTI PURWATIKartu Baru21/6/2022ExternalTerkirim1010001343 1002PUTRA SLAMET PURNOMO KENCONOKartu Baru21/6/2022ExternalTerkirim')]</value>
+      <webElementGuid>e727ef51-fabb-4e88-88a7-3b7ca91c3be9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
