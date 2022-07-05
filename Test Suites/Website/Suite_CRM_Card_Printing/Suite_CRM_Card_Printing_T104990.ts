@@ -116,7 +116,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>4272064b-29d3-40a7-a96d-4f68ed4825c6</guid>
+      <guid>e210fc67-8ab8-4b7e-bf2c-c84ad98f613b</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardManagement</testCaseId>
@@ -147,7 +147,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>acef7064-cbd6-4c3d-bf84-3e5859195036</guid>
+      <guid>c553d013-1588-49e6-9f95-5f41816adad9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/TC_CardPrinting</testCaseId>
@@ -196,10 +196,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>c13db79b-63b1-40db-97f6-c592f8d4eb03</guid>
+      <guid>9f34b1d5-33d9-4770-b731-7dd61a42c4d4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_CheckOneCheckBoxPrintlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_CheckOneCheckBox</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -207,12 +207,18 @@
          <value></value>
          <variableId>c975e89a-6c69-47e5-a7b3-8d15ad35f118</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c570419-93a1-4e6b-81bc-302d6eb0894d</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>1d6693c0-b3c4-426e-82e5-a8b1284dd393</guid>
+      <guid>56da72c7-50c0-46bd-bc2f-9e2288ddc2e9</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_PrintSuccessDataPrintList</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_PrintSuccessData</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -256,9 +262,21 @@
          <value></value>
          <variableId>4bc19a5c-eaff-4fee-be37-441d73003a4a</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b85a7623-7cf3-4930-85a5-4c3ee747624a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2420dede-de8e-4a79-8d6e-774b8b194b8b</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>f81fea32-a269-45a1-82f1-23088a77f85f</guid>
+      <guid>c6c97e89-f3ad-4b23-8738-74d302a0dfa6</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>

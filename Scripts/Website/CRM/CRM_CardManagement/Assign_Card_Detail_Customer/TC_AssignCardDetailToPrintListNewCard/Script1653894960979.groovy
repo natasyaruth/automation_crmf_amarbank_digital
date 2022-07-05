@@ -47,32 +47,39 @@ WebUI.verifyElementPresent(requestIdElement, 5)
 /* We want to choose type card is " kartu baru"*/
 WebUI.selectOptionByLabel(fieldCardTypeElement, fieldCardTypeLabel, false)
 
-/* We want to click Request ID*/
-WebUI.click(requestIdElement)
+/* This is a function looping through flow assign card for 14 times.
+ * Purpose of this flow to provide 14 data on next test for Printlist,
+ * which is consist 1 data to print one data, 3 data to print multi data,
+ * and 10 data to print all data in one page bucketlist*/
+for(int i=0;i<15;i++) {
+	/* We want to click Request ID*/
+	WebUI.click(requestIdElement)
+	
+	/* We want to verify element and text "Detail Nasabah"*/
+	WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
+	
+	/* We want to verify button "kirim"*/
+	WebUI.verifyElementText(btnSendToPrintElement, btnSendToPrintText)
+	
+	/* We want to click button "kirim"*/
+	WebUI.click(btnSendToPrintElement)
+	
+	/* We want to verify popup "kirim request detail"*/
+	WebUI.verifyElementPresent(popUpNotificationSendRequestId, 5)
+	
+	/* We want to verify element and text success message*/
+	WebUI.verifyElementText(successMessageSentToPrintListElement, successMessageSentToPrintListText)
+	
+	/* We want to verify element and text button back to card management*/
+	WebUI.verifyElementText(btnBackToCardManagementListElement, btnBackToCardManagementListText)
+	
+	/* We want capture new card*/
+	WebUI.takeScreenshot()
+	
+	/* We want to click button back to card management list*/
+	WebUI.click(btnBackToCardManagementListElement)
+	
+	/* We want to refresh for the next process*/
+	WebUI.refresh()
+}
 
-/* We want to verify element and text "Detail Nasabah"*/
-WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
-
-/* We want to verify button "kirim"*/
-WebUI.verifyElementText(btnSendToPrintElement, btnSendToPrintText)
-
-/* We want to click button "kirim"*/
-WebUI.click(btnSendToPrintElement)
-
-/* We want to verify popup "kirim request detail"*/
-WebUI.verifyElementPresent(popUpNotificationSendRequestId, 5)
-
-/* We want to verify element and text success message*/
-WebUI.verifyElementText(successMessageSentToPrintListElement, successMessageSentToPrintListText)
-
-/* We want to verify element and text button back to card management*/
-WebUI.verifyElementText(btnBackToCardManagementListElement, btnBackToCardManagementListText)
-
-/* We want capture new card*/
-WebUI.takeScreenshot()
-
-/* We want to click button back to card management list*/
-WebUI.click(btnBackToCardManagementListElement)
-
-/* We want to refresh for the next process*/
-WebUI.refresh()

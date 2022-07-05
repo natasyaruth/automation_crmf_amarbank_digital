@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>txtLastPage</name>
+   <name>TxtLastPage</name>
    <tag></tag>
    <elementGuidId>5a3be6ef-d96f-40ba-9dcb-ca420c3b4a1f</elementGuidId>
    <selectorCollection>

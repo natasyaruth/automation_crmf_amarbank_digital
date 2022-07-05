@@ -199,7 +199,7 @@
       <guid>bfcf84eb-d32e-4e8a-898f-88535887183a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_CheckAllCheckBoxPrintlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_CheckAllCheckBoxPrintlist</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -207,12 +207,30 @@
          <value></value>
          <variableId>a480b7f0-7fd8-4fbb-a0d6-6a894da283a3</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e9a78ade-b892-49fb-9abd-5b98615c4952</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9625365c-1558-4906-88f6-68d18a6e1fc9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9a7d61eb-9f95-4682-9d76-5b78460b29e1</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>bae1e24e-8659-47f1-972a-365a5588f1ae</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_PrintSuccessDataPrintList</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_PrintSuccessData</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -255,6 +273,18 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>4bc19a5c-eaff-4fee-be37-441d73003a4a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b85a7623-7cf3-4930-85a5-4c3ee747624a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2420dede-de8e-4a79-8d6e-774b8b194b8b</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

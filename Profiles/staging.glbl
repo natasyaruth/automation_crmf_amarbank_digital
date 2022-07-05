@@ -179,4 +179,24 @@
       <initValue>'https://dev-api-registration-svc.otoku.io'</initValue>
       <name>baseUrlRegOtoku</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPendingPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanVanEnrouteToPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPickupFailed</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanSuccessfulPickup</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
