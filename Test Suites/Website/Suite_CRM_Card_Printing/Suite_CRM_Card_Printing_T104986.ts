@@ -199,7 +199,7 @@
       <guid>2824e1ac-f2f3-49c9-a659-d3f6079612ba</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_VerifyPagination</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_VerifyPaginationPrintlist</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -247,6 +247,12 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
+         <variableId>622ea224-6076-4083-bd38-1b09115d0df4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>cba02b00-85f6-487e-a03c-1ab9b2bb5c38</variableId>
       </variableLink>
       <variableLink>
@@ -260,12 +266,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>e796c530-ba3c-4114-af2c-b998e84ed751</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9f20bc50-febb-4880-a0c7-34121263e672</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

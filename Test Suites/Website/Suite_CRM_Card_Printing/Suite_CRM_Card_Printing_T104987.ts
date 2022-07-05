@@ -199,7 +199,7 @@
       <guid>b5f5502d-65ef-49fc-a4f0-423d65083a55</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_CheckAllCheckBoxPrintlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_CheckAllCheckBoxPrintlist</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -207,52 +207,22 @@
          <value></value>
          <variableId>a480b7f0-7fd8-4fbb-a0d6-6a894da283a3</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e9a78ade-b892-49fb-9abd-5b98615c4952</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9625365c-1558-4906-88f6-68d18a6e1fc9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>9a7d61eb-9f95-4682-9d76-5b78460b29e1</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>caf498c8-94b6-4b86-98d9-4405322b2dfe</guid>
+      <guid>c374b793-2743-456a-a8c5-7128079a4661</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Printlist_UncheckAllCheckBox</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Print List/TC_Card_Printing_CheckAllCheckBoxPrintlist</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e590d599-ebfa-4dd3-877c-7a4abf615ae9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>48bd6943-3383-4f88-9e0e-2c80c00014fd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>daf44a0a-3591-4a9e-9a87-c52cde11fbfc</variableId>
+         <variableId>a480b7f0-7fd8-4fbb-a0d6-6a894da283a3</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>bef3ace9-f67e-4e05-a86a-e032e1648adc</guid>
+      <guid>a5359d5d-ac79-45fb-83e7-8f4a6546af59</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
