@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>DeliveryStatusTxtDataNotFound</name>
+   <tag></tag>
+   <elementGuidId>812a9778-420b-4350-a082-04b143d1dffa</elementGuidId>
+   <imagePath>Screenshots/Targets/Page_Senyumku CRM/td_Oops, Hasil pencarian tidak ditemukanPastikan Anda telah memasukkan data yang dicari dengan benar.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>IMAGE</key>
+         <value>Screenshots/Targets/Page_Senyumku CRM/td_Oops, Hasil pencarian tidak ditemukanPastikan Anda telah memasukkan data yang dicari dengan benar.png</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.Table-cell</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>1e2758f1-f501-4b01-97bb-035db932a961</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Table-cell</value>
+      <webElementGuid>b116a7f5-ae06-4191-9f3c-d0526121aa95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>colspan</name>
+      <type>Main</type>
+      <value>8</value>
+      <webElementGuid>32013f01-2515-40b4-a97b-de00e9ff77e6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Oops, Hasil pencarian tidak ditemukanPastikan Anda telah memasukkan data yang dicari dengan benar.</value>
+      <webElementGuid>58f33ebf-3e76-4fca-acc6-796a04848dbc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>325437d1-38bd-4d12-b824-93266a2d3f3a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td</value>
+      <webElementGuid>8e3e88aa-b01b-4273-b1a9-acc13a44dae7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery Status'])[4]/following::td[1]</value>
+      <webElementGuid>6a7f53f4-2baa-40ae-b98f-67525d0ad5e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Courier Type'])[1]/following::td[1]</value>
+      <webElementGuid>13f53608-f163-4c9d-9e57-462b4323155d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td</value>
+      <webElementGuid>5f3fe604-213f-4dd2-bf35-0b901b80a149</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Oops, Hasil pencarian tidak ditemukanPastikan Anda telah memasukkan data yang dicari dengan benar.' or . = 'Oops, Hasil pencarian tidak ditemukanPastikan Anda telah memasukkan data yang dicari dengan benar.')]</value>
+      <webElementGuid>d41a0b02-1132-476f-a561-41d9a9b14c9a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/105032</description>
+   <name>TC_DeliveryStatus_Verify_Data_After_Hit_NinjaVan_PickUp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>02cbe6f7-2735-491d-ae13-1949e3676bcf</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a58f9e71-fd7a-45b2-a905-5cb023c70bdd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d71c82cf-5c3b-4e88-a9fa-e9c2fec7127f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>195040c7-652e-44af-8f33-daa4adabe0d4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bb2b02a8-55a6-446f-a212-47db9aa95272</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a3cc3d5b-871e-4b7f-8310-0d9d4a1853e3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a51ae32d-6148-442c-81dc-8933f03422fa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>99a7ac2d-b57a-4c2b-9972-72d1c337fb99</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3da5b0de-de25-44d6-b511-0a1f98bf9c1f</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>a58f9e71-fd7a-45b2-a905-5cb023c70bdd</id>
+      <masked>false</masked>
+      <name>menuCardManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink')</defaultValue>
+      <description></description>
+      <id>d71c82cf-5c3b-4e88-a9fa-e9c2fec7127f</id>
+      <masked>false</masked>
+      <name>menuDeliveryStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtHeaderBucketlist')</defaultValue>
+      <description></description>
+      <id>195040c7-652e-44af-8f33-daa4adabe0d4</id>
+      <masked>false</masked>
+      <name>DeliveryStatusText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtReferenceId')</defaultValue>
+      <description></description>
+      <id>bb2b02a8-55a6-446f-a212-47db9aa95272</id>
+      <masked>false</masked>
+      <name>TextfieldSearchRefID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnSearch')</defaultValue>
+      <description></description>
+      <id>a3cc3d5b-871e-4b7f-8310-0d9d4a1853e3</id>
+      <masked>false</masked>
+      <name>ButtonSearch</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnReqId1')</defaultValue>
+      <description></description>
+      <id>a51ae32d-6148-442c-81dc-8933f03422fa</id>
+      <masked>false</masked>
+      <name>RequestID</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtStatusPickup')</defaultValue>
+      <description></description>
+      <id>99a7ac2d-b57a-4c2b-9972-72d1c337fb99</id>
+      <masked>false</masked>
+      <name>DeliveryStatusPickup</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pengambilan'</defaultValue>
+      <description></description>
+      <id>3da5b0de-de25-44d6-b511-0a1f98bf9c1f</id>
+      <masked>false</masked>
+      <name>TxtPickup</name>
+   </variable>
+</TestCaseEntity>

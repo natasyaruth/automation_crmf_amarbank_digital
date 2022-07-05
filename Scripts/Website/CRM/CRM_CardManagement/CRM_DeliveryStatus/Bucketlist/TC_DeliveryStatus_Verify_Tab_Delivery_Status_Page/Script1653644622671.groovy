@@ -44,7 +44,7 @@ WebUI.waitForElementVisible(FilterRequestCardType, 10)
 
 WebUI.waitForElementPresent(FilterRequestCardType, 10)
 
-WebUI.verifyTextPresent(DeliveryStatusText, false)
+WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 
 /* We will verify that searchfield in bucketlist page is exist*/
 WebUI.verifyElementVisible(TextfieldSearchRefID, FailureHandling.STOP_ON_FAILURE)
