@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Card_Reprint_CheckAllElementOnReprintCard</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1b4e76f6-c5a2-40af-80e1-625ad13275c6</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c2f6a2f2-575b-4c8b-9d08-70e4b313b6a3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>50164461-cd74-4c1e-bb6e-7e4553ec8ff1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a1ec5193-5628-4d40-bcf6-b6600322b33c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7af1e2a3-00f1-4d7a-b79b-b9bc593f685c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/TabCardReprint')</defaultValue>
+      <description></description>
+      <id>c2f6a2f2-575b-4c8b-9d08-70e4b313b6a3</id>
+      <masked>false</masked>
+      <name>tabCardReprint</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/DrpDataInPageReprint')</defaultValue>
+      <description></description>
+      <id>50164461-cd74-4c1e-bb6e-7e4553ec8ff1</id>
+      <masked>false</masked>
+      <name>drpDataInPageReprint</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/ChkDataReprint1')</defaultValue>
+      <description></description>
+      <id>a1ec5193-5628-4d40-bcf6-b6600322b33c</id>
+      <masked>false</masked>
+      <name>chkDataReprint</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/BtnReprint')</defaultValue>
+      <description></description>
+      <id>7af1e2a3-00f1-4d7a-b79b-b9bc593f685c</id>
+      <masked>false</masked>
+      <name>btnReprint</name>
+   </variable>
+</TestCaseEntity>

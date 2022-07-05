@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_Printlist_CheckOneCheckBox</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>81b0aeb2-bf93-4229-8b9c-6f54ebf1f4b7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c975e89a-6c69-47e5-a7b3-8d15ad35f118</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2c570419-93a1-4e6b-81bc-302d6eb0894d</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Print List/ChkDataPrint')</defaultValue>
+      <description></description>
+      <id>c975e89a-6c69-47e5-a7b3-8d15ad35f118</id>
+      <masked>false</masked>
+      <name>chkDataPrint</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Print List/TabCardPrint')</defaultValue>
+      <description></description>
+      <id>2c570419-93a1-4e6b-81bc-302d6eb0894d</id>
+      <masked>false</masked>
+      <name>tabCardPrint</name>
+   </variable>
+</TestCaseEntity>
