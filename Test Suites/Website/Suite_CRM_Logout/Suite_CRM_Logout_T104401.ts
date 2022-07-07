@@ -12,6 +12,19 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>a516321f-df34-426a-94b5-c4d58428f885</testSuiteGuid>
    <testCaseLink>
+      <guid>61ee23a2-0a78-485e-86f9-df635754d6af</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>81024f02-7afa-4851-84f6-d032492ab1a2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -100,19 +113,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>63505095-fc25-405a-a9be-9c1d33dcf4f9</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>61ee23a2-0a78-485e-86f9-df635754d6af</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

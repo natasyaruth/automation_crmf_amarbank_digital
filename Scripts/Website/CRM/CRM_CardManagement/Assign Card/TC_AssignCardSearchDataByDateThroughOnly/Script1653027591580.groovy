@@ -59,8 +59,11 @@ WebUI.click(btnShowFilterElement)
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
+/* We want to get text from first row date element*/
+def expectedDate = WebUI.getText(firstRowDateElement)
+
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, inputEndDateText)
+WebUI.verifyElementText(firstRowDateElement, expectedDate)
 
 /* We want capture the result*/
 WebUI.takeScreenshot()

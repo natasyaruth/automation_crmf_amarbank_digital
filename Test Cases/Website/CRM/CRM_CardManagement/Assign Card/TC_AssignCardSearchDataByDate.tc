@@ -171,7 +171,7 @@
       <name>firstRowDateElement</name>
    </variable>
    <variable>
-      <defaultValue>'11/5/2022'</defaultValue>
+      <defaultValue>'01/01/2022'</defaultValue>
       <description></description>
       <id>bd96b8dc-3bb3-4ce9-94fe-ad9e7be9ec5a</id>
       <masked>false</masked>

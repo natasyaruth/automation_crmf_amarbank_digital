@@ -86,15 +86,13 @@ if (WebUI.waitForElementVisible(headerConfirmationElement, 5, FailureHandling.OP
 	WebUI.verifyElementText(headerConfirmationElement, headerConfirmationText)
 	/* We want to click button abort or "batal" */
 	WebUI.click(btnCancelNotification)
+	/* Delete all cookies */
+	WebUI.deleteAllCookies()
+	/* Close the browser */
+	WebUI.closeBrowser()
 } else {
 	/* Delete all cookies */
 	WebUI.deleteAllCookies()
 	/* Close the browser */
 	WebUI.closeBrowser()
 }
-
-/* Delete all cookies */
-WebUI.deleteAllCookies()
-
-/* Close the browser */
-WebUI.closeBrowser()

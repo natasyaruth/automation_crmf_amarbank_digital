@@ -44,14 +44,17 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 /* We want verify element field start date*/
 WebUI.verifyElementPresent(fieldDateFromElement, 5)
 
+/* We want to get first row date element*/
+def firstDate = WebUI.getText(firstRowDateElement)
+
 /* We want input start date example date "11/05/2022"*/
-WebUI.setText(fieldDateFromElement, inputStartEndDateText)
+WebUI.setText(fieldDateFromElement, firstDate)
 
 /* We want verify element field end date*/
 WebUI.verifyElementPresent(fieldDateEndElement, 5)
 
 /* We want input end date example date "19/05/2022"*/
-WebUI.setText(fieldDateEndElement, inputStartEndDateText)
+WebUI.setText(fieldDateEndElement, firstDate)
 
 /* We want verify button "Tampilkan" */
 WebUI.verifyElementPresent(btnShowFilterElement, 5)
@@ -66,7 +69,7 @@ WebUI.click(btnShowFilterElement)
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, inputStartEndDateText)
+WebUI.verifyElementText(firstRowDateElement, firstDate)
 
 /* We want capture the result*/
 WebUI.takeScreenshot()
