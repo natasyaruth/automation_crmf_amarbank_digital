@@ -155,6 +155,24 @@
       <value></value>
       <variableId>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fe7c9d98-50d4-480a-a5eb-863e46a1ac2c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e7a35a35-e11b-4a1c-ad0c-8dc8701e70b6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2ec4b564-b272-4118-bee3-ed69d0fc8026</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -329,5 +347,26 @@
       <id>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</id>
       <masked>false</masked>
       <name>headerAssignCardText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardBtnLastPageassign-card')</defaultValue>
+      <description></description>
+      <id>fe7c9d98-50d4-480a-a5eb-863e46a1ac2c</id>
+      <masked>false</masked>
+      <name>btnLastPage</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e7a35a35-e11b-4a1c-ad0c-8dc8701e70b6</id>
+      <masked>false</masked>
+      <name>oldDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2ec4b564-b272-4118-bee3-ed69d0fc8026</id>
+      <masked>false</masked>
+      <name>newestDate</name>
    </variable>
 </TestCaseEntity>
