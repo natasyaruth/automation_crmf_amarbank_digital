@@ -14,6 +14,8 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.thoughtworks.selenium.webdriven.commands.GetText
+
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
@@ -65,11 +67,14 @@ WebUI.click(btnShowFilterElement)
 /* We want wait element until visible*/
 WebUI.waitForElementVisible(firstRowDateElement, 5)
 
+/* We want to get text from first row of date element*/
+def expectDate = WebUI.getText(firstRowDateElement)
+
 /* We want verify first row date visible*/
 WebUI.verifyElementPresent(firstRowDateElement, 5)
 
 /* We want verify element and text for first element*/
-WebUI.verifyElementText(firstRowDateElement, inputEndDateText)
+WebUI.verifyElementText(firstRowDateElement, expectDate)
 
 /* We want capture the result*/
 WebUI.takeScreenshot()

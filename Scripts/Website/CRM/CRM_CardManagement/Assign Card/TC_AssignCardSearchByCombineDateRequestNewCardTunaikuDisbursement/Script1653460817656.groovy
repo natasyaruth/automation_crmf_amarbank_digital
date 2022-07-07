@@ -10,7 +10,8 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
@@ -42,17 +43,53 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }
 
+/* Set keyword utils*/
+KeywordUtil keylogger = new KeywordUtil()
+
+if (WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText , FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementPresent(fieldRequestCardTypeElement, 5 , FailureHandling.OPTIONAL)) {
+		WebUI.selectOptionByLabel(fieldRequestCardTypeElement, requestNewCardText, false)
+		if (WebUI.verifyElementPresent(fieldCsutomerOriginElement, 5 , FailureHandling.OPTIONAL)) {
+			WebUI.selectOptionByLabel(fieldCsutomerOriginElement, tunaikuDisbursementCustomerOriginText, false)
+			/* We want click button "Tampilkan"*/
+			WebUI.click(btnShowFilterElement)
+			def newestDate = WebUI.getText(firstRowDateElement)
+			keylogger.logInfo(" This one newest Date we got " + newestDate)
+				if (WebUI.verifyElementVisible(btnLastPage , FailureHandling.OPTIONAL)) {
+					WebUI.click(btnLastPage)
+					def oldDate = WebUI.getText(firstRowDateElement)
+					keylogger.logInfo(" This one old Date we got " + oldDate)
+					WebUI.verifyNotMatch(newestDate, oldDate, false)
+					WebUI.refresh()
+				} else {
+					keylogger.logInfo("We don't see the button last page")
+					def oldDate = WebUI.getText(firstRowDateElement)
+					keylogger.logInfo(" This one old Date we got " + oldDate)
+					WebUI.refresh()
+				}
+		} else {
+			keylogger.logInfo("We not find the field customer origin element", FailureHandling.STOP_ON_FAILURE)
+		}
+	} else {
+		keylogger.logInfo("We not find the Request card type" , FailureHandling.STOP_ON_FAILURE)
+	}
+} else {
+	keylogger.logInfo("We are not in assign card" , FailureHandling.STOP_ON_FAILURE)
+}
+println(oldDate)
+println(newestDate)
+
 /* We want verify element field start date*/
 WebUI.verifyElementPresent(fieldDateFromElement, 5)
 
 /* We want input start date example date "11/05/2022"*/
-WebUI.setText(fieldDateFromElement, inputStartDateText)
+WebUI.setText(fieldDateFromElement, oldDate)
 
 /* We want verify element field end date*/
 WebUI.verifyElementPresent(fieldDateEndElement, 5)
 
 /* We want input end date example date "19/05/2022"*/
-WebUI.setText(fieldDateEndElement, inputEndDateText)
+WebUI.setText(fieldDateEndElement, newestDate)
 
 /* We want verify button "Tampilkan" */
 WebUI.verifyElementPresent(btnShowFilterElement, 5)
