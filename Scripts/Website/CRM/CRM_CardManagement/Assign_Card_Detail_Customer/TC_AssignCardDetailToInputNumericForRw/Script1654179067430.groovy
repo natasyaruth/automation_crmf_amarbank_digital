@@ -45,10 +45,13 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 }
 
 /* We want to verify Request ID*/
-WebUI.verifyElementPresent(requestIdElement, 5)
+WebUI.waitForElementVisible(fieldCardTypeElement, 5)
 
 /* We want to choose type card is " kartu baru"*/
 WebUI.selectOptionByLabel(fieldCardTypeElement, fieldCardTypeLabel, false)
+
+/* We want to verify Request ID*/
+WebUI.waitForElementVisible(requestIdElement, 5)
 
 /* We want to click Request ID*/
 WebUI.click(requestIdElement)
@@ -57,25 +60,25 @@ WebUI.click(requestIdElement)
 WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
 
 /* We want to verify button "edit"*/
-WebUI.verifyElementPresent(btnEditDeliveryCard, 5)
+WebUI.waitForElementVisible(btnEditDeliveryCard, 5)
 
 /* We want to click button "Edit"*/
 WebUI.click(btnEditDeliveryCard)
 
 /* We want to verify field "Tempat pengiriman kartu"*/
-WebUI.verifyElementPresent(fieldDeliveryCardPlaceElement, 5)
+WebUI.waitForElementVisible(fieldDeliveryCardPlaceElement, 5)
 
 /* We want to edit data "Tempat pengiriman kartu"*/
 WebUI.selectOptionByLabel(fieldDeliveryCardPlaceElement, fieldDeliveryCardPlaceText, false)
 
 /* We want to verify field "Alamat Lengkap"*/
-WebUI.verifyElementPresent(fieldDeliveryFullAddressElement, 5)
+WebUI.waitForElementVisible(fieldDeliveryFullAddressElement, 5)
 
 /* We want to edit data "Alamat Lengkap"*/
 WebUI.setText(fieldDeliveryFullAddressElement, fieldDeliveryFullAddressText)
 
 /* We want to verify field "Rt"*/
-WebUI.verifyElementPresent(fieldDeliveryRtElement, 5)
+WebUI.waitForElementVisible(fieldDeliveryRtElement, 5)
 
 /* We want to edit data "Rt"*/
 WebUI.setText(fieldDeliveryRtElement, fieldDeliveryRtText)
@@ -84,7 +87,7 @@ WebUI.setText(fieldDeliveryRtElement, fieldDeliveryRtText)
 oldRw = WebUI.getAttribute(fieldDeliveryRwElement, "value")
 
 /* We want to verify field "Rw"*/
-WebUI.verifyElementPresent(fieldDeliveryRwElement, 5)
+WebUI.waitForElementVisible(fieldDeliveryRwElement, 5)
 
 /* We want to edit data "RW"*/
 newRw = WebUI.setText(fieldDeliveryRwElement, fieldDeliveryRwText + RandomStringUtils.randomNumeric(2))
@@ -93,10 +96,10 @@ newRw = WebUI.setText(fieldDeliveryRwElement, fieldDeliveryRwText + RandomString
 WebUI.takeScreenshot()
 
 /* We want to verify button "Cancel"*/
-WebUI.verifyElementPresent(btnCancelElement, 5)
+WebUI.waitForElementVisible(btnCancelElement, 5)
 
 /* We want to verify button "Simpan"*/
-WebUI.verifyElementPresent(btnSaveAddressElement, 5)
+WebUI.waitForElementVisible(btnSaveAddressElement, 5)
 
 /* We want to verify button cancel click able*/
 WebUI.verifyElementClickable(btnCancelElement)

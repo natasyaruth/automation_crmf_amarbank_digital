@@ -37,15 +37,19 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
+	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }else {
 	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }
 
 /* We want to verify Request ID*/
-WebUI.verifyElementPresent(requestIdElement, 5)
+WebUI.waitForElementVisible(fieldCardTypeElement, 5)
 
 /* We want to choose type card is " kartu baru"*/
 WebUI.selectOptionByLabel(fieldCardTypeElement, fieldCardTypeLabel, false)
+
+/* We want to verify Request ID*/
+WebUI.waitForElementVisible(requestIdElement, 5)
 
 /* We want to click Request ID*/
 WebUI.click(requestIdElement)
