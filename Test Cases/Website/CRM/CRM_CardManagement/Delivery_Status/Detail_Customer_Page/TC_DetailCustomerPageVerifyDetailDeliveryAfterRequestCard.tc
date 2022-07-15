@@ -164,7 +164,7 @@
       <name>headerDeliveryStatus</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/TxtReferenceId')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusTxtReferenceId')</defaultValue>
       <description></description>
       <id>dada57c4-756f-44ac-bc89-4cc166eaaec1</id>
       <masked>false</masked>
@@ -206,7 +206,7 @@
       <name>btnBackToDelveryPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/BtnSearch')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/Bucketlist/DeliveryStatusBtnSearch')</defaultValue>
       <description></description>
       <id>602501b6-1071-4e1e-b676-e929018d8ddf</id>
       <masked>false</masked>
