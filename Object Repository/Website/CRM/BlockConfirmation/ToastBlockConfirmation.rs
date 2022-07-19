@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>ToastBlockConfirmation</name>
+   <tag></tag>
+   <elementGuidId>2c05c52f-862e-48fc-96b7-6c87018c7182</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>section.u-ta-center.u-pd-large</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='outer-root']/div/div/section</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>section</value>
+      <webElementGuid>181f2568-74a3-43b1-819b-f56fcd99e826</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-ta-center u-pd-large</value>
+      <webElementGuid>b6c6707c-4e60-4686-9150-6bde89fa9ba7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>KonfirmasiNasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahuluLanjutkan Batal </value>
+      <webElementGuid>e035f09c-9cc9-4422-bddb-54ca63a304fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]</value>
+      <webElementGuid>b0c756d1-7a48-48e8-81fd-fe878c72e62f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section</value>
+      <webElementGuid>521983d7-2469-450f-98c8-2cbca8014e75</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detail'])[1]/following::section[1]</value>
+      <webElementGuid>242b36a3-c098-4845-bb0b-d90ffd5f7af0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section</value>
+      <webElementGuid>9be91133-02dd-4659-9c23-cf57153f2df6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//section[(text() = 'KonfirmasiNasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahuluLanjutkan Batal ' or . = 'KonfirmasiNasabah ini masih dalam proses. Mohon untuk dilanjutkan terlebih dahuluLanjutkan Batal ')]</value>
+      <webElementGuid>4896d90f-bd16-4ec3-ac3c-56ee8e775cd4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
