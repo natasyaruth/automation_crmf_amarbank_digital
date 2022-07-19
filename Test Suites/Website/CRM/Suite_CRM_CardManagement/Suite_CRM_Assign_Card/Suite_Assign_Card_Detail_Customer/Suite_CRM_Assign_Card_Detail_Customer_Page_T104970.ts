@@ -119,7 +119,7 @@
       <guid>ea8fc65b-c713-4554-80d9-ed6b0f705e37</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign_Card_Detail_Customer/TC_AssignCardDetailToSelectProvince</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign Card/Assign_Card_Detail_Customer/TC_AssignCardDetailToSelectProvince</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

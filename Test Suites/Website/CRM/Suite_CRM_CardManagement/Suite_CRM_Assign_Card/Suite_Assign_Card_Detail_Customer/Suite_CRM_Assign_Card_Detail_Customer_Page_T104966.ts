@@ -119,7 +119,7 @@
       <guid>dbf86cab-ea83-43a2-ac20-ef97fe97b0f5</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputMinusInFieldRw</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign Card/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputMinusInFieldRw</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

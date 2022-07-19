@@ -119,7 +119,7 @@
       <guid>9666fd55-3121-4218-9d90-a9b75ea1c521</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputCharacterMoreThan3</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign Card/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputCharacterMoreThan3</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

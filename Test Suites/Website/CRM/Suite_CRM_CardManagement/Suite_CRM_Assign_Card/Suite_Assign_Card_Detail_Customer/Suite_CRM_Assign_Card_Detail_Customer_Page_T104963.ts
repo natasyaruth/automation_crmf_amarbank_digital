@@ -119,7 +119,7 @@
       <guid>63e5fb08-3852-4635-968d-077cba00c47d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputInvalidSpecialCharacter</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign Card/Assign_Card_Detail_Customer/TC_AssignCardDetailToInputInvalidSpecialCharacter</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
