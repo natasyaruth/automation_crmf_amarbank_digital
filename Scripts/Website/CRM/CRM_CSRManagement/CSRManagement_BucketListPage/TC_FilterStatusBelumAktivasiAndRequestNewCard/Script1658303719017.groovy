@@ -45,6 +45,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	} else {
 		keyLogger.markFailed("We don't find alert confirmation")
 	}
+	WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
@@ -52,8 +53,10 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 /*'We want to check element visible filter card status , select that and
  *  then we want to capture account number before and after'*/
 if (WebUI.verifyElementVisible(drpDwnChooseStatusCard ,FailureHandling.OPTIONAL)) {
+	/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
+	WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
 	/*'We want to choose text "Block Kartu ATM"'*/	
-	WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Block Kartu ATM", false)
+	WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Permintaan Kartu Baru", false)
 	if (WebUI.verifyElementVisible(firstRowRequestIdElement , FailureHandling.OPTIONAL)) {
 		/* 'We want to inspect Customer Name & No rekening' */		
 		noRek = WebUI.getText(firstRowNoRek)
@@ -67,7 +70,7 @@ if (WebUI.verifyElementVisible(drpDwnChooseStatusCard ,FailureHandling.OPTIONAL)
 }
 noRekText = noRek
 custNameText = custName
-/*'We want to find menu "Data Kartu ATM"'*/
+/*'We want to check "Data Kartu ATM"'*/
 if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
 	/*	'We verify we can access Customer Detail'*/
 	TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)
@@ -76,97 +79,72 @@ if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) 
 	if (txtRekening == true) {
 		WebUI.click(btnDataCardATM)
 	} else {
-		keyLogger.markFailed("We cannot find the info about " + txtRekening)
+		keyLogger.markFailed("We cannot find the info about ")
 	}
 }
 /*'We want matching No Rekeing'*/
-String accountNumberUnblock = WebUI.getAttribute(dataAccountNumber, "value")
-WebUI.verifyEqual(accountNumberUnblock, noRekText)
+String accountNumber = WebUI.getAttribute(dataAccountNumber, "value")
+WebUI.verifyEqual(accountNumber, noRekText)
 /*'We want to matching Name'*/
-String dataCustNameUnblock = WebUI.getAttribute(dataCustName, "value")
-WebUI.verifyEqual(dataCustNameUnblock, custNameText)
-/*'We want to check notification block ATM card'*/
-WebUI.verifyElementVisible(notifiBlockCardText)
-/*'We want to inspect button "Unlock Kartu"'*/
-boolean btnCardUnlock = WebUI.verifyElementVisible(btnCardUnlockElement)
-if (btnCardUnlock == true) {
-	/*'We want to click button "Unlock Kartu"'*/	
-	WebUI.click(btnCardUnlockElement)
-	if (WebUI.verifyElementVisible(headerTextUnblockCard , FailureHandling.OPTIONAL)) {
-		String questionMother = WebUI.getText(motherElementText)
-		String questionAccount = WebUI.getText(accountNumberText)
-		String questionPhone = WebUI.getText(phoneNumberText)
-		List infoList = new ArrayList()
-		infoList.add(questionMother)
-		infoList.add(questionAccount)
-		infoList.add(questionPhone)
-		if (infoList.contains("Menanyakan nama ibu kandung")) {
-			WebUI.click(chkMotherName)
-		} else {
-			keyLogger.markFailed("We not found " +questionMother)
-		}
-		if (infoList.contains("Menanyakan No. Rekening")) {
-			WebUI.click(chkAccountNumber)
-		} else {
-			keyLogger.markFailed("We not found" +questionAccount)
-		}
-		if (infoList.contains("Menanyakan No. Handphone yang terdaftar")) {
-			WebUI.click(chkPhoneNumber)
-		} else {
-			keyLogger.markFailed("We not found" +questionPhone)
-		}
-		String reCheckAccountNumber = WebUI.getText(accountNumberElement)
-		String generateText = RandomStringUtils.randomAlphanumeric(10)
-		WebUI.verifyEqual(reCheckAccountNumber, noRekText)
-		WebUI.setText(txtUnblockCardReason , generateText)
-		WebUI.takeScreenshot()
-		WebUI.click(btnSubmitUnlockCard)
-	} else {
-		keyLogger.markFailed("We not find header from text unblock card page")
-	}
+String dataCustName = WebUI.getAttribute(dataCustName, "value")
+WebUI.verifyEqual(dataCustName, custNameText)
+/*'We want to check notification "Belum Aktivasi & Permintaan Kartu Baru"'*/
+String textNotActivation = WebUI.getText(txtNotActivation)
+String textReqNewCard = WebUI.getText(txtReqNewCard)
+List notificationList = new ArrayList()
+notificationList.add(textNotActivation)
+notificationList.add(textReqNewCard)
+if (notificationList.contains("Belum Aktivasi")) {
+	keyLogger.markPassed("We found ")
+	WebUI.takeScreenshot()
 } else {
-	keyLogger.markFailed("Button unlock didn't showing")
+	keyLogger.markFailed("We Not Found ")
 }
-/*'We want to enable again block card'*/
-TestObject checkBlockedCard = new TestObject().addProperty('text',ConditionType.CONTAINS,"Block Kartu")
-String blockCardText = WebUI.verifyElementPresent(checkBlockedCard, 5)
-boolean btnToBlock = WebUI.verifyElementVisible(btnWantToBlockCard)
-if (btnToBlock == true) {
-	WebUI.click(btnWantToBlockCard)
-	WebUI.verifyElementText(txtHeaderBlockATM, "Block Kartu ATM")
-	String questionMother = WebUI.getText(motherElementText)
-	String questionAccount = WebUI.getText(accountNumberText)
-	String questionPhone = WebUI.getText(phoneNumberText)
-	String questionReasonBlock = WebUI.getText(temporaryBlockText)
-	List infoList = new ArrayList()
-	infoList.add(questionMother)
-	infoList.add(questionAccount)
-	infoList.add(questionPhone)
-	infoList.add(questionReasonBlock)
-	if (infoList.contains("Menanyakan nama ibu kandung")) {
-		WebUI.click(chkMotherName)
-	} else {
-		keyLogger.markFailed("We not found " +questionMother)
-	}
-	if (infoList.contains("Menanyakan No. Rekening")) {
-		WebUI.click(chkAccountNumber)
-	} else {
-		keyLogger.markFailed("We not found" +questionAccount)
-	}
-	if (infoList.contains("Menanyakan No. Handphone yang terdaftar")) {
-		WebUI.click(chkPhoneNumber)
-	} else {
-		keyLogger.markFailed("We not found" +questionPhone)
-	}
-	if (infoList.contains("Blokir sementara")) {
-		WebUI.click(radioBox)
-	} else {
-		keyLogger.markFailed("We not found"  +questionReasonBlock)
-	}
-	WebUI.waitForElementClickable(btnBlockATMCard, 5)
-	WebUI.click(btnBlockATMCard)
+if (notificationList.contains("Permintaan Kartu Baru")) {
+	keyLogger.markPassed("We found ")
+	WebUI.takeScreenshot()
+} else {
+	keyLogger.markFailed("We Not Found ")
 }
 /*'We want to click button back'*/
 WebUI.verifyElementVisible(btnBackBucketList)
 WebUI.click(btnBackBucketList)
+/* We want to check to filter with status "Belum Aktivasi and check it"*/
+boolean checkDropDownStatus = WebUI.waitForElementVisible(drpDwnChooseStatusCard, 5)
+if (checkDropDownStatus == true) {
+	for (int i=0;i<checkListByOrder.size();i++) {
+		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Belum Aktivasi", false)
+		WebUI.click(checkListByOrder.get(i))
+		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
+			WebUI.waitForPageLoad(5)
+			/*	'We verify we can access Customer Detail'*/
+			TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)
+			WebUI.verifyElementPresent(txtAccountNumb, 5)
+			boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
+			if (txtRekening == true) {
+				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
+				requestIdText = WebUI.getText(reqIdDetailNasabah)
+				WebUI.click(btnDataCardATM)
+				WebUI.waitForPageLoad(2)
+				/*'We want to check notification "Belum Aktivasi"'*/
+//				WebUI.waitForElementVisible(txtNotActivation, 5)
+				TestObject textNotYetActivation = new TestObject().addProperty('text', ConditionType.CONTAINS , "Belum Aktivasi" )
+				if (WebUI.verifyElementPresent(textNotYetActivation, 5)) {
+					keyLogger.markPassed("We found it")
+					WebUI.takeScreenshot()
+				} else {
+					keyLogger.markFailed("We Not Found ")
+					println(requestIdText)
+				}
+			} else {
+				keyLogger.markFailed("We cannot find the info about ")
+			}
+			/*'We want to click button back'*/
+			WebUI.verifyElementVisible(btnBackBucketList)
+			WebUI.click(btnBackBucketList)
+		}
+	}
+} else {
+	keyLogger.markFailed("We not find the element")
+}
 WebUI.refresh()

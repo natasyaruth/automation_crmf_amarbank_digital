@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtQuestionMotherNam</name>
+   <name>LbRequestNewCard</name>
    <tag></tag>
-   <elementGuidId>8ff0cf6d-5de2-400c-91c5-47828c9f9f68</elementGuidId>
+   <elementGuidId>99085484-9ea6-4ac3-96c4-35e5548aff79</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//label[(text() = 'Menanyakan nama ibu kandung' or . = 'Menanyakan nama ibu kandung')]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Belum Aktivasi'])[1]/following::span[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.Checkbox.u-FontSize-large.u-MarginBottom-small > label</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,95 +21,95 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>label</value>
-      <webElementGuid>a8752ec8-55c4-4099-bd3a-f91507ac3ffa</webElementGuid>
+      <value>span</value>
+      <webElementGuid>a182e75d-5eb1-43d3-a9cb-0697ae9538e9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>for</name>
+      <name>class</name>
       <type>Main</type>
-      <value>askMotherName</value>
-      <webElementGuid>a5a45943-ddca-462c-b517-6817bb9abec4</webElementGuid>
+      <value>u-MarginLeft-small</value>
+      <webElementGuid>97a1eafb-f095-4112-88e3-5b5d0cee6006</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Menanyakan nama ibu kandung</value>
-      <webElementGuid>756ead9d-8f09-4ba4-b77e-b80bd26b29b1</webElementGuid>
+      <value>Permintaan Kartu Baru</value>
+      <webElementGuid>0c6024e5-048b-4e36-9f22-4010024158f7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog UnblockCardModal&quot;]/div[@class=&quot;u-MarginBottom-large&quot;]/div[@class=&quot;CardConfirmationCheckboxes&quot;]/div[@class=&quot;u-MarginBottom&quot;]/div[@class=&quot;Checkbox u-FontSize-large u-MarginBottom-small&quot;]/label[1]</value>
-      <webElementGuid>6038d7a1-9993-45fb-bb36-972d96525c4c</webElementGuid>
+      <value>id(&quot;AccountInfoForm&quot;)/div[@class=&quot;u-Flex u-MarginBottom&quot;]/div[2]/span[@class=&quot;u-MarginLeft-small&quot;]</value>
+      <webElementGuid>e677eee7-364c-477b-8e69-a47d3ed9dcdf</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='outer-root']/div/div/div/div/div/div/label</value>
-      <webElementGuid>e8d6fdd6-83cd-4fb9-9e75-b03e7d4d8a2c</webElementGuid>
+      <value>//div[@id='AccountInfoForm']/div/div[2]/span</value>
+      <webElementGuid>449e8195-fa10-4f42-a917-60dc5bec1e9e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Hal-hal yang perlu dikonfirmasi dalam unblock kartu ATM'])[1]/following::label[1]</value>
-      <webElementGuid>7d49c7fd-c69a-43c9-9b63-498eb6970e0a</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Belum Aktivasi'])[1]/following::span[1]</value>
+      <webElementGuid>8341637f-41e0-42a4-8044-a449058a217a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Unblock Kartu ATM'])[1]/following::label[1]</value>
-      <webElementGuid>2d5b09ea-da65-4fbf-953a-fff636f5e7a8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Kartu ATM'])[1]/following::span[2]</value>
+      <webElementGuid>65cd5140-f785-4b2d-8815-04ada0a7402c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menanyakan No. Rekening'])[1]/preceding::label[1]</value>
-      <webElementGuid>158d4ab5-3ed5-4359-9ad1-ba36eef3c0a6</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No.Rekening'])[1]/preceding::span[1]</value>
+      <webElementGuid>49803565-306c-41d7-a120-747b456122ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Menanyakan No. Handphone yang terdaftar'])[1]/preceding::label[2]</value>
-      <webElementGuid>81a32217-25cc-419b-9d23-c175d9a12a93</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kartu'])[1]/preceding::span[1]</value>
+      <webElementGuid>70c313ac-35d8-4db0-9e14-2f4e03b66a3f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Menanyakan nama ibu kandung']/parent::*</value>
-      <webElementGuid>8e1698dd-9133-4ce6-ba5a-a954c729ca62</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Permintaan Kartu Baru']/parent::*</value>
+      <webElementGuid>30e6c52a-9ea3-49be-8e35-4940130a18f2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/div/div/div/div/div/label</value>
-      <webElementGuid>3afe9a1b-d1ad-4e75-bc9c-7e63ed43a208</webElementGuid>
+      <value>//div/div/div[2]/span</value>
+      <webElementGuid>2fe19a70-00ae-4942-94ce-8b78faf63ec2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//label[(text() = 'Menanyakan nama ibu kandung' or . = 'Menanyakan nama ibu kandung')]</value>
-      <webElementGuid>69765afd-3724-4d67-9688-8da527b2b9d8</webElementGuid>
+      <value>//span[(text() = 'Permintaan Kartu Baru' or . = 'Permintaan Kartu Baru')]</value>
+      <webElementGuid>ff98c96b-ce3f-43f3-8d54-457d4736a02e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Menanyakan No. Rekening'])[1]/following::label[1]</value>
+         <value>//label[(text() = 'Menanyakan No. Handphone yang terdaftar' or . = 'Menanyakan No. Handphone yang terdaftar')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -21,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>label</value>
-      <webElementGuid>93bbfde3-d1d1-4231-9b49-73101871e84c</webElementGuid>
+      <webElementGuid>136ad64f-6d10-4e90-b598-5ee2918d3c7d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -29,7 +29,7 @@
       <name>for</name>
       <type>Main</type>
       <value>askPhoneNumber</value>
-      <webElementGuid>e783356e-2c7e-43da-bbd6-af51978677a4</webElementGuid>
+      <webElementGuid>afe5857b-5f09-4c77-bf7b-955dae74b5ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -37,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Menanyakan No. Handphone yang terdaftar</value>
-      <webElementGuid>dea9c215-bf21-4039-a11e-8c870b1768a1</webElementGuid>
+      <webElementGuid>806aca0c-ce5d-4289-8517-077e5aed1f77</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -45,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog UnblockCardModal&quot;]/div[@class=&quot;u-MarginBottom-large&quot;]/div[@class=&quot;CardConfirmationCheckboxes&quot;]/div[@class=&quot;u-MarginBottom&quot;]/div[@class=&quot;Checkbox u-FontSize-large u-MarginBottom-small&quot;]/label[1]</value>
-      <webElementGuid>39b8fc8f-2a54-42d8-b5ab-b1391a3ddfe8</webElementGuid>
+      <webElementGuid>4a9de57b-a9d1-4db6-af3b-b21cd5c8efb1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -53,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='outer-root']/div/div/div/div/div/div[3]/label</value>
-      <webElementGuid>29590565-684d-41d6-bc66-ad35a87884c9</webElementGuid>
+      <webElementGuid>e0072152-393f-4e66-a339-f38181668564</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Menanyakan No. Rekening'])[1]/following::label[1]</value>
-      <webElementGuid>30eda893-0532-4291-8398-0b20de4cdeff</webElementGuid>
+      <webElementGuid>33573eee-69d9-4558-b7de-e3f695e525bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -69,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Menanyakan nama ibu kandung'])[1]/following::label[2]</value>
-      <webElementGuid>1c28cfc0-0fa7-4f0e-8e68-8dc82113cb44</webElementGuid>
+      <webElementGuid>f0470059-20c3-453d-9768-ebcde03ccedb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -77,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Ibu Kandung'])[1]/preceding::label[1]</value>
-      <webElementGuid>781ff34c-2225-4641-af05-a2d0e955b968</webElementGuid>
+      <webElementGuid>76c30fdc-b07a-4a03-9801-c7f0628f82a2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='fasjdajs'])[1]/preceding::label[2]</value>
-      <webElementGuid>98e122a2-1b9f-449a-a840-57ccb68b3ac5</webElementGuid>
+      <webElementGuid>b77e8fe1-3464-44c8-bbee-59d64e3e57c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -93,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Menanyakan No. Handphone yang terdaftar']/parent::*</value>
-      <webElementGuid>95e11c85-7832-446d-9011-0643af1a6762</webElementGuid>
+      <webElementGuid>63de15a3-541b-41d4-a8fc-c5af6bae72b6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -101,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/div[3]/label</value>
-      <webElementGuid>cd7e1f9e-0974-4f05-a5e5-6bce773f5a9e</webElementGuid>
+      <webElementGuid>6b199c75-3c85-4bbc-b1cd-e8a584862e48</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -109,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//label[(text() = 'Menanyakan No. Handphone yang terdaftar' or . = 'Menanyakan No. Handphone yang terdaftar')]</value>
-      <webElementGuid>35fa02a0-e704-4d5a-a58c-d6104b492713</webElementGuid>
+      <webElementGuid>7b7607f2-331c-45de-bd30-38162b6d6fd3</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
