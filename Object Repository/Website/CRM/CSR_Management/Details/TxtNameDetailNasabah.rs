@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>TxtReqIdCustDetail</name>
+   <name>TxtNameDetailNasabah</name>
    <tag></tag>
-   <elementGuidId>792d712a-47b7-48c5-85d4-59d8bf87c730</elementGuidId>
+   <elementGuidId>32997ce1-e556-4504-904e-2c52a35c284c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::div[1]</value>
-      </entry>
-      <entry>
-         <key>BASIC</key>
-         <value>//*[(text() = '10000298' or . = '10000298')]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[1]/following::div[1]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>div.DataDisplay-value</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -26,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>c691b1a0-e101-4fe1-88c2-17504502933a</webElementGuid>
+      <webElementGuid>811acb76-965d-429b-ba36-14322c03c577</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,15 +30,15 @@
       <name>class</name>
       <type>Main</type>
       <value>DataDisplay-value</value>
-      <webElementGuid>2163a123-95c0-4052-832c-7a924431d8c9</webElementGuid>
+      <webElementGuid>69552f46-1daf-42e4-903e-22ff9c896c74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>10000298</value>
-      <webElementGuid>b0d3b2f4-f674-41fa-b702-df498c0845a9</webElementGuid>
+      <value>NEWSTAGING TEST</value>
+      <webElementGuid>f1e82b5b-1d9e-4dd7-aa68-1b237dcabba8</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,70 +46,70 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/section[@class=&quot;wrapper has--navigation&quot;]/section[@class=&quot;CustomerDetail-content&quot;]/div[@class=&quot;Card u-MarginBottom-large&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;u-Flex u-AlignItems-start&quot;]/div[@class=&quot;DataDisplay u-MarginRight-large&quot;]/div[@class=&quot;DataDisplay-value&quot;]</value>
-      <webElementGuid>b6644da0-d6f1-4dbf-91f9-92a472820517</webElementGuid>
+      <webElementGuid>df2a9857-3c7b-488b-ac19-92ba252bf098</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/section/section/div/section[2]/div/div/div</value>
-      <webElementGuid>b117838f-d1bc-4ba6-be3c-32c74dda84aa</webElementGuid>
+      <value>//div[@id='root']/div/section/section/div/section[2]/div/div[2]/div</value>
+      <webElementGuid>5fe692fc-49f1-4487-80c1-6f39a9ecc6d9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::div[1]</value>
-      <webElementGuid>933147d1-9917-4568-b2b0-c6d1ee8dd040</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[1]/following::div[1]</value>
+      <webElementGuid>72cdbc98-3e49-4e05-966c-ca58e04293bb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detil Nasabah'])[1]/following::div[3]</value>
-      <webElementGuid>d9900374-377e-4bb9-a7fa-c914b78ebfc8</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::div[3]</value>
+      <webElementGuid>4a95cc9d-4c97-42b1-976b-183d8b544c4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Lengkap'])[1]/preceding::div[1]</value>
-      <webElementGuid>b0c39060-32a9-435e-9862-a680307decc1</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipe Nasabah'])[1]/preceding::div[1]</value>
+      <webElementGuid>189130b1-f1e8-40df-a3a5-36dc00a27b91</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='NEWSTAGING TEST'])[1]/preceding::div[1]</value>
-      <webElementGuid>3efb490c-b35b-494f-8832-f3ccdb370835</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nasabah Senyumku'])[1]/preceding::div[1]</value>
+      <webElementGuid>08849914-ae23-44cb-90c8-0b3bec0843c0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='10000298']/parent::*</value>
-      <webElementGuid>de83d19a-4d84-4d8d-8d01-11e1ed2b44e9</webElementGuid>
+      <value>//*/text()[normalize-space(.)='NEWSTAGING TEST']/parent::*</value>
+      <webElementGuid>a572e586-2930-43ce-9243-599c60b02eb3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/section[2]/div/div/div</value>
-      <webElementGuid>7bc837f4-4031-4e66-bcf8-fa181d45b1ae</webElementGuid>
+      <value>//div[2]/div</value>
+      <webElementGuid>87d3d3ea-b6f9-4909-b782-73689fcc3446</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = '10000298' or . = '10000298')]</value>
-      <webElementGuid>86bd70f8-11ee-49d0-933e-60b8195c29f1</webElementGuid>
+      <value>//div[(text() = 'NEWSTAGING TEST' or . = 'NEWSTAGING TEST')]</value>
+      <webElementGuid>6373f3e2-3e61-4d3b-9eb0-7a0f8ae7152a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

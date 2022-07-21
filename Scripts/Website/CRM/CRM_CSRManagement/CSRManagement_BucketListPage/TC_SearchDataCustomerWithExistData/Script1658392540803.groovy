@@ -35,6 +35,7 @@ if (checkMenuCsr == true) {
 } else {
 	keyLogger.markFailed("Something happen with menu CSR Management")
 }
+
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
 if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
@@ -42,6 +43,8 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
+		WebUI.waitForElementVisible(headerCSRManagementElement, 5)
+		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else {
 		keyLogger.markFailed("We don't find alert confirmation")
 	}
@@ -50,70 +53,15 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check element visible filter card status , select that and
- *  then we want to capture account number before and after'*/
-if (WebUI.verifyElementVisible(drpDwnChooseStatusCard ,FailureHandling.OPTIONAL)) {
-	/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
-	WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
-	/*'We want to choose text "Block Kartu ATM"'*/	
-	WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Permintaan Kartu Baru", false)
-	if (WebUI.verifyElementVisible(firstRowRequestIdElement , FailureHandling.OPTIONAL)) {
-		/* 'We want to inspect Customer Name & No rekening' */		
-		noRek = WebUI.getText(firstRowNoRek)
-		custName = WebUI.getText(firstRowCustName)
-		WebUI.click(firstRowRequestIdElement)
-	} else {
-		keyLogger.markFailed("We dont find request ID with these condition")
-	}
-} else {
-	keyLogger.markFailed("We dont find the filter")
-}
-noRekText = noRek
-custNameText = custName
-/*'We want to check "Data Kartu ATM"'*/
-if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
-	/*	'We verify we can access Customer Detail'*/
-	TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)
-	WebUI.verifyElementPresent(txtAccountNumb, 5)
-	boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
-	if (txtRekening == true) {
-		WebUI.click(btnDataCardATM)
-	} else {
-		keyLogger.markFailed("We cannot find the info about ")
-	}
-}
-/*'We want matching No Rekeing'*/
-String accountNumber = WebUI.getAttribute(dataAccountNumber, "value")
-WebUI.verifyEqual(accountNumber, noRekText)
-/*'We want to matching Name'*/
-String dataCustName = WebUI.getAttribute(dataCustName, "value")
-WebUI.verifyEqual(dataCustName, custNameText)
-/*'We want to check notification "Belum Aktivasi & Permintaan Kartu Baru"'*/
-String textNotActivation = WebUI.getText(txtNotActivation)
-String textReqNewCard = WebUI.getText(txtReqNewCard)
-List notificationList = new ArrayList()
-notificationList.add(textNotActivation)
-notificationList.add(textReqNewCard)
-if (notificationList.contains("Belum Aktivasi")) {
-	keyLogger.markPassed("We found ")
-	WebUI.takeScreenshot()
-} else {
-	keyLogger.markFailed("We Not Found ")
-}
-if (notificationList.contains("Permintaan Kartu Baru")) {
-	keyLogger.markPassed("We found ")
-	WebUI.takeScreenshot()
-} else {
-	keyLogger.markFailed("We Not Found ")
-}
-/*'We want to click button back'*/
-WebUI.verifyElementVisible(btnBackBucketList)
-WebUI.click(btnBackBucketList)
-/* We want to check to filter with status "Belum Aktivasi and check it"*/
+
+/* We want to check to filter with status "Semua" and check it , after that 
+ * I will choose one by one the detail and then I re-check data in details to bucket list by search request ID*/
 boolean checkDropDownStatus = WebUI.waitForElementVisible(drpDwnChooseStatusCard, 5)
 if (checkDropDownStatus == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
-		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Belum Aktivasi", false)
+		/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
+		WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
+		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)
 		WebUI.click(checkListByOrder.get(i))
 		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
 			WebUI.waitForPageLoad(5)
@@ -122,25 +70,35 @@ if (checkDropDownStatus == true) {
 			WebUI.verifyElementPresent(txtAccountNumb, 5)
 			boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
 			if (txtRekening == true) {
+				WebUI.delay(2)
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
+				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
 				WebUI.click(btnDataCardATM)
-				WebUI.waitForPageLoad(2)
-				/*'We want to check notification "Belum Aktivasi"'*/
-				TestObject textNotYetActivation = new TestObject().addProperty('text', ConditionType.CONTAINS , "Belum Aktivasi" )
-				if (WebUI.verifyElementPresent(textNotYetActivation, 5)) {
-					keyLogger.markPassed("We found it")
-					WebUI.takeScreenshot()
+				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
+				WebUI.click(btnBackBucketList)
+				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
+				if (inBucketListPage == true) {
+					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
+					if (existFieldReqId == true) {
+						WebUI.setText(fieldReqId, requestIdText)
+						WebUI.click(btnSearch)
+						WebUI.verifyTextPresent(firstRowNoRekText, false)
+						WebUI.verifyTextPresent(firstRowCustNameText, false)
+						WebUI.refresh()
+					} else {
+						keyLogger.markFailed("We not found field request ID")
+					}
 				} else {
-					keyLogger.markFailed("We Not Found ")
-					println(requestIdText)
+					keyLogger.markFailed("We not back at bucket list page")
 				}
+								
 			} else {
 				keyLogger.markFailed("We cannot find the info about ")
 			}
-			/*'We want to click button back'*/
-			WebUI.verifyElementVisible(btnBackBucketList)
-			WebUI.click(btnBackBucketList)
+		} else {
+			keyLogger.markFailed("We not find header customer detail")
 		}
 	}
 } else {
