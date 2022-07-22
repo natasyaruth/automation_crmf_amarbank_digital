@@ -124,7 +124,7 @@
       <name>alertConfirmationPopUpText</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementTxtHeader')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtHeader')</defaultValue>
       <description></description>
       <id>db4aa739-59fb-4a9d-b21f-c2a99490bff8</id>
       <masked>false</masked>

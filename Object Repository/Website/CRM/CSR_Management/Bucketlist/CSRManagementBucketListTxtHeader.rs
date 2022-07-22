@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>CSRManagementTxtHeader</name>
+   <name>CSRManagementBucketListTxtHeader</name>
    <tag></tag>
    <elementGuidId>7af21b74-e825-41c2-b683-6bf26a047fe2</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h1.PageTitle.u-MarginBottom</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/div[2]/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.PageTitle.u-MarginBottom</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
