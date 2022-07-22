@@ -52,7 +52,7 @@
    <socketTimeout>-1</socketTimeout>
    <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
-      <defaultValue>GlobalVariable.hostnameCRM</defaultValue>
+      <defaultValue>GlobalVariable.baseUrlRegOtoku</defaultValue>
       <description></description>
       <id>611973a4-8159-4170-bf1d-95dc313b4afa</id>
       <masked>false</masked>
