@@ -119,7 +119,7 @@
       <guid>2f0ed066-a56b-4c9a-92b6-8fb4338b7034</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Card Printing/Receipt/TC_Card_Printing_PrintReceiptWithSelectedData</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement_CardPrinting/CardPrinting_Receipt/TC_CardPrintingPrintReceiptWithSelectedData</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
