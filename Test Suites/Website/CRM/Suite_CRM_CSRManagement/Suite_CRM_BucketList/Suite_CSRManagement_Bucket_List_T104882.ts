@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>https://bankamar.testrail.io/index.php?/tests/view/104878</description>
-   <name>Suite_CSRManagement_Bucket_List_T104878</name>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104882</description>
+   <name>Suite_CSRManagement_Bucket_List_T104882</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>b05645e9-c1a0-416e-bf39-59fb7e727705</testSuiteGuid>
+   <testSuiteGuid>77a7b992-6f83-496e-a025-0725aa58a340</testSuiteGuid>
    <testCaseLink>
-      <guid>51c04c38-c8f7-43eb-af8e-ef61e17ef2d3</guid>
+      <guid>a79070da-1801-476c-a268-fbc088c73038</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -25,7 +25,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>d68bff36-9859-401d-bd40-fefb1a8c04b5</guid>
+      <guid>65f66fdb-ad4f-4c1b-ad86-482d10e98ce4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -116,7 +116,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>73b30fc3-3528-45df-b49b-8e64b3f24ec8</guid>
+      <guid>b58e0b01-830c-4072-946b-2faf87cb9f27</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_BucketListPage/TC_SearchDataCustomerWithCorrectPhoneNumberAndCorrectReqId</testCaseId>
@@ -381,7 +381,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>c44a0478-d670-4940-8112-6f6065c31ca8</guid>
+      <guid>305fa9c4-84bb-45f2-a7eb-245119abb641</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
