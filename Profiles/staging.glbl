@@ -184,4 +184,24 @@
       <initValue>'https://staging-crm-rekol.tunaiku.com/card-management/delivery-status/11'</initValue>
       <name>UrlDeliveryNotFound</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPendingPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanVanEnrouteToPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPickupFailed</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanSuccessfulPickup</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
