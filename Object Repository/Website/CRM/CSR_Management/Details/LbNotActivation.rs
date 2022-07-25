@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LbNotActivation</name>
+   <tag></tag>
+   <elementGuidId>cd5a5556-ae87-4f4a-9d17-b245aa81341a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='No.Rekening'])[1]/preceding::span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.u-MarginLeft-small</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>9650bdce-c884-4b3d-9deb-649fb0681fa6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-MarginLeft-small</value>
+      <webElementGuid>aecaa698-075c-4ae5-8cbb-304f59ff85aa</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Belum Aktivasi</value>
+      <webElementGuid>be018bd3-69fa-4a71-a05f-1141d510289a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AccountInfoForm&quot;)/div[@class=&quot;u-Flex u-MarginBottom&quot;]/div[@class=&quot;u-MarginRight-large&quot;]/span[@class=&quot;u-MarginLeft-small&quot;]</value>
+      <webElementGuid>18db29bd-fe96-4665-97d4-54aad867b0e4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AccountInfoForm']/div/div/span</value>
+      <webElementGuid>a8bbb71b-31b2-4429-9975-6c53989490f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Kartu ATM'])[1]/following::span[1]</value>
+      <webElementGuid>aef15d1e-4d34-4f6c-9a4c-fa5709cebdd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC'])[1]/following::span[1]</value>
+      <webElementGuid>cab3893c-ad85-4afd-9db9-2fc442c7ed11</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Permintaan Kartu Baru'])[1]/preceding::span[1]</value>
+      <webElementGuid>c0c03c0e-8347-4812-8ebb-988e54f61609</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No.Rekening'])[1]/preceding::span[2]</value>
+      <webElementGuid>4a428e56-46e6-4b8e-ab80-b65a3edaf98f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Belum Aktivasi']/parent::*</value>
+      <webElementGuid>1973d3e5-386c-489a-94bc-fe4e227b9281</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/div/span</value>
+      <webElementGuid>dd211ab8-93ec-456c-977e-a7f05054c023</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Belum Aktivasi' or . = 'Belum Aktivasi')]</value>
+      <webElementGuid>3a00cbbd-e30a-4bfe-ac9a-2daaf24b7795</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
