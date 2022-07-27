@@ -54,7 +54,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Phone Number with invalid condition'*/
+/*'We want to check the correct request ID and invalid no rekening'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
@@ -71,7 +71,8 @@ if (checkHeaderCsrManagement == true) {
 			if (txtRekening == true) {
 				WebUI.delay(2)
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
-				requestIdText = WebUI.getText(reqIdDetailNasabah)		
+				requestIdText = WebUI.getText(reqIdDetailNasabah)
+				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
@@ -79,7 +80,7 @@ if (checkHeaderCsrManagement == true) {
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
 						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(searchPhoneNumberText, listPhoneNumberText.get(i))
+						WebUI.setText(fieldAccountNumber, listInvalidNoRekText.get(i))
 						WebUI.click(btnSearch)
 						TestObject txtReqIdNotExist = new TestObject().addProperty('text', ConditionType.CONTAINS , "Oops, Hasil pencarian tidak ditemukan")
 						boolean textInputTheRightReqId = WebUI.verifyElementPresent(txtReqIdNotExist, 5)

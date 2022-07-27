@@ -54,32 +54,20 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Phone Number with invalid condition'*/
+/*'We want to check the invalid request ID and invalid Account Number with failed condition'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
-	for (int i=0;i<checkListByOrder.size();i++) {
+	for (int i=0;i<listInvalidRequestId.size();i++) {
 		/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
 		WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
-		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)
-		WebUI.click(checkListByOrder.get(i))
-		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
-			WebUI.waitForPageLoad(5)
-			/*	'We verify we can access Customer Detail'*/
-			TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)
-			WebUI.verifyElementPresent(txtAccountNumb, 5)
-			boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
-			if (txtRekening == true) {
-				WebUI.delay(2)
-				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
-				requestIdText = WebUI.getText(reqIdDetailNasabah)		
-				WebUI.click(btnBackBucketList)
+		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)	
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
-						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(searchPhoneNumberText, listPhoneNumberText.get(i))
+						WebUI.setText(fieldReqId, listInvalidRequestId.get(i))
+						WebUI.setText(fieldAccountNumber, listInvalidAccountNumber.get(i))
 						WebUI.click(btnSearch)
 						TestObject txtReqIdNotExist = new TestObject().addProperty('text', ConditionType.CONTAINS , "Oops, Hasil pencarian tidak ditemukan")
 						boolean textInputTheRightReqId = WebUI.verifyElementPresent(txtReqIdNotExist, 5)
@@ -96,13 +84,6 @@ if (checkHeaderCsrManagement == true) {
 				} else {
 					keyLogger.markFailed("We not back at bucket list page")
 				}
-								
-			} else {
-				keyLogger.markFailed("We cannot find the info about ")
-			}
-		} else {
-			keyLogger.markFailed("We not find header customer detail")
-		}
 	}
 } else {
 	keyLogger.markFailed("We not find the element")

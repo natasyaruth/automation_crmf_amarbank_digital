@@ -480,7 +480,7 @@
       <name>alertCityElement</name>
    </variable>
    <variable>
-      <defaultValue>'Kota/kabupaten wajib diisi'</defaultValue>
+      <defaultValue>'Kabupaten/kota wajib diisi'</defaultValue>
       <description></description>
       <id>9210942a-6620-4ba2-aa19-45959a936488</id>
       <masked>false</masked>

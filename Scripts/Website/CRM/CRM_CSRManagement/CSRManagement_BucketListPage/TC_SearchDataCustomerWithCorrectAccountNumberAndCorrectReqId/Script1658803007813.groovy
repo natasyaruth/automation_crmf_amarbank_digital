@@ -54,7 +54,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Phone Number with invalid condition'*/
+/*'We want to check the request ID and Name Customer with success condition'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
@@ -71,7 +71,10 @@ if (checkHeaderCsrManagement == true) {
 			if (txtRekening == true) {
 				WebUI.delay(2)
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
-				requestIdText = WebUI.getText(reqIdDetailNasabah)		
+				requestIdText = WebUI.getText(reqIdDetailNasabah)
+				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
+				WebUI.click(btnDataCardATM)
+				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
@@ -79,15 +82,10 @@ if (checkHeaderCsrManagement == true) {
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
 						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(searchPhoneNumberText, listPhoneNumberText.get(i))
+						WebUI.setText(fieldAccountNumber, firstRowNoRekText)
 						WebUI.click(btnSearch)
-						TestObject txtReqIdNotExist = new TestObject().addProperty('text', ConditionType.CONTAINS , "Oops, Hasil pencarian tidak ditemukan")
-						boolean textInputTheRightReqId = WebUI.verifyElementPresent(txtReqIdNotExist, 5)
-						if (textInputTheRightReqId == true) {
-								TestObject txtRightReqId = new TestObject().addProperty('text' , ConditionType.CONTAINS, "Pastikan Anda telah memasukkan data yang dicari dengan benar.")
-							} else {
-								keyLogger.markFailed("We not found the text")
-							}
+						WebUI.verifyTextPresent(firstRowNoRekText, false)
+						WebUI.verifyTextPresent(firstRowCustNameText, false)
 						WebUI.takeScreenshot()
 						WebUI.refresh()
 					} else {
