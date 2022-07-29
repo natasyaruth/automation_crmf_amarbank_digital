@@ -54,7 +54,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Name Customer with success condition'*/
+/*'We want to check the request ID and Date with success condition'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
@@ -74,17 +74,28 @@ if (checkHeaderCsrManagement == true) {
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
 				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
 				WebUI.click(btnDataCardATM)
-				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
+						WebUI.waitForElementVisible(fieldStartDate, 5)
+						WebUI.setText(fieldStartDate, listInvalidStartDate.get(i))
+						WebUI.waitForElementVisible(fieldEndDate, 5)
+						WebUI.setText(fieldEndDate, listInvalidEndDate.get(i))
+						WebUI.takeScreenshot()
+						WebUI.click(btnTampil)
+						TestObject txtReqIdNotExist = new TestObject().addProperty('text', ConditionType.CONTAINS , "Oops, Hasil pencarian tidak ditemukan")
+						boolean textInputTheRightReqId = WebUI.verifyElementPresent(txtReqIdNotExist, 5)
+						if (textInputTheRightReqId == true) {
+								TestObject txtRightReqId = new TestObject().addProperty('text' , ConditionType.CONTAINS, "Pastikan Anda telah memasukkan data yang dicari dengan benar.")
+							} else {
+								keyLogger.markFailed("We not found the text")
+							}
 						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(fieldName, firstRowCustNameText)
 						WebUI.click(btnSearch)
-						WebUI.verifyTextPresent(firstRowNoRekText, false)
+						WebUI.waitForElementVisible(firstRowCustName, 5)
 						WebUI.verifyTextPresent(firstRowCustNameText, false)
 						WebUI.takeScreenshot()
 						WebUI.refresh()

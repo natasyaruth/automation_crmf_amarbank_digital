@@ -54,13 +54,21 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Name Customer with success condition'*/
+/*'We want to check the request ID and Date with success condition'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
 		/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
 		WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
 		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)
+		firstRowDateText = WebUI.getText(dateText)
+		if (WebUI.verifyElementVisible(btnLastPage,FailureHandling.OPTIONAL)) {
+			WebUI.click(btnLastPage)
+			firstRowDateLastPage = WebUI.getText(dateText)
+		} else {
+			keyLogger.markFailed("We don't find button last page")
+		}
+		dateLastPage = firstRowDateLastPage
 		WebUI.click(checkListByOrder.get(i))
 		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
 			WebUI.waitForPageLoad(5)
@@ -74,17 +82,19 @@ if (checkHeaderCsrManagement == true) {
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
 				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
 				WebUI.click(btnDataCardATM)
-				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
+						WebUI.setText(fieldStartDate, firstRowDateText)
+						WebUI.setText(fieldEndDate, dateLastPage)
+						WebUI.takeScreenshot()
+						WebUI.click(btnTampil)
+						WebUI.verifyElementText(firstRowDate, firstRowDateText)
 						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(fieldName, firstRowCustNameText)
 						WebUI.click(btnSearch)
-						WebUI.verifyTextPresent(firstRowNoRekText, false)
 						WebUI.verifyTextPresent(firstRowCustNameText, false)
 						WebUI.takeScreenshot()
 						WebUI.refresh()
