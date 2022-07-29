@@ -417,7 +417,7 @@
       <name>alertVillageAddressElement</name>
    </variable>
    <variable>
-      <defaultValue>'Kota/kabupaten wajib diisi'</defaultValue>
+      <defaultValue>'Kabupaten/kota wajib diisi'</defaultValue>
       <description></description>
       <id>04d26dc6-4553-41f2-b5bb-cb93812d949e</id>
       <masked>false</masked>

@@ -54,7 +54,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Name Customer with success condition'*/
+/*'We want to check the correct request ID and invalid no rekening'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
@@ -73,8 +73,6 @@ if (checkHeaderCsrManagement == true) {
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
 				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
-				WebUI.click(btnDataCardATM)
-				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
@@ -82,10 +80,15 @@ if (checkHeaderCsrManagement == true) {
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
 						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(fieldName, firstRowCustNameText)
+						WebUI.setText(fieldAccountNumber, listInvalidNoRekText.get(i))
 						WebUI.click(btnSearch)
-						WebUI.verifyTextPresent(firstRowNoRekText, false)
-						WebUI.verifyTextPresent(firstRowCustNameText, false)
+						TestObject txtReqIdNotExist = new TestObject().addProperty('text', ConditionType.CONTAINS , "Oops, Hasil pencarian tidak ditemukan")
+						boolean textInputTheRightReqId = WebUI.verifyElementPresent(txtReqIdNotExist, 5)
+						if (textInputTheRightReqId == true) {
+								TestObject txtRightReqId = new TestObject().addProperty('text' , ConditionType.CONTAINS, "Pastikan Anda telah memasukkan data yang dicari dengan benar.")
+							} else {
+								keyLogger.markFailed("We not found the text")
+							}
 						WebUI.takeScreenshot()
 						WebUI.refresh()
 					} else {

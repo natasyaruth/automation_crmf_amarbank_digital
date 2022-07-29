@@ -54,7 +54,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
-/*'We want to check the request ID and Name Customer with success condition'*/
+/*'We want to check the invalid request ID and Phone Number with success condition'*/
 boolean checkHeaderCsrManagement = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 if (checkHeaderCsrManagement == true) {
 	for (int i=0;i<checkListByOrder.size();i++) {
@@ -70,22 +70,28 @@ if (checkHeaderCsrManagement == true) {
 			boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
 			if (txtRekening == true) {
 				WebUI.delay(2)
-				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
-				requestIdText = WebUI.getText(reqIdDetailNasabah)
-				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)
-				WebUI.click(btnDataCardATM)
-				firstRowNoRekText = WebUI.getAttribute(dataAccountNumber, "value")
+				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)			
+				/* We want go to phone number information in data CSR*/				
+				boolean hoverPhoneNumber = WebUI.verifyElementVisible(btnDataPhoneNumber)
+				if (hoverPhoneNumber == true) {
+					WebUI.click(btnDataPhoneNumber)
+					phoneNumber = WebUI.getAttribute(fieldPhoneNumber, "value")
+				} else {
+					keyLogger.markFailed("We dont find Hover Data KTP")
+				}
+				phoneNumberText = phoneNumber
 				WebUI.click(btnBackBucketList)
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
-						WebUI.setText(fieldReqId, requestIdText)
-						WebUI.setText(fieldName, firstRowCustNameText)
+						WebUI.setText(fieldReqId, listInvalidReqId.get(i))
+						WebUI.setText(searchPhoneNumberText, phoneNumberText)
 						WebUI.click(btnSearch)
-						WebUI.verifyTextPresent(firstRowNoRekText, false)
 						WebUI.verifyTextPresent(firstRowCustNameText, false)
+						TestObject firstRowPhoneNumberText = new TestObject().addProperty('text' , ConditionType.CONTAINS , phoneNumberText )
+						WebUI.verifyElementPresent(firstRowPhoneNumberText, 5)
 						WebUI.takeScreenshot()
 						WebUI.refresh()
 					} else {
