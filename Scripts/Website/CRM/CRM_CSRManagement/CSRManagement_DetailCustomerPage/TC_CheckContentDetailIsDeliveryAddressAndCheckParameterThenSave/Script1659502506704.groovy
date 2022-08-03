@@ -44,9 +44,9 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
-		WebUI.delay(2)
-		WebUI.waitForElementVisible(headerCSRManagementElement, 5)
-		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+		if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
+			WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+		} else (txtCsrManagement == false) { keyLogger.loginfo("We not find the element")}
 	} else {
 		keyLogger.markFailed("We don't find alert confirmation")
 	}
@@ -57,7 +57,8 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 /* We want to check status is customer type is "Nasabah Senyumku" & "Tidak Melanjutkan"*/
 for (int i=0;i<customerType.size();i++) {
-if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
+if (filterChooseCard == true) {
 	WebUI.selectOptionByLabel(drpDwnCardStatus, "Semua", false)
 	if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
@@ -117,11 +118,60 @@ if (StatusRequestText == true) {
 		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
 		if (addressSentCard == true) {
 			WebUI.click(elementAddressSentCard)
-			WebUI.waitForElementVisible(FullAddressCard, 5)
-			fullAddressCard = WebUI.getText(FullAddressCard)
-			keyLogger.logInfo("There is full address sent card: " +fullAddressCard)
+			WebUI.waitForPageLoad(3)
+			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
+				WebUI.click(btnEditAddressDelivery)
+				boolean indexPresent =WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
+				if (indexPresent == true) {
+					WebUI.waitForElementVisible(drpAddressDelivery, 5)
+					WebUI.selectOptionByIndex(drpAddressDelivery, "1")
+				} else (indexPresent == false) { keyLogger.logInfo("We don't find the element Address Delivery") }
+				boolean inputFullAddress = WebUI.verifyElementPresent(txtFullAddress, 5)
+				if (inputFullAddress == true) {
+					WebUI.waitForElementVisible(txtFullAddress, 5)
+					WebUI.setText(txtFullAddress, RandomStringUtils.randomAlphanumeric(200))
+				} else (inputFullAddress == false) { keyLogger.logInfo("We don't find the element Full Address") }
+				boolean inputRt = WebUI.verifyElementPresent(txtRt, 5)
+				if (inputRt == true) {
+					WebUI.waitForElementVisible(txtRt, 5)
+					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(3))
+				} else (inputRt == false) { keyLogger.logInfo("We don't find the element Rt") }
+				boolean inputRw = WebUI.verifyElementPresent(txtRw, 5)
+				if (inputRw == true) {
+					WebUI.waitForElementVisible(txtRw, 5)
+					WebUI.setText(txtRw,RandomStringUtils.randomNumeric(3))
+				} else (inputRw == false) { keyLogger.logInfo("We don't find the element Rw") }
+				boolean chooseProvince = WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
+				if (chooseProvince == true) {
+					WebUI.waitForElementVisible(drpProvince, 5)
+					WebUI.selectOptionByIndex(drpProvince, "2")
+				} else (chooseProvince == false){ keyLogger.logInfo("We don't find the element Province") }
+				boolean chooseCity = WebUI.verifyElementPresent(drpCity, 5)
+				if (chooseCity == true) {
+					WebUI.waitForElementVisible(drpCity, 5)
+					WebUI.selectOptionByIndex(drpCity, "3")
+				} else (chooseCity == false){ keyLogger.logInfo("We don't find the element District") }
+				boolean chooseSubDistrict = WebUI.verifyElementPresent(drpSubDistricts, 5)
+				if (chooseSubDistrict == true) {
+					WebUI.waitForElementVisible(drpSubDistricts, 5)
+					WebUI.selectOptionByIndex(drpSubDistricts, "4")
+				} else (chooseSubDistrict == false){ keyLogger.logInfo("We don't find the element Sub District") }
+				boolean chooseVillage = WebUI.verifyElementPresent(drpVillage, 5)
+				if (chooseVillage == true) {
+					WebUI.waitForElementVisible(drpVillage, 5)
+					WebUI.selectOptionByIndex(drpVillage, "5")
+				} else (chooseVillage == false){ keyLogger.logInfo("We don't find the element Sub District") }
+				WebUI.waitForElementVisible(txtPostalCode, 5)
+				WebUI.verifyElementPresent(txtPostalCode, 5)
+				WebUI.waitForElementVisible(btnSave, 5)
+				WebUI.takeScreenshot()
+				WebUI.click(btnSave)
+			} else {
+				WebUI.takeScreenshot()
+				keyLogger.logInfo("There is element is disable for click ")
+			}
+			keyLogger.logInfo("There is full address sent card")
 		}
-		WebUI.takeScreenshot()
 	} else {
 		keyLogger.logInfo("We don't find element Alamat Pengiriman Kartu")
 	}
@@ -189,11 +239,11 @@ if (StatusRequestText == true) {
 		keyLogger.logInfo("We don't find element Data ATM Card Customer")
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
-	WebUI.click(btnBackToBucketList)
-	WebUI.waitForPageLoad(3) 
+	WebUI.click(btnBackToBucketList) 
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
 	WebUI.refresh()
+	WebUI.waitForPageLoad(3)
 }
 }

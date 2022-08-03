@@ -44,7 +44,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
-		WebUI.delay(2)
+		WebUI.waitForPageLoad(2)
 		WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else {
@@ -57,7 +57,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 /* We want to check status is customer type is "Nasabah Senyumku" & "Tidak Melanjutkan"*/
 for (int i=0;i<customerType.size();i++) {
-if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(drpDwnCardStatus,5,FailureHandling.OPTIONAL)) {
 	WebUI.selectOptionByLabel(drpDwnCardStatus, "Semua", false)
 	if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
@@ -117,11 +117,26 @@ if (StatusRequestText == true) {
 		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
 		if (addressSentCard == true) {
 			WebUI.click(elementAddressSentCard)
-			WebUI.waitForElementVisible(FullAddressCard, 5)
-			fullAddressCard = WebUI.getText(FullAddressCard)
-			keyLogger.logInfo("There is full address sent card: " +fullAddressCard)
+			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
+				WebUI.click(btnEditAddressDelivery)
+				WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
+				WebUI.verifyElementPresent(txtFullAddress, 5)
+				WebUI.verifyElementPresent(txtRt, 5)
+				WebUI.verifyElementPresent(txtRw, 5)
+				WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
+				WebUI.verifyElementPresent(drpCity, 5)
+				WebUI.verifyElementPresent(drpSubDistricts, 5)
+				WebUI.verifyElementPresent(drpVillage, 5)
+				WebUI.verifyElementPresent(txtPostalCode, 5)
+				WebUI.waitForElementVisible(btnCancel, 5)
+				WebUI.takeScreenshot()
+				WebUI.click(btnCancel)
+			} else {
+				WebUI.takeScreenshot()
+				keyLogger.logInfo("There is element is disable for click ")
+			}
+			keyLogger.logInfo("There is full address sent card")
 		}
-		WebUI.takeScreenshot()
 	} else {
 		keyLogger.logInfo("We don't find element Alamat Pengiriman Kartu")
 	}
@@ -190,10 +205,10 @@ if (StatusRequestText == true) {
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
 	WebUI.click(btnBackToBucketList)
-	WebUI.waitForPageLoad(3) 
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
 	WebUI.refresh()
+	WebUI.waitForPageLoad(3)
 }
 }
