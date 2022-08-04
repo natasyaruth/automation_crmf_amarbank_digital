@@ -57,6 +57,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 /* We want to check status is customer type is "Nasabah Senyumku" & "Tidak Melanjutkan"*/
 for (int i=0;i<customerType.size();i++) {
+WebUI.waitForPageLoad(5)
 if (WebUI.waitForElementVisible(drpDwnCardStatus,5,FailureHandling.OPTIONAL)) {
 	WebUI.selectOptionByLabel(drpDwnCardStatus, "Semua", false)
 	if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
@@ -77,138 +78,141 @@ if (WebUI.waitForElementVisible(drpDwnCardStatus,5,FailureHandling.OPTIONAL)) {
  * 6. Foto KTP dan Foto Diri
  * 7. KYC */
 TestObject typeCustomerText = new TestObject().addProperty('text', ConditionType.CONTAINS , customerType.get(i))
-WebUI.verifyElementPresent(typeCustomerText, 5)
-TestObject statusRequestText = new TestObject().addProperty('text', ConditionType.CONTAINS , listStatusText.get(i))
-boolean StatusRequestText = WebUI.verifyElementPresent(statusRequestText, 5)
-if (StatusRequestText == true) {
-	TestObject reasonRejectionText = new TestObject().addProperty('text',ConditionType.CONTAINS,'Alasan Penolakan')
-	if (WebUI.verifyElementPresent(reasonRejectionText, 5,FailureHandling.OPTIONAL)) {
-		keyLogger.logInfo(" We are in rejection status")
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo(" We are in success status")
-		WebUI.takeScreenshot()
-	}
-	if (WebUI.waitForElementVisible(elementNoHandphone, 5)) {
-		boolean phoneNumber = WebUI.verifyElementText(elementNoHandphone, "No. Handphone")
-		if (phoneNumber == true) {
-			WebUI.click(elementNoHandphone)
-			WebUI.waitForElementVisible(NoHandphone, 5)
-			noHandphone = WebUI.getText(NoHandphone)
-			keyLogger.logInfo("There is phone number customer: " +noHandphone)
+if (WebUI.verifyElementPresent(typeCustomerText, 5,FailureHandling.OPTIONAL)) {
+	TestObject statusRequestText = new TestObject().addProperty('text', ConditionType.CONTAINS , listStatusText.get(i))
+	boolean StatusRequestText = WebUI.verifyElementPresent(statusRequestText, 5)
+	if (StatusRequestText == true) {
+		WebUI.waitForPageLoad(5)
+		TestObject reasonRejectionText = new TestObject().addProperty('text',ConditionType.CONTAINS,'Alasan Penolakan')
+		if (WebUI.verifyElementPresent(reasonRejectionText, 5,FailureHandling.OPTIONAL)) {
+			keyLogger.logInfo(" We are in rejection status")
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo(" We are in success status")
+			WebUI.takeScreenshot()
 		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element no handphone")
-	}
-	if (WebUI.waitForElementVisible(elementDataKtp, 5)) {
-		boolean dataKtp = WebUI.verifyElementText(elementDataKtp, "Data KTP")
-		if (dataKtp == true) {
-			WebUI.click(elementDataKtp)
-			WebUI.waitForElementVisible(NoKtp, 5)
-			noKtp = WebUI.getText(NoKtp)
-			keyLogger.logInfo("There is Customer Id Number : " +noKtp)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Data KTP")
-	}
-	if (WebUI.waitForElementVisible(elementAddressSentCard, 5)) {
-		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
-		if (addressSentCard == true) {
-			WebUI.click(elementAddressSentCard)
-			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
-				WebUI.click(btnEditAddressDelivery)
-				WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
-				WebUI.verifyElementPresent(txtFullAddress, 5)
-				WebUI.verifyElementPresent(txtRt, 5)
-				WebUI.verifyElementPresent(txtRw, 5)
-				WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
-				WebUI.verifyElementPresent(drpCity, 5)
-				WebUI.verifyElementPresent(drpSubDistricts, 5)
-				WebUI.verifyElementPresent(drpVillage, 5)
-				WebUI.verifyElementPresent(txtPostalCode, 5)
-				WebUI.waitForElementVisible(btnCancel, 5)
-				WebUI.takeScreenshot()
-				WebUI.click(btnCancel)
-			} else {
-				WebUI.takeScreenshot()
-				keyLogger.logInfo("There is element is disable for click ")
+		if (WebUI.waitForElementVisible(elementNoHandphone, 5)) {
+			boolean phoneNumber = WebUI.verifyElementText(elementNoHandphone, "No. Handphone")
+			if (phoneNumber == true) {
+				WebUI.click(elementNoHandphone)
+				WebUI.waitForElementVisible(NoHandphone, 5)
+				noHandphone = WebUI.getText(NoHandphone)
+				keyLogger.logInfo("There is phone number customer: " +noHandphone)
 			}
-			keyLogger.logInfo("There is full address sent card")
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element no handphone")
 		}
-	} else {
-		keyLogger.logInfo("We don't find element Alamat Pengiriman Kartu")
-	}
-	if (WebUI.waitForElementVisible(elementDataDiri, 5)) {
-		boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
-		if (dataDiri == true) {
-			WebUI.click(elementDataDiri)
-			WebUI.waitForElementVisible(DataCustomer, 5)
-			dataCustomer = WebUI.getText(DataCustomer)
-			keyLogger.logInfo("There is Data Customer : " +dataCustomer)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Data Diri")
-	}
-	if (WebUI.waitForElementVisible(elementEmploymentData, 5)) {
-		boolean employmentData = WebUI.verifyElementText(elementEmploymentData, "Data Pekerjaan")
-		if (employmentData == true) {
-			WebUI.click(elementEmploymentData)
-			WebUI.waitForElementVisible(EmploymentCustomer, 5)
-			employmentDataCustomer = WebUI.getText(EmploymentCustomer)
-			keyLogger.logInfo("There is employment data : " +employmentDataCustomer)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Data Pekerjaan")
-	}
-	if (WebUI.waitForElementVisible(elementFotoKtp, 5)) {
-		boolean fotoKtp = WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri")
-		if (fotoKtp == true) {
-			WebUI.click(elementFotoKtp)
-			if (WebUI.waitForElementVisible(FotoKtpCustomer, 5 ,FailureHandling.OPTIONAL)) {
-				keyLogger.logInfo("There is KTP Customer data")
-			} else {
-				keyLogger.logInfo("There don't have KTP Customer data")
+		if (WebUI.waitForElementVisible(elementDataKtp, 5)) {
+			boolean dataKtp = WebUI.verifyElementText(elementDataKtp, "Data KTP")
+			if (dataKtp == true) {
+				WebUI.click(elementDataKtp)
+				WebUI.waitForElementVisible(NoKtp, 5)
+				noKtp = WebUI.getText(NoKtp)
+				keyLogger.logInfo("There is Customer Id Number : " +noKtp)
 			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element Data KTP")
 		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Foto eKTP dan Foto Diri")
-	}
-	if (WebUI.waitForElementVisible(elementDataKyc, 5)) {
-		boolean dataKyc = WebUI.verifyElementText(elementDataKyc, "KYC")
-		if (dataKyc == true) {
-			WebUI.click(elementDataKyc)
-			if (WebUI.verifyElementVisible(dataKycCustomer,FailureHandling.OPTIONAL)) {
-				keyLogger.logInfo("There is have video KYC Customer data")
-			} else {
-				keyLogger.logInfo("There don't have KYC Customer data")
+		if (WebUI.waitForElementVisible(elementAddressSentCard, 5)) {
+			boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
+			if (addressSentCard == true) {
+				WebUI.click(elementAddressSentCard)
+				if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
+					WebUI.click(btnEditAddressDelivery)
+					WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
+					WebUI.verifyElementPresent(txtFullAddress, 5)
+					WebUI.verifyElementPresent(txtRt, 5)
+					WebUI.verifyElementPresent(txtRw, 5)
+					WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
+					WebUI.verifyElementPresent(drpCity, 5)
+					WebUI.verifyElementPresent(drpSubDistricts, 5)
+					WebUI.verifyElementPresent(drpVillage, 5)
+					WebUI.verifyElementPresent(txtPostalCode, 5)
+					WebUI.waitForElementVisible(btnCancel, 5)
+					WebUI.takeScreenshot()
+					WebUI.click(btnCancel)
+				} else {
+					WebUI.takeScreenshot()
+					keyLogger.logInfo("There is element is disable for click ")
+				}
+				keyLogger.logInfo("There is full address sent card")
 			}
+		} else {
+			keyLogger.logInfo("We don't find element Alamat Pengiriman Kartu")
 		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element KYC")
-	}
-	if (WebUI.waitForElementVisible(elementDataAtmCard, 5)) {
-		boolean dataAtmCard = WebUI.verifyElementText(elementDataAtmCard, "Data Kartu ATM")
-		if (dataAtmCard == true) {
-			WebUI.click(elementDataAtmCard)
-			dataAtmCardCustomer = WebUI.getText(DataAtmCardCustomer)
-			keyLogger.logInfo("There is ATM Card data : " +dataAtmCardCustomer)
+		if (WebUI.waitForElementVisible(elementDataDiri, 5)) {
+			boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
+			if (dataDiri == true) {
+				WebUI.click(elementDataDiri)
+				WebUI.waitForElementVisible(DataCustomer, 5)
+				dataCustomer = WebUI.getText(DataCustomer)
+				keyLogger.logInfo("There is Data Customer : " +dataCustomer)
+			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element Data Diri")
 		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Data ATM Card Customer")
+		if (WebUI.waitForElementVisible(elementEmploymentData, 5)) {
+			boolean employmentData = WebUI.verifyElementText(elementEmploymentData, "Data Pekerjaan")
+			if (employmentData == true) {
+				WebUI.click(elementEmploymentData)
+				WebUI.waitForElementVisible(EmploymentCustomer, 5)
+				employmentDataCustomer = WebUI.getText(EmploymentCustomer)
+				keyLogger.logInfo("There is employment data : " +employmentDataCustomer)
+			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element Data Pekerjaan")
+		}
+		if (WebUI.waitForElementVisible(elementFotoKtp, 5)) {
+			boolean fotoKtp = WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri")
+			if (fotoKtp == true) {
+				WebUI.click(elementFotoKtp)
+				if (WebUI.waitForElementVisible(FotoKtpCustomer, 5 ,FailureHandling.OPTIONAL)) {
+					keyLogger.logInfo("There is KTP Customer data")
+				} else {
+					keyLogger.logInfo("There don't have KTP Customer data")
+				}
+			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element Foto eKTP dan Foto Diri")
+		}
+		if (WebUI.waitForElementVisible(elementDataKyc, 5)) {
+			boolean dataKyc = WebUI.verifyElementText(elementDataKyc, "KYC")
+			if (dataKyc == true) {
+				WebUI.click(elementDataKyc)
+				if (WebUI.verifyElementVisible(dataKycCustomer,FailureHandling.OPTIONAL)) {
+					keyLogger.logInfo("There is have video KYC Customer data")
+				} else {
+					keyLogger.logInfo("There don't have KYC Customer data")
+				}
+			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element KYC")
+		}
+		if (WebUI.waitForElementVisible(elementDataAtmCard, 5)) {
+			boolean dataAtmCard = WebUI.verifyElementText(elementDataAtmCard, "Data Kartu ATM")
+			if (dataAtmCard == true) {
+				WebUI.click(elementDataAtmCard)
+				dataAtmCardCustomer = WebUI.getText(DataAtmCardCustomer)
+				keyLogger.logInfo("There is ATM Card data : " +dataAtmCardCustomer)
+			}
+			WebUI.takeScreenshot()
+		} else {
+			keyLogger.logInfo("We don't find element Data ATM Card Customer")
+		}
+		if (WebUI.waitForElementVisible(btnBackToBucketList, 5 , FailureHandling.OPTIONAL)) {
+			WebUI.click(btnBackToBucketList)
+			if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
+				WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+			} else { keyLogger.loginfo("We not find the element")}
+			WebUI.refresh()
+			WebUI.waitForPageLoad(3)
+		} else {"We don't find the element button back bucket list"}
 	}
-	WebUI.waitForElementVisible(btnBackToBucketList, 5)
-	WebUI.click(btnBackToBucketList)
-	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
-		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-	} else { keyLogger.loginfo("We not find the element")}
-	WebUI.refresh()
-	WebUI.waitForPageLoad(3)
-}
+} else {keyLogger.markFailed("We cannot continue the process")}
 }
