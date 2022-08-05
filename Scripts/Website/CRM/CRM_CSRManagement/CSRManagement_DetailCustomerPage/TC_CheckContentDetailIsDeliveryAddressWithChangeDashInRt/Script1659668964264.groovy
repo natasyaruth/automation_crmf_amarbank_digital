@@ -134,7 +134,7 @@ if (StatusRequestText == true) {
 				boolean inputRt = WebUI.verifyElementPresent(txtRt, 5)
 				if (inputRt == true) {
 					WebUI.waitForElementVisible(txtRt, 5)
-					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(3))
+					WebUI.setText(txtRt,"-")
 				} else (inputRt == false) { keyLogger.logInfo("We don't find the element Rt") }
 				boolean inputRw = WebUI.verifyElementPresent(txtRw, 5)
 				if (inputRw == true) {
@@ -240,6 +240,7 @@ if (StatusRequestText == true) {
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
 	WebUI.click(btnBackToBucketList) 
+	WebUI.delay(3)
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}

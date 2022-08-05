@@ -134,38 +134,17 @@ if (StatusRequestText == true) {
 				boolean inputRt = WebUI.verifyElementPresent(txtRt, 5)
 				if (inputRt == true) {
 					WebUI.waitForElementVisible(txtRt, 5)
-					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(3))
+					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(4))
 				} else (inputRt == false) { keyLogger.logInfo("We don't find the element Rt") }
-				boolean inputRw = WebUI.verifyElementPresent(txtRw, 5)
-				if (inputRw == true) {
-					WebUI.waitForElementVisible(txtRw, 5)
-					WebUI.setText(txtRw,RandomStringUtils.randomNumeric(3))
-				} else (inputRw == false) { keyLogger.logInfo("We don't find the element Rw") }
-				boolean chooseProvince = WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
-				if (chooseProvince == true) {
-					WebUI.waitForElementVisible(drpProvince, 5)
-					WebUI.selectOptionByIndex(drpProvince, "2")
-				} else (chooseProvince == false){ keyLogger.logInfo("We don't find the element Province") }
-				boolean chooseCity = WebUI.verifyElementPresent(drpCity, 5)
-				if (chooseCity == true) {
-					WebUI.waitForElementVisible(drpCity, 5)
-					WebUI.selectOptionByIndex(drpCity, "3")
-				} else (chooseCity == false){ keyLogger.logInfo("We don't find the element District") }
-				boolean chooseSubDistrict = WebUI.verifyElementPresent(drpSubDistricts, 5)
-				if (chooseSubDistrict == true) {
-					WebUI.waitForElementVisible(drpSubDistricts, 5)
-					WebUI.selectOptionByIndex(drpSubDistricts, "4")
-				} else (chooseSubDistrict == false){ keyLogger.logInfo("We don't find the element Sub District") }
-				boolean chooseVillage = WebUI.verifyElementPresent(drpVillage, 5)
-				if (chooseVillage == true) {
-					WebUI.waitForElementVisible(drpVillage, 5)
-					WebUI.selectOptionByIndex(drpVillage, "5")
-				} else (chooseVillage == false){ keyLogger.logInfo("We don't find the element Village") }
-				WebUI.waitForElementVisible(txtPostalCode, 5)
-				WebUI.verifyElementPresent(txtPostalCode, 5)
 				WebUI.waitForElementVisible(btnSave, 5)
 				WebUI.takeScreenshot()
 				WebUI.click(btnSave)
+				if (WebUI.waitForElementVisible(txtAlertInputInvalidFormatRt, 5, FailureHandling.OPTIONAL)) {
+					WebUI.verifyElementPresent(txtAlertInputInvalidFormatRt, 5)
+					WebUI.verifyElementText(txtAlertInputInvalidFormatRt, "Pastikan panjang karakter antara 1 dan 3")
+					keyLogger.logInfo("We capture the alert text for fill the 'Kabupaten / Kota'")
+					WebUI.takeScreenshot()
+				} else {keyLogger.logInfo("We don't find the alert in 'Kabupaten / Kota'")}
 			} else {
 				WebUI.takeScreenshot()
 				keyLogger.logInfo("There is element is disable for click ")
@@ -240,6 +219,7 @@ if (StatusRequestText == true) {
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
 	WebUI.click(btnBackToBucketList) 
+	WebUI.delay(3)
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
