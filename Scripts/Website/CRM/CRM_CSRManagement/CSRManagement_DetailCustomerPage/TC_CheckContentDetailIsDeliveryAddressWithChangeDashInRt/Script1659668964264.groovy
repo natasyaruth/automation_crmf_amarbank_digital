@@ -239,10 +239,9 @@ if (StatusRequestText == true) {
 		keyLogger.logInfo("We don't find element Data ATM Card Customer")
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
-	WebUI.waitForPageLoad(3)
 	WebUI.click(btnBackToBucketList) 
+	WebUI.delay(3)
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
-		WebUI.waitForPageLoad(3)
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
 	WebUI.refresh()
