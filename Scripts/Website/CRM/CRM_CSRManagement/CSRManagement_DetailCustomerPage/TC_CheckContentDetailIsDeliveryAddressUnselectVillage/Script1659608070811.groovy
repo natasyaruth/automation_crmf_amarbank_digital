@@ -44,6 +44,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
+		WebUI.waitForPageLoad(5)
 		if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
 			WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 		} else (txtCsrManagement == false) { keyLogger.loginfo("We not find the element")}
@@ -53,12 +54,14 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }else {
+	WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 /* We want to check status is customer type is "Nasabah Senyumku" & "Tidak Melanjutkan"*/
 for (int i=0;i<customerType.size();i++) {
 boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
 if (filterChooseCard == true) {
+	WebUI.waitForPageLoad(5)
 	WebUI.selectOptionByLabel(drpDwnCardStatus, "Semua", false)
 	if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
@@ -129,18 +132,9 @@ if (StatusRequestText == true) {
 				boolean inputFullAddress = WebUI.verifyElementPresent(txtFullAddress, 5)
 				if (inputFullAddress == true) {
 					WebUI.waitForElementVisible(txtFullAddress, 5)
+					WebUI.click(txtFullAddress)
 					WebUI.setText(txtFullAddress, RandomStringUtils.randomAlphanumeric(200))
 				} else (inputFullAddress == false) { keyLogger.logInfo("We don't find the element Full Address") }
-				boolean inputRt = WebUI.verifyElementPresent(txtRt, 5)
-				if (inputRt == true) {
-					WebUI.waitForElementVisible(txtRt, 5)
-					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(3))
-				} else (inputRt == false) { keyLogger.logInfo("We don't find the element Rt") }
-				boolean inputRw = WebUI.verifyElementPresent(txtRw, 5)
-				if (inputRw == true) {
-					WebUI.waitForElementVisible(txtRw, 5)
-					WebUI.setText(txtRw,RandomStringUtils.randomNumeric(3))
-				} else (inputRw == false) { keyLogger.logInfo("We don't find the element Rw") }
 				boolean chooseProvince = WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
 				if (chooseProvince == true) {
 					WebUI.waitForElementVisible(drpProvince, 5)
@@ -159,13 +153,17 @@ if (StatusRequestText == true) {
 				boolean chooseVillage = WebUI.verifyElementPresent(drpVillage, 5)
 				if (chooseVillage == true) {
 					WebUI.waitForElementVisible(drpVillage, 5)
-					WebUI.selectOptionByIndex(drpVillage, "5")
+					WebUI.selectOptionByIndex(drpVillage, "0")
 				} else (chooseVillage == false){ keyLogger.logInfo("We don't find the element Village") }
-				WebUI.waitForElementVisible(txtPostalCode, 5)
-				WebUI.verifyElementPresent(txtPostalCode, 5)
 				WebUI.waitForElementVisible(btnSave, 5)
 				WebUI.takeScreenshot()
 				WebUI.click(btnSave)
+				if (WebUI.waitForElementVisible(txtAlertSelectVillage, 5, FailureHandling.OPTIONAL)) {
+					WebUI.verifyElementPresent(txtAlertSelectVillage, 5)
+					WebUI.verifyElementText(txtAlertSelectVillage, "Kelurahan wajib diisi")
+					keyLogger.logInfo("We capture the alert text for fill the 'Kecamatan'")
+					WebUI.takeScreenshot()
+				} else {keyLogger.logInfo("We don't find the alert in 'Kecamatan'")}
 			} else {
 				WebUI.takeScreenshot()
 				keyLogger.logInfo("There is element is disable for click ")
@@ -239,8 +237,10 @@ if (StatusRequestText == true) {
 		keyLogger.logInfo("We don't find element Data ATM Card Customer")
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
+	WebUI.waitForPageLoad(3)
 	WebUI.click(btnBackToBucketList) 
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
+		WebUI.waitForPageLoad(3)
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
 	WebUI.refresh()
