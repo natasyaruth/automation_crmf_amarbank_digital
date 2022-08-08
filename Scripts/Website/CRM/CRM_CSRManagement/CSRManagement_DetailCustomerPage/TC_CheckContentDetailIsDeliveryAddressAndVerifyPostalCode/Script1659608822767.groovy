@@ -161,8 +161,11 @@ if (StatusRequestText == true) {
 					WebUI.waitForElementVisible(drpVillage, 5)
 					WebUI.selectOptionByIndex(drpVillage, "5")
 				} else (chooseVillage == false){ keyLogger.logInfo("We don't find the element Village") }
-				WebUI.waitForElementVisible(txtPostalCode, 5)
-				WebUI.verifyElementPresent(txtPostalCode, 5)
+				if (WebUI.waitForElementVisible(txtPostalCode, 5,FailureHandling.OPTIONAL)) {
+					WebUI.verifyElementPresent(txtPostalCode, 5)
+					keyLogger.logInfo("We are Success validate postal code")
+					WebUI.takeScreenshot()
+				} else { keyLogger.logInfo("We don't verify postal code")}
 				WebUI.waitForElementVisible(btnSave, 5)
 				WebUI.takeScreenshot()
 				WebUI.click(btnSave)
@@ -240,6 +243,7 @@ if (StatusRequestText == true) {
 	}
 	WebUI.waitForElementVisible(btnBackToBucketList, 5)
 	WebUI.click(btnBackToBucketList) 
+	WebUI.delay(3)
 	if (WebUI.waitForElementVisible(headerCSRManagementElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 	} else { keyLogger.loginfo("We not find the element")}
