@@ -26,7 +26,11 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys
 import org.openqa.selenium.remote.server.handler.RefreshPage
 import org.apache.commons.lang.RandomStringUtils
+import com.github.javafaker.Faker
 
+/* We want setup faker for name */
+Faker faker = new Faker()
+String fullName = faker.name().fullName()
 /*Declaration keylog forloggin*/
 KeywordUtil keyLogger = new KeywordUtil()
 /*'We want to makesure we can access CSR Management'*/
@@ -63,7 +67,7 @@ if (filterChooseCard == true) {
 	if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
 	} else {
-		keyLogger.markFailed("We not find the drop down by customer type")
+		keyLogger.markFailed("We not find the drop down by cust type")
 	}
 	WebUI.navigateToUrl(requestStatus.get(i))
 } else {
@@ -124,47 +128,8 @@ if (StatusRequestText == true) {
 				boolean indexPresent =WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
 				if (indexPresent == true) {
 					WebUI.waitForElementVisible(drpAddressDelivery, 5)
-					WebUI.selectOptionByIndex(drpAddressDelivery, "1")
 				} else (indexPresent == false) { keyLogger.logInfo("We don't find the element Address Delivery") }
-				boolean inputFullAddress = WebUI.verifyElementPresent(txtFullAddress, 5)
-				if (inputFullAddress == true) {
-					WebUI.waitForElementVisible(txtFullAddress, 5)
-					WebUI.setText(txtFullAddress, RandomStringUtils.randomAlphanumeric(200))
-				} else (inputFullAddress == false) { keyLogger.logInfo("We don't find the element Full Address") }
-				boolean inputRt = WebUI.verifyElementPresent(txtRt, 5)
-				if (inputRt == true) {
-					WebUI.waitForElementVisible(txtRt, 5)
-					WebUI.setText(txtRt,RandomStringUtils.randomNumeric(3))
-				} else (inputRt == false) { keyLogger.logInfo("We don't find the element Rt") }
-				boolean inputRw = WebUI.verifyElementPresent(txtRw, 5)
-				if (inputRw == true) {
-					WebUI.waitForElementVisible(txtRw, 5)
-					WebUI.setText(txtRw,RandomStringUtils.randomNumeric(3))
-				} else (inputRw == false) { keyLogger.logInfo("We don't find the element Rw") }
-				boolean chooseProvince = WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
-				if (chooseProvince == true) {
-					WebUI.waitForElementVisible(drpProvince, 5)
-					WebUI.selectOptionByIndex(drpProvince, "2")
-				} else (chooseProvince == false){ keyLogger.logInfo("We don't find the element Province") }
-				boolean chooseCity = WebUI.verifyElementPresent(drpCity, 5)
-				if (chooseCity == true) {
-					WebUI.waitForElementVisible(drpCity, 5)
-					WebUI.selectOptionByIndex(drpCity, "3")
-				} else (chooseCity == false){ keyLogger.logInfo("We don't find the element District") }
-				boolean chooseSubDistrict = WebUI.verifyElementPresent(drpSubDistricts, 5)
-				if (chooseSubDistrict == true) {
-					WebUI.waitForElementVisible(drpSubDistricts, 5)
-					WebUI.selectOptionByIndex(drpSubDistricts, "4")
-				} else (chooseSubDistrict == false){ keyLogger.logInfo("We don't find the element Sub District") }
-				boolean chooseVillage = WebUI.verifyElementPresent(drpVillage, 5)
-				if (chooseVillage == true) {
-					WebUI.waitForElementVisible(drpVillage, 5)
-					WebUI.selectOptionByIndex(drpVillage, "5")
-				} else (chooseVillage == false){ keyLogger.logInfo("We don't find the element Village") }
-				WebUI.waitForElementVisible(txtPostalCode, 5)
-				WebUI.verifyElementPresent(txtPostalCode, 5)
 				WebUI.waitForElementVisible(btnSave, 5)
-				WebUI.takeScreenshot()
 				WebUI.click(btnSave)
 			} else {
 				WebUI.takeScreenshot()
@@ -179,11 +144,37 @@ if (StatusRequestText == true) {
 		boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
 		if (dataDiri == true) {
 			WebUI.click(elementDataDiri)
-			WebUI.waitForElementVisible(DataCustomer, 5)
-			dataCustomer = WebUI.getText(DataCustomer)
-			keyLogger.logInfo("There is Data Customer : " +dataCustomer)
+			int optionListLength = 4
+			Random rand = new Random()
+			int index = rand.nextInt(optionListLength + 1)			
+			if (WebUI.waitForElementVisible(DataCustomer, 5, FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementVisible(btnEditDatCustomer,FailureHandling.OPTIONAL)) {
+					WebUI.click(btnEditDatCustomer)
+				} else {keyLogger.markFailed("We not find button edit personal data")}
+				if (WebUI.verifyElementVisible(drpDownEducation,FailureHandling.OPTIONAL)) {
+					WebUI.selectOptionByIndex(drpDownEducation, index)
+				} else {keyLogger.logInfo("We Not find the education Data")}
+				if (WebUI.verifyElementVisible(drpDownReligion, FailureHandling.OPTIONAL)) {
+					WebUI.selectOptionByIndex(drpDownReligion, index)
+				} else {keyLogger.logInfo("We Not find the religion Data")}
+				if (WebUI.verifyElementVisible(txtRefNumber,FailureHandling.OPTIONAL)) {
+					WebUI.setText(txtRefNumber, fullName)
+				} else {keyLogger.logInfo("We Not update reference name")}
+				if (WebUI.verifyElementVisible(txtMotherName, FailureHandling.OPTIONAL)) {
+					WebUI.verifyElementPresent(txtMotherName, 5)
+				} else {keyLogger.logInfo("We Not Data for Mother Name")}
+				if (WebUI.verifyElementVisible(txtRefPhoneNumber,FailureHandling.OPTIONAL)) {
+					WebUI.setText(txtRefPhoneNumber, "+628" +RandomStringUtils.randomNumeric(10))
+				} else {keyLogger.logInfo("We Not update reference phone number")}
+				if (WebUI.verifyElementVisible(txtNpwp,FailureHandling.OPTIONAL)) {
+					WebUI.setText(txtNpwp, RandomStringUtils.randomNumeric(15))
+				} else {keyLogger.logInfo("We Not update reference name")}
+				if (WebUI.verifyElementVisible(btnSave,FailureHandling.OPTIONAL)) {
+				  WebUI.takeScreenshot()
+				  WebUI.click(btnSave)
+				} else {keyLogger.logInfo("Button save not found")}
+			} else {keyLogger.logInfo("We cannot update the data")}
 		}
-		WebUI.takeScreenshot()
 	} else {
 		keyLogger.logInfo("We don't find element Data Diri")
 	}
