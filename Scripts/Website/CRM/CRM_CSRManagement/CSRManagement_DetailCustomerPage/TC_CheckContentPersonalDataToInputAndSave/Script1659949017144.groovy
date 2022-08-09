@@ -140,41 +140,51 @@ if (StatusRequestText == true) {
 	} else {
 		keyLogger.logInfo("We don't find element Alamat Pengiriman Kartu")
 	}
+/*We want to check and input field in personal Data
+ * 1. We want to check element personal data visible
+ * 2. We want to check button edit is visible
+ * 3. We want to check and choose Education
+ * 4. We want to check and choose religion
+ * 5. We want to input reference name
+ * 6. We want to input reference mother name
+ * 7. We want to input reference phone number
+ * 8. We want to input tax
+ * 9. We want to Check button save*/	
 	if (WebUI.waitForElementVisible(elementDataDiri, 5)) {
 		boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
 		if (dataDiri == true) {
 			WebUI.click(elementDataDiri)
 			int optionListLength = 4
 			Random rand = new Random()
-			int index = rand.nextInt(optionListLength + 1)			
+			String index = rand.nextInt(optionListLength + 1)			
 			if (WebUI.waitForElementVisible(DataCustomer, 5, FailureHandling.OPTIONAL)) {
-				if (WebUI.verifyElementVisible(btnEditDatCustomer,FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementClickable(btnEditDatCustomer,FailureHandling.OPTIONAL)) {
 					WebUI.click(btnEditDatCustomer)
-				} else {keyLogger.markFailed("We not find button edit personal data")}
-				if (WebUI.verifyElementVisible(drpDownEducation,FailureHandling.OPTIONAL)) {
-					WebUI.selectOptionByIndex(drpDownEducation, index)
-				} else {keyLogger.logInfo("We Not find the education Data")}
-				if (WebUI.verifyElementVisible(drpDownReligion, FailureHandling.OPTIONAL)) {
-					WebUI.selectOptionByIndex(drpDownReligion, index)
-				} else {keyLogger.logInfo("We Not find the religion Data")}
-				if (WebUI.verifyElementVisible(txtRefNumber,FailureHandling.OPTIONAL)) {
-					WebUI.setText(txtRefNumber, fullName)
-				} else {keyLogger.logInfo("We Not update reference name")}
-				if (WebUI.verifyElementVisible(txtMotherName, FailureHandling.OPTIONAL)) {
-					WebUI.verifyElementPresent(txtMotherName, 5)
-				} else {keyLogger.logInfo("We Not Data for Mother Name")}
-				if (WebUI.verifyElementVisible(txtRefPhoneNumber,FailureHandling.OPTIONAL)) {
-					WebUI.setText(txtRefPhoneNumber, "+628" +RandomStringUtils.randomNumeric(10))
-				} else {keyLogger.logInfo("We Not update reference phone number")}
-				if (WebUI.verifyElementVisible(txtNpwp,FailureHandling.OPTIONAL)) {
-					WebUI.setText(txtNpwp, RandomStringUtils.randomNumeric(15))
-				} else {keyLogger.logInfo("We Not update reference name")}
-				if (WebUI.verifyElementVisible(btnSave,FailureHandling.OPTIONAL)) {
-				  WebUI.takeScreenshot()
-				  WebUI.click(btnSave)
-				} else {keyLogger.logInfo("Button save not found")}
+					if (WebUI.verifyElementVisible(drpDownEducation,FailureHandling.OPTIONAL)) {
+						WebUI.selectOptionByIndex(drpDownEducation, index)
+					} else {keyLogger.logInfo("We Not find the education Data")}
+					if (WebUI.verifyElementVisible(drpDownReligion, FailureHandling.OPTIONAL)) {
+						WebUI.selectOptionByIndex(drpDownReligion, index)
+					} else {keyLogger.logInfo("We Not find the religion Data")}
+					if (WebUI.verifyElementVisible(txtRefNumber,FailureHandling.OPTIONAL)) {
+						WebUI.setText(txtRefNumber, fullName)
+					} else {keyLogger.logInfo("We Not update reference name")}
+					if (WebUI.verifyElementVisible(txtMotherName, FailureHandling.OPTIONAL)) {
+						WebUI.verifyElementPresent(txtMotherName, 5)
+					} else {keyLogger.logInfo("We Not Data for Mother Name")}
+					if (WebUI.verifyElementVisible(txtRefPhoneNumber,FailureHandling.OPTIONAL)) {
+						WebUI.setText(txtRefPhoneNumber, "+628" +RandomStringUtils.randomNumeric(10))
+					} else {keyLogger.logInfo("We Not update reference phone number")}
+					if (WebUI.verifyElementVisible(txtNpwp,FailureHandling.OPTIONAL)) {
+						WebUI.setText(txtNpwp, RandomStringUtils.randomNumeric(15))
+					} else {keyLogger.logInfo("We Not update reference name")}
+					if (WebUI.verifyElementVisible(btnSavePersonalData,FailureHandling.OPTIONAL)) {
+					  WebUI.takeScreenshot()
+					  WebUI.click(btnSavePersonalData)
+					} else {keyLogger.logInfo("Button save not found")}
+				} else {keyLogger.logInfo("We not find button edit personal data")}
 			} else {keyLogger.logInfo("We cannot update the data")}
-		}
+		} else {keyLogger.markFailed("We not found element data diri")}
 	} else {
 		keyLogger.logInfo("We don't find element Data Diri")
 	}

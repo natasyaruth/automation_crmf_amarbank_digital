@@ -121,10 +121,13 @@ if (StatusRequestText == true) {
 			WebUI.waitForPageLoad(3)
 			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
 				WebUI.click(btnEditAddressDelivery)
+				int optionListLength = 3
+				Random rand = new Random()
+				String index = rand.nextInt(optionListLength + 1)
 				boolean indexPresent =WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
 				if (indexPresent == true) {
 					WebUI.waitForElementVisible(drpAddressDelivery, 5)
-					WebUI.selectOptionByIndex(drpAddressDelivery, "1")
+					WebUI.selectOptionByIndex(drpAddressDelivery, index)
 				} else (indexPresent == false) { keyLogger.logInfo("We don't find the element Address Delivery") }
 				boolean inputFullAddress = WebUI.verifyElementPresent(txtFullAddress, 5)
 				if (inputFullAddress == true) {

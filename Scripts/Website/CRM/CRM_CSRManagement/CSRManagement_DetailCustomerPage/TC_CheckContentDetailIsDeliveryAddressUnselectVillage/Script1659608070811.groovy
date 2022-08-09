@@ -121,13 +121,16 @@ if (StatusRequestText == true) {
 		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
 		if (addressSentCard == true) {
 			WebUI.click(elementAddressSentCard)
+			int optionListLength = 3
+			Random rand = new Random()
+			String index = rand.nextInt(optionListLength + 1)
 			WebUI.waitForPageLoad(3)
 			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
 				WebUI.click(btnEditAddressDelivery)
 				boolean indexPresent =WebUI.verifyOptionsPresent(drpAddressDelivery, ["Apartemen","Rumah","Kantor","Kos"])
 				if (indexPresent == true) {
 					WebUI.waitForElementVisible(drpAddressDelivery, 5)
-					WebUI.selectOptionByIndex(drpAddressDelivery, "1")
+					WebUI.selectOptionByIndex(drpAddressDelivery, index)
 				} else (indexPresent == false) { keyLogger.logInfo("We don't find the element Address Delivery") }
 				boolean inputFullAddress = WebUI.verifyElementPresent(txtFullAddress, 5)
 				if (inputFullAddress == true) {
@@ -138,17 +141,17 @@ if (StatusRequestText == true) {
 				boolean chooseProvince = WebUI.verifyOptionsPresent(drpProvince, ["DKI JAKARTA","RIAU","LAMPUNG","JAMBI","ACEH"])
 				if (chooseProvince == true) {
 					WebUI.waitForElementVisible(drpProvince, 5)
-					WebUI.selectOptionByIndex(drpProvince, "2")
+					WebUI.selectOptionByIndex(drpProvince, index)
 				} else (chooseProvince == false){ keyLogger.logInfo("We don't find the element Province") }
 				boolean chooseCity = WebUI.verifyElementPresent(drpCity, 5)
 				if (chooseCity == true) {
 					WebUI.waitForElementVisible(drpCity, 5)
-					WebUI.selectOptionByIndex(drpCity, "3")
+					WebUI.selectOptionByIndex(drpCity, index)
 				} else (chooseCity == false){ keyLogger.logInfo("We don't find the element District") }
 				boolean chooseSubDistrict = WebUI.verifyElementPresent(drpSubDistricts, 5)
 				if (chooseSubDistrict == true) {
 					WebUI.waitForElementVisible(drpSubDistricts, 5)
-					WebUI.selectOptionByIndex(drpSubDistricts, "4")
+					WebUI.selectOptionByIndex(drpSubDistricts, index)
 				} else (chooseSubDistrict == false){ keyLogger.logInfo("We don't find the element Sub District") }
 				boolean chooseVillage = WebUI.verifyElementPresent(drpVillage, 5)
 				if (chooseVillage == true) {
