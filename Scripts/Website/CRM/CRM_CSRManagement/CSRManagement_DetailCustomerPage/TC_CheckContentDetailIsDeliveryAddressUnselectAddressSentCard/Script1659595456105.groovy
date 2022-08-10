@@ -119,6 +119,9 @@ if (StatusRequestText == true) {
 		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
 		if (addressSentCard == true) {
 			WebUI.click(elementAddressSentCard)
+			int optionListLength = 3
+			Random rand = new Random()
+			String index = rand.nextInt(optionListLength + 1)
 			WebUI.waitForPageLoad(3)
 			if (WebUI.waitForElementClickable(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
 				WebUI.click(btnEditAddressDelivery)
