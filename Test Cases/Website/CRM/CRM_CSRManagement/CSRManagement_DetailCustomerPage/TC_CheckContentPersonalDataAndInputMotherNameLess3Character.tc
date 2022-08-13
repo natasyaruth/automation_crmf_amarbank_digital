@@ -495,7 +495,7 @@
       <name>customerType</name>
    </variable>
    <variable>
-      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/7?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</defaultValue>
+      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/18?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</defaultValue>
       <description></description>
       <id>ecd659fb-5abb-4ea5-af0b-0865f361fdb8</id>
       <masked>false</masked>

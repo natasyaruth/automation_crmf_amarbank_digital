@@ -69,7 +69,7 @@ if (filterChooseCard == true) {
 	} else {
 		keyLogger.markFailed("We not find the drop down by cust type")
 	}
-	WebUI.navigateToUrl(requestStatus.get(i))
+	WebUI.navigateToUrl(GlobalVariable.requestStatusFinishCondition.get(i))
 } else {
 	keyLogger.markFailed("We don't find the drop down Card Status")
 }

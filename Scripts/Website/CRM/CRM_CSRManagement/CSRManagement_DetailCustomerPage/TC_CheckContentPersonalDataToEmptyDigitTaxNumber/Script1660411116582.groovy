@@ -145,10 +145,10 @@ if (StatusRequestText == true) {
  * 2. We want to check button edit is visible
  * 3. We want to check and choose Education
  * 4. We want to check and choose religion
- * 5. We want to input less 3 character reference name
- * 6. We want to check mother name
+ * 5. We want to input reference name
+ * 6. We want to input reference mother name
  * 7. We want to input reference phone number
- * 8. We want to input tax
+ * 8. We want to empty tax
  * 9. We want to Check button save*/	
 	if (WebUI.waitForElementVisible(elementDataDiri, 5)) {
 		boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
@@ -167,26 +167,21 @@ if (StatusRequestText == true) {
 						WebUI.selectOptionByIndex(drpDownReligion, index)
 					} else {keyLogger.logInfo("We Not find the religion Data")}
 					if (WebUI.verifyElementVisible(txtRefNumber,FailureHandling.OPTIONAL)) {
-						WebUI.setText(txtRefNumber, RandomStringUtils.randomAlphabetic(2))
+						WebUI.setText(txtRefNumber, fullName)
 					} else {keyLogger.logInfo("We Not update reference name")}
 					if (WebUI.verifyElementVisible(txtMotherName, FailureHandling.OPTIONAL)) {
 						WebUI.verifyElementPresent(txtMotherName, 5)
-						WebUI.verifyElementNotClickable(txtMotherName)
-						WebUI.verifyElementAttributeValue(txtMotherName, "name", "mothername", 5)
 					} else {keyLogger.logInfo("We Not Data for Mother Name")}
 					if (WebUI.verifyElementVisible(txtRefPhoneNumber,FailureHandling.OPTIONAL)) {
 						WebUI.setText(txtRefPhoneNumber, "+628" +RandomStringUtils.randomNumeric(10))
 					} else {keyLogger.logInfo("We Not update reference phone number")}
 					if (WebUI.verifyElementVisible(txtNpwp,FailureHandling.OPTIONAL)) {
-						WebUI.setText(txtNpwp, RandomStringUtils.randomNumeric(15))
+						WebUI.setText(txtNpwp, " ")
+						WebUI.takeScreenshot()
 					} else {keyLogger.logInfo("We Not update reference name")}
 					if (WebUI.verifyElementVisible(btnSavePersonalData,FailureHandling.OPTIONAL)) {
 					  WebUI.takeScreenshot()
 					  WebUI.click(btnSavePersonalData)
-					  if (WebUI.verifyElementVisible(alertReferenceNameLess3Char,FailureHandling.OPTIONAL)) {
-						  WebUI.verifyElementText(alertReferenceNameLess3Char, "Pastikan panjang karakter antara 3 sampai 50")
-						  WebUI.takeScreenshot()
-					  } else {keyLogger.markFailed("We not find alert")}
 					} else {keyLogger.logInfo("Button save not found")}
 				} else {keyLogger.logInfo("We not find button edit personal data")}
 			} else {keyLogger.logInfo("We cannot update the data")}
