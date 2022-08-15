@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104898</testSuiteEntity>
@@ -22,7 +22,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104899</testSuiteEntity>
@@ -32,7 +32,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104900</testSuiteEntity>
@@ -42,7 +42,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104901</testSuiteEntity>
@@ -52,7 +52,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104902</testSuiteEntity>
@@ -62,7 +62,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104903</testSuiteEntity>
@@ -72,7 +72,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104904</testSuiteEntity>
@@ -82,7 +82,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104905</testSuiteEntity>
@@ -92,7 +92,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104906</testSuiteEntity>
@@ -102,7 +102,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Delivery_Status/Suite_CRM_Delivery_Status_Customer_Page/Suite_CRM_Delivery_Status_Customer_Page_T104907</testSuiteEntity>

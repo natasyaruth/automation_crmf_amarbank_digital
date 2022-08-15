@@ -12,7 +12,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104890</testSuiteEntity>
@@ -22,7 +22,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104891</testSuiteEntity>
@@ -32,7 +32,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104892</testSuiteEntity>
@@ -42,7 +42,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104893</testSuiteEntity>
@@ -52,7 +52,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104894</testSuiteEntity>
@@ -62,7 +62,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104896</testSuiteEntity>
@@ -72,7 +72,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_BucketList/Suite_CSRManagement_Bucket_List_T104897</testSuiteEntity>
