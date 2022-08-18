@@ -4,7 +4,20 @@
    <name>CSRManagementBucketListDrpFilterByCustomerType</name>
    <tag></tag>
    <elementGuidId>b4e75a36-177a-4019-aa87-cbcc2c4edb70</elementGuidId>
+   <imagePath></imagePath>
    <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value></value>
+      </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@id = 'DrpFilterByCustomerType']</value>
@@ -18,6 +31,6 @@
       <name>id</name>
       <type>Main</type>
       <value>DrpFilterByCustomerType</value>
-      <webElementGuid>a6f269c4-a54a-4e76-9ac7-a846d677e65a</webElementGuid>
+      <webElementGuid>1a8038ed-7aaf-4c1e-862a-134aea6c4597</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

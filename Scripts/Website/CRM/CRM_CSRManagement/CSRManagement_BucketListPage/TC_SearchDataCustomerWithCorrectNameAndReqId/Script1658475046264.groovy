@@ -82,6 +82,7 @@ if (checkHeaderCsrManagement == true) {
 					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
 					if (existFieldReqId == true) {
 						WebUI.setText(fieldReqId, requestIdText)
+						WebUI.setText(fieldName, firstRowCustNameText)
 						WebUI.click(btnSearch)
 						WebUI.verifyTextPresent(firstRowNoRekText, false)
 						WebUI.verifyTextPresent(firstRowCustNameText, false)

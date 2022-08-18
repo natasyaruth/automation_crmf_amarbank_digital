@@ -43,7 +43,7 @@ WebUI.verifyElementVisible(DeliveryStatusText, FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(5)
 
 /* We want to change the url with request id is not found*/
-WebUI.authenticate(GlobalVariable.UrlDeliveryNotFound, GlobalVariable.authUsername, GlobalVariable.authPassword, 10)
+WebUI.navigateToUrl(GlobalVariable.UrlDeliveryNotFound)
 
 /* We wait for pop up customer not found is visible*/
 WebUI.waitForElementVisible(PopUpCustomerNotFound, 20)
