@@ -10,11 +10,15 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import internal.GlobalVariable
+
+import org.jsoup.select.Evaluator.ContainsText
 import org.openqa.selenium.Keys as Keys
 
 /* We want to makesure we can identify element assign card*/
@@ -31,7 +35,6 @@ if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL))
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 }
-
 /* We want handling the execption in Assign Card if available when the process is locked*/
 if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -41,46 +44,34 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }
 
-/* We want to verify Request ID*/
-WebUI.verifyElementPresent(requestIdElement, 5)
+/* We want to verify feature search ref ID by identify label */
+WebUI.verifyElementText(labelRefIdElement, labelRefIdText)
 
-/* We want to click Request ID*/
-WebUI.click(requestIdElement)
+/* We want verify field from ref ID */
+WebUI.verifyElementPresent(firstRefIdElement, 5)
 
-/* We want to verify element and text "Detail Nasabah"*/
-WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
+/* We want to verify first name ID*/
+WebUI.verifyElementPresent(firstNameIdElement, 5)
 
-/* We want to verify button re-assign detail card*/
-WebUI.verifyElementPresent(btnReassignElement, 5)
+/* We want grab first attribute name from name ID*/
+firstNameId = WebUI.getText(firstNameIdElement)
 
-/* We want to click button re-assign detail request*/
-WebUI.click(btnReassignElement)
+/* We want grab first attribute from ref ID*/
+firstRequestId = WebUI.getText(firstReqIdElement)
 
-/* We want to verify pop up re-assign detail request*/
-WebUI.verifyElementPresent(popUpNotifReassignElement, 5)
+KeywordUtil keylogger = new KeywordUtil()
 
-/* We want to verify element and text pop up konfirmasi*/
-WebUI.verifyElementText(confirmationReAssignTextElement, confirmationReAssignText)
+if (WebUI.verifyElementVisible(labelRefIdElement, FailureHandling.OPTIONAL)) {
+	WebUI.navigateToUrl(directByUrl +firstRequestId)
+	WebUI.takeScreenshot()
+} else {keylogger.markFailed("We cannot to do that")}
 
-/* We want to verify button "batal" re-assign*/
-WebUI.verifyElementVisible(btnCancelReassignElement)
+TestObject firstName = new TestObject().addProperty('text',ConditionType.CONTAINS,firstNameId)
 
-/* We want to verify button "confirm* re-assign */
-WebUI.verifyElementVisible(btnConfirmReassignElement)
+/* We want to verify the name Id*/
+WebUI.verifyElementPresent(firstName, 5)
 
-/* We want capture the notification*/
-WebUI.takeScreenshot()
-
-/* We want to click button "batal" re-assign*/
-WebUI.click(btnCancelReassignElement)
-
-/* We want to verify button "kembali" to unblock the request*/
-WebUI.verifyElementPresent(btnBackElement, 5)
-
-/* We want to click button "kembali" to unblock the request*/
-WebUI.click(btnBackElement)
-
-/* We want capture new card*/
+/* We want capture the result*/
 WebUI.takeScreenshot()
 
 /* We want to refresh for the next process*/

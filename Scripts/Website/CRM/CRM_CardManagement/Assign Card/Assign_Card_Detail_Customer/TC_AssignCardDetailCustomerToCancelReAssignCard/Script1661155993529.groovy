@@ -10,13 +10,15 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+KeywordUtil keyLogger = new KeywordUtil()
 /* We want to makesure we can identify element assign card*/
 if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
 	/* We want to click menu assign card element*/
@@ -41,6 +43,11 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }
 
+/* We want added filter for new card only*/
+if (WebUI.verifyElementVisible(filterCardType,FailureHandling.OPTIONAL)) {
+	WebUI.selectOptionByLabel(filterCardType, "Kartu Baru", false)
+} else {keyLogger.markFailed("We cannot select kartu baru")}
+
 /* We want to verify Request ID*/
 WebUI.verifyElementPresent(requestIdElement, 5)
 
@@ -50,29 +57,21 @@ WebUI.click(requestIdElement)
 /* We want to verify element and text "Detail Nasabah"*/
 WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
 
-/* We want to verify button re-assign detail card*/
-WebUI.verifyElementPresent(btnReassignElement, 5)
-
-/* We want to click button re-assign detail request*/
-WebUI.click(btnReassignElement)
-
-/* We want to verify pop up re-assign detail request*/
-WebUI.verifyElementPresent(popUpNotifReassignElement, 5)
-
-/* We want to verify element and text pop up konfirmasi*/
-WebUI.verifyElementText(confirmationReAssignTextElement, confirmationReAssignText)
-
-/* We want to verify button "batal" re-assign*/
-WebUI.verifyElementVisible(btnCancelReassignElement)
-
-/* We want to verify button "confirm* re-assign */
-WebUI.verifyElementVisible(btnConfirmReassignElement)
-
-/* We want capture the notification*/
-WebUI.takeScreenshot()
-
-/* We want to click button "batal" re-assign*/
-WebUI.click(btnCancelReassignElement)
+/* We want to try re-assing card then click "batal" */
+if (WebUI.verifyElementPresent(btnReassignElement, 5, FailureHandling.OPTIONAL)) {
+	/* We want to click button re-assign detail request*/
+	WebUI.click(btnReassignElement)
+	if (WebUI.verifyElementPresent(popUpNotifReassignElement, 5,FailureHandling.OPTIONAL)) {
+		/* We want to verify element and text pop up konfirmasi*/
+		WebUI.verifyElementText(confirmationReAssignTextElement, confirmationReAssignText)
+		if (WebUI.verifyElementVisible(btnCancelReassignElement,FailureHandling.OPTIONAL)) {
+			/* We want capture the notification*/
+			WebUI.takeScreenshot()
+			/* We want to click button "batal" re-assign*/
+			WebUI.click(btnCancelReassignElement)
+		} else {keyLogger.markFailed("We cannot find button cancel reassign element")}
+	} else {keyLogger.markFailed("We cannot find notification for re-assing card")}
+} else {keyLogger.markFailed("We cannot find button re-assign")}
 
 /* We want to verify button "kembali" to unblock the request*/
 WebUI.verifyElementPresent(btnBackElement, 5)
