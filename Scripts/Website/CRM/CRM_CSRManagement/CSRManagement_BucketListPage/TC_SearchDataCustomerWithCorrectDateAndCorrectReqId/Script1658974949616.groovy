@@ -69,7 +69,12 @@ if (checkHeaderCsrManagement == true) {
 			keyLogger.markFailed("We don't find button last page")
 		}
 		dateLastPage = firstRowDateLastPage
-		WebUI.click(checkListByOrder.get(i))
+		if (WebUI.verifyElementVisible(checkListByOrder.get(i),FailureHandling.OPTIONAL)) {
+			WebUI.click(checkListByOrder.get(i))
+		} else {
+			WebUI.click(btnPreviousPage)
+			WebUI.click(checkListByOrder.get(i))
+		}		
 		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
 			WebUI.waitForPageLoad(5)
 			/*	'We verify we can access Customer Detail'*/

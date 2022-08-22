@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/104351</description>
+   <name>Suite_CRM_Login_T104351</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>false</rerunImmediately>
+   <testSuiteGuid>88da1e09-7228-4d11-90ce-fc5feb4b428f</testSuiteGuid>
+   <testCaseLink>
+      <guid>ba9aa96b-3d3d-45df-ab98-5fb17315309b</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>040659ba-74fd-4556-ac42-d56fb63ea10a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login_Does_Not_Access_Delivery_Status</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e8404dfc-368d-496a-9010-8ad74736b49b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8442b9b4-aaaf-4d89-a6fc-ec1e44375bdc</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9b7ced3a-ac1c-4784-9f9f-17da4bced362</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6cd91591-e69e-4803-ae17-c14d660b57d3</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>94644ce2-d827-4248-adea-36a01aa3658a</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>427aee94-b04c-4d8c-b3c4-c64a99bd2699</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>469c9a65-336a-46ce-92ec-13754252de72</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

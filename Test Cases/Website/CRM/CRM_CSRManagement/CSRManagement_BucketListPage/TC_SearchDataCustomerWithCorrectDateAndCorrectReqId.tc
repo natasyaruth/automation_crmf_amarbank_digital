@@ -287,6 +287,12 @@
       <value></value>
       <variableId>76069938-818a-45a0-916d-5f6ba94ece6b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f4b53cea-18bb-4a05-b626-6e2d1e8ddeb7</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -615,5 +621,12 @@
       <id>76069938-818a-45a0-916d-5f6ba94ece6b</id>
       <masked>false</masked>
       <name>firstRowDate</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnPreviousPage')</defaultValue>
+      <description></description>
+      <id>f4b53cea-18bb-4a05-b626-6e2d1e8ddeb7</id>
+      <masked>false</masked>
+      <name>btnPreviousPage</name>
    </variable>
 </TestCaseEntity>
