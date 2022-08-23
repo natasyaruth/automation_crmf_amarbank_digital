@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description>https://bankamar.testrail.io/index.php?/tests/view/204278</description>
-   <name>Suite_CRM_Assign_Card_Detail_Customer_Page_T204278</name>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/204254</description>
+   <name>Suite_CRM_Assign_Card_Detail_Customer_Page_T204254</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>0c82c9e8-4aa4-4860-986c-639bd046ebf8</testSuiteGuid>
+   <testSuiteGuid>2b47a5ea-8488-496d-ad39-6fb9fca86e75</testSuiteGuid>
    <testCaseLink>
-      <guid>3b846b66-12ef-46c8-b869-edcaabf90dab</guid>
+      <guid>b7bb0810-2641-4c32-a8e9-ec9d305207f3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -25,7 +25,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a602d086-6435-40ee-99f0-865fbe1475a8</guid>
+      <guid>047cb2d4-39c1-4bb1-b20f-14e3b896eea3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -116,7 +116,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>f6e6a2fd-495f-4efc-a39b-856d28a89f41</guid>
+      <guid>4d323b74-f32c-419e-a817-12374886cacf</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/Assign Card/Assign_Card_Detail_Customer/TC_AssignCardDetailCustomerToVerifyReAssignRequestNewCard</testCaseId>
@@ -249,7 +249,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>9999ec1e-9b0e-4e87-a8a1-8cfe1af9c5e5</guid>
+      <guid>ae1d8f78-de2f-48fb-8466-3d5a4452c90e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>

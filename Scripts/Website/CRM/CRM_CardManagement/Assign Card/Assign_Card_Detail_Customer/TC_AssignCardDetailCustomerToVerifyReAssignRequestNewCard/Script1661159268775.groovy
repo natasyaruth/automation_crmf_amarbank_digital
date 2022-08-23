@@ -10,13 +10,15 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+KeywordUtil keyLogger = new KeywordUtil()
 /* We want to makesure we can identify element assign card*/
 if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
 	/* We want to click menu assign card element*/
@@ -41,68 +43,45 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
 }
 
-/* We want to verify feature search request ID by identify label */
-WebUI.verifyElementText(labelReqIdElement, labelReqIdText)
+/* We want added filter for new card only*/
+if (WebUI.verifyElementVisible(filterCardType,FailureHandling.OPTIONAL)) {
+	WebUI.selectOptionByLabel(filterCardType, "Permintaan Kartu Baru", false)
+} else {keyLogger.markFailed("We cannot select Permintaan Kartu Baru")}
 
-/* We want verify field from request ID */
-WebUI.verifyElementPresent(fieldReqIdElement, 5)
+/* We want to verify Request ID*/
+WebUI.verifyElementPresent(requestIdElement, 5)
 
-/* We want insert request ID in field request ID*/
-WebUI.setText(fieldReqIdElement, invalidReqIdText)
+/* We want to click Request ID*/
+WebUI.click(requestIdElement)
 
-/* We want verify button search in request Id visible*/
-WebUI.verifyElementVisible(btnSearchReqId)
+/* We want to verify element and text "Detail Nasabah"*/
+WebUI.verifyElementText(headerCustomerDetailElement, headerCustomerDetailText)
 
-/* We want click button search request Id*/
-WebUI.click(btnSearchReqId)
+/* We want to try re-assing card then click "batal" */
+if (WebUI.verifyElementPresent(btnReassignElement, 5, FailureHandling.OPTIONAL)) {
+	/* We want to click button re-assign detail request*/
+	WebUI.click(btnReassignElement)
+	if (WebUI.verifyElementPresent(popUpNotifReassignElement, 5,FailureHandling.OPTIONAL)) {
+		/* We want to verify element and text pop up konfirmasi*/
+		WebUI.verifyElementText(confirmationReAssignTextElement, confirmationReAssignText)
+		/* We want to verify element button confirmation reassign */
+		WebUI.verifyElementVisible(btnConfirmReassignElement)		
+		if (WebUI.verifyElementVisible(btnCancelReassignElement,FailureHandling.OPTIONAL)) {
+			/* We want capture the notification*/
+			WebUI.takeScreenshot()
+			/* We want to click button "batal" re-assign*/
+			WebUI.click(btnCancelReassignElement)
+		} else {keyLogger.markFailed("We cannot find button cancel reassign element")}
+	} else {keyLogger.markFailed("We cannot find notification for re-assing card")}
+} else {keyLogger.markFailed("We cannot find button re-assign")}
 
-/* We want to verify notification not find the request Id*/
-WebUI.verifyElementPresent(overFlowNotificationNotFind, 5)
+/* We want to verify button "kembali" to unblock the request*/
+WebUI.verifyElementPresent(btnBackElement, 5)
 
-/* We want verify text "Oops, Hasil pencarian tidak ditemukan" */
-WebUI.verifyElementText(oopsNotificationElement, oopsNotificationText)
+/* We want to click button "kembali" to unblock the request*/
+WebUI.click(btnBackElement)
 
-/* We want capture the result*/
-WebUI.takeScreenshot()
-
-/* We want to click dashboard to process the assign card is clean because we have some issue in html element
- * when we try to clean text the ref or req id then we set for input ref ID then we gonna failed test*/
-WebUI.verifyElementPresent(menuDashboard, 5)
-
-/* We want to click menu dashboard*/
-WebUI.click(menuDashboard)
-
-/* We want to check the card management */
-WebUI.verifyElementVisible(menuCardManagementElement)
-
-/* We want to click the card management first*/
-WebUI.click(menuCardManagementElement)
-
-/* We want to verify menu assign card element*/
-WebUI.verifyElementPresent(menuAssignCardElement, 5)
-
-/* We want to click menu assign card element*/
-WebUI.click(menuAssignCardElement)
-
-/* We want verify field from request ID */
-WebUI.verifyElementPresent(fieldReqIdElement, 5)
-
-/* We want insert ref ID in field request ID*/
-WebUI.setText(fieldReqIdElement, invalidRefIdText)
-
-/* We want verify button search in request Id visible*/
-WebUI.verifyElementVisible(btnSearchReqId)
-
-/* We want click button search request Id*/
-WebUI.click(btnSearchReqId)
-
-/* We want to verify notification not find the ref Id*/
-WebUI.verifyElementPresent(overFlowNotificationNotFind, 5)
-
-/* We want verify text "Oops, Hasil pencarian tidak ditemukan" */
-WebUI.verifyElementText(oopsNotificationElement, oopsNotificationText)
-
-/* We want capture the result*/
+/* We want capture new card*/
 WebUI.takeScreenshot()
 
 /* We want to refresh for the next process*/
