@@ -17,14 +17,13 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink'))
+WebUI.click(CSRManagementMenu)
 
-WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtName'), 'ZYLVIA')
+WebUI.setText(CSRBucketListTxtName, InputName)
 
-WebUI.click(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnSearch'))
+WebUI.click(CSRManagementBucketListBtnSearch)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtFirstRowCustName'), 
-    'ZYLVIA MONICA WILLIYANTI')
+WebUI.verifyElementText(CSRManagementBucketListTxtFirstRowCustName, ExpectedName)
 
 WebUI.takeScreenshot()
 

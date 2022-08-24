@@ -121,6 +121,42 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_BucketListPage/TC_FilterByName</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2d45ad63-ca43-4c79-b68f-14ffe102c129</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f1587ed2-5a7b-445a-a7a6-fa2056c8210f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f92c43fd-17e7-4e6e-bafd-6b659aef427c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1b80c27e-fc21-44e1-ba65-4f10d35b5887</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1e49df9f-d672-46d2-b142-5419be4b5d83</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>223c2847-0571-46cb-8773-4d1d8cdd705b</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>d0486e7f-f10c-4a66-9dea-e85bb636706f</guid>
