@@ -62,6 +62,12 @@ WebUI.verifyElementPresent(popUpNotifReassignElement, 5)
 /* We want to verify element and text pop up konfirmasi*/
 WebUI.verifyElementText(confirmationReAssignTextElement, confirmationReAssignText)
 
+/* We want to verify button "batal" re-assign*/
+WebUI.verifyElementVisible(btnCancelReassignElement)
+
+/* We want to verify button "confirm* re-assign */
+WebUI.verifyElementVisible(btnConfirmReassignElement)
+
 /* We want capture the notification*/
 WebUI.takeScreenshot()
 
