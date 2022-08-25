@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor Kartu'])[1]/following::td[2]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[3]/following::td[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>3c4689b7-6715-46f5-864f-6a2a8697d96e</webElementGuid>
+      <webElementGuid>56815834-7af2-401e-a2c8-e81bcb85ea74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>e9a0b513-5c8a-4c85-b896-5bfdf25e5ef4</webElementGuid>
+      <webElementGuid>e8105b97-660d-4e4c-9c66-97a5e91edcc7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>5077551017715607</value>
-      <webElementGuid>65a04642-3714-4351-90bc-9988415578fb</webElementGuid>
+      <webElementGuid>4314e712-a1d9-4665-a9fd-feb0a508ac5c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>7084b035-6947-49e4-b6f6-991af667d3cc</webElementGuid>
+      <webElementGuid>820c58d7-6ac5-4087-8424-7f60b272824b</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[6]</value>
-      <webElementGuid>c3f8415c-15c0-41ff-bf57-18233f4db092</webElementGuid>
+      <webElementGuid>4ea396b3-dca9-494d-979e-cc9ec80de989</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor Kartu'])[1]/following::td[2]</value>
-      <webElementGuid>e0a4cb4f-b8f5-4c4e-9bb8-84f2a0939dd1</webElementGuid>
+      <webElementGuid>8733aa14-5a82-4597-befc-4d6b16aaa113</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Assign Card'])[3]/following::td[3]</value>
-      <webElementGuid>899c4673-5082-43d5-9626-56caf4e630e9</webElementGuid>
+      <webElementGuid>f2e99cbc-a382-4a33-8f5e-46900958c882</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reassign'])[1]/preceding::td[1]</value>
-      <webElementGuid>01169e8d-8576-40b5-8292-2b6970cc2153</webElementGuid>
+      <webElementGuid>afa5214e-5eef-4adc-8c59-f744dd9cabaf</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='michael.william@amarbank.co.id'])[1]/preceding::td[3]</value>
-      <webElementGuid>fdbbf14d-8c61-42e0-a4fb-e2ef04106d77</webElementGuid>
+      <webElementGuid>75c674c1-4107-4032-90e6-d1271e2b7355</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='5077551017715607']/parent::*</value>
-      <webElementGuid>28162489-18ef-4961-8ed4-c055c7b424a8</webElementGuid>
+      <webElementGuid>988c8590-4e92-44e8-98cf-e745312bc0eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +101,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]</value>
-      <webElementGuid>325f083d-52a4-4020-9b7f-485ab13937a5</webElementGuid>
+      <webElementGuid>ff8c6620-bf35-4b0c-b515-49a92c0ab1d6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +109,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '5077551017715607' or . = '5077551017715607')]</value>
-      <webElementGuid>5113ebf0-d3a8-40a0-8161-724154bd0ae2</webElementGuid>
+      <webElementGuid>e95b92f6-8fc0-4726-814e-aae11c1acf1e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

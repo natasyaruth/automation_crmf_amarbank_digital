@@ -6,12 +6,11 @@
    <elementGuidId>a639ad42-7ab4-48a3-a192-3550c7697eb8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/preceding::td[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/preceding::td[1]</value>
+         <key>CSS</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>a9500b24-ae48-4ed7-a957-7ff270f0019b</webElementGuid>
+      <webElementGuid>c303aa1a-0557-4391-bc4c-af6aa78294e7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>f3ebcc7f-cb6e-44d9-a79a-aa032765ed59</webElementGuid>
+      <webElementGuid>0a6f45b0-d37e-42b1-9375-e159c9275cb3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Kantor</value>
-      <webElementGuid>0d7a5846-44f4-4616-9e8a-48986bd3d2ed</webElementGuid>
+      <webElementGuid>04a5045c-dec1-498a-ba75-8074900e0a04</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>46e1d2ca-3f95-4fbc-8a95-4f8700ecfe67</webElementGuid>
+      <webElementGuid>9d4132c6-43e6-4d40-9a87-da4ad0b02717</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[6]</value>
-      <webElementGuid>3a70b627-c43a-4634-ad85-9893ea78257b</webElementGuid>
+      <webElementGuid>85adf748-2e23-4cf4-acc8-8fca61ddc9a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rumah'])[2]/following::td[1]</value>
-      <webElementGuid>513aa8e5-34d9-428c-9b76-7838b3e51375</webElementGuid>
+      <webElementGuid>093b65e2-8657-450f-b5d8-a88e8c6483a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat pengiriman kartu'])[2]/following::td[2]</value>
-      <webElementGuid>13ead19d-c5ff-49b8-88b7-6718c347005b</webElementGuid>
+      <webElementGuid>bbf053b6-18e5-4623-a806-f1f9cefbe0b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/preceding::td[1]</value>
-      <webElementGuid>fa4f80ff-1243-4e70-a9d1-f781ed5fcf5b</webElementGuid>
+      <webElementGuid>46bfbf90-23a9-4482-9fb7-3c70faf093cc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='qa.testing@amarbank.co.id'])[2]/preceding::td[3]</value>
-      <webElementGuid>ca36cb7a-d73f-4d52-b8ea-7626333de1b8</webElementGuid>
+      <webElementGuid>9ab54937-f827-45e0-9739-33f2fb660a37</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]</value>
-      <webElementGuid>333e7c80-c216-4c54-b84d-967ed0cfa278</webElementGuid>
+      <webElementGuid>cf05989c-0a43-410f-829c-2bdd28eff645</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Kantor' or . = 'Kantor')]</value>
-      <webElementGuid>8ad81f57-b9ee-45dd-b243-74ca20cac6ac</webElementGuid>
+      <webElementGuid>41442a6c-ea1d-4edc-a26c-fc604597c55a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
