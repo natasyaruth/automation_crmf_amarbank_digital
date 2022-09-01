@@ -119,6 +119,12 @@
       <value></value>
       <variableId>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>44d29973-d618-416c-a476-cd9a13187db9</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -251,5 +257,12 @@
       <id>0ef4b3a4-13c4-4125-9e6c-a8fed6ca88b4</id>
       <masked>false</masked>
       <name>headerAssignCardText</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/Assign_Card_Detail/AssignCardDetailBtnCnfrmReassignElement')</defaultValue>
+      <description></description>
+      <id>44d29973-d618-416c-a476-cd9a13187db9</id>
+      <masked>false</masked>
+      <name>btnConfirmReassignElement</name>
    </variable>
 </TestCaseEntity>
