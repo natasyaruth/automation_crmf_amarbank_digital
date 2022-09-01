@@ -26,21 +26,30 @@ import org.openqa.selenium.WebElement as WebElement
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 
+/* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
+/* Fill field Account number with existing account number*/
 WebUI.setText(fieldAccNumber, accNumber)
 
+/* Press enter from keyboard in field Account number*/
 WebUI.sendKeys(fieldAccNumber, Keys.chord(Keys.ENTER))
 
+/* Declarate variable isObjectNotFound as boolean
+ * to save value from verify element objectNotFound is exists or not*/
 boolean isObjectNotFound = WebUI.waitForElementPresent(objectNotFound, 3)
 	
+/* The purpose of this conditional is to verify if the customer data is not found or not.
+ * If data is found, move to else for the next checking*/
 if(isObjectNotFound) {
 	
+	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
 	keyLogger.markFailed("Customer with Account Number "+accNumber+" is not found")
 	
 } else {
 	
+	/* Declarate variable WebDriver as driver */
 	WebDriver driver = DriverFactory.getWebDriver()
 	
 	/* We will declarated variable 'tableCSR' to store the location of the table*/
@@ -50,16 +59,23 @@ if(isObjectNotFound) {
     all the element with tag 'tr' which means element that represent rows*/
     List<WebElement> listRows = tableCSR.findElements(By.tagName('tr'))
 
+	/* We will declarated variable 'listColumn' with type List to store
+	 all the element with tag 'td' which means element that represent column*/
     List<WebElement> listColumn = listRows.get(0).findElements(By.tagName('td'))
 	
+	/* Get account number of customer from column with index 4 */
 	actAccNumber = listColumn.get(4).getText()
 	
+	/* The purpose of this conditional is to verify the actual account number same 
+	 * with expected account number. */
 	if(actAccNumber.equals(accNumber)) {
 		
+		/* Mark the case as Passed and print the message info*/
 		keyLogger.markPassed("Customer with KTP Number "+accNumber+" is found")
 		
 	} else {
 		
+		/* Take screenshot, mark as failed case and print info message error*/
 		WebUI.takeScreenshot()
 		keyLogger.markFailed("CRM display customer with different account number")
 		

@@ -29,11 +29,11 @@ KeywordUtil keyLogger = new KeywordUtil()
 /* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
-/* Fill field KTP number with existing KTP number*/
-WebUI.setText(fieldKTP, ktpNumber)
+/* Fill field KTP number with existing phonenumber*/
+WebUI.setText(fieldPhoneNumber, "0"+phoneNumber)
 
-/* Press enter from keyboard in field KTP number*/
-WebUI.sendKeys(fieldKTP, Keys.chord(Keys.ENTER))
+/* Press enter from keyboard in field phonenumber*/
+WebUI.sendKeys(fieldPhoneNumber, Keys.chord(Keys.ENTER))
 
 /* Declarate variable isObjectNotFound as boolean
  * to save value from verify element objectNotFound is exists or not*/
@@ -45,7 +45,7 @@ if(isObjectNotFound) {
 	
 	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
-	keyLogger.markFailed("Customer with KTP Number "+ktpNumber+" is not found")
+	keyLogger.markFailed("Customer with Phonenumber "+"0"+phoneNumber+" is not found")
 	
 } else {
 	
@@ -63,25 +63,24 @@ if(isObjectNotFound) {
 	 all the element with tag 'td' which means element that represent column*/
     List<WebElement> listColumn = listRows.get(0).findElements(By.tagName('td'))
 	
-	/* Get name of customer from column with index 1 */
-	actCustName = listColumn.get(1).getText()
+	/* Get phonenumber of customer from column with index 3 */
+	actPhoneNumber = listColumn.get(3).getText()
 	
-	/* The purpose of this conditional is to verify the actual customer name same
-	 * with expected customer name. */
-	if(actCustName.equals(custName)) {
+	/* The purpose of this conditional is to verify the actual customer phonenumber same
+	 * with expected customer phonenumber. */
+	if(actPhoneNumber.equals("+62"+phoneNumber)) {
 		
 		/* Mark the case as Passed and print the message info*/
-		WebUI.takeScreenshot()
-		keyLogger.markPassed("Customer with KTP Number "+ktpNumber+" is found")
+		keyLogger.markPassed("Customer with Phonenumber "+"0"+phoneNumber+" is found")
 		
 	} else {
 		
 		/* Take screenshot, mark as failed case and print info message error*/
 		WebUI.takeScreenshot()
-		keyLogger.markFailed("Name customer with KTP Number "+ktpNumber+" is not same")
+		keyLogger.markFailed("Customer with Phonenumber "+"0"+phoneNumber+" is not same")
 		
-		println "Actual customer name: "+actCustName+"\n"
-                "Expected customer name: "+custName
+		println "Actual Phone Number : "+actPhoneNumber+"\n"
+                "Expected Phone Number : +62"+phoneNumber
 	}
 }
 
