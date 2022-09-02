@@ -29,11 +29,17 @@ KeywordUtil keyLogger = new KeywordUtil()
 /* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
-/* Fill field KTP number with existing KTP number*/
-WebUI.setText(fieldKTP, ktpNumber)
+/* Press enter from keyboard in field Name*/
+WebUI.setText(fieldName, custName)
 
 /* Press enter from keyboard in field KTP number*/
-WebUI.sendKeys(fieldKTP, Keys.chord(Keys.ENTER))
+WebUI.setText(fieldKTP, ktpNumber)
+
+/* Press enter from keyboard in field Account number*/
+WebUI.setText(fieldAccNumber, accNumber)
+
+/* Click button search */
+WebUI.click(btnSearch)
 
 /* Declarate variable isObjectNotFound as boolean
  * to save value from verify element objectNotFound is exists or not*/
@@ -45,7 +51,7 @@ if(isObjectNotFound) {
 	
 	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
-	keyLogger.markFailed("Customer with KTP Number "+ktpNumber+" is not found")
+	keyLogger.markFailed("Customer with data "+custName+", "+ktpNumber+" and "+accNumber+" is not found")
 	
 } else {
 	
@@ -66,13 +72,30 @@ if(isObjectNotFound) {
 	/* Get name of customer from column with index 1 */
 	actCustName = listColumn.get(1).getText()
 	
+	/* Get account number of customer from column with index 4 */
+	actAccNumber = listColumn.get(4).getText()
+	
 	/* The purpose of this conditional is to verify the actual customer name same
 	 * with expected customer name. */
 	if(actCustName.equals(custName)) {
 		
-		/* Mark the case as Passed and print the message info*/
-		WebUI.takeScreenshot()
-		keyLogger.markPassed("Customer with KTP Number "+ktpNumber+" is found")
+		/* The purpose of this conditional is to verify the actual account number same
+		 * with expected account number. */
+		if(actAccNumber.equals(accNumber)) {
+			
+			/* Mark the case as Passed and print the message info*/
+			WebUI.takeScreenshot()
+			keyLogger.markPassed("Customer with data Fullname: "+custName+", KTP Number: "+ktpNumber+" and Account number: "+accNumber+" is found")
+			
+		} else {
+			
+			/* Take screenshot, mark as failed case and print info message error*/
+			WebUI.takeScreenshot()
+			keyLogger.markFailed("Account number customer with  fullname is "+custName+" and KTP Number "+ktpNumber+" is not same")
+			
+			println "Actual Account number: "+actAccNumber+"\n"
+					"Expected Account number: "+accNumber
+		}
 		
 	} else {
 		

@@ -26,26 +26,37 @@ import org.openqa.selenium.WebElement as WebElement
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 
+/* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
+/* Fill field Account number with existing account number*/
 WebUI.setText(fieldAccNumber, accNumber)
 
+/* Press enter from keyboard in field Account number*/
 WebUI.sendKeys(fieldAccNumber, Keys.chord(Keys.ENTER))
 
+/* Declarate variable isObjectNotFound as boolean
+ * to save value from verify element objectNotFound is exists or not*/
 boolean isObjectNotFound = WebUI.waitForElementPresent(objectNotFound, 3)
 	
+/* The purpose of this conditional is to verify if the customer data is not found or not.*/
 if(isObjectNotFound) {
 	
+	/* Storing text of not found to variable actTxtNotFound*/
 	actTxtNotFound = WebUI.getText(objectNotFound)
 	
+	/* The purpose of this conditional is to verify the present first text of data not found*/
 	if(actTxtNotFound.equals(expTxtNotFound)){
 		
+		/* The purpose of this conditional is to verify the present second text of data not found*/
 		if (WebUI.verifyTextPresent(expSecTxtNotFound, false)) {
 			
+			/* Print info the customer is found*/
 			println "Customer with KTP Number "+accNumber+" is not found. Case success"
 			
 		} else {
 			
+			/* Take screenshot, mark as failed case and print info message error*/
 			WebUI.takeScreenshot()
 			keyLogger.markFailed("Text "+expSecTxtNotFound+" is not present")
 			
@@ -53,6 +64,7 @@ if(isObjectNotFound) {
 		
 	} else {
 		
+		/* Take screenshot, mark as failed case and print info message error*/
 		WebUI.takeScreenshot()
 		keyLogger.markFailed("Text "+expTxtNotFound+" is not present")
 		
@@ -61,6 +73,7 @@ if(isObjectNotFound) {
 	
 } else {
 	
+	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
 	keyLogger.markFailed("Customer with KTP Number "+accNumber+" is found. Case failed")
 	
