@@ -29,59 +29,53 @@ KeywordUtil keyLogger = new KeywordUtil()
 /* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
-/* Fill field KTP number with existing KTP number*/
-WebUI.setText(fieldKTP, ktpNumber)
+/* Fill field phonenumber with existing customer phonenumber*/
+WebUI.setText(fieldPhoneNumber, phoneNumber)
 
-/* Press enter from keyboard in field KTP number*/
-WebUI.sendKeys(fieldKTP, Keys.chord(Keys.ENTER))
+/* Click enter from keyboard*/
+WebUI.sendKeys(fieldPhoneNumber, Keys.chord(Keys.ENTER))
 
 /* Declarate variable isObjectNotFound as boolean
  * to save value from verify element objectNotFound is exists or not*/
 boolean isObjectNotFound = WebUI.waitForElementPresent(objectNotFound, 3)
 	
-/* The purpose of this conditional is to verify if the customer data is not found or not.
- * If data is found, move to else for the next checking*/
+/* The purpose of this conditional is to verify if the customer data is not found or not.*/
 if(isObjectNotFound) {
 	
-	/* Take screenshot, mark as failed case and print info message error*/
-	WebUI.takeScreenshot()
-	keyLogger.markFailed("Customer with KTP Number "+ktpNumber+" is not found")
+	/* Storing text of not found to variable actTxtNotFound*/
+	actTxtNotFound = WebUI.getText(objectNotFound)
 	
-} else {
-	
-	/* Declarate variable WebDriver as driver */
-	WebDriver driver = DriverFactory.getWebDriver()
-	
-	/* We will declarated variable 'tableCSR' to store the location of the table*/
-    WebElement tableCSR = driver.findElement(By.xpath('//tbody'))
-
-    /* We will declarated variable 'listRows' with type List to store
-    all the element with tag 'tr' which means element that represent rows*/
-    List<WebElement> listRows = tableCSR.findElements(By.tagName('tr'))
-
-	/* We will declarated variable 'listColumn' with type List to store
-	 all the element with tag 'td' which means element that represent column*/
-    List<WebElement> listColumn = listRows.get(0).findElements(By.tagName('td'))
-	
-	/* Get name of customer from column with index 1 */
-	actCustName = listColumn.get(1).getText()
-	
-	/* The purpose of this conditional is to verify the actual customer name same
-	 * with expected customer name. */
-	if(actCustName.equals(custName)) {
+	/* The purpose of this conditional is to verify the present first text of data not found*/
+	if(actTxtNotFound.equals(expTxtNotFound)){
 		
-		/* Mark the case as Passed and print the message info*/
-		WebUI.takeScreenshot()
-		keyLogger.markPassed("Customer with KTP Number "+ktpNumber+" is found")
+		/* The purpose of this conditional is to verify the present second text of data not found*/
+		if (WebUI.verifyTextPresent(expSecTxtNotFound, false)) {
+			
+			/* Print info the customer is found*/
+			println "Customer with Phonenumber "+phoneNumber+" is not found. Case success"
+			
+		} else {
+			
+			/* Take screenshot, mark as failed case and print info message error*/
+			WebUI.takeScreenshot()
+			keyLogger.markFailed("Text "+expSecTxtNotFound+" is not present")
+			
+		}
 		
 	} else {
 		
 		/* Take screenshot, mark as failed case and print info message error*/
 		WebUI.takeScreenshot()
-		keyLogger.markFailed("Name customer with KTP Number "+ktpNumber+" is not same")
+		keyLogger.markFailed("Text "+expTxtNotFound+" is not present")
 		
-		println "Actual customer name: "+actCustName+"\n"
-                "Expected customer name: "+custName
 	}
+	
+	
+} else {
+	
+	/* Take screenshot, mark as failed case and print info message error*/
+	WebUI.takeScreenshot()
+	keyLogger.markFailed("Customer with Phonenumber "+phoneNumber+" is found. Case failed")
+	
 }
 

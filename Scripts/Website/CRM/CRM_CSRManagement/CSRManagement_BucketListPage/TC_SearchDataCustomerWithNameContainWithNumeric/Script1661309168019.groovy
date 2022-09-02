@@ -21,18 +21,25 @@ import com.kms.katalon.core.util.KeywordUtil
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 
+/* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
+/* Fill field name with existing customer name */
 WebUI.setText(fieldName, custNameContainNumber)
 
+/* Press enter from keyboard in field customer name*/
 WebUI.sendKeys(fieldName, Keys.chord(Keys.ENTER))
 
+/* The purpose of this conditional is to validate the message error in field customer name
+ * is appear or not*/
 if(WebUI.waitForElementPresent(msgValidationFieldName, 3)) {
 	
+	/* Verify the text message error */
 	WebUI.verifyTextPresent(msgErrorFormatName, false)
 	
 } else {
 	
+	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
 	keyLogger.markFailed("Message error "+msgErrorFormatName+" is not present")
 	

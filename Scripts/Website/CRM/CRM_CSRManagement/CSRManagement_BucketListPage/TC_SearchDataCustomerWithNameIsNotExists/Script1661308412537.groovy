@@ -21,26 +21,37 @@ import com.kms.katalon.core.util.KeywordUtil
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 
+/* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
+/* Fill field name with existing customer name*/
 WebUI.setText(fieldName, custName)
 
+/* Click button search*/
 WebUI.click(btnSearch)
 
+/* Declarate variable isObjectNotFound as boolean
+ * to save value from verify element objectNotFound is exists or not*/
 boolean isObjectNotFound = WebUI.waitForElementPresent(objectNotFound, 3)
 
+/* The purpose of this conditional is to verify if the customer data is not found or not.*/
 if(isObjectNotFound) {
 	
+	/* Storing text of not found to variable actTxtNotFound*/
 	actTxtNotFound = WebUI.getText(objectNotFound)
 	
+	/* The purpose of this conditional is to verify the present first text of data not found*/
 	if(actTxtNotFound.equals(expTxtNotFound)){
 		
+		/* The purpose of this conditional is to verify the present second text of data not found*/
 		if (WebUI.verifyTextPresent(expSecTxtNotFound, false)) {
 			
+			/* Print info the customer is found*/
 			println "Customer with name "+custName+" is not found. Case success"
 			
 		} else {
 			
+			/* Take screenshot, mark as failed case and print info message error*/
 			WebUI.takeScreenshot()
 			keyLogger.markFailed("Text "+expSecTxtNotFound+" is not present")
 			
@@ -48,6 +59,7 @@ if(isObjectNotFound) {
 		
 	} else {
 		
+		/* Take screenshot, mark as failed case and print info message error*/
 		WebUI.takeScreenshot()
 		keyLogger.markFailed("Text "+expTxtNotFound+" is not present")
 		
@@ -55,6 +67,7 @@ if(isObjectNotFound) {
 	
 } else {
 	
+	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
 	keyLogger.markFailed("Customer with name "+custName+" is found. Case failed")
 	

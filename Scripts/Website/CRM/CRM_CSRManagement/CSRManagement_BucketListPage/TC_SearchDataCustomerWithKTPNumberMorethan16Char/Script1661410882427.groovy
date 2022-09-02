@@ -21,18 +21,25 @@ import com.kms.katalon.core.util.KeywordUtil
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 
+/* Wait until table CSR Management is exists*/
 WebUI.waitForElementPresent(table, 10)
 
+/* Press enter from keyboard in field KTP number*/
 WebUI.setText(fieldKTP, ktpNumber)
 
+/* Press enter from keyboard in field KTP number*/
 WebUI.sendKeys(fieldKTP, Keys.chord(Keys.ENTER))
 
+/* The purpose of this conditional is to validate the message error in field KTP number
+ * is appear or not*/
 if(WebUI.waitForElementPresent(msgValidationFieldKTP, 3)) {
 	
+	/* Verify the text message error */
 	WebUI.verifyTextPresent(msgErrorFormatKTP, false)
 	
 } else {
 	
+	/* Take screenshot, mark as failed case and print info message error*/
 	WebUI.takeScreenshot()
 	keyLogger.markFailed("Message error "+msgErrorFormatKTP+" is not present")
 	
