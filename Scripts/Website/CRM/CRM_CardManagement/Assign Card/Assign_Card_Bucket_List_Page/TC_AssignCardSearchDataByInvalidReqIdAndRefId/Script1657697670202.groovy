@@ -72,6 +72,12 @@ WebUI.verifyElementPresent(menuDashboard, 5)
 /* We want to click menu dashboard*/
 WebUI.click(menuDashboard)
 
+/* We want to check the card management */
+WebUI.verifyElementVisible(menuCardManagementElement)
+
+/* We want to click the card management first*/
+WebUI.click(menuCardManagementElement)
+
 /* We want to verify menu assign card element*/
 WebUI.verifyElementPresent(menuAssignCardElement, 5)
 
