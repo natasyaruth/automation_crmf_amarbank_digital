@@ -65,11 +65,12 @@ if (linkCsrManagement.contains(wordingCsrMgt)) {
  * 7. If doesn't have, it will back and check in second data"*/
 boolean wordingCsrMgt = wordingHeaderCsrMgt
 WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
-WebElement tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
-List<WebElement> listRows = tableCsrMgt.findElements(By.tagName('tr'))
-println('No. of rows: ' + listRows.size())
+WebElement tableCsrMgt
+List<WebElement> listRows
 LoopCsrManagement:
 while (flagDataReqId == false) {
+	tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 	if (wordingCsrMgt == true) {
 		boolean idxDataFltrCrdSts = WebUI.verifyOptionsPresent(drpDwnFltrSts, drpDwnListFltrCrdSts)
 		if (idxDataFltrCrdSts == true) {
@@ -81,8 +82,8 @@ while (flagDataReqId == false) {
 		} else {keyLogger.logInfo('We not found the data')}	
 	}
 		for (int i = 0; i < listRows.size() ; i++) {
+			println('No. of rows: ' + listRows.size() + ' And list of row is = ' +i)
 			List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
-			for (int j = 0; j < listCols.size(); j++) {
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 					listCols.get(6).findElement(By.tagName('button')).click()
 					String headerCustDetail = WebUI.getText(txtCustDetail)
@@ -99,11 +100,21 @@ while (flagDataReqId == false) {
 									WebUI.click(btnBatalReqNewCard)
 									break LoopCsrManagement
 								} else {keyLogger.markError("Request Menu Pop up not appear")}
-							} else {keyLogger.markError("We are not in menu request new card")}
-						} else {keyLogger.markError("Is not with status Selesai")}
+							} else {
+								keyLogger.logInfo("We are not in menu request new card")
+								WebUI.click(btnBack)
+								tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+								listRows = tableCsrMgt.findElements(By.tagName('tr'))
+								}
+						} else {
+							keyLogger.logInfo("Is not with status Selesai")
+							WebUI.click(btnBack)
+							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+							listRows = tableCsrMgt.findElements(By.tagName('tr'))
+							}
 					} else {keyLogger.markError("We are not in customer detail")}
 			} else {keyLogger.markError("We cannot get the element")}
 		}
 	}
-}
+
 

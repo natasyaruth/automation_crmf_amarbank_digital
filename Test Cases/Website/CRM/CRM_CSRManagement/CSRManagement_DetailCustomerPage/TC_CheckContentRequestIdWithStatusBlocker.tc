@@ -107,6 +107,18 @@
       <value></value>
       <variableId>bf7485ae-0c30-4d9b-b1da-894368462b72</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7022b3f5-a9f9-4743-b235-cd5fff8235bb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1011a4e5-1cc4-4452-b208-7f0921033deb</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'CSR Management'</defaultValue>
       <description></description>
@@ -225,5 +237,19 @@
       <id>bf7485ae-0c30-4d9b-b1da-894368462b72</id>
       <masked>false</masked>
       <name>btnBack</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>7022b3f5-a9f9-4743-b235-cd5fff8235bb</id>
+      <masked>false</masked>
+      <name>flagConditionTest</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnNextPage')</defaultValue>
+      <description></description>
+      <id>1011a4e5-1cc4-4452-b208-7f0921033deb</id>
+      <masked>false</masked>
+      <name>btnNextPage</name>
    </variable>
 </TestCaseEntity>

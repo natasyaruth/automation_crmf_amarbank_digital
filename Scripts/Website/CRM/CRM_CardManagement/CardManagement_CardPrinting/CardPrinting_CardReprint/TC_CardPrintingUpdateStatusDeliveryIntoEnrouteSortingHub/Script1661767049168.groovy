@@ -255,7 +255,7 @@ WebUI.delay(5) /*this part i put for give waiting API process*/
 				for (int l = 0; l < Cols.size();l++) {
 					if (Cols.get(l).getText().equalsIgnoreCase(requestId)) {
 						Cols.get(1).findElement(By.tagName('a')).click()
-						table: break }}}
+						break table }}}
 			def headerTextDeliveryDetail = WebUI.getText(headerDeliveryDetail)
 			/*We want to check on delivery detail based on text delivery detail and then I will check the message
 			 * Dalam perjalanan ke gudang Penyortiran*/			

@@ -23,6 +23,8 @@ RunConfiguration.setWebDriverPreferencesProperty('args', listValue)
 /* Set input username & password basic auth on browser web page */
 WebUI.openBrowser((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + GlobalVariable.siteUrl.substring(
         8))
+/* Set window is maximize*/
+WebUI.maximizeWindow()
 
 /* Set navigate to setup URL */
 WebUI.navigateToUrl(GlobalVariable.siteUrl)

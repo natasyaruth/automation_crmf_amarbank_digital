@@ -63,48 +63,54 @@ if (linkCsrManagement.contains(wordingCsrMgt)) {
  * 5. Click button "Permintaan Kartu Baru"
  * 6. Then show pop up detail in "Permintaan Kartu Baru
  * 7. If doesn't have, it will back and check in second data"*/
-boolean wordingCsrMgt = wordingHeaderCsrMgt
-LoopCsrManagement:
-while (flagDataReqId == false) {
-	WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
-	WebElement tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
-	List<WebElement> listRows = tableCsrMgt.findElements(By.tagName('tr'))
+WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
+String expectedStatus = 'Diblokir'
+WebElement tableCsrMgt
+List<WebElement> listRows
+List<WebElement> listCols
+boolean flagCondition = flagConditionTest
+loopCondition:
+while (flagCondition == false) {
+	tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 	for (int i = 0; i < listRows.size() ; i++) {
 		println('No. of rows: ' + listRows.size() + 'and check list rows: ' +i)
-		WebUI.verifyElementVisible(headerCsrMgt)
-		List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
-		for (int j = 0; j < listCols.size(); j++) {
-			if (wordingCsrMgt == true) {
-				boolean idxDataFltrCrdSts = WebUI.verifyOptionsPresent(drpDwnFltrSts, drpDwnListFltrCrdSts)
-				if (idxDataFltrCrdSts == true) {
-					WebUI.selectOptionByLabel(drpDwnFltrSts, 'Semua', false)
-					boolean idxDataCsrTyp = WebUI.verifyOptionsPresent(drpDwnFltrCsrTyp, drpDwnListFltrCsrTyp)
-					if (idxDataCsrTyp == true) {
-						WebUI.selectOptionByLabel(drpDwnFltrCsrTyp, 'Semua', false)
-					} else {keyLogger.logInfo('We not found the data')}
-				} else {keyLogger.logInfo('We not found the data')}	
-			}
-				if (listCols.get(j).getText().equalsIgnoreCase('Detail')) {
+		if (i == listRows.size()) {
+			WebUI.click(btnNextPage)
+			WebUI.waitForPageLoad(5)
+			tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+			listRows = tableCsrMgt.findElements(By.tagName('tr'))
+		} else {
+			WebUI.verifyElementVisible(headerCsrMgt)
+		if (WebUI.verifyOptionsPresent(drpDwnFltrSts, drpDwnListFltrCrdSts)) {
+			WebUI.selectOptionByLabel(drpDwnFltrSts, 'Semua', false)
+			if (WebUI.verifyOptionsPresent(drpDwnFltrCsrTyp, drpDwnListFltrCsrTyp)) {
+				WebUI.selectOptionByLabel(drpDwnFltrCsrTyp, 'Nasabah Senyumku', false)
+			} else {keyLogger.markError("Element not present")}
+		} else {keyLogger.markError("Element not present")}					
+					listCols = listRows.get(i).findElements(By.tagName('td'))
 					listCols.get(6).findElement(By.tagName('button')).click()
 					String headerCustDetail = WebUI.getText(txtCustDetail)
 					if (headerCustDetail.equalsIgnoreCase('Detil Nasabah')) {
-						TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Diblokir')
+						TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,expectedStatus)
 						if (WebUI.verifyElementPresent(reqDetailStatus, 5,FailureHandling.OPTIONAL)) {
 							WebUI.click(linkDataAtmCard)
 							if (WebUI.verifyElementNotClickable(btnReqNewCard, FailureHandling.OPTIONAL)) {
-								keyLogger.markPassed("We are in Data Kartu ATM")
-									WebUI.takeScreenshot()
-									WebUI.verifyElementVisible(btnBack)
-									WebUI.click(btnBack)
-									break LoopCsrManagement
+								keyLogger.markPassed("We are in Data Kartu ATM")							
 						} else {keyLogger.markError("We are not in menu request new card")}
+						WebUI.takeScreenshot()
+						WebUI.verifyElementVisible(btnBack)
+						WebUI.click(btnBack)
+						break loopCondition
 					} else {
 						WebUI.verifyElementVisible(btnBack)
 						WebUI.click(btnBack)
+						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+						listRows = tableCsrMgt.findElements(By.tagName('tr'))
 					}
-				}
+				} else {keyLogger.markError("Element not present")}
 			}
 		}
 	}
-}
+	
 

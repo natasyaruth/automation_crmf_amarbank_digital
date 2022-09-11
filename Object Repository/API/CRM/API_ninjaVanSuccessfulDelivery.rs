@@ -34,7 +34,7 @@
    <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>${hostnameCRM}/card/webhook</restUrl>
+   <restUrl>${base_url_crm_otoku}/card/webhook</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -48,7 +48,7 @@
       <description></description>
       <id>04264be9-85fe-4b88-8de1-0096ec2caab2</id>
       <masked>false</masked>
-      <name>hostnameCRM</name>
+      <name>base_url_crm_otoku</name>
    </variables>
    <variables>
       <defaultValue>GlobalVariable.hashNinjaVanSuccessfulDelivery</defaultValue>
@@ -56,6 +56,20 @@
       <id>1878892c-cf6f-4fbc-ba91-ac9e4d14c932</id>
       <masked>false</masked>
       <name>hashNinjaVanSuccessfulDelivery</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.usernameWebApi</defaultValue>
+      <description></description>
+      <id>02f1bf11-08c2-46cf-9c0b-f626daa004d3</id>
+      <masked>false</masked>
+      <name>username_web_api</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.passwordWebApi</defaultValue>
+      <description></description>
+      <id>7c012826-0ff6-4281-b188-5b3e5baec24c</id>
+      <masked>false</masked>
+      <name>password_web_api</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 

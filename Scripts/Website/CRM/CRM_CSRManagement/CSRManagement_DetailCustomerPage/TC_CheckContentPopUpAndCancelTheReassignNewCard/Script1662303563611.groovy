@@ -65,11 +65,12 @@ if (linkCsrManagement.contains(wordingCsrMgt)) {
  * 7. If doesn't have, it will back and check in second data"*/
 boolean wordingCsrMgt = wordingHeaderCsrMgt
 WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
-WebElement tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
-List<WebElement> listRows = tableCsrMgt.findElements(By.tagName('tr'))
-println('No. of rows: ' + listRows.size())
+WebElement tableCsrMgt
+List<WebElement> listRows
 LoopCsrManagement:
 while (flagDataReqId == false) {
+	tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 	if (wordingCsrMgt == true) {
 		boolean idxDataFltrCrdSts = WebUI.verifyOptionsPresent(drpDwnFltrSts, drpDwnListFltrCrdSts)
 		if (idxDataFltrCrdSts == true) {
@@ -81,12 +82,12 @@ while (flagDataReqId == false) {
 		} else {keyLogger.logInfo('We not found the data')}	
 	}
 		for (int i = 0; i < listRows.size() ; i++) {
+			println('No. of rows: ' + listRows.size() + 'and check list rows: ' +i)
 			List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
-			for (int j = 0; j < listCols.size(); j++) {
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 					listCols.get(6).findElement(By.tagName('button')).click()
-					String headerCustDetail = WebUI.getText(txtCustDetail)
-					if (headerCustDetail.equalsIgnoreCase('Detil Nasabah')) {
+					TestObject headerCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
+					if (WebUI.verifyElementPresent(headerCustDetail, 5)) {
 						TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 						if (WebUI.verifyElementPresent(reqDetailStatus, 5)) {
 							WebUI.click(linkDataAtmCard)
@@ -141,11 +142,20 @@ while (flagDataReqId == false) {
 										} else {keyLogger.markError("Wording is not equal = "+wordingAccountNumber+" please try again")}
 									} else {keyLogger.markError("Wording is not equal = "+wordingAskMotherName+" please try again")}
 								} else {keyLogger.markError("Request Menu Pop up not appear")}
-							} else {keyLogger.markError("We cannot click the button")}
-						} else {keyLogger.markError("The element contains "+reqDetailStatus+" try again")}
+							} else {
+								keyLogger.logInfo("We cannot click the button")
+								WebUI.click(btnBackToBucketList)
+								tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+								listRows = tableCsrMgt.findElements(By.tagName('tr'))
+								}
+						} else {
+							keyLogger.logInfo("The element contains "+reqDetailStatus+" try again")
+							WebUI.click(btnBackToBucketList)
+							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+							listRows = tableCsrMgt.findElements(By.tagName('tr'))
+							}
 					} else {keyLogger.markError("We are not in customer detail")}
 			} else {keyLogger.markError("We cannot get the element")}
-		}
 	}
 }
 

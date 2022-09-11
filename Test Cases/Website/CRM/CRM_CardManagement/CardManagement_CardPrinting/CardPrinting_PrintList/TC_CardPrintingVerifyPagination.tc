@@ -114,11 +114,11 @@
       <name>btnFirstPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/TxtNextPage')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/TxtFirstPage')</defaultValue>
       <description></description>
       <id>e147bc8e-01ab-4358-aa02-fcf12dcd9e83</id>
       <masked>false</masked>
-      <name>txtNextPage</name>
+      <name>txtFirstPage</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/TxtPreviousPage')</defaultValue>
