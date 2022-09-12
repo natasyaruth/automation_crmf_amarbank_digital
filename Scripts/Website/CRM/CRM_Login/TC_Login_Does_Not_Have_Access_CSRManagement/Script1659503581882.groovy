@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-/* this is testcase we put from TC_Login_Non_Roles 
+/* this is testcase we put from TC_Login_Non_Roles */
 WebUI.callTestCase(findTestCase('Website/CRM/CRM_Login/TC_Login_Non_Roles'), [('btnLoginText') : 'Login by Email Amarbank'
         , ('verifyFieldEmail') : 'Masukkan email Anda', ('gmailAccount') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 6)
         , ('gmailPassword') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 6), ('verifyFieldPassword') : 'Masukkan sandi Anda'
@@ -26,7 +26,7 @@ WebUI.callTestCase(findTestCase('Website/CRM/CRM_Login/TC_Login_Non_Roles'), [('
         , ('btnLogin') : findTestObject('Website/CRM/Login/LoginBtn'), ('fieldEmailLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailAccount')
         , ('btnNext') : findTestObject('Website/CRM/Login/LoginBtnNext'), ('fieldPasswordLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailPassword')
         , ('btnPasswordNext') : findTestObject('Website/CRM/Login/LoginBtnPasswordNext'), ('gridInfoLogin') : findTestObject('Website/CRM/Login/LoginGridInfoLogin')], 
-    FailureHandling.OPTIONAL) */
+    FailureHandling.OPTIONAL)
 
 /* We will direct to video verification*/
 WebUI.navigateToUrl(siteURL_CSR_Management+"/csr-management")
