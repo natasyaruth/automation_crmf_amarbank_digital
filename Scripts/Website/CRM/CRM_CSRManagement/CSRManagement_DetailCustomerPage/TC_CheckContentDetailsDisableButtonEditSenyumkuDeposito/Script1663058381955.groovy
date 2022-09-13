@@ -32,12 +32,8 @@ import com.kms.katalon.core.util.KeywordUtil
 /* Declare keyword util as logger*/
 KeywordUtil keyLogger = new KeywordUtil()
 
-/* We want to access CSR Detail by menu CSR Management with condition Nasabah Senyumku With Step :
- * 1, User click button Edit
- * 2. User input No. KTP
- * 3. User input Nama Lengkap
- * 4. User click button Check Data KTP
- * 5. User click button Cancel*/
+/* We want to access CSR Detail by menu CSR Management with condition Nasabah Deposito with disable button edit With Step :
+ * 1. Agen Click section "Data KTP"*/
 
 linkCsrManagement = WebUI.getText(menuCsrManagement)
 if (linkCsrManagement.equalsIgnoreCase('CSR Management')) {
@@ -52,21 +48,7 @@ if (linkCsrManagement.equalsIgnoreCase('CSR Management')) {
 } else {keyLogger.markError("We not find text CSR Management")}
 
 /* We want to access detail customer with condition
- * 1. Detail button must include customer nasabah senyumku
- * 2. Check on Data KTP
- * 3. Button Edit can be clicked
- * 4. And check on as expected :
-		Field No. KTP is enabled
-		Field Nama Lengkap is enabled
-		User can input/edit No. KTP
-		User can input/edit Nama Lengkap
-		User can click button Check Data KTP
-
-		Display field Data KTP
-		User can click button cancel
-		The data is unsaved and back to the last data
-		Button cancel changes to be button Edit
-		Field No. KTP and Nama Lengkap changes to be disabled*/
+ * And we want expect : Button "Edit" is disable*/
 
 WebDriver driverCsrMgt = DriverFactory.getWebDriver()
 WebElement tblCsrMgt
@@ -84,40 +66,17 @@ while (flagCount == false) {
 		println(' Total of Data : ' +rowsCsrMgt.size()+ ' and existing row is : ' +i)
 		List<WebElement> colsCsrMgt = rowsCsrMgt.get(i).findElements(By.xpath('td'))
 		if (rowsCsrMgt.size() != i) {
-			if (colsCsrMgt.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
+			if (colsCsrMgt.get(5).getText().equalsIgnoreCase('Senyumku Deposito')) {
 				colsCsrMgt.get(6).findElement(By.tagName('button')).click()
 				TestObject detailCsrDtl = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
 				if (WebUI.verifyElementPresent(detailCsrDtl, 5, FailureHandling.OPTIONAL)) {
 					WebUI.click(dataKtp)
-					if (WebUI.verifyElementClickable(btnEditKtp,FailureHandling.OPTIONAL)) {
-						String getTextBtnEdit = WebUI.getText(btnEditKtp)
-						WebUI.click(btnEditKtp)
-						if (WebUI.verifyElementClickable(fieldKtpNo,FailureHandling.OPTIONAL)) {
-							existFieldKtpNo = WebUI.getText(fieldKtpNo)
-							rdmFieldKtpNo = WebUI.setText(fieldKtpNo, RandomStringUtils.randomNumeric(16))
-							WebUI.verifyNotMatch(existFieldKtpNo, rdmFieldKtpNo, false)
-							keyLogger.markPassed("Field No. KTP is enabled & User can input/edit No. KTP")
-							WebUI.takeScreenshot()
-						} else {keyLogger.logInfo("Element Field No . KTP is disable")}
-						if (WebUI.verifyElementClickable(fieldKtpName,FailureHandling.OPTIONAL)) {
-							existFieldKtpName = WebUI.getText(fieldKtpName)
-							rdmFieldKtpName = WebUI.setText(fieldKtpName, RandomStringUtils.randomAlphabetic(10))
-							WebUI.verifyNotMatch(existFieldKtpName, rdmFieldKtpName, false)
-							keyLogger.markPassed("Field Nama Lengkap is enabled & User can input/edit Nama Lengkap")
-						} else {keyLogger.markError("Field KTP Full name is disable")}
-						if (WebUI.verifyElementClickable(btnCancelEditKtp,FailureHandling.OPTIONAL)) {
-							String getTextBtnCancel = WebUI.getText(btnCancelEditKtp)
-							WebUI.click(btnCancelEditKtp)
-						if (getTextBtnCancel != getTextBtnEdit){
-							keyLogger.markPassed("Button cancel changes to be button Edit")
-							WebUI.verifyElementNotClickable(fieldKtpNo)
-							WebUI.verifyElementNotClickable(fieldKtpName)	
-							WebUI.takeScreenshot()	
-						} else {keyLogger.markError("Value is equal")}
-					} else {keyLogger.markError("button cancel not click able")}
+					if (WebUI.verifyElementNotClickable(btnEditKtp,FailureHandling.OPTIONAL)) {
+						keyLogger.markPassed("Button Edit is disable")
+						WebUI.takeScreenshot()
 					break LoopCount
 				} else {
-					keyLogger.logInfo("Button edit cannot click able")
+					keyLogger.logInfo("Button edit it can click able")
 					WebUI.click(btnBackToCsrBucketList)
 					tblCsrMgt = driverCsrMgt.findElement(By.xpath('//table/tbody'))
 					rowsCsrMgt = tblCsrMgt.findElements(By.tagName('tr'))

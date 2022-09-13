@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>TC_CheckContentDetailsDoEditAndCancelCondition</description>
-   <name>TC_CheckContentDetailsDoEditAndCancelCondition</name>
+   <description></description>
+   <name>TC_CheckContentDetailsDisableButtonEditSenyumkuDeposito</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>2873683a-393d-498e-8e42-e16855415ec7</testCaseGuid>
+   <testCaseGuid>49f1d3bc-af7f-42bf-a627-701e0ceda0c3</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -200,7 +200,7 @@
       <name>btnBackToCsrBucketList</name>
    </variable>
    <variable>
-      <defaultValue>'Nasabah Senyumku'</defaultValue>
+      <defaultValue>'Nasabah Baru'</defaultValue>
       <description></description>
       <id>a7163df0-2308-45b2-99bb-07feecc41d42</id>
       <masked>false</masked>
