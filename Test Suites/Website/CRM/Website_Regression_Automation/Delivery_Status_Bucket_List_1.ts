@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>Delivery_Status_1</name>
+   <name>Delivery_Status_Bucket_List_1</name>
    <tag></tag>
    <delayBetweenInstances>3</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
