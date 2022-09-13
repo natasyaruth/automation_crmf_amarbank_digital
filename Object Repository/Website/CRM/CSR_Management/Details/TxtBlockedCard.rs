@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtBlockedCard</name>
+   <tag></tag>
+   <elementGuidId>20126ee5-9190-494f-8ada-5c1a23a1a9d6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='AccountInfoForm']/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>d0de760c-6217-4ac2-8785-adc76d8183b0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Block Kartu ATM</value>
+      <webElementGuid>e5b0d314-dd2b-4748-9eca-d299d6de54ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AccountInfoForm&quot;)/div[@class=&quot;u-Flex u-MarginBottom&quot;]/div[2]</value>
+      <webElementGuid>649f4c97-5ad9-4d24-a530-5b641101e171</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AccountInfoForm']/div/div[2]</value>
+      <webElementGuid>665eb69d-efbe-413a-951a-4b903448f106</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sudah Aktivasi'])[1]/following::div[1]</value>
+      <webElementGuid>3fea06f0-665e-4170-be8a-b194fbbd5aa5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Kartu ATM'])[1]/following::div[6]</value>
+      <webElementGuid>0cb06c11-1ce2-4c46-821c-9d92aaf57024</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No.Rekening'])[1]/preceding::div[1]</value>
+      <webElementGuid>afb20f57-bb0d-4746-9fb9-da8c44ed30e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[11]/div/div/div[2]/section/div/div/div[2]</value>
+      <webElementGuid>711f4fa0-8e0d-4fdc-af5e-cf584559cb41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Block Kartu ATM' or . = 'Block Kartu ATM')]</value>
+      <webElementGuid>63963214-9a60-4e56-942c-c8fc64734528</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
