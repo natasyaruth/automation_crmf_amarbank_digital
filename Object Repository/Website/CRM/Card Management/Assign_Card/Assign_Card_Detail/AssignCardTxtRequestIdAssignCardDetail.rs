@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AssignCardTxtRequestIdAssignCardDetail</name>
+   <tag></tag>
+   <elementGuidId>bf8a8212-17e9-4ef2-b874-f91ebc507f99</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::div[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.DataDisplay-value</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>e11862fd-3b8d-4dce-b05b-d093d6078e6a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>DataDisplay-value</value>
+      <webElementGuid>46dcc2cb-498b-45ca-897a-2bdda4c27a51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>10002540</value>
+      <webElementGuid>955a8165-2830-4623-92e8-1cebd92963a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Card u-MarginBottom u-MarginTop&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-2&quot;]/div[@class=&quot;DataDisplay&quot;]/div[@class=&quot;DataDisplay-value&quot;]</value>
+      <webElementGuid>227b3f06-a1b8-47ea-be30-19bcf397df98</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/div/section/div/div[2]/section[2]/div/div/div/div</value>
+      <webElementGuid>8fb054b4-24bd-48dd-883d-c3d3fa9e449c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::div[1]</value>
+      <webElementGuid>041aafe3-3507-4e35-85a0-7d704d5b5d89</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detil Nasabah'])[1]/following::div[4]</value>
+      <webElementGuid>a23cac65-3294-46a0-a659-acb6d1935046</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reference ID'])[1]/preceding::div[1]</value>
+      <webElementGuid>c6a2e3e0-d003-4f3d-a09e-c8a27eb33455</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sedang Diproses'])[1]/preceding::div[4]</value>
+      <webElementGuid>23185908-9bc8-4af2-9124-02a50b0a2c19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[2]/div/div/div/div</value>
+      <webElementGuid>c52aafb6-8921-4777-a672-66db5055d601</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '10002540' or . = '10002540')]</value>
+      <webElementGuid>93c2ba69-8def-4b14-aba6-469817c9ce81</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
