@@ -16,45 +16,48 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil
 
-/* We will click button next page*/
-WebUI.click(btnNextPage)
-
-/* We will wait next page*/
-WebUI.waitForElementPresent(txtNextPage, 10)
-
-/* We will verify actual next page with expected next page*/
-WebUI.verifyElementText(txtNextPage, expectedNextPage)
-
-/* We will click button previous page*/
-WebUI.click(btnPreviousPage)
-
-/* We will wait previous page*/
-WebUI.waitForElementPresent(txtPreviousPage, 10)
-
-/* We will verify actual previous page with expected previous page*/
-WebUI.verifyElementText(txtPreviousPage, expectedPreviousPage)
-
-/* We will click button last page*/
-WebUI.click(btnLastPage)
-
-/* We will wait last page*/
-WebUI.waitForElementPresent(txtLastPage, 10)
+KeywordUtil keyLogger = new KeywordUtil()
 
 /* Store number of actual last page */
-actualLastPage = WebUI.getText(txtLastPage)
+int actualLastPage = WebUI.getText(txtLastPage)
+/* Store number of expected first page */
+int expectedFirstPage = WebUI.getText(txtFirstPage)
 
-/* Store number of expected last page */
-expectedLastPage = WebUI.getText(txtNextPage)
+/* We will click button next page*/
+if (actualLastPage != expectedFirstPage) {
+	keyLogger.markPassed("We already to check button next page")
+	WebUI.click(btnNextPage)
+	/* We will wait next page*/
+	WebUI.waitForElementPresent(txtNextPage, 10)
+	/* We will verify actual next page with expected next page*/
+	WebUI.verifyElementText(txtNextPage, expectedNextPage)
 
-/* Verify if the actual last page is same with expected last page */
-WebUI.verifyEqual(actualLastPage, expectedLastPage)
+if (WebUI.verifyElementVisible(btnPreviousPage,FailureHandling.OPTIONAL)) {
+	keyLogger.markPassed("We already to check button last page")
+	WebUI.click(btnPreviousPage)
+	/* We will wait previous page*/
+	WebUI.waitForElementPresent(txtPreviousPage, 10)
+	/* We will verify actual previous page with expected previous page*/
+	WebUI.verifyElementText(txtPreviousPage, expectedPreviousPage)
+} else {keyLogger.logInfo("Print list just have 1 page")}
 
-/* We will click button first page*/
-WebUI.click(btnFirstPage)
+if (WebUI.verifyElementVisible(btnLastPage,FailureHandling.OPTIONAL)) {
+	keyLogger.markPassed("We already to check button last page")
+	WebUI.click(btnLastPage)
+	/* We will wait last page*/
+	WebUI.waitForElementPresent(txtLastPage, 10)
+} else {keyLogger.logInfo("Print list just have 1 page")}
 
-/* Store number of actual first page */
-WebUI.waitForElementPresent(txtPreviousPage, 10)
+if (WebUI.verifyEqual(actualLastPage, expectedLastPage)) {
+	/* We will click button first page*/
+	WebUI.click(btnFirstPage)
+	/* Store number of actual first page */
+	WebUI.waitForElementPresent(txtPreviousPage, 10)
+	/* Verify if the actual first page is same with expected first page */
+	WebUI.verifyElementText(txtPreviousPage, expectedPreviousPage)
+} else {keyLogger.logInfo("Print list just have 1 page")}
+} else {keyLogger.logInfo("Print list just have 1 page")}
 
-/* Verify if the actual first page is same with expected first page */
-WebUI.verifyElementText(txtPreviousPage, expectedPreviousPage)
+

@@ -15,10 +15,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.thoughtworks.selenium.webdriven.commands.GetText
-
+import com.kms.katalon.core.util.KeywordUtil
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+KeywordUtil keyLogger = new KeywordUtil()
 /* We want to makesure we can identify element assign card*/
 if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
 	/* We want to click menu assign card element*/
@@ -55,15 +56,13 @@ WebUI.verifyElementPresent(fieldDateEndElement, 5)
 /* We want input end date example date "19/05/2022"*/
 WebUI.setText(fieldDateEndElement, inputEndDateText)
 
-/* We want verify button "Tampilkan" */
-WebUI.verifyElementPresent(btnShowFilterElement, 5)
-
-/* We want to screen capture the page*/
-WebUI.takeScreenshot()
-
-/* We want click button "Tampilkan"*/
-WebUI.click(btnShowFilterElement)
-
+if (WebUI.verifyElementPresent(btnShowFilterElement, 5,FailureHandling.OPTIONAL)) {
+	/* We want to screen capture the page*/
+	WebUI.takeScreenshot()
+	/* We want click button "Tampilkan"*/
+	WebUI.click(btnShowFilterElement)
+	keyLogger.markPassed("We can click the button show filter")
+} else {keyLogger.markError("We cannot click button show filter")}
 /* We want wait element until visible*/
 WebUI.waitForElementVisible(firstRowDateElement, 5)
 
