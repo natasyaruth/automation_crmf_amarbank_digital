@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LbBlockStolenCard</name>
+   <tag></tag>
+   <elementGuidId>f3056579-42d5-49c2-b6aa-d5d87227dd28</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu hilang'])[1]/following::label[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>4c873ba4-99ba-475f-bdde-528b9ee59d6e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>RbStolenCard</value>
+      <webElementGuid>70666112-1a31-4337-acd9-a2fe265644ad</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kartu dicuri</value>
+      <webElementGuid>58e78e45-60b9-44d3-8055-4ec2e3f95603</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog BlockCardModal&quot;]/div[@class=&quot;u-MarginBottom-large&quot;]/form[1]/div[@class=&quot;Radio u-FontSize-large u-MarginBottom-small&quot;]/label[1]</value>
+      <webElementGuid>5bee8cc3-e052-4205-b69c-105692dbc63b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/div[2]/form/div[3]/label</value>
+      <webElementGuid>8bfb3424-2094-4c55-a435-e9a9cd202a9b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kartu hilang'])[1]/following::label[1]</value>
+      <webElementGuid>93f22916-61af-42a3-a79e-a9c5204abbef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Blokir sementara'])[1]/following::label[2]</value>
+      <webElementGuid>de3cdebe-39dc-4e32-b2ed-155bb9fdbe1b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tutup kartu'])[1]/preceding::label[1]</value>
+      <webElementGuid>04b7f3c6-79e5-4978-88bc-9fb3aa230cf2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Block Kartu ATM'])[2]/preceding::label[2]</value>
+      <webElementGuid>9579d6eb-4c39-43d9-84c6-f59be5c6ec96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Kartu dicuri']/parent::*</value>
+      <webElementGuid>e017c338-9834-4ba2-a877-80950f686200</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/div[3]/label</value>
+      <webElementGuid>3ceb3dd1-bbca-4a72-884a-23d29963b38a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Kartu dicuri' or . = 'Kartu dicuri')]</value>
+      <webElementGuid>190b67cb-08b3-47f6-a0a6-aec3c7dc8555</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
