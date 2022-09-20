@@ -232,7 +232,7 @@
       <name>listDrpCardStatus</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/669?type=2'</defaultValue>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/1249?type=2'</defaultValue>
       <description></description>
       <id>5096342f-324a-4c7c-b28d-b3c6cd573f9e</id>
       <masked>false</masked>

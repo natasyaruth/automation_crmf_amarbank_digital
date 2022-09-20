@@ -1,346 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CheckContentDetailsToCancelBlockCardWithCancelBlockCardWithAllThingsConfirmReason</name>
+   <name>TC_CheckContentDetailsWithStatusAccountBlockAndStatusActivated</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>619c3c99-7bc6-406d-bf58-2e005306b4ec</testCaseGuid>
+   <testCaseGuid>aca52018-50ce-4303-b79c-7ceed37c16bd</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3d4ffd89-9fae-42d0-977e-647eddc3d467</variableId>
+      <variableId>3991ca23-0753-418a-bb92-539b8bf127a9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>85f279c2-7e51-4770-ada2-d5848f2849db</variableId>
+      <variableId>bc47ce0f-aa57-427c-ab94-c21bd500195e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7c9665f6-789b-4acb-a437-66df6d717a07</variableId>
+      <variableId>7ba1b315-c761-4bc4-bdf5-065f0abcb108</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c448c67f-2733-4d42-95b5-813f15f0b794</variableId>
+      <variableId>32b99e4b-0f5a-4de8-902a-b327a7c98d85</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b0571b23-cd63-416d-a91d-e4eb69152051</variableId>
+      <variableId>c8de07cf-06aa-42c4-9d3e-704dd432baff</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a0f4b4eb-1475-4419-b8c0-f9a3040e42de</variableId>
+      <variableId>d3801d42-6937-467b-88ab-5110ef9d3423</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ad3fa4a8-d25c-4f2b-9036-31d000b36c65</variableId>
+      <variableId>91878d0a-ba59-49f1-8a30-e581d12c4b4f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2d3a4e65-df93-4d5b-a24c-055ed876873f</variableId>
+      <variableId>6eb77f50-4505-41bd-8466-a629446fcd53</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a671ff96-1d19-49ed-a683-787f8564d83d</variableId>
+      <variableId>b8467fac-1077-474e-8be7-504d6a50517a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d56a76ae-68a4-47de-b9f1-e3b07d1ff78c</variableId>
+      <variableId>a0daf037-a4ba-4c0f-8254-08beeb612b15</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a86a215b-dbbd-4b1c-bfde-df71cfcf7986</variableId>
+      <variableId>b45d9917-6620-4062-8f53-736e353f82f7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a0b4d11f-24c8-47dd-839f-500400b33aeb</variableId>
+      <variableId>fc43ea51-c884-415e-8325-1e325a72c3b8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1501ad7c-7637-48b7-ac90-31f914e897a4</variableId>
+      <variableId>5e97e88c-0667-4819-82e4-d8663432b0bb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e195d12d-92ff-4243-b836-26b4df808314</variableId>
+      <variableId>b89c34ed-ac06-4610-962b-28cf395047de</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c4bab688-a46c-4577-bf9a-2b70e15ec43f</variableId>
+      <variableId>1dbad67d-4473-4306-ab7a-fcf28d9e6b07</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7154a1eb-190a-4aef-9ccc-5d189df46d84</variableId>
+      <variableId>a1f3238c-e8f5-4331-b191-6a280811c31e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>faa7582a-a20b-4e36-aa7a-e2bc88507d90</variableId>
+      <variableId>2f048cd8-a6e9-45d1-8b39-2b7d9d3452e5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e4f6e492-71c5-4a52-8b24-253b266f2dce</variableId>
+      <variableId>72d77f14-66ce-4900-a206-d64d0f0125a8</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a8ddf413-46ea-4e6a-9654-a35ac80bff92</variableId>
+      <variableId>09d9b9c6-b788-4898-801f-f46819aa3fb4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>96ebd847-b04c-4ab7-84ac-f1a0df94b9a7</variableId>
+      <variableId>10a5cfdc-aa5d-4559-8241-9e4ca2ebe5d2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ddc37625-6a91-4fde-b51f-8f5b3f213250</variableId>
+      <variableId>8630ad57-53b8-4394-ae07-c297583e4745</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f24dc782-0599-4aba-b036-b3d192ff96fb</variableId>
+      <variableId>f06fe327-4792-400b-aab9-012b58d0f83c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>20d0bbea-31f0-48e8-a309-ee3ce8e92f8b</variableId>
+      <variableId>b74b4e03-3bc2-4094-a6db-dea1fde97d3a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>e7151cae-be2b-4e8a-91a4-5a4d46aa0e6b</variableId>
+      <variableId>ab89f779-5506-4d75-aec2-0390b748bcc3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>00cf3171-f1a9-4009-9960-3ae3a807672d</variableId>
+      <variableId>5b34db61-e409-4474-b361-bcb4a1c00003</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>9e323264-c2b0-49bd-be91-f85e8ae1a4a9</variableId>
+      <variableId>b64e3b85-979e-49d3-a8ea-2d3245697b65</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>40f5612f-4843-4855-8c16-5fedad70d8a4</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
-      <id>3d4ffd89-9fae-42d0-977e-647eddc3d467</id>
+      <id>3991ca23-0753-418a-bb92-539b8bf127a9</id>
       <masked>false</masked>
       <name>menuCsrManagement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/BlockConfirmation/ToastBlockConfirmation')</defaultValue>
       <description></description>
-      <id>85f279c2-7e51-4770-ada2-d5848f2849db</id>
+      <id>bc47ce0f-aa57-427c-ab94-c21bd500195e</id>
       <masked>false</masked>
       <name>notifBlockCsr</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
       <description></description>
-      <id>7c9665f6-789b-4acb-a437-66df6d717a07</id>
+      <id>7ba1b315-c761-4bc4-bdf5-065f0abcb108</id>
       <masked>false</masked>
       <name>btnCancelBlock</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListHeaderText')</defaultValue>
       <description></description>
-      <id>c448c67f-2733-4d42-95b5-813f15f0b794</id>
+      <id>32b99e4b-0f5a-4de8-902a-b327a7c98d85</id>
       <masked>false</masked>
       <name>txtHeaderCsrManagement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilterByCustomerType')</defaultValue>
       <description></description>
-      <id>b0571b23-cd63-416d-a91d-e4eb69152051</id>
+      <id>c8de07cf-06aa-42c4-9d3e-704dd432baff</id>
       <masked>false</masked>
       <name>drpCustType</name>
    </variable>
    <variable>
       <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
       <description></description>
-      <id>a0f4b4eb-1475-4419-b8c0-f9a3040e42de</id>
+      <id>d3801d42-6937-467b-88ab-5110ef9d3423</id>
       <masked>false</masked>
       <name>listDrpCustType</name>
    </variable>
    <variable>
       <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/29?type=2'</defaultValue>
       <description></description>
-      <id>ad3fa4a8-d25c-4f2b-9036-31d000b36c65</id>
+      <id>91878d0a-ba59-49f1-8a30-e581d12c4b4f</id>
       <masked>false</masked>
       <name>ReqIdWithCondtionalZeplin</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataAccountInfo')</defaultValue>
       <description></description>
-      <id>2d3a4e65-df93-4d5b-a24c-055ed876873f</id>
+      <id>6eb77f50-4505-41bd-8466-a629446fcd53</id>
       <masked>false</masked>
       <name>linkDataAccountInfo</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilterByCardStatus')</defaultValue>
       <description></description>
-      <id>a671ff96-1d19-49ed-a683-787f8564d83d</id>
+      <id>b8467fac-1077-474e-8be7-504d6a50517a</id>
       <masked>false</masked>
       <name>drpCardStatus</name>
    </variable>
    <variable>
       <defaultValue>['Semua', 'Belum Aktivasi', 'Sudah Aktivasi', 'Block Kartu ATM', 'Permintaan Kartu Baru']</defaultValue>
       <description></description>
-      <id>d56a76ae-68a4-47de-b9f1-e3b07d1ff78c</id>
+      <id>a0daf037-a4ba-4c0f-8254-08beeb612b15</id>
       <masked>false</masked>
       <name>listDrpCardStatus</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/1249?type=2'</defaultValue>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/669?type=2'</defaultValue>
       <description></description>
-      <id>a86a215b-dbbd-4b1c-bfde-df71cfcf7986</id>
+      <id>b45d9917-6620-4062-8f53-736e353f82f7</id>
       <masked>false</masked>
-      <name>requestIdBlockCard</name>
+      <name>requestIsBlock</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnToBlockCard')</defaultValue>
       <description></description>
-      <id>a0b4d11f-24c8-47dd-839f-500400b33aeb</id>
+      <id>fc43ea51-c884-415e-8325-1e325a72c3b8</id>
       <masked>false</masked>
       <name>btnBlockCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockAskMotherName')</defaultValue>
       <description></description>
-      <id>1501ad7c-7637-48b7-ac90-31f914e897a4</id>
+      <id>5e97e88c-0667-4819-82e4-d8663432b0bb</id>
       <masked>false</masked>
       <name>txtMotherName</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockAskAccountNumber')</defaultValue>
       <description></description>
-      <id>e195d12d-92ff-4243-b836-26b4df808314</id>
+      <id>b89c34ed-ac06-4610-962b-28cf395047de</id>
       <masked>false</masked>
       <name>txtAccountNumber</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockAskPhoneNumber')</defaultValue>
       <description></description>
-      <id>c4bab688-a46c-4577-bf9a-2b70e15ec43f</id>
+      <id>1dbad67d-4473-4306-ab7a-fcf28d9e6b07</id>
       <masked>false</masked>
       <name>txtPhoneNumber</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockTempBlock')</defaultValue>
       <description></description>
-      <id>7154a1eb-190a-4aef-9ccc-5d189df46d84</id>
+      <id>a1f3238c-e8f5-4331-b191-6a280811c31e</id>
       <masked>false</masked>
       <name>txtTempBlock</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockStolenCard')</defaultValue>
       <description></description>
-      <id>faa7582a-a20b-4e36-aa7a-e2bc88507d90</id>
+      <id>2f048cd8-a6e9-45d1-8b39-2b7d9d3452e5</id>
       <masked>false</masked>
       <name>txtStolenCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockLostCard')</defaultValue>
       <description></description>
-      <id>e4f6e492-71c5-4a52-8b24-253b266f2dce</id>
+      <id>72d77f14-66ce-4900-a206-d64d0f0125a8</id>
       <masked>false</masked>
       <name>txtLostCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbBlockCloseCard')</defaultValue>
       <description></description>
-      <id>a8ddf413-46ea-4e6a-9654-a35ac80bff92</id>
+      <id>09d9b9c6-b788-4898-801f-f46819aa3fb4</id>
       <masked>false</masked>
       <name>txtCloseCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnSubmitBlockCard')</defaultValue>
       <description></description>
-      <id>96ebd847-b04c-4ab7-84ac-f1a0df94b9a7</id>
+      <id>10a5cfdc-aa5d-4559-8241-9e4ca2ebe5d2</id>
       <masked>false</masked>
       <name>btnSubmitBlockCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnCancelBlockCard')</defaultValue>
       <description></description>
-      <id>ddc37625-6a91-4fde-b51f-8f5b3f213250</id>
+      <id>8630ad57-53b8-4394-ae07-c297583e4745</id>
       <masked>false</masked>
       <name>btnBatalBlockCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnBack')</defaultValue>
       <description></description>
-      <id>f24dc782-0599-4aba-b036-b3d192ff96fb</id>
+      <id>f06fe327-4792-400b-aab9-012b58d0f83c</id>
       <masked>false</masked>
       <name>btnBack</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/RbTemporaryBlock')</defaultValue>
       <description></description>
-      <id>20d0bbea-31f0-48e8-a309-ee3ce8e92f8b</id>
+      <id>b74b4e03-3bc2-4094-a6db-dea1fde97d3a</id>
       <masked>false</masked>
       <name>rbTempBlock</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/ChkAskMotherName')</defaultValue>
       <description></description>
-      <id>e7151cae-be2b-4e8a-91a4-5a4d46aa0e6b</id>
+      <id>ab89f779-5506-4d75-aec2-0390b748bcc3</id>
       <masked>false</masked>
       <name>chkMotherName</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/ChkAskAccountNumber')</defaultValue>
       <description></description>
-      <id>00cf3171-f1a9-4009-9960-3ae3a807672d</id>
+      <id>5b34db61-e409-4474-b361-bcb4a1c00003</id>
       <masked>false</masked>
       <name>chkAccNumber</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/ChkAskPhoneNumber')</defaultValue>
       <description></description>
-      <id>9e323264-c2b0-49bd-be91-f85e8ae1a4a9</id>
+      <id>b64e3b85-979e-49d3-a8ea-2d3245697b65</id>
       <masked>false</masked>
       <name>chkAskPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnRequestNewCard')</defaultValue>
+      <description></description>
+      <id>40f5612f-4843-4855-8c16-5fedad70d8a4</id>
+      <masked>false</masked>
+      <name>btnReassignNewCard</name>
    </variable>
 </TestCaseEntity>
