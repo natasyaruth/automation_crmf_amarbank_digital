@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>AlertRtWajibDiIsi</name>
+   <name>MsgSuccessSavePersonalData</name>
    <tag></tag>
-   <elementGuidId>9e48f316-e006-4a6a-8b40-6ddf2c792ed6</elementGuidId>
+   <elementGuidId>a1beef78-0a71-4699-9ade-4d31ac2791be</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.u-fs-small.u-clr-danger.u-mg-top-xxsmall</value>
+         <key>XPATH</key>
+         <value>//div[@id='PersonalDataForm']/form/section/div/div/div/div</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//div[4]/div/div/div[2]</value>
+         <key>CSS</key>
+         <value>div.u-Flex.u-ai-center.u-fs-large</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,94 +22,94 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>1fe814c2-6ecc-437f-9cbc-2c9d527540ac</webElementGuid>
+      <webElementGuid>59645fda-b38f-4cd3-838a-2793feca1cc3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>ad502f12-7a95-46ff-bf5d-2a3c35a8c376</webElementGuid>
+      <value>u-Flex u-ai-center u-fs-large</value>
+      <webElementGuid>6e9ae3a0-f9df-4617-be8a-1f57cd00b92c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>RT wajib diisi</value>
-      <webElementGuid>f2452a83-84c4-4611-ba50-8ec48b24ae98</webElementGuid>
+      <value>Data Diri berhasil disimpan</value>
+      <webElementGuid>752ccac5-9387-4bb3-a6a8-23f9dd020b81</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;deliveryaddress&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/section[1]/form[1]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>f32062f9-5ac3-4447-9945-c6cce8a592d2</webElementGuid>
+      <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/section[@class=&quot;SectionButtons u-mg-bottom u-mg-top&quot;]/div[@class=&quot;Alert Alert--success u-mg-bottom u-pd-base&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-xs-8&quot;]/div[@class=&quot;u-Flex u-ai-center u-fs-large&quot;]</value>
+      <webElementGuid>c5dc4502-f670-4213-a662-864700320acc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//section[@id='deliveryaddress']/div/div/div[2]/section/section/form/div[4]/div/div/div[2]</value>
-      <webElementGuid>3a326155-9e59-4090-b970-9405854e3837</webElementGuid>
+      <value>//div[@id='PersonalDataForm']/form/section/div/div/div/div</value>
+      <webElementGuid>50a82c0c-fc17-450b-afed-5542c836d43a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[2]/following::div[2]</value>
-      <webElementGuid>fe32dd48-7052-430a-bcc1-3dbdf5b9a25e</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tujuan pembuatan rekening'])[1]/following::div[6]</value>
+      <webElementGuid>844c4022-7827-4606-b717-dc46f79b4b22</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat lengkap'])[1]/following::div[8]</value>
-      <webElementGuid>7ef20884-14a9-45cd-a250-07f25589396c</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/following::div[8]</value>
+      <webElementGuid>6565af48-a0de-4c17-ab39-a675683fb90a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[2]/preceding::div[1]</value>
-      <webElementGuid>97e9384b-1dd5-4291-8eda-04bf42a8a63d</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[5]/preceding::div[2]</value>
+      <webElementGuid>e7d2921f-a008-45c3-a87c-ddd1a4e45b8f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Provinsi'])[1]/preceding::div[4]</value>
-      <webElementGuid>c8b4e188-3591-4f75-87b6-a67ed91e3d2f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[5]/preceding::div[2]</value>
+      <webElementGuid>4d37bbb0-69f6-4576-bcf3-969aff7d0f01</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='RT wajib diisi']/parent::*</value>
-      <webElementGuid>fef14ca0-bc15-4f01-a47e-ecbe9281646c</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Data Diri berhasil disimpan']/parent::*</value>
+      <webElementGuid>4010d45b-739d-41da-a180-179b9dbde89f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[4]/div/div/div[2]</value>
-      <webElementGuid>7e4010d1-31cd-49d0-87c4-91fc06381eb0</webElementGuid>
+      <value>//form/section/div/div/div/div</value>
+      <webElementGuid>f9ecf772-6d10-4af9-aa8a-11a347c573eb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//div[(text() = 'RT wajib diisi' or . = 'RT wajib diisi')]</value>
-      <webElementGuid>c6566d16-3d10-452c-b8b7-b5afc4b6f591</webElementGuid>
+      <value>//div[(text() = 'Data Diri berhasil disimpan' or . = 'Data Diri berhasil disimpan')]</value>
+      <webElementGuid>35cbcaa7-bd63-4ede-9267-e52bfef7a332</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
