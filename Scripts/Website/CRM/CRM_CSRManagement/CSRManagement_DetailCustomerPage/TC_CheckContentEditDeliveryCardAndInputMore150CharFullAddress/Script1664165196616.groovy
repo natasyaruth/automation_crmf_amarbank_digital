@@ -16,10 +16,15 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.support.ui.Select
 import com.kms.katalon.core.webui.driver.DriverFactory
+
+import org.apache.commons.lang.RandomStringUtils
 import org.openqa.selenium.By
 
 /*We Declare Keyword Util*/
@@ -44,16 +49,18 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
  * 
  * And have steps:
  * 	1. Click section Alamat pengiriman kartu
-	2. Edit field Tempat Pengiriman kartu
+	2. Edit field Alamat lengkap with char 150
 	3. Click button 'Simpan'
 	
 	And we have the expected result is :
-	Display data on changes log with detail:
+	1. Display data on changes log with detail:
 		Tanggal --> date with time when the changes was created
 		User/Agent --> agent name
-		Field --> Tempat pengiriman kartu
-		Data lama --> old place
-		Data baru --> new place
+		Field --> Alamat lengkap
+		Data lama --> old address
+		Data baru --> new address
+	2. Display scroll left and right in the bucketlist
+	3. Data will fit on the bucketlist
  * */
 
 /* We want choose request ID with condition is Nasabah Senyumku*/
@@ -71,26 +78,30 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 			Random rand = new Random()
 			String index = rand.nextInt(optionListLength + 3)
 			if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
-				Select selectOld = new Select(DriverFactory.getWebDriver().findElement(By.xpath("//select[@id='DrpAddressType']")))
-				oldData = selectOld.getFirstSelectedOption().getText()
-				println(oldData)
 				WebUI.click(btnEditDeliveryAddress)
-				WebUI.verifyOptionsPresent(drpAddressType, listDataDrpAddressType)
-				WebUI.selectOptionByIndex(drpAddressType, index)
-				Select selectNew = new Select(DriverFactory.getWebDriver().findElement(By.xpath("//select[@id='DrpAddressType']")))
-				newData = selectNew.getFirstSelectedOption().getText()
-				println(newData)
+				oldDataFullAddress = WebUI.getText(fieldFullAddress)
+				println(oldDataFullAddress)
+				
+				WebUI.setText(fieldFullAddress, RandomStringUtils.randomAlphabetic(200))
+				newDataFullAddress = WebUI.getText(fieldFullAddress)
+				println(newDataFullAddress)
+				keylogger.logInfo('We already input full address more than 150 character')
 				if (WebUI.verifyElementClickable(btnSimpanData,FailureHandling.OPTIONAL)) {
 					WebUI.click(btnSimpanData)
 				} else {keylogger.markError('Button is not clickable')}
 			} else {keylogger.markError('Button is not clickable')}
 		} else {keylogger.logInfo("Element Not Click Able")}
-		oldDataAddressType = oldData
+		oldDataAddressType = oldDataFullAddress
 		println(oldDataAddressType)
-		newDataAddressType = newData
+		newDataAddressType = newDataFullAddress
 		println(newDataAddressType)
 		if (WebUI.verifyElementClickable(btnDataChangeLog,FailureHandling.OPTIONAL)) {
 			WebUI.click(btnDataChangeLog)
+			WebDriver oldDriver = DriverFactory.getWebDriver()
+			WebElement oldTblCsr = oldDriver.findElement(By.xpath('//*[@id="changelog"]//tbody'))
+			List<WebElement> oldRowCsr = oldTblCsr.findElements(By.tagName('tr'))
+			List<WebElement> oldColsCsr = oldRowCsr.get(0).findElements(By.tagName('td'))
+			
 			/*We want verify text from current date and date first row*/
 			def currentDate = new Date().format('dd/MM/yyyy')
 			println(currentDate)
@@ -100,23 +111,28 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 				keylogger.markPassed('Tanggal --> date with time when the changes was created')
 			}
 			/*We want verify text from change log and existing data User / Agent*/			
-			agentInChangeLog = WebUI.getText(txtFirstUser)
+			agentInChangeLog = oldColsCsr.get(1).getText()
+			println(agentInChangeLog)
 			WebUI.verifyMatch(agentInChangeLog, 'fajar.ardhi@amarbank.co.id', false)
 			keylogger.markPassed('User/Agent --> agent name')
 			/*We want verify text from change log and existing source is CSR Management*/
-			sourceInChageLog = WebUI.getText(txtFirstSource)
+			sourceInChageLog = oldColsCsr.get(2).getText()
+			println(sourceInChageLog)
 			WebUI.verifyMatch(sourceInChageLog, 'CSR Management', false)
 			keylogger.markPassed('source --> CSR Management')
 			/*We want verify text from change log and existing field is tempat pengiriman kartu*/
-			fieldInChangeLog = WebUI.getText(txtFirstField)
-			WebUI.verifyMatch(fieldInChangeLog, 'Tempat pengiriman kartu', false)
+			fieldInChangeLog = oldColsCsr.get(3).getText()
+			println(fieldInChangeLog)
+			WebUI.verifyMatch(fieldInChangeLog, 'Alamat lengkap', false)
 			keylogger.markPassed('Field --> Tempat pengiriman kartu')
 			/*We want verify text from change log and verify text from old data*/
-			oldDataInChangeLog = WebUI.getText(txtOldData)
+			oldDataInChangeLog = oldColsCsr.get(4).getText()
+			println(oldDataInChangeLog)
 			WebUI.verifyMatch(oldDataInChangeLog, oldDataAddressType, false)
 			keylogger.markPassed('Data lama --> old place')
 			/*We want verify text from change log and verify text from new data*/
-			newDataInChangeLog = WebUI.getText(txtNewData)
+			newDataInChangeLog = oldColsCsr.get(5).getText()
+			println(newDataInChangeLog)
 			WebUI.verifyMatch(newDataInChangeLog, newDataAddressType, false)
 			keylogger.markPassed('Data baru --> new place')
 		} else {keylogger.logInfo("Element Not Click Able")}
