@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
-   <description>CSRManagement_Customer_Page_9</description>
-   <name>CSRManagement_Customer_Page_9</name>
+   <description>CSRManagement_Customer_Page_10</description>
+   <name>CSRManagement_Customer_Page_10</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
@@ -15,7 +15,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105452</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105218</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -25,7 +25,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105453</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105227</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -35,7 +35,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105454</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105463</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -45,7 +45,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105455</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105464</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -55,7 +55,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105457</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105477</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -65,7 +65,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105458</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105478</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -75,7 +75,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105459</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105479</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -85,7 +85,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105460</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105480</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -95,7 +95,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105461</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105481</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -105,7 +105,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105462</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105486</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

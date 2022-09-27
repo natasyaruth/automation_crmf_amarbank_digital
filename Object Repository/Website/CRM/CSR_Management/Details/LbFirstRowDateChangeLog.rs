@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LbFirstRowDateChangeLog</name>
+   <tag></tag>
+   <elementGuidId>2b7c4c95-234a-40d5-8785-e85ba6f2f94a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[1]/following::td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.Card-body > div > div.u-Overflow-auto > table.Table > tbody > tr.Table-row > td.Table-cell</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>e8535160-c554-4467-a02f-42b6e190ea7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Table-cell</value>
+      <webElementGuid>c401b66c-10ee-4888-8a15-32a883103d70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>26/09/2022 7:45</value>
+      <webElementGuid>d44ccf91-3122-40d4-8c24-8154c2cf983c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>5a690be2-3a9c-4486-a5f9-6da6bc9f439d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td</value>
+      <webElementGuid>359a84e9-c50d-48b0-a0e9-3579942ede1d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[1]/following::td[1]</value>
+      <webElementGuid>1a628b42-2130-4246-b140-e373b4f66f88</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data baru'])[1]/following::td[1]</value>
+      <webElementGuid>94f496b9-dfd8-4f50-96d6-f1afbdc55a3b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='fajar.ardhi@amarbank.co.id'])[1]/preceding::td[1]</value>
+      <webElementGuid>e53cf603-ec14-4b72-96fa-6de83bf1fc32</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[4]/preceding::td[2]</value>
+      <webElementGuid>2a084606-a3a2-497c-b6fd-a8ffbc249ca3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='26/09/2022 7:45']/parent::*</value>
+      <webElementGuid>300b6dc5-3edf-46f5-8dd7-2a37ddbd1669</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]/table/tbody/tr/td</value>
+      <webElementGuid>3c8a769d-5d3d-48b1-ab9d-e89b0f2da881</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '26/09/2022 7:45' or . = '26/09/2022 7:45')]</value>
+      <webElementGuid>9c0c9926-ee12-46a3-ab2b-0536683e17f7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LbFirstRowOlDataChangeLog</name>
+   <tag></tag>
+   <elementGuidId>9657c0ab-ee6e-4ac9-9bb4-8a3b188cdce0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat pengiriman kartu'])[2]/following::td[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>c1644610-5f09-4ab6-98d5-cb39fa56fc70</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Table-cell</value>
+      <webElementGuid>6a0e3717-f59c-45e1-9f31-b9bfad794fb0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Kantor</value>
+      <webElementGuid>1587ea85-e870-49a4-9fea-e85b1a825a78</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
+      <webElementGuid>7d34a581-9f04-4a4f-b94b-a160e0df2cc3</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[5]</value>
+      <webElementGuid>93701247-347b-4c4f-bb07-63883f096d9a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat pengiriman kartu'])[2]/following::td[1]</value>
+      <webElementGuid>c96ad4de-06eb-4ba6-b502-571e0d498599</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[4]/following::td[2]</value>
+      <webElementGuid>4c929e7b-021e-4e4a-92ea-951b264c218b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kos'])[2]/preceding::td[1]</value>
+      <webElementGuid>94307303-ec94-4042-8ae7-3438defe5bc1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/preceding::td[2]</value>
+      <webElementGuid>0c029436-c07b-4d3b-8e1e-758a15ff7843</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[5]</value>
+      <webElementGuid>b73434c1-2548-45b9-80de-1ba9b4a2f4f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'Kantor' or . = 'Kantor')]</value>
+      <webElementGuid>94bd1ad9-9b3e-4100-b7b4-b3dd7dc13583</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
