@@ -20,6 +20,9 @@ import internal.GlobalVariable as GlobalVariable
 /* We want to force to wait the page loaded*/
 WebUI.waitForPageLoad(10)
 
+/* We want to maximize the window*/
+WebUI.maximizeWindow()
+
 /* We will check availability logo when login page*/
 WebUI.verifyElementPresent(logoLoginPage, 5)
 
