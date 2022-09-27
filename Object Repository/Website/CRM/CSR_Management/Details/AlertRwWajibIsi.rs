@@ -6,12 +6,12 @@
    <elementGuidId>660fd079-5dba-4472-b221-39dfa63ae720</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[2]/following::div[5]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.u-fs-small.u-clr-danger.u-mg-top-xxsmall</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[4]/div[2]/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>82171032-298f-491e-bc88-66b9bf7883d9</webElementGuid>
+      <webElementGuid>21aa361e-4e8d-4737-840a-457f2410c3a5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>6887960b-9604-476a-bb10-65709afeb6bc</webElementGuid>
+      <webElementGuid>b54bcf90-57b8-472a-a455-02eaf9e3b220</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>RW wajib diisi</value>
-      <webElementGuid>09b97908-330e-4133-965f-0fabd8528f9e</webElementGuid>
+      <webElementGuid>71e1c723-a721-45bf-8af6-ca322450a81a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;deliveryaddress&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/section[1]/form[1]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>87a4ee6a-d938-44a5-8876-261d85d9608f</webElementGuid>
+      <webElementGuid>b91a65e7-cbf4-4735-b31e-94922798b50f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='deliveryaddress']/div/div/div[2]/section/section/form/div[4]/div[2]/div/div[2]</value>
-      <webElementGuid>a1df119a-f669-4ba8-9864-a9373a53111a</webElementGuid>
+      <webElementGuid>8969b78a-f710-4dae-bd5f-f39577e64bd1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[2]/following::div[2]</value>
-      <webElementGuid>7327f827-f233-4ce8-8e51-f92db5a176be</webElementGuid>
+      <webElementGuid>033a02a4-2981-4764-bb63-90516f409277</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[2]/following::div[5]</value>
-      <webElementGuid>61881693-4202-4fe3-9cbe-178124e2d28c</webElementGuid>
+      <webElementGuid>5038f7f4-c4e0-4a3c-acf6-c2b1a2086388</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provinsi'])[1]/preceding::div[1]</value>
-      <webElementGuid>f74a41e3-52a9-4eed-bfbd-db7917f1d6a8</webElementGuid>
+      <webElementGuid>3a9b0d92-bbb3-4141-ae09-9f823e4544b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kabupaten/kota'])[1]/preceding::div[5]</value>
-      <webElementGuid>f5d16ecc-5fa4-4ef4-816e-534a99955d98</webElementGuid>
+      <webElementGuid>5b46ee99-9e6a-4067-a487-61c0a3846f08</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='RW wajib diisi']/parent::*</value>
-      <webElementGuid>618a3ace-f05d-48f9-ba43-f4a0c9821b7a</webElementGuid>
+      <webElementGuid>72bf6a17-87ef-4f3a-9cc1-616934edf9af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[4]/div[2]/div/div[2]</value>
-      <webElementGuid>fac5f027-cd2e-4033-b605-95c24814654f</webElementGuid>
+      <webElementGuid>69b7242a-a4d3-44d2-98d0-3400251db58a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'RW wajib diisi' or . = 'RW wajib diisi')]</value>
-      <webElementGuid>03ebcebb-db57-4884-bfb6-34cd8f66ab2f</webElementGuid>
+      <webElementGuid>5acbf924-00be-4a64-8f40-198be31f01c4</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
