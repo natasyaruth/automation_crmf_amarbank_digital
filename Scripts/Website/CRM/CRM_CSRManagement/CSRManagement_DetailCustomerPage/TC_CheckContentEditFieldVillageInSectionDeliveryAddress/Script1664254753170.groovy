@@ -16,15 +16,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.util.KeywordUtil
 import org.openqa.selenium.support.ui.Select
 import com.kms.katalon.core.webui.driver.DriverFactory
 
 import org.apache.commons.lang.RandomStringUtils
 import org.openqa.selenium.By
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebElement
 
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
@@ -48,16 +49,18 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
  * 
  * And have steps:
  * 	1. Click section Alamat pengiriman kartu
-	2. Edit field Tempat Pengiriman kartu
+	2. Edit field Kelurahan/Desa
 	3. Click button 'Simpan'
 	
 	And we have the expected result is :
-	Display data on changes log with detail:
+	1. Display data on changes log with detail:
 		Tanggal --> date with time when the changes was created
 		User/Agent --> agent name
-		Field --> Tempat pengiriman kartu
-		Data lama --> old place
-		Data baru --> new place
+		Field --> Kelurahan/Desa
+		Data lama --> old Village
+		Data baru --> new Village
+
+	2. Value Data lama/baru is uppercase
  * */
 
 /* We want choose request ID with condition is Nasabah Senyumku*/
@@ -68,42 +71,42 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
 		WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
 	} else {keylogger.logInfo("Element Not Found")}
-		WebUI.navigateToUrl(requestIdAddressDelivery)
+		WebUI.navigateToUrl(requestIdVillage)
 		if (WebUI.verifyElementClickable(btnDataDeliveryCard,FailureHandling.OPTIONAL)) {
 			WebUI.click(btnDataDeliveryCard)
-			int optionListLength = 5
+			int optionListLength = 6
 			Random rand = new Random()
 			String index = rand.nextInt(optionListLength + 2)
 			if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
-				Select selectOld = new Select(DriverFactory.getWebDriver().findElement(By.xpath("//select[@id='DrpAddressType']")))
-				oldData = selectOld.getFirstSelectedOption().getText()
-				println(oldData)
 				WebUI.click(btnEditDeliveryAddress)
-				WebUI.verifyOptionsPresent(drpAddressType, listDataDrpAddressType)
-				WebUI.selectOptionByIndex(drpAddressType, index)
-				Select selectNew = new Select(DriverFactory.getWebDriver().findElement(By.xpath("//select[@id='DrpAddressType']")))
-				newData = selectNew.getFirstSelectedOption().getText()
-				println(newData)
+				oldDataVillage = WebUI.getAttribute(drpDwnVillage, 'value')
+				println(oldDataVillage)
+				WebUI.selectOptionByIndex(drpDwnVillage, index)
+				
+				newDataVillage = WebUI.getAttribute(drpDwnVillage, 'value')
+				println(newDataVillage)
+				keylogger.logInfo('We already choose "kelurahan / Desa" field')
 				if (WebUI.verifyElementClickable(btnSimpanData,FailureHandling.OPTIONAL)) {
 					WebUI.click(btnSimpanData)
 				} else {keylogger.markError('Button is not clickable')}
 			} else {keylogger.markError('Button is not clickable')}
 		} else {keylogger.logInfo("Element Not Click Able")}
-		oldDataAddressType = oldData
-		println(oldDataAddressType)
-		newDataAddressType = newData
-		println(newDataAddressType)
+		oldDataVillageData = oldDataVillage
+		println(oldDataVillageData)
+		newDataVillageData = newDataVillage
+		println(newDataVillageData)
 		if (WebUI.verifyElementClickable(btnDataChangeLog,FailureHandling.OPTIONAL)) {
 			WebUI.click(btnDataChangeLog)
+			WebUI.delay(5)
 			WebDriver oldDriver = DriverFactory.getWebDriver()
 			WebElement oldTblCsr = oldDriver.findElement(By.xpath('//*[@id="changelog"]//tbody'))
 			List<WebElement> oldRowCsr = oldTblCsr.findElements(By.tagName('tr'))
 			List<WebElement> oldColsCsr = oldRowCsr.get(0).findElements(By.tagName('td'))
+			
 			/*We want verify text from current date and date first row*/
 			def currentDate = new Date().format('dd/MM/yyyy')
 			println(currentDate)
-			dateInChangeLog = oldColsCsr.get(0).getText()
-			println(dateInChangeLog)
+			dateInChangeLog = WebUI.getText(txtDateFirstRow)
 			println(dateInChangeLog)
 			if (dateInChangeLog.contains(currentDate)) {
 				keylogger.markPassed('Tanggal --> date with time when the changes was created')
@@ -121,17 +124,17 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 			/*We want verify text from change log and existing field is tempat pengiriman kartu*/
 			fieldInChangeLog = oldColsCsr.get(3).getText()
 			println(fieldInChangeLog)
-			WebUI.verifyMatch(fieldInChangeLog, 'Tempat pengiriman kartu', false)
-			keylogger.markPassed('Field --> Tempat pengiriman kartu')
+			WebUI.verifyMatch(fieldInChangeLog, 'Kelurahan/desa', false)
+			keylogger.markPassed('Field --> Kelurahan/Desa')
 			/*We want verify text from change log and verify text from old data*/
 			oldDataInChangeLog = oldColsCsr.get(4).getText()
 			println(oldDataInChangeLog)
-			WebUI.verifyMatch(oldDataInChangeLog, oldDataAddressType, false)
+			WebUI.verifyMatch(oldDataInChangeLog, oldDataVillageData, false)
 			keylogger.markPassed('Data lama --> old place')
 			/*We want verify text from change log and verify text from new data*/
 			newDataInChangeLog = oldColsCsr.get(5).getText()
 			println(newDataInChangeLog)
-			WebUI.verifyMatch(newDataInChangeLog, newDataAddressType, false)
+			WebUI.verifyMatch(newDataInChangeLog, newDataVillageData, false)
 			keylogger.markPassed('Data baru --> new place')
 		} else {keylogger.logInfo("Element Not Click Able")}
 		WebUI.click(btnBack)

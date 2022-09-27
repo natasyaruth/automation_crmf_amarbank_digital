@@ -74,9 +74,6 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		WebUI.navigateToUrl(requestIdAddressDelivery)
 		if (WebUI.verifyElementClickable(btnDataDeliveryCard,FailureHandling.OPTIONAL)) {
 			WebUI.click(btnDataDeliveryCard)
-			int optionListLength = 5
-			Random rand = new Random()
-			String index = rand.nextInt(optionListLength + 3)
 			if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
 				WebUI.click(btnEditDeliveryAddress)
 				oldDataFullAddress = WebUI.getText(fieldFullAddress)
@@ -113,7 +110,7 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 			/*We want verify text from change log and existing data User / Agent*/			
 			agentInChangeLog = oldColsCsr.get(1).getText()
 			println(agentInChangeLog)
-			WebUI.verifyMatch(agentInChangeLog, 'fajar.ardhi@amarbank.co.id', false)
+			WebUI.verifyMatch(agentInChangeLog, agentInChangeLog, false)
 			keylogger.markPassed('User/Agent --> agent name')
 			/*We want verify text from change log and existing source is CSR Management*/
 			sourceInChageLog = oldColsCsr.get(2).getText()
