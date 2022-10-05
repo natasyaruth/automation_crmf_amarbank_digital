@@ -81,9 +81,8 @@ WebUI.verifyElementPresent(nasabahSenyumkuText, 5)
 TestObject selesaiText = new TestObject().addProperty('text', ConditionType.CONTAINS , 'Selesai')
 boolean doneText = WebUI.verifyElementPresent(selesaiText, 5)
 if (doneText == true) {
-	if (WebUI.waitForElementVisible(elementNoHandphone, 5)) {
-		boolean phoneNumber = WebUI.verifyElementText(elementNoHandphone, "No. Handphone")
-		if (phoneNumber == true) {
+	if (WebUI.waitForElementVisible(elementNoHandphone, 5,FailureHandling.OPTIONAL)) { 
+		if (WebUI.verifyElementText(elementNoHandphone, "No. Handphone",FailureHandling.OPTIONAL)) {
 			WebUI.click(elementNoHandphone)
 			WebUI.waitForElementVisible(NoHandphone, 5)
 			noHandphone = WebUI.getText(NoHandphone)
@@ -92,58 +91,10 @@ if (doneText == true) {
 		WebUI.takeScreenshot()
 	} else {
 		keyLogger.markFailed("We don't find element no handphone")
-	}
-	if (WebUI.waitForElementVisible(elementDataKtp, 5)) {
-		boolean dataKtp = WebUI.verifyElementText(elementDataKtp, "Data KTP")
-		if (dataKtp == true) {
-			WebUI.click(elementDataKtp)
-			WebUI.waitForElementVisible(NoKtp, 5)
-			noKtp = WebUI.getText(NoKtp)
-			keyLogger.logInfo("There is Customer Id Number : " +noKtp)
-		}
 		WebUI.takeScreenshot()
-	} else {
-		keyLogger.markFailed("We don't find element Data KTP")
 	}
-	if (WebUI.waitForElementVisible(elementAddressSentCard, 5)) {
-		boolean addressSentCard = WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu")
-		if (addressSentCard == true) {
-			WebUI.click(elementAddressSentCard)
-			WebUI.waitForElementVisible(FullAddressCard, 5)
-			fullAddressCard = WebUI.getText(FullAddressCard)
-			keyLogger.logInfo("There is full address sent card: " +fullAddressCard)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.markFailed("We don't find element Alamat Pengiriman Kartu")
-	}
-	if (WebUI.waitForElementVisible(elementDataDiri, 5)) {
-		boolean dataDiri = WebUI.verifyElementText(elementDataDiri, "Data Diri")
-		if (dataDiri == true) {
-			WebUI.click(elementDataDiri)
-			WebUI.waitForElementVisible(DataCustomer, 5)
-			dataCustomer = WebUI.getText(DataCustomer)
-			keyLogger.logInfo("There is Data Customer : " +dataCustomer)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.markFailed("We don't find element Data Diri")
-	}
-	if (WebUI.waitForElementVisible(elementEmploymentData, 5)) {
-		boolean employmentData = WebUI.verifyElementText(elementEmploymentData, "Data Pekerjaan")
-		if (employmentData == true) {
-			WebUI.click(elementEmploymentData)
-			WebUI.waitForElementVisible(EmploymentCustomer, 5)
-			employmentDataCustomer = WebUI.getText(EmploymentCustomer)
-			keyLogger.logInfo("There is employment data : " +employmentDataCustomer)
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.markFailed("We don't find element Data Pekerjaan")
-	}
-	if (WebUI.waitForElementVisible(elementFotoKtp, 5)) {
-		boolean fotoKtp = WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri")
-		if (fotoKtp == true) {
+	if (WebUI.waitForElementVisible(elementFotoKtp, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri",FailureHandling.OPTIONAL)) {
 			WebUI.click(elementFotoKtp)
 			WebUI.waitForElementVisible(FotoKtpCustomer, 5)
 			fotoKtpCustomer = WebUI.getText(FotoKtpCustomer)
@@ -152,10 +103,58 @@ if (doneText == true) {
 		WebUI.takeScreenshot()
 	} else {
 		keyLogger.markFailed("We don't find element Foto eKTP dan Foto Diri")
+		WebUI.takeScreenshot()
 	}
-	if (WebUI.waitForElementVisible(elementDataKyc, 5)) {
-		boolean dataKyc = WebUI.verifyElementText(elementDataKyc, "KYC")
-		if (dataKyc == true) {
+	if (WebUI.waitForElementVisible(elementDataKtp, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementDataKtp, "Data KTP",FailureHandling.OPTIONAL)) {
+			WebUI.click(elementDataKtp)
+			WebUI.waitForElementVisible(NoKtp, 5)
+			noKtp = WebUI.getText(NoKtp)
+			keyLogger.logInfo("There is Customer Id Number : " +noKtp)
+		}
+		WebUI.takeScreenshot()
+	} else {
+		keyLogger.markFailed("We don't find element Data KTP")
+		WebUI.takeScreenshot()
+	}
+	if (WebUI.waitForElementVisible(elementAddressSentCard, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementAddressSentCard, "Alamat Pengiriman Kartu",FailureHandling.OPTIONAL)) {
+			WebUI.click(elementAddressSentCard)
+			WebUI.waitForElementVisible(FullAddressCard, 5)
+			fullAddressCard = WebUI.getText(FullAddressCard)
+			keyLogger.logInfo("There is full address sent card: " +fullAddressCard)
+		}
+		WebUI.takeScreenshot()
+	} else {
+		keyLogger.markFailed("We don't find element Alamat Pengiriman Kartu")
+		WebUI.takeScreenshot()
+	}
+	if (WebUI.waitForElementVisible(elementDataDiri, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementDataDiri, "Data Diri",FailureHandling.OPTIONAL)) {
+			WebUI.click(elementDataDiri)
+			WebUI.waitForElementVisible(DataCustomer, 5)
+			dataCustomer = WebUI.getText(DataCustomer)
+			keyLogger.logInfo("There is Data Customer : " +dataCustomer)
+		}
+		WebUI.takeScreenshot()
+	} else {
+		keyLogger.markFailed("We don't find element Data Diri")
+		WebUI.takeScreenshot()
+	}
+	if (WebUI.waitForElementVisible(elementEmploymentData, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementEmploymentData, "Data Pekerjaan",FailureHandling.OPTIONAL)) {
+			WebUI.click(elementEmploymentData)
+			WebUI.waitForElementVisible(EmploymentCustomer, 5)
+			employmentDataCustomer = WebUI.getText(EmploymentCustomer)
+			keyLogger.logInfo("There is employment data : " +employmentDataCustomer)
+		}
+		WebUI.takeScreenshot()
+	} else {
+		keyLogger.markFailed("We don't find element Data Pekerjaan")
+		WebUI.takeScreenshot()
+	}
+	if (WebUI.waitForElementVisible(elementDataKyc, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementDataKyc, "KYC",FailureHandling.OPTIONAL)) {
 			WebUI.click(elementDataKyc)
 			WebUI.verifyElementVisible(dataKycCustomer)
 			keyLogger.logInfo("There is KYC Customer data : ")
@@ -163,10 +162,10 @@ if (doneText == true) {
 		WebUI.takeScreenshot()
 	} else {
 		keyLogger.markFailed("We don't find element KYC")
+		WebUI.takeScreenshot()
 	}
-	if (WebUI.waitForElementVisible(elementDataAtmCard, 5)) {
-		boolean dataAtmCard = WebUI.verifyElementText(elementDataAtmCard, "Data Kartu ATM")
-		if (dataAtmCard == true) {
+	if (WebUI.waitForElementVisible(elementDataAtmCard, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementText(elementDataAtmCard, "Data Kartu ATM",FailureHandling.OPTIONAL)) {
 			WebUI.click(elementDataAtmCard)
 			dataAtmCardCustomer = WebUI.getText(DataAtmCardCustomer)
 			keyLogger.logInfo("There is ATM Card data : " +dataAtmCardCustomer)
@@ -174,6 +173,6 @@ if (doneText == true) {
 		WebUI.takeScreenshot()
 	} else {
 		keyLogger.markFailed("We don't find element Data ATM Card Customer")
+		WebUI.takeScreenshot()
 	}
 }
-

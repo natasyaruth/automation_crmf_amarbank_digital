@@ -83,8 +83,6 @@ WebUI.takeScreenshot()
 /*Click button detail for the customer data in row 1*/
 WebUI.click(BtnDetail)
 WebUI.delay(5)
-/*Navigate to Data Kartu ATM*/
-WebUI.click(NavigateToCardSection)
 
 /*Verify flag card type status*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
