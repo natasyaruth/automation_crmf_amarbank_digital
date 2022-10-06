@@ -103,6 +103,20 @@ if (StatusRequestText == true) {
 	} else {
 		keyLogger.logInfo("We don't find element no handphone")
 	}
+	if (WebUI.waitForElementVisible(elementFotoKtp, 5)) {
+		boolean fotoKtp = WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri")
+		if (fotoKtp == true) {
+			WebUI.click(elementFotoKtp)
+			if (WebUI.waitForElementVisible(FotoKtpCustomer, 5 ,FailureHandling.OPTIONAL)) {
+				keyLogger.logInfo("There is KTP Customer data")
+			} else {
+				keyLogger.logInfo("There don't have KTP Customer data")
+			}
+		}
+		WebUI.takeScreenshot()
+	} else {
+		keyLogger.logInfo("We don't find element Foto eKTP dan Foto Diri")
+	}
 	if (WebUI.waitForElementVisible(elementDataKtp, 5)) {
 		boolean dataKtp = WebUI.verifyElementText(elementDataKtp, "Data KTP")
 		if (dataKtp == true) {
@@ -176,20 +190,6 @@ if (StatusRequestText == true) {
 		WebUI.takeScreenshot()
 	} else {
 		keyLogger.logInfo("We don't find element Data Pekerjaan")
-	}
-	if (WebUI.waitForElementVisible(elementFotoKtp, 5)) {
-		boolean fotoKtp = WebUI.verifyElementText(elementFotoKtp, "Foto eKTP dan Foto Diri")
-		if (fotoKtp == true) {
-			WebUI.click(elementFotoKtp)
-			if (WebUI.waitForElementVisible(FotoKtpCustomer, 5 ,FailureHandling.OPTIONAL)) {
-				keyLogger.logInfo("There is KTP Customer data")
-			} else {
-				keyLogger.logInfo("There don't have KTP Customer data")
-			}
-		}
-		WebUI.takeScreenshot()
-	} else {
-		keyLogger.logInfo("We don't find element Foto eKTP dan Foto Diri")
 	}
 	if (WebUI.waitForElementVisible(elementDataKyc, 5)) {
 		boolean dataKyc = WebUI.verifyElementText(elementDataKyc, "KYC")

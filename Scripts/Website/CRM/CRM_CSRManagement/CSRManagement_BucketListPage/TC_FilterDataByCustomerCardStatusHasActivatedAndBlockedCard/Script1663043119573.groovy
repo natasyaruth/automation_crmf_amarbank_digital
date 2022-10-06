@@ -85,9 +85,6 @@ WebUI.click(BtnDetail)
 
 WebUI.delay(5)
 
-/*Navigate to Data Kartu ATM*/
-WebUI.click(NavigateToCardSection)
-
 /*Verify flag card type status "Block Kartu ATM"*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
 
@@ -144,9 +141,6 @@ WebUI.takeScreenshot()
 WebUI.click(BtnDetail)
 
 WebUI.delay(5)
-
-/*Navigate to Data Kartu ATM*/
-WebUI.click(NavigateToCardSection)
 
 /*Verify flag card type status*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)

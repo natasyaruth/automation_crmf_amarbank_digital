@@ -72,12 +72,6 @@ WebUI.verifyElementVisible(NavigationDataKTP)
 
 WebUI.click(NavigationDataKTP)
 
-WebUI.waitForElementVisible(MaximizeDataKTP, 30)
-
-WebUI.verifyElementVisible(MaximizeDataKTP)
-
-WebUI.click(MaximizeDataKTP)
-
 WebUI.waitForElementVisible(dataKTPNumber, 30)
 
 WebUI.verifyElementVisible(dataKTPNumber, FailureHandling.OPTIONAL)
