@@ -78,8 +78,7 @@ if (WebUI.verifyElementVisible(headerCustDataElement, FailureHandling.OPTIONAL))
 		keyLogger.markFailed("We cannot find the info about ")
 	}
 }
-boolean btnCardUnlock = WebUI.waitForElementVisible(btnCardUnlockElement, 5)
-if (btnCardUnlock == true) {
+if (WebUI.verifyElementClickable(btnCardUnlockElement,FailureHandling.OPTIONAL)) {
 	/*'We want to click button "Unlock Kartu"'*/	
 	WebUI.click(btnCardUnlockElement)
 	if (WebUI.verifyElementVisible(headerTextUnblockCard , FailureHandling.OPTIONAL)) {
@@ -154,8 +153,7 @@ if (btnCardUnlock == true) {
 }
 WebUI.click(btnDataCardATM)
 /* We want to block card again*/
-def blockCardText = WebUI.getText(btnWantToBlockCard)
-if (WebUI.verifyMatch(blockCardText, "Block Kartu", false)) {
+if (WebUI.verifyElementClickable(btnWantToBlockCard,FailureHandling.OPTIONAL)) {
 	WebUI.click(btnWantToBlockCard)
 	WebUI.waitForElementVisible(txtHeaderBlockATM, 5)
 	WebUI.verifyElementText(txtHeaderBlockATM, "Block Kartu ATM")

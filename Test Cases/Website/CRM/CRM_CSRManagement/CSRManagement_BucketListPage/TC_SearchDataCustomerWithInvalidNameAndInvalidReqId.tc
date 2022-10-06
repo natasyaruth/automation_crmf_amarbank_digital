@@ -489,7 +489,7 @@
       <name>temporaryBlockText</name>
    </variable>
    <variable>
-      <defaultValue>[findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailFirstRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailSecondRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailThirdRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailFourthRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailFivethRow')]</defaultValue>
+      <defaultValue>[findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailFirstRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailSecondRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailThirdRow'), findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnDetailFourthRow')]</defaultValue>
       <description></description>
       <id>7bcb96c0-b77e-4174-9450-64905ff72b34</id>
       <masked>false</masked>
@@ -531,7 +531,7 @@
       <name>custNameDetailNasabah</name>
    </variable>
    <variable>
-      <defaultValue>['0000000', '1111111', '2222222', '3333333', '4444444']</defaultValue>
+      <defaultValue>['0000000', '1111111', '2222222', '3333333']</defaultValue>
       <description></description>
       <id>e7155a3e-3a8e-453c-a372-aa5793400a66</id>
       <masked>false</masked>
@@ -545,7 +545,7 @@
       <name>fieldNameCust</name>
    </variable>
    <variable>
-      <defaultValue>['Bambang', 'Tukiyem', 'BoBo', 'Bibo', 'Boni']</defaultValue>
+      <defaultValue>['Bambang Gentolet', 'Tukiyem Tukang Jamu', 'BoBoBoy', 'Bibobibo']</defaultValue>
       <description></description>
       <id>6b7dc671-4256-4ab2-9afc-ca70ad1654ae</id>
       <masked>false</masked>

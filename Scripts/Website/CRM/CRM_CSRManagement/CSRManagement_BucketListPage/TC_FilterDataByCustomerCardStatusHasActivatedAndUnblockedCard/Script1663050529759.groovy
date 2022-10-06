@@ -15,12 +15,17 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import com.sun.org.apache.bcel.internal.generic.RETURN as RETURN
 import groovy.transform.ConditionalInterrupt as ConditionalInterrupt
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 import org.openqa.selenium.remote.server.handler.RefreshPage as RefreshPage
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 
@@ -38,7 +43,7 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
     boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 
     if (checkAlertProcess == true) {
@@ -58,6 +63,59 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OP
     WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 } else {
     WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+}
+
+WebDriver driver = DriverFactory.getWebDriver()
+WebElement tableBucketListCsr
+List<WebElement> listRows
+/* We want to setup to block card as a precondition*/
+loopCondition:
+while (flagLoop == false) {
+	tableBucketListCsr = driver.findElement(By.xpath('//table/tbody'))
+	listRows = tableBucketListCsr.findElements(By.tagName('tr'))
+	for (int i=0;i<listRows.size();i++) {
+		if (WebUI.verifyElementVisible(drpDwnChooseStatusCard, FailureHandling.OPTIONAL)) {
+			WebUI.selectOptionByLabel(drpDwnChooseStatusCard, 'Sudah Aktivasi', false)
+			WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
+		}
+		println('No. of rows: ' + listRows.size()+ ' row number '+i)
+		List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
+		if (i < listRows.size()) {
+			if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
+				listCols.get(6).findElement(By.tagName('button')).click()
+				if (WebUI.verifyElementClickable(MaximizeATMDataInfo,FailureHandling.OPTIONAL)) {
+					WebUI.click(MaximizeATMDataInfo)
+					if (WebUI.verifyElementClickable(btnBlockCard,FailureHandling.OPTIONAL)) {
+						WebUI.click(btnBlockCard)
+						TestObject statusCardBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Block Kartu ATM')
+						if (WebUI.verifyElementPresent(statusCardBlock, 5,FailureHandling.OPTIONAL)) {
+							WebUI.click(CheckAskMotherName)
+							WebUI.click(CheckAccountNumber)
+							WebUI.click(CheckAskPhoneNumber)
+							WebUI.click(rbTemporaryBlock)
+							WebUI.click(btnSubmitBlock)
+							WebUI.click(BtnBack)
+							break loopCondition
+						} else {
+							/*Back to Bucketlist*/
+							WebUI.click(BtnBack)
+							tableBucketListCsr = driver.findElement(By.xpath('//table/tbody'))
+							listRows = tableBucketListCsr.findElements(By.tagName('tr'))
+						}
+					}else {
+					/*Back to Bucketlist*/
+					WebUI.click(BtnBack)
+					tableBucketListCsr = driver.findElement(By.xpath('//table/tbody'))
+					listRows = tableBucketListCsr.findElements(By.tagName('tr'))
+				}
+				}
+			}
+		} else {
+			WebUI.click(btnNextPage)
+			tableBucketListCsr = driver.findElement(By.xpath('//table/tbody'))
+			listRows = tableBucketListCsr.findElements(By.tagName('tr'))
+		}
+	}
 }
 
 /* We want to filter data in CSR by Customer card status with Status 'Block Kartu ATM'*/
@@ -84,9 +142,6 @@ WebUI.takeScreenshot()
 WebUI.click(BtnDetail)
 
 WebUI.delay(5)
-
-/*Navigate to Data Kartu ATM*/
-WebUI.click(NavigateToCardSection)
 
 /*Verify flag card type status "Block Kartu ATM"*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
@@ -127,12 +182,15 @@ WebUI.verifyElementVisible(FlagHasActivated, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementNotPresent(FlagBlockedCardATM, 5)
 
-WebUI.verifyTextPresent(HasActivated, false)
+TestObject statusCard = new TestObject().addProperty('text',ConditionType.CONTAINS,'Sudah Aktivasi')
+
+WebUI.verifyElementPresent(statusCard, 5)
 
 WebUI.delay(5)
 
 /* We want to get bank account number text*/
-def BankAccountNumber = WebUI.getText(dataAccountNumber)
+def BankAccountNumber = WebUI.getAttribute(dataAccountNumber, 'value')
+println(BankAccountNumber)
 
 /* Take Screenshot*/
 WebUI.takeScreenshot()
@@ -164,7 +222,7 @@ WebUI.verifyElementVisible(FirstRowCustomerType, FailureHandling.OPTIONAL)
 WebUI.verifyElementPresent(FirstRowCustomerType, 15)
 
 WebUI.verifyTextPresent(SenyumkuCustomerType, false)
-WebUI.verifyTextPresent(BankAccountNumber, false)
+WebUI.verifyElementAttributeValue(dataAccountNumber, 'value', BankAccountNumber, 5)
 
 /* Take Screenshot*/
 WebUI.takeScreenshot()
@@ -174,9 +232,6 @@ WebUI.click(BtnDetail)
 
 WebUI.delay(5)
 
-/*Navigate to Data Kartu ATM*/
-WebUI.click(NavigateToCardSection)
-
 /*Verify flag card type status*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
 
@@ -184,16 +239,28 @@ WebUI.verifyElementVisible(MaximizeATMDataInfo, FailureHandling.OPTIONAL)
 
 WebUI.click(MaximizeATMDataInfo)
 
-WebUI.waitForElementVisible(FlagHasActivated, 15)
+TestObject statusCardBlocked = new TestObject().addProperty('text',ConditionType.CONTAINS,'Sudah Aktivasi')
+if (WebUI.verifyElementPresent(statusCardBlocked, 5,FailureHandling.OPTIONAL)) {
+	WebUI.waitForElementVisible(FlagHasActivated, 15)
+	WebUI.verifyElementVisible(FlagHasActivated, FailureHandling.OPTIONAL)
+	WebUI.verifyElementNotPresent(FlagBlockedCardATM, 5)
+} else {keyLogger.logInfo('element not present')}
 
-WebUI.verifyElementVisible(FlagHasActivated, FailureHandling.OPTIONAL)
-
-WebUI.verifyTextPresent(HasActivated, false)
-
-WebUI.verifyElementNotPresent(FlagBlockedCardATM, 5)
-
-WebUI.verifyTextPresent(BankAccountNumber, false)
+WebUI.verifyElementAttributeValue(dataAccountNumber, 'value', BankAccountNumber, 5)
 WebUI.delay(5)
+
+/* We want change back the data is blocked for furthure task*/
+if (WebUI.verifyElementClickable(btnBlockCard,FailureHandling.OPTIONAL)) {
+	WebUI.click(btnBlockCard)
+	TestObject changeToBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Block Kartu ATM')
+		if (WebUI.verifyElementPresent(changeToBlock, 5,FailureHandling.OPTIONAL)) {
+			WebUI.click(CheckAskMotherName)
+			WebUI.click(CheckAccountNumber)
+			WebUI.click(CheckAskPhoneNumber)
+			WebUI.click(rbTemporaryBlock)
+			WebUI.click(btnSubmitBlock)
+		}
+} else {keyLogger.logInfo('Button is disable')}
 
 /* Take Screenshot*/
 WebUI.takeScreenshot()

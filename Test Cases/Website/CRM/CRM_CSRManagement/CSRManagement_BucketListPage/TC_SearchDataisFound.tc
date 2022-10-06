@@ -706,7 +706,7 @@
       <name>BtnDetail</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LinkKtp')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp')</defaultValue>
       <description></description>
       <id>7c7d8ec4-3f97-4c69-81b8-d8f6d9ace10e</id>
       <masked>false</masked>
