@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat lengkap'])[1]/following::div[3]</value>
+         <value>//form/div[2]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>ef818f19-6833-4ef9-a9fb-84afb003cf7f</webElementGuid>
+      <webElementGuid>39bc7e5c-8524-4a9e-a663-aad673e154d7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>d0da8beb-a543-47fd-8717-d27e69771741</webElementGuid>
+      <webElementGuid>ffe1d8ed-10c0-4173-9a21-04fe8a7a3b73</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Alamat lengkap wajib diisi</value>
-      <webElementGuid>05cd7568-e5f7-4eca-8ece-d6d94df3c8c9</webElementGuid>
+      <webElementGuid>2e7dd35f-a995-42c6-93e0-f8e8c53f17e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;deliveryaddress&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/section[1]/form[1]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>353c8005-1217-4836-9413-64584f2fb590</webElementGuid>
+      <webElementGuid>1a418d09-013d-44fd-8f36-4c7ecfadfd9a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='deliveryaddress']/div/div/div[2]/section/section/form/div[2]/div[2]</value>
-      <webElementGuid>51391705-56f5-4278-b49c-ad9841f05354</webElementGuid>
+      <webElementGuid>b455caeb-1606-4519-86cf-a9dbd7c69478</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alamat lengkap'])[1]/following::div[3]</value>
-      <webElementGuid>4c471c28-b023-4eb1-a136-251ca2bd38f3</webElementGuid>
+      <webElementGuid>8439065c-dfea-4981-bbe8-759dcbe47315</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat pengiriman kartu'])[1]/following::div[6]</value>
-      <webElementGuid>17584e19-08db-4dce-8e3c-906c3889d73d</webElementGuid>
+      <webElementGuid>8c49a604-a36e-4dcf-aa86-247ef46d2a85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RT'])[2]/preceding::div[2]</value>
-      <webElementGuid>a0ec6f9f-50f2-4380-81e2-b7be9a76a6d5</webElementGuid>
+      <webElementGuid>7c9da344-453d-44e5-af7c-8ef990fc760d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[2]/preceding::div[5]</value>
-      <webElementGuid>afb05963-0c70-46e5-a70f-a0ae8b1a1912</webElementGuid>
+      <webElementGuid>899e6131-264f-43d8-8830-15bfa8ac004c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Alamat lengkap wajib diisi']/parent::*</value>
-      <webElementGuid>2c5f2d8d-fdcf-49fc-b469-a327eb32283b</webElementGuid>
+      <webElementGuid>7c496262-b399-4ed3-b39d-886edf768e9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//form/div[2]/div[2]</value>
-      <webElementGuid>d9b3398a-c307-4909-9931-deb87644763d</webElementGuid>
+      <webElementGuid>f140beb9-99d2-415c-a33f-4914bcbd9ce1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Alamat lengkap wajib diisi' or . = 'Alamat lengkap wajib diisi')]</value>
-      <webElementGuid>0ca2dec6-b8a7-4eb5-b2d7-ee26894072bc</webElementGuid>
+      <webElementGuid>d6c35861-e45b-4d99-b015-487c5fa15f76</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

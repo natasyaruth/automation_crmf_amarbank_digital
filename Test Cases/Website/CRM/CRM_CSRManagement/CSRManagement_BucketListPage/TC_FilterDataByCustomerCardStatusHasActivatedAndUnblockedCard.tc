@@ -437,6 +437,42 @@
       <value></value>
       <variableId>ea47e197-f8f6-41ab-ba36-e151e11ecacc</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d604e30a-d1c1-43b4-bac3-99aa2cefb536</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f8ac0758-1557-4ec7-953c-36e7799caa3c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3a5ed08f-ac68-47dc-8d8c-01a7e217cefb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ca80a0a2-0cdc-4d87-8c3d-b01502fa3736</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef0d34d7-7e0f-4cd3-a615-1f6fb2b28fff</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7c9f03fc-3312-4227-b0ab-c17f7836ee13</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -925,7 +961,7 @@
       <description></description>
       <id>64e2217e-ec8d-4d81-9733-03659708fde5</id>
       <masked>false</masked>
-      <name>TxtUnblockCard</name>
+      <name>TxtUnblockCardReason</name>
    </variable>
    <variable>
       <defaultValue>'Test Unblock Automation'</defaultValue>
@@ -940,5 +976,47 @@
       <id>ea47e197-f8f6-41ab-ba36-e151e11ecacc</id>
       <masked>false</masked>
       <name>ButtonSubmitUnblockCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnToBlockCard')</defaultValue>
+      <description></description>
+      <id>d604e30a-d1c1-43b4-bac3-99aa2cefb536</id>
+      <masked>false</masked>
+      <name>btnBlockCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/RbTemporaryBlock')</defaultValue>
+      <description></description>
+      <id>f8ac0758-1557-4ec7-953c-36e7799caa3c</id>
+      <masked>false</masked>
+      <name>rbTemporaryBlock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnSubmitBlockCard')</defaultValue>
+      <description></description>
+      <id>3a5ed08f-ac68-47dc-8d8c-01a7e217cefb</id>
+      <masked>false</masked>
+      <name>btnSubmitBlock</name>
+   </variable>
+   <variable>
+      <defaultValue>false</defaultValue>
+      <description></description>
+      <id>ca80a0a2-0cdc-4d87-8c3d-b01502fa3736</id>
+      <masked>false</masked>
+      <name>flagLoop</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnNextPage')</defaultValue>
+      <description></description>
+      <id>ef0d34d7-7e0f-4cd3-a615-1f6fb2b28fff</id>
+      <masked>false</masked>
+      <name>btnNextPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilterByCustomerType')</defaultValue>
+      <description></description>
+      <id>7c9f03fc-3312-4227-b0ab-c17f7836ee13</id>
+      <masked>false</masked>
+      <name>drpDwnCustType</name>
    </variable>
 </TestCaseEntity>

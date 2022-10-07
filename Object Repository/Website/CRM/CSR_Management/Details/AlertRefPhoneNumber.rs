@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor kontak kerabat'])[1]/following::div[2]</value>
+         <value>//div/div[3]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>773599b4-9f4a-413b-b340-25b8e84a899e</webElementGuid>
+      <webElementGuid>1edb7e40-8124-4e09-8cf3-600bc340f798</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>bc7f0420-b1f7-474d-9ea3-7f8c846134c7</webElementGuid>
+      <webElementGuid>769d33ce-5a1d-43d0-9b42-fb62ffae8378</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Nomor kontak kerabat wajib diisi</value>
-      <webElementGuid>c8c4c304-8a81-4d20-89dc-05ecce8f08fc</webElementGuid>
+      <webElementGuid>b2d59127-6660-41d9-abec-fbd36a2ba166</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>5df4e3a0-ac56-4c52-8bba-b5b7c44c8f43</webElementGuid>
+      <webElementGuid>a0a45df4-33e4-4e9f-b889-7c972fc5d383</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='PersonalDataForm']/form/div/div/div[3]/div[2]</value>
-      <webElementGuid>71c2f845-8f6a-4a09-8cae-60aaa52fa89a</webElementGuid>
+      <webElementGuid>9f4323c3-d6dc-46ef-b328-5a5454fd433f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor kontak kerabat'])[1]/following::div[2]</value>
-      <webElementGuid>5bca9a4d-a5f9-4229-80c4-6f1e281858d5</webElementGuid>
+      <webElementGuid>acd9ff28-24a4-469d-9558-d296b27a887c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama ibu kandung'])[1]/following::div[4]</value>
-      <webElementGuid>b7f1ee6e-ab45-4359-8cf5-ecae4b90d714</webElementGuid>
+      <webElementGuid>7c1e9472-6d21-4216-9cea-213c3b975c13</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NPWP (optional)'])[1]/preceding::div[1]</value>
-      <webElementGuid>e1c4568b-5c88-4a6d-a41d-e8e0e2983c36</webElementGuid>
+      <webElementGuid>8c990467-60e9-4a5d-bebb-49e0f393160a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Agama'])[2]/preceding::div[3]</value>
-      <webElementGuid>a08c3c06-c0a2-42c7-b115-eaa96da2fc35</webElementGuid>
+      <webElementGuid>6993c5eb-12a0-4d7b-97ee-a56e909c5be4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Nomor kontak kerabat wajib diisi']/parent::*</value>
-      <webElementGuid>52669321-e609-41d4-950f-689251764dd7</webElementGuid>
+      <webElementGuid>971ad6d5-5a9d-4f84-8d70-55ef15b1a6ad</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div[3]/div[2]</value>
-      <webElementGuid>0c04ff9b-a715-4053-963e-e31e4ecaf4de</webElementGuid>
+      <webElementGuid>b4a5024c-9172-4f80-8850-9bc07e6987e3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Nomor kontak kerabat wajib diisi' or . = 'Nomor kontak kerabat wajib diisi')]</value>
-      <webElementGuid>a64b3d37-c1a4-4bdf-9c70-a420dceae182</webElementGuid>
+      <webElementGuid>7de7a06a-2ad7-4ec5-b589-3038f705bf2a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

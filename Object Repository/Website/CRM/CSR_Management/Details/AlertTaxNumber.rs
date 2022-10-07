@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='NPWP (optional)'])[1]/following::div[2]</value>
+         <value>//div[1]/div[4]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>8de4d2ce-b0b8-4a01-ae79-bcf7e878f035</webElementGuid>
+      <webElementGuid>6d2506f8-2574-448e-b04c-523fffc89598</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>7535df3d-95db-4f92-8f88-3ba00c853a31</webElementGuid>
+      <webElementGuid>97050fd3-7dc6-49e3-8773-1990cffae372</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>NPWP harus 15 digit</value>
-      <webElementGuid>79c32a91-2407-42f3-937e-4c11dbe5cc71</webElementGuid>
+      <webElementGuid>88e68715-9747-4341-a791-17ec8c464275</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>5016d622-a462-4b7d-a1f3-115bcb9a7c8b</webElementGuid>
+      <webElementGuid>209e5be8-6243-4665-987c-77af2169b1ba</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='PersonalDataForm']/form/div/div/div[4]/div[2]</value>
-      <webElementGuid>4c8a93a2-15de-4f92-be76-b9e82ef28abb</webElementGuid>
+      <webElementGuid>a78b0b61-029e-4159-a930-6d64330c0da4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='NPWP (optional)'])[1]/following::div[2]</value>
-      <webElementGuid>d5efabdc-694a-4d95-955d-02e0c52898fd</webElementGuid>
+      <webElementGuid>878d15a5-4fc9-483c-87a8-9cbbe6107d52</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor kontak kerabat'])[1]/following::div[4]</value>
-      <webElementGuid>762aa324-7c0e-44f2-81e4-e726d2553d30</webElementGuid>
+      <webElementGuid>2227977a-11ca-448b-98ed-441774b6240d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Agama'])[2]/preceding::div[1]</value>
-      <webElementGuid>a63a3950-69a8-49fe-aca7-c8cbbe74b1dc</webElementGuid>
+      <webElementGuid>81b5c1a0-882b-4502-b118-7caf1d48ecef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/preceding::div[4]</value>
-      <webElementGuid>5998c224-2c93-4e8a-add2-afd65fca28ba</webElementGuid>
+      <webElementGuid>06bcea73-cbf1-46c3-9ceb-92f40553a79b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='NPWP harus 15 digit']/parent::*</value>
-      <webElementGuid>f97668d9-67bc-4276-9692-5e1098b4e857</webElementGuid>
+      <webElementGuid>087d3683-ade7-4f3e-ac6e-ebbb3614e39f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div[4]/div[2]</value>
-      <webElementGuid>a5b548e8-2b2c-4f68-ad9b-fc5776c8dd11</webElementGuid>
+      <webElementGuid>8eaa9fbb-aa51-4089-b595-3a2a381e38ac</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'NPWP harus 15 digit' or . = 'NPWP harus 15 digit')]</value>
-      <webElementGuid>611f4eb0-2e3a-4ffe-9995-d1360cdee4f8</webElementGuid>
+      <webElementGuid>b6068e61-6043-4a28-b716-e8b5c98baf5c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

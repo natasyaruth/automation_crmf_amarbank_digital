@@ -791,7 +791,7 @@
       <name>SenyumkuCustomerType</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LinkAccountInfo')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataAccountInfo')</defaultValue>
       <description></description>
       <id>2e4286e4-6a8a-4933-a446-9cef1dde14cd</id>
       <masked>false</masked>

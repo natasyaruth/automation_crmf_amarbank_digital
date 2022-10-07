@@ -287,6 +287,18 @@
       <value></value>
       <variableId>fe5adbf9-93a2-4ed4-af5f-3f3e8a541f36</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5e5bf566-fc7e-48aa-a7fa-8426f024ca09</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b84f8be7-dfe1-4d5d-bfbf-a5f1f6ccc3c1</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
       <description></description>
@@ -615,5 +627,19 @@
       <id>fe5adbf9-93a2-4ed4-af5f-3f3e8a541f36</id>
       <masked>false</masked>
       <name>fieldFullAddress</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LbSourceCsrMgt')</defaultValue>
+      <description></description>
+      <id>5e5bf566-fc7e-48aa-a7fa-8426f024ca09</id>
+      <masked>false</masked>
+      <name>txtFirstRowSource</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b84f8be7-dfe1-4d5d-bfbf-a5f1f6ccc3c1</id>
+      <masked>false</masked>
+      <name>SourceData</name>
    </variable>
 </TestCaseEntity>

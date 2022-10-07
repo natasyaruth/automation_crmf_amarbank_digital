@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tingkat pendidikan tertinggi'])[1]/following::div[3]</value>
+         <value>//div/form/div/div/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>10777540-5f7c-47b8-9c88-64539b0c2d4e</webElementGuid>
+      <webElementGuid>d4a857eb-5a91-48b1-aa7e-6779c5224efe</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>baae1775-9305-4376-bf9b-71933604c191</webElementGuid>
+      <webElementGuid>602b025c-b99c-4b30-81b7-acfac658abde</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tingkat pendidikan tertinggi wajib dipilih</value>
-      <webElementGuid>795582d1-25d1-4486-9aa0-5f24633bc548</webElementGuid>
+      <webElementGuid>65ecb93d-56cf-40b3-acb3-2cce06e2e101</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>4239c009-c4d9-4011-af48-42df7e4e79b0</webElementGuid>
+      <webElementGuid>16680f8c-cacd-4dfe-bd20-8431cf5a4a7a</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='PersonalDataForm']/form/div/div/div/div[2]</value>
-      <webElementGuid>9431d572-0b04-4efc-9365-dbf1d26a6a21</webElementGuid>
+      <webElementGuid>318cbc09-0c75-4e4b-9913-bd6c094d3e14</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tingkat pendidikan tertinggi'])[1]/following::div[3]</value>
-      <webElementGuid>3562e579-ea51-43b5-8b76-8087cf2c35d2</webElementGuid>
+      <webElementGuid>a42b87ef-d247-4b37-b871-55dcbbc4a86a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Diri'])[1]/following::div[9]</value>
-      <webElementGuid>dbb37536-3e7a-4773-a8ea-80e7a8bcc3be</webElementGuid>
+      <webElementGuid>65402882-219c-4f19-9525-c345c5b2a1e5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama ibu kandung'])[1]/preceding::div[1]</value>
-      <webElementGuid>429dd24a-932f-4833-a5e5-84ef1c60399a</webElementGuid>
+      <webElementGuid>cd440057-4f9e-422b-bcae-cab01705e8dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor kontak kerabat'])[1]/preceding::div[3]</value>
-      <webElementGuid>4ab9716f-2401-4296-9f04-bf6a9d81cde4</webElementGuid>
+      <webElementGuid>f059da60-d29c-44ec-81e7-955824a9d43d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tingkat pendidikan tertinggi wajib dipilih']/parent::*</value>
-      <webElementGuid>acf6d993-d2f6-4b14-ba46-a53c1b98bbf6</webElementGuid>
+      <webElementGuid>61130ff8-036c-45d9-ab32-1446989ede9b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/form/div/div/div/div[2]</value>
-      <webElementGuid>b4c41b39-a7a0-4b9d-93a5-50bb6d25f481</webElementGuid>
+      <webElementGuid>7d65682c-850a-4ccf-9be9-46c849f29436</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Tingkat pendidikan tertinggi wajib dipilih' or . = 'Tingkat pendidikan tertinggi wajib dipilih')]</value>
-      <webElementGuid>8f024d50-9eed-4e90-b77f-1ccf41119ddc</webElementGuid>
+      <webElementGuid>5986c613-4b64-4506-9c8e-d6e003217204</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

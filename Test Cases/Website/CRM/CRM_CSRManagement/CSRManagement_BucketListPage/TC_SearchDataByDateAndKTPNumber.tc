@@ -641,7 +641,7 @@
       <name>BtnDetail</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/LinkKtp')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataKtp')</defaultValue>
       <description></description>
       <id>70fd0af0-3ea4-48f1-83fc-b0dc4da35931</id>
       <masked>false</masked>

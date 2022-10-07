@@ -119,11 +119,13 @@ WebUI.takeScreenshot()
 /*'We want to makesure we can access CSR Management'*/
 boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
 if (checkMenuCsr == true) {
+	SourceData = WebUI.getText(menuCSRManagement)
 	WebUI.click(menuCSRManagement)
 } else {
 	keyLogger.markFailed("Something happen with menu CSR Management")
 }
-
+SourceMenuData = SourceData
+println(SourceMenuData)
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
 if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
@@ -151,6 +153,9 @@ if (WebUI.verifyElementVisible(fieldSearchReqId,FailureHandling.OPTIONAL)) {
 			WebUI.click(btnDetailCsrManagement)
 			if (WebUI.verifyElementVisible(headerTxtCustDetail,FailureHandling.OPTIONAL)) {
 				WebUI.click(changeLogMenu)
+				String firstRow = WebUI.getText(txtFirstRowSource)
+				println(firstRow)
+				WebUI.verifyMatch(SourceMenuData, firstRow, false)
 				if (WebUI.verifyElementVisible(filterBySource,FailureHandling.OPTIONAL)) {
 					WebUI.selectOptionByLabel(filterBySource, assignCard, false)
 					if (WebUI.verifyElementVisible(firstRowActions,FailureHandling.OPTIONAL)) {
