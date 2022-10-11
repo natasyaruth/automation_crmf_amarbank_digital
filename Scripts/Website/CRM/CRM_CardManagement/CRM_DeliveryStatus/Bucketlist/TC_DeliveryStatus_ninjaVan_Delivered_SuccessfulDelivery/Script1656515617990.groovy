@@ -42,7 +42,7 @@ GlobalVariable.hashNinjaVanSuccessfulDelivery = hashNinjaVanSuccessfulDelivery
 println (GlobalVariable.hashNinjaVanSuccessfulDelivery)
 /* We want to prepare the http request*/
 
-def request = ((findTestObject('API/CRM/API_ninjaVanSuccessfulDelivery', [('hostnameCRM') : GlobalVariable.baseUrlRegOtoku, ('username') : GlobalVariable.usernameWebApi, ('password') : GlobalVariable.passwordWebApi, ('X-NINJAVAN-HMAC-SHA256') : hashNinjaVanSuccessfulDelivery])) as RequestObject)
+def request = ((findTestObject('API/CRM/API_ninjaVanSuccessfulDelivery', [('base_url_crm_otoku') : GlobalVariable.baseUrlRegOtoku, ('username') : GlobalVariable.usernameWebApi, ('password') : GlobalVariable.passwordWebApi, ('X-NINJAVAN-HMAC-SHA256') : hashNinjaVanSuccessfulDelivery])) as RequestObject)
 request.setBodyContent(new HttpTextBodyContent(body, 'UTF-8', 'application/json'))
 
 /* We want to send the API process*/
@@ -50,6 +50,7 @@ def response = WS.sendRequest(request)
 
 /* We want to get the response*/
 def body_content = response.responseBodyContent
+println(body_content)
 def status_code = response.statusCode
 
 /* We want parse response from API process*/

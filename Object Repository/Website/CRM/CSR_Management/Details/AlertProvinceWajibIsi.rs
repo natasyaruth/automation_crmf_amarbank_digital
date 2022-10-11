@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*/text()[normalize-space(.)='Provinsi wajib diisi']/parent::*</value>
+         <value>//form/div[5]/div/div/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>dd80cce5-4308-4aa5-b48c-a9eb1d5b2604</webElementGuid>
+      <webElementGuid>c6f9ac70-3fde-493d-b150-4f080363f11c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>4ba27507-61ec-4b4d-b75f-65d408a2c484</webElementGuid>
+      <webElementGuid>c148b05f-6513-4f1f-89f0-f7c7f3f745be</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Provinsi wajib diisi</value>
-      <webElementGuid>56b0e558-8c80-4b95-9840-b17f5f15beee</webElementGuid>
+      <webElementGuid>433b9315-cfc3-40fb-80a1-a9128374a5c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;deliveryaddress&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/section[1]/form[1]/div[@class=&quot;Grids Grids--gapless&quot;]/div[@class=&quot;Grid Grid-md-6 u-pd-left u-pd-right u-pd-bottom&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>5940a299-a1be-4ef9-9775-92c4fa809ea2</webElementGuid>
+      <webElementGuid>d965d746-0ff5-47aa-9497-0681e26a8d76</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='deliveryaddress']/div/div/div[2]/section/section/form/div[5]/div/div/div[2]</value>
-      <webElementGuid>2104a0cf-c692-4b4a-833e-bfb989eae69d</webElementGuid>
+      <webElementGuid>c62e884d-f11f-49b5-9a9a-cc9edf259677</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Provinsi'])[1]/following::div[3]</value>
-      <webElementGuid>3ee53693-a1f2-43d4-93ba-638f6e06ea80</webElementGuid>
+      <webElementGuid>9ea4d2bf-a1ee-4d72-adf3-33be4daabd7e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='RW'])[2]/following::div[7]</value>
-      <webElementGuid>1c2f838d-f9cc-49d4-b333-e85e2546f5b5</webElementGuid>
+      <webElementGuid>4c790993-122d-42b7-ba69-456f171b561b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kabupaten/kota'])[1]/preceding::div[1]</value>
-      <webElementGuid>554e9f65-de3a-4181-bd9e-3ff38bd908e4</webElementGuid>
+      <webElementGuid>07608e2c-3a5b-47e1-a7f7-6be8ca2749ed</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kabupaten/kota wajib diisi'])[1]/preceding::div[3]</value>
-      <webElementGuid>f142db2a-44ce-427d-b7c6-d542666bfc52</webElementGuid>
+      <webElementGuid>3762e26d-ad35-4d52-a05b-9f45bd140670</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Provinsi wajib diisi']/parent::*</value>
-      <webElementGuid>fc6bd8b2-519f-4e31-898d-73045b9d9905</webElementGuid>
+      <webElementGuid>ffb28895-7177-44cd-8f46-748f274445a1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//form/div[5]/div/div/div[2]</value>
-      <webElementGuid>14f73b5c-dab5-4918-9e8e-41aa4e1262a5</webElementGuid>
+      <webElementGuid>58befa25-a9b2-42bf-8fc8-11fae3f790cd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Provinsi wajib diisi' or . = 'Provinsi wajib diisi')]</value>
-      <webElementGuid>8cf46e0c-d71d-4f46-9086-f4988966c5e7</webElementGuid>
+      <webElementGuid>448598a5-200a-4d67-8c0d-5f19900e52b6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>TxtHasActivated</name>
+   <tag></tag>
+   <elementGuidId>e735e81e-303d-4210-bf7a-9454f77cadde</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Kartu ATM'])[1]/following::div[5]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.u-Flex.u-MarginBottom > div.u-MarginRight-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c3ed09f8-41e0-4780-98e9-516484d0b783</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-MarginRight-large</value>
+      <webElementGuid>64e25eb6-a93e-411e-b357-0b81de56975e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Sudah Aktivasi</value>
+      <webElementGuid>ffcbc94a-0207-42d4-b9e3-5dd244d42431</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;AccountInfoForm&quot;)/div[@class=&quot;u-Flex u-MarginBottom&quot;]/div[@class=&quot;u-MarginRight-large&quot;]</value>
+      <webElementGuid>37a6ac0f-721e-41fc-9bcd-eab215eebc2b</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='AccountInfoForm']/div/div</value>
+      <webElementGuid>9c116fa9-137b-4949-955e-ccf843a7725c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Kartu ATM'])[1]/following::div[5]</value>
+      <webElementGuid>d39a975a-4338-4c95-9fbe-1adcad305413</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC'])[1]/following::div[17]</value>
+      <webElementGuid>43d5cd53-6f92-45a5-a8ac-c2e26934d598</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No.Rekening'])[1]/preceding::div[1]</value>
+      <webElementGuid>27fa5ad7-d8c5-4a3b-bb32-7e160c4e081a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[11]/div/div/div[2]/section/div/div/div</value>
+      <webElementGuid>28f271ce-0f83-4746-8b29-499ce6324613</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Sudah Aktivasi' or . = 'Sudah Aktivasi')]</value>
+      <webElementGuid>56ce93a3-0834-45f1-bfbd-3cb06c8b9b23</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

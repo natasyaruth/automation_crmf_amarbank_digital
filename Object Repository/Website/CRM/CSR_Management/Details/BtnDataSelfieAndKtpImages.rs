@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//*[@id = 'BtnDataSelfieAndKtpImages']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//h3[@id='SectionTitleimages']</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
@@ -18,5 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnDataSelfieAndKtpImages</value>
+      <webElementGuid>bfb8b31f-14e8-44da-802f-43ed1e69135d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

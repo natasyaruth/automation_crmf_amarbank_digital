@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>MsgSuccessSavePersonalData</name>
+   <tag></tag>
+   <elementGuidId>a1beef78-0a71-4699-9ade-4d31ac2791be</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='PersonalDataForm']/form/section/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.u-Flex.u-ai-center.u-fs-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>59645fda-b38f-4cd3-838a-2793feca1cc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-Flex u-ai-center u-fs-large</value>
+      <webElementGuid>6e9ae3a0-f9df-4617-be8a-1f57cd00b92c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Data Diri berhasil disimpan</value>
+      <webElementGuid>752ccac5-9387-4bb3-a6a8-23f9dd020b81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/section[@class=&quot;SectionButtons u-mg-bottom u-mg-top&quot;]/div[@class=&quot;Alert Alert--success u-mg-bottom u-pd-base&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-xs-8&quot;]/div[@class=&quot;u-Flex u-ai-center u-fs-large&quot;]</value>
+      <webElementGuid>c5dc4502-f670-4213-a662-864700320acc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PersonalDataForm']/form/section/div/div/div/div</value>
+      <webElementGuid>50a82c0c-fc17-450b-afed-5542c836d43a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tujuan pembuatan rekening'])[1]/following::div[6]</value>
+      <webElementGuid>844c4022-7827-4606-b717-dc46f79b4b22</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/following::div[8]</value>
+      <webElementGuid>6565af48-a0de-4c17-ab39-a675683fb90a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[5]/preceding::div[2]</value>
+      <webElementGuid>e7d2921f-a008-45c3-a87c-ddd1a4e45b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[5]/preceding::div[2]</value>
+      <webElementGuid>4d37bbb0-69f6-4576-bcf3-969aff7d0f01</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Data Diri berhasil disimpan']/parent::*</value>
+      <webElementGuid>4010d45b-739d-41da-a180-179b9dbde89f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/section/div/div/div/div</value>
+      <webElementGuid>f9ecf772-6d10-4af9-aa8a-11a347c573eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Data Diri berhasil disimpan' or . = 'Data Diri berhasil disimpan')]</value>
+      <webElementGuid>35cbcaa7-bd63-4ede-9267-e52bfef7a332</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

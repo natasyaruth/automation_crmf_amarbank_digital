@@ -73,11 +73,9 @@ if (checkHeaderCsrManagement == true) {
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
 				WebUI.click(btnBackBucketList)				
-				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
-				if (inBucketListPage == true) {
+				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5,FailureHandling.OPTIONAL)) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
-					if (existFieldReqId == true) {
+					if (WebUI.verifyElementVisible(fieldReqId,FailureHandling.OPTIONAL)) {
 						/* We want to check the correct Request ID but Invalid Name */
 						WebUI.setText(fieldReqId, requestIdText)
 						WebUI.setText(fieldNameCust, listIncorrectName.get(i))

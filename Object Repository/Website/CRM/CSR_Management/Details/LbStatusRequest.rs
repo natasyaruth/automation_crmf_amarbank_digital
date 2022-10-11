@@ -6,12 +6,12 @@
    <elementGuidId>52134bac-5539-4370-b547-bfd66356e2d6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipe Nasabah'])[1]/following::span[1]</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>span.Badge.u-MarginLeft-auto.Badge--large.Badge--secondary.Badge--outlined</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[2]/div/span</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a64fb06e-c088-4306-8970-e19f85feff8a</webElementGuid>
+      <webElementGuid>8f2a9a05-9a26-4b35-a0c5-b307ae4d50e5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Badge u-MarginLeft-auto Badge--large Badge--secondary Badge--outlined</value>
-      <webElementGuid>1a08e6d0-b034-47ed-b4f9-a3289c08db4c</webElementGuid>
+      <webElementGuid>b929321b-b47b-43bf-a6a8-2cd452219eb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Selesai</value>
-      <webElementGuid>32c17666-46a5-44a8-95b3-cb203a308789</webElementGuid>
+      <webElementGuid>ffc68a01-04ad-42ab-b077-b7d449d45831</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/section[@class=&quot;wrapper has--navigation&quot;]/section[@class=&quot;CustomerDetail-content&quot;]/div[@class=&quot;Card u-MarginBottom-large&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;u-Flex u-AlignItems-start&quot;]/span[@class=&quot;Badge u-MarginLeft-auto Badge--large Badge--secondary Badge--outlined&quot;]</value>
-      <webElementGuid>29415dd6-824e-47e9-b3ca-9e96eac340b6</webElementGuid>
+      <webElementGuid>97412d85-ab1c-441b-98e5-0b9c7042cecd</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/section/section/div/section[2]/div/span</value>
-      <webElementGuid>1f6b475d-4a10-4c0f-90ad-af57786ee0e2</webElementGuid>
+      <webElementGuid>9bb0aa6f-a116-4d8a-abd5-8ad9e4cfe791</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nasabah Senyumku'])[1]/following::span[1]</value>
-      <webElementGuid>99ebb58e-25f3-4dd6-8929-2559d0781b59</webElementGuid>
+      <webElementGuid>0611cfa6-d23c-43cf-80ed-a6f191fb1afb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tipe Nasabah'])[1]/following::span[1]</value>
-      <webElementGuid>a067e0cd-70cd-4ad5-8ba1-8054ba5c6363</webElementGuid>
+      <webElementGuid>179ea9ff-cff5-4fa1-b075-d40a4f59ded5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Device Data'])[1]/preceding::span[1]</value>
-      <webElementGuid>1aa27628-5e31-4657-a101-73bc7abcbf20</webElementGuid>
+      <webElementGuid>f77db76b-65f2-49f2-a22c-350778160850</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Permission'])[1]/preceding::span[1]</value>
-      <webElementGuid>a6e1437c-cb4b-41b0-a711-914115d7809d</webElementGuid>
+      <webElementGuid>2624df9b-f4d3-49a0-9d19-a217941e796d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Selesai']/parent::*</value>
-      <webElementGuid>0de99b42-7622-43a2-8641-e1bb7a22026b</webElementGuid>
+      <webElementGuid>626d5b05-8d59-4463-9471-2341aeb3d29b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/span</value>
-      <webElementGuid>1d35d709-aa91-490b-abb6-0129d38f3f3b</webElementGuid>
+      <webElementGuid>9929c292-552c-4cb7-9117-206c76438d45</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'Selesai' or . = 'Selesai')]</value>
-      <webElementGuid>8da6f8b4-d0ba-4a75-a710-3ec7eafac5e5</webElementGuid>
+      <webElementGuid>4a3dd6cd-1bf1-4770-9067-937e14bad563</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tujuan pembuatan rekening'])[1]/following::div[3]</value>
+         <value>//div[2]/div[3]/div[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>dee34765-ae96-4aaf-8d41-75a711171789</webElementGuid>
+      <webElementGuid>4eb39cbe-a52f-49b7-b73e-b1791e66674b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
-      <webElementGuid>52452993-d3ed-458f-81f1-314f203a797e</webElementGuid>
+      <webElementGuid>7b5440f8-8f9e-40f6-ae37-b525837daa35</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tujuan pembuatan rekening wajib dipilih</value>
-      <webElementGuid>738bee33-870d-44b0-9abe-072f38f0415d</webElementGuid>
+      <webElementGuid>28e20c35-bf92-49bd-a90c-d106bdee2ab7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
-      <webElementGuid>172103e9-173c-40be-a25e-742a6467a011</webElementGuid>
+      <webElementGuid>3e4935f9-7dea-47f6-92a0-570e10ab9c10</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='PersonalDataForm']/form/div/div[2]/div[3]/div[2]</value>
-      <webElementGuid>00ff2b79-70cf-4903-ab4f-1996a957b966</webElementGuid>
+      <webElementGuid>df08e3e9-4d52-4f66-affe-5e3e64122cb4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tujuan pembuatan rekening'])[1]/following::div[3]</value>
-      <webElementGuid>75066380-f721-47dd-a2ea-21d6e416fd98</webElementGuid>
+      <webElementGuid>bf8e3699-40f3-43f6-841f-74fd11d02c0d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/following::div[5]</value>
-      <webElementGuid>85bfe302-9f47-475c-b879-1188dfdcbe2c</webElementGuid>
+      <webElementGuid>1982207e-9b35-44e1-a80e-2ed1afc9e082</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::div[1]</value>
-      <webElementGuid>7f7eaf0a-132c-441d-9fe0-093bf203761c</webElementGuid>
+      <webElementGuid>f008d8c7-d301-44af-8bca-3b4c63e6e256</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[5]/preceding::div[1]</value>
-      <webElementGuid>eb76bac5-cb84-4033-a8ed-5e17d593169e</webElementGuid>
+      <webElementGuid>48ad8c75-3767-4dbf-9789-9b3ba140abdb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tujuan pembuatan rekening wajib dipilih']/parent::*</value>
-      <webElementGuid>288bece0-72d3-4a30-82a2-158106bb06f4</webElementGuid>
+      <webElementGuid>efcaf096-7153-42f7-9bee-77c3debf78c8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[3]/div[2]</value>
-      <webElementGuid>de5f0d52-02b8-401d-93bb-87284b2ec901</webElementGuid>
+      <webElementGuid>7fc863df-0afc-459d-b615-a8ba9740f15d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Tujuan pembuatan rekening wajib dipilih' or . = 'Tujuan pembuatan rekening wajib dipilih')]</value>
-      <webElementGuid>613604ae-9400-4747-86d1-853e41c73231</webElementGuid>
+      <webElementGuid>1827b5e0-1bbe-4679-9467-765bf6d4e6ad</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

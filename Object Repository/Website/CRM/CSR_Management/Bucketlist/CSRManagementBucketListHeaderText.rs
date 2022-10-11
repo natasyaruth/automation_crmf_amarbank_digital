@@ -6,6 +6,10 @@
    <elementGuidId>731bc199-0e90-49bb-98b3-9ff26d203f11</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'CSR Management' or . = 'CSR Management')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/div[2]/ul/li/span</value>
       </entry>
@@ -14,7 +18,7 @@
          <value>span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>a2014a31-4c9d-4ae7-bc77-ea7eaa46d35c</webElementGuid>
+      <webElementGuid>e8948f43-0997-405e-9572-14ac4c85e233</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +34,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CSR Management</value>
-      <webElementGuid>a5143751-e986-47d1-8e16-de3c8d79d43b</webElementGuid>
+      <webElementGuid>4e2ccf34-43b5-4fb0-9d67-43da03b82777</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/div[@class=&quot;wrapper has--navigation&quot;]/ul[@class=&quot;Breadcrumb u-MarginBottom&quot;]/li[@class=&quot;Breadcrumb-item&quot;]/span[1]</value>
-      <webElementGuid>adcbb71a-9cd1-4dd8-82ab-98f471e68fdc</webElementGuid>
+      <webElementGuid>5362fe2f-13e9-4516-aedc-bc43d1fb05d1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/div[2]/ul/li/span</value>
-      <webElementGuid>079bd913-3fa7-4bb8-be27-7a52050e1722</webElementGuid>
+      <webElementGuid>3995547b-211c-44ea-9eb8-a1f1817327af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[2]/following::span[1]</value>
-      <webElementGuid>60373bf5-73b7-426d-90ff-79fc9f47386e</webElementGuid>
+      <webElementGuid>5037c5fd-9b4b-453e-a130-f4a06bf79a46</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::span[1]</value>
-      <webElementGuid>5a688bd9-a6ce-4295-a4fc-e2e535c06a9a</webElementGuid>
+      <webElementGuid>fcf0ef8f-7f4d-4046-af97-ca0d73af0213</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama, No. KTP, No. Handphone atau No. Rekening.'])[1]/preceding::span[1]</value>
-      <webElementGuid>9706ecc2-a2d0-44bb-8bb5-065d7c975a1b</webElementGuid>
+      <webElementGuid>f53f43e9-b6c8-43ce-88e8-b24315016edc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Name'])[1]/preceding::span[1]</value>
-      <webElementGuid>0e205989-7249-47a9-9515-93c47cc80490</webElementGuid>
+      <webElementGuid>083f8cab-b400-43a0-8723-667d66d01eb1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span</value>
-      <webElementGuid>a68e6f3c-e029-43e4-962b-f98fc95120fd</webElementGuid>
+      <webElementGuid>b67f644d-b49b-40a7-b22a-47e12e5193cb</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +98,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[(text() = 'CSR Management' or . = 'CSR Management')]</value>
-      <webElementGuid>523cdb25-e010-4265-af59-94d81fef5dac</webElementGuid>
+      <webElementGuid>9625d349-6e68-4fa9-89f9-992ebcdd4f1d</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

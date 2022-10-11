@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>MsgErrorMonthlyIncome</name>
+   <tag></tag>
+   <elementGuidId>77c0adba-cb82-4932-a465-862aa51b9d2b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;employmentdata&quot;]//form/div/div[2]/div[1]/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>c62a898b-ad22-46bd-a9c9-e82cddba0181</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-fs-small u-clr-danger u-mg-top-xxsmall</value>
+      <webElementGuid>c2f9a869-6ff3-469f-a5aa-1ef770715400</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Pendapatan bulanan wajib dipilih</value>
+      <webElementGuid>1c795142-f369-4ba9-832b-a7944912d8db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;employmentdata&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field Form-field--danger&quot;]/div[@class=&quot;u-fs-small u-clr-danger u-mg-top-xxsmall&quot;]</value>
+      <webElementGuid>6f752af7-d17a-4965-86e5-a961985dbc5e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='employmentdata']/div/div/div[2]/section/form/div/div[2]/div/div[2]</value>
+      <webElementGuid>ab15f7dd-452c-4240-80dd-8e012c9a8c66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pendapatan bulanan'])[1]/following::div[3]</value>
+      <webElementGuid>00795028-822b-40ee-beae-7da1bb0848b1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Industri perusahaan wajib dipilih'])[1]/following::div[5]</value>
+      <webElementGuid>ea1634fd-b3cb-47e8-8528-c42a9490d97f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jabatan'])[1]/preceding::div[1]</value>
+      <webElementGuid>953d1892-9ec6-4884-a3b5-62f1e2398260</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Jabatan wajib dipilih'])[1]/preceding::div[3]</value>
+      <webElementGuid>9e89dd5f-e5ce-4817-bff7-0cd6fc40082b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Pendapatan bulanan wajib dipilih']/parent::*</value>
+      <webElementGuid>4f11085c-7d76-4ac2-8783-818632f52c1c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div[2]/div/div[2]</value>
+      <webElementGuid>7cc9f089-ea45-46eb-a41a-439efd77662e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Pendapatan bulanan wajib dipilih' or . = 'Pendapatan bulanan wajib dipilih')]</value>
+      <webElementGuid>0f2e9a95-8cc1-4143-813d-55d4a76c272a</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -231,7 +231,7 @@
       <name>drpDwnCustType</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/4?type=2'</defaultValue>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/29?type=2'</defaultValue>
       <description></description>
       <id>1f4ed937-f142-4998-ad3c-6ca3c41566f8</id>
       <masked>false</masked>

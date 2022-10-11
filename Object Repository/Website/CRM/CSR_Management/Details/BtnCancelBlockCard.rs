@@ -3,15 +3,15 @@
    <description></description>
    <name>BtnCancelBlockCard</name>
    <tag></tag>
-   <elementGuidId>4019d272-fd3f-4983-a8c2-a4c73a353d5f</elementGuidId>
+   <elementGuidId>e9206186-62e0-48f3-9477-1995452c1dda</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#BtnCancelBlockCard</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//button[@id='BtnCancelBlockCard']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#BtnCancelBlockCard</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>99b23bc6-f97a-4525-8cdb-3afd5c91b062</webElementGuid>
+      <webElementGuid>e086989c-f1f6-44d2-9932-16d20c6c78e6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Button Button--secondary Button--text Button--fullWidth</value>
-      <webElementGuid>9aef7fc7-dc18-4d76-90bd-af30977a2070</webElementGuid>
+      <webElementGuid>ff0a0329-9654-467d-b9c2-926a4af2c850</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnCancelBlockCard</value>
-      <webElementGuid>f9671488-8ebe-43ad-94a5-89b5242474ba</webElementGuid>
+      <webElementGuid>970158c0-2651-4e90-8139-87b222bb9852</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Batal </value>
-      <webElementGuid>c66435da-861c-420b-b0aa-6679e30c4ea3</webElementGuid>
+      <webElementGuid>cfed84dc-318d-4c4a-bce4-e266f5b5c23b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;BtnCancelBlockCard&quot;)</value>
-      <webElementGuid>1a061ab1-6a58-456e-83cc-03ed48aaee4e</webElementGuid>
+      <webElementGuid>7c7535ad-b0ab-4b11-b85f-1b17e35f175d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//button[@id='BtnCancelBlockCard']</value>
-      <webElementGuid>224901f1-3715-4f0b-be93-1861ef55f66d</webElementGuid>
+      <webElementGuid>40d22e57-1e6a-4599-85af-2e0bfdebe3ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='outer-root']/div/div/div[3]/button[2]</value>
-      <webElementGuid>df217f9a-97ad-4125-967d-05be7ada64e8</webElementGuid>
+      <webElementGuid>ac2228df-00a8-4e53-aca3-8a53883d7363</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Block Kartu ATM'])[2]/following::button[1]</value>
-      <webElementGuid>66223929-9d10-4d5e-acca-9fdf6e8ce94d</webElementGuid>
+      <webElementGuid>9625c252-2c9b-40d4-ab2c-3f00637a3d7c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tutup kartu'])[1]/following::button[2]</value>
-      <webElementGuid>e616f593-bba2-4423-b5a5-eb3a458940bc</webElementGuid>
+      <webElementGuid>f8d0cf28-3c45-4134-9a74-1bff68b5427d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
-      <webElementGuid>6e6b6121-2346-440e-9c96-ad001c56c24d</webElementGuid>
+      <webElementGuid>f939c0bd-4b5d-490d-8232-86eb3a564c12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
-      <webElementGuid>76489f53-b26f-4bf9-93e3-c3c66e2eaaab</webElementGuid>
+      <webElementGuid>9c21b992-1974-4320-9715-f2e94ad69dff</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Batal']/parent::*</value>
-      <webElementGuid>6aece5e8-9e8e-4858-b1de-3e4737949a46</webElementGuid>
+      <webElementGuid>a700489e-7343-4ce5-bfdd-4299fedf1ac8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[3]/button[2]</value>
-      <webElementGuid>4b5a288f-074d-40b1-a04e-9c5c50ef7890</webElementGuid>
+      <webElementGuid>afb4092e-f996-4014-8943-baa9b81f7028</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//button[@id = 'BtnCancelBlockCard' and (text() = 'Batal ' or . = 'Batal ')]</value>
-      <webElementGuid>173af20a-4423-4081-81c7-e1eab0a77963</webElementGuid>
+      <webElementGuid>afa9bd9e-0329-41d5-a680-921547e1da61</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

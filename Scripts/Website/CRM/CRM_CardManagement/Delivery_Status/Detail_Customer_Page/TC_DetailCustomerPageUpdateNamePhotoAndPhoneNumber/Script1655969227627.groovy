@@ -94,7 +94,7 @@ hashNinjaVanSuccessfulDelivery = SecureUtils.hmac_sha256("cf47ca4e44844cb987eb05
 GlobalVariable.hashNinjaVanSuccessfulDelivery = hashNinjaVanSuccessfulDelivery
 println (GlobalVariable.hashNinjaVanSuccessfulDelivery)
 /* We want to prepare the http request*/
-def request = ((findTestObject('API/CRM/API_ninjaVanSuccessfulDelivery', [('hostnameCRM') : GlobalVariable.baseUrlRegOtoku, ('username') : GlobalVariable.usernameWebApi, ('password') : GlobalVariable.passwordWebApi, ('X-NINJAVAN-HMAC-SHA256') : hashNinjaVanSuccessfulDelivery])) as RequestObject)
+def request = ((findTestObject('API/CRM/API_ninjaVanSuccessfulDelivery', [('base_url_crm_otoku') : GlobalVariable.baseUrlRegOtoku, ('username') : GlobalVariable.usernameWebApi, ('password') : GlobalVariable.passwordWebApi, ('X-NINJAVAN-HMAC-SHA256') : hashNinjaVanSuccessfulDelivery])) as RequestObject)
 request.setBodyContent(new HttpTextBodyContent(body, 'UTF-8', 'application/json'))
 /* We want to send the API process*/
 def response = WS.sendRequest(request)
