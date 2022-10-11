@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>labelMotherName</name>
+   <tag></tag>
+   <elementGuidId>6e990081-d20d-4e58-bd5a-6cceafed445f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Tingkat pendidikan tertinggi'])[1]/following::label[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>9db838e7-adec-4643-868c-238625c8bae7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Form-label</value>
+      <webElementGuid>8df0aa02-2155-4be8-84a8-f1fe5297558a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nama ibu kandung</value>
+      <webElementGuid>50d8c8e0-5ad2-4e46-85bb-0556acaffdc3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field&quot;]/label[@class=&quot;Form-label&quot;]</value>
+      <webElementGuid>959444a9-1c53-4af0-bf9b-bd882337221a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PersonalDataForm']/form/div/div/div[2]/label</value>
+      <webElementGuid>89e77f49-d34e-4de8-b9f5-053f392365d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tingkat pendidikan tertinggi'])[1]/following::label[1]</value>
+      <webElementGuid>1284a925-0951-4ef4-afe5-afa0b270e2ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Diri'])[1]/following::label[2]</value>
+      <webElementGuid>5716f0cf-8a85-47dc-8631-326eb63a7b40</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nomor kontak kerabat'])[1]/preceding::label[1]</value>
+      <webElementGuid>179c8be9-60a6-44df-a5c0-d9e32c1b0a10</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NPWP (optional)'])[1]/preceding::label[2]</value>
+      <webElementGuid>3911e14f-2a50-46cd-9a19-ece5cf88f044</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Nama ibu kandung']/parent::*</value>
+      <webElementGuid>d9e1a94d-5a2f-49c0-838c-844ea1954573</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/form/div/div/div[2]/label</value>
+      <webElementGuid>2463f547-fc5c-4ea2-b832-2202280836c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Nama ibu kandung' or . = 'Nama ibu kandung')]</value>
+      <webElementGuid>3dd9fb27-2e3f-436b-9fe1-52ea3afde320</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

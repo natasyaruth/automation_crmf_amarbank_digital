@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LabelWorkType</name>
+   <tag></tag>
+   <elementGuidId>d9dff73a-5f19-4727-9333-afed96d10ec7</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Sumber pendapatan'])[1]/following::label[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>81b2926c-6506-4269-8685-42bc9445f2fe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Form-label</value>
+      <webElementGuid>44f0577e-3bb1-487b-bca5-6bab26d2bf7e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Jenis pekerjaan</value>
+      <webElementGuid>7f88cf1f-b870-4915-90cf-26dc80fd3a51</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;employmentdata&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field&quot;]/label[@class=&quot;Form-label&quot;]</value>
+      <webElementGuid>f7a3c820-ea8f-45bb-baea-4512bd3ecae4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='employmentdata']/div/div/div[2]/section/form/div/div/div[2]/label</value>
+      <webElementGuid>1c825170-9651-4014-8dd8-d2dd7a67139f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sumber pendapatan'])[1]/following::label[1]</value>
+      <webElementGuid>e329328e-eaa1-49fb-b462-3af5c342d2e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data Pekerjaan'])[1]/following::label[2]</value>
+      <webElementGuid>acbc3612-24f1-400e-901f-d0395a934037</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Industri Perusahaan'])[1]/preceding::label[1]</value>
+      <webElementGuid>ae25bb1f-80b9-47dd-bf1f-f637e21d72ee</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Pendapatan bulanan'])[1]/preceding::label[2]</value>
+      <webElementGuid>8a38d461-2f2c-43d9-a9d2-8da8da3173be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Jenis pekerjaan']/parent::*</value>
+      <webElementGuid>006a114e-e38b-4043-9b2b-6dca0d57a2ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[9]/div/div/div[2]/section/form/div/div/div[2]/label</value>
+      <webElementGuid>5c045558-d353-4a1f-878d-834982155597</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Jenis pekerjaan' or . = 'Jenis pekerjaan')]</value>
+      <webElementGuid>39ecf602-5e7c-4b58-b27d-d74fbc9abf5f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

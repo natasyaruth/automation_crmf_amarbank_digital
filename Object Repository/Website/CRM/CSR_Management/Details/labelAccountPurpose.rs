@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>labelAccountPurpose</name>
+   <tag></tag>
+   <elementGuidId>66f4f4d8-5f45-48d0-bfce-89c61157dace</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/following::label[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>fc19cef7-7f42-4e32-899a-e073120ad13a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Form-label</value>
+      <webElementGuid>c78cf599-89bb-4e88-8ed9-54556de04664</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tujuan pembuatan rekening</value>
+      <webElementGuid>2bb984cf-a54b-4e37-b7db-003be149f4a8</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;PersonalDataForm&quot;)/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid&quot;]/div[@class=&quot;Form-field&quot;]/label[@class=&quot;Form-label&quot;]</value>
+      <webElementGuid>ad4cc919-844b-40e8-a495-4abfcc0d589e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='PersonalDataForm']/form/div/div[2]/div[3]/label</value>
+      <webElementGuid>0dcbfb1a-d263-472b-97b5-55e111452d3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Nama Kerabat'])[1]/following::label[1]</value>
+      <webElementGuid>874f2728-52d5-43de-bb63-54a1072f5eb2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Agama'])[2]/following::label[2]</value>
+      <webElementGuid>3ee9b997-03d1-4388-bcfd-ec6256eafca3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cancel'])[1]/preceding::label[1]</value>
+      <webElementGuid>099cbe59-8080-494d-8c9a-9f90a0bc49ca</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[5]/preceding::label[1]</value>
+      <webElementGuid>77ef42ed-7e2e-40b1-b119-cf0d14b0b3d4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tujuan pembuatan rekening']/parent::*</value>
+      <webElementGuid>2a37ae7c-a798-4f4d-b6ba-514721bfd6e6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/form/div/div[2]/div[3]/label</value>
+      <webElementGuid>2ba2bc67-8d00-4cde-9333-f3969f6809b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Tujuan pembuatan rekening' or . = 'Tujuan pembuatan rekening')]</value>
+      <webElementGuid>ad5ab210-00e4-4881-bfe6-72b744e8f290</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
