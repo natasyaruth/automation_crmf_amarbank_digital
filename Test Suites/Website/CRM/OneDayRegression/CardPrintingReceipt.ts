@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
-   <description>CSRManagement_Customer_Page_12</description>
-   <name>CSRManagement_Customer_Page_12</name>
-   <tag></tag>
+   <description></description>
+   <name>CardPrintingReceipt</name>
+   <tag>1dayregression</tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>8</maxConcurrentInstances>
@@ -15,7 +15,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105573</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105009</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -25,7 +25,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105574</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105011</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -35,7 +35,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105576</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105013</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -45,7 +45,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105577</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105012</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -55,7 +55,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105578</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105014</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
@@ -65,17 +65,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105579</testSuiteEntity>
-      </TestSuiteRunConfiguration>
-      <TestSuiteRunConfiguration>
-         <configuration>
-            <groupName>Web Desktop</groupName>
-            <profileName>staging</profileName>
-            <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
-         </configuration>
-         <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CSRManagement/Suite_CRM_Detail/Suite_CSRManagement_Customer_Page_T105582</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Receipt/Suite_CRM_Card_Printing_Receipt_T105015</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
