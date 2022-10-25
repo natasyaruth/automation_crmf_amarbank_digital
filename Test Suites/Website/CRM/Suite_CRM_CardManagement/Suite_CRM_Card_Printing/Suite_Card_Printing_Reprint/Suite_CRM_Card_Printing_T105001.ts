@@ -199,7 +199,7 @@
       <guid>85d59f55-0668-48ae-b859-377a8dd14635</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement_CardPrinting/CardPrinting_CardReprint/TC_CardPrintingUpdateStatusDeliveryIntoPendingPickupThenCheckToReceipt</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement_CardPrinting/CardPrinting_CardReprint/UpdateStatusDeliveryIntoPendingPickupThenCheckToReceipt</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
