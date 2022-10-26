@@ -89,6 +89,18 @@
       <value></value>
       <variableId>b1954483-5a35-4279-ac2e-c0473b22a0ef</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c817d8e2-32df-4743-9879-612c641729cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d1d7ba1f-5c55-4fc0-aff0-f87849fb1ee6</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -186,5 +198,19 @@
       <id>b1954483-5a35-4279-ac2e-c0473b22a0ef</id>
       <masked>false</masked>
       <name>menuDashboardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c817d8e2-32df-4743-9879-612c641729cb</id>
+      <masked>false</masked>
+      <name>reqIdDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <description></description>
+      <id>d1d7ba1f-5c55-4fc0-aff0-f87849fb1ee6</id>
+      <masked>false</masked>
+      <name>path</name>
    </variable>
 </TestCaseEntity>

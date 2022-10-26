@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import java.sql.Driver
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -11,12 +14,25 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.ConditionType
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.WebElement as Keys
+import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import org.openqa.selenium.WebDriver as WebDriver
+import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+
+'Initial loggin in katalon'
+KeywordUtil keylogger = new KeywordUtil()
 
 /* we want to check availability elemet h1 dashboard */
 WebUI.waitForElementVisible(headerDashboardElement, 10)
@@ -44,6 +60,72 @@ if (WebUI.verifyElementPresent(notificationVideoPendingElement, 5, FailureHandli
 		WebUI.click(videoKYCRequest)
 	}
 }
+
+'Initial HTML choosen process'
+WebDriver driver = DriverFactory.getWebDriver()
+WebElement tblKycVideo
+List<WebElement> rowsKycVideo
+List<WebElement> colsKycVideo
+
+'We in page KYC video request'
+TestObject kycVideoPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+if (WebUI.verifyElementPresent(kycVideoPage, 5,FailureHandling.OPTIONAL)) {
+	keylogger.markPassed('We are in kyc page')
+	if (WebUI.verifyElementClickable(idleCallsTab,FailureHandling.OPTIONAL)) {
+		WebUI.click(idleCallsTab)
+	} else {keylogger.markError('Tab idle calls is disable')}
+} else {keylogger.markError('We are not in kyc page')}
+
+if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType,FailureHandling.OPTIONAL)) {
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
+	tblKycVideo = driver.findElement(By.xpath('//table/tbody'))
+	rowsKycVideo = tblKycVideo.findElement(By.tagName('tr'))
+	colsKycVideo = rowsKycVideo.get(0).findElements(By.tagName('td'))
+	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+		keylogger.markPassed('We already to click the Kyc Vidio')
+		colsKycVideo.get(1).findElement(By.tagName('a'))
+	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
+} else {keylogger.markError('Drop down not present')}
+
+TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+if (WebUI.verifyElementPresent(kycVideoDetail, 5,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementVisible(txtReqId,FailureHandling.OPTIONAL)) {
+		reqIdDetail = WebUI.getText(txtReqId)
+	} else {keylogger.markError('We not find the request Id')}
+	reqIdUsed = reqIdDetail
+	String currentPage = WebUI.getUrl()
+	int currentTab = WebUI.getWindowIndex()
+	WebDriver driver = DriverFactory.getWebDriver()
+	JavascriptExecutor js = ((driver) as JavascriptExecutor)
+	js.executeScript('window.open();')
+	WebUI.switchToWindowIndex(currentTab + 1)
+	WebUI.navigateToUrl(currentPage)
+	WebUI.navigateToUrl(path +reqIdUsed)
+	WebUI.switchToWindowIndex(currentTab)
+	WebUI.navigateToUrl(currentPage)
+	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
+	if (WebUI.verifyElementPresent(videoCallValidation, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementClickable(btnCallSenyumku,FailureHandling.OPTIONAL)) {
+			WebUI.click(btnCallSenyumku)
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+			if (WebUI.verifyElementPresent(txtVerifConnect, 0,FailureHandling.OPTIONAL)) {
+				WebUI.switchToWindowIndex(0)
+				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+				WebUI.verifyElementPresent(backToKycVideo, 5)
+				WebUI.refresh()
+				WebUI.delay(5)
+			} else {keylogger.logInfo('Element not present')}
+		} else {keylogger.markError('button cannot click able')}
+	} else {keylogger.markError('We are not in verification data')}
+} else {keylogger.markError('we are not in KYC video detail')}
+
+'We want to confirmation process'
+TestObject checkConfProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Hal-hal yang perlu dikonfirmasi')
+if (WebUI.verifyElementPresent(checkConfProcess, 5,FailureHandling.OPTIONAL)) {
+//	Next we continue
+	WebUI.click()
+} else {keylogger.markError('Element not present')}
+
 
 /* we want to capture KYC Management and KYC Video Request*/
 WebUI.takeScreenshot(FailureHandling.OPTIONAL)
