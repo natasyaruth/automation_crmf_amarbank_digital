@@ -172,8 +172,8 @@ while (checkData == false) {
 			WebUI.selectOptionByIndex(drpDwnVillage, index)
 			WebUI.delay(5)
 		} else {keylogger.markError('Element not visible')}
-		if (WebUI.verifyElementVisible(btnKycFinished,FailureHandling.OPTIONAL)) {
-			WebUI.click(btnKycFinished)
+		if (WebUI.verifyElementVisible(btnKycReject,FailureHandling.OPTIONAL)) {
+			WebUI.click(btnKycReject)
 			WebUI.delay(5)
 			'We try to fill the history call'
 			TestObject historyCallCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Keterangan History Call')
@@ -183,7 +183,7 @@ while (checkData == false) {
 				if (WebUI.verifyElementClickable(btnSentKycVideo,FailureHandling.OPTIONAL)) {
 					WebUI.click(btnSentKycVideo)
 					WebUI.delay(5)
-					TestObject successSendKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video berhasil dikirim')
+					TestObject successSendKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video ditolak')
 					if (WebUI.verifyElementPresent(successSendKyc, 5,FailureHandling.OPTIONAL)) {
 						WebUI.takeScreenshot()
 						WebUI.click(btnCloseKyc)
