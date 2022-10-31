@@ -32,8 +32,9 @@ import com.tunaiku.keyword.RandomDate as RandomDate
 
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
-/*We want to init faker*/
-def randDate = RandomDate.getDateStringForDateBefore()
+/*Setup faker email*/
+Faker faker = new Faker()
+String fullName = faker.name().fullName()
 /* We want handling block condition*/
 if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
 	WebUI.click(menuCsrManagement)
@@ -49,14 +50,15 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
 
 /* We want Verify design modal block card with condition already have card number
  * Precondition:
- * 	1. User has input failed birthday for 3 times
-	2. Already show pop up can't access <=60 minutes
+ * 	1. User already input failed security question
+	2. System already showing Customer cannot be access pop up
  * 
  * And have steps:
- * 	1. Click Detail
+ * 	1. Click "Kembali"
  * 
 	And we have the expected result is :
-		1. Still show pop up security question "Can't access"  https://app.zeplin.io/project/5cb32de6d5d005a224d05197/screen/628e434804119cbd3a18e234
+		1. Back to bucketlist
+		2.Always refresh the page after click "Kembali"
 */
 WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
 WebElement tableCsrMgt
@@ -79,20 +81,20 @@ while (loopPageCsr == false) {
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 					listCols.get(6).findElement(By.tagName('button')).click()
-					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
+					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
 					if (WebUI.verifyElementPresent(csrSecurityQuestion, 5,FailureHandling.OPTIONAL)) {
-						boolean loopBirtdateDay = false
-						loopBirthdate:
-						while (loopBirtdateDay == false) {
-							WebUI.setText(fieldInputBirthdaySecQuest, randDate)
-							WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
+						boolean loopSecQuestion = false
+						loopSecQuestion:
+						while (loopSecQuestion == false) {
+							WebUI.setText(fieldInputMotherSecQuest, fullName)
 							WebUI.click(btnSubmitSecQuest)
 							TestObject alertCantAccessCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah tidak bisa di akses')
 							if (WebUI.verifyElementPresent(alertCantAccessCust, 5,FailureHandling.OPTIONAL)) {
 								WebUI.verifyElementClickable(btnBackCloseLockModal)
 								WebUI.click(btnBackCloseLockModal)
+								keylogger.markPassed('Always refresh the page after click "Kembali"')
 								WebUI.takeScreenshot()
-								break loopBirthdate
+								break loopSecQuestion
 							} else {keylogger.logInfo('Try Again Until Lock')}
 							if (WebUI.verifyElementVisible(alertWrongSecQuest,FailureHandling.OPTIONAL)) {
 								keylogger.markPassed('Pop up alert wrong input')
@@ -113,7 +115,7 @@ while (loopPageCsr == false) {
 							break loopPage
 						}
 					} else {
-						keylogger.logInfo("We are didn't get security question birthday date")
+						keylogger.logInfo("We are didn't get security question Email")
 						if (WebUI.verifyElementClickable(btnBatalSecQuest,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnBatalSecQuest)
 						} else {

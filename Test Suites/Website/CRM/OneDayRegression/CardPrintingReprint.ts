@@ -57,5 +57,15 @@
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Reprint/Suite_CRM_Card_Printing_T105004</testSuiteEntity>
       </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>staging</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Card_Printing/Suite_Card_Printing_Reprint/Suite_CRM_Card_Printing_T105005</testSuiteEntity>
+      </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

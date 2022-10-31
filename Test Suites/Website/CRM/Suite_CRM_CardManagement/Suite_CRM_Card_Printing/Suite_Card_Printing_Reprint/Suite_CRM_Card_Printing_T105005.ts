@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>https://bankamar.testrail.io/index.php?/tests/view/105005</description>
-   <name>Suite_CRM_Card_Printing_Receipt_T105005</name>
+   <name>Suite_CRM_Card_Printing_T105005</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
