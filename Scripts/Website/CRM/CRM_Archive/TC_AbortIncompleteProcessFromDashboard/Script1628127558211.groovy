@@ -29,4 +29,5 @@ if(WebUI.verifyElementVisible(findTestObject('Website/CRM/Dashboard/DashboardCnt
     WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'), 10)
     
     WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))    
+	TC_DeliveryStatus_Verify_Data_After_Hit_NinjaVan_Cancelled.tc
 }

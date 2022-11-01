@@ -113,7 +113,7 @@ while (loopPageCsr == false) {
 							break loopPage
 						}
 					} else {
-						keylogger.logInfo("We are didn't get security question mother name")
+						keylogger.logInfo("We are didn't get security question birthday date")
 						if (WebUI.verifyElementClickable(btnBatalSecQuest,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnBatalSecQuest)
 						} else {

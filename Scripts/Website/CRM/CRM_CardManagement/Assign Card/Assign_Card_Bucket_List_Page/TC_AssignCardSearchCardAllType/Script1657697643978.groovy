@@ -10,12 +10,92 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
+'Initial loggin in katalon studio'
+KeywordUtil keylogger = new KeywordUtil()
+
+if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+	WebUI.click(menuCsrManagement)
+	if (WebUI.verifyElementVisible(popUpBlockNotif,FailureHandling.OPTIONAL)) {
+		WebUI.verifyElementText(wrdBlockNotif, "Konfirmasi")
+		WebUI.click(btnCancelBlockNotif)
+		WebUI.verifyElementVisible(txtheaderCsrManagement)
+	} else {keylogger.logInfo('We can continue the process')
+		WebUI.verifyElementVisible(txtheaderCsrManagement)
+	}
+} else {keylogger.markError("We not find text CSR Management")}
+
+'We want to search the data'
+WebDriver driver = DriverFactory.getWebDriver()
+WebElement tblBucketList
+List<WebElement> rowsBucketList
+loopSearch:
+boolean flagLoop = false
+while (flagLoop == false) {
+	tblBucketList = driver.findElement(By.xpath('//table/tbody'))
+	rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
+	for (int i = 0;i < rowsBucketList.size() ; i ++) {
+		'First I want makesure data is already "Precondition"'
+		if (WebUI.verifyElementClickable(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+				WebUI.selectOptionByLabel(drpDwnCardStatus, 'Belum Aktivasi', false)
+			} else {keylogger.logInfo('element not visible')}
+			if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+				WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
+			} else {keylogger.logInfo('element not visible')}
+		} else {keylogger.markError('Menu cannot click able')}
+		println(' Total of Data : ' +rowsBucketList.size()+ ' and existing row is : ' +i)
+		List<WebElement> colsBucketList = rowsBucketList.get(i).findElements(By.xpath('td'))
+		if (i != (rowsBucketList.size() - 1)) {
+			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
+				colsBucketList.get(6).findElement(By.tagName('button')).click()
+				TestObject detailCsrDtl = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
+				if (WebUI.verifyElementPresent(detailCsrDtl, 5, FailureHandling.OPTIONAL)) {
+					WebUI.scrollToElement(btnDataAtmCard, 5)
+					WebUI.click(btnDataAtmCard)
+					if (WebUI.verifyElementClickable(btnReqNewCard,FailureHandling.OPTIONAL)) {
+						WebUI.click(btnReqNewCard)
+						WebUI. click(chkMotherName)
+						WebUI. click(chkAccountNumber)
+						WebUI. click(chkRegistPhoneNumber)
+						WebUI.click(rbLostCard)
+						if (WebUI.verifyElementClickable(btnSubmitReqNewCard,FailureHandling.OPTIONAL)) {
+							WebUI.click(btnSubmitReqNewCard)
+							WebUI.click(btnBack)
+							break loopSearch
+						} else {keylogger.markError('button submit is disable')}
+					} else {
+						keylogger.logInfo('We must search another Request ID')
+						WebUI.click(btnBack)
+						tblBucketList = driver.findElement(By.xpath('//table/tbody'))
+						rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
+					}
+				} else {
+					keylogger.markError('element not present')
+					}
+			} else { keylogger.logInfo('Something wrong!!')}
+		} else {
+			keylogger.logInfo(' We must move to another page because we capture until ' +rowsBucketList.size())
+			if (WebUI.verifyElementClickable(btnNextPageBucketList,FailureHandling.OPTIONAL)) {
+				WebUI.click(btnNextPageBucketList)
+				tblBucketList = driver.findElement(By.xpath('//table/tbody'))
+				rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
+			}
+		}
+	}
+}
 
 /* We want to makesure we can identify element assign card*/
 if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {

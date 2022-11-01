@@ -1,215 +1,215 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CardPrintingUpdateStatusDeliveryIntoPickupFailedThenCheckToReceipt</name>
+   <name>UpdateStatusDeliveryIntoPendingPickupThenCheckToReceipt</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>7a03df36-389e-4275-b552-9f3729f739c3</testCaseGuid>
+   <testCaseGuid>9ff623ee-bafc-444d-ac16-ed85d089c83c</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8ca7927c-a030-4581-b572-b52eff79030d</variableId>
+      <variableId>9b638284-e688-4f51-8da6-78123776d3e2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>27c39d16-3019-40f1-b208-8c77cc3099c8</variableId>
+      <variableId>33c6fe7e-7f39-4d83-b0d6-11cd01b20092</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>defa5201-3c1f-4e4e-aa58-972df7a40955</variableId>
+      <variableId>d4ef1be0-4206-4596-95c3-691e88467e5e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8ca05553-805d-42e5-bf87-fe00b264ab28</variableId>
+      <variableId>5e79b64a-b324-43c6-b067-b11b15cde0e6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3d7a0958-7556-495b-843c-4d8d66d9a34f</variableId>
+      <variableId>b6bdc893-91a6-4ee3-b656-327ce055583e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7ab19ed8-e56e-43c8-b1a1-18f7efb4e838</variableId>
+      <variableId>1b9fb62f-6290-4c86-95f3-498f24ec601f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>782fa5fd-e27e-419b-a737-4653dac5907a</variableId>
+      <variableId>860104da-1610-4350-88da-e0be2a49332a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ec095da0-f0ec-4c17-9db5-afee368f60cd</variableId>
+      <variableId>ac9f972a-d66a-4b10-8aeb-00eac68f9e93</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d3128cea-b0cb-42d6-9502-2dff0670e659</variableId>
+      <variableId>4bbde827-9946-4177-824d-c38b08c0e447</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>193b3b2b-941c-45a5-a7b2-6d7efde0473d</variableId>
+      <variableId>29462ce1-b630-477c-9d58-35c300099850</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>740370fa-1430-413f-ae69-36b35ec2cf35</variableId>
+      <variableId>57cc08ab-d74a-476e-bac3-e4c4195c3508</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1c90cd21-49b8-4883-a768-bc6d76237081</variableId>
+      <variableId>314264f7-fd98-47ad-a6b9-e7007d4d32b4</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b5126c0e-b7e0-413f-93ba-b399bbb9f2fa</variableId>
+      <variableId>66c6c77b-0299-433c-9b0c-7d6ac6f5ea0c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>35af2b5c-2fa2-4bca-8258-c1fbbadfca02</variableId>
+      <variableId>de4af51f-20ff-47c9-8141-8bcd0ed8ed0a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>75accb27-3e24-42e7-b528-58e2e238cd25</variableId>
+      <variableId>133183ca-e9ee-4f1d-89b7-0a991f562986</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>fed482e7-96aa-4150-901b-d4a2935801a3</variableId>
+      <variableId>1553f781-37f4-4e72-8103-9d2b2c738fee</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/TabCardReprint')</defaultValue>
       <description></description>
-      <id>8ca7927c-a030-4581-b572-b52eff79030d</id>
+      <id>9b638284-e688-4f51-8da6-78123776d3e2</id>
       <masked>false</masked>
       <name>tabCardReprint</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/TabAirwayBill')</defaultValue>
       <description></description>
-      <id>27c39d16-3019-40f1-b208-8c77cc3099c8</id>
+      <id>33c6fe7e-7f39-4d83-b0d6-11cd01b20092</id>
       <masked>false</masked>
       <name>tabReceipt</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/TxtCurrentPage')</defaultValue>
       <description></description>
-      <id>defa5201-3c1f-4e4e-aa58-972df7a40955</id>
+      <id>d4ef1be0-4206-4596-95c3-691e88467e5e</id>
       <masked>false</masked>
       <name>txtFirstPage</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/txtLastPage')</defaultValue>
       <description></description>
-      <id>8ca05553-805d-42e5-bf87-fe00b264ab28</id>
+      <id>5e79b64a-b324-43c6-b067-b11b15cde0e6</id>
       <masked>false</masked>
       <name>txtLastPage</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Receipt/BtnNextPageAirwayBill')</defaultValue>
       <description></description>
-      <id>3d7a0958-7556-495b-843c-4d8d66d9a34f</id>
+      <id>b6bdc893-91a6-4ee3-b656-327ce055583e</id>
       <masked>false</masked>
       <name>btnNextPageReceipt</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/Card Reprint/BtnNextPageReprint')</defaultValue>
       <description></description>
-      <id>7ab19ed8-e56e-43c8-b1a1-18f7efb4e838</id>
+      <id>1b9fb62f-6290-4c86-95f3-498f24ec601f</id>
       <masked>false</masked>
       <name>btnNextPageReprint</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/tableBucketlistCardPrint')</defaultValue>
       <description></description>
-      <id>782fa5fd-e27e-419b-a737-4653dac5907a</id>
+      <id>860104da-1610-4350-88da-e0be2a49332a</id>
       <masked>false</masked>
       <name>table</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ec095da0-f0ec-4c17-9db5-afee368f60cd</id>
+      <id>ac9f972a-d66a-4b10-8aeb-00eac68f9e93</id>
       <masked>false</masked>
       <name>requestIdReprint</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>d3128cea-b0cb-42d6-9502-2dff0670e659</id>
+      <id>4bbde827-9946-4177-824d-c38b08c0e447</id>
       <masked>false</masked>
       <name>flagNextPageReprint</name>
    </variable>
    <variable>
       <defaultValue>false</defaultValue>
       <description></description>
-      <id>193b3b2b-941c-45a5-a7b2-6d7efde0473d</id>
+      <id>29462ce1-b630-477c-9d58-35c300099850</id>
       <masked>false</masked>
       <name>flagNextPageReceipt</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>740370fa-1430-413f-ae69-36b35ec2cf35</id>
+      <id>57cc08ab-d74a-476e-bac3-e4c4195c3508</id>
       <masked>false</masked>
       <name>requestIdReceipt</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>1c90cd21-49b8-4883-a768-bc6d76237081</id>
+      <id>314264f7-fd98-47ad-a6b9-e7007d4d32b4</id>
       <masked>false</masked>
       <name>dataAPI</name>
    </variable>
    <variable>
-      <defaultValue>GlobalVariable.hashNinjaVanPickupFailed</defaultValue>
+      <defaultValue>GlobalVariable.hashNinjaVanPendingPickup</defaultValue>
       <description></description>
-      <id>b5126c0e-b7e0-413f-93ba-b399bbb9f2fa</id>
+      <id>66c6c77b-0299-433c-9b0c-7d6ac6f5ea0c</id>
       <masked>false</masked>
-      <name>hashNinjaVanPickupFailed</name>
-   </variable>
-   <variable>
-      <defaultValue>'Pickup Failed'</defaultValue>
-      <description></description>
-      <id>35af2b5c-2fa2-4bca-8258-c1fbbadfca02</id>
-      <masked>false</masked>
-      <name>currentStatus</name>
+      <name>hashNinjaVanPendingPickup</name>
    </variable>
    <variable>
       <defaultValue>'Pending Pickup'</defaultValue>
       <description></description>
-      <id>75accb27-3e24-42e7-b528-58e2e238cd25</id>
+      <id>de4af51f-20ff-47c9-8141-8bcd0ed8ed0a</id>
+      <masked>false</masked>
+      <name>currentStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>'Staging'</defaultValue>
+      <description></description>
+      <id>133183ca-e9ee-4f1d-89b7-0a991f562986</id>
       <masked>false</masked>
       <name>previousStatus</name>
    </variable>
    <variable>
       <defaultValue>GlobalVariable.requestId</defaultValue>
       <description></description>
-      <id>fed482e7-96aa-4150-901b-d4a2935801a3</id>
+      <id>1553f781-37f4-4e72-8103-9d2b2c738fee</id>
       <masked>false</masked>
       <name>requestId</name>
    </variable>
