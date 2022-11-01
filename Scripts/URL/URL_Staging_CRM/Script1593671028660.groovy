@@ -19,6 +19,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 
 /* Set up list value set web driver preferences property*/
 RunConfiguration.setWebDriverPreferencesProperty('args', listValue)
+RunConfiguration.setWebDriverPreferencesProperty('prefs', listOfPrefs)
 
 /* Set input username & password basic auth on browser web page */
 WebUI.openBrowser((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + GlobalVariable.siteUrl.substring(
