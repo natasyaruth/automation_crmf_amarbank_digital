@@ -29,7 +29,7 @@ import org.apache.commons.lang.RandomStringUtils
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, )
 if (checkMenuCsr == true) {
 	WebUI.click(menuCSRManagement)
 } else {
@@ -38,7 +38,7 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, )) {
 	boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -63,7 +63,7 @@ if (checkDropDownStatus == true) {
 		WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
 		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)
 		WebUI.click(checkListByOrder.get(i))
-		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(headerCustDataElement, 5)) {
 			WebUI.waitForPageLoad(5)
 			/*	'We verify we can access Customer Detail'*/
 			TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)

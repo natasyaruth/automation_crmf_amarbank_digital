@@ -62,7 +62,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OP
 
 /* We want to filter data in CSR by Customer card status with Status 'Sudah Aktivasi'*/
 /* We want to select Status card*/
-WebUI.verifyElementVisible(drpDwnChooseStatusCard, FailureHandling.OPTIONAL)
+WebUI.waitForElementVisible(drpDwnChooseStatusCard, 5)
 
 WebUI.selectOptionByLabel(drpDwnChooseStatusCard, HasActivated, false)
 
@@ -70,8 +70,6 @@ WebUI.delay(5)
 
 /* Verify data is found page*/
 WebUI.waitForElementVisible(FirstRowCustomerType, 5)
-
-WebUI.verifyElementVisible(FirstRowCustomerType, FailureHandling.OPTIONAL)
 
 WebUI.verifyElementPresent(FirstRowCustomerType, 15)
 
