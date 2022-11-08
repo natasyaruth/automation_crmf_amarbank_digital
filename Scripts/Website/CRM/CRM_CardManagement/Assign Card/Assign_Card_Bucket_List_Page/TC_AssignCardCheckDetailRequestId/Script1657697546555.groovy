@@ -18,7 +18,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 } else {
@@ -31,9 +31,8 @@ if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL))
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 }
-
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)

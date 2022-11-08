@@ -93,13 +93,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>0fe69965-71ee-4643-aa65-eb2711142de2</variableId>
+      <variableId>ec258d36-08a5-42b9-a9d9-2780a0e85d6e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>46ae5d22-8e74-4381-b040-483149c8c4c8</variableId>
+      <variableId>b168266a-25ad-44e6-9da8-66893ae9f2d7</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
@@ -200,17 +200,17 @@
       <name>btnSubmitSecQuest</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnBackCloseModalSecQuest')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataChangeLog')</defaultValue>
       <description></description>
-      <id>0fe69965-71ee-4643-aa65-eb2711142de2</id>
+      <id>ec258d36-08a5-42b9-a9d9-2780a0e85d6e</id>
       <masked>false</masked>
-      <name>btnBackCloseLockModal</name>
+      <name>linkDataChangeLog</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnNextPage')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/TxtHeaderDetailCustomer')</defaultValue>
       <description></description>
-      <id>46ae5d22-8e74-4381-b040-483149c8c4c8</id>
+      <id>b168266a-25ad-44e6-9da8-66893ae9f2d7</id>
       <masked>false</masked>
-      <name>btnNextPage</name>
+      <name>txtHeaderCustDetail</name>
    </variable>
 </TestCaseEntity>

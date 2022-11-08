@@ -22,7 +22,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 } else {
@@ -37,7 +37,7 @@ if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL))
 }
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
@@ -59,7 +59,7 @@ WebUI.takeScreenshot()
 
 /* We want to search list data based on new card*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementText(bucketListNewCard, newCard, FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementText(bucketListNewCard, newCard)) {
 /* We just give info the log*/	
 	KeywordUtil.logInfo("Done Process")
 /* We want verify text new card if founded*/
@@ -77,7 +77,7 @@ for (int i = 0; i < 10; i++) {
 }}
 
 /* We want to makesure we can click the button first page*/
-if (WebUI.verifyElementPresent(btnFirstPageBucketList, 3, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(btnFirstPageBucketList, 3)) {
 	/* We want to click button first page*/
 	WebUI.click(btnFirstPageBucketList)
 } else {
@@ -89,7 +89,7 @@ if (WebUI.verifyElementPresent(btnFirstPageBucketList, 3, FailureHandling.OPTION
 
 /* We want to search list data based on request new card*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementText(bucketListRequestNewCard, requestNewCard, FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementText(bucketListRequestNewCard, requestNewCard)) {
 	/* We just give info the log*/
 	KeywordUtil.logInfo("Done Process")
 	/* We want verify text new card if founded*/

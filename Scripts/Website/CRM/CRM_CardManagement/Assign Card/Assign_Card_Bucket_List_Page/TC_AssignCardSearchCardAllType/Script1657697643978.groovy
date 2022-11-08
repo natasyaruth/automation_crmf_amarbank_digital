@@ -26,9 +26,9 @@ import org.openqa.selenium.WebElement
 'Initial loggin in katalon studio'
 KeywordUtil keylogger = new KeywordUtil()
 
-if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.verifyElementVisible(popUpBlockNotif,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(popUpBlockNotif,5)) {
 		WebUI.verifyElementText(wrdBlockNotif, "Konfirmasi")
 		WebUI.click(btnCancelBlockNotif)
 		WebUI.verifyElementVisible(txtheaderCsrManagement)
@@ -48,11 +48,11 @@ while (flagLoop == false) {
 	rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
 	for (int i = 0;i < rowsBucketList.size() ; i ++) {
 		'First I want makesure data is already "Precondition"'
-		if (WebUI.verifyElementClickable(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
-			if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(drpDwnCardStatus, 5)) {
+			if (WebUI.waitForElementVisible(drpDwnCardStatus,5)) {
 				WebUI.selectOptionByLabel(drpDwnCardStatus, 'Belum Aktivasi', false)
 			} else {keylogger.logInfo('element not visible')}
-			if (WebUI.verifyElementVisible(drpDwnCardStatus,FailureHandling.OPTIONAL)) {
+			if (WebUI.waitForElementVisible(drpDwnCardStatus,5)) {
 				WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 			} else {keylogger.logInfo('element not visible')}
 		} else {keylogger.markError('Menu cannot click able')}
@@ -62,16 +62,16 @@ while (flagLoop == false) {
 			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				colsBucketList.get(6).findElement(By.tagName('button')).click()
 				TestObject detailCsrDtl = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
-				if (WebUI.verifyElementPresent(detailCsrDtl, 5, FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementPresent(detailCsrDtl, 5)) {
 					WebUI.scrollToElement(btnDataAtmCard, 5)
 					WebUI.click(btnDataAtmCard)
-					if (WebUI.verifyElementClickable(btnReqNewCard,FailureHandling.OPTIONAL)) {
+					if (WebUI.verifyElementClickable(btnReqNewCard)) {
 						WebUI.click(btnReqNewCard)
 						WebUI. click(chkMotherName)
 						WebUI. click(chkAccountNumber)
 						WebUI. click(chkRegistPhoneNumber)
 						WebUI.click(rbLostCard)
-						if (WebUI.verifyElementClickable(btnSubmitReqNewCard,FailureHandling.OPTIONAL)) {
+						if (WebUI.verifyElementClickable(btnSubmitReqNewCard)) {
 							WebUI.click(btnSubmitReqNewCard)
 							WebUI.click(btnBack)
 							break loopSearch
@@ -88,7 +88,7 @@ while (flagLoop == false) {
 			} else { keylogger.logInfo('Something wrong!!')}
 		} else {
 			keylogger.logInfo(' We must move to another page because we capture until ' +rowsBucketList.size())
-			if (WebUI.verifyElementClickable(btnNextPageBucketList,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementClickable(btnNextPageBucketList)) {
 				WebUI.click(btnNextPageBucketList)
 				tblBucketList = driver.findElement(By.xpath('//table/tbody'))
 				rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
@@ -98,7 +98,7 @@ while (flagLoop == false) {
 }
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 } else {
@@ -113,7 +113,7 @@ if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL))
 }
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
