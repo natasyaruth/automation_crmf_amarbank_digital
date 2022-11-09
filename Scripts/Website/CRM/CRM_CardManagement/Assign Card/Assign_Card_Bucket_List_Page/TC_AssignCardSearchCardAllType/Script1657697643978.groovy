@@ -41,8 +41,8 @@ if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 WebDriver driver = DriverFactory.getWebDriver()
 WebElement tblBucketList
 List<WebElement> rowsBucketList
-loopSearch:
 boolean flagLoop = false
+LoopSearch:
 while (flagLoop == false) {
 	tblBucketList = driver.findElement(By.xpath('//table/tbody'))
 	rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
@@ -50,37 +50,49 @@ while (flagLoop == false) {
 		'First I want makesure data is already "Precondition"'
 		if (WebUI.waitForElementVisible(drpDwnCardStatus, 5)) {
 			if (WebUI.waitForElementVisible(drpDwnCardStatus,5)) {
-				WebUI.selectOptionByLabel(drpDwnCardStatus, 'Belum Aktivasi', false)
+				WebUI.selectOptionByLabel(drpDwnCardStatus, 'Sudah Aktivasi', false)
 			} else {keylogger.logInfo('element not visible')}
 			if (WebUI.waitForElementVisible(drpDwnCardStatus,5)) {
 				WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 			} else {keylogger.logInfo('element not visible')}
 		} else {keylogger.markError('Menu cannot click able')}
 		println(' Total of Data : ' +rowsBucketList.size()+ ' and existing row is : ' +i)
-		List<WebElement> colsBucketList = rowsBucketList.get(i).findElements(By.xpath('td'))
+		List<WebElement> colsBucketList = rowsBucketList.get(9).findElements(By.xpath('td'))
 		if (i != (rowsBucketList.size() - 1)) {
 			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
-				colsBucketList.get(6).findElement(By.tagName('button')).click()
+				String custName = colsBucketList.get(1).getText()
+				colsBucketList.get(6).findElement(By.xpath('button')).click()
 				TestObject detailCsrDtl = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
-				if (WebUI.verifyElementPresent(detailCsrDtl, 5)) {
+				if (WebUI.verifyElementPresent(detailCsrDtl, 5,FailureHandling.OPTIONAL)) {
 					WebUI.scrollToElement(btnDataAtmCard, 5)
 					WebUI.click(btnDataAtmCard)
-					if (WebUI.verifyElementClickable(btnReqNewCard)) {
+					if (WebUI.verifyElementClickable(btnReqNewCard,FailureHandling.OPTIONAL)) {
 						WebUI.click(btnReqNewCard)
 						WebUI. click(chkMotherName)
 						WebUI. click(chkAccountNumber)
 						WebUI. click(chkRegistPhoneNumber)
 						WebUI.click(rbLostCard)
-						if (WebUI.verifyElementClickable(btnSubmitReqNewCard)) {
+						if (WebUI.verifyElementClickable(btnSubmitReqNewCard,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnSubmitReqNewCard)
 							WebUI.click(btnBack)
-							break loopSearch
 						} else {keylogger.markError('button submit is disable')}
 					} else {
 						keylogger.logInfo('We must search another Request ID')
 						WebUI.click(btnBack)
+						WebUI.delay(5)
 						tblBucketList = driver.findElement(By.xpath('//table/tbody'))
 						rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
+					}
+					WebUI.click(menuCardManagementElement)
+					WebUI.click(menuAssignCardElement)
+					if (WebUI.waitForElementVisible(cardTypeDropDown, 5)) {
+						WebUI.verifyOptionsPresent(cardTypeDropDown, listDrpCardType)
+						WebUI.selectOptionByLabel(cardTypeDropDown, 'Permintaan Kartu Baru', false)
+						TestObject cekReqNewCard = new TestObject().addProperty('text',ConditionType.CONTAINS,custName)
+						if (WebUI.verifyElementPresent(cekReqNewCard, 5, FailureHandling.OPTIONAL)) {
+							keylogger.markPassed('We found the customer')
+							break LoopSearch
+						}
 					}
 				} else {
 					keylogger.markError('element not present')
@@ -88,68 +100,14 @@ while (flagLoop == false) {
 			} else { keylogger.logInfo('Something wrong!!')}
 		} else {
 			keylogger.logInfo(' We must move to another page because we capture until ' +rowsBucketList.size())
-			if (WebUI.verifyElementClickable(btnNextPageBucketList)) {
+				WebUI.verifyElementClickable(btnNextPageBucketList)
 				WebUI.click(btnNextPageBucketList)
+				WebUI.delay(5)
 				tblBucketList = driver.findElement(By.xpath('//table/tbody'))
 				rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
-			}
 		}
 	}
 }
-
-/* We want to makesure we can identify element assign card*/
-if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
-	/* We want to click menu assign card element*/
-	WebUI.click(menuAssignCardElement)
-} else {
-	/* We want to verify menu card management element*/
-	WebUI.verifyElementPresent(menuCardManagementElement, 5)
-	/* We want to click menu card management to exand sub menu*/
-	WebUI.click(menuCardManagementElement)
-	/* We want to verify menu assign card element*/
-	WebUI.verifyElementPresent(menuAssignCardElement, 5)
-	/* We want to click menu assign card element*/
-	WebUI.click(menuAssignCardElement)
-}
-
-/* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
-	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
-	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
-	WebUI.click(btnCancelPopUpElement)
-}else {
-	WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText)
-}
-
-/* We want to verify the label "Filter by request new card"*/
-WebUI.verifyElementPresent(labelFilterByRequestCard, 5)
-
-/* We want to check element visibility dropdown */
-WebUI.verifyElementPresent(cardTypeDropDown, 5)
-
-/* We want to select and choose card type dropdown for "kartu baru"*/
-WebUI.selectOptionByLabel(cardTypeDropDown, newCardText, false)
-
-/* We want to verify filter for "Kartu baru"*/
-WebUI.verifyElementPresent(newCardElement, 5)
-
-/* We want to verify filter new card*/
-WebUI.verifyElementText(newCardElement, newCardText)
-
-/* We want capture new card*/
-WebUI.takeScreenshot()
-
-/* We want to check element visibility */
-WebUI.verifyElementPresent(cardTypeDropDown, 5)
-
-/* We want to select and choose card type dropdown for "permintaan kartu baru"*/
-WebUI.selectOptionByLabel(cardTypeDropDown, requestNewCardText, false)
-
-/* We want to verify filter for "Kartu baru"*/
-WebUI.verifyElementPresent(requestNewCardElement, 5)
-
-/* We want to verify filter new card*/
-WebUI.verifyElementText(requestNewCardElement, requestNewCardText)
 
 /* We want capture new card*/
 WebUI.takeScreenshot()

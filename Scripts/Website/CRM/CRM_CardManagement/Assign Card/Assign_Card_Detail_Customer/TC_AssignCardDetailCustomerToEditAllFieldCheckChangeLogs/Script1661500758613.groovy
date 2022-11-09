@@ -36,7 +36,7 @@ if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 }
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)

@@ -28,7 +28,7 @@ import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 KeywordUtil keyLogger = new KeywordUtil()
 
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 
 if (checkMenuCsr == true) {
     WebUI.click(menuCSRManagement)
@@ -38,7 +38,7 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 15)) {
     boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 
     if (checkAlertProcess == true) {
@@ -85,13 +85,13 @@ WebUI.delay(5)
 /*Verify flag card type status*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
 
-WebUI.verifyElementVisible(MaximizeATMDataInfo, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(MaximizeATMDataInfo)
 
 WebUI.click(MaximizeATMDataInfo)
 
 WebUI.waitForElementVisible(FlagHasActivated, 15)
 
-WebUI.verifyElementVisible(FlagHasActivated, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FlagHasActivated)
 
 WebUI.verifyTextPresent(HasActivated, false)
 WebUI.delay(5)

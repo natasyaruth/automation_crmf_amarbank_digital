@@ -35,7 +35,7 @@ if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	WebUI.click(menuAssignCardElement)
 }
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5,FailureHandling.OPTIONAL)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
@@ -46,10 +46,10 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
 /* Set keyword utils*/
 KeywordUtil keylogger = new KeywordUtil()
 
-if (WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText )) {
-	if (WebUI.verifyElementPresent(fieldRequestCardTypeElement, 5 )) {
+if (WebUI.verifyElementText(headerAssignCardElement, headerAssignCardText ,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementPresent(fieldRequestCardTypeElement, 5 ,FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(fieldRequestCardTypeElement, requestNewCardText, false)
-		if (WebUI.verifyElementPresent(fieldCsutomerOriginElement, 5 )) {
+		if (WebUI.verifyElementPresent(fieldCsutomerOriginElement, 5 ,FailureHandling.OPTIONAL )) {
 			WebUI.selectOptionByLabel(fieldCsutomerOriginElement, tunaikuDisbursementCustomerOriginText, false)
 			/* We want click button "Tampilkan"*/
 			WebUI.click(btnShowFilterElement)
@@ -126,7 +126,7 @@ WebUI.verifyElementText(firstRowDateElement, currentDateExisting)
 
 /* We want to verify check the request new card*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementPresent(requestNewCardElement, 5)) {
+	if (WebUI.verifyElementPresent(requestNewCardElement, 5,FailureHandling.OPTIONAL)) {
 	/* We want to verify element and text for "permintaan kartu baru"*/
 	WebUI.verifyElementText(requestNewCardElement, requestNewCardText)
 	/* We want capture it*/
@@ -141,7 +141,7 @@ for (int i = 0; i < 10; i++) {
 }
 
 /* We want to makesure we can click the button first page*/
-if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5)) {
+if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5,FailureHandling.OPTIONAL)) {
 	/* We want to click button first page*/
 	WebUI.click(btnFirstPageBucketList)
 } else {
@@ -151,7 +151,7 @@ if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5)) {
 
 /* We want to verify check the tunaiku disbursement customer origin*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementPresent(tunaikuDisbursementCustomerOriginElement, 5)) {
+	if (WebUI.verifyElementPresent(tunaikuDisbursementCustomerOriginElement, 5,FailureHandling.OPTIONAL)) {
 	/* We want to verify element and text for "tunaiku disbursement"*/
 	WebUI.verifyElementText(tunaikuDisbursementCustomerOriginElement, tunaikuDisbursementCustomerOriginText)
 	/* We want capture it*/

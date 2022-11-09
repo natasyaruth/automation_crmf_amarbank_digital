@@ -27,7 +27,7 @@ import java.io.File;
 import com.kms.katalon.core.logging.KeywordLogger;
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuCardPrintingElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCardPrintingElement, 5)) {
 	/* We want to wait the element visible*/
 	WebUI.waitForElementVisible(menuCardPrintingElement, 5)	
 	/* We want to click menu assign card element*/
@@ -68,7 +68,7 @@ WebUI.waitForElementVisible(drpDwnFilterStatusElement, 5)
 WebUI.selectOptionByLabel(drpDwnFilterStatusElement, "Gagal", false)
 /* We want to check data available or no*/
 KeywordLogger keylogger = new KeywordLogger()
-if (WebUI.waitForElementVisible(firstRowNewCardElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(firstRowNewCardElement, 5)) {
 	/* We want to verify element and text of first row*/
 	WebUI.verifyElementText(firstRowNewCardElement, "Kartu Baru")
 	def textFirstRowRequestCard = WebUI.getText(firstRowNewCardElement)

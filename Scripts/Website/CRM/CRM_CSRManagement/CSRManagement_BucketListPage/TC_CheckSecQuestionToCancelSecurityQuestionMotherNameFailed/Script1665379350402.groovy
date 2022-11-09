@@ -83,7 +83,7 @@ while (loopPageCsr == false) {
 			if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 				listCols.get(6).findElement(By.tagName('button')).click()
 				TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
-				if (WebUI.verifyElementPresent(csrSecurityQuestion, 5)) {
+				if (WebUI.verifyElementPresent(csrSecurityQuestion, 5,FailureHandling.OPTIONAL)) {
 					WebUI.setText(fieldInputMotherNameSecQuest, fullName)
 					WebUI.click(btnSubmitSecQuest)
 					if (WebUI.waitForElementPresent(alertWrongSecQuest,5)) {

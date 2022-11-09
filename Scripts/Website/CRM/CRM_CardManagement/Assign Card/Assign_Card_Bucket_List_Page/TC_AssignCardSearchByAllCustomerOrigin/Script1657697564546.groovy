@@ -34,7 +34,7 @@ if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 }
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5)) {
+if (WebUI.verifyElementPresent(blockBylockedUserElement, 5,FailureHandling.OPTIONAL)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
@@ -59,7 +59,7 @@ WebUI.takeScreenshot()
 
 /* We want to search list data based on senyumku*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementText(senyumkuDataOnBucketList, senyumkuDataOnBucketListText)) {
+	if (WebUI.verifyElementText(senyumkuDataOnBucketList, senyumkuDataOnBucketListText,FailureHandling.OPTIONAL)) {
 	/* We want verify text senyumku if founded*/
 	WebUI.verifyTextPresent(senyumkuDataOnBucketListText, false)
 	/* We want capture the data*/
@@ -72,7 +72,7 @@ for (int i = 0; i < 10; i++) {
 	WebUI.click(btnNextPageBucketList)
 }}
 /* We want to makesure we can click the button first page*/
-if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5)) {
+if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5,FailureHandling.OPTIONAL)) {
 	/* We want to click button first page*/
 	WebUI.click(btnFirstPageBucketList)
 } else {
@@ -83,7 +83,7 @@ if (WebUI.verifyElementPresent(btnFirstPageBucketList, 5)) {
 }
 /* We want to search list data based on request tunaiku disbursement*/
 for (int i = 0; i < 10; i++) {
-	if (WebUI.verifyElementText(tunaikuDisbursementDataBucketList, tunaikuDisbursementDataBucketListText)) {
+	if (WebUI.verifyElementText(tunaikuDisbursementDataBucketList, tunaikuDisbursementDataBucketListText,FailureHandling.OPTIONAL)) {
 	/* We want verify text new card if founded*/
 	WebUI.verifyTextPresent(tunaikuDisbursementDataBucketListText, false)
 	/* We want capture the data*/

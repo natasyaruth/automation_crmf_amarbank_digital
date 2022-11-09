@@ -482,21 +482,21 @@
       <name>signOfStatus</name>
    </variable>
    <variable>
-      <defaultValue>['Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
+      <defaultValue>['Nasabah Senyumku']</defaultValue>
       <description></description>
       <id>29fd4e1c-e4c5-4da2-9c21-1f07a8fff3fd</id>
       <masked>false</masked>
       <name>customerType</name>
    </variable>
    <variable>
-      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/941?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</defaultValue>
+      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/941?type=2']</defaultValue>
       <description></description>
       <id>d75b8130-48a8-479f-a197-532cd96b9fdb</id>
       <masked>false</masked>
       <name>requestStatus</name>
    </variable>
    <variable>
-      <defaultValue>['Selesai', 'Ditolak']</defaultValue>
+      <defaultValue>['Selesai']</defaultValue>
       <description></description>
       <id>d2daa235-a67d-4077-845d-4aeb3ca5abeb</id>
       <masked>false</masked>

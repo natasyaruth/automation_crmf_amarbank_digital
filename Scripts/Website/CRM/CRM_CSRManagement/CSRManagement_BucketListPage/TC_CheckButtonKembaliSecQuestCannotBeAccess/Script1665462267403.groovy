@@ -36,15 +36,15 @@ KeywordUtil keylogger = new KeywordUtil()
 Faker faker = new Faker()
 String userEmail = faker.name().firstName() +'@gmail.com'
 /* We want handling block condition*/
-if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(notifBlockCsr,5)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	} else {
 		keylogger.logInfo("We cannot get block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	}
 } else {keylogger.markError("We don't see Csr Management Menu")}
 
@@ -70,10 +70,10 @@ while (loopPageCsr == false) {
 	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 		for (int i = 0; i < listRows.size(); i++) {
 			println('No. of rows: ' + listRows.size()+ ' row number '+i)
-				if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
+				if (WebUI.waitForElementVisible(drpCustType,5)) {
 					WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 					WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
-					if (WebUI.verifyElementVisible(drpCardStatus,FailureHandling.OPTIONAL)) {
+					if (WebUI.waitForElementVisible(drpCardStatus,5)) {
 						WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
 						WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
 					} else {keylogger.logInfo("Element Not Found")}
@@ -96,7 +96,7 @@ while (loopPageCsr == false) {
 								WebUI.takeScreenshot()
 								break loopSecQuestion
 							} else {keylogger.logInfo('Try Again Until Lock')}
-							if (WebUI.verifyElementVisible(alertWrongSecQuest,FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementVisible(alertWrongSecQuest,5)) {
 								keylogger.markPassed('Pop up alert wrong input')
 								WebUI.click(btnBatalSecQuest)
 							} else {keylogger.markError('Alert not shown')}
