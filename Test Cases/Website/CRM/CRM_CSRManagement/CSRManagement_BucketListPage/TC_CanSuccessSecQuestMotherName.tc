@@ -101,6 +101,36 @@
       <value></value>
       <variableId>b168266a-25ad-44e6-9da8-66893ae9f2d7</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f670be5e-d089-4980-863a-d25e6dcea79a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6f68c67f-43f1-4dcb-85fa-a11133ce9fbd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>002aea70-e700-42e6-920e-fa0545bb47aa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e2ac1a6f-0bad-4d82-a1a4-2cd0a08a6122</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bbc4ff54-38f9-4525-b097-75a899e61363</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -109,7 +139,7 @@
       <name>menuCsrManagement</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/ToastBlockConfirmation')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/AlertConfirmationText')</defaultValue>
       <description></description>
       <id>c8d040c6-68e9-469b-a975-f2ab26a9719f</id>
       <masked>false</masked>
@@ -137,7 +167,7 @@
       <name>drpCustType</name>
    </variable>
    <variable>
-      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
+      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku']</defaultValue>
       <description></description>
       <id>7181778a-3e6f-4c76-9b9f-a3f804bf0233</id>
       <masked>false</masked>
@@ -212,5 +242,40 @@
       <id>b168266a-25ad-44e6-9da8-66893ae9f2d7</id>
       <masked>false</masked>
       <name>txtHeaderCustDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtEmailSecQuest')</defaultValue>
+      <description></description>
+      <id>f670be5e-d089-4980-863a-d25e6dcea79a</id>
+      <masked>false</masked>
+      <name>fieldInputEmailSecQuest</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtBirthdaySecQuest')</defaultValue>
+      <description></description>
+      <id>6f68c67f-43f1-4dcb-85fa-a11133ce9fbd</id>
+      <masked>false</masked>
+      <name>fieldInputBirthdaySecQuest</name>
+   </variable>
+   <variable>
+      <defaultValue>'1503581473'</defaultValue>
+      <description></description>
+      <id>002aea70-e700-42e6-920e-fa0545bb47aa</id>
+      <masked>false</masked>
+      <name>accountNumb</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtSearchAccountNumber')</defaultValue>
+      <description></description>
+      <id>e2ac1a6f-0bad-4d82-a1a4-2cd0a08a6122</id>
+      <masked>false</masked>
+      <name>txtAccountNumb</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnSearch')</defaultValue>
+      <description></description>
+      <id>bbc4ff54-38f9-4525-b097-75a899e61363</id>
+      <masked>false</masked>
+      <name>btnSubmitSearch</name>
    </variable>
 </TestCaseEntity>

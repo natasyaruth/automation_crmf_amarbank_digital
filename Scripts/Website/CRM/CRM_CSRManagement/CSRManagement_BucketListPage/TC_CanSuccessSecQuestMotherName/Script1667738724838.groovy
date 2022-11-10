@@ -36,9 +36,10 @@ KeywordUtil keylogger = new KeywordUtil()
 Faker faker = new Faker()
 String fullName = faker.name().fullName()
 /* We want handling block condition*/
-if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
+if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.waitForElementVisible(notifBlockCsr, 5)) {
+	WebUI.waitForPageLoad(5)
+	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
 		WebUI.verifyElementVisible(txtHeaderCsrManagement)
@@ -71,28 +72,30 @@ while (loopPageCsr == false) {
 	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 		for (int i = 0; i < listRows.size(); i++) {
 			println('No. of rows: ' + listRows.size()+ ' row number '+i)
-				if (WebUI.verifyElementVisible(drpCustType,)) {
+				if (WebUI.waitForElementVisible(drpCustType, 5)) {
 					WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 					WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
-					if (WebUI.verifyElementVisible(drpCardStatus,)) {
+					if (WebUI.waitForElementVisible(drpCardStatus, 5)) {
 						WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
 						WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
+						WebUI.setText(txtAccountNumb, accountNumb)
+						WebUI.click(btnSubmitSearch)
 					} else {keylogger.logInfo("Element Not Found")}
 				} else {keylogger.logInfo("Element Not Found")}
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
-				if (listCols.get(4).getText().equalsIgnoreCase('1503581473')) {
+				if (listCols.get(4).getText().equalsIgnoreCase(accountNumb)) {
 					listCols.get(6).findElement(By.tagName('button')).click()
 					WebDriver driverTblChangeLog = DriverFactory.getWebDriver()
 					WebElement tableChangeLog
 					List<WebElement> listRowsTblChgLog
 					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
-					if (WebUI.verifyElementPresent(csrSecurityQuestion, 5,)) {
+					if (WebUI.waitForElementPresent(csrSecurityQuestion, 5)) {
 						'Please check the question from CSR detail if you want make it succeed'
 						WebUI.setText(fieldInputMotherSecQuest, "KLKOOIAERQ")
 						WebUI.click(btnSubmitSecQuest)
 						WebUI.scrollToElement(linkDataChangeLog, 5)
 						TestObject csrDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-						if (WebUI.verifyElementPresent(csrDetailPage, 5)) {
+						if (WebUI.waitForElementPresent(csrDetailPage, 5)) {
 							WebUI.scrollToElement(linkDataChangeLog, 5)
 							WebUI.click(linkDataChangeLog)
 							TestObject checkWording = new TestObject().addProperty('text',ConditionType.CONTAINS,'Security Question')
@@ -103,31 +106,47 @@ while (loopPageCsr == false) {
 							} else {keylogger.markError('We Not found the wording')}
 						} else {keylogger.markError('We are not in customer detail')}						
 					} else {
-						keylogger.logInfo("We are didn't get security question Email")
+						if (WebUI.waitForElementPresent(fieldInputEmailSecQuest, 5)) {
+							TestObject csrEmailQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,"Email")
+							if (WebUI.verifyElementPresent(csrEmailQuest, 5,FailureHandling.OPTIONAL)) {
+								WebUI.setText(fieldInputEmailSecQuest, "dammofisona-1758@yopmail.com")
+								WebUI.click(btnSubmitSecQuest)
+							} else {keylogger.logInfo("We define the birthdate security question")}
+						} else {keylogger.logInfo('We try with birthdate')}
+						TestObject csrBirtDateQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
+						if (WebUI.verifyElementPresent(csrBirtDateQuest, 5,FailureHandling.OPTIONAL)) {
+							WebUI.setText(fieldInputBirthdaySecQuest, "04/07/1986")
+							WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
+							WebUI.click(btnSubmitSecQuest)
+						} else {keylogger.logInfo("We by pass the security question")}
+						keylogger.logInfo("We are didn't get security question mother name")
 						if (WebUI.waitForElementVisible(txtHeaderCustDetail, 5)) {
 							boolean loopPageChangeLog = false
 							loopChangeLog:
 							while (loopPageChangeLog == false) {
+								TestObject csrDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
+								if (WebUI.verifyElementPresent(csrDetailPage, 5)) {
+									WebUI.scrollToElement(linkDataChangeLog, 5)
+									WebUI.click(linkDataChangeLog)
+								} else {keylogger.markError('We are not in customer detail')}
 								tableChangeLog = driverTblChangeLog.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
 								listRowsTblChgLog = tableChangeLog.findElements(By.tagName('tr'))
 								for (int j = 0;j < listRowsTblChgLog.size(); j++) {
 									println('No. of rows: ' + listRowsTblChgLog.size()+ ' row number '+j)
-									TestObject csrDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-									if (WebUI.verifyElementPresent(csrDetailPage, 5)) {
-										WebUI.scrollToElement(linkDataChangeLog, 5)
-										WebUI.click(linkDataChangeLog)
-									} else {keylogger.markError('We are not in customer detail')}
 									List<WebElement> listColsTblChgLog = listRowsTblChgLog.get(j).findElements(By.tagName('td'))
-									if (listColsTblChgLog.get(3).getText().equalsIgnoreCase('Security Question')) {
-										listColsTblChgLog.get(7).getText().equalsIgnoreCase('Succeed')
+									if (listColsTblChgLog.get(6).getText().equalsIgnoreCase('Succeed')) {
+										listColsTblChgLog.get(3).getText().equalsIgnoreCase('Security Question')
 										break loopChangeLog
-									} else {keylogger.logInfo('we not found the data')
+										break loopPage
+									} else {
+										keylogger.logInfo('we not found the data')
 										tableChangeLog = driverTblChangeLog.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
 										 listRowsTblChgLog = tableChangeLog.findElements(By.tagName('tr'))
 									}
 								}
 							}
-						} else {keylogger.logInfo('Wording is not shown')}	
+						} else {
+							keylogger.logInfo('Wording is not shown')}	
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
 						}
