@@ -131,6 +131,12 @@
       <value></value>
       <variableId>d5fcaa14-b925-4a23-99fa-bd11583a8860</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>38fdd02d-ed3f-46b3-8667-e4da963eb7dc</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -277,5 +283,12 @@
       <id>d5fcaa14-b925-4a23-99fa-bd11583a8860</id>
       <masked>false</masked>
       <name>btnSubmitSearch</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnBack')</defaultValue>
+      <description></description>
+      <id>38fdd02d-ed3f-46b3-8667-e4da963eb7dc</id>
+      <masked>false</masked>
+      <name>btnBackDashboard</name>
    </variable>
 </TestCaseEntity>

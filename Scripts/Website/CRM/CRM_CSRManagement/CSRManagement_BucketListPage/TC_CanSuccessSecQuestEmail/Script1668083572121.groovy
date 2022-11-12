@@ -38,7 +38,6 @@ String fullName = faker.name().fullName()
 /* We want handling block condition*/
 if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
-	WebUI.waitForPageLoad(5)
 	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
@@ -102,11 +101,13 @@ while (loopPageCsr == false) {
 							if (WebUI.verifyElementPresent(checkWording, 5)) {
 								TestObject checkSuccessText = new TestObject().addProperty('text',ConditionType.CONTAINS,'Succeed')
 								WebUI.verifyElementPresent(checkSuccessText, 5)
+								WebUI.click(btnBackDashboard)
+								WebUI.waitForPageLoad(5)
 								break loopPage
 							} else {keylogger.markError('We Not found the wording')}
 						} else {keylogger.markError('We are not in customer detail')}						
-					} else {
-						if (WebUI.waitForElementPresent(fieldInputEmailSecQuest, 5)) {
+					} else { keylogger.logInfo('We by pass the security question email')}
+						if (WebUI.waitForElementPresent(fieldInputMotherSecQuest, 5)) {
 							TestObject csrEmailQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
 							if (WebUI.verifyElementPresent(csrEmailQuest, 5,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldInputMotherSecQuest, "NICHOLAS")
@@ -136,8 +137,10 @@ while (loopPageCsr == false) {
 									List<WebElement> listColsTblChgLog = listRowsTblChgLog.get(j).findElements(By.tagName('td'))
 									if (listColsTblChgLog.get(6).getText().equalsIgnoreCase('Succeed')) {
 										listColsTblChgLog.get(3).getText().equalsIgnoreCase('Security Question')
-										break loopChangeLog
+										WebUI.click(btnBackDashboard)
+										WebUI.waitForPageLoad(5)
 										break loopPage
+										break loopChangeLog
 									} else {
 										keylogger.logInfo('we not found the data')
 										tableChangeLog = driverTblChangeLog.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
@@ -149,7 +152,6 @@ while (loopPageCsr == false) {
 							keylogger.logInfo('Wording is not shown')}	
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
-						}
 				} else {keylogger.logInfo("Please check again")
 				}
 		}

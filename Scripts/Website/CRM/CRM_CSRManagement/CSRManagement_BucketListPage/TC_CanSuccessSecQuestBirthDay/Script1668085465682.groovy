@@ -104,23 +104,24 @@ while (loopPageCsr == false) {
 							if (WebUI.verifyElementPresent(checkWording, 5)) {
 								TestObject checkSuccessText = new TestObject().addProperty('text',ConditionType.CONTAINS,'Succeed')
 								WebUI.verifyElementPresent(checkSuccessText, 5)
+								WebUI.click(btnBackDashboard)
+								WebUI.waitForPageLoad(5)
 								break loopPage
 							} else {keylogger.markError('We Not found the wording')}
 						} else {keylogger.markError('We are not in customer detail')}						
-					} else {
-						if (WebUI.waitForElementPresent(fieldInputEmailSecQuest, 5)) {
+					} else {keylogger.logInfo('We try with other option')}
 							TestObject csrMotherNameSecQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
 							if (WebUI.verifyElementPresent(csrMotherNameSecQuest, 5,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldInputMotherSecQuest, "OWEN")
 								WebUI.click(btnSubmitSecQuest)
-							} else {keylogger.logInfo("We define the birthdate security question")}
-						} else {keylogger.logInfo('We try with birthdate')}
-						TestObject csrEmailSecQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,"Email")
-						if (WebUI.verifyElementPresent(csrEmailSecQuest, 5,FailureHandling.OPTIONAL)) {
-							WebUI.setText(fieldInputEmailSecQuest, "senyumku28214301@yopmail.com")
-							WebUI.click(btnSubmitSecQuest)
-						} else {keylogger.logInfo("We by pass the security question")}
-						keylogger.logInfo("We are didn't get security question mother name")
+							} else {keylogger.logInfo("We didn't find the mother name security question")}
+							if (WebUI.waitForElementVisible(fieldInputEmailSecQuest, 5)) {
+								TestObject csrEmailSecQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,"Email")
+								if (WebUI.verifyElementPresent(csrEmailSecQuest, 5,FailureHandling.OPTIONAL)) {
+									WebUI.setText(fieldInputEmailSecQuest, "senyumku28214301@yopmail.com")
+									WebUI.click(btnSubmitSecQuest)
+								} else {keylogger.logInfo("We by pass the security question")}
+							} else {keylogger.logInfo('We by pass the security question email')}
 						if (WebUI.waitForElementVisible(txtHeaderCustDetail, 5)) {
 							boolean loopPageChangeLog = false
 							loopChangeLog:
@@ -137,8 +138,10 @@ while (loopPageCsr == false) {
 									List<WebElement> listColsTblChgLog = listRowsTblChgLog.get(j).findElements(By.tagName('td'))
 									if (listColsTblChgLog.get(6).getText().equalsIgnoreCase('Succeed')) {
 										listColsTblChgLog.get(3).getText().equalsIgnoreCase('Security Question')
-										break loopChangeLog
+										WebUI.click(btnBackDashboard)
+										WebUI.waitForPageLoad(5)
 										break loopPage
+										break loopChangeLog
 									} else {
 										keylogger.logInfo('we not found the data')
 										tableChangeLog = driverTblChangeLog.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
@@ -150,7 +153,6 @@ while (loopPageCsr == false) {
 							keylogger.logInfo('Wording is not shown')}	
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
-						}
 				} else {keylogger.logInfo("Please check again")
 				}
 		}

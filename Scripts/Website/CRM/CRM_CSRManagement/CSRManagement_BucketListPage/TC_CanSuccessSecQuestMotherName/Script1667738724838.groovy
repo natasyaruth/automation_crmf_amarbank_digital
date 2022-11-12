@@ -102,10 +102,12 @@ while (loopPageCsr == false) {
 							if (WebUI.verifyElementPresent(checkWording, 5)) {
 								TestObject checkSuccessText = new TestObject().addProperty('text',ConditionType.CONTAINS,'Succeed')
 								WebUI.verifyElementPresent(checkSuccessText, 5)
+								WebUI.click(btnBackDashboard)
+								WebUI.waitForPageLoad(5)
 								break loopPage
 							} else {keylogger.markError('We Not found the wording')}
 						} else {keylogger.markError('We are not in customer detail')}						
-					} else {
+					} else {keylogger.logInfo('We by pass mother name')}
 						if (WebUI.waitForElementPresent(fieldInputEmailSecQuest, 5)) {
 							TestObject csrEmailQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,"Email")
 							if (WebUI.verifyElementPresent(csrEmailQuest, 5,FailureHandling.OPTIONAL)) {
@@ -113,12 +115,14 @@ while (loopPageCsr == false) {
 								WebUI.click(btnSubmitSecQuest)
 							} else {keylogger.logInfo("We define the birthdate security question")}
 						} else {keylogger.logInfo('We try with birthdate')}
-						TestObject csrBirtDateQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
-						if (WebUI.verifyElementPresent(csrBirtDateQuest, 5,FailureHandling.OPTIONAL)) {
-							WebUI.setText(fieldInputBirthdaySecQuest, "04/07/1986")
-							WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
-							WebUI.click(btnSubmitSecQuest)
-						} else {keylogger.logInfo("We by pass the security question")}
+						if (WebUI.waitForElementVisible(fieldInputBirthdaySecQuest, 5)) {
+							TestObject csrBirtDateQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
+							if (WebUI.verifyElementPresent(csrBirtDateQuest, 5,FailureHandling.OPTIONAL)) {
+								WebUI.setText(fieldInputBirthdaySecQuest, "04/07/1986")
+								WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
+								WebUI.click(btnSubmitSecQuest)
+							} else {keylogger.logInfo("We by pass the security question")}
+						} else {keylogger.logInfo('We by pass birthday security question')}
 						keylogger.logInfo("We are didn't get security question mother name")
 						if (WebUI.waitForElementVisible(txtHeaderCustDetail, 5)) {
 							boolean loopPageChangeLog = false
@@ -136,8 +140,10 @@ while (loopPageCsr == false) {
 									List<WebElement> listColsTblChgLog = listRowsTblChgLog.get(j).findElements(By.tagName('td'))
 									if (listColsTblChgLog.get(6).getText().equalsIgnoreCase('Succeed')) {
 										listColsTblChgLog.get(3).getText().equalsIgnoreCase('Security Question')
-										break loopChangeLog
+										WebUI.click(btnBackDashboard)
+										WebUI.waitForPageLoad(5)
 										break loopPage
+										break loopChangeLog
 									} else {
 										keylogger.logInfo('we not found the data')
 										tableChangeLog = driverTblChangeLog.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
@@ -149,7 +155,6 @@ while (loopPageCsr == false) {
 							keylogger.logInfo('Wording is not shown')}	
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
-						}
 				} else {keylogger.logInfo("Please check again")
 				}
 		}
