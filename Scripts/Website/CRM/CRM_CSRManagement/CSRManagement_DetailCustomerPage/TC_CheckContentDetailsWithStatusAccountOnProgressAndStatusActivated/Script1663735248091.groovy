@@ -29,15 +29,15 @@ import org.openqa.selenium.edge.EdgeDriver as edge
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
 /* We want handling block condition*/
-if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(notifBlockCsr, 5)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement, 5)
 	} else {
 		keylogger.logInfo("We cannot get block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement, 5)
 	}
 } else {keylogger.markError("We don't see Csr Management Menu")}
 
@@ -57,21 +57,21 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
 	1. Button 'Block Kartu' and 'Re-Assign card' is disabled and status card still 'Sudah Aktivasi'
 
 /* We want choose request ID with condition is Nasabah Senyumku*/
-if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(drpCustType, 5)) {
 	WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 	WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
-	if (WebUI.verifyElementVisible(drpCardStatus,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(drpCardStatus, 5)) {
 		WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
 		WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
 		keylogger.logInfo('status is di blokir')
 	} else {keylogger.logInfo("Element Not Found")}
 		WebUI.navigateToUrl(requestIdInProgress)
 		TestObject statusReqId = new TestObject().addProperty('text',ConditionType.CONTAINS,'Dalam Proses')
-		if (WebUI.verifyElementPresent(statusReqId, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementPresent(statusReqId, 5)) {
 			keylogger.markPassed('Customer with status is Dalam Proses')
 		} else {keylogger.logInfo("Element Not Found")}
 	TestObject csrDetaiPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-	if (WebUI.verifyElementPresent(csrDetaiPage, 5,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementPresent(csrDetaiPage, 5)) {
 		WebUI.click(linkDataAccountInfo)
 		keylogger.markPassed('Check section Data Kartu ATM')
 		TestObject pageBlockCardInfo = new TestObject().addProperty('text',ConditionType.CONTAINS,'Sudah Aktivasi')

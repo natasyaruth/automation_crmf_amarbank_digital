@@ -30,7 +30,7 @@ import org.apache.commons.lang.RandomStringUtils
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 if (checkMenuCsr == true) {
 	WebUI.click(menuCSRManagement)
 } else {
@@ -39,7 +39,7 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, )) {
 	boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -62,19 +62,19 @@ if (checkHeaderCsrManagement == true) {
 		WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
 		WebUI.selectOptionByLabel(drpDwnChooseStatusCard, "Semua", false)
 		WebUI.click(checkListByOrder.get(i))
-		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(headerCustDataElement, 5)) {
 			WebUI.waitForPageLoad(5)
 			/*	'We verify we can access Customer Detail'*/
 			TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)
 			WebUI.verifyElementPresent(txtAccountNumb, 5)
-			boolean txtRekening = WebUI.verifyElementVisible(txtAccountNumb)
+			boolean txtRekening = WebUI.waitForElementVisible(txtAccountNumb, 5)
 			if (txtRekening == true) {
 				WebUI.delay(2)
 				WebUI.waitForElementVisible(reqIdDetailNasabah, 5)
 				requestIdText = WebUI.getText(reqIdDetailNasabah)
 				firstRowCustNameText = WebUI.getText(custNameDetailNasabah)			
 				/* We want go to phone number information in data CSR*/				
-				boolean hoverPhoneNumber = WebUI.verifyElementVisible(btnDataPhoneNumber)
+				boolean hoverPhoneNumber = WebUI.waitForElementVisible(btnDataPhoneNumber, 5)
 				if (hoverPhoneNumber == true) {
 					WebUI.click(btnDataPhoneNumber)
 					phoneNumber = WebUI.getAttribute(fieldPhoneNumber, "value")
@@ -86,7 +86,7 @@ if (checkHeaderCsrManagement == true) {
 				boolean inBucketListPage = WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 				if (inBucketListPage == true) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-					boolean existFieldReqId = WebUI.verifyElementVisible(fieldReqId)
+					boolean existFieldReqId = WebUI.waitForElementVisible(fieldReqId, 5)
 					if (existFieldReqId == true) {
 						WebUI.setText(fieldReqId, requestIdText)
 						WebUI.setText(searchPhoneNumberText, phoneNumberText)

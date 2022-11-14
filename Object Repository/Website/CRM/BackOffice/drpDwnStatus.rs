@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>drpDwnStatus</name>
+   <tag></tag>
+   <elementGuidId>47bea2fd-d043-4c7d-b82e-9c6ddccb43dc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='Status']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#Status</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>c7ff037f-c34b-4f04-bf87-3b0a07875a26</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Status</value>
+      <webElementGuid>5bda6696-6887-4865-b734-07c24cfe60e0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>Status</value>
+      <webElementGuid>59d607c8-170c-4ee3-b022-a2332dd0ad45</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+							Open
+							On Process
+							Pending
+							Success
+							Reject
+						</value>
+      <webElementGuid>aac150b5-f008-4666-a84a-66bf86962b7c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;Status&quot;)</value>
+      <webElementGuid>50317fe8-cf0b-423d-a405-7e054b51daa5</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='Status']</value>
+      <webElementGuid>b4e691a1-9927-42b3-abd6-11b385ece493</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='DashBoard'])[1]/following::select[1]</value>
+      <webElementGuid>744cdd29-2109-4d2e-bd3e-35b28d2f9de8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='update all checked'])[1]/preceding::select[1]</value>
+      <webElementGuid>71339146-b125-4029-ad01-4820127c5e69</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Total Transaction : 107'])[1]/preceding::select[1]</value>
+      <webElementGuid>c0e3cc1a-4fe8-43ff-afa8-413f5c49dbf9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>9bab33fb-a20f-475a-ad1d-7747c0f2d344</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'Status' and @id = 'Status' and (text() = '
+							Open
+							On Process
+							Pending
+							Success
+							Reject
+						' or . = '
+							Open
+							On Process
+							Pending
+							Success
+							Reject
+						')]</value>
+      <webElementGuid>016ecf6f-7ffe-4410-883d-a2ca54055209</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

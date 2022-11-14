@@ -28,7 +28,7 @@ import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 KeywordUtil keyLogger = new KeywordUtil()
 
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 
 if (checkMenuCsr == true) {
     WebUI.click(menuCSRManagement)
@@ -38,7 +38,7 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 15)) {
     boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 
     if (checkAlertProcess == true) {
@@ -62,7 +62,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OP
 
 /* We want to check the conditional if we search by data is exist/found*/
 /* We want to get KTP id*/
-WebUI.verifyElementVisible(BtnDetail, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(BtnDetail)
 
 WebUI.click(BtnDetail)
 
@@ -74,7 +74,7 @@ WebUI.click(NavigationDataKTP)
 
 WebUI.waitForElementVisible(dataKTPNumber, 30)
 
-WebUI.verifyElementVisible(dataKTPNumber, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(dataKTPNumber)
 
 def KTPid = WebUI.getText(dataKTPNumber)
 
@@ -83,7 +83,7 @@ WebUI.click(BtnBack)
 WebUI.waitForElementVisible(fieldKTPid, 15)
 
 /* We want to input KTP id*/
-WebUI.verifyElementVisible(fieldKTPid, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(fieldKTPid)
 
 WebUI.setText(fieldKTPid, KTPid)
 
@@ -91,7 +91,7 @@ WebUI.setText(fieldKTPid, KTPid)
 def Name = WebUI.getText(FirstRowName)
 
 /* We want to input Name*/
-WebUI.verifyElementVisible(fieldName, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(fieldName)
 
 WebUI.setText(fieldName, Name)
 
@@ -99,7 +99,7 @@ WebUI.setText(fieldName, Name)
 def PhoneNumber = WebUI.getText(FirstRowPhoneNumber)
 
 /* We want to input phone number*/
-WebUI.verifyElementVisible(fieldPhoneNumber, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(fieldPhoneNumber)
 
 WebUI.setText(fieldPhoneNumber, PhoneNumber)
 
@@ -107,14 +107,14 @@ WebUI.setText(fieldPhoneNumber, PhoneNumber)
 def BankAccountNumber = WebUI.getText(FirstRowBankAccountNumber)
 
 /* We want to input bank account number*/
-WebUI.verifyElementVisible(fieldAccountNumber, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(fieldAccountNumber)
 
 WebUI.setText(fieldAccountNumber, BankAccountNumber)
 
 /* We want verify element field start date*/
 WebUI.verifyElementPresent(DtpStartFilterDate, 5)
 
-WebUI.verifyElementVisible(DtpStartFilterDate, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(DtpStartFilterDate)
 
 /* We want to get first row date element*/
 def firstDate = WebUI.getText(firstRowDateElement)
@@ -125,7 +125,7 @@ WebUI.setText(DtpStartFilterDate, firstDate)
 /* We want verify element field end date*/
 WebUI.verifyElementPresent(DtpEndFilterDate, 5)
 
-WebUI.verifyElementVisible(DtpEndFilterDate, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(DtpEndFilterDate)
 
 /* We want input end date */
 WebUI.setText(DtpEndFilterDate, firstDate)
@@ -134,12 +134,12 @@ WebUI.setText(DtpEndFilterDate, firstDate)
 WebUI.click(btnShow)
 
 /* We want to select Status card*/
-WebUI.verifyElementVisible(drpDwnChooseStatusCard, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(drpDwnChooseStatusCard)
 
 WebUI.selectOptionByLabel(drpDwnChooseStatusCard, 'Semua', false)
 
 /* We want to select  Filter Customer type*/
-WebUI.verifyElementVisible(FilterCustomerType, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FilterCustomerType)
 
 WebUI.selectOptionByLabel(FilterCustomerType, 'Semua', false)
 
@@ -150,19 +150,19 @@ WebUI.click(btnSearch)
 WebUI.takeScreenshot()
 
 /* Verify data is found page*/
-WebUI.verifyElementVisible(FirstRowName, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FirstRowName)
 
 WebUI.verifyElementPresent(FirstRowName, 15)
 
-WebUI.verifyElementVisible(FirstRowPhoneNumber, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FirstRowPhoneNumber)
 
 WebUI.verifyElementPresent(FirstRowPhoneNumber, 15)
 
-WebUI.verifyElementVisible(FirstRowBankAccountNumber, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FirstRowBankAccountNumber)
 
 WebUI.verifyElementPresent(FirstRowBankAccountNumber, 15)
 
-WebUI.verifyElementVisible(firstRowDateElement, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(firstRowDateElement)
 
 WebUI.verifyElementPresent(firstRowDateElement, 15)
 /* Take Screenshot*/

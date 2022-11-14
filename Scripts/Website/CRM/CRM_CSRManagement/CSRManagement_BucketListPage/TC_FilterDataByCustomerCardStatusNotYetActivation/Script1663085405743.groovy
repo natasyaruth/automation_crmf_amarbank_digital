@@ -22,7 +22,7 @@ import org.openqa.selenium.Keys as Keys
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 if (checkMenuCsr == true) {
 	WebUI.click(menuCSRManagement)
 } else {
@@ -30,7 +30,7 @@ if (checkMenuCsr == true) {
 }
 /*'We want to check blocked notification and check for text blocked
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
 	boolean checkAlertProcess = WebUI.waitForElementVisible(alertConfirmationPopUpElement, 5)
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -45,15 +45,15 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 /*'We want to check element visible filter card status , select "Belum Aktivasi" and
  *  then we want to capture the process'*/
-if (WebUI.verifyElementVisible(drpDwnChooseStatusCard ,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementVisible(drpDwnChooseStatusCard )) {
 	/* We want to check all drop down menu Semua, Belum Aktivasi, Sudah Aktivasi, Block Kartu ATM, Permintaan Kartu Baru*/
 	WebUI.verifyOptionsPresent(drpDwnChooseStatusCard, ["Semua","Belum Aktivasi","Sudah Aktivasi","Block Kartu ATM","Permintaan Kartu Baru"])
 	/*'We want to choose text "Belum Aktivasi"'*/
 	WebUI.selectOptionByLabel(drpDwnChooseStatusCard, TxtNotYetActivation, false)
-	if (WebUI.verifyElementVisible(firstRowRequestIdElement , FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementVisible(firstRowRequestIdElement )) {
 		WebUI.takeScreenshot()
 		WebUI.click(firstRowRequestIdElement)
-		if (WebUI.verifyElementVisible(headerCustDataElement,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(headerCustDataElement)) {
 			WebUI.waitForPageLoad(5)
 			/*	'We verify we can access Customer Detail'*/
 			TestObject txtAccountNumb = new TestObject().addProperty('text', ConditionType.CONTAINS , headerCustDataText)

@@ -271,7 +271,7 @@ WebUI.delay(5) /*this part i put for give waiting API process*/
 		} else {keyLogger.markError("We cannot find text Delivery Status")}
 	} else {
 		/*We just handle if we dont see the menu delivery status*/		
-		if (WebUI.verifyElementVisible(menuCardManagement,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(menuCardManagement, 5)) {
 			WebUI.click(menuCardManagement)
 			WebUI.click(deliveryStatusMenu)
 			if (WebUI.verifyElementText(headerDeliveryStatus, "Delivery Status")) {
