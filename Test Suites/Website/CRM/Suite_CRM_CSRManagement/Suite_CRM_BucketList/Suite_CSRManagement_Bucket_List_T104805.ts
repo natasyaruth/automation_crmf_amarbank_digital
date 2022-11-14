@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description>https://bankamar.testrail.io/index.php?/tests/view/104805</description>
-   <name>Suite_CSRManagement_Bucket_List_T104805</name>
+   <name>Suite_CSRManagement_Bucket_list_T104805</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>

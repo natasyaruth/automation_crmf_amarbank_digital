@@ -114,13 +114,14 @@ while (loopPageCsr == false) {
 								WebUI.click(btnSubmitSecQuest)
 							} else {keylogger.logInfo("We define the birthdate security question")}
 						} else {keylogger.logInfo('We try with birthdate')}
-						TestObject csrBirtDateQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
-						if (WebUI.verifyElementPresent(csrBirtDateQuest, 5,FailureHandling.OPTIONAL)) {
-							WebUI.setText(fieldInputBirthdaySecQuest, "18/04/1976")
-							WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
-							WebUI.click(btnSubmitSecQuest)
-						} else {keylogger.logInfo("We by pass the security question")}
-						keylogger.logInfo("We are didn't get security question mother name")
+						if (WebUI.waitForElementPresent(fieldInputBirthdaySecQuest, 5)) {
+							TestObject csrBirtDateQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Tanggal Lahir')
+							if (WebUI.verifyElementPresent(csrBirtDateQuest, 5,FailureHandling.OPTIONAL)) {
+								WebUI.setText(fieldInputBirthdaySecQuest, "18/04/1976")
+								WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
+								WebUI.click(btnSubmitSecQuest)
+							} else {keylogger.logInfo("We by pass the security question")}
+						} else {keylogger.logInfo("We are didn't get security question mother name")}
 						if (WebUI.waitForElementVisible(txtHeaderCustDetail, 5)) {
 							boolean loopPageChangeLog = false
 							loopChangeLog:

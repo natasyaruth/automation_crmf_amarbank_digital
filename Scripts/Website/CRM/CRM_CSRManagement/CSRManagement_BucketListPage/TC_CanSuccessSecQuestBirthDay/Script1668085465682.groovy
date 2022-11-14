@@ -110,11 +110,13 @@ while (loopPageCsr == false) {
 							} else {keylogger.markError('We Not found the wording')}
 						} else {keylogger.markError('We are not in customer detail')}						
 					} else {keylogger.logInfo('We try with other option')}
+						if (WebUI.waitForElementPresent(fieldInputMotherSecQuest, 5)) {
 							TestObject csrMotherNameSecQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
 							if (WebUI.verifyElementPresent(csrMotherNameSecQuest, 5,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldInputMotherSecQuest, "OWEN")
 								WebUI.click(btnSubmitSecQuest)
 							} else {keylogger.logInfo("We didn't find the mother name security question")}
+						} else {keylogger.logInfo('We by pass mother name security question')}
 							if (WebUI.waitForElementVisible(fieldInputEmailSecQuest, 5)) {
 								TestObject csrEmailSecQuest = new TestObject().addProperty('text',ConditionType.CONTAINS,"Email")
 								if (WebUI.verifyElementPresent(csrEmailSecQuest, 5,FailureHandling.OPTIONAL)) {
