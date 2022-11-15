@@ -85,12 +85,6 @@ WebUI.takeScreenshot()
 
 'Update testcase login to display menu and submenu'
 WebUI.waitForElementPresent(menuDashboard, 5)
-if (WebUI.waitForElementPresent(menuReporting, 5)) {
-	WebUI.click(menuReporting)
-	WebUI.waitForElementPresent(menuLiveReport, 5)
-	WebUI.waitForElementPresent(menuAgentReporting, 5)
-	WebUI.takeScreenshot()
-} else {keylogger.markError('Menu Reporting is disable')}
 if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	WebUI.waitForElementPresent(menuKYCVideo, 5)
