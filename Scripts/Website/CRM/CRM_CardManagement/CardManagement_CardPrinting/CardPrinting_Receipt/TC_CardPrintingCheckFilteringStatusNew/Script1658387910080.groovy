@@ -28,7 +28,7 @@ import java.io.File;
 import com.kms.katalon.core.logging.KeywordLogger;
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuCardPrintingElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCardPrintingElement, 5)) {
 	/* We want to wait the element visible*/
 	WebUI.waitForElementVisible(menuCardPrintingElement, 5)	
 	/* We want to click menu assign card element*/
@@ -73,18 +73,18 @@ WebUI.waitForElementVisible(firstRowNewCardElement, 5)
 KeywordUtil keyWordUtil = new KeywordUtil()
 for (int i = 0; i < 5; i++) {
 if (true) {
-	WebUI.verifyElementText(verifyTextNewCardElement, "Kartu Baru", FailureHandling.OPTIONAL)
+	WebUI.verifyElementText(verifyTextNewCardElement, "Kartu Baru")
 	break;
 	/* We want capture it for the right process*/
 	WebUI.takeScreenshot()
 } else if (true) {
 	/* We want to verify button next page*/
-	WebUI.verifyElementPresent(btnNextPageElement, 5 ,FailureHandling.OPTIONAL)
+	WebUI.verifyElementPresent(btnNextPageElement, 5)
 	/* We want to click button next page*/
 	WebUI.click(btnNextPageElement)
 	keyWordUtil.logInfo("We still not found we check in other pages")
 } else {
-	keyWordUtil.logInfo("We stop in this step because we not found the button next pages", FailureHandling.STOP_ON_FAILURE)
+	keyWordUtil.logInfo("We stop in this step because we not found the button next pages")
 }}
 /* We want to capture*/
 WebUI.takeScreenshot()

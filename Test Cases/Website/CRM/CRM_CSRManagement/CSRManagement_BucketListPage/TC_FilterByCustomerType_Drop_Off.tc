@@ -116,7 +116,7 @@
       <name>drpCustomerType</name>
    </variable>
    <variable>
-      <defaultValue>'Nasabah Tidak Melanjutkan'</defaultValue>
+      <defaultValue>'Nasabah Baru'</defaultValue>
       <description></description>
       <id>d742beea-80dd-45b3-9c29-195775fff39d</id>
       <masked>false</masked>

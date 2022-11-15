@@ -89,6 +89,96 @@
       <value></value>
       <variableId>63505095-fc25-405a-a9be-9c1d33dcf4f9</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1a71d9b3-e03e-45c4-8d0f-42138795eb25</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>407ea7f4-655f-40a2-8922-a4bcf09cf45a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ad0e6588-ad8c-43fe-92dc-57fcf29b4ef5</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>71feddb6-c225-400e-b643-a237acae1780</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f75e57c-bc64-46a3-8878-70c9428fdbf3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ec065e3a-21ab-4441-91fd-c13b32535631</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7717e2fb-7d1a-4149-a840-4b1b60aa81e0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>144c3199-bea2-4974-a3bc-9098ab8f7fef</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>472ea1b2-541f-4983-9f2a-d0e2e550f07f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8c802533-5611-4e4f-9b5e-9df43f08fb95</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ce0be245-bc71-440c-9de0-eaed10c4859e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>96ada7ce-074b-47d2-9f09-6187898aa1ce</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08bf16e2-c9cb-4669-8741-30641277bf17</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8933be89-0975-4c15-92c0-c238abf2fc53</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b06e0305-2d53-42b6-b37a-5759a6a2fd70</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>
       <description></description>
@@ -104,14 +194,14 @@
       <name>verifyFieldEmail</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 7)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 5)</defaultValue>
       <description></description>
       <id>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</id>
       <masked>true</masked>
       <name>gmailAccount</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 7)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 5)</defaultValue>
       <description></description>
       <id>774ba9ea-d278-493e-92b6-073b2360a3cb</id>
       <masked>false</masked>
@@ -132,7 +222,7 @@
       <name>verifyDasboardPage</name>
    </variable>
    <variable>
-      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 7)</defaultValue>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 5)</defaultValue>
       <description></description>
       <id>a379d56d-d8dd-44f8-840b-5ded110f062f</id>
       <masked>false</masked>
@@ -186,5 +276,110 @@
       <id>63505095-fc25-405a-a9be-9c1d33dcf4f9</id>
       <masked>false</masked>
       <name>gridInfoLogin</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>1a71d9b3-e03e-45c4-8d0f-42138795eb25</id>
+      <masked>false</masked>
+      <name>menuDashboard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Reporting/Reporting/ReportingLink')</defaultValue>
+      <description></description>
+      <id>407ea7f4-655f-40a2-8922-a4bcf09cf45a</id>
+      <masked>false</masked>
+      <name>menuReporting</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Reporting/LiveReporting/LiveReportingLink')</defaultValue>
+      <description></description>
+      <id>ad0e6588-ad8c-43fe-92dc-57fcf29b4ef5</id>
+      <masked>false</masked>
+      <name>menuLiveReport</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLink')</defaultValue>
+      <description></description>
+      <id>71feddb6-c225-400e-b643-a237acae1780</id>
+      <masked>false</masked>
+      <name>menuAgentReporting</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
+      <description></description>
+      <id>2f75e57c-bc64-46a3-8878-70c9428fdbf3</id>
+      <masked>false</masked>
+      <name>menuKycManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/KYC_Video/KYCVideoLinkVideoRequest')</defaultValue>
+      <description></description>
+      <id>ec065e3a-21ab-4441-91fd-c13b32535631</id>
+      <masked>false</masked>
+      <name>menuKYCVideo</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink')</defaultValue>
+      <description></description>
+      <id>7717e2fb-7d1a-4149-a840-4b1b60aa81e0</id>
+      <masked>false</masked>
+      <name>menuKYCVerif</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_AutomateProcess/linkKycAutomate')</defaultValue>
+      <description></description>
+      <id>144c3199-bea2-4974-a3bc-9098ab8f7fef</id>
+      <masked>false</masked>
+      <name>menuKYCAutomate</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')</defaultValue>
+      <description></description>
+      <id>472ea1b2-541f-4983-9f2a-d0e2e550f07f</id>
+      <masked>false</masked>
+      <name>menuCardManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink')</defaultValue>
+      <description></description>
+      <id>8c802533-5611-4e4f-9b5e-9df43f08fb95</id>
+      <masked>false</masked>
+      <name>menuAssignCard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')</defaultValue>
+      <description></description>
+      <id>ce0be245-bc71-440c-9de0-eaed10c4859e</id>
+      <masked>false</masked>
+      <name>menuCardPrinting</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink')</defaultValue>
+      <description></description>
+      <id>96ada7ce-074b-47d2-9f09-6187898aa1ce</id>
+      <masked>false</masked>
+      <name>menuDeliveryStatus</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
+      <description></description>
+      <id>08bf16e2-c9cb-4669-8741-30641277bf17</id>
+      <masked>false</masked>
+      <name>menuCSRManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Leads_Management/LeadsManagement/LeadsManagementLink')</defaultValue>
+      <description></description>
+      <id>8933be89-0975-4c15-92c0-c238abf2fc53</id>
+      <masked>false</masked>
+      <name>menuLeadsManagement</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Logout/LogoutLink')</defaultValue>
+      <description></description>
+      <id>b06e0305-2d53-42b6-b37a-5759a6a2fd70</id>
+      <masked>false</masked>
+      <name>menuLogout</name>
    </variable>
 </TestCaseEntity>

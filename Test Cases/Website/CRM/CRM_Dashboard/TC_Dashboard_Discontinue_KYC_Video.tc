@@ -257,6 +257,18 @@
       <value></value>
       <variableId>f86e6481-2e61-4338-b28a-ed6968a35ac8</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>76caf7c6-c743-4d9b-a0e7-a7adc105a0a7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dae319af-9955-4ba5-9f42-571b3b01f6bf</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -550,5 +562,19 @@
       <id>f86e6481-2e61-4338-b28a-ed6968a35ac8</id>
       <masked>false</masked>
       <name>btnCloseKyc</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
+      <description></description>
+      <id>76caf7c6-c743-4d9b-a0e7-a7adc105a0a7</id>
+      <masked>false</masked>
+      <name>linkDashboard</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardCntrPendingRequestNotification')</defaultValue>
+      <description></description>
+      <id>dae319af-9955-4ba5-9f42-571b3b01f6bf</id>
+      <masked>false</masked>
+      <name>pendingRequest</name>
    </variable>
 </TestCaseEntity>

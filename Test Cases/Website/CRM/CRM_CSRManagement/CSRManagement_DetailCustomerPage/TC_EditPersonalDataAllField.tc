@@ -699,14 +699,14 @@
       <name>customerType</name>
    </variable>
    <variable>
-      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/941?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</defaultValue>
+      <defaultValue>['https://staging-crm-rekol.tunaiku.com/csr-management/941?type=2']</defaultValue>
       <description></description>
       <id>d74a0e8e-1596-4eb6-af22-66ac996d1112</id>
       <masked>false</masked>
       <name>requestStatus</name>
    </variable>
    <variable>
-      <defaultValue>['Selesai', 'Ditolak']</defaultValue>
+      <defaultValue>['Selesai']</defaultValue>
       <description></description>
       <id>695cebf7-ab13-4666-9fd1-cb4241a1f835</id>
       <masked>false</masked>

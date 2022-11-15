@@ -28,7 +28,7 @@ import com.kms.katalon.core.logging.KeywordLogger;
 import com.kms.katalon.core.util.KeywordUtil;
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuCardPrintingElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCardPrintingElement, 5)) {
 	/* We want to wait the element visible*/
 	WebUI.waitForElementVisible(menuCardPrintingElement, 5)	
 	/* We want to click menu assign card element*/

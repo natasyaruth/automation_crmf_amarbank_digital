@@ -43,21 +43,21 @@ WebUI.waitForElementVisible(headerDashboardElement, 10)
 /* we want check the text as we know is dashboard */
 WebUI.verifyTextPresent(headerDashboardText, false)
 
-if (WebUI.verifyElementClickable(menuKYCManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementClickable(menuKYCManagement)) {
 	WebUI.click(menuKYCManagement)
-	if (WebUI.verifyElementClickable(videoKYCRequest,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementClickable(videoKYCRequest)) {
 		WebUI.click(videoKYCRequest)
 	} else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
 
 'We in page KYC video request'
 TestObject kycVideoPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
-if (WebUI.verifyElementPresent(kycVideoPage, 5,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(kycVideoPage, 5)) {
 	keylogger.markPassed('We are in kyc page')
-	if (WebUI.verifyElementClickable(idleCallsTab,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementClickable(idleCallsTab)) {
 		WebUI.click(idleCallsTab)
 		'We want unblock process'
-		if (WebUI.verifyElementVisible(txtNotifBlockConfirmation,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementPresent(txtNotifBlockConfirmation,3)) {
 			WebUI.click(btnAbortBlock)
 		} else {keylogger.logInfo('notification not pop up')}
 	} else {keylogger.markError('Tab idle calls is disable')}
@@ -67,7 +67,7 @@ if (WebUI.verifyElementPresent(kycVideoPage, 5,FailureHandling.OPTIONAL)) {
 WebDriver driverKycVideo = DriverFactory.getWebDriver()
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
-if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
 	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
 	WebUI.delay(5)
 	int optionRand = 4
@@ -81,8 +81,8 @@ if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType,FailureHandling.OPTI
 } else {keylogger.markError('Drop down not present')}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
-if (WebUI.verifyElementPresent(kycVideoDetail, 5,FailureHandling.OPTIONAL)) {
-	if (WebUI.verifyElementVisible(txtReqId,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
+	if (WebUI.verifyElementVisible(txtReqId)) {
 		reqIdDetail = WebUI.getText(txtReqId)
 	} else {keylogger.markError('We not find the request Id')}
 	reqIdUsed = reqIdDetail
@@ -97,16 +97,20 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5,FailureHandling.OPTIONAL)) {
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
-	if (WebUI.verifyElementPresent(videoCallValidation, 5,FailureHandling.OPTIONAL)) {
-		if (WebUI.verifyElementClickable(btnCallSenyumku,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
+		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
 			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-			if (WebUI.verifyElementPresent(txtVerifConnect, 0,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(backToKycVideo, 5)
-				WebUI.refresh()
+				WebUI.click(linkDashboard)
+				'We want to check notification'
+				if (WebUI.waitForElementVisible(pendingRequest, 5)) {
+					WebUI.click(pendingRequest)
+				} else {keylogger.markError('Notification didnt shown')}
 				WebUI.delay(5)
 				WebUI.switchToWindowIndex(1)
 				WebUI.delay(5)
@@ -120,7 +124,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5,FailureHandling.OPTIONAL)) {
 
 'We want to confirmation process'
 TestObject checkConfProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Hal-hal yang perlu dikonfirmasi')
-if (WebUI.verifyElementPresent(checkConfProcess, 5,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 	WebUI.click(chkNamaKtp)
 	WebUI.click(chkKtpNumber)
 	WebUI.click(chkBirtDate)
@@ -130,24 +134,24 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5,FailureHandling.OPTIONAL)) {
 	WebUI.click(chkShowFace)
 	WebUI.click(chkCaptureFace)
 	WebUI.scrollToElement(btnSelfie, 5)
-	if (WebUI.verifyElementClickable(btnSelfie,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementClickable(btnSelfie)) {
 		WebUI.click(btnSelfie)
-		if (WebUI.verifyElementVisible(imgSelfPhoto,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(imgSelfPhoto)) {
 			keylogger.markPassed('Photo is enable')
 			WebUI.click(btnSaveSelfPhoto)
 			TestObject saveConfirmation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
-			if (WebUI.verifyElementPresent(saveConfirmation, 5,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
 				WebUI.click(btnSaveKyc)
 				TestObject saveSelfPhoto = new TestObject().addProperty('text',ConditionType.CONTAINS,'Foto berhasil disimpan')
 				WebUI.verifyElementPresent(saveSelfPhoto, 5)
 			} else {keylogger.markError('element not present')}
 		} else {keylogger.markError('Photo not enable')}
 		WebUI.click(btnSelfie)
-		if (WebUI.verifyElementVisible(imgKtpPhoto,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(imgKtpPhoto)) {
 			keylogger.markPassed('Photo is enable')
 			WebUI.click(btnSaveKtpPhoto)
 			TestObject saveConfirmation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
-			if (WebUI.verifyElementPresent(saveConfirmation, 5,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
 				WebUI.click(btnSaveKyc)
 				TestObject saveKtpPhoto = new TestObject().addProperty('text',ConditionType.CONTAINS,'Foto berhasil disimpan')
 				WebUI.verifyElementPresent(saveKtpPhoto, 5)
@@ -156,7 +160,7 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5,FailureHandling.OPTIONAL)) {
 	} else {keylogger.markError('Button selfie belum dapat di lakukan')}
 } else {keylogger.markError('Element not present')}
 'We want ended the video call'
-if (WebUI.verifyElementClickable(btnEndVideoCall,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementClickable(btnEndVideoCall)) {
 	WebUI.click(btnEndVideoCall)
 	WebUI.takeScreenshot()
 } else {keylogger.markError('button is disable')}
@@ -168,25 +172,33 @@ while (checkData == false) {
 	Random rand = new Random()
 	String index = rand.nextInt(optionListLength + 1)
 	if (index != 0) {
-		if (WebUI.verifyElementVisible(drpDwnVillage,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(drpDwnVillage, 5)) {
+			WebUI.delay(5)
 			WebUI.selectOptionByIndex(drpDwnVillage, index)
 			WebUI.delay(5)
 		} else {keylogger.markError('Element not visible')}
-		if (WebUI.verifyElementVisible(btnKycFinished,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(btnKycFinished)) {
 			WebUI.click(btnKycFinished)
 			WebUI.delay(5)
 			'We try to fill the history call'
 			TestObject historyCallCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Keterangan History Call')
-			if (WebUI.verifyElementPresent(historyCallCheck, 5,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementPresent(historyCallCheck, 5)) {
 				WebUI.click(chkCustNotSame)
 				WebUI.delay(5)
-				if (WebUI.verifyElementClickable(btnSentKycVideo,FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementClickable(btnSentKycVideo)) {
 					WebUI.click(btnSentKycVideo)
 					WebUI.delay(5)
 					TestObject successSendKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video berhasil dikirim')
-					if (WebUI.verifyElementPresent(successSendKyc, 5,FailureHandling.OPTIONAL)) {
+					if (WebUI.verifyElementPresent(successSendKyc, 5)) {
 						WebUI.takeScreenshot()
 						WebUI.click(btnCloseKyc)
+						WebUI.delay(5)
+						WebUI.click(linkDashboard)
+						WebUI.waitForPageLoad(5)
+						if (WebUI.waitForElementNotPresent(pendingRequest, 5)) {
+							WebUI.takeScreenshot()
+							keylogger.markPassed('Notification dissapear')
+						} else {keylogger.markError('Pending request still visible')}
 						break loopCheckKelurahan
 					} else {keylogger.markError('Element not present')}
 				} else {keylogger.markError('Button send KYC video not click able')}

@@ -24,5 +24,3 @@ WebUI.verifyTextPresent(cardPrinting, false)
 
 WebUI.verifyTextPresent(deliveryStatus, false)
 
-WebUI.verifyTextPresent(assignCMS, false)
-
