@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='fajar.ardhi@amarbank.co.id'])[1]/following::td[1]</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[1]/following::td[3]</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>d0fd137c-eb70-4a58-a1cc-d832eac83c4a</webElementGuid>
+      <webElementGuid>8587bfa9-5ade-4b95-aadc-29d9b5fb8eef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>e2e0f16f-4a9e-43f5-a272-f4b60c3e10ce</webElementGuid>
+      <webElementGuid>b4258037-571d-4aec-8b51-c3eb28c57ea7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>CSR Management</value>
-      <webElementGuid>0cca45e8-fe6f-465a-8e75-7f433171ed26</webElementGuid>
+      <webElementGuid>0a36ac12-9ffc-4e64-b0c9-92bd17a45a0f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>89042dab-e6fb-42d9-a806-3e042a96aa2f</webElementGuid>
+      <webElementGuid>d2dd837f-360a-49a1-8e73-556571053c48</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[3]</value>
-      <webElementGuid>cd9145ae-b241-49b8-a92a-ea8757580cf4</webElementGuid>
+      <webElementGuid>3943862d-df64-4d7f-84aa-19799b341283</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='fajar.ardhi@amarbank.co.id'])[1]/following::td[1]</value>
-      <webElementGuid>f35d4750-f94a-4a01-8bd4-5c943ac9e621</webElementGuid>
+      <webElementGuid>c92f2f27-f8e2-4b0a-8565-c417e3f4f3f0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Actions'])[1]/following::td[3]</value>
-      <webElementGuid>a1736eb0-700b-4aaf-b150-129a54c32a4e</webElementGuid>
+      <webElementGuid>dde22028-1011-40b6-bc5c-0e327efc20d0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/preceding::td[1]</value>
-      <webElementGuid>3cce60a7-0f1b-441e-9d68-3e3890af271b</webElementGuid>
+      <webElementGuid>9a069cd7-4db2-42d3-8371-5e2eff55a7bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[5]/preceding::td[2]</value>
-      <webElementGuid>4985230a-8c4a-4fa1-bdce-bf02c49b6d2e</webElementGuid>
+      <webElementGuid>7c8c6e6d-1e69-4f9c-9562-39995b8b9861</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[3]</value>
-      <webElementGuid>5ed2dd05-b0ee-4b1a-916d-3a431ff25ec2</webElementGuid>
+      <webElementGuid>969fe4f6-92a9-4cae-91fa-432782cd56fe</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'CSR Management' or . = 'CSR Management')]</value>
-      <webElementGuid>58e2714e-5cc5-4ab5-aef0-e392ee26a4a1</webElementGuid>
+      <webElementGuid>4e04579b-67ad-4191-889c-aad99d3dd6f9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

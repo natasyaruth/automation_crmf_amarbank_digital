@@ -21,7 +21,7 @@ import org.apache.commons.lang.RandomStringUtils
 
 KeywordUtil keyLogger = new KeywordUtil()
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 } else {
@@ -46,7 +46,7 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 }
 
 /* We want added filter for new card only*/
-if (WebUI.verifyElementVisible(filterCustOrigin,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementVisible(filterCustOrigin)) {
 	WebUI.selectOptionByLabel(filterCustOrigin, custOrigin, false)
 } else {keyLogger.markFailed("We cannot select Tunaiku Disbursement")}
 
@@ -64,7 +64,7 @@ if (onDetailAssignCard == true) {
 	requestId = WebUI.getText(txtRequestId)
 	if (WebUI.verifyElementVisible(btnEditDeliveryCard, FailureHandling.OPTIONAL)) {
 		WebUI.click(btnEditDeliveryCard)
-		if (WebUI.verifyElementVisible(drpDownPlacementSentCard,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(drpDownPlacementSentCard)) {
 			int optionListLength = 3
 			Random rand = new Random()
 			String index = rand.nextInt(optionListLength + 1)
@@ -99,7 +99,7 @@ if (onDetailAssignCard == true) {
 				} else {keyLogger.markError ("Not present "+drpDistrictPresent+" element")}
 			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
 		} else {keyLogger.logInfo("We don't get button edit drop down placement sent card")}
-		if (WebUI.verifyElementVisible(btnSaveDeliveryAddress,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(btnSaveDeliveryAddress)) {
 			WebUI.takeScreenshot()
 			WebUI.click(btnSaveDeliveryAddress)
 		} else {keyLogger.logInfo("We don't see the button save")}
@@ -143,17 +143,17 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 
 /* We want input request ID from assign card to process to customer page*/
-if (WebUI.verifyElementVisible(fieldSearchReqId,FailureHandling.OPTIONAL)) {
+if (WebUI.verifyElementVisible(fieldSearchReqId)) {
 	WebUI.setText(fieldSearchReqId, assignCardRequestId)
-	if (WebUI.verifyElementVisible(btnSearchCsrManagement,FailureHandling.OPTIONAL)) {
+	if (WebUI.verifyElementVisible(btnSearchCsrManagement)) {
 		WebUI.click(btnSearchCsrManagement)
-		if (WebUI.verifyElementVisible(btnDetailCsrManagement,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(btnDetailCsrManagement)) {
 			WebUI.click(btnDetailCsrManagement)
-			if (WebUI.verifyElementVisible(headerTxtCustDetail,FailureHandling.OPTIONAL)) {
+			if (WebUI.verifyElementVisible(headerTxtCustDetail)) {
 				WebUI.click(changeLogMenu)
-				if (WebUI.verifyElementVisible(filterBySource,FailureHandling.OPTIONAL)) {
+				if (WebUI.verifyElementVisible(filterBySource)) {
 					WebUI.selectOptionByLabel(filterBySource, assignCard, false)
-					if (WebUI.verifyElementVisible(firstRowActions,FailureHandling.OPTIONAL)) {
+					if (WebUI.waitForElementVisible(firstRowActions, 5)) {
 						WebUI.verifyElementText(firstRowActions, "-")
 						String newData = WebUI.getText(newDataOnLog)
 						String oldData = WebUI.getText(oldDataOnLog)

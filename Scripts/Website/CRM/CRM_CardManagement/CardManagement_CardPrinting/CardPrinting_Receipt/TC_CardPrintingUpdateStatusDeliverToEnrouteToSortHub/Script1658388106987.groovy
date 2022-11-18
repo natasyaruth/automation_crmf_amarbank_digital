@@ -45,7 +45,7 @@ import com.tunaiku.keyword.SecureUtils as SecureUtils
 import com.google.gson.JsonObject as JsonObject
 
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuCardPrintingElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCardPrintingElement, 5)) {
 	/* We want to wait the element visible*/
 	WebUI.waitForElementVisible(menuCardPrintingElement, 5)	
 	/* We want to click menu assign card element*/
@@ -115,7 +115,7 @@ WebUI.delay(10)
 /* We want to refresh page*/
 WebUI.refresh()
 /* We want to makesure we on delivery status*/
-if (WebUI.waitForElementVisible(menuDeliveryStatus, 5,  FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuDeliveryStatus, 5)) {
 	/* We want to click menu delivery status*/	
 	WebUI.click(menuDeliveryStatus)
 	/* We want makesure we are on the delivery status page*/	

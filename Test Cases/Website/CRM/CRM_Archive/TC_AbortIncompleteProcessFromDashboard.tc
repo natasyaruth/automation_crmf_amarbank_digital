@@ -5,6 +5,12 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>8c17a6aa-4323-444a-b243-fb6115acf7d2</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95c49a39-c5ed-4cb5-8f48-07603fa43ff2</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'KYC Customer Detail'</defaultValue>
       <description></description>

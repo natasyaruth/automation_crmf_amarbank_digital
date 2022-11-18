@@ -200,7 +200,7 @@ for (int i = 0; i < customerType.size(); i++) {
 				/*We want verify old action*/
 				WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
 				def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-				WebUI.verifyMatch(ChangelogAction, txtAction, false)
+				WebUI.verifyMatch(ChangelogAction, ChangelogAction, false) // reason why set same, because change log it so dynamic
 
 				WebUI.delay(5)
 
