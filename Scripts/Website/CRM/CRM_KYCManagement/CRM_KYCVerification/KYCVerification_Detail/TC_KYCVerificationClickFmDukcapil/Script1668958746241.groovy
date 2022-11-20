@@ -47,19 +47,17 @@ def randDate = RandomDate.getDateStringForDateBefore()
 	1.Click section KYC Management
 	2.Click section KYC Verification
 	3.Click detail customer
-	4.Click button Edit on section Data eKTP
-	5.Edit field "NIK/Nama sesuai di ktp/ tempat lahir/ tanggal lahir/RT/RW" with new value
-	6.Click button Simpan
+	4.Click button "Cek Data Dukcapil"
 	
 	Expectaion
-	-Show all data on changes log in different rows with details:
-
-	- Show "tanggal" with time when the changes was created
-	- Show agent name in User/Agent row
-	- Show KYC Verification in Source row
-	- Show Field "NIK/Nama sesuai di ktp/ tempat lahir/ tanggal lahir/RT/RW"
-	- Show old NIK/Nama sesuai di ktp/ tempat lahir/ tanggal lahir/RT/RW in "Data Lama"
-	- Show new NIK/Nama sesuai di ktp/ tempat lahir/ tanggal lahir/RT/RW in "Data Baru"
+	Display data on changes log with detail:
+	Tanggal -> date with time when the changes was created
+	User/Agent -> agent name
+	Source -> KYC Verification
+	Field -> -
+	Data lama -> -
+	Data baru -> -
+	Action -> Cek Data Dukcapil
  * 
  * */
 
@@ -105,25 +103,11 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase("Menunggu")) {
 	colsKycVerif.get(7).findElement(By.xpath('a')).click()
 	TestObject kycDetailPageAfterFilter = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 	if (WebUI.verifyElementPresent(kycDetailPageAfterFilter, 5)) {
-		WebUI.scrollToElement(btnEditKycVerif, 5)
-		int optionListLength = 3
-		Random rand = new Random()
-		String index = rand.nextInt(optionListLength + 1)
-		WebUI.click(btnEditKycVerif)
-		WebUI.setText(txtNik, "3173" +RandomStringUtils.randomNumeric(12))
-		WebUI.setText(txtNameBaseNik, fullName)
-		retName = WebUI.getText(txtNameBaseNik)
-		WebUI.setText(txtBirthPlace, birthPlace)
-		WebUI.clearText(txtBirthDate)
-		WebUI.setText(txtBirthDate, "01/01/2000")
-		WebUI.sendKeys(txtBirthDate,Keys.chord(Keys.ENTER))
-		WebUI.setText(txtRt, RandomStringUtils.randomNumeric(3))
-		retRt = WebUI.getText(txtRt)
-		WebUI.setText(txtRw, RandomStringUtils.randomNumeric(3))
-		retRw = WebUI.getText(txtRw)
-		if (WebUI.waitForElementPresent(btnSimpan, 5)) {
-			WebUI.click(btnSimpan)
-		} else {keylogger.markError('Element not present')}
+		WebUI.scrollToElement(btnFaceMatch, 5)
+		WebUI.click(btnFaceMatch)
+		if (WebUI.waitForElementPresent(alretText, 5)) {
+			WebUI.click(btnFmConfirmation)
+		} else {keylogger.markError('alert not present to konfirmation')}
 		WebUI.scrollToElement(lbReqId, 5)
 		reqId = WebUI.getText(lbReqId)
 		WebUI.click(btnBackDashboard)
@@ -132,13 +116,7 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase("Menunggu")) {
 	} else {keylogger.markError('Element not present')}
 }
 String reqIdKyc = reqId
-String changeName = retName
-String changeRt = retRt
-String changeRw = retRw
 println(reqIdKyc)
-println(changeName)
-println(changeRt)
-println(changeRw)
 'Init selected web element KYC'
 WebDriver driverCsr = DriverFactory.getWebDriver()
 WebElement tblCsr
@@ -170,21 +148,22 @@ if (WebUI.verifyElementPresent(txtCsrDetail, 5)) {
 	WebUI.scrollToElement(btnChangeLog, 5)
 	WebUI.click(btnChangeLog)
 	WebUI.verifyOptionsPresent(drpDwnFilterByActivity, listFilterByActivity)
-	WebUI.selectOptionByLabel(drpDwnFilterByActivity, "Edited", false)
+	WebUI.selectOptionByLabel(drpDwnFilterByActivity, "Semua", false)
 	WebUI.verifyOptionsPresent(drpDwnFilterBySource, listFilterBySource)
 	WebUI.selectOptionByLabel(drpDwnFilterBySource, "KYC Verification", false)
 	WebUI.takeScreenshot()
 } else {keylogger.markError('Element not present')}
 tblCsrDtl = driverCsrDtl.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
-rowsCsrDtl = tblCsrDtl.findElements(By.tagName('tr'))
-boolean loopFlag = false
-LoopCsr:
-while (loopFlag == false) {
-	 for (int i = 0;i < rowsCsrDtl.size(); i++) {
-		 List<WebElement> colsCsrDtl = rowsCsrDtl.get(i).findElements(By.tagName('td'))
-		 if (colsCsrDtl.get(2).getText().equalsIgnoreCase("KYC Verification")) {
-			 colsCsrDtl.get(5).getText().equalsIgnoreCase(changeName)
-			 break LoopCsr
-		 } else {keylogger.logInfo('We try again to check another row')}
-	 }
- }
+ rowsCsrDtl = tblCsrDtl.findElements(By.tagName('tr'))
+ boolean loopFlag = false
+ LoopCsr:
+ while (loopFlag == false) {
+	  for (int i = 0;i < rowsCsrDtl.size(); i++) {
+		  List<WebElement> colsCsrDtl = rowsCsrDtl.get(i).findElements(By.tagName('td'))
+		  if (colsCsrDtl.get(2).getText().equalsIgnoreCase("KYC Verification")) {
+			  colsCsrDtl.get(3).getText().equalsIgnoreCase("Facematch Dukcapil")
+			  colsCsrDtl.get(6).getText().equalsIgnoreCase("Melakukan face match")
+			  break LoopCsr
+		  } else {keylogger.logInfo('We try again to check another row')}
+	  }
+  }
