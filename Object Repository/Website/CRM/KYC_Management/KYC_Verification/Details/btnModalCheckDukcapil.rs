@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnFaceMatchConfirmation</name>
+   <name>btnModalCheckDukcapil</name>
    <tag></tag>
-   <elementGuidId>dcf5cb66-bd92-4320-9a72-f90bc077a852</elementGuidId>
+   <elementGuidId>4ec217ed-e045-4c4e-8563-4581b24c5c1f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>#BtnFaceMatchConfirmation</value>
+         <key>XPATH</key>
+         <value>//button[@id='BtnModalCheckDukcapil']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnFaceMatchConfirmation']</value>
+         <key>CSS</key>
+         <value>#BtnModalCheckDukcapil</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>04662ec2-8698-4af0-85ae-d90fa6d7c7a5</webElementGuid>
+      <webElementGuid>67ff4bb6-adfa-4352-9133-f967cafcf6e4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,39 +30,39 @@
       <name>class</name>
       <type>Main</type>
       <value>Button Button--secondary Button--fullWidth</value>
-      <webElementGuid>06f6f994-9cde-4b72-8b32-f87a02d923d6</webElementGuid>
+      <webElementGuid>abd4e7d0-1c51-4a4d-9206-11c44a70b459</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Lanjutkan Face Match </value>
-      <webElementGuid>520fb780-9548-4107-8f4d-245ffe50cd0d</webElementGuid>
+      <value>Cek Data Dukcapil </value>
+      <webElementGuid>4d41dfa5-5de3-4ea7-8747-a514f014bd4d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnFaceMatchConfirmation</value>
-      <webElementGuid>0add89d0-4a89-411e-89c4-d4fa9644a6e5</webElementGuid>
+      <value>BtnModalCheckDukcapil</value>
+      <webElementGuid>a30095cc-162a-4948-a49c-05559a3a55f0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;BtnFaceMatchConfirmation&quot;)</value>
-      <webElementGuid>446a66bf-e6f2-4edd-be17-56685a59c75e</webElementGuid>
+      <value>id(&quot;BtnModalCheckDukcapil&quot;)</value>
+      <webElementGuid>a07e6227-ddb9-4a27-af4e-eccdb157e578</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='BtnFaceMatchConfirmation']</value>
-      <webElementGuid>bd0bbd85-9ad3-4901-b5f1-059025d29165</webElementGuid>
+      <value>//button[@id='BtnModalCheckDukcapil']</value>
+      <webElementGuid>7a3aad8f-0dd9-4eee-907d-a912d801e0af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='outer-root']/div/div/section/div/button</value>
-      <webElementGuid>6b70e6da-3aa9-4367-8b44-12d862e21d50</webElementGuid>
+      <webElementGuid>660fc9df-e10d-440d-8ffd-68c7dffea5e0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Konfirmasi'])[1]/following::button[1]</value>
-      <webElementGuid>7a72ebd7-e608-4f38-b0a6-a12f512724a6</webElementGuid>
+      <webElementGuid>b01b27a1-cc7a-4e4e-9e78-d0a7d054e2f1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tidak ada data'])[1]/following::button[1]</value>
-      <webElementGuid>08d0b9c6-447a-42b1-abdb-640e7716bd95</webElementGuid>
+      <webElementGuid>41598c96-3c7e-48cf-bb75-d44b3affae0a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Batal'])[1]/preceding::button[1]</value>
-      <webElementGuid>8070c64f-0b88-4eec-b250-71006c81ce98</webElementGuid>
+      <webElementGuid>5359c2f9-6836-4a5a-aec4-358dec7768b0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,15 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[2]</value>
-      <webElementGuid>775f2a8c-f66c-4c11-928a-a580c5a78f72</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Lanjutkan Face Match']/parent::*</value>
-      <webElementGuid>0d5f2bd1-1c6b-43a9-9753-2a44d1458b89</webElementGuid>
+      <webElementGuid>b47216ff-aa18-49ac-b9b6-f11c198d8600</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,14 +110,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//section/div/button</value>
-      <webElementGuid>28487f9a-b173-4d51-8b33-a7f19b2ccc8e</webElementGuid>
+      <webElementGuid>6023d422-4897-4d66-b91a-a34efbbda416</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[(text() = 'Lanjutkan Face Match ' or . = 'Lanjutkan Face Match ') and @id = 'BtnFaceMatchConfirmation']</value>
-      <webElementGuid>e932c020-6286-4d49-8121-837cfdb98197</webElementGuid>
+      <value>//button[(text() = 'Cek Data Dukcapil ' or . = 'Cek Data Dukcapil ') and @id = 'BtnModalCheckDukcapil']</value>
+      <webElementGuid>bf44e56b-d210-40b1-80a4-4682a7a7aca9</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

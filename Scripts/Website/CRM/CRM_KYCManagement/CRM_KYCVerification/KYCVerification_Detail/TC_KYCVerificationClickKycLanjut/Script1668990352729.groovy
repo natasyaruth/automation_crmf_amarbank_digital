@@ -31,7 +31,13 @@ import org.openqa.selenium.WebElement
 
 'Initial logging in katalon studio'
 KeywordUtil keylogger = new KeywordUtil()
-
+'Init Name Faker'
+Faker faker = new Faker()
+String fullName = faker.name().fullName()
+'Init birth place'
+String birthPlace = faker.address().city()
+String birthDate = faker.date().birthday()
+def randDate = RandomDate.getDateStringForDateBefore()
 
 
 /* Precondition 
@@ -41,18 +47,19 @@ KeywordUtil keylogger = new KeywordUtil()
 	1.Click section KYC Management
 	2.Click section KYC Verification
 	3.Click detail customer
-	4.Click button "Liveness"
+	4.Click button "Lanjutkan KYC"
+	5.Choose the reason
+	6.Click button "Kirim"
 	
 	Expectaion
-	-Liveness score is appear
-	-Display data on changes log with detail:
+	Display data on changes log with detail:
 	Tanggal -> date with time when the changes was created
 	User/Agent -> agent name
 	Source -> KYC Verification
-	Field -> Liveness
-	Data lama -> Old Value of Liveness
-	Data baru -> New Value of Liveness
-	Action -> Melakukan Liveness
+	Field -> Reason
+	Data lama -> -
+	Data baru -> (the reason)
+	Action -> Lanjutkan KYC
  * 
  * */
 
@@ -98,20 +105,36 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase("Menunggu")) {
 	colsKycVerif.get(7).findElement(By.xpath('a')).click()
 	TestObject kycDetailPageAfterFilter = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 	if (WebUI.verifyElementPresent(kycDetailPageAfterFilter, 5)) {
-		WebUI.scrollToElement(btnLiveness, 5)
-		WebUI.click(btnLiveness)
-		if (WebUI.waitForElementPresent(alretText, 5)) {
-			WebUI.click(btnDoLiveness)
-		} else {keylogger.markError('alert not present to konfirmation')}
 		WebUI.scrollToElement(lbReqId, 5)
 		reqId = WebUI.getText(lbReqId)
-		WebUI.click(btnBackDashboard)
+		WebUI.scrollToElement(btnKycLanjut, 5)
+		WebUI.click(btnKycLanjut)
+		TestObject reasonContKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Alasan Lanjutkan KYC')
+		if (WebUI.verifyElementPresent(reasonContKyc, 5)) {
+			WebUI.click(chkLowLiveness)
+			WebUI.click(btnSendReasonContKyc)
+		} else {keylogger.markError('We are not in Cont KYC')}
+		WebUI.waitForPageLoad(10)
 		TestObject kycBucketListAfterFilter = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Verification')
 		WebUI.verifyElementPresent(kycBucketListAfterFilter, 5)
 	} else {keylogger.markError('Element not present')}
 }
 String reqIdKyc = reqId
 println(reqIdKyc)
+
+'We want check the request Id in KYC Verification'
+WebUI.setText(txtReqIdKycVerif, reqIdKyc)
+WebUI.sendKeys(txtReqIdKycVerif, Keys.chord(Keys.ENTER))
+TestObject notFoundReqId = new TestObject().addProperty('text',ConditionType.CONTAINS,'Oops, Hasil pencarian tidak ditemukan')
+if (WebUI.verifyElementPresent(notFoundReqId, 5)) {
+	keylogger.markPassed('Condition is passed')
+	WebUI.click(linkKycVideo)
+	WebUI.click(tabIdleCalls)
+	WebUI.setText(txtReqIdKycVideo, reqIdKyc)
+	WebUI.sendKeys(txtReqIdKycVideo, Keys.chord(Keys.ENTER))
+	WebUI.verifyElementText(btnReqIdKycVideo, reqIdKyc)
+} else {keylogger.markError('Element is present')}
+
 'Init selected web element KYC'
 WebDriver driverCsr = DriverFactory.getWebDriver()
 WebElement tblCsr
@@ -156,8 +179,9 @@ tblCsrDtl = driverCsrDtl.findElement(By.xpath('//*[@id="changelog"]//table/tbody
 	  for (int i = 0;i < rowsCsrDtl.size(); i++) {
 		  List<WebElement> colsCsrDtl = rowsCsrDtl.get(i).findElements(By.tagName('td'))
 		  if (colsCsrDtl.get(2).getText().equalsIgnoreCase("KYC Verification")) {
-			  colsCsrDtl.get(3).getText().equalsIgnoreCase("Selfie Liveness")
-			  colsCsrDtl.get(6).getText().equalsIgnoreCase("Melakukan liveness")
+			  colsCsrDtl.get(3).getText().equalsIgnoreCase("Reason")
+			  colsCsrDtl.get(5).getText().equalsIgnoreCase("Liveness low")
+			  colsCsrDtl.get(6).getText().equalsIgnoreCase("Lanjutkan KYC")
 			  break LoopCsr
 		  } else {keylogger.logInfo('We try again to check another row')}
 	  }
