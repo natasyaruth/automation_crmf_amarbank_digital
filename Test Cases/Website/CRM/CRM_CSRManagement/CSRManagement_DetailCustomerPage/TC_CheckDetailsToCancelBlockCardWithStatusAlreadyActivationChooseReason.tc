@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CheckContentDetailsToCancelBlockCardWithStatusAlreadyActivationAllThingsChooseReason</name>
+   <name>TC_CheckDetailsToCancelBlockCardWithStatusAlreadyActivationChooseReason</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>ccb3e4e2-a05d-4e89-b419-bc0ec1cb9500</testCaseGuid>

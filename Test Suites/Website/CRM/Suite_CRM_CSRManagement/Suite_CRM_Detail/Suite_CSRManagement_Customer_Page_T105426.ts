@@ -215,7 +215,7 @@
       <guid>8a472877-31ab-4c7b-9816-2bd3723facf4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_CheckContentDetailsToCancelBlockCardWithStatusAlreadyActivationAllThingsChooseReason</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_CheckDetailsToCancelBlockCardWithStatusAlreadyActivationChooseReason</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
