@@ -12,7 +12,8 @@ import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
-import com.kms.katalon.core.testcase.TestCase as TestCase
+import com.kms.katalon.core.testcase.TestCase
+import com.kms.katalon.core.testdata.DBData
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.ConditionType
@@ -36,6 +37,9 @@ import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 
 'Initial loggin in katalon'
 KeywordUtil keylogger = new KeywordUtil()
+
+'Init Random'
+Random rand = new Random()
 
 /* Precondition
 	- Already Do KYC Video
@@ -279,5 +283,48 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 		if (WebUI.waitForElementPresent(alretText, 5)) {
 			WebUI.click(btnFmConfirmation)
 		} else {keylogger.markError('alert not present to konfirmation')}
+		boolean loopFlagKycVerif = false
+		loopPage:
+		while (loopFlagKycVerif == false) {
+			for (int i = 0;i < 99; i++) {
+				WebUI.click(btnCheckDukcapil)
+				if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
+					WebUI.scrollToElement(btnTerima1, 5)
+					WebUI.verifyElementClickable(btnTerima1)
+					WebUI.click(btnTerima1)
+					if (WebUI.waitForElementPresent(btnTerima2, 5)) {
+					 	WebUI.scrollToElement(btnTerima2, 5)
+						WebUI.verifyElementClickable(btnTerima2)
+						WebUI.click(btnTerima2)
+						if (WebUI.waitForElementPresent(btnTerima3, 5)) {
+							WebUI.scrollToElement(btnTerima3, 5)
+							WebUI.verifyElementClickable(btnTerima3)
+							WebUI.click(btnTerima3)
+						} else {keylogger.logInfo("element not present")}
+					} else {keylogger.logInfo("element not present")}
+					TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
+					if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
+						WebUI.click(btnBackToKycManagement)
+					} else {keylogger.logInfo('Element not present')}
+					if (WebUI.waitForElementPresent(txtReqIdKyc, 5)) {
+						WebUI.setText(txtReqIdKyc, reqIdUsedGlobal)
+					} else {keylogger.logInfo("Element not present")}
+					break loopPage
+				} else {
+					TestObject nikNotFound = new TestObject().addProperty('text',ConditionType.CONTAINS,'NIK tidak ditemukan')
+					WebUI.verifyElementPresent(nikNotFound, 5)
+					WebUI.click(btnEditDataKtp)
+					DBData listIdUsers = findTestData("Data Files/Website/Dataset_KTP/Dataset_KTP")
+					int rowCount = listIdUsers.getRowNumbers()
+					rowNum= (rand.nextInt(rowCount - 1) + 1)
+					String KtpNumberRandomize = listIdUsers.getValue(2, rowNum)
+					if (WebUI.waitForElementPresent(txtNikField, 5)) {
+						WebUI.setText(txtNikField, KtpNumberRandomize)
+					} else {keylogger.logInfo("element not present")}
+					WebUI.click(btnSaveKtpData)
+					WebUI.verifyElementClickable(btnCheckDataDukcapil)
+				}
+			}
+		}
 	} else {keylogger.markError('Element not present')}
 } else {keylogger.logInfo('Text is not found')}
