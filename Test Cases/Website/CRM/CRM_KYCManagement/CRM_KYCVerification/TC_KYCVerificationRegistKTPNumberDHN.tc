@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationRegistKTPNumberDHN</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1c8a272-850f-47ad-befb-5ac786a37bc5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e59610fa-7e52-48c3-b18b-c1c9de2c5c93</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'5171036810600002'</defaultValue>
+      <description></description>
+      <id>e59610fa-7e52-48c3-b18b-c1c9de2c5c93</id>
+      <masked>false</masked>
+      <name>nik</name>
+   </variable>
+</TestCaseEntity>
