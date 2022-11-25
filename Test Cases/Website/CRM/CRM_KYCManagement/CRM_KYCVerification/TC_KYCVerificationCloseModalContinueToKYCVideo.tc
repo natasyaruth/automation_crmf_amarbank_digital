@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_KYCVerificationCloseModalContinueToKYCVideo</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>35473f61-3b2c-4bab-a8d8-1f32c5f6ab89</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a7874b43-a832-477e-bba8-4b18fe408486</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'11/08/2018'</defaultValue>
+      <description></description>
+      <id>a7874b43-a832-477e-bba8-4b18fe408486</id>
+      <masked>false</masked>
+      <name>birthdate</name>
+   </variable>
+</TestCaseEntity>

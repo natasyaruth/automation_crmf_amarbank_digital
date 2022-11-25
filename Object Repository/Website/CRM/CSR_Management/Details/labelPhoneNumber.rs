@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>labelPhoneNumber</name>
+   <tag></tag>
+   <elementGuidId>c70c2d19-c40a-466b-b64d-ea1ccc36e414</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='phonenumber']/div/div/div[2]/section/form/div/div/div/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.Grid.Grid-md-7 > div.Form-field > label.Form-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>564463ab-9531-446b-90da-f2b14c47d86e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Form-label</value>
+      <webElementGuid>43e4b2be-ea2b-4363-b97e-ee5b9acf6881</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>No.Handphone</value>
+      <webElementGuid>bfd5e4d4-cef8-4906-ad46-3d0d46198a2b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;phonenumber&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/form[@class=&quot;Form&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-7&quot;]/div[@class=&quot;Form-field&quot;]/label[@class=&quot;Form-label&quot;]</value>
+      <webElementGuid>77bd261f-06ce-4094-9401-89696792a70f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//section[@id='phonenumber']/div/div/div[2]/section/form/div/div/div/label</value>
+      <webElementGuid>b19ae1b1-c302-48f9-a9e3-89c1c08375e2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No. Handphone'])[1]/following::label[1]</value>
+      <webElementGuid>d6b37180-63db-423e-a108-c4de2c79b86b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[1]/following::label[1]</value>
+      <webElementGuid>0f420a95-c75f-4753-a526-37dfa2c1a16c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Edit'])[2]/preceding::label[1]</value>
+      <webElementGuid>9de300da-f0fa-4a79-be7b-4fffbc14b062</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[2]/preceding::label[1]</value>
+      <webElementGuid>49575562-7f2e-45bf-8c5a-3793cc93d3ff</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='No.Handphone']/parent::*</value>
+      <webElementGuid>60c4f0cb-2625-40c8-a157-027a9a3d71d5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section[3]/div/div/div[2]/section/form/div/div/div/label</value>
+      <webElementGuid>b89f4527-6652-4619-9afe-054208e49e73</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'No.Handphone' or . = 'No.Handphone')]</value>
+      <webElementGuid>44861bf9-366e-4186-9f3a-eacdd2512d54</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
