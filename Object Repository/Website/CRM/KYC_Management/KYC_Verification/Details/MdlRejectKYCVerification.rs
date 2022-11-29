@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCloseModal</name>
+   <name>MdlRejectKYCVerification</name>
    <tag></tag>
-   <elementGuidId>edcfe0c1-f558-4360-81f4-75fac1dc2bed</elementGuidId>
+   <elementGuidId>1a29d108-c89d-46f5-9bc1-6976026bb18b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnClose']</value>
+         <value>//*[@class = 'Modal-dialog RejectionModal']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnClose</value>
-      <webElementGuid>1cb2d7cf-a55e-46c6-a8f7-2e7a9bbfd857</webElementGuid>
+      <value>Modal-dialog RejectionModal</value>
+      <webElementGuid>746e629c-9409-4687-be9e-54da2b9d4aae</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Suite_CRM_EndtoEnd_ChangePhone_Reactivation</name>
+   <name>Suite_KYCVerification_Bucket_list_T104427</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>64c8018b-85b4-4594-bc61-e88c7957929e</testSuiteGuid>
+   <testSuiteGuid>c1cc7a50-fd11-49e3-966f-ee6d86f5bcb1</testSuiteGuid>
    <testCaseLink>
-      <guid>4b4414ea-d637-4b08-906e-6e7c14526df8</guid>
+      <guid>d72d5c0c-a109-4252-9351-be939f0b3bd3</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -31,19 +31,10 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>7681a4ee-9213-4946-bc04-3f037ea9c6d2</guid>
+      <guid>3544e4df-0660-4ace-bbcf-997d0f05908e</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>d48bf74f-0887-4782-986b-8be7319bed98</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>5-5</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRMLogin/Dataset_Login</testDataId>
-      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
@@ -58,15 +49,15 @@
          <variableId>90084b35-f3a5-46da-8d0d-446d669b0bbb</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d48bf74f-0887-4782-986b-8be7319bed98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>GmailAccount</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>d42cfa2d-2e0e-46cf-80f7-8c86f7f0a1cd</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d48bf74f-0887-4782-986b-8be7319bed98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>GmailPassword</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>774ba9ea-d278-493e-92b6-073b2360a3cb</variableId>
       </variableLink>
       <variableLink>
@@ -82,9 +73,9 @@
          <variableId>75901125-1c8c-4149-80ee-9d1f9ede82fa</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId>d48bf74f-0887-4782-986b-8be7319bed98</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Username</value>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
          <variableId>a379d56d-d8dd-44f8-840b-5ded110f062f</variableId>
       </variableLink>
       <variableLink>
@@ -221,179 +212,138 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>acefaf5e-943c-4733-833a-a03defb09aaf</guid>
+      <guid>1a37e748-0850-436b-8605-d24667da34b2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_Archive/TC_KYCManagement</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_ClickMenuKYCVerification</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+         <variableId>ef930933-3814-4e82-95f1-ed18f4d46859</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>6c8eae6f-4fc6-4d75-a13e-eb4ca70671a6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2dc8a252-306a-429d-9a4e-812b64a29a2c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c8135a3-46e7-40ca-bd63-380da86c21bd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>cfe6bf80-5611-4575-b94c-bee78ce4e0b7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c6326f0-e688-454a-86fc-022eebfd0c39</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8b1d90d6-12f8-4624-9076-ceb31a14cef9</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9d4c53eb-fe9f-4e88-88e5-02d309e7fc70</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>69237044-c366-418f-9591-22d051d23109</guid>
+      <guid>d325c71f-405a-4172-b957-c49449abdc77</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoChangePhone</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>0ff49fab-4610-46c8-84f4-c3b4dae700c5</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>2-2</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoChangePhone</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>SearchRequestID</value>
-         <variableId>4f330b41-1a17-4825-8da5-714068c9f217</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>AdditionalNote</value>
-         <variableId>a146fd5e-84c8-4e2a-bd94-0c28d8ed86fe</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Other</value>
-         <variableId>cbc4fdf2-10aa-468e-acd1-0f4ed5c1eb66</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>0ff49fab-4610-46c8-84f4-c3b4dae700c5</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>ChangephoneReason</value>
-         <variableId>bbb3e257-6f4c-4105-9d1a-606d34bd985c</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>96472950-32de-4895-8517-091f2078fb8d</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_Archive/TC_KYCManagement</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_BucketlistPage/TC_CheckCombinationFilterCustTypeNasabahSenyumkuEmailVerified</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+         <variableId>b7162945-b5a6-4b2d-94bc-805e484e035b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a972eb88-74d5-4284-95b5-cda4c2996613</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>47773113-3b96-4483-aca5-f46bab0b8ec2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1a9a5486-06a8-403e-b843-a252275855e0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a1a9d995-0901-4b21-b7f1-80de130e9084</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>68df0d83-adcf-4c17-a490-b015faccb966</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>97b05b0d-c1d2-40bf-8f5c-f53550a59605</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ffef3d5c-b74d-4499-adae-f295730bc1cf</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>05414707-8cc5-4c06-8c30-e3529c3b7d39</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>6a36bf53-e168-4a9d-8642-50790f2d68aa</guid>
+      <guid>a6283fa9-149e-4fc2-9db0-bfbdc5d9eb00</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoReactivasi</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>5-5</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoChangePhone</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>SearchRequestID</value>
-         <variableId>71b5e8cc-7992-48c1-8cdb-62aae702209e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>AdditionalNote</value>
-         <variableId>e3ffa357-8804-434a-9070-8d78d736305f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>Other</value>
-         <variableId>e88d93e7-3937-4268-baed-af86f97bcd9c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>ChangephoneReason</value>
-         <variableId>f778f7cd-4507-4fda-ad57-d69d27240213</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>feecb654-755f-4bdc-8f14-e9c0c6680714</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_Archive/TC_KYCManagement</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
+         <variableId>427aee94-b04c-4d8c-b3c4-c64a99bd2699</variableId>
       </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>75d1143e-9576-489c-8c60-199453b16a4f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationChangePhone</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>0f2c8b83-25b5-4224-8522-39c25a89b32e</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>3-3</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoChangePhone</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>0f2c8b83-25b5-4224-8522-39c25a89b32e</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>SearchRequestID</value>
-         <variableId>bc3524c1-7788-45e9-a2ab-ff2fc1e17cfb</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>cd8f68d8-cd50-4876-b153-e853d7be7412</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_Archive/TC_KYCManagement</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>45dbe665-dc48-41ed-9169-c1d0eb7bc2e3</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5349a0a8-0bdb-4f2d-9023-bab99efeb32f</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationReactive</testCaseId>
-      <testDataLink>
-         <combinationType>ONE</combinationType>
-         <id>c553f9ac-a99a-4ef9-9a6a-1b8207a3f50b</id>
-         <iterationEntity>
-            <iterationType>RANGE</iterationType>
-            <value>5-5</value>
-         </iterationEntity>
-         <testDataId>Data Files/Website/Dataset_CRMKYCVideo/Dataset_KYCVideoChangePhone</testDataId>
-      </testDataLink>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId>c553f9ac-a99a-4ef9-9a6a-1b8207a3f50b</testDataLinkId>
-         <type>DATA_COLUMN</type>
-         <value>SearchRequestID</value>
-         <variableId>3112816a-74a6-4477-8065-057e397aa7cb</variableId>
+         <variableId>469c9a65-336a-46ce-92ec-13754252de72</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

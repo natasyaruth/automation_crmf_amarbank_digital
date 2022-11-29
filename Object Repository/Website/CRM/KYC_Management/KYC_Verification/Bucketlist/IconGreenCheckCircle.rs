@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCloseModal</name>
+   <name>IconGreenCheckCircle</name>
    <tag></tag>
-   <elementGuidId>edcfe0c1-f558-4360-81f4-75fac1dc2bed</elementGuidId>
+   <elementGuidId>46c3f3bc-9e15-4e28-b7e5-7969f6bfe76d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnClose']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnClose</value>
-      <webElementGuid>1cb2d7cf-a55e-46c6-a8f7-2e7a9bbfd857</webElementGuid>
+      <value>svg-inline--fa fa-check-circle fa-w-16 fa-lg u-Color-success u-MarginRight-small</value>
+      <webElementGuid>8dd9d91e-4b91-4071-adf9-0ac71e691da6</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

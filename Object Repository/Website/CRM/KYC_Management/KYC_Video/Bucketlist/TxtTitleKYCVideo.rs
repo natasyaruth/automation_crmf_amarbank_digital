@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>KYCVideoBucketListKYCVideoRequestText</name>
+   <name>TxtTitleKYCVideo</name>
    <tag></tag>
    <elementGuidId>3d52623c-6c6b-4b61-bcaf-b0e0ead7f28d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>h1.PageTitle.u-Flex-1</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//div[@id='root']/div/div/section/div/div/h1</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h1.PageTitle.u-Flex-1</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
