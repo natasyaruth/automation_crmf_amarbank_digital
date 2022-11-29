@@ -283,7 +283,7 @@
       <guid>8884e6c9-0fd1-434f-8234-941522bdf353</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationBucketlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_Archive/TC_KYCVerificationBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>043ab206-a00b-4ab1-a78c-41482bb00db1</id>
@@ -341,7 +341,7 @@
       <guid>c27c8bae-881c-44b5-9051-b5feadaf3fd0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>369da93f-d631-4ddf-ae45-a8bce177e1c4</id>
@@ -538,7 +538,7 @@
       <guid>9ead031f-b1a8-49d4-b2ba-0a77572be6b8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/TC_KYCVideoBucketlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoBucketlist</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>36030a13-1da4-47bf-a5b0-602572cc4368</id>
@@ -608,7 +608,7 @@
       <guid>5e5034f5-08f0-41f6-998e-f94c3f39d966</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/TC_KYCVideoRegistration</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoRegistration</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>6df5011c-e4ad-47b9-a84e-7f7449aa0a31</id>
