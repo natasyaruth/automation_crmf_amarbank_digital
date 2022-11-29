@@ -237,7 +237,7 @@
       <guid>d31c81ca-f1c2-43d2-a183-1a476e44dc41</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationRegistNoKYCVideo</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>6e85693e-8785-411a-8266-76e4621b5e12</id>

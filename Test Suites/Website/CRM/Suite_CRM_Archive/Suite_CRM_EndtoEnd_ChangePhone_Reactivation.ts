@@ -237,7 +237,7 @@
       <guid>69237044-c366-418f-9591-22d051d23109</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/TC_KYCVideoChangePhone</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoChangePhone</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>0ff49fab-4610-46c8-84f4-c3b4dae700c5</id>
@@ -290,7 +290,7 @@
       <guid>6a36bf53-e168-4a9d-8642-50790f2d68aa</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/TC_KYCVideoReactivasi</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_Archive/TC_KYCVideoReactivasi</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>5ce93f23-3fc2-494b-bb58-0f25e7f9a0b8</id>
@@ -343,7 +343,7 @@
       <guid>75d1143e-9576-489c-8c60-199453b16a4f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationChangePhone</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationChangePhone</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>0f2c8b83-25b5-4224-8522-39c25a89b32e</id>
@@ -378,7 +378,7 @@
       <guid>5349a0a8-0bdb-4f2d-9023-bab99efeb32f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationReactive</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_DetailCustomerPage/TC_KYCVerificationReactive</testCaseId>
       <testDataLink>
          <combinationType>ONE</combinationType>
          <id>c553f9ac-a99a-4ef9-9a6a-1b8207a3f50b</id>
