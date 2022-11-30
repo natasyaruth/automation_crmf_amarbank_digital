@@ -34,7 +34,7 @@ import com.tunaiku.keyword.RandomDate as RandomDate
 KeywordUtil keylogger = new KeywordUtil()
 /*Setup faker email*/
 Faker faker = new Faker()
-String userEmail = faker.name().firstName() +'@gmail.com'
+String fullName = faker.name().fullName()
 /* We want handling block condition*/
 if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
@@ -81,12 +81,12 @@ while (loopPageCsr == false) {
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 					listCols.get(6).findElement(By.tagName('button')).click()
-					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Email')
+					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
 					if (WebUI.verifyElementPresent(csrSecurityQuestion, 5,FailureHandling.OPTIONAL)) {
 						boolean loopSecQuestion = false
 						loopSecQuestion:
 						while (loopSecQuestion == false) {
-							WebUI.setText(fieldInputEmailSecQuest, userEmail)
+							WebUI.setText(fieldInputMotherSecQuest, fullName)
 							WebUI.click(btnSubmitSecQuest)
 							TestObject alertCantAccessCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah tidak bisa di akses')
 							if (WebUI.verifyElementPresent(alertCantAccessCust, 5,FailureHandling.OPTIONAL)) {

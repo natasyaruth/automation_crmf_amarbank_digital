@@ -73,7 +73,13 @@ WebUI.waitForElementVisible(firstRowNewCardElement, 5)
 KeywordUtil keyWordUtil = new KeywordUtil()
 for (int i = 0; i < 5; i++) {
 if (true) {
-	WebUI.verifyElementText(verifyTextNewCardElement, "Kartu Baru")
+	if (WebUI.verifyElementText(verifyTextNewCardElement, "Kartu Baru" , FailureHandling.OPTIONAL)) {
+		keyWordUtil.markPassed('We found the type of request card "Kartu Baru"')
+	} else {
+		WebUI.verifyElementText(verifyTextNewCardElement, "Permintaan Kartu Baru")
+		keyWordUtil.logInfo('first row is Permintaan Kartu Baru')
+	}
+	WebUI.takeScreenshot()
 	break;
 	/* We want capture it for the right process*/
 	WebUI.takeScreenshot()

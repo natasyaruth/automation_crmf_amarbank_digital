@@ -286,7 +286,7 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 				TestObject ConfirmationCheckDukcapil = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
 				if (WebUI.verifyElementPresent(ConfirmationCheckDukcapil, 5)) {
 					WebUI.click(btnConfirmCheckDukcapil)
-				} else {keylogger.markError('Element not present')}
+				} else {keylogger.logInfo('Dukcapil Already Process')}
 				if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
 					WebUI.scrollToElement(btnTerima1, 5)
 					WebUI.verifyElementClickable(btnTerima1)

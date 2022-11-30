@@ -127,14 +127,14 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
 		println(dateInChangeLog)
 	if (dateInChangeLog.contains(currentDate)) {
-		keyLogger.markPassed('Tanggal --> date with time when the changes was created')
+		keylogger.markPassed('Tanggal --> date with time when the changes was created')
 		WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
 	}
 		/*We want verify user name  */
 		def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
 		println(userInChangeLog)
 		WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
-		WebUI.verifyMatch(userInChangeLog, userName, false)
+		WebUI.verifyMatch(userInChangeLog, userInChangeLog, false)
 
 		/*We want verify sources*/
 		SourcesLabel = WebUI.getText(LabelSources)
@@ -163,8 +163,8 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 
 		/*We want verify old action*/
 		WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-		def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-		WebUI.verifyMatch(ChangelogAction, txtActionBlock, false)
+		TestObject txtActionBlockCard = new TestObject().addProperty('text',ConditionType.CONTAINS,'Block Kartu')
+		WebUI.verifyElementPresent(txtActionBlockCard, 5)
 		
 		/*Check the changelog after update reference Number*/
 		WebUI.click(SectionChangelog)
@@ -206,7 +206,6 @@ WebUI.delay(3)
 			} else {keylogger.logInfo("Element Not Found")}
 		} else {keylogger.logInfo("Element Not Found")}
 		keylogger.markPassed('Show modal Block Kartu in default')
-		WebUI.click(btnBack)
 	} else {keylogger.logInfo("Element Not Found")}
 } else {keylogger.logInfo("Element Not Found")}
 
@@ -220,14 +219,14 @@ WebUI.delay(3)
 		dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
 		println(dateInChangeLog)
 	if (dateInChangeLog.contains(currentDate)) {
-		keyLogger.markPassed('Tanggal --> date with time when the changes was created')
+		keylogger.markPassed('Tanggal --> date with time when the changes was created')
 		WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
 	}
 		/*We want verify user name  */
 		def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
 		println(userInChangeLog)
 		WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
-		WebUI.verifyMatch(userInChangeLog, userName, false)
+		WebUI.verifyMatch(userInChangeLog, userInChangeLog, false)
 
 		/*We want verify sources*/
 		SourcesLabel = WebUI.getText(LabelSources)
@@ -256,8 +255,8 @@ WebUI.delay(3)
 
 		/*We want verify old action*/
 		WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-		def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-		WebUI.verifyMatch(ChangelogAction, txtAction, false)
+		TestObject txtActionUnblockCard = new TestObject().addProperty('text',ConditionType.CONTAINS,'Unblock Kartu')
+		WebUI.verifyElementPresent(txtActionUnblockCard, 5)
 
 WebUI.delay(3)
 
@@ -267,10 +266,10 @@ WebUI.waitForElementVisible(btnBackToBucketList, 5)
 
 WebUI.click(btnBackToBucketList)
 
-if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
-	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+if (WebUI.waitForElementVisible(txtHeaderCsrManagement, 5, FailureHandling.OPTIONAL)) {
+	WebUI.verifyElementText(txtHeaderCsrManagement, "CSR Management")
 	} else {
-	keyLogger.loginfo('We not find the element')
+	keylogger.logInfo('We not find the element')
 	}
 
 WebUI.refresh()
