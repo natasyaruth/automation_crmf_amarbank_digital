@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description>https://bankamar.testrail.io/index.php?/tests/view/104413</description>
-   <name>TC_KYCVerification3StepsNewCustSenyumku</name>
+   <description></description>
+   <name>TC_KYCUpdateNewNumber</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>c0bd85f3-bb84-48f7-9e08-5a799d3691af</testCaseGuid>
+   <testCaseGuid>0f557122-dfc8-4844-a895-4d87cf946eb8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>81ea8a81-cbe2-40ae-ae74-5a4b8e54a23d</variableId>
+   </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
@@ -383,19 +389,62 @@
       <value></value>
       <variableId>f091c4d7-6078-460f-8621-3cb1b8309ef3</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d24b4efb-a36f-4f14-9ac3-c5e89fcea6b3</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cfa64686-f286-48e8-b99e-ff6f44acc7b8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b5c83ab8-176c-4654-b590-e40f14bc51cb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4f6e24d8-e8c5-490e-9366-e262b3ad0902</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b6d195e7-adfa-4ae2-81d6-733b50de92ce</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0516ca8e-5791-41f8-9bb8-5d7ff59c5acf</variableId>
+   </variableLinks>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>81ea8a81-cbe2-40ae-ae74-5a4b8e54a23d</id>
+      <masked>false</masked>
+      <name>csrReqId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
       <id>b7bc4f6a-0a58-4291-b997-8aae8cd915b0</id>
       <masked>false</masked>
-      <name>headerDashboardElement</name>
+      <name>linkMenuCsrManagement</name>
    </variable>
    <variable>
-      <defaultValue>'Dashboard'</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
       <description></description>
       <id>2f652bc7-cefb-4115-bcee-69315338ff5e</id>
       <masked>false</masked>
-      <name>headerDashboardText</name>
+      <name>btnAbort</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
@@ -783,7 +832,7 @@
       <name>btnTerima3</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackKycBucketList')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal')</defaultValue>
       <description></description>
       <id>d7450058-7a18-4f0f-9899-175dd2b86917</id>
       <masked>false</masked>
@@ -823,5 +872,47 @@
       <id>f091c4d7-6078-460f-8621-3cb1b8309ef3</id>
       <masked>false</masked>
       <name>btnConfirmCheckDukcapil</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtRequestId')</defaultValue>
+      <description></description>
+      <id>d24b4efb-a36f-4f14-9ac3-c5e89fcea6b3</id>
+      <masked>false</masked>
+      <name>txtRequestIdCsr</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber')</defaultValue>
+      <description></description>
+      <id>cfa64686-f286-48e8-b99e-ff6f44acc7b8</id>
+      <masked>false</masked>
+      <name>btnPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnEditPhonenumber')</defaultValue>
+      <description></description>
+      <id>b5c83ab8-176c-4654-b590-e40f14bc51cb</id>
+      <masked>false</masked>
+      <name>btnEditPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/TxtPhonenumber')</defaultValue>
+      <description></description>
+      <id>4f6e24d8-e8c5-490e-9366-e262b3ad0902</id>
+      <masked>false</masked>
+      <name>txtPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnSavePhonenumber')</defaultValue>
+      <description></description>
+      <id>b6d195e7-adfa-4ae2-81d6-733b50de92ce</id>
+      <masked>false</masked>
+      <name>btnSavePhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnBack')</defaultValue>
+      <description></description>
+      <id>0516ca8e-5791-41f8-9bb8-5d7ff59c5acf</id>
+      <masked>false</masked>
+      <name>btnBack</name>
    </variable>
 </TestCaseEntity>
