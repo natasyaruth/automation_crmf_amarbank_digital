@@ -5,6 +5,36 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>87fbe7ed-6079-4a4b-bfad-07d1c1718217</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5f5e2ac3-6177-4970-9639-0784e3c0b21d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4e766c57-b6b6-48eb-ab7d-4d653917bb9b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a9d705c5-1624-4418-bcac-cfb92c2d3e9f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>210b2787-955a-4533-947b-ed16b977af7d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>89f463be-d172-44f9-bcb5-810944c5539c</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Atur Jadwal'</defaultValue>
       <description></description>

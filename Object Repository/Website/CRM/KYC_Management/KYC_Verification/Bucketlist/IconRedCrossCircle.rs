@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCloseModal</name>
+   <name>IconRedCrossCircle</name>
    <tag></tag>
-   <elementGuidId>edcfe0c1-f558-4360-81f4-75fac1dc2bed</elementGuidId>
+   <elementGuidId>45ae524a-ffca-481a-b0f7-161aed8e5f77</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnClose']</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnClose</value>
-      <webElementGuid>1cb2d7cf-a55e-46c6-a8f7-2e7a9bbfd857</webElementGuid>
+      <value>//*[@class = 'svg-inline--fa fa-times-circle fa-w-16 fa-lg u-Color-danger u-MarginRight-small']</value>
+      <webElementGuid>dcc85a8d-4621-41c7-889d-59aaa6b9f796</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

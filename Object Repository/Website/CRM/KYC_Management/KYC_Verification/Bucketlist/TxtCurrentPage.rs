@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCloseModal</name>
+   <name>TxtCurrentPage</name>
    <tag></tag>
-   <elementGuidId>edcfe0c1-f558-4360-81f4-75fac1dc2bed</elementGuidId>
+   <elementGuidId>9c3365ef-1073-4a0f-b32c-538b094dc144</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnClose']</value>
+         <value>//*[@class = 'TablePagination-page TablePagination-current']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnClose</value>
-      <webElementGuid>1cb2d7cf-a55e-46c6-a8f7-2e7a9bbfd857</webElementGuid>
+      <value>TablePagination-page TablePagination-current</value>
+      <webElementGuid>198f8665-d938-46ed-87fa-2502400751b8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
