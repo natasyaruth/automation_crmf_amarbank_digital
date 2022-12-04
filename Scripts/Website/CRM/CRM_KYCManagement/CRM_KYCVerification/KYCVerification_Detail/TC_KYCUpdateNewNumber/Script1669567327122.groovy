@@ -60,7 +60,7 @@ if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 	WebUI.click(linkMenuCsrManagement)
 	if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
 		WebUI.click(btnAbort)
-	} else {keylogger.logInfo(message)}
+	} else {keylogger.logInfo("We not found the element")}
 } else {keylogger.markError("We not found the CSR Management")}
 
 TestObject csrManagementBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
@@ -74,32 +74,33 @@ WebElement tblCsr = driverCsr.findElement(By.xpath("//table/tbody"))
 List<WebElement> rawCsr = tblCsr.findElements(By.tagName("tr"))
 List<WebElement> colsCsr = rawCsr.get(0).findElements(By.tagName('td'))
 if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
-	colsCsr.get(7).findElement(By.xpath('button')).click()
-} else {keylogger.markError('We not found the ')}
+	colsCsr.get(6).findElement(By.xpath('button')).click()
+} else {keylogger.markError('We not found the element')}
 TestObject csrManagementDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
-	WebUI.scrollToElement(btnPhoneNumber, 5)
-	WebUI.click(btnPhoneNumber)
-	if (WebUI.waitForElementVisible(btnEditPhoneNumber, 5)) {
+		WebUI.click(linkDataPhoneNumber)
 		WebUI.click(btnEditPhoneNumber)
-	} else {keylogger.markError('Element not visible')}
-	WebUI.setText(txtPhoneNumber, GlobalVariable.phoneNumber)
-	WebUI.verifyElementClickable(btnSavePhoneNumber)
-	WebUI.click(btnSavePhoneNumber)
+	if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
+		WebUI.setText(txtPhoneNumber, GlobalVariable.phoneNumberWithAreaCode)
+		if (WebUI.waitForElementVisible(btnSavePhoneNumber, 5)) {
+			WebUI.verifyElementClickable(btnSavePhoneNumber)
+			WebUI.click(btnSavePhoneNumber)
+		} else {keylogger.markError("Element not visible")}
+	} else {keylogger.markError("Element not present")}
 	TestObject successSaveNumber = new TestObject().addProperty('text',ConditionType.CONTAINS,'No. Handphone berhasil disimpan')
 	if (WebUI.verifyElementPresent(successSaveNumber, 5)) {
 		WebUI.scrollToElement(btnBack, 5)
-		csrReqId = WebUI.getText(csrReqId)
+		csrReqId = WebUI.getText(csrReqIdDetail)
 		WebUI.click(btnBack)
 	} else {keylogger.markError('element not present')}
 } else {keylogger.markError('We not in detail request Id')}
 reqIdCsr = csrReqId
-if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
-	WebUI.click(menuKycManagement)
+if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
+	WebUI.click(menuKYCManagement)
 	if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
 		WebUI.click(menuKycVideo)
-		if (WebUI.verifyElementPresent(tabIdleCalls, 5)) {
-			WebUI.click(tabIdleCalls)
+		if (WebUI.verifyElementPresent(idleCallsTab, 5)) {
+			WebUI.click(idleCallsTab)
 		} else {keylogger.markError("We not found tab Idle Calls")}
 	} else {keylogger.markError("Menu KYC video not present")}
 } else {keylogger.markError("Menu KYC management not present")}
@@ -252,7 +253,7 @@ if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
 } else {keylogger.markError('element not present')}
 
 'We want to access the KYC Verif'
-WebUI.setText(txtReqIdKycVerif, reqIdUsedGlobal)
+WebUI.setText(txtReqIdKycVerif, reqIdCsr)
 WebUI.sendKeys(txtReqIdKycVerif, Keys.chord(Keys.ENTER))
 tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
@@ -261,25 +262,6 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 colsKycVerif.get(7).findElement(By.xpath('a')).click()
 TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
-WebUI.scrollToElement(btnLiveness, 5)
-WebUI.click(btnLiveness)
-if (WebUI.waitForElementPresent(alretText, 5)) {
-	WebUI.click(btnDoLiveness)
-	WebUI.delay(5)
-} else {keylogger.markError('alert not present to konfirmation')}
-WebUI.scrollToElement(btnFaceMatch, 5)
-WebUI.click(btnFaceMatch)
-WebUI.delay(5)
-if (WebUI.waitForElementPresent(alretText, 5)) {
-	WebUI.click(btnFmConfirmation)
-	WebUI.delay(5)
-} else {keylogger.markError('alert not present to konfirmation')}
-		WebUI.click(btnCheckDukcapil)
-		WebUI.delay(5)
-		TestObject ConfirmationCheckDukcapil = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
-		if (WebUI.verifyElementPresent(ConfirmationCheckDukcapil, 5)) {
-			WebUI.click(btnConfirmCheckDukcapil)
-		} else {keylogger.markError('Element not present')}
 		if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
 			WebUI.scrollToElement(btnTerima1, 5)
 			WebUI.verifyElementClickable(btnTerima1)
@@ -294,7 +276,7 @@ if (WebUI.waitForElementPresent(alretText, 5)) {
 					WebUI.click(btnTerima3)
 				} else {keylogger.logInfo("element not present")}
 			} else {keylogger.logInfo("element not present")}
-			WebUI.delay(10)
+			WebUI.delay(5)
 			TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
 			if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
 				WebUI.click(btnBackToKycManagement)
@@ -303,18 +285,6 @@ if (WebUI.waitForElementPresent(alretText, 5)) {
 				WebUI.setText(txtReqIdKycVerif, reqIdUsedGlobal)
 			} else {keylogger.logInfo("Element not present")}
 		} else {
-//			TestObject nikNotFound = new TestObject().addProperty('text',ConditionType.CONTAINS,'NIK tidak ditemukan')
-//			WebUI.verifyElementPresent(nikNotFound, 5)
-//			WebUI.click(btnEditDataKtp)
-//			DBData listIdUsers = findTestData("Data Files/Website/Dataset_KTP/Dataset_KTP")
-//			int rowCount = listIdUsers.getRowNumbers()
-//			rowNum= (rand.nextInt(rowCount - 1) + 1)
-//			String KtpNumberRandomize = listIdUsers.getValue(2, rowNum)
-//			if (WebUI.waitForElementPresent(txtNikField, 5)) {
-//				WebUI.setText(txtNikField, KtpNumberRandomize)
-//			} else {keylogger.logInfo("element not present")}
-//			WebUI.click(btnSaveKtpData)
-//			WebUI.verifyElementClickable(btnCheckDataDukcapil)
 			keylogger.markError("Element not present")
 		}
 } else {keylogger.markError('Element not present')}

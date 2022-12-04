@@ -9,12 +9,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>81ea8a81-cbe2-40ae-ae74-5a4b8e54a23d</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>b7bc4f6a-0a58-4291-b997-8aae8cd915b0</variableId>
    </variableLinks>
    <variableLinks>
@@ -425,13 +419,36 @@
       <value></value>
       <variableId>0516ca8e-5791-41f8-9bb8-5d7ff59c5acf</variableId>
    </variableLinks>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>81ea8a81-cbe2-40ae-ae74-5a4b8e54a23d</id>
-      <masked>false</masked>
-      <name>csrReqId</name>
-   </variable>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2b0ad91f-4071-418c-a636-2100e1b0df36</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dee934f4-0df8-42cc-83df-6b80d08e30ea</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5b3172d2-1475-444b-88d4-d9fc595c7246</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>38394d27-408c-4327-a09d-0468d7278ccd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>84c32bbd-a196-4427-b731-346ef4ae52b4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -458,7 +475,7 @@
       <description></description>
       <id>2f7bef5c-ea9c-4034-8d1f-282bac50cc30</id>
       <masked>false</masked>
-      <name>videoKYCRequest</name>
+      <name>menuKycVideo</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/KYCVideoBucketListLinkRequestSecondID')</defaultValue>
@@ -914,5 +931,40 @@
       <id>0516ca8e-5791-41f8-9bb8-5d7ff59c5acf</id>
       <masked>false</masked>
       <name>btnBack</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/AlertConfirmationText')</defaultValue>
+      <description></description>
+      <id>2b0ad91f-4071-418c-a636-2100e1b0df36</id>
+      <masked>false</masked>
+      <name>alertConfirmation</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataPhonenumber')</defaultValue>
+      <description></description>
+      <id>dee934f4-0df8-42cc-83df-6b80d08e30ea</id>
+      <masked>false</masked>
+      <name>linkDataPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/TxtReqIdCustDetail')</defaultValue>
+      <description></description>
+      <id>5b3172d2-1475-444b-88d4-d9fc595c7246</id>
+      <masked>false</masked>
+      <name>csrReqIdDetail</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>38394d27-408c-4327-a09d-0468d7278ccd</id>
+      <masked>false</masked>
+      <name>csrReqId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtSearchRequestID')</defaultValue>
+      <description></description>
+      <id>84c32bbd-a196-4427-b731-346ef4ae52b4</id>
+      <masked>false</masked>
+      <name>txtReqIdKycVideo</name>
    </variable>
 </TestCaseEntity>
