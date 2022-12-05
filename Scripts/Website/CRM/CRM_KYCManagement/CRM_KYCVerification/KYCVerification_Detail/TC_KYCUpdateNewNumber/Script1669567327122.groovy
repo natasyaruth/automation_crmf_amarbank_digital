@@ -65,6 +65,7 @@ if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 
 TestObject csrManagementBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
 if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
+	WebUI.delay(3)
 	WebUI.setText(txtRequestIdCsr, "10000041")
 	WebUI.sendKeys(txtRequestIdCsr, Keys.chord(Keys.ENTER))
 } else {keylogger.markError('We are not in CSR Management')}
@@ -89,6 +90,8 @@ if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
 	} else {keylogger.markError("Element not present")}
 	TestObject successSaveNumber = new TestObject().addProperty('text',ConditionType.CONTAINS,'No. Handphone berhasil disimpan')
 	if (WebUI.verifyElementPresent(successSaveNumber, 5)) {
+		WebUI.refresh()
+		WebUI.delay(5)
 		WebUI.scrollToElement(btnBack, 5)
 		csrReqId = WebUI.getText(csrReqIdDetail)
 		WebUI.click(btnBack)
@@ -101,6 +104,9 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 		WebUI.click(menuKycVideo)
 		if (WebUI.verifyElementPresent(idleCallsTab, 5)) {
 			WebUI.click(idleCallsTab)
+			if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
+				WebUI.click(btnAbort)
+			} else {keylogger.logInfo("We not found the element")}
 		} else {keylogger.markError("We not found tab Idle Calls")}
 	} else {keylogger.markError("Menu KYC video not present")}
 } else {keylogger.markError("Menu KYC management not present")}
@@ -159,9 +165,9 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 	WebUI.click(chkKtpNumber)
 	WebUI.click(chkBirtDate)
 	WebUI.click(chkMotherName)
-	WebUI.click(chkDeliveryAddress)
-	WebUI.click(chkShowKtp)
-	WebUI.click(chkShowFace)
+	WebUI.click(chkChangePhoneNumber)
+	WebUI.click(chkEmail)
+	WebUI.click(chkReasonChangePhoneNumber)
 	WebUI.click(chkCaptureFace)
 	WebUI.scrollToElement(btnSelfie, 5)
 	if (WebUI.verifyElementClickable(btnSelfie)) {
@@ -206,7 +212,7 @@ if (WebUI.verifyElementVisible(btnKycFinished)) {
 		WebUI.delay(5)
 		if (WebUI.verifyElementClickable(btnSentKycVideo)) {
 			WebUI.click(btnSentKycVideo)
-			WebUI.delay(5)
+			WebUI.delay(10)
 			TestObject successSendKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video berhasil dikirim')
 			if (WebUI.verifyElementPresent(successSendKyc, 5)) {
 				WebUI.takeScreenshot()
@@ -266,27 +272,28 @@ if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
 			WebUI.scrollToElement(btnTerima1, 5)
 			WebUI.verifyElementClickable(btnTerima1)
 			WebUI.click(btnTerima1)
-			if (WebUI.waitForElementPresent(btnTerima2, 5)) {
-				 WebUI.scrollToElement(btnTerima2, 5)
-				WebUI.verifyElementClickable(btnTerima2)
-				WebUI.click(btnTerima2)
-				if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-					WebUI.scrollToElement(btnTerima3, 5)
-					WebUI.verifyElementClickable(btnTerima3)
-					WebUI.click(btnTerima3)
-				} else {keylogger.logInfo("element not present")}
-			} else {keylogger.logInfo("element not present")}
 			WebUI.delay(5)
-			TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
-			if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
-				WebUI.click(btnBackToKycManagement)
-			} else {keylogger.logInfo('Element not present')}
-			if (WebUI.waitForElementPresent(txtReqIdKycVerif, 5)) {
-				WebUI.setText(txtReqIdKycVerif, reqIdUsedGlobal)
-			} else {keylogger.logInfo("Element not present")}
-		} else {
-			keylogger.markError("Element not present")
-		}
+		} else { keylogger.markError("Element not present")}
+		if (WebUI.waitForElementPresent(btnTerima2, 5)) {
+			WebUI.scrollToElement(btnTerima2, 5)
+		   WebUI.verifyElementClickable(btnTerima2)
+		   WebUI.click(btnTerima2)
+		   WebUI.delay(5)
+	   } else {keylogger.logInfo("element not present")}
+	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
+		   WebUI.scrollToElement(btnTerima3, 5)
+		   WebUI.verifyElementClickable(btnTerima3)
+		   WebUI.click(btnTerima3)
+		   WebUI.delay(5)
+	   } else {keylogger.logInfo("element not present")}
+	   WebUI.delay(5)
+	   TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
+	   if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
+		   WebUI.click(btnBackToKycManagement)
+	   } else {keylogger.logInfo('Element not present')}
+	   if (WebUI.waitForElementPresent(txtReqIdKycVerif, 5)) {
+		   WebUI.setText(txtReqIdKycVerif, reqIdCsr)
+	   } else {keylogger.logInfo("Element not present")}
 } else {keylogger.markError('Element not present')}
 } else {keylogger.logInfo('Text is not found')}
 
@@ -298,6 +305,7 @@ if (WebUI.verifyElementPresent(notifProcessCsrDetail, 5,FailureHandling.OPTIONAL
 } else {keylogger.logInfo("We continue the process")}
 TestObject csrManagementDetailCsrManagement = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
 if (WebUI.verifyElementPresent(csrManagementDetailCsrManagement, 5, FailureHandling.OPTIONAL)) {
+	WebUI.delay(3)
 	WebUI.setText(txtRequestId, "10000041")
 	WebUI.sendKeys(txtRequestId, Keys.chord(Keys.ENTER))
 } else {keylogger.markError('We are not in CSR Management')}
@@ -308,13 +316,13 @@ WebElement tblCsrCheck = driverCsrCheck.findElement(By.xpath("//table/tbody"))
 List<WebElement> rawCsrCheck = tblCsrCheck.findElements(By.tagName("tr"))
 List<WebElement> colsCsrCheck = rawCsrCheck.get(0).findElements(By.tagName('td'))
 if (colsCsrCheck.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
-	colsCsrCheck.get(7).findElement(By.xpath('button')).click()
+	colsCsrCheck.get(6).findElement(By.xpath('button')).click()
 } else {keylogger.markError('We not found the ')}
 TestObject csrManagementDetailCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 if (WebUI.verifyElementPresent(csrManagementDetailCheck, 5)) {
-	WebUI.scrollToElement(btnPhoneNumber, 5)
-	WebUI.click(btnPhoneNumber)
+	WebUI.click(linkDataPhoneNumber)
+	WebUI.click(btnEditPhoneNumber)
 	String phoneNumberChanges = WebUI.getAttribute(txtPhoneNumber, "value")
-	WebUI.verifyEqual(phoneNumberChanges, GlobalVariable.phoneNumber)
+	WebUI.verifyEqual(phoneNumberChanges, GlobalVariable.phoneNumberWithAreaCode)
 	WebUI.click(btnBack)
 } else {keylogger.markError('We not in detail request Id')}
