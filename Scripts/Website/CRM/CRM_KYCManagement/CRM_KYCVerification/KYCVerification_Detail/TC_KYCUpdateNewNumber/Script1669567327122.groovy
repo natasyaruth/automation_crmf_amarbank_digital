@@ -306,7 +306,7 @@ if (WebUI.verifyElementPresent(notifProcessCsrDetail, 5,FailureHandling.OPTIONAL
 TestObject csrManagementDetailCsrManagement = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
 if (WebUI.verifyElementPresent(csrManagementDetailCsrManagement, 5, FailureHandling.OPTIONAL)) {
 	WebUI.delay(3)
-	WebUI.setText(txtRequestId, "10000041")
+	WebUI.setText(txtRequestId, reqIdCsr)
 	WebUI.sendKeys(txtRequestId, Keys.chord(Keys.ENTER))
 } else {keylogger.markError('We are not in CSR Management')}
 
