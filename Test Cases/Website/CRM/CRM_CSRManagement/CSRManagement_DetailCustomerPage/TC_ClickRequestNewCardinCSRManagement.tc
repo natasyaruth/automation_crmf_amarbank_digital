@@ -176,7 +176,7 @@
       <name>drpDwnListFltrCrdSts</name>
    </variable>
    <variable>
-      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
+      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku']</defaultValue>
       <description></description>
       <id>99eca4bc-454f-499f-915f-40dd2af804cd</id>
       <masked>false</masked>

@@ -6,12 +6,11 @@
    <elementGuidId>19040b13-fdd5-40ba-af21-ffd27fca3884</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='qa.testing@amarbank.co.id'])[2]/preceding::td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[4]/following::td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>6aee324a-a308-4d9c-a603-68907f07c9b8</webElementGuid>
+      <webElementGuid>377a32cd-5fa8-4eb5-b9b9-880099872861</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>04a2d5f7-59b8-48e8-980f-fc1e063d4eac</webElementGuid>
+      <webElementGuid>7106f1e2-404f-4a23-b892-aa87ab0eefbd</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>-</value>
-      <webElementGuid>d9fb3b19-14e9-490d-8000-0143c1ea911d</webElementGuid>
+      <webElementGuid>54a894a5-772c-4757-be97-b3701221b5f1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>0976712c-6e0a-4188-aed4-1c4f295b1626</webElementGuid>
+      <webElementGuid>2c909632-c01c-442c-ba0a-c8012c11280d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[6]</value>
-      <webElementGuid>f7b05f7c-8fa6-406f-aba8-20f04ab38608</webElementGuid>
+      <webElementGuid>e989e850-68f6-4e5c-8e1f-603a4d515640</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[6]/following::td[1]</value>
-      <webElementGuid>d32da512-a854-4df2-be6f-588f68c01634</webElementGuid>
+      <webElementGuid>78e24166-4b21-416d-832b-e48533425092</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[5]/following::td[2]</value>
-      <webElementGuid>413452f6-3ed1-49dd-818f-8b369c178e8c</webElementGuid>
+      <webElementGuid>f0791ee2-f55d-4e25-b584-5b8f17abeaee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Viewed'])[2]/preceding::td[1]</value>
-      <webElementGuid>d760a819-952d-4d82-abb1-e4913fae20c1</webElementGuid>
+      <webElementGuid>7bd83de9-0a9b-41a7-9f34-5ff6431528ef</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='qa.testing@amarbank.co.id'])[2]/preceding::td[3]</value>
-      <webElementGuid>be60b679-dca9-49d8-9c72-7a0998d983d9</webElementGuid>
+      <webElementGuid>ed4b291f-d736-406d-8a7a-3e9a3f9cd5c7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[6]</value>
-      <webElementGuid>64f9e1b8-7921-4d6a-8978-165828b1998f</webElementGuid>
+      <webElementGuid>93a134af-9fa1-4d80-9ed9-3fa612346e4d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = '-' or . = '-')]</value>
-      <webElementGuid>16e79a41-7bac-44d8-bfe8-242d3250d39e</webElementGuid>
+      <webElementGuid>2bd0b9d1-5c33-4b17-89c7-6d8517bc355a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
