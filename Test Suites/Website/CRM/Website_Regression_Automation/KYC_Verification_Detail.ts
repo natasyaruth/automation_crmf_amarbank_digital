@@ -15,7 +15,7 @@
             <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_KYCVerification_Detail/Suite_KYCVerification_Bucket_list_T1349989</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_KYCVerification_Detail/Suite_CRM_KYCVerif_T1349989</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>

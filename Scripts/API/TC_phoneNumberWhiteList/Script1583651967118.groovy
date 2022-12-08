@@ -9,7 +9,7 @@ import groovy.json.JsonSlurper
 import internal.GlobalVariable as GlobalVariable
 import com.tunaiku.keyword.RandomData as RandomData
 
-contact_address = RandomData.randomDoubleFunc(12)
+contact_address = RandomData.randomDoubleFunc(10)
 
 //body
 
@@ -35,4 +35,5 @@ println (status_code)
 def respDataMap = new JsonSlurper().parseText(body_content)
 
 GlobalVariable.phoneNumber = "08"+contact_address
+GlobalVariable.phoneNumberWithAreaCode = "+628"+contact_address
 GlobalVariable.deleteApplicant = "+628"+contact_address

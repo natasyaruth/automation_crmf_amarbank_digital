@@ -57,7 +57,7 @@ while (flagLoop == false) {
 			} else {keylogger.logInfo('element not visible')}
 		} else {keylogger.markError('Menu cannot click able')}
 		println(' Total of Data : ' +rowsBucketList.size()+ ' and existing row is : ' +i)
-		List<WebElement> colsBucketList = rowsBucketList.get(9).findElements(By.xpath('td'))
+		List<WebElement> colsBucketList = rowsBucketList.get(4).findElements(By.xpath('td'))
 		if (i != (rowsBucketList.size() - 1)) {
 			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				String custName = colsBucketList.get(1).getText()

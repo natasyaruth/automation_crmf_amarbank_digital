@@ -6,6 +6,7 @@
    <elementGuidId>83a69e41-fefd-44fe-a238-8da8a17ae0e9</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent>{
@@ -19,8 +20,10 @@
       <matchCondition>equals</matchCondition>
       <name>Authorization</name>
       <type>Main</type>
-      <value>Basic dHVuYWlrdW1vYmlsZTpUdW5haWt1MjAxOQ==</value>
+      <value>Basic dHVuYWlrdW1vYmlsZToxOTNJN1Y1RVFU</value>
+      <webElementGuid>b444baf1-443f-4eb3-a68a-f92c149f4480</webElementGuid>
    </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
    <restUrl>${hostnameWhiteList}notification/whitelist</restUrl>
@@ -28,7 +31,10 @@
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.hostnameWhiteList</defaultValue>
       <description></description>

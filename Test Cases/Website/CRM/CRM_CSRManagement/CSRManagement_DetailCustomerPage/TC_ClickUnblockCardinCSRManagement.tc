@@ -317,7 +317,7 @@
       <name>drpCustType</name>
    </variable>
    <variable>
-      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
+      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku']</defaultValue>
       <description></description>
       <id>fc42a414-7745-408d-8f95-b1628b01a74c</id>
       <masked>false</masked>
@@ -352,7 +352,7 @@
       <name>listDrpCardStatus</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/1249?type=2'</defaultValue>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/1495?type=2'</defaultValue>
       <description></description>
       <id>eee12cc1-b85f-4b1b-85b3-3d43c9edb90a</id>
       <masked>false</masked>
@@ -527,7 +527,7 @@
       <name>newData</name>
    </variable>
    <variable>
-      <defaultValue>'Unblock kartu'</defaultValue>
+      <defaultValue>'Unblock Kartu'</defaultValue>
       <description></description>
       <id>92ddc260-99f1-4c93-9e0d-3c9de33c57a1</id>
       <masked>false</masked>

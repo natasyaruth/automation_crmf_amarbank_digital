@@ -76,10 +76,10 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 
 /* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
-    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
+    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCustType)
 
     if (filterChooseCard == true) {
-        WebUI.selectOptionByLabel(drpDwnCardStatus, 'Nasabah Senyumku', false)
+        WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 
         if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
             WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
@@ -107,8 +107,7 @@ for (int i = 0; i < customerType.size(); i++) {
             String index = rand.nextInt(optionListLength + 1)
 
             if (WebUI.waitForElementVisible(DrpFilterActions, 5, FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(DrpFilterSource, 'KYC Video Request')
-						WebUI.verifyElementText(DrpFilterSource, 'KYC Video Request')
+						WebUI.selectOptionByLabel(DrpFilterSource, 'KYC Video Request',false)
 					} else {keyLogger.logInfo("We Not find the filter 'KYC Video Request'")}
 
 
@@ -133,7 +132,6 @@ for (int i = 0; i < customerType.size(); i++) {
 				/*We want verify action*/
 				WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
 				WebUI.verifyElementVisible(txtFirstRowChangelogActions,FailureHandling.OPTIONAL)
-				WebUI.verifyTextPresent(txtFirstRowChangelogActions, 5)
 
 				WebUI.delay(5)
 
@@ -146,7 +144,7 @@ for (int i = 0; i < customerType.size(); i++) {
 				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					} else {
-					keyLogger.loginfo('We not find the element')
+					keyLogger.logInfo('We not find the element')
 					}
     
 				WebUI.refresh()
