@@ -224,7 +224,7 @@ List<WebElement> colsCsr
 				WebUI.delay(5)
 				WebUI.click(btnCallSenyumku)
 				TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-				if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+				if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 					WebUI.switchToWindowIndex(0)
 					TestObject backToCsrDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 					WebUI.verifyElementPresent(backToCsrDetail, 5)
