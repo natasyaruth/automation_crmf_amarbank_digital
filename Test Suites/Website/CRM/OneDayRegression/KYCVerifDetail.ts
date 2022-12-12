@@ -92,7 +92,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Chrome</runConfigurationId>
+            <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_KYCVerification_Detail/Suite_CRM_KYCVerif_T1350163</testSuiteEntity>
