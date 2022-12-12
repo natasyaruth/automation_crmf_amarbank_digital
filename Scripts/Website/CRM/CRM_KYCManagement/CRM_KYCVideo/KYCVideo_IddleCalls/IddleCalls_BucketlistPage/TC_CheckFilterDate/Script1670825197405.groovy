@@ -88,10 +88,10 @@ List<WebElement> listRows = driver.findElements(By.tagName('tr'))
 List<WebElement> listColumn
 
 
-/* This looping is represent to check data in bucketlist showed based on the choosen date and email type*/
+/* This looping is represent to check data in bucketlist showed based on the choosen date and cust type*/
 while(flagLoop = false) {
 	
-	/* Looping through number of rows of bucketlist KYC Verification*/
+	/* Looping through number of rows of bucketlist KYC Video*/
 	for(int i=0;i<listRows.size();i++){
 		
 		/* Get all column and storing to variable 'listColumn' at row with index i*/
@@ -99,6 +99,9 @@ while(flagLoop = false) {
 		
 		/* Get text and storing to variable 'actDate' at column with index 5*/
 		String actDate = listColumn.get(6).getText().substring(2)
+		
+		/* Get text and storing to variable 'actCustType' at column with index 6*/
+		String actCustType = listColumn.get(5).getText()
 
 		/* Compare actual date with expected date */
 		if(actDate != startMonth || actDate != endMonth) {
@@ -121,7 +124,7 @@ while(flagLoop = false) {
 		def expectedLastPage = WebUI.getText(txtLastPage)
 
 		/* This conditional represent if it's on the last page,
-		 * system will stop the looping by change the flag loop 'flagLoop' into true.
+		 * system will stop the looping by change the flag loop 'flagLoopPage' into true.
 		 * But if it still not in the last page, it will go to the next page */
 		if (expectedCurrentPage.equals(expectedLastPage)) {
 			
@@ -142,6 +145,7 @@ while(flagLoop = false) {
 /* Make sure there is no customer out of the range date */
 if(countFalseDate.equals(0)) {
 	
+	/* Mark case is passed */
 	keyLogger.markPassed("All data in bucketlist are in range from "+startMonth+" until "+endMonth+". Case SUCCESS")
 	
 /* If there is customer out of the range date will mark as failed */
