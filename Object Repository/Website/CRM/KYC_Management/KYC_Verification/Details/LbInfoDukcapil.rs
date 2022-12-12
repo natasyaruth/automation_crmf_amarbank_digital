@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>LbInfoDukcapil</name>
+   <tag></tag>
+   <elementGuidId>6336e4ba-344a-44f5-ab79-7e964c1af486</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='LbShowInformationDetailModal']/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#LbShowInformationDetailModal > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>8f0a9749-4b1c-46f0-9b14-da20eb878cff</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Informasi Detail</value>
+      <webElementGuid>a3e64797-0ff6-462d-8f0c-84f061c017ce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;LbShowInformationDetailModal&quot;)/span[1]</value>
+      <webElementGuid>cfeddb4f-5b99-4909-81b1-241da8d22261</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='LbShowInformationDetailModal']/span</value>
+      <webElementGuid>93f27042-08a2-4a37-afeb-7bc7ec0d108b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Data eKTP'])[1]/following::span[2]</value>
+      <webElementGuid>474021c9-67e2-4eea-9003-01750c16996c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NIK'])[1]/preceding::span[1]</value>
+      <webElementGuid>b7c29311-a7a9-474d-a4bb-98a6a180be3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Tempat Lahir'])[1]/preceding::span[1]</value>
+      <webElementGuid>c790760e-98bd-4a08-9099-bbe88306c0b8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Informasi Detail']/parent::*</value>
+      <webElementGuid>acf11415-0b78-4d11-b240-7e7850ed84c6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/span</value>
+      <webElementGuid>4692eaad-b50a-4284-b035-81acd6ba43eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Informasi Detail' or . = 'Informasi Detail')]</value>
+      <webElementGuid>51ca85db-fb68-4a6e-b9ab-fa79f29bbc7e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

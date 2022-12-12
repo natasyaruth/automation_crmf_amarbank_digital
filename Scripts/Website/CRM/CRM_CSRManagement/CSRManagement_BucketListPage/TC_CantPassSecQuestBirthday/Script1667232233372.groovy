@@ -32,7 +32,7 @@ import com.tunaiku.keyword.RandomDate as RandomDate
 
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
-/*Setup faker email*/
+/*Setup faker birthdate*/
 def randDate = RandomDate.getDateStringForDateBefore()
 /* We want handling block condition*/
 if (WebUI.waitForElementVisible(menuCsrManagement,5)) {

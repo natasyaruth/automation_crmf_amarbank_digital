@@ -59,11 +59,11 @@ TestObject txtDashboard = new TestObject().addProperty('text',ConditionType.CONT
 if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 	keylogger.markPassed('We are in back office')
 	if (WebUI.verifyOptionsPresent(drpDwnStatus, listDrpDwnStatus)) {
-		WebUI.setText(fieldSearch, 'On Process')
+		WebUI.setText(fieldSearch, 'Open')
 		tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))
 		rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
 		List<WebElement> colsBackOffice = rowsBackOffice.get(0).findElements(By.tagName('td'))
-		if (colsBackOffice.get(12).getText().equalsIgnoreCase("On Process")) {
+		if (colsBackOffice.get(12).getText().equalsIgnoreCase("Open")) {
 			seqNumb = colsBackOffice.get(1).getText()
 			println(seqNumb)
 			colsBackOffice.get(0).findElement(By.xpath('input')).click()
