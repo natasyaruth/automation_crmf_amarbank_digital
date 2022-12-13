@@ -17,14 +17,8 @@
       <value></value>
       <variableId>91dc2b1a-941d-4528-9e9a-686b8ccd402b</variableId>
    </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>4cbd2a0b-a2e7-41d1-8a37-fc154a01265a</variableId>
-   </variableLinks>
    <variable>
-      <defaultValue>['--enable-automation', '--no-sandbox', '--disable-infobars', '--disable-extensions', '--enable-async-dns', '--managed-user-id', '--sync-url']</defaultValue>
+      <defaultValue>['--enable-automation = true', '--no-sandbox', '--disable-infobars', '--disable-extensions', '--enable-async-dns', '--managed-user-id', '--sync-url = true', '--use-fake-device-for-media-stream']</defaultValue>
       <description></description>
       <id>56816ae0-de95-4d26-b12c-87f914ebfa19</id>
       <masked>false</masked>

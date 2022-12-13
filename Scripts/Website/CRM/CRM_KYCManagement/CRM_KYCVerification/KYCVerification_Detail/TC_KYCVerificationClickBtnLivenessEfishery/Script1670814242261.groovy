@@ -268,7 +268,7 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 		if (WebUI.waitForElementPresent(alretText, 5)) {
 			WebUI.click(btnDoLiveness)
 			WebUI.delay(5)
-			WebUI.click(btnBack)
+			WebUI.click(btnBackToBucketList)
 		} else {keylogger.markError('alert not present to konfirmation')}
 	} else {keylogger.markError('Element not present')}
 } else {keylogger.logInfo('Text is not found')}
