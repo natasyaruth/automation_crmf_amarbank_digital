@@ -96,7 +96,7 @@
       <name>btnCancelPopUpElement</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/KYCVideoBucketListKYCVideoRequestText')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/TxtTitleKYCVideo')</defaultValue>
       <description></description>
       <id>ee13487d-3e2c-4108-b25e-844ec71f4d33</id>
       <masked>false</masked>
