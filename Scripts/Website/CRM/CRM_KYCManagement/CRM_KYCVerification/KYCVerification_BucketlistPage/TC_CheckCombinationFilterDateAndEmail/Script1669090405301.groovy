@@ -166,7 +166,7 @@ for(int j=0;j<listOptionEmail.size();j++) {
 			if(countEmailFalse.equals(0)) {
 				
 				/* Mark case is passed */
-				keyLogger.markPassed("All data in bucketlist are range from "+startDate+" until "+endDate+" with email is "+listContentEmail.get(j)+". Case SUCCESS")
+				keyLogger.markPassed("All data in bucketlist are in range from "+startDate+" until "+endDate+" with email is "+listContentEmail.get(j)+". Case SUCCESS")
 				
 			/* If there is email type other than verified will mark as failed */
 			} else {
@@ -175,7 +175,7 @@ for(int j=0;j<listOptionEmail.size();j++) {
 			
 		/* If there is customer out of the range date will mark as failed */
 		} else {
-			keyLogger.markPassed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
+			keyLogger.markFailed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
 		}
 	}
 }

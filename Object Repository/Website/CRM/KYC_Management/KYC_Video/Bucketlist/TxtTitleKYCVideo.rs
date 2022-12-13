@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/section/div/div/h1</value>
+         <value>//h1</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>h1</value>
-      <webElementGuid>8620cd8f-46ef-4d81-b625-d6495c9fbde1</webElementGuid>
+      <webElementGuid>3083f7bf-0a4f-42e6-88e6-b468d2016ac1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>PageTitle u-Flex-1</value>
-      <webElementGuid>61e7a5e8-0cf3-4b3c-b9fd-71f718be765f</webElementGuid>
+      <webElementGuid>176eac74-447e-490e-b3d2-8b73d3aebfa7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>KYC Video Request</value>
-      <webElementGuid>aeab2dbb-c093-4c3e-834c-a707f3990f2f</webElementGuid>
+      <webElementGuid>94791a9d-279b-47cc-8cb8-c0dd3cefc22f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;u-Flex u-AlignItems-center u-MarginBottom&quot;]/h1[@class=&quot;PageTitle u-Flex-1&quot;]</value>
-      <webElementGuid>8ce26267-4574-4cde-8ef6-e507443bfebf</webElementGuid>
+      <webElementGuid>3e257091-6337-4976-81c7-9877845a4c2e</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/section/div/div/h1</value>
-      <webElementGuid>e54d6439-41ca-4863-b756-dca1c1495cd9</webElementGuid>
+      <webElementGuid>18ad1e0d-3740-49aa-8087-c4d96a9bfbda</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Logout'])[1]/following::h1[1]</value>
-      <webElementGuid>1f30c955-cc9e-486f-9b12-4a8ea996ef7b</webElementGuid>
+      <webElementGuid>56a4a9d5-5a91-4bfa-b2f2-5196fc7e3e85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Leads Management'])[1]/following::h1[1]</value>
-      <webElementGuid>ed3f2e4b-2a3d-495a-947f-3d2abb887af0</webElementGuid>
+      <webElementGuid>734d30a8-c1e5-4145-90e3-d6fa24480ebd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Kembali'])[1]/preceding::h1[1]</value>
-      <webElementGuid>2c72da8d-632f-459a-a3e3-ee980384764d</webElementGuid>
+      <webElementGuid>ba683fa3-02ba-4710-b25c-2da3a623c575</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Management'])[2]/preceding::h1[1]</value>
-      <webElementGuid>6c97a4ea-365e-4792-88c7-216de3274d32</webElementGuid>
+      <webElementGuid>454c796f-4ac2-436f-be01-5d6e22a618aa</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h1</value>
-      <webElementGuid>25546695-7cd6-4b26-8ec9-b0e59c42c212</webElementGuid>
+      <webElementGuid>07b89250-967f-4acb-af19-a816c64a3587</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +102,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h1[(text() = 'KYC Video Request' or . = 'KYC Video Request')]</value>
-      <webElementGuid>5b369287-abc4-43a2-bbc1-6f3864ce1ffa</webElementGuid>
+      <webElementGuid>2bdb3101-ff42-4ba8-a548-9038e04e0a8c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
