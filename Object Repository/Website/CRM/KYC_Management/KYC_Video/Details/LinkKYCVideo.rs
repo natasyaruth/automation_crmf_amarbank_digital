@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnBackToBucketList</name>
+   <name>LinkKYCVideo</name>
    <tag></tag>
-   <elementGuidId>1ea90cb6-57b9-47ed-bf85-5b9dc6752889</elementGuidId>
+   <elementGuidId>99f4e83d-405d-4dac-978f-422c1f45aa64</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnBack']</value>
+         <value>//*[@class = 'Breadcrumb-link']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>BtnBack</value>
-      <webElementGuid>d4bac83a-e580-4144-9f27-996f29a3af0b</webElementGuid>
+      <value>Breadcrumb-link</value>
+      <webElementGuid>2d3f117b-a8c2-4237-8453-20c65c615135</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
