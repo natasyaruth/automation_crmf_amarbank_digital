@@ -93,13 +93,15 @@ if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
 	} else {keylogger.markError('element not present')}
 } else {keylogger.markError('We not in detail request Id')}
 reqIdCsr = csrReqId
-if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
+WebUI.delay(5)
+WebUI.waitForPageLoad(10)
+if (WebUI.waitForElementVisible(menuKYCManagement, 5)) {
 	WebUI.click(menuKYCManagement)
-	if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
+	if (WebUI.waitForElementVisible(menuKycVideo, 5)) {
 		WebUI.click(menuKycVideo)
-		if (WebUI.verifyElementPresent(idleCallsTab, 5)) {
+		if (WebUI.waitForElementVisible(idleCallsTab, 5)) {
 			WebUI.click(idleCallsTab)
-			if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
+			if (WebUI.waitForElementVisible(alertConfirmation, 5)) {
 				WebUI.click(btnAbort)
 			} else {keylogger.logInfo("We not found the element")}
 		} else {keylogger.markError("We not found tab Idle Calls")}
@@ -133,8 +135,9 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
 			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+			if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 				WebUI.switchToWindowIndex(0)
+				WebUI.delay(5)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(backToKycVideo, 5)
 				WebUI.click(linkDashboard)
@@ -231,9 +234,9 @@ List<WebElement> rowsKycVerif
 List<WebElement> colsKycVerif
 
 'We want do the 3 Steps button "terima"'
-if (WebUI.verifyElementClickable(menuKYCManagement)) {
+if (WebUI.verifyElementClickable(menuKYCManagement, FailureHandling.OPTIONAL)) {
 WebUI.click(menuKYCManagement)
-if (WebUI.verifyElementClickable(menuKycVerification)) {
+if (WebUI.verifyElementClickable(menuKycVerification, FailureHandling.OPTIONAL)) {
 WebUI.click(menuKycVerification)
 } else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
