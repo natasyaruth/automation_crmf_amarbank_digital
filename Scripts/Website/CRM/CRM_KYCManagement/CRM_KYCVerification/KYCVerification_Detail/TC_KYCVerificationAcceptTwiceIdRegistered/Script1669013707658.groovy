@@ -39,7 +39,7 @@ String birthPlace = faker.address().city()
 String birthDate = faker.date().birthday()
 def randDate = RandomDate.getDateStringForDateBefore()
 
-
+'This TC must be disable the config cek dukcapil must be same the process'
 /* Precondition 
  * 	Customer Register using the same KTP as much as 2 times until KYC Verification
 	Agent has process the first data until success registered
