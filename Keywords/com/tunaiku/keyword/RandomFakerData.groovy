@@ -24,42 +24,42 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable
 
 public class RandomFakerData {
-	
+
 	public static String fakerFullName
 	public static String fakerEmail
 	public static String fakerFirstName
 	public static String fakerLastName
 	public static String fakerPhoneNumber
-	
+
 	Faker faker = new Faker()
-	
+
 	@Keyword
 	def set_faker_full_name(String fullName) {
-		this.set_faker_full_name(faker.name().fullName())
+		this.fakerFullName=fullName(faker.name().fullName())
 		return fakerFullName
 	}
-	
+
 	@Keyword
 	def set_faker_email(String email) {
-		this.set_faker_email(faker.name().fullName() +"@gmail.com")
+		this.fakerEmail=email(faker.name().fullName() +"@gmail.com")
 		return fakerEmail
 	}
-	
+
 	@Keyword
 	def set_faker_first_name(String firstName) {
-		this.set_faker_first_name(faker.name().firstName())
+		this.fakerFirstName=firstName(faker.name().firstName())
 		return fakerFirstName
 	}
-	
+
 	@Keyword
 	def set_faker_last_name(String lastName) {
-		this.set_faker_last_name(faker.name().lastName())
+		this.fakerLastName=lastName(faker.name().lastName())
 		return fakerLastName
 	}
-	
+
 	@Keyword
 	def set_faker_phone_number(String phoneNumber) {
-		this.set_faker_phone_number("0812" +RandomStringUtils.randomNumeric(8))
+		this.fakerPhoneNumber=phoneNumber("0812" +RandomStringUtils.randomNumeric(8))
 		return fakerPhoneNumber
 	}
 }

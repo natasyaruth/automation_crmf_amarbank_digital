@@ -14,10 +14,15 @@ import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 
 'init function'
 KeywordUtil keylogger = new KeywordUtil()
@@ -58,3 +63,52 @@ if (WebUI.waitForElementVisible(menuKycManagement, 5)) {
 	} else {keylogger.markError("Menu KYC video request not visible")}
 } else {keylogger.markError("Menu KYC Management not visible")}
 
+'We want to check Web element for table'
+WebDriver driverIdleCalls = DriverFactory.getWebDriver()
+WebElement tblIdleCalls
+List<WebElement> rowsIdleCalls
+List<WebElement> colsIdleCalls
+
+'We want to check condition is email not verify'
+checkLoop = false
+emailNotVerify:
+while (checkLoop == false) {
+	tblIdleCalls = driverIdleCalls.findElement(By.xpath('//table/tbody'))
+	rowsIdleCalls = tblIdleCalls.findElements(By.tagName("tr"))
+	for (int i ; i < rowsIdleCalls.size() ; i ++) {
+		if (rowsIdleCalls.size() != 9) {
+			WebUI.verifyOptionsPresent(drpDwnCustType, listDrpDwnCustType)
+			WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+			colsIdleCalls = rowsIdleCalls.get(i).findElements(By.tagName("td"))
+			if (colsIdleCalls.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
+				colsIdleCalls.get(3).getText().equalsIgnoreCase("Registrasi Baru")
+				colsIdleCalls.get(1).findElement(By.xpath('a')).click()
+				TestObject accessToDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+				WebUI.verifyElementPresent(accessToDetail, 5)
+				WebUI.scrollToElement(btnEditPersonalId, 5)
+				TestObject accessToDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+				if (WebUI.waitForElementClickable(btnEditPersonalId, 5)) {
+					WebUI.click(btnEditPersonalId)
+					WebUI.setText(txtEmailDetails, null)
+					
+				}
+			} else {keylogger.logInfo("Element Not Found")}
+		} else {
+			keylogger.logInfo("We have maximum row we want to check next page")
+			WebUI.click(btnNextPage)
+			tblIdleCalls = driverIdleCalls.findElement(By.xpath('//table/tbody'))
+			rowsIdleCalls = tblIdleCalls.findElements(By.tagName("tr"))
+			for (int j ; j < rowsIdleCalls.size() ; j ++) {
+				if (rowsIdleCalls.size() != 9) {
+					WebUI.verifyOptionsPresent(drpDwnCustType, listDrpDwnCustType)
+					WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+					colsIdleCalls = rowsIdleCalls.get(i).findElements(By.tagName("td"))
+					if (colsIdleCalls.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
+						colsIdleCalls.get(3).getText().equalsIgnoreCase("Registrasi Baru")
+						colsIdleCalls.get(1).findElement(By.xpath('a')).click()
+					} else {keylogger.markError("Element Not Found")}
+				} else {keylogger.markError("We must check again the data")} 
+			}
+		}
+	}
+}
