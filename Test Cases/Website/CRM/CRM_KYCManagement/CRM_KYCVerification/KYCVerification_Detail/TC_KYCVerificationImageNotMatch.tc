@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_ChangeEmail</name>
+   <name>TC_KYCVerificationImageNotMatch</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>bb6f4518-d560-49f8-af87-3e34140c46c1</testCaseGuid>
+   <testCaseGuid>b8465f91-6238-4976-8c83-a9062c39002b</testCaseGuid>
 </TestCaseEntity>

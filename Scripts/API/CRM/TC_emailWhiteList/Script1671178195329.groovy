@@ -17,6 +17,8 @@ import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.kms.katalon.entity.global.GlobalVariableEntity
+
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.tunaiku.keyword.RandomFakerData
@@ -26,7 +28,7 @@ import groovy.json.JsonSlurper
 KeywordUtil keylogger = new KeywordUtil()
 Faker faker = new Faker()
 
-String randomFirstName = RandomFakerData.fakerFirstName
+String randomFirstName = faker.name().firstName()
 println('randomFirstName : ' +randomFirstName)
 
 whiteList_email = WS.sendRequest(findTestObject('API/CRM/API_WhiteListEmail', [('RandomFirstName'): randomFirstName]))
@@ -51,7 +53,7 @@ println('Status Code: ' + statusCode)
 
 println('Waiting Time: ' + waitingTime)
 
-WebUI.verifyEqual(statusCode, '200')
-//if (WS.verifyEqual(statusCode, '200')) {
-//	
-//}
+if (WS.verifyEqual(statusCode, '200')) {
+	GlobalVariable.randomFirstNameWhitelist = "senyumku_" +randomFirstName+ "@maildrop.cc"
+	println(GlobalVariable.randomFirstNameWhitelist)
+} else {keylogger.markError('Status Code is not equal 200')}

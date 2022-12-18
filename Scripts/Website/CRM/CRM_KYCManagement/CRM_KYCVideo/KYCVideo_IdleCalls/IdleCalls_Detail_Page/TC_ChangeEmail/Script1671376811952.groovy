@@ -59,6 +59,9 @@ if (WebUI.waitForElementVisible(menuKycManagement, 5)) {
 		TestObject accessKycVideoRequest = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 		if (WebUI.waitForElementVisible(accessKycVideoRequest, 5)) {
 			WebUI.click(tabIdleCalls)
+			if (WebUI.waitForElementVisible(alertNotif, 5)) {
+				WebUI.click(btnAbort)
+			} else {keylogger.logInfo("We can continue the process")}
 		} else {keylogger.markError("We are not in KYC Video Request")}
 	} else {keylogger.markError("Menu KYC video request not visible")}
 } else {keylogger.markError("Menu KYC Management not visible")}
@@ -85,17 +88,31 @@ while (checkLoop == false) {
 				colsIdleCalls.get(1).findElement(By.xpath('a')).click()
 				TestObject accessToDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(accessToDetail, 5)
-				WebUI.scrollToElement(btnEditPersonalId, 5)
-				TestObject accessToDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
-				if (WebUI.waitForElementClickable(btnEditPersonalId, 5)) {
-					WebUI.click(btnEditPersonalId)
-					WebUI.setText(txtEmailDetails, null)
-					
+				WebUI.scrollToElement(btnEditEmail, 5)
+				TestObject openPii = new TestObject().addProperty('text',ConditionType.CONTAINS,'PII (Personally Identifying Information)')
+				if (WebUI.waitForElementClickable(openPii, 5)) {
+					WebUI.click(btnEditEmail)
+					WebUI.setText(txtEmailDetails, GlobalVariable.randomFirstNameWhitelist)
+					if (WebUI.waitForElementVisible(btnSaveEmail, 5)) {
+						WebUI.click(btnSaveEmail)
+					} else {keylogger.markError('Element not visible')}
+					TestObject successToChangeEmail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Email berhasil disimpan')
+					WebUI.verifyElementPresent(successToChangeEmail, 5)
+					emailChange = WebUI.getAttribute(txtEmailDetails, 'value')
+					reqIdChangeEmail = WebUI.getText(reqIdKycVideoRequest)
+					WebUI.takeScreenshot()
+					WebUI.click(btnBackBucketList)
+					break emailNotVerify
+				} else {
+					keylogger.logInfo('We must check another request Id')
+					WebUI.click(btnBackBucketList)
+					tblIdleCalls = driverIdleCalls.findElement(By.xpath('//table/tbody'))
+					rowsIdleCalls = tblIdleCalls.findElements(By.tagName("tr"))
 				}
 			} else {keylogger.logInfo("Element Not Found")}
 		} else {
 			keylogger.logInfo("We have maximum row we want to check next page")
-			WebUI.click(btnNextPage)
+			WebUI.click(btnNextPageKycVideoRequest)
 			tblIdleCalls = driverIdleCalls.findElement(By.xpath('//table/tbody'))
 			rowsIdleCalls = tblIdleCalls.findElements(By.tagName("tr"))
 			for (int j ; j < rowsIdleCalls.size() ; j ++) {
@@ -111,4 +128,38 @@ while (checkLoop == false) {
 			}
 		}
 	}
+}
+emailHasChange = emailChange
+println(emailHasChange)
+reqIdCheck = reqIdChangeEmail
+println(reqIdCheck)
+
+'We want to check Web element for table'
+WebDriver driverCsrBucketList = DriverFactory.getWebDriver()
+WebElement tblCsrBucketList
+List<WebElement> rowsCsrBucketList
+List<WebElement> colsCsrBucketList
+
+'We want to check changes email in CSR Management'
+if (WebUI.waitForElementVisible(linkMenuCsrManagement, 5)) {
+	WebUI.click(linkMenuCsrManagement)
+	if (WebUI.waitForElementVisible(alertNotif, 5)) {
+			WebUI.click(btnAbort)
+		} else {keylogger.logInfo("We can continue the process")}
+	TestObject accessCsrBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
+	if (WebUI.waitForElementPresent(accessCsrBucketList, 5)) {
+		WebUI.setText(txtReqIdCsrBucketList, reqIdCheck)
+		WebUI.sendKeys(txtReqIdCsrBucketList, Keys.chord(Keys.ENTER))
+		tblCsrBucketList = driverCsrBucketList.findElement(By.xpath('//table/tbody'))
+		rowsCsrBucketList = tblCsrBucketList.findElements(By.tagName('tr'))
+		colsCsrBucketList = rowsCsrBucketList.get(0).findElements(By.tagName('td'))
+		if (colsCsrBucketList.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+			colsCsrBucketList.get(6).findElement(By.xpath('button')).click()
+		} else {keylogger.markError('Text not found')}
+		if (WebUI.waitForElementVisible(btnDataEmail, 5)) {
+			WebUI.click(btnDataEmail)
+			WebUI.verifyEqual(emailHasChange, GlobalVariable.randomFirstNameWhitelist)
+			WebUI.takeScreenshot()
+		} else {keylogger.markError('Element not visible')}
+	} else {keylogger.markError("Element not present")}
 }

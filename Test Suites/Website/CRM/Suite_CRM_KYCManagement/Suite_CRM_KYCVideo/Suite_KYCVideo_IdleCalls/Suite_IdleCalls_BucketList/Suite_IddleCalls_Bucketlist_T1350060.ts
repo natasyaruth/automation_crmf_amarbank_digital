@@ -270,7 +270,7 @@
       <guid>619f2744-1ff7-4b7d-b7d9-2c4cd273fd0f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_IddleCalls/IddleCalls_BucketlistPage/TC_CheckFilterDate</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_IdleCalls/IdleCalls_BucketlistPage/TC_CheckFilterDate</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Suite_IddleCalls_Detail_Page_T1350062</name>
+   <name>Suite_IddleCalls_Bucketlist_T1350061</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>ddb55bb5-5dc7-4a46-8c23-da96dc3b5c12</testSuiteGuid>
+   <testSuiteGuid>93a1ca5d-8934-48ed-8e6a-f328049c94b5</testSuiteGuid>
    <testCaseLink>
-      <guid>e583727e-46ff-4939-b9f4-17aea04c72f3</guid>
+      <guid>8c0c05a3-97b2-4f34-a9be-55e2cc04fa3d</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -31,7 +31,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>8248ef2a-69cf-4ab2-ac9f-8b2a1f2904ab</guid>
+      <guid>14bcfed2-706b-43ea-ae97-9959f5e7ddfc</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -212,7 +212,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>38f52588-a8ce-41a9-9db1-1ed0765c3b9a</guid>
+      <guid>634ec7e0-7fbf-431c-bb26-01b2ea128050</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/TC_ClickMenuKYCVideo</testCaseId>
@@ -267,86 +267,80 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>217e901a-2c24-4005-be61-e15c8c73c40c</guid>
+      <guid>3fc9b8da-46db-4849-9bad-e27c5622b283</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_IddleCalls/IddleCalls_Detail_Page/TC_BackToBucketlist</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVideo/KYCVideo_IdleCalls/IdleCalls_BucketlistPage/TC_CheckCombinationFilterDateAndCustomerType</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>11ebcb56-476d-49c3-acf3-9c21df4a4453</variableId>
+         <variableId>3827a3ce-6078-41d2-bd46-23d0c887affd</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>4c7e8ec8-5a2f-42d6-a8eb-f94d067bb3f3</variableId>
+         <variableId>27beb674-d5c0-40a8-a0d3-2e00087ff877</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>50926ae5-3d33-42be-b2ed-327abdef88b3</variableId>
+         <variableId>8e57ca47-d7d3-440e-ae3a-115d2bbee173</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>39dab6c1-a3a8-4974-827f-52fa64ad4f76</variableId>
+         <variableId>3fefd5f8-667f-4890-8f5a-a83ed8af71f3</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>951a8fa7-511d-4d02-b072-e10c9a81c148</variableId>
+         <variableId>6c3a5a0e-0a37-4853-bd84-618513f56c72</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>a8d417ff-fc4b-4db1-a2cc-03d5f032c68c</variableId>
+         <variableId>145f44d2-1656-4f80-b426-fc9464310af8</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>727044b6-b089-4caf-9510-3fde8dc9f6ec</variableId>
+         <variableId>e0ab4524-5c83-4030-a04c-5c7211ef2ba8</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>50f66281-d5d9-472c-8a2d-39b235be1efb</variableId>
+         <variableId>86ea2e2e-d854-474c-9eb4-81f241110264</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>ea6732d9-c589-4271-b71e-13d8209df377</variableId>
+         <variableId>03146bbd-6084-49d7-b92f-a620702ce43e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>a013b382-482b-4771-8cbd-9fee96ad1375</variableId>
+         <variableId>861f1faa-342b-4246-9051-ad55d732175e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>a771790b-1c1e-4c94-9b82-3bf3e4b0f984</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b650eeff-b9c2-45c7-892a-a6a9f0d8edf0</variableId>
+         <variableId>266cbd30-2e03-451a-9296-592ba59dfcc3</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e944a252-983d-4bf8-8f44-09bf2a4ef1a2</guid>
+      <guid>32283861-11ab-4505-89fc-07aca4962266</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
