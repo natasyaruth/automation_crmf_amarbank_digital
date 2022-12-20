@@ -62,4 +62,15 @@ public class RandomFakerData {
 		this.fakerPhoneNumber=phoneNumber("0812" +RandomStringUtils.randomNumeric(8))
 		return fakerPhoneNumber
 	}
+	
+	@Keyword
+	public static String set_faker_email(){
+		
+				/**
+				 * This Part for 
+				 */
+				Faker faker = new Faker()
+				String randomEmail = faker.name().fullName()
+				return randomEmail
+			}
 }

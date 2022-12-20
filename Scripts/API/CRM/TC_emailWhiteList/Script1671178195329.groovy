@@ -21,17 +21,20 @@ import com.kms.katalon.entity.global.GlobalVariableEntity
 
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
-import com.tunaiku.keyword.RandomFakerData
+import com.tunaiku.keyword.RandomFakerData as dummyData
 import groovy.json.JsonSlurper
 
 'init function'
 KeywordUtil keylogger = new KeywordUtil()
 Faker faker = new Faker()
 
+String randomTestData = dummyData.set_faker_email()
+println(randomTestData)
+
 String randomFirstName = faker.name().firstName()
 println('randomFirstName : ' +randomFirstName)
 
-whiteList_email = WS.sendRequest(findTestObject('API/CRM/API_WhiteListEmail', [('RandomFirstName'): randomFirstName]))
+whiteList_email = WS.sendRequest(findTestObject('API/CRM/API_WhiteListEmail', [('RandomFirstName'): randomTestData]))
 
 'Get JSON Response'
 String JSONResponse = whiteList_email.getResponseText()
@@ -54,6 +57,6 @@ println('Status Code: ' + statusCode)
 println('Waiting Time: ' + waitingTime)
 
 if (WS.verifyEqual(statusCode, '200')) {
-	GlobalVariable.randomFirstNameWhitelist = "senyumku_" +randomFirstName+ "@maildrop.cc"
+	GlobalVariable.randomFirstNameWhitelist = "senyumku_" +randomTestData+ "@maildrop.cc"
 	println(GlobalVariable.randomFirstNameWhitelist)
 } else {keylogger.markError('Status Code is not equal 200')}
