@@ -76,6 +76,8 @@ if (WebUI.verifyElementClickable(menuKYCManagement)) {
 		TestObject confirmationContinueProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
 		if (WebUI.verifyElementPresent(confirmationContinueProcess, 5, FailureHandling.OPTIONAL)) {
 			WebUI.click(btnBatalkan)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(5)
 		} else {keylogger.logInfo('We continue the process')}
 	} else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
@@ -129,6 +131,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 	if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
+			WebUI.waitForPageLoad(5)
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
 			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
@@ -269,7 +272,7 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 			WebUI.click(btnDoLiveness)
 			WebUI.delay(5)
 			WebUI.click(btnBackToBucketList)
-		} else {keylogger.markError('alert not present to konfirmation')}
+		} else {keylogger.logInfo('alert not present to konfirmation')}
 	} else {keylogger.markError('Element not present')}
 } else {keylogger.logInfo('Text is not found')}
 
@@ -277,6 +280,8 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 WebUI.click(linkMenuCsrManagement)
 if (WebUI.waitForElementVisible(alertNotification, 5)) {
 	WebUI.click(btnAbort)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(5)
 } else {keylogger.logInfo("We not have blocked by active state")}
 WebUI.setText(txtReqIdCsr, reqIdUsedGlobal)
 WebUI.sendKeys(txtReqIdCsr, Keys.chord(Keys.ENTER))

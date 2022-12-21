@@ -61,6 +61,7 @@ WebElement tblCsr
 List<WebElement> rowsCsr
 List<WebElement> colsCsr
 	WebUI.waitForPageLoad(5)
+	WebUI.delay(5)
 	tblCsr = driverCsr.findElement(By.xpath('//table/tbody'))
 	rowsCsr = tblCsr.findElements(By.tagName('tr'))
 		TestObject csrManagementHeader = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
@@ -149,6 +150,7 @@ List<WebElement> colsCsr
 		} else {keylogger.markError('Element text field KTP not found')}
 		if (WebUI.waitForElementPresent(rbAccountNumberSenyumkuPage, 5)) {
 			WebUI.click(rbAccountNumberSenyumkuPage)
+			WebUI.waitForPageLoad(5)
 			if (WebUI.waitForElementPresent(txtAccountNumberSenyumkuPage, 5)) {
 				WebUI.setText(txtAccountNumberSenyumkuPage, dataAccountNumber)
 			} else {keylogger.markError("We not found the text filed Account Number Senyumku")}
@@ -415,6 +417,8 @@ if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 	WebUI.click(linkMenuCsrManagement)
 	if (WebUI.waitForElementPresent(txtAlertNotification, 5)) {
 		WebUI.click(abortNotification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(5)
 	} else {keylogger.logInfo("We are not have active request")}
 } else {keylogger.markError("Element not found")}
 WebUI.setText(txtReqIdCsrCheckData, reqIdVidCall)

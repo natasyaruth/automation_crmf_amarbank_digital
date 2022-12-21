@@ -67,6 +67,8 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
 		WebUI.click(menuKycVerification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(5)
 		tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 		rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 		colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))

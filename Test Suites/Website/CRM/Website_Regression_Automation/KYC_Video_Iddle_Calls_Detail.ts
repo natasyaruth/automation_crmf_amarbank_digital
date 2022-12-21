@@ -15,7 +15,7 @@
             <runConfigurationId>Edge Chromium</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_IddleCalls/Suite_IddleCalls_Detail_Page/Suite_IddleCalls_Detail_Page_T1350062</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_IddleCalls/Suite_IddleCalls_Detail_Page/Suite_IdleCalls_Detail_Page_T1350062</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
