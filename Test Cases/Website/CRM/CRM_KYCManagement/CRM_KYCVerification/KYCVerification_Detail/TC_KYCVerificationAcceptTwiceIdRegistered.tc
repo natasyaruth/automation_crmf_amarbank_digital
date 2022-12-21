@@ -227,6 +227,24 @@
       <value></value>
       <variableId>9aef2f45-4151-4d8c-afb5-4bd6d7b19d5c</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7ad88da1-d154-4256-ac26-cf0c0ca5a728</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3abe6bd2-f690-4a31-b540-c68e9e0eb4e0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6842008f-dc3e-42d1-bfbe-c7a34443ee2a</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -452,7 +470,7 @@
       <name>btnFmConfirmation</name>
    </variable>
    <variable>
-      <defaultValue>'10004299'</defaultValue>
+      <defaultValue>'10003785'</defaultValue>
       <description></description>
       <id>7c6e03de-ac4f-49ed-9355-ca272952a02b</id>
       <masked>false</masked>
@@ -485,5 +503,26 @@
       <id>9aef2f45-4151-4d8c-afb5-4bd6d7b19d5c</id>
       <masked>false</masked>
       <name>txtReqIdKyc</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1')</defaultValue>
+      <description></description>
+      <id>7ad88da1-d154-4256-ac26-cf0c0ca5a728</id>
+      <masked>false</masked>
+      <name>btnTerima1</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2')</defaultValue>
+      <description></description>
+      <id>3abe6bd2-f690-4a31-b540-c68e9e0eb4e0</id>
+      <masked>false</masked>
+      <name>btnTerima2</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/btnCloseModalKycVerf')</defaultValue>
+      <description></description>
+      <id>6842008f-dc3e-42d1-bfbe-c7a34443ee2a</id>
+      <masked>false</masked>
+      <name>btnClose</name>
    </variable>
 </TestCaseEntity>

@@ -202,7 +202,7 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		/*We want verify old action*/
 		WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
 		def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-		WebUI.verifyMatch(ChangelogAction, txtAction, false)
+		WebUI.verifyMatch(ChangelogAction, dateInChangeLog, false)
 
 WebUI.delay(3)
 

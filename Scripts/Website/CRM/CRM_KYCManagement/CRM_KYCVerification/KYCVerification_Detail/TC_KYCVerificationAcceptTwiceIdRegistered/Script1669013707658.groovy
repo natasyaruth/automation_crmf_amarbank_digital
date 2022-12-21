@@ -65,6 +65,8 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
 		WebUI.click(menuKycVerification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(5)
 		tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 		rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 		colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
@@ -98,21 +100,13 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase("Menunggu")) {
 	colsKycVerif.get(7).findElement(By.xpath('a')).click()
 	TestObject kycDetailPageAfterFilter = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 	if (WebUI.verifyElementPresent(kycDetailPageAfterFilter, 5)) {
-		WebUI.scrollToElement(btnCheckDukCapil, 5)
-		WebUI.click(btnCheckDukCapil)
-		if (WebUI.waitForElementPresent(alretText, 5)) {
-			WebUI.click(btnModalDukcapil)
+		WebUI.click(btnTerima1)
+		WebUI.click(btnTerima2)
+		TestObject alertNikRegistered = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nomor KTP sudah terdaftar')
+		if (WebUI.verifyElementPresent(alertNikRegistered, 5)) {
 			WebUI.takeScreenshot()
-		} else {keylogger.markError('alert not present to konfirmation')}
-		TestObject alertNikNotFound = new TestObject().addProperty('text',ConditionType.CONTAINS,'NIK tidak ditemukan')
-		if (WebUI.verifyElementPresent(alertNikNotFound, 5)) {
-			WebUI.scrollToElement(lbReqId, 5)
-			reqId = WebUI.getText(lbReqId)
-			WebUI.scrollToElement(labelInProcess, 5)
-			WebUI.verifyElementText(labelInProcess, "Sedang diproses")
+			WebUI.click(btnClose)
 			WebUI.click(btnBackDashboard)
 		} else {keylogger.markError('Alert NIK Not Found doesnt appear')}
-		TestObject kycBucketListAfterFilter = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Verification')
-		WebUI.verifyElementPresent(kycBucketListAfterFilter, 5)
 	} else {keylogger.markError('Element not present')}
-}
+} else {keylogger.markError('Text is not "Menunggu"')}

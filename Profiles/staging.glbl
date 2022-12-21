@@ -234,4 +234,9 @@
       <initValue>''</initValue>
       <name>phoneNumberWithAreaCode</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomFirstNameWhitelist</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
