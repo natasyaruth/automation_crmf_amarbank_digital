@@ -25,41 +25,21 @@ WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), InputReqID)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnShow'))
-
 WebUI.click(BtnDetailKYCVerification)
-
-WebUI.click(BtnFaceMatchDukcapil)
-
-WebUI.click(BtnFaceMatchConfirmation)
 
 WebUI.click(BtnLiveness)
 
-WebUI.click(BtnLivenessConfirmation)
+WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtConfirmationLiveness'), 'Konfirmasi')
 
-WebUI.scrollToElement(BtnCekDataDukcapil, 5)
+WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnLivenessConfirmation'))
 
-WebUI.click(BtnCekDataDukcapil)
+WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancelLiveness'))
 
-WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 5)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancelLiveness'))
 
-WebUI.verifyElementClickable(BtnCekDataDukcapilConfirmation)
+WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtKYCCustomerDetail'), 'KYC Customer Detail')
 
-WebUI.verifyElementClickable(BtnCancelCekDataDukcapil)
+WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'), 5)
 
-WebUI.click(BtnCekDataDukcapilConfirmation)
-
-WebUI.scrollToElement(BtnAccept1, 5)
-
-WebUI.click(BtnAccept1)
-
-WebUI.scrollToElement(BtnAccept2, 5)
-
-WebUI.click(BtnAccept2)
-
-WebUI.verifyElementClickable(BtnCloseModal)
-
-WebUI.click(BtnCloseModal)
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
 

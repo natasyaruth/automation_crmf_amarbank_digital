@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@id = 'BtnBack']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='BtnBack']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -18,5 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnBack</value>
+      <webElementGuid>87642dc2-4052-42ee-b269-4904d4bd6f6c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

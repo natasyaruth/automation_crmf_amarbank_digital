@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>Suite_CRM_BackAfterClickButtonTerima_T1349990</name>
+   <name>Suite_CRM_ClickBatalOnPopUpMessageAfterClickLiveness_T1350074</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>ef127f56-9955-462c-ab73-346b734fa192</testSuiteGuid>
+   <testSuiteGuid>f4477359-4fe0-4328-8ab3-8ad875d7012b</testSuiteGuid>
    <testCaseLink>
-      <guid>71dd2dec-386b-41f2-a45f-a7cf993392bc</guid>
+      <guid>250725dc-b3b6-4a42-8425-03de78839b12</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -23,15 +23,9 @@
          <value></value>
          <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
       </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>91dc2b1a-941d-4528-9e9a-686b8ccd402b</variableId>
-      </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>cab2f653-d19b-42ec-a49a-e164ca4481e6</guid>
+      <guid>d1169a77-1921-4517-b4e4-6ebeb3b7c9e8</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -122,134 +116,80 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a2a6a21a-133b-46c3-90df-5e289da2d5d6</guid>
+      <guid>6c18a857-e108-429d-90cf-7dffb6a4f096</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationBackAfterClickButtonTerima</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/TC_KYCVerificationClickBatalOnPopUpMessageAfterClickLiveness</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>45687876-b056-480d-aec4-084190b333d5</variableId>
+         <variableId>945b1353-0d0b-4125-8fae-317d79251850</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e82925a7-b05d-4cb4-951e-2142ff05f49a</variableId>
+         <variableId>430e5d32-579a-43d5-b9b5-17b8fa7cf38d</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6fdea64d-faf2-4a59-a1c0-0909e1d0517c</variableId>
+         <variableId>225de668-ccd4-440a-bac3-c4883ec01746</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e19eb6c7-9175-4adb-b7f3-71b2ebe71b29</variableId>
+         <variableId>d132f99b-eea5-41be-a929-7249bf288b4a</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fa37f6c5-e771-4ac3-8605-e3dfb49b95d9</variableId>
+         <variableId>ed282654-613a-4ea2-803e-caaf313ea7c0</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7d2bad91-3162-46b1-bc90-41a35a85b540</variableId>
+         <variableId>bfcf01ed-0644-4e79-a265-5ad6469d1384</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7b8ef381-3399-49f3-bef9-775dce44afbf</variableId>
+         <variableId>ea92aec8-e5c9-40da-adbe-24fbc9c1d8d9</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>8b1558e1-990d-4659-97c7-7cf77b6b4db3</variableId>
+         <variableId>4be77d28-3b54-4d58-996d-04a76d1aa1f5</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fde1bf1e-5024-4ba3-9504-abff3886b9b8</variableId>
+         <variableId>e5ca8428-2b0f-4555-acc5-285d6b9c7193</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>2b69c2b3-624d-4483-a135-ff3c2473f884</variableId>
+         <variableId>8e1eeedf-bbf9-432a-9cbd-34ab4e753a81</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>d06e6033-a030-497e-a372-2b5a09876701</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>dcfd58de-70b7-485e-bec4-2760f893ee6f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>77c04aed-b16c-464e-8c99-2bbd92ac4948</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>04672fee-8def-4917-ba97-594e517999d2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b332587c-4f8a-403d-875e-7fb432527506</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>53002a2a-d5c7-448b-9a9f-1ee56237c53b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>53b7d042-7ab6-4ce4-aa2f-285b15f12d47</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d5335939-4663-491f-9844-24da7ae42afe</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>770386ef-32aa-4701-a115-0aeafa2749f6</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f7c79174-799c-4797-b65f-ee978beb3f58</variableId>
+         <variableId>ef7c186a-4cb3-41de-8f5a-f5408f7b3180</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>ee4ce1a0-133b-4fe1-bbf4-de2829838770</guid>
+      <guid>d46f1b76-4a8c-4de2-8c95-78f7466100da</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>
