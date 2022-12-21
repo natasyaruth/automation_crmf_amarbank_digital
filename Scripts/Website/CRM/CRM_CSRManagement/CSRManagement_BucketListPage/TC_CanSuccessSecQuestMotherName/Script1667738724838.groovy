@@ -39,7 +39,7 @@ String fullName = faker.name().fullName()
 if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
 	WebUI.waitForPageLoad(5)
-	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(notifBlockCsr, 5)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
 		WebUI.verifyElementVisible(txtHeaderCsrManagement)
@@ -75,9 +75,7 @@ while (loopPageCsr == false) {
 				if (WebUI.waitForElementVisible(drpCustType, 5)) {
 					WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 					WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
-					if (WebUI.waitForElementVisible(drpCardStatus, 5)) {
-						WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
-						WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
+					if (WebUI.waitForElementVisible(txtAccountNumb, 5)) {
 						WebUI.setText(txtAccountNumb, accountNumb)
 						WebUI.click(btnSubmitSearch)
 					} else {keylogger.logInfo("Element Not Found")}

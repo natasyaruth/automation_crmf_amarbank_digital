@@ -94,6 +94,8 @@ if (WebUI.waitForElementVisible(kycVideoPage, 5)) {
 		'We want unblock process'
 		if (WebUI.waitForElementPresent(txtNotifBlockConfirmation,3)) {
 			WebUI.click(btnAbortBlock)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(5)
 		} else {keylogger.logInfo('notification not pop up')}
 	} else {keylogger.markError('Tab idle calls is disable')}
 } else {keylogger.markError('We are not in kyc page')}
@@ -303,7 +305,8 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 							WebUI.click(btnTerima3)
 						} else {keylogger.logInfo("element not present")}
 					} else {keylogger.logInfo("element not present")}
-					WebUI.delay(10)
+					WebUI.waitForPageLoad(5)
+					WebUI.delay(15)
 					TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
 					if (WebUI.waitForElementVisible(successProcessKyc, 5)) {
 						WebUI.click(btnBackToKycManagement)

@@ -78,7 +78,8 @@ if(isObjectNotFound) {
 	keyLogger.markFailed("Customer with request id "+reqID+" is not found")
 	
 } else {
-	
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(5)
 	if(listRows.size().equals(1)) {
 		String actReqId = WebUI.getText(txtReqID)
 		

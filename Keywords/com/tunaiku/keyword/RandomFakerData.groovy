@@ -25,52 +25,53 @@ import internal.GlobalVariable
 
 public class RandomFakerData {
 
-	public static String fakerFullName
-	public static String fakerEmail
-	public static String fakerFirstName
-	public static String fakerLastName
-	public static String fakerPhoneNumber
-
-	Faker faker = new Faker()
-
 	@Keyword
-	def set_faker_full_name(String fullName) {
-		this.fakerFullName=fullName(faker.name().fullName())
-		return fakerFullName
-	}
-
-	@Keyword
-	def set_faker_email(String email) {
-		this.fakerEmail=email(faker.name().fullName() +"@gmail.com")
-		return fakerEmail
-	}
-
-	@Keyword
-	def set_faker_first_name(String firstName) {
-		this.fakerFirstName=firstName(faker.name().firstName())
-		return fakerFirstName
-	}
-
-	@Keyword
-	def set_faker_last_name(String lastName) {
-		this.fakerLastName=lastName(faker.name().lastName())
-		return fakerLastName
-	}
-
-	@Keyword
-	def set_faker_phone_number(String phoneNumber) {
-		this.fakerPhoneNumber=phoneNumber("0812" +RandomStringUtils.randomNumeric(8))
-		return fakerPhoneNumber
+	public static String set_faker_full_name(){
+		/**
+		 * This Part for set custom keyword for Random Data Full Name
+		 */
+		Faker faker = new Faker()
+		String randomFullName = faker.name().fullName()
+		return randomFullName
 	}
 	
 	@Keyword
 	public static String set_faker_email(){
-		
-				/**
-				 * This Part for 
-				 */
-				Faker faker = new Faker()
-				String randomEmail = faker.name().fullName()
-				return randomEmail
-			}
+		/**
+		 * This Part for set custom keyword for Random Data Email
+		 */
+		Faker faker = new Faker()
+		String randomEmail = faker.name().fullName() +"@gmail.com"
+		return randomEmail
+	}
+	
+	@Keyword
+	public static String set_faker_last_name(){
+		/**
+		 * This Part for set custom keyword for Random Data last name
+		 */
+		Faker faker = new Faker()
+		String randomLastName = faker.name().lastName()
+		return randomLastName
+	}
+	
+	@Keyword
+	public static String set_faker_phone_number() {
+		/**
+		 * This Part for set custom keyword for Random Data phone number
+		 */
+		Faker faker = new Faker()
+		String randomPhoneNumber = "0812" +RandomStringUtils.randomNumeric(8)
+		return randomPhoneNumber
+	}
+
+	@Keyword
+	public static String set_faker_first_name(){
+		/**
+		 * This Part for set custom keyword for Random Data first name
+		 */
+		Faker faker = new Faker()
+		String randomFirstName = faker.name().firstName()
+		return randomFirstName
+	}
 }

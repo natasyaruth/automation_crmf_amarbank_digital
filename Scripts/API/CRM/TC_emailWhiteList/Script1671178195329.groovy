@@ -28,13 +28,10 @@ import groovy.json.JsonSlurper
 KeywordUtil keylogger = new KeywordUtil()
 Faker faker = new Faker()
 
-String randomTestData = dummyData.set_faker_email()
-println(randomTestData)
+String randomFirstEmail = dummyData.set_faker_first_name()
+println(randomFirstEmail)
 
-String randomFirstName = faker.name().firstName()
-println('randomFirstName : ' +randomFirstName)
-
-whiteList_email = WS.sendRequest(findTestObject('API/CRM/API_WhiteListEmail', [('RandomFirstName'): randomTestData]))
+whiteList_email = WS.sendRequest(findTestObject('API/CRM/API_WhiteListEmail', [('RandomFirstName'): randomFirstEmail]))
 
 'Get JSON Response'
 String JSONResponse = whiteList_email.getResponseText()
@@ -57,6 +54,6 @@ println('Status Code: ' + statusCode)
 println('Waiting Time: ' + waitingTime)
 
 if (WS.verifyEqual(statusCode, '200')) {
-	GlobalVariable.randomFirstNameWhitelist = "senyumku_" +randomTestData+ "@maildrop.cc"
+	GlobalVariable.randomFirstNameWhitelist = "senyumku_" +randomFirstEmail+ "@maildrop.cc"
 	println(GlobalVariable.randomFirstNameWhitelist)
 } else {keylogger.markError('Status Code is not equal 200')}
