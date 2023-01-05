@@ -3,16 +3,16 @@
    <description></description>
    <name>AssignCardBucketList</name>
    <tag>1dayregression</tag>
-   <delayBetweenInstances>0</delayBetweenInstances>
-   <executionMode>SEQUENTIAL</executionMode>
-   <maxConcurrentInstances>8</maxConcurrentInstances>
+   <delayBetweenInstances>5</delayBetweenInstances>
+   <executionMode>PARALLEL</executionMode>
+   <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104909</testSuiteEntity>
@@ -22,7 +22,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104910</testSuiteEntity>
@@ -32,7 +32,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104911</testSuiteEntity>
@@ -42,7 +42,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104915</testSuiteEntity>
@@ -52,7 +52,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104916</testSuiteEntity>
@@ -62,7 +62,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104917</testSuiteEntity>
@@ -72,7 +72,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104918</testSuiteEntity>
@@ -82,7 +82,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104935</testSuiteEntity>
@@ -92,7 +92,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104920</testSuiteEntity>
@@ -102,7 +102,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104921</testSuiteEntity>
@@ -112,7 +112,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104922</testSuiteEntity>
@@ -122,7 +122,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104924</testSuiteEntity>
@@ -132,7 +132,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104926</testSuiteEntity>
@@ -142,7 +142,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104927</testSuiteEntity>
@@ -152,7 +152,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104925</testSuiteEntity>
@@ -162,7 +162,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104930</testSuiteEntity>
@@ -172,7 +172,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104931</testSuiteEntity>
@@ -182,7 +182,7 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
          <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_CardManagement/Suite_CRM_Assign_Card/Suite_Assign_Card_Bucket_List_Page/Suite_Assign_Card_Bucket_List_Page_T104934</testSuiteEntity>

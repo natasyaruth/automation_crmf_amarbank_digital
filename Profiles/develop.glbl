@@ -161,7 +161,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://staging-crm-rekol.tunaiku.com'</initValue>
+      <initValue>'https://dev-crm-rekol.tunaiku.com'</initValue>
       <name>siteUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -183,5 +183,60 @@
       <description></description>
       <initValue>'https://dev-crm-rekol.tunaiku.com/card-management/delivery-status/11'</initValue>
       <name>UrlDeliveryNotFound</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPendingPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanVanEnrouteToPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanPickupFailed</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>hashNinjaVanSuccessfulPickup</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/18?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <name>requestStatusEditMotherName</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/1416?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <name>requestStatusFinishCondition</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-api-crm-svc.otoku.io/transaction/backoffice'</initValue>
+      <name>siteUrlBackOff</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <name>authPassBackOffice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'5gYZhAq6uLU='</initValue>
+      <name>authUserBackOffice</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>phoneNumberWithAreaCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomFirstNameWhitelist</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

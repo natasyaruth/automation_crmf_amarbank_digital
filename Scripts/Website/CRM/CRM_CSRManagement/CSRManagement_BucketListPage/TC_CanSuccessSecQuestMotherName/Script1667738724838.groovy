@@ -78,9 +78,10 @@ while (loopPageCsr == false) {
 					if (WebUI.waitForElementVisible(txtAccountNumb, 5)) {
 						WebUI.setText(txtAccountNumb, accountNumb)
 						WebUI.click(btnSubmitSearch)
+						WebUI.waitForPageLoad(5)
 					} else {keylogger.logInfo("Element Not Found")}
 				} else {keylogger.logInfo("Element Not Found")}
-				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
+				List<WebElement> listCols = listRows.get(0).findElements(By.tagName('td'))
 				if (listCols.get(4).getText().equalsIgnoreCase(accountNumb)) {
 					listCols.get(6).findElement(By.tagName('button')).click()
 					WebDriver driverTblChangeLog = DriverFactory.getWebDriver()

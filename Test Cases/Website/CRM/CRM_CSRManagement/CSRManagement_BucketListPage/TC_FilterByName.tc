@@ -41,6 +41,18 @@
       <value></value>
       <variableId>223c2847-0571-46cb-8773-4d1d8cdd705b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>43455873-622b-4f08-a61c-d74ddd2fbf13</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0e81f43b-9bd4-4865-ae2a-e741daedbbb8</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'ZYLVIA'</defaultValue>
       <description></description>
@@ -82,5 +94,19 @@
       <id>223c2847-0571-46cb-8773-4d1d8cdd705b</id>
       <masked>false</masked>
       <name>CSRManagementBucketListTxtFirstRowCustName</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/AlertConfirmationText')</defaultValue>
+      <description></description>
+      <id>43455873-622b-4f08-a61c-d74ddd2fbf13</id>
+      <masked>false</masked>
+      <name>notifBlock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
+      <description></description>
+      <id>0e81f43b-9bd4-4865-ae2a-e741daedbbb8</id>
+      <masked>false</masked>
+      <name>btnAbort</name>
    </variable>
 </TestCaseEntity>

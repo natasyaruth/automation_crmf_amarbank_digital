@@ -34,6 +34,8 @@ WebUI.click(tabCardReprint)
 
 /* We will wait until table 'Cetak ulang' is appear */
 WebUI.waitForElementPresent(table, 10)
+WebUI.waitForPageLoad(10)
+WebUI.delay(3)
 
 /* We will declarated variable 'driverReprint' and 'driverReceipt'
  * to store function of webdriver.
@@ -75,6 +77,8 @@ while (flagNextPageReprint == false) {
 
 		/* We will wait until table 'Resi' is appear */
 		WebUI.waitForElementPresent(table, 10)
+		WebUI.waitForPageLoad(10)
+		WebUI.delay(3)
 
 		/* Initiate the loop process with name 'LoopReceipt'.
 		 * This loop will run until flagNextPageReceipt change into 'true'*/
@@ -112,6 +116,8 @@ while (flagNextPageReprint == false) {
 
 					/* We will wait until table 'Cetak ulang' is appear */
 					WebUI.waitForElementPresent(table, 10)
+					WebUI.waitForPageLoad(10)
+					WebUI.delay(3)
 
 					/* Break the loop 'LoopReprint' */
 					break LoopReprint
@@ -139,6 +145,8 @@ while (flagNextPageReprint == false) {
 
 					/* We will wait until table 'Cetak ulang' is appear */
 					WebUI.waitForElementPresent(table, 10)
+					WebUI.waitForPageLoad(10)
+					WebUI.delay(3)
 
 					/* Storing again tableReprint to prevent the stale element */
 					tableReprint = driverReprint.findElement(By.xpath('//tbody'))
@@ -156,6 +164,7 @@ while (flagNextPageReprint == false) {
 
 					/* We will wait for 3 second till page finish load*/
 					WebUI.waitForPageLoad(3)
+					WebUI.delay(3)
 				}
 			}
 		}
@@ -190,6 +199,7 @@ while (flagNextPageReprint == false) {
 
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
+			WebUI.delay(3)
 		}
 	}
 }
@@ -311,6 +321,8 @@ WebUI.click(tabReceipt)
 
 /* We will wait until table 'Resi' is appear */
 WebUI.waitForElementPresent(table, 10)
+WebUI.waitForPageLoad(10)
+WebUI.delay(3)
 
 /* Storing again tableReceipt to prevent the stale element */
 tableReceipt = driverReceipt.findElement(By.xpath('//tbody'))
@@ -376,6 +388,7 @@ while (flagNextPageReceipt == false) {
 
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
+			WebUI.delay(3)
 		}
 	}
 }
