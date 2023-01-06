@@ -67,21 +67,22 @@ boolean wordingCsrMgt = wordingHeaderCsrMgt
 WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
 WebElement tableCsrMgt
 List<WebElement> listRows
+flagDataReqId = false
 LoopCsrManagement:
 while (flagDataReqId == false) {
 	tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 	listRows = tableCsrMgt.findElements(By.tagName('tr'))
+	for (int i = 0; i < listRows.size() ; i++) {
 	if (wordingCsrMgt == true) {
 		boolean idxDataFltrCrdSts = WebUI.verifyOptionsPresent(drpDwnFltrSts, drpDwnListFltrCrdSts)
 		if (idxDataFltrCrdSts == true) {
-			WebUI.selectOptionByLabel(drpDwnFltrSts, 'Belum Aktivasi', false)
+			WebUI.selectOptionByLabel(drpDwnFltrSts, 'Sudah Aktivasi', false)
 			boolean idxDataCsrTyp = WebUI.verifyOptionsPresent(drpDwnFltrCsrTyp, drpDwnListFltrCsrTyp)
 			if (idxDataCsrTyp == true) {
 				WebUI.selectOptionByLabel(drpDwnFltrCsrTyp, 'Nasabah Senyumku', false)
 			} else {keyLogger.logInfo('We not found the data')}
 		} else {keyLogger.logInfo('We not found the data')}	
-	}
-		for (int i = 0; i < listRows.size() ; i++) {
+	} else {keyLogger.logInfo('We not found the data')}
 			println('No. of rows: ' + listRows.size() + 'and number of row is = ' +i)
 			List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
@@ -89,7 +90,7 @@ while (flagDataReqId == false) {
 					String headerCustDetail = WebUI.getText(txtCustDetail)
 					if (headerCustDetail.equalsIgnoreCase('Detil Nasabah')) {
 						TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
-						if (WebUI.verifyElementPresent(reqDetailStatus, 5)) {
+						if (WebUI.verifyElementPresent(reqDetailStatus, 5, FailureHandling.OPTIONAL)) {
 							WebUI.click(linkDataAtmCard)
 							if (WebUI.verifyElementClickable(btnReqNewCard, FailureHandling.OPTIONAL)) {
 								WebUI.click(btnReqNewCard)

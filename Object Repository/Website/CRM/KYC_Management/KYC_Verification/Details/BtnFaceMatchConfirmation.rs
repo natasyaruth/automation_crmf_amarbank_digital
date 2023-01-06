@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@id = 'BtnFaceMatchConfirmation']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='BtnFaceMatchConfirmation']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -18,5 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnFaceMatchConfirmation</value>
+      <webElementGuid>351ece27-1e58-4057-8426-8c418efd558d</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

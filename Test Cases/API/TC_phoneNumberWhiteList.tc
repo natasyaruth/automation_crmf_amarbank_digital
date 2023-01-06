@@ -5,6 +5,18 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f04fea07-7abc-47ac-834c-fba0a789035c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>fcf720e3-9716-43d0-b7e0-c91d3a900b96</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>67aacd83-04f7-4a3d-8ff6-19540387789e</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>GlobalVariable.phoneNumber</defaultValue>
       <description></description>

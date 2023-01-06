@@ -229,4 +229,14 @@
       <initValue>'5gYZhAq6uLU='</initValue>
       <name>authUserBackOffice</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>phoneNumberWithAreaCode</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>randomFirstNameWhitelist</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

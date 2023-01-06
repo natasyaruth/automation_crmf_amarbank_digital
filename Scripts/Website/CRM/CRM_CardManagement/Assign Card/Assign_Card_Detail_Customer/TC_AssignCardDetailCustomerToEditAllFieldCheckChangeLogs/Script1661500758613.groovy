@@ -68,36 +68,43 @@ if (onDetailAssignCard == true) {
 			int optionListLength = 3
 			Random rand = new Random()
 			String index = rand.nextInt(optionListLength + 1)
-			boolean drpPlacementCard = WebUI.verifyOptionsPresent(drpDownPlacementSentCard, ["Apartemen","Rumah","Kantor","Kos"])
-			if (drpPlacementCard == true) {
-				WebUI.waitForElementVisible(drpDownPlacementSentCard, 5)
-				WebUI.selectOptionByIndex(drpDownPlacementSentCard, index)
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
-			boolean fullAddress = WebUI.verifyElementPresent(fieldFullAddress, 5)
-			if (fullAddress == true) {
-				WebUI.waitForElementVisible(fieldFullAddress, 5)
-				WebUI.setText(fieldFullAddress, "Text" +RandomStringUtils.randomAlphanumeric(200))
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
-			boolean provinceData = WebUI.verifyElementPresent(drpProvince, 5)
-			if (provinceData == true) {
-				WebUI.verifyElementVisible(drpProvince)
-				WebUI.selectOptionByIndex(drpProvince, index)
-				boolean drpDistrictPresent = WebUI.verifyElementPresent(drpDistrict, 5)
-				if (drpDistrictPresent == true) {
-					WebUI.verifyElementVisible(drpDistrict)
-					WebUI.selectOptionByIndex(drpDistrict, index)
-					boolean drpSubDistrictPresent = WebUI.verifyElementPresent(drpSubDistrict, 5)
-					if (drpSubDistrictPresent == true) {
-						WebUI.verifyElementVisible(drpSubDistrict)
-						WebUI.selectOptionByIndex(drpSubDistrict, index)
-						boolean drpVillagePresent = WebUI.verifyElementPresent(drpVillage, 5)
-						if (drpVillagePresent == true) {
-							WebUI.verifyElementVisible(drpVillage)
-							WebUI.selectOptionByIndex(drpVillage, index)
-						} else {keyLogger.markError("Not present "+drpVillagePresent+" element")}
-					} else {keyLogger.markError("Not present "+drpSubDistrictPresent+" element")}
-				} else {keyLogger.markError ("Not present "+drpDistrictPresent+" element")}
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+			flagLoop = false
+			loopIndex:
+			while (flagLoop == false) {
+				if (index != 0) {
+					boolean drpPlacementCard = WebUI.verifyOptionsPresent(drpDownPlacementSentCard, ["Apartemen","Rumah","Kantor","Kos"])
+					if (drpPlacementCard == true) {
+						WebUI.waitForElementVisible(drpDownPlacementSentCard, 5)
+						WebUI.selectOptionByIndex(drpDownPlacementSentCard, index)
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+					boolean fullAddress = WebUI.verifyElementPresent(fieldFullAddress, 5)
+					if (fullAddress == true) {
+						WebUI.waitForElementVisible(fieldFullAddress, 5)
+						WebUI.setText(fieldFullAddress, "Text" +RandomStringUtils.randomAlphanumeric(200))
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+					boolean provinceData = WebUI.verifyElementPresent(drpProvince, 5)
+					if (provinceData == true) {
+						WebUI.verifyElementVisible(drpProvince)
+						WebUI.selectOptionByIndex(drpProvince, index)
+						boolean drpDistrictPresent = WebUI.verifyElementPresent(drpDistrict, 5)
+						if (drpDistrictPresent == true) {
+							WebUI.verifyElementVisible(drpDistrict)
+							WebUI.selectOptionByIndex(drpDistrict, index)
+							boolean drpSubDistrictPresent = WebUI.verifyElementPresent(drpSubDistrict, 5)
+							if (drpSubDistrictPresent == true) {
+								WebUI.verifyElementVisible(drpSubDistrict)
+								WebUI.selectOptionByIndex(drpSubDistrict, index)
+								boolean drpVillagePresent = WebUI.verifyElementPresent(drpVillage, 5)
+								if (drpVillagePresent == true) {
+									WebUI.verifyElementVisible(drpVillage)
+									WebUI.selectOptionByIndex(drpVillage, index)
+									flagLoop = true
+								} else {keyLogger.markError("Not present "+drpVillagePresent+" element")}
+							} else {keyLogger.markError("Not present "+drpSubDistrictPresent+" element")}
+						} else {keyLogger.markError ("Not present "+drpDistrictPresent+" element")}
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+			} else {keylogger.logInfo('We Recheck again')}
+		}	
 		} else {keyLogger.logInfo("We don't get button edit drop down placement sent card")}
 		if (WebUI.waitForElementVisible(btnSaveDeliveryAddress, 5)) {
 			WebUI.takeScreenshot()

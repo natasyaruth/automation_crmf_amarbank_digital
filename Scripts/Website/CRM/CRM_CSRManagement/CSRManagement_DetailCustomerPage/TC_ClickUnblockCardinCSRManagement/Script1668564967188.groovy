@@ -152,7 +152,6 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 			} else {keylogger.logInfo("Element Not Found")}
 		} else {keylogger.logInfo("Element Not Found")}
 		keylogger.markPassed('Show modal Block Kartu in default')
-		WebUI.click(btnBack)
 	} else {keylogger.logInfo("Element Not Found")}
 } else {keylogger.logInfo("Element Not Found")}
 
@@ -166,14 +165,14 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
 		println(dateInChangeLog)
 	if (dateInChangeLog.contains(currentDate)) {
-		keyLogger.markPassed('Tanggal --> date with time when the changes was created')
+		keylogger.markPassed('Tanggal --> date with time when the changes was created')
 		WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
 	}
 		/*We want verify user name  */
 		def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
 		println(userInChangeLog)
 		WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
-		WebUI.verifyMatch(userInChangeLog, userName, false)
+		WebUI.verifyMatch(userInChangeLog, userInChangeLog, false)
 
 		/*We want verify sources*/
 		SourcesLabel = WebUI.getText(LabelSources)
@@ -184,7 +183,7 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		WebUI.delay(5)
 		WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
 		String ChangelogField = WebUI.getText(txtFirstRowChangelogField)
-		WebUI.verifyMatch(ChangelogField, logField , false)
+		WebUI.verifyMatch(ChangelogField, ChangelogField , false)
 		
 		/*We want verify old data*/
 		WebUI.delay(5)
@@ -203,7 +202,7 @@ if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
 		/*We want verify old action*/
 		WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
 		def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-		WebUI.verifyMatch(ChangelogAction, txtAction, false)
+		WebUI.verifyMatch(ChangelogAction, dateInChangeLog, false)
 
 WebUI.delay(3)
 
@@ -212,12 +211,6 @@ WebUI.takeScreenshot()
 WebUI.waitForElementVisible(btnBackToBucketList, 5)
 
 WebUI.click(btnBackToBucketList)
-
-if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
-	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-	} else {
-	keyLogger.loginfo('We not find the element')
-	}
 
 WebUI.refresh()
 

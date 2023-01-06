@@ -31,7 +31,6 @@ import com.github.javafaker.Faker as Faker
 
 /* We want setup faker for name */
 Faker faker = new Faker()
-
 String fullName = faker.name().fullName()
 
 /*Declaration keylog forloggin*/
@@ -47,7 +46,6 @@ if (checkMenuCsr == true) {
 }
 
 WebUI.delay(5)
-
 /*'We want to check blocked notification and check for text blocked
  * if alert confirmation pop up enable is true'*/
 if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
@@ -76,15 +74,15 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
     WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 
-/* We want to check status is customer type is "Nasabah Senyumku" and card status "Sudah Aktivasi*/
+/* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
-    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
+    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCustType)
 
     if (filterChooseCard == true) {
-        WebUI.selectOptionByLabel(drpDwnCardStatus, 'Sudah Aktivasi', false)
+        WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 
         if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
-            WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
+            WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
         } else {
             keyLogger.markFailed('We not find the drop down by cust type')
         }
@@ -93,9 +91,8 @@ for (int i = 0; i < customerType.size(); i++) {
     } else {
         keyLogger.markFailed('We don\'t find the drop down Card Status')
     }
-    
-    WebUI.delay(5)
-
+	
+	WebUI.delay(5)
     /*We want check filter "Semua" in change log*/
     if (WebUI.waitForElementVisible(SectionChangelog, 5)) {
         boolean changeLogActivity = WebUI.verifyElementText(SectionChangelog, 'Change Log')
@@ -109,63 +106,49 @@ for (int i = 0; i < customerType.size(); i++) {
 
             String index = rand.nextInt(optionListLength + 1)
 
-            WebUI.delay(5)
-
             if (WebUI.waitForElementVisible(DrpFilterActions, 5, FailureHandling.OPTIONAL)) {
-                WebUI.selectOptionByLabel(DrpFilterSource, 'Semua', false)
+						WebUI.selectOptionByLabel(DrpFilterSource, 'Semua',false)
+					} else {keyLogger.logInfo("We Not find the filter 'Semua'")}
 
-                WebUI.delay(5)
-            } else {
-                keyLogger.logInfo('We Not find the filter \'Semua\'')
+
+                        WebUI.delay(3)
+
+				WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogDate,FailureHandling.OPTIONAL)
+				
+				WebUI.waitForElementVisible(txtFirstRowChangelogSources, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogSources,FailureHandling.OPTIONAL)
+   
+                WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogField,FailureHandling.OPTIONAL)
+                
+				WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogOldData,FailureHandling.OPTIONAL)
+				
+                WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogOldData,FailureHandling.OPTIONAL)
+
+				/*We want verify old action*/
+				WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
+				WebUI.verifyElementVisible(txtFirstRowChangelogActions,FailureHandling.OPTIONAL)
+	
+				WebUI.delay(5)
+
+				WebUI.takeScreenshot()
+
+				WebUI.waitForElementVisible(btnBackToBucketList, 5)
+
+				WebUI.click(btnBackToBucketList)
+
+				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
+					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+					} else {
+					keyLogger.logInfo('We not find the element')
+					}
+    
+				WebUI.refresh()
+
+				WebUI.waitForPageLoad(50)
+                }
+                }
             }
-            
-            WebUI.delay(3)
-
-            WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
-
-            WebUI.waitForElementVisible(txtFirstRowChangelogSources, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogSources, FailureHandling.OPTIONAL)
-
-            WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogField, FailureHandling.OPTIONAL)
-
-            WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogOldData, FailureHandling.OPTIONAL)
-
-            WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogOldData, FailureHandling.OPTIONAL)
-
-            /*We want verify old action*/
-            WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-
-            WebUI.verifyElementVisible(txtFirstRowChangelogActions, FailureHandling.OPTIONAL)
-
-            WebUI.verifyTextPresent(txtAction, false)
-
-            WebUI.delay(5)
-
-            WebUI.takeScreenshot()
-
-            WebUI.waitForElementVisible(btnBackToBucketList, 5)
-
-            WebUI.click(btnBackToBucketList)
-
-            if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
-                WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-            } else {
-                keyLogger.loginfo('We not find the element')
-            }
-            
-            WebUI.refresh()
-
-            WebUI.waitForPageLoad(50)
-        }
-    }
-}
-

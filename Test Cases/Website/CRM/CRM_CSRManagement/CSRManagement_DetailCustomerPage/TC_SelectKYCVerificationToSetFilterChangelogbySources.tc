@@ -1147,6 +1147,6 @@
       <description></description>
       <id>c6c9e451-155d-4c8b-b521-8f130e5a8b58</id>
       <masked>false</masked>
-      <name>variable</name>
+      <name>SourcesKYCVerification</name>
    </variable>
 </TestCaseEntity>

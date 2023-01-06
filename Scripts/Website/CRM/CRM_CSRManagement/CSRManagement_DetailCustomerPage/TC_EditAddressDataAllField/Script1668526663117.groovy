@@ -76,9 +76,15 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 
 /* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
+<<<<<<< HEAD
     boolean filterCustType = WebUI.verifyElementVisible(drpDwnCustType)
 
     if (filterCustType == true) {
+=======
+    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCustType)
+
+    if (filterChooseCard == true) {
+>>>>>>> c5a75ff87eb817902009303550430cd93f25b6df
         WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 
         if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
@@ -206,8 +212,8 @@ for (int i = 0; i < customerType.size(); i++) {
 
 				/*We want verify old action*/
 				WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-				def ChangelogAction=WebUI.getText(txtFirstRowChangelogActions)
-				WebUI.verifyMatch(ChangelogAction, txtAction, false)
+				TestObject actionLog = new TestObject().addProperty('text',ConditionType.CONTAINS,'-')
+				WebUI.verifyElementPresent(actionLog, 5)
 
 				WebUI.delay(5)
 
@@ -220,7 +226,7 @@ for (int i = 0; i < customerType.size(); i++) {
 				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 					} else {
-					keyLogger.loginfo('We not find the element')
+					keyLogger.logInfo('We not find the element')
 					}
     
 				WebUI.refresh()

@@ -172,11 +172,6 @@ while (checkData == false) {
 	Random rand = new Random()
 	String index = rand.nextInt(optionListLength + 1)
 	if (index != 0) {
-		if (WebUI.waitForElementVisible(drpDwnVillage, 5)) {
-			WebUI.delay(5)
-			WebUI.selectOptionByIndex(drpDwnVillage, index)
-			WebUI.delay(5)
-		} else {keylogger.markError('Element not visible')}
 		if (WebUI.verifyElementVisible(btnKycFinished)) {
 			WebUI.click(btnKycFinished)
 			WebUI.delay(5)
