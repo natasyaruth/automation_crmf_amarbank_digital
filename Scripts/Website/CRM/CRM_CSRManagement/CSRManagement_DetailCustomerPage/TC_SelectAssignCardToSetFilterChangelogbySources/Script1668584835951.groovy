@@ -74,15 +74,16 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
     WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 
-/* We want to check status is customer type is "Nasabah Senyumku"*/
+/* We want to check status is customer type is "Nasabah Senyumku" and card status "Sudah Aktivasi"*/
+
 for (int i = 0; i < customerType.size(); i++) {
     boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
 
     if (filterChooseCard == true) {
-        WebUI.selectOptionByLabel(drpDwnCardStatus, 'Nasabah Senyumku', false)
+        WebUI.selectOptionByLabel(drpDwnCardStatus, 'Sudah Aktivasi', false)
 
         if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
-            WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
+            WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
         } else {
             keyLogger.markFailed('We not find the drop down by cust type')
         }
@@ -91,8 +92,8 @@ for (int i = 0; i < customerType.size(); i++) {
     } else {
         keyLogger.markFailed('We don\'t find the drop down Card Status')
     }
-	
-	WebUI.delay(5)
+    
+    WebUI.delay(5)
     /*We want check filter "Semua" in change log*/
     if (WebUI.waitForElementVisible(SectionChangelog, 5)) {
         boolean changeLogActivity = WebUI.verifyElementText(SectionChangelog, 'Change Log')
@@ -107,8 +108,7 @@ for (int i = 0; i < customerType.size(); i++) {
             String index = rand.nextInt(optionListLength + 1)
 
             if (WebUI.waitForElementVisible(DrpFilterActions, 5, FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(DrpFilterSource, 'Assign Card')
-						WebUI.verifyElementText(DrpFilterSource, 'Assign Card')
+						WebUI.selectOptionByLabel(DrpFilterSource, 'Assign Card', false)
 					} else {keyLogger.logInfo("We Not find the filter 'Assign Card'")}
 
 
@@ -117,6 +117,7 @@ for (int i = 0; i < customerType.size(); i++) {
 				WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
 				WebUI.verifyElementVisible(txtFirstRowChangelogDate,FailureHandling.OPTIONAL)
 				
+				WebUI.click(menuCardManagement)
 				WebUI.waitForElementVisible(txtFirstRowChangelogSources, 5)
 				ChangelogSources = WebUI.getText(txtFirstRowChangelogSources)
 				WebUI.verifyMatch(SourcesAssignCard, ChangelogSources, false)

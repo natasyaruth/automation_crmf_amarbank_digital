@@ -323,7 +323,7 @@
       <name>drpCustType</name>
    </variable>
    <variable>
-      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Nasabah Tidak Melanjutkan']</defaultValue>
+      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku']</defaultValue>
       <description></description>
       <id>2c5671b5-379c-4e2e-afc6-a7d98962265d</id>
       <masked>false</masked>

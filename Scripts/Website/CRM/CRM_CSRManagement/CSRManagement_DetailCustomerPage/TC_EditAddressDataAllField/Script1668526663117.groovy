@@ -76,10 +76,10 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 
 /* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
-    boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
+    boolean filterCustType = WebUI.verifyElementVisible(drpDwnCustType)
 
-    if (filterChooseCard == true) {
-        WebUI.selectOptionByLabel(drpDwnCardStatus, 'Nasabah Senyumku', false)
+    if (filterCustType == true) {
+        WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 
         if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
             WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
@@ -98,7 +98,7 @@ for (int i = 0; i < customerType.size(); i++) {
     if (WebUI.waitForElementVisible(elementAddressSentCard, 5)) {
         boolean dataAddress = WebUI.verifyElementText(elementAddressSentCard, 'Alamat Pengiriman Kartu')
 
-        if (dataDiri == true) {
+        if (dataAddress == true) {
             WebUI.click(elementAddressSentCard)
 
             int optionListLength = 3
@@ -133,6 +133,10 @@ for (int i = 0; i < customerType.size(); i++) {
 					
 					if (WebUI.verifyElementVisible(drpProvince,FailureHandling.OPTIONAL)) {
 						WebUI.selectOptionByIndex(drpProvince, index)
+					} else {keyLogger.logInfo("We Not find the province")}
+					
+					if (WebUI.verifyElementVisible(drpDistrict,FailureHandling.OPTIONAL)) {
+						WebUI.selectOptionByIndex(drpDistrict, index)
 					} else {keyLogger.logInfo("We Not find the province")}
 					
 					if (WebUI.verifyElementVisible(drpSubDistricts,FailureHandling.OPTIONAL)) {
