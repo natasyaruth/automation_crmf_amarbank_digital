@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLiveness</name>
+   <name>TabActiveCall</name>
    <tag></tag>
-   <elementGuidId>da96bfe4-e244-4235-be1a-7030e5f4a636</elementGuidId>
+   <elementGuidId>22e966a4-62a3-4252-bd6d-17c088e64782</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLiveness']</value>
+         <value>//*[@id = 'TabActiveCall']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLiveness</value>
-      <webElementGuid>2d304415-2a62-48ac-8269-7346b92f4b0c</webElementGuid>
+      <value>TabActiveCall</value>
+      <webElementGuid>638a19dd-e1cb-450a-bf36-cceeea68427a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

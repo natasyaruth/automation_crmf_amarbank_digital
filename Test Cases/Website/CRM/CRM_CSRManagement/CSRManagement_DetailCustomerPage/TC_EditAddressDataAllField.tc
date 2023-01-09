@@ -509,6 +509,12 @@
       <value></value>
       <variableId>db6ebf23-fd71-49ba-bd56-e7c31fd6d2b6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>caa96241-c75f-453a-a582-a5087ee075c0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -1096,5 +1102,12 @@
       <id>db6ebf23-fd71-49ba-bd56-e7c31fd6d2b6</id>
       <masked>false</masked>
       <name>LabelAccountPurpose</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/DrpDistrict')</defaultValue>
+      <description></description>
+      <id>caa96241-c75f-453a-a582-a5087ee075c0</id>
+      <masked>false</masked>
+      <name>drpDistrict</name>
    </variable>
 </TestCaseEntity>

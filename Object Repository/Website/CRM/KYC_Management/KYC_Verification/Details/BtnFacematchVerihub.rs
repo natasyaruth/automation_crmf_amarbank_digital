@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLiveness</name>
+   <name>BtnFacematchVerihub</name>
    <tag></tag>
-   <elementGuidId>da96bfe4-e244-4235-be1a-7030e5f4a636</elementGuidId>
+   <elementGuidId>f80adb5d-e0ca-4ba8-b854-e5b9d0a1e0b5</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLiveness']</value>
+         <value>//*[@id = 'BtnFacematchVerihub']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLiveness</value>
-      <webElementGuid>2d304415-2a62-48ac-8269-7346b92f4b0c</webElementGuid>
+      <value>BtnFacematchVerihub</value>
+      <webElementGuid>8793d5e8-857a-4430-9760-57a476831759</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

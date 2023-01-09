@@ -19,7 +19,7 @@ WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucket
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'))
 
 WebUI.verifyTextPresent(headerKYCVerificationDetail, false)
 

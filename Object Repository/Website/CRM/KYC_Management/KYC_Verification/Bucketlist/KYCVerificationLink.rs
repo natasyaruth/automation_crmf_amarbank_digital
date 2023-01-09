@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLiveness</name>
+   <name>KYCVerificationLink</name>
    <tag></tag>
-   <elementGuidId>da96bfe4-e244-4235-be1a-7030e5f4a636</elementGuidId>
+   <elementGuidId>b763b109-fa99-4f25-bbc4-fb7547ad7444</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLiveness']</value>
+         <value>//*[@id = 'LinkVerification']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLiveness</value>
-      <webElementGuid>2d304415-2a62-48ac-8269-7346b92f4b0c</webElementGuid>
+      <value>LinkVerification</value>
+      <webElementGuid>da24bdba-34e3-49cf-b3b2-1c2dfa76d500</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLiveness</name>
+   <name>BtnModalCancelCheckDukcapil</name>
    <tag></tag>
-   <elementGuidId>da96bfe4-e244-4235-be1a-7030e5f4a636</elementGuidId>
+   <elementGuidId>bc2acfb3-0db5-4898-a790-7b27bdcf5f82</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLiveness']</value>
+         <value>//*[@id = 'BtnModalCancelCheckDukcapil']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLiveness</value>
-      <webElementGuid>2d304415-2a62-48ac-8269-7346b92f4b0c</webElementGuid>
+      <value>BtnModalCancelCheckDukcapil</value>
+      <webElementGuid>baa5bae4-7caa-4eca-a409-32c7aed2d97e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

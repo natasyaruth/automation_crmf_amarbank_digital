@@ -15,34 +15,52 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
+import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink'))
+/*'Declaration keylog forloggin'*/
+KeywordUtil keyLogger = new KeywordUtil()
 
-WebUI.verifyTextPresent(headerDetailKYCVerification, false)
+/*'We want to makesure we can access KYC Management'*/
+boolean checkMenuKYC = WebUI.verifyElementVisible(menuKYCManagement, FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), searchRequestID)
+if (checkMenuKYC == true) {
+    WebUI.click(menuKYCManagement)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
+    WebUI.click(menuKYCVerification)
+} else {
+    keyLogger.markFailed('Something happen with menu KYC Management')
+}
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'))
+/* Verify KYC Verification Bucketlist*/
+WebUI.verifyElementVisible(headerKYCVerificationElement)
 
-WebUI.waitForPageLoad(5)
+WebUI.selectOptionByLabel(drpEmailType, EmailisVerified, false)
 
-WebUI.verifyTextPresent(customerType, false)
+WebUI.selectOptionByLabel(drpCustomerType, NewCustomer, false)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'))
+WebUI.click(btnRequestid)
 
-WebUI.verifyTextPresent(ktpNumber, false)
+WebUI.click(BtnReject1)
 
-WebUI.verifyTextPresent(ktpName, false)
+WebUI.click(CheckOtherRejectionReason)
 
-WebUI.verifyTextPresent(birthDate, false)
+WebUI.setText(TxtRejectionReason, TextRejection)
 
-WebUI.verifyTextPresent(motherName, false)
+/* We want capture the result*/
+WebUI.takeScreenshot()
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept2'))
+WebUI.delay(3)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'), 5)
+WebUI.click(BtnSendRejectionReason)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBackToBucketlist'))
+WebUI.click(BtnModalBackToBucketlist)
+
+WebUI.verifyElementVisible(headerKYCVerificationElement)
+
+/* We want capture the result*/
+WebUI.takeScreenshot()
+
+/* We want to refresh for the next process*/
+WebUI.refresh()
 

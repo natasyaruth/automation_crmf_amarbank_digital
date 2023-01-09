@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnLiveness</name>
+   <name>ChkOther</name>
    <tag></tag>
-   <elementGuidId>da96bfe4-e244-4235-be1a-7030e5f4a636</elementGuidId>
+   <elementGuidId>8421cc9a-5f25-48a7-ac65-37cf145c3f88</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnLiveness']</value>
+         <value>//*[@id = 'ChkOther']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnLiveness</value>
-      <webElementGuid>2d304415-2a62-48ac-8269-7346b92f4b0c</webElementGuid>
+      <value>ChkOther</value>
+      <webElementGuid>2e9ce1ac-a213-4f7a-bc5e-bbc2ae950d2a</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
