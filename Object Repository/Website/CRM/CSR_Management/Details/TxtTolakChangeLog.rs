@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCekDataDukcapilConfirmation</name>
+   <name>TxtTolakChangeLog</name>
    <tag></tag>
-   <elementGuidId>92de9226-c758-43f0-bb87-2390b33a57e1</elementGuidId>
+   <elementGuidId>dc13dcd5-e8e0-45b3-8246-27ad817e5fbc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*/text()[normalize-space(.)='Tolak']/parent::*</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnModalCheckDukcapil']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

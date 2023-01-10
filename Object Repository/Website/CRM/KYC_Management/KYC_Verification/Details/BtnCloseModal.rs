@@ -9,8 +9,12 @@
          <key>BASIC</key>
          <value>//*[@id = 'BtnCloseModal']</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//button[@id='BtnCloseModal']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -18,5 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnCloseModal</value>
+      <webElementGuid>c5473b94-3fc5-41ce-8005-9e9715b85d4c</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

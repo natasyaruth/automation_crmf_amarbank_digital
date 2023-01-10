@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCekDataDukcapilConfirmation</name>
+   <name>TxtPopUpCloseModal</name>
    <tag></tag>
-   <elementGuidId>92de9226-c758-43f0-bb87-2390b33a57e1</elementGuidId>
+   <elementGuidId>97583923-b9f5-4d58-99d6-e68a7c29d51d</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*/text()[normalize-space(.)='Akun ini ditolak']/parent::*</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnModalCheckDukcapil']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

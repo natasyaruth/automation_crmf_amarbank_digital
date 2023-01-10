@@ -16,6 +16,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.click(KYCManagementLink)
 
@@ -25,9 +26,9 @@ WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), InputReqID)
+WebUI.setText(TxtSearchRequestID, InputReqIDCSR)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnShow'))
+WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(BtnDetailKYCVerification)
 
@@ -39,11 +40,12 @@ WebUI.click(BtnLiveness)
 
 WebUI.click(BtnLivenessConfirmation)
 
-WebUI.scrollToElement(BtnCekDataDukcapil, 10)
+WebUI.scrollToElement(BtnCekDataDukcapil, 5)
 
 WebUI.click(BtnCekDataDukcapil)
 
-WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 10)
+WebUI.waitForElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCekDataDukcapilConfirmation'), 
+    10)
 
 WebUI.verifyElementClickable(BtnCekDataDukcapilConfirmation)
 
@@ -64,4 +66,47 @@ WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verif
 WebUI.verifyElementClickable(BtnCloseModal)
 
 WebUI.click(BtnCloseModal)
+
+/*Declare keyword util*/
+KeywordUtil keyLogger = new KeywordUtil()
+
+WebUI.click(findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink'))
+
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+    boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
+
+    if (checkAlertProcess == true) {
+        WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
+
+        WebUI.click(btnCancelPopUpElement)
+
+        WebUI.delay(2)
+
+        WebUI.waitForElementVisible(headerCSRManagementElement, 5)
+
+        WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+    } else {
+        keyLogger.markFailed('We don\'t find alert confirmation')
+    }
+    
+    WebUI.waitForElementVisible(headerCSRManagementElement, 5)
+
+    WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+} else {
+    WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+}
+
+WebUI.setText(CSRManagementBucketListTxtRequestId, InputReqIDCSR)
+
+WebUI.click(CSRManagementBucketListBtnSearch)
+
+WebUI.click(CSRManagementBucketListBtnDetail)
+
+WebUI.scrollToElement(BtnDataChangeLog, 10)
+
+WebUI.click(BtnDataChangeLog)
+
+WebUI.verifyElementText(TxtTerimaChangeLog, 'Terima')
+
+WebUI.click(BtnBack)
 

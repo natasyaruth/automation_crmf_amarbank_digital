@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCekDataDukcapilConfirmation</name>
+   <name>TxtKirimUlangChangeLog</name>
    <tag></tag>
-   <elementGuidId>92de9226-c758-43f0-bb87-2390b33a57e1</elementGuidId>
+   <elementGuidId>49167f90-922f-40c1-aa39-e5ebea23a204</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='BtnModalCheckDukcapil']</value>
+         <value>//td[(text() = 'Kirim ulang email verifikasi' or . = 'Kirim ulang email verifikasi')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
