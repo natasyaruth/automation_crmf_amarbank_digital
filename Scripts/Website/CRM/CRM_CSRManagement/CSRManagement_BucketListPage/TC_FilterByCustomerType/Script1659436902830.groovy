@@ -29,7 +29,7 @@ import org.apache.commons.lang.RandomStringUtils
 /*'Declaration keylog forloggin'*/
 KeywordUtil keyLogger = new KeywordUtil()
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 if (checkMenuCsr == true) {
 	WebUI.click(menuCSRManagement)
 } else {
@@ -38,8 +38,8 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
-	boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
+	boolean checkAlertProcess = WebUI.waitForElementVisible(alertConfirmationPopUpElement, 5)
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
@@ -50,7 +50,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	}
 	WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-}else {
+} else {
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 

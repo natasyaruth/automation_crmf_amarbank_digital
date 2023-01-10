@@ -21,7 +21,7 @@ import org.apache.commons.lang.RandomStringUtils
 
 KeywordUtil keyLogger = new KeywordUtil()
 /* We want to makesure we can identify element assign card*/
-if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
 	/* We want to click menu assign card element*/
 	WebUI.click(menuAssignCardElement)
 } else {
@@ -36,7 +36,7 @@ if (WebUI.verifyElementVisible(menuAssignCardElement, FailureHandling.OPTIONAL))
 }
 
 /* We want handling the execption in Assign Card if available when the process is locked*/
-if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
 	WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 	WebUI.verifyElementText(btnCancelPopUpElement, btnCancelPopUpText)
 	WebUI.click(btnCancelPopUpElement)
@@ -46,7 +46,7 @@ if (WebUI.verifyElementPresent(blockBylockedUserElement, 5, FailureHandling.OPTI
 }
 
 /* We want added filter for new card only*/
-if (WebUI.verifyElementVisible(filterCustOrigin,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(filterCustOrigin, 5)) {
 	WebUI.selectOptionByLabel(filterCustOrigin, custOrigin, false)
 } else {keyLogger.markFailed("We cannot select Senyumku")}
 
@@ -62,44 +62,51 @@ boolean onDetailAssignCard = WebUI.verifyElementText(headerCustomerDetailElement
 /* We want verify data card number before edit pengiriman*/
 if (onDetailAssignCard == true) {
 	requestId = WebUI.getText(txtRequestId)
-	if (WebUI.verifyElementVisible(btnEditDeliveryCard, FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(btnEditDeliveryCard, 5)) {
 		WebUI.click(btnEditDeliveryCard)
-		if (WebUI.verifyElementVisible(drpDownPlacementSentCard,FailureHandling.OPTIONAL)) {
+		if (WebUI.verifyElementVisible(drpDownPlacementSentCard)) {
 			int optionListLength = 3
 			Random rand = new Random()
 			String index = rand.nextInt(optionListLength + 1)
-			boolean drpPlacementCard = WebUI.verifyOptionsPresent(drpDownPlacementSentCard, ["Apartemen","Rumah","Kantor","Kos"])
-			if (drpPlacementCard == true) {
-				WebUI.waitForElementVisible(drpDownPlacementSentCard, 5)
-				WebUI.selectOptionByIndex(drpDownPlacementSentCard, index)
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
-			boolean fullAddress = WebUI.verifyElementPresent(fieldFullAddress, 5)
-			if (fullAddress == true) {
-				WebUI.waitForElementVisible(fieldFullAddress, 5)
-				WebUI.setText(fieldFullAddress, "Text" +RandomStringUtils.randomAlphanumeric(200))
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
-			boolean provinceData = WebUI.verifyElementPresent(drpProvince, 5)
-			if (provinceData == true) {
-				WebUI.verifyElementVisible(drpProvince)
-				WebUI.selectOptionByIndex(drpProvince, index)
-				boolean drpDistrictPresent = WebUI.verifyElementPresent(drpDistrict, 5)
-				if (drpDistrictPresent == true) {
-					WebUI.verifyElementVisible(drpDistrict)
-					WebUI.selectOptionByIndex(drpDistrict, index)
-					boolean drpSubDistrictPresent = WebUI.verifyElementPresent(drpSubDistrict, 5)
-					if (drpSubDistrictPresent == true) {
-						WebUI.verifyElementVisible(drpSubDistrict)
-						WebUI.selectOptionByIndex(drpSubDistrict, index)
-						boolean drpVillagePresent = WebUI.verifyElementPresent(drpVillage, 5)
-						if (drpVillagePresent == true) {
-							WebUI.verifyElementVisible(drpVillage)
-							WebUI.selectOptionByIndex(drpVillage, index)
-						} else {keyLogger.markError("Not present "+drpVillagePresent+" element")}
-					} else {keyLogger.markError("Not present "+drpSubDistrictPresent+" element")}
-				} else {keyLogger.markError ("Not present "+drpDistrictPresent+" element")}
-			} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+			flagLoop = false
+			loopIndex:
+			while (flagLoop == false) {
+				if (index != 0) {
+					boolean drpPlacementCard = WebUI.verifyOptionsPresent(drpDownPlacementSentCard, ["Apartemen","Rumah","Kantor","Kos"])
+					if (drpPlacementCard == true) {
+						WebUI.waitForElementVisible(drpDownPlacementSentCard, 5)
+						WebUI.selectOptionByIndex(drpDownPlacementSentCard, index)
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+					boolean fullAddress = WebUI.verifyElementPresent(fieldFullAddress, 5)
+					if (fullAddress == true) {
+						WebUI.waitForElementVisible(fieldFullAddress, 5)
+						WebUI.setText(fieldFullAddress, "Text" +RandomStringUtils.randomAlphanumeric(200))
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+					boolean provinceData = WebUI.verifyElementPresent(drpProvince, 5)
+					if (provinceData == true) {
+						WebUI.verifyElementVisible(drpProvince)
+						WebUI.selectOptionByIndex(drpProvince, index)
+						boolean drpDistrictPresent = WebUI.verifyElementPresent(drpDistrict, 5)
+						if (drpDistrictPresent == true) {
+							WebUI.verifyElementVisible(drpDistrict)
+							WebUI.selectOptionByIndex(drpDistrict, index)
+							boolean drpSubDistrictPresent = WebUI.verifyElementPresent(drpSubDistrict, 5)
+							if (drpSubDistrictPresent == true) {
+								WebUI.verifyElementVisible(drpSubDistrict)
+								WebUI.selectOptionByIndex(drpSubDistrict, index)
+								boolean drpVillagePresent = WebUI.verifyElementPresent(drpVillage, 5)
+								if (drpVillagePresent == true) {
+									WebUI.verifyElementVisible(drpVillage)
+									WebUI.selectOptionByIndex(drpVillage, index)
+									flagLoop = true
+								} else {keyLogger.markError("Not present "+drpVillagePresent+" element")}
+							} else {keyLogger.markError("Not present "+drpSubDistrictPresent+" element")}
+						} else {keyLogger.markError ("Not present "+drpDistrictPresent+" element")}
+					} else { keyLogger.logInfo("We don't find the element Address Delivery") }
+			} else {keylogger.logInfo('We Recheck again')}
+		}	
 		} else {keyLogger.logInfo("We don't get button edit drop down placement sent card")}
-		if (WebUI.verifyElementVisible(btnSaveDeliveryAddress,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(btnSaveDeliveryAddress, 5)) {
 			WebUI.takeScreenshot()
 			WebUI.click(btnSaveDeliveryAddress)
 		} else {keyLogger.logInfo("We don't see the button save")}
@@ -117,7 +124,7 @@ WebUI.click(btnBackElement)
 WebUI.takeScreenshot()
 
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement)
 if (checkMenuCsr == true) {
 	SourceData = WebUI.getText(menuCSRManagement)
 	WebUI.click(menuCSRManagement)
@@ -128,7 +135,7 @@ SourceMenuData = SourceData
 println(SourceMenuData)
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
 	boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 	if (checkAlertProcess == true) {
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -145,24 +152,24 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 }
 
 /* We want input request ID from assign card to process to customer page*/
-if (WebUI.verifyElementVisible(fieldSearchReqId,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(fieldSearchReqId, 5)) {
 	WebUI.setText(fieldSearchReqId, assignCardRequestId)
-	if (WebUI.verifyElementVisible(btnSearchCsrManagement,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(btnSearchCsrManagement, 5)) {
 		WebUI.click(btnSearchCsrManagement)
-		if (WebUI.verifyElementVisible(btnDetailCsrManagement,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(btnDetailCsrManagement,5)) {
 			WebUI.click(btnDetailCsrManagement)
-			if (WebUI.verifyElementVisible(headerTxtCustDetail,FailureHandling.OPTIONAL)) {
+			if (WebUI.waitForElementVisible(headerTxtCustDetail,5)) {
 				WebUI.click(changeLogMenu)
 				String firstRow = WebUI.getText(txtFirstRowSource)
 				println(firstRow)
 				WebUI.verifyMatch(SourceMenuData, firstRow, false)
-				if (WebUI.verifyElementVisible(filterBySource,FailureHandling.OPTIONAL)) {
+				if (WebUI.waitForElementVisible(filterBySource,5)) {
 					WebUI.selectOptionByLabel(filterBySource, assignCard, false)
-					if (WebUI.verifyElementVisible(firstRowActions,FailureHandling.OPTIONAL)) {
+					if (WebUI.waitForElementVisible(firstRowActions,5)) {
 						WebUI.verifyElementText(firstRowActions, "-")
 						String newData = WebUI.getText(newDataOnLog)
 						String oldData = WebUI.getText(oldDataOnLog)
-						if (WebUI.verifyNotMatch(newData, oldData, false, FailureHandling.OPTIONAL)) {
+						if (WebUI.verifyNotMatch(newData, oldData, false)) {
 							keyLogger.logInfo("We are correct action")
 							WebUI.takeScreenshot()
 						} else {

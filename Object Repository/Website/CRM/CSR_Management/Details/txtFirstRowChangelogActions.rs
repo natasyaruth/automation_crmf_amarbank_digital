@@ -6,12 +6,11 @@
    <elementGuidId>539e2d50-dca4-4252-8a64-b5c3a5d84625</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[5]/preceding::td[3]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[5]/following::td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>23ae3994-162c-4416-b464-d79caa07c90e</webElementGuid>
+      <webElementGuid>4c9d24a2-2c72-4b5c-99b8-37ec71b21e82</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>a538d7c2-bd84-4747-9983-eee45f4e5dff</webElementGuid>
+      <webElementGuid>821fedd8-0ffc-443a-ae05-a4e9ff9742da</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Viewed</value>
-      <webElementGuid>57fb1d8e-1f83-4c82-9a15-15a8ff985f5d</webElementGuid>
+      <webElementGuid>ba05fcd9-a19b-4915-939a-6594a2f87eb7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;changelog&quot;)/div[@class=&quot;Accordion&quot;]/div[@class=&quot;Card&quot;]/div[@class=&quot;Accordion-body&quot;]/section[@class=&quot;Card-body&quot;]/div[1]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>9b4e6eb9-936c-4012-83ea-1777fe0c59be</webElementGuid>
+      <webElementGuid>bf7ec9b1-39b7-42ec-aa87-4c42989f85e1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div[2]/table/tbody/tr/td[7]</value>
-      <webElementGuid>342d85a9-d716-494d-af06-04a8cfe4f571</webElementGuid>
+      <webElementGuid>223bf0cf-e448-4dfa-adac-5c6dee317b09</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[7]/following::td[1]</value>
-      <webElementGuid>6a3130ee-0797-4703-bb09-eba4f6150b52</webElementGuid>
+      <webElementGuid>396e3127-212b-43d6-8f41-30229387c9ae</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='-'])[6]/following::td[2]</value>
-      <webElementGuid>83efa121-ef42-44c0-8c4e-1bf9d05e1f29</webElementGuid>
+      <webElementGuid>ee5c95df-ac60-4f97-a8ac-8032ed0b9f07</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='qa.testing@amarbank.co.id'])[2]/preceding::td[2]</value>
-      <webElementGuid>b7797c1c-3845-47f8-b9ef-c68be2985669</webElementGuid>
+      <webElementGuid>83564766-1c39-4da4-9d5a-e3f54be0c80c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[5]/preceding::td[3]</value>
-      <webElementGuid>ae40031b-622d-4b2a-ad61-112767798590</webElementGuid>
+      <webElementGuid>5bb06964-6b75-46a1-b0a5-879f66868e44</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[7]</value>
-      <webElementGuid>2b815759-73b8-451c-acdd-57f09b9130a6</webElementGuid>
+      <webElementGuid>8aba9b45-9aa3-42c6-a7ff-981dc291451c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Viewed' or . = 'Viewed')]</value>
-      <webElementGuid>cdc350a9-5078-49c4-9cf0-b84a754f16e2</webElementGuid>
+      <webElementGuid>3e3b95ed-e851-4a04-a5dd-9b807a3ed54a</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -6,6 +6,10 @@
    <elementGuidId>2e2d914a-863a-4eba-959b-f1286f38e565</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'DrpFilterSource']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//select[@id='DrpFilterSource']</value>
       </entry>
@@ -14,39 +18,15 @@
          <value>#DrpFilterSource</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>select</value>
-      <webElementGuid>28c24a89-b2e5-4878-8e18-7a911ff28800</webElementGuid>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>DrpFilterSource</value>
-      <webElementGuid>f97589ae-aa33-44bf-ab05-1cf964188609</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>SemuaKYC Video RequestKYC VerificationAssign CardCSR Management</value>
-      <webElementGuid>80b04cf7-758e-4f50-b9b7-ee4b372f0760</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;DrpFilterSource&quot;)</value>
-      <webElementGuid>a814b8fc-3cee-4dc7-9cc7-c46521404b1a</webElementGuid>
+      <webElementGuid>4691742a-4348-4944-96ba-ae220d59a442</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +34,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//select[@id='DrpFilterSource']</value>
-      <webElementGuid>d67cd043-bf30-409a-991d-379b71f0b334</webElementGuid>
+      <webElementGuid>7137d6f0-9a98-415a-85e1-ee91aeaf071f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +42,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//section[@id='changelog']/div/div/div[2]/section/div/div/div[2]/div/select</value>
-      <webElementGuid>85f9b470-d486-42fd-8228-6a9d4ec304b8</webElementGuid>
+      <webElementGuid>63b6726f-30f9-42bb-94e7-f7a25e8fe548</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +50,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter by Sources'])[1]/following::select[1]</value>
-      <webElementGuid>ef8cef1c-283b-4905-844c-edef89ae0b43</webElementGuid>
+      <webElementGuid>39701b3d-6c0f-4092-b851-76a9cd0e0434</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +58,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Filter by Activity'])[1]/following::select[2]</value>
-      <webElementGuid>54e33271-c523-4bf6-a5a1-be0ad0637454</webElementGuid>
+      <webElementGuid>7c4c7309-581f-48ae-8a1a-e81676227d6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tanggal'])[1]/preceding::select[1]</value>
-      <webElementGuid>da577b18-70c9-4daf-8142-2a5410622838</webElementGuid>
+      <webElementGuid>ee21c9fc-2600-40c3-90e5-efc8b4b83e3e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='User'])[1]/preceding::select[1]</value>
-      <webElementGuid>7ea2d9cf-499a-48bf-8bde-e1de04afd719</webElementGuid>
+      <webElementGuid>dfaa9b8c-bfb6-4a18-aa85-b64422278e85</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/select</value>
-      <webElementGuid>75247e35-89d3-4737-9361-8a899a31574d</webElementGuid>
+      <webElementGuid>57586873-e0e5-4913-bf2a-d9b1c1e221a4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +90,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//select[@id = 'DrpFilterSource' and (text() = 'SemuaKYC Video RequestKYC VerificationAssign CardCSR Management' or . = 'SemuaKYC Video RequestKYC VerificationAssign CardCSR Management')]</value>
-      <webElementGuid>49f9cbad-b371-45ca-bc79-b69d5088be54</webElementGuid>
+      <webElementGuid>190a687d-9e1b-4a86-b3af-197c84fbd83e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

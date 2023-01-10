@@ -28,7 +28,7 @@ import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 KeywordUtil keyLogger = new KeywordUtil()
 
 /*'We want to makesure we can access CSR Management'*/
-boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHandling.OPTIONAL)
+boolean checkMenuCsr = WebUI.waitForElementVisible(menuCSRManagement, 5)
 
 if (checkMenuCsr == true) {
     WebUI.click(menuCSRManagement)
@@ -38,8 +38,8 @@ if (checkMenuCsr == true) {
 
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OPTIONAL)) {
-    boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 15)) {
+    boolean checkAlertProcess = WebUI.waitForElementVisible(alertConfirmationPopUpElement,5)
 
     if (checkAlertProcess == true) {
         WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
@@ -62,7 +62,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 15, FailureHandling.OP
 
 /* We want to filter data in CSR by Customer card status with Status 'Block Kartu ATM'*/
 /* We want to select Status card */
-WebUI.verifyElementVisible(drpDwnChooseStatusCard, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(drpDwnChooseStatusCard)
 
 WebUI.selectOptionByLabel(drpDwnChooseStatusCard, RequestNewCard, false)
 
@@ -71,7 +71,7 @@ WebUI.delay(5)
 /* Verify data is found page*/
 WebUI.waitForElementVisible(FirstRowCustomerType, 5)
 
-WebUI.verifyElementVisible(FirstRowCustomerType, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FirstRowCustomerType)
 
 WebUI.verifyElementPresent(FirstRowCustomerType, 15)
 
@@ -88,20 +88,20 @@ WebUI.delay(5)
 /*Verify flag card type status "Block Kartu ATM"*/
 WebUI.waitForElementVisible(MaximizeATMDataInfo, 15)
 
-WebUI.verifyElementVisible(MaximizeATMDataInfo, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(MaximizeATMDataInfo)
 
 WebUI.click(MaximizeATMDataInfo)
 
 WebUI.waitForElementVisible(FlagRequestNewCard, 15)
 
-WebUI.verifyElementVisible(FlagRequestNewCard, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FlagRequestNewCard)
 
 WebUI.verifyTextPresent(RequestNewCard, false)
 
 /*Verify flag card type status "Belum Aktivasi"*/
 WebUI.waitForElementVisible(FlagHasNotActivated, 15)
 
-WebUI.verifyElementVisible(FlagHasNotActivated, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(FlagHasNotActivated)
 
 WebUI.verifyTextPresent(HasNotActivated, false)
 
@@ -119,7 +119,7 @@ WebUI.click(BtnBack)
 
 /* Verify bucketlist*/
 WebUI.waitForElementVisible(headerCSRManagementElement, 15)
-WebUI.verifyElementVisible(headerCSRManagementElement, FailureHandling.OPTIONAL)
+WebUI.verifyElementVisible(headerCSRManagementElement)
 
 /* Do refresh to the page*/
 WebUI.refresh()

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnBackToBucketList']</value>
+         <value>//*[@id = 'BtnBack']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,6 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnBackToBucketList</value>
+      <value>BtnBack</value>
+      <webElementGuid>d4bac83a-e580-4144-9f27-996f29a3af0b</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

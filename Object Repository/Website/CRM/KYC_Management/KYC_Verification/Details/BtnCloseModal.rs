@@ -7,21 +7,17 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'BtnCloseModal']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnCloseModal']</value>
+         <value>//*[@id = 'BtnClose']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnCloseModal</value>
-      <webElementGuid>c5473b94-3fc5-41ce-8005-9e9715b85d4c</webElementGuid>
+      <value>BtnClose</value>
+      <webElementGuid>1cb2d7cf-a55e-46c6-a8f7-2e7a9bbfd857</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

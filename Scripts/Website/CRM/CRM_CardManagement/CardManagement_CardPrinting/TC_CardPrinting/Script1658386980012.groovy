@@ -20,7 +20,7 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 WebUI.click(linkCardPrinting)
 
 /* We will check availability element Tab Printlist*/
-WebUI.waitForElementPresent(tabPrintList, 10, FailureHandling.OPTIONAL)
+WebUI.waitForElementPresent(tabPrintList, 10)
 
 /* We will check availability text of 'Card Printing'*/
 WebUI.verifyTextPresent(verifyBucketlist, false)
