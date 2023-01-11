@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCekDataDukcapilConfirmation</name>
+   <name>BtnCloseModalRejectReason</name>
    <tag></tag>
-   <elementGuidId>92de9226-c758-43f0-bb87-2390b33a57e1</elementGuidId>
+   <elementGuidId>cc2ac06c-1db5-47dd-af3c-6a32aab1e761</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//button[@id='BtnClose']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnModalCheckDukcapil']</value>
+         <key>BASIC</key>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

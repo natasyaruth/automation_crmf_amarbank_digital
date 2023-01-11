@@ -259,7 +259,7 @@
       <name>BtnBack</name>
    </variable>
    <variable>
-      <defaultValue>'10004900'</defaultValue>
+      <defaultValue>'10005161'</defaultValue>
       <description></description>
       <id>f7c79174-799c-4797-b65f-ee978beb3f58</id>
       <masked>false</masked>

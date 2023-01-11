@@ -29,13 +29,13 @@ WebUI.click(BtnDetailKYCVerification)
 
 WebUI.click(BtnLiveness)
 
-WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtConfirmationLiveness'), 'Konfirmasi')
+WebUI.verifyElementText(TxtConfirmationLiveness, 'Konfirmasi')
 
-WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnLivenessConfirmation'))
+WebUI.verifyElementClickable(BtnLivenessConfirmation)
 
-WebUI.verifyElementClickable(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancelLiveness'))
+WebUI.verifyElementClickable(BtnCancelLiveness)
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancelLiveness'))
+WebUI.click(BtnCancelLiveness)
 
 WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtKYCCustomerDetail'), 'KYC Customer Detail')
 
