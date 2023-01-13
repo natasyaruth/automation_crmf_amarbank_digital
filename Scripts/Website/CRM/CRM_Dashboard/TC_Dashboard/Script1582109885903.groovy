@@ -30,11 +30,11 @@ WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Video
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Video/KYC_Video/KYCVideoLinkVideoRequest'))
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'), 30, FailureHandling.CONTINUE_ON_FAILURE)
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'), 30, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.verifyTextPresent(headerKYCVideoRequest, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'), 10)
+List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'), 10)
 
 listRequestId.get(indexNumber).click()
 
