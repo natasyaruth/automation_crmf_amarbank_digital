@@ -85,7 +85,7 @@
       <description></description>
       <id>1a9a5486-06a8-403e-b843-a252275855e0</id>
       <masked>false</masked>
-      <name>classNotVerified</name>
+      <name>classIsVerified</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType')</defaultValue>

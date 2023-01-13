@@ -47,7 +47,7 @@ WebElement tableKYCVerif = driver.findElement(By.xpath('//tbody'))
 
 /* We will declarated variable 'listRows' with type List to store
  all the element with tag 'tr' which means element that represent rows*/
-List<WebElement> listRows = driver.findElements(By.tagName('tr'))
+List<WebElement> listRows = tableKYCVerif.findElements(By.tagName('tr'))
 
 /* We will declarated variable 'listColumn' with type List to store
  all the element with tag 'td' which means element that represent column*/
@@ -61,7 +61,7 @@ boolean flagLoop = false
 
 /* This looping is represent to check data in bucketlist showed based on the choosen filter
  * in customer type and email type*/
-while(flagLoop = false) {
+while(flagLoop == false) {
 	
 	/* Looping through number of rows of bucketlist KYC Verification*/
 	for(int i=0;i<listRows.size();i++){
@@ -72,20 +72,23 @@ while(flagLoop = false) {
 		/* Get text and storing to variable 'actCustType' at column with index 4*/
 		String actCustType = listColumn.get(4).getText()
 		
-		/* Get attribute class and storing to variable 'actIconEmail' at column with index 6*/
-		String actIconEmail = listColumn.get(6).getAttribute('class')
-
+		String actIconEmail = listColumn.get(6).findElement(By.tagName('svg')).getAttribute('class')
+		
 		/* Compare actual customer type and expected customer type */
 		if(actCustType != custType) {
 			
 			/* Increment variable countIsnotNasabahSenyumku */
 			countIsnotNasabahSenyumku++
 			
+			println "Actual Customer Type: "+actCustType+", Expected Customer Type: "+custType
+			
 		/* Compare actual icon email type and expected icon email type */
-		} else if (actIconEmail != classNotVerified){
+		} else if (actIconEmail != classIsVerified){
 			
 			/* Increment variable countIsNotverified */
 			countIsNotverified++
+			
+			println "Actual Class Email Type: "+actIconEmail+", Expected Class Email Type: "+classNotVerified
 		}
 		
 	}
@@ -106,7 +109,7 @@ while(flagLoop = false) {
 		if (expectedCurrentPage.equals(expectedLastPage)) {
 			
 			/* Assert flagNextLoop into true*/
-			flagLoopPage = true
+			flagLoop = true
 			
 		} else {
 			
