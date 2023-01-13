@@ -72,8 +72,6 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
 		WebUI.click(menuKycVerification)
-		WebUI.waitForPageLoad(5)
-		WebUI.delay(5)
 		tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 		rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 		colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
@@ -109,7 +107,7 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase("Menunggu")) {
 		WebUI.click(btnFaceMatch)
 		if (WebUI.waitForElementPresent(alretText, 5)) {
 			WebUI.click(btnFmConfirmation)
-		} else {keylogger.logInfo('alert not present to konfirmation')}
+		} else {keylogger.markError('alert not present to konfirmation')}
 		WebUI.scrollToElement(lbReqId, 5)
 		reqId = WebUI.getText(lbReqId)
 		WebUI.click(btnBackDashboard)
@@ -129,8 +127,6 @@ if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
 	if (WebUI.waitForElementPresent(alretText, 5)) {
 		WebUI.click(abortBtn)
-		WebUI.waitForPageLoad(5)
-		WebUI.delay(5)
 	} else {keylogger.logInfo('Process not block')}
 	WebUI.setText(txtReqIdCsr, reqIdKyc)
 	WebUI.click(btnSearchCsr)

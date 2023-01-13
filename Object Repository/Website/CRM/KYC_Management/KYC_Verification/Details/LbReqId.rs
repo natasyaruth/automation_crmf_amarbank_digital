@@ -6,12 +6,12 @@
    <elementGuidId>1542e004-5aa9-4976-8f9f-1d856b2a3d70</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>p</value>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;root&quot;]//section/div/div[2]/section[2]/div/div[1]/p</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::p[1]</value>
+         <key>CSS</key>
+         <value>p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>p</value>
-      <webElementGuid>9301fa96-44bf-4df4-ade5-1159f588dca5</webElementGuid>
+      <webElementGuid>3fe662c5-a6f8-4823-b92a-d624ddfab215</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>text</name>
       <type>Main</type>
       <value>10004241</value>
-      <webElementGuid>690593ea-6df0-4b46-919b-a5ac15caa107</webElementGuid>
+      <webElementGuid>60678313-72b2-4b0c-8661-5d8d5c620bfa</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/div[@class=&quot;Card u-MarginBottom&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-md-1&quot;]/p[1]</value>
-      <webElementGuid>5c8886e7-2df9-4cc0-9f2e-95e011b2e29f</webElementGuid>
+      <webElementGuid>f6195020-5fd0-4d9a-84ea-421f1eb1c925</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/section/div/div[2]/section[2]/div/div/p</value>
-      <webElementGuid>f271847f-5f3a-41d3-91f5-4beaf79d714a</webElementGuid>
+      <webElementGuid>55baf295-1a28-4785-b17b-e4437b1c53f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Request ID'])[1]/following::p[1]</value>
-      <webElementGuid>4037ea9d-df99-4089-9e59-0d5103a837ed</webElementGuid>
+      <webElementGuid>d434fff5-288f-4f37-88e6-b83a2293db80</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Detil Nasabah'])[1]/following::p[1]</value>
-      <webElementGuid>ed4adb0d-2426-45b4-9265-a37ad06662b2</webElementGuid>
+      <webElementGuid>1d8b0d3c-03f2-4616-b66d-0078130a21db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Reference ID'])[1]/preceding::p[1]</value>
-      <webElementGuid>fcee7e7f-7516-4567-9d3d-012ea814b6bf</webElementGuid>
+      <webElementGuid>de7387b3-8bd4-47d7-ac7c-ecfb7429f709</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Customer Type'])[1]/preceding::p[2]</value>
-      <webElementGuid>e5952491-bdc4-4a71-beea-6a2a36f98145</webElementGuid>
+      <webElementGuid>bd766bd0-6949-486e-bf63-9adb02071241</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p</value>
-      <webElementGuid>7bb1ec14-5ab9-4525-9091-04ebde45eccf</webElementGuid>
+      <webElementGuid>c31fbd26-a2b5-4c95-bb66-0cd56ad6b3f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,6 +94,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//p[(text() = '10004241' or . = '10004241')]</value>
-      <webElementGuid>b5cceeaf-b95d-4668-9c88-eb0a5b054f2f</webElementGuid>
+      <webElementGuid>19f59289-b7e8-4dda-80a4-8cea579f2bf1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

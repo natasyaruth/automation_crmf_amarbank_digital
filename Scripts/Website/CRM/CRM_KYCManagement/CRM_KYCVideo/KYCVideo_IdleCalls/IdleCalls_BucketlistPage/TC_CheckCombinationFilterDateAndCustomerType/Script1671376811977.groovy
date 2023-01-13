@@ -70,6 +70,8 @@ WebUI.setText(dtpEndDate, endMonth)
 /* Click button 'Tampilkan' */
 WebUI.click(btnShow)
 
+WebUI.delay(2)
+
 /* Choose customer type based on the index optionCustType */
 WebUI.selectOptionByValue(drpCustType, optionCustType, false)
 	
@@ -86,25 +88,25 @@ WebElement tableKYC = driver.findElement(By.xpath('//tbody'))
  all the element with tag 'tr' which means element that represent rows*/
 List<WebElement> listRows = driver.findElements(By.tagName('tr'))
 
-/* We will declarated variable 'listColumn' with type List to store
- all the element with tag 'td' which means element that represent column*/
-List<WebElement> listColumn
-
 /* This looping is represent to check data in bucketlist showed based on the choosen date and cust type*/
-while(flagLoop = false) {
+while(flagLoop == false) {
 	
 	/* Looping through number of rows of bucketlist KYC Video*/
 	for(int i=0;i<listRows.size();i++){
 		
 		/* Get all column and storing to variable 'listColumn' at row with index i*/
-		listColumn = listRows.get(i).findElements(By.tagName('td'))
+		List<WebElement> listColumn = listRows.get(i).findElements(By.tagName('td'))
 		
 		/* Get text and storing to variable 'actDate' at column with index 5*/
-		String actDate = listColumn.get(6).getText().substring(2)
+		String actDate = listColumn.get(6).getText()
 		
 		/* Get text and storing to variable 'actCustType' at column with index 6*/
 		String actCustType = listColumn.get(5).getText()
 
+		println actDate+" , "+startMonth
+		
+		println actDate+" , "+endMonth
+		
 		/* Compare actual date with expected date */
 		if(actDate != startMonth || actDate != endMonth) {
 			
