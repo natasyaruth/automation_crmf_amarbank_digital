@@ -61,7 +61,7 @@ def calendar = Calendar.getInstance()
 calendar.add(Calendar.DATE, -1)
 
 /* Set format date with dd/MM/yyyy */
-startDate = calendar.getTime().format('dd/MM/yyyy')
+startDate = calendar.getTime().format('d/M/yyyy')
 
 /* Choose customer type Nasabah Senyumku*/
 WebUI.setText(dtpStartDate, startDate)
@@ -70,7 +70,7 @@ WebUI.setText(dtpStartDate, startDate)
 calendar.add(Calendar.DATE, 1)
 
 /* Set format date with dd/MM/yyyy */
-endDate = calendar.getTime().format('dd/MM/yyyy')
+endDate = calendar.getTime().format('d/M/yyyy')
 
 /* Choose email type is verified*/
 WebUI.setText(dtpEndDate, endDate)
@@ -85,7 +85,7 @@ for(int j=0;j<listOptionEmail.size();j++) {
 	WebUI.selectOptionByValue(drpEmailType, listOptionEmail.get(j), false)
 	
 	/* We will wait for 3 second till page finish load*/
-	WebUI.waitForPageLoad(3)
+	WebUI.delay(3)
 	
 	/* If state loop is in index 2, break the loop */
 	if(j==2){
@@ -98,10 +98,10 @@ for(int j=0;j<listOptionEmail.size();j++) {
 		tableKYCVerif = driver.findElement(By.xpath('//tbody'))
 		
 		/* Store all rows table*/		
-		listRows = driver.findElements(By.tagName('tr'))
+		listRows = tableKYCVerif.findElements(By.tagName('tr'))
 		
 		/* This looping is represent to check data in bucketlist showed based on the choosen date and email type*/
-		while(flagLoop = false) {
+		while(flagLoop == false) {
 			
 			/* Looping through number of rows of bucketlist KYC Verification*/
 			for(int i=0;i<listRows.size();i++){
@@ -113,13 +113,15 @@ for(int j=0;j<listOptionEmail.size();j++) {
 				String actDate = listColumn.get(5).getText()
 				
 				/* Get attribute class and storing to variable 'actIconEmail' at column with index 6*/
-				String actIconEmail = listColumn.get(6).getAttribute('class')
+				String actIconEmail = listColumn.get(6).findElement(By.tagName('svg')).getAttribute('class')
 		
 				/* Compare actual date with expected date */
 				if(actDate != startDate || actDate != endDate) {
 					
 					/* Increment variable countFalseDate */
 					countFalseDate++
+					
+					println "Actual date: "+actDate+", Start Date: "+startDate+", End Date: "+endDate
 					
 				/* Compare actual icon email type and expected icon email type */
 				} else if (actIconEmail != listClass.get(j)){
@@ -146,7 +148,7 @@ for(int j=0;j<listOptionEmail.size();j++) {
 				if (expectedCurrentPage.equals(expectedLastPage)) {
 					
 					/* Assert flagNextLoop into true*/
-					flagLoopPage = true
+					flagLoop = true
 					
 				} else {
 					
@@ -158,25 +160,26 @@ for(int j=0;j<listOptionEmail.size();j++) {
 				}
 			}
 		}
-		
-		/* Make sure there is no customer out of the range date */
-		if(countFalseDate.equals(0)) {
-			
-			/* Make sure there is no email type other than email verified */
-			if(countEmailFalse.equals(0)) {
-				
-				/* Mark case is passed */
-				keyLogger.markPassed("All data in bucketlist are in range from "+startDate+" until "+endDate+" with email is "+listContentEmail.get(j)+". Case SUCCESS")
-				
-			/* If there is email type other than verified will mark as failed */
-			} else {
-				keyLogger.markFailed("There is data customer other than email "+listContentEmail.get(j)+". Case FAILED")
-			}
-			
-		/* If there is customer out of the range date will mark as failed */
-		} else {
-			keyLogger.markFailed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
-		}
+
 	}
+}
+
+/* Make sure there is no customer out of the range date */
+if(countFalseDate.equals(0)) {
+	
+	/* Make sure there is no email type other than email verified */
+	if(countEmailFalse.equals(0)) {
+		
+		/* Mark case is passed */
+		keyLogger.markPassed("All data in bucketlist are in range from "+startDate+" until "+endDate+" with email is "+listContentEmail.get(j)+". Case SUCCESS")
+		
+	/* If there is email type other than verified will mark as failed */
+	} else {
+		keyLogger.markFailed("There is data customer other than email "+listContentEmail.get(j)+". Case FAILED")
+	}
+	
+/* If there is customer out of the range date will mark as failed */
+} else {
+	keyLogger.markFailed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
 }
 
