@@ -34,25 +34,15 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	- Customer has edit phone number in Profile Managemen
-	- User has login CRM
-	- User has access KYC Management
-	- User has access KYC Verification
+	-User has access to KYC video request active calls
+	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
 	
 	Steps:
-	- User click details (type of change phone number- nasabah senyumku
-	- User click Terima 1
-	- User click Terima 2
+	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
 	
 	Expected Result:
-	- User can click  request ID
-	- Direct to the detail KYC Verification
-	- User can click button terima 1
-	- User can click button terima 2
-	- Phone number in Leads management  is changed
-	- Phone number updated in Keycloak's system
-	- Phone number in profile management is changed
-	- User can login to the Senyumku app with new phone number
+	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
+	-System display new phone number in "Nomor HP Baru" section
  */
 
 'We want to process CSR Detail'

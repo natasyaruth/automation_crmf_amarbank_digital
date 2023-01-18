@@ -6,6 +6,7 @@
    <elementGuidId>bfa2cbcb-3abc-48ba-bb60-b24e2798980e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <connectionTimeout>-1</connectionTimeout>
    <followRedirects>false</followRedirects>
    <httpBody></httpBody>
    <httpBodyContent></httpBodyContent>
@@ -16,6 +17,7 @@
       <name>Authorization</name>
       <type>Main</type>
       <value>Basic d2ViLWFwaTpRIXcyZTNyNFQl</value>
+      <webElementGuid>1f0c1486-6cd6-4a2d-936b-4c427c839c77</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
@@ -23,14 +25,17 @@
       <name>oldPhoneNumber</name>
       <type>Main</type>
       <value>${oldPhoneNumber}</value>
+      <webElementGuid>877e78f3-11e2-4073-9dd6-c361df54be16</webElementGuid>
    </httpHeaderProperties>
    <httpHeaderProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>text/plain</value>
+      <webElementGuid>e03fa891-d7e3-43c8-aa48-4367a7259854</webElementGuid>
    </httpHeaderProperties>
+   <maxResponseSize>-1</maxResponseSize>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
    <restUrl>${hostnameServices}otp/QA/${oldPhoneNumber}</restUrl>
@@ -38,7 +43,10 @@
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
+   <soapServiceEndpoint></soapServiceEndpoint>
    <soapServiceFunction></soapServiceFunction>
+   <socketTimeout>-1</socketTimeout>
+   <useServiceInfoFromWsdl>true</useServiceInfoFromWsdl>
    <variables>
       <defaultValue>GlobalVariable.hostnameServices</defaultValue>
       <description></description>

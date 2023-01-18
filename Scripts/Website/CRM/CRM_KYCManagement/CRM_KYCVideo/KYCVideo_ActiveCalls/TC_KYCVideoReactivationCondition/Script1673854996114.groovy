@@ -3,6 +3,8 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import com.github.javafaker.Faker
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -25,35 +27,27 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import com.tunaiku.keyword.RandomFakerData as fakerData
 
 'Init logging in katalon studio'
 KeywordUtil keylogger = new KeywordUtil()
 
 'Init Random'
 Random rand = new Random()
+String fakeFullAddress = fakerData.set_faker_full_address()
 
 /* Scenario Testing
  * Precondition:
- * 	- Customer has request reactivation with change phone number
-	- User has login CRM
-	- User has access KYC Management
-	- User has access KYC Verification "
-	
+ * 	-User has access to KYC video request active calls
+	-Active incoming call for "Reaktivasi Nasabah Senyumku"
+
 	Steps:
-	- User click details (type of change phone number- nasabah senyumku
-	- User click Terima 1
-	- User click Terima 2
+	- Click incoming call "Reaktivasi Nasabah Senyumku" request id
 	
 	Expected Result:
-	- User can click  request ID
-	- Direct to the detail KYC Verification
-	- User can click button terima 1
-	- User can click button terima 2
-	- Account is activate again
-	- Phone number in CSR management  is changed
-	- Phone number updated in Keycloak's system
-	- Phone number in profile management is changed
-	- User can login to the Senyumku app with new phone number
+	-System display detail customer "Reaktivasi Nasabah Senyumku" with active KYC video call page
+	-System display new data in "Nomor HP Baru" section
+	-System display updated data in "Alamat Pengiriman Kartu" section
  * */
 
 'Access to Customer Detail'
@@ -106,7 +100,9 @@ while (flagLoop == false) {
 						if (WebUI.waitForElementClickable(dataPhoneNumber, 5)) {
 							WebUI.click(dataPhoneNumber)
 							phoneNumberUser =  WebUI.getAttribute(phoneNumber, 'value')
-							println(phoneNumberUser)
+							String phoneNumber = phoneNumberUser
+							println(phoneNumber)
+							GlobalVariable.oldPhoneNumber = phoneNumber
 							break phoneShownLoop
 						} else {keylogger.logInfo("We not found the data phone number please scroll again")
 							WebUI.sendKeys(phoneNumber, Keys.chord(Keys.DOWN))
@@ -154,15 +150,15 @@ while (flagLoop == false) {
 	WebUI.switchToWindowIndex(currentTab + 1)
 	String requestIdProcess = pathSenyumku
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(8))
-	String dataPhoneNumber = phoneNumberUser
+	String dataPhoneNumberText = phoneNumberUser
 	String dataAccountId = accountIdPersonalUser
 	String dataAccountNumber = accountNumberUser
 	WebUI.waitForPageLoad(5)
 	
 	TestObject blockAccount = new TestObject().addProperty('text',ConditionType.CONTAINS,'Formulir pemblokiran akun')
-	if (WebUI.waitForElementPresent(blockAccount, 5)) {
+	if (WebUI.waitForElementVisible(blockAccount, 5)) {
 		if (WebUI.waitForElementPresent(txtPhoneNumberSenyumkuPage, 5)) {
-			WebUI.setText(txtPhoneNumberSenyumkuPage, dataPhoneNumber)
+			WebUI.setText(txtPhoneNumberSenyumkuPage, dataPhoneNumberText)
 		} else {keylogger.markError("Element text field phone number not found")}
 		if (WebUI.waitForElementPresent(txtIdPersonalSenyumkuPage, 5)) {
 			WebUI.setText(txtIdPersonalSenyumkuPage, dataAccountId)
@@ -187,6 +183,8 @@ while (flagLoop == false) {
 		keylogger.markPassed('We success change the status request ID')
 	} else {keylogger.logInfo('Status not changes')}
 	WebUI.switchToWindowIndex(1)
+	
+	
 	'We already to reactivate account'
 	if (WebUI.waitForElementPresent(txtLinkReactivation, 5)) {
 		WebUI.click(txtLinkReactivation)
@@ -198,7 +196,7 @@ while (flagLoop == false) {
 		TestObject pageFormReactivation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Formulir reaktivasi akun')
 		if (WebUI.waitForElementPresent(pageFormReactivation, 5)) {
 			if (WebUI.waitForElementPresent(txtPhoneNumberSenyumkuPage, 5)) {
-			WebUI.setText(txtPhoneNumberSenyumkuPage, dataPhoneNumber)
+			WebUI.setText(txtPhoneNumberSenyumkuPage, dataPhoneNumberText)
 			} else {keylogger.markError("Element text field phone number not found")}
 			if (WebUI.waitForElementPresent(txtIdPersonalSenyumkuPage, 5)) {
 			WebUI.setText(txtIdPersonalSenyumkuPage, dataAccountId)
@@ -214,12 +212,101 @@ while (flagLoop == false) {
 		} else {keylogger.markError('We cannot click the radio button account number senyumku')}
 		}
 	} else {keylogger.markError('Element not present')}
+	
 	'Validation data reactivation'
 	TestObject formValidationDataReactivation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Formulir reaktivasi akun')
 	if (WebUI.waitForElementPresent(formValidationDataReactivation, 5)) {
-		WebUI.click(rbYesHasCardSenyumku)
-		WebUI.click(rbNoChgPhoneNoSenyumku)
+		WebUI.click(rbHasNoCardSenyumku)
+		if (WebUI.waitForElementVisible(btnChgDeliveryAddress, 5)) {
+			WebUI.click(btnChgDeliveryAddress)
+			TestObject alreadyToChangeDeliveryAddress = new TestObject().addProperty('text',ConditionType.CONTAINS,'Alamat pengiriman kartu debit')
+			WebUI.verifyElementPresent(alreadyToChangeDeliveryAddress, 5)
+			WebUI.waitForPageLoad(5)
+			loopValidation = false
+			validateReactivation:
+			while (loopValidation == false) {
+				int optionRand = 4
+				Random random = new Random()
+				int indexElement = random.nextInt(optionRand + 1)
+				println(indexElement)
+				if (indexElement != 0) {
+					if (WebUI.waitForElementVisible(drpAddressReactivation, 5)) {
+						WebUI.selectOptionByIndex(drpAddressReactivation, indexElement)
+						WebUI.waitForPageLoad(5)
+					} else {
+						keylogger.markError('We not found the Address Reactivation')
+					}
+					WebUI.setText(txtFullAddressReactivation, fakeFullAddress)
+					WebUI.setText(txtNeighbourReactivation , RandomStringUtils.randomNumeric(3))
+					WebUI.setText(txtHamletReactivation, RandomStringUtils.randomNumeric(3))
+					WebUI.waitForPageLoad(5)
+					if (WebUI.waitForElementVisible(drpProvinceReactivation, 5)) {
+						WebUI.selectOptionByIndex(drpProvinceReactivation, indexElement)
+						WebUI.waitForPageLoad(5)
+					} else {
+						keylogger.markError('We not found the province')
+					}
+					if (WebUI.waitForElementVisible(drpDistrictReactivation, 5)) {
+						WebUI.selectOptionByIndex(drpDistrictReactivation,indexElement)
+						WebUI.waitForPageLoad(5)
+					} else {
+						keylogger.markError('We not found the District')
+					}
+					if (WebUI.waitForElementVisible(drpSubDistrictReactivation, 5)) {
+						WebUI.selectOptionByIndex(drpSubDistrictReactivation, indexElement)
+						WebUI.waitForPageLoad(5)
+					} else {
+						keylogger.markError('We not found the Sub-District')
+					}
+					if (WebUI.waitForElementVisible(drpVillageReactivation, 5)) {
+						WebUI.selectOptionByIndex(drpVillageReactivation, indexElement)
+						WebUI.waitForPageLoad(5)
+					} else {
+						keylogger.markError('We not found the Village')
+					}
+					WebUI.click(btnSaveReactivation)
+					WebUI.waitForPageLoad(5)
+					TestObject backToValidate = new TestObject().addProperty('text',ConditionType.CONTAINS,'Formulir reaktivasi akun')
+					WebUI.verifyElementPresent(backToValidate, 5)
+					break validateReactivation
+				} else {
+					keylogger.logInfo('index element is =' +indexElement)
+					keylogger.logInfo('we try again to check another')
+				}
+			}
+		} else {
+			keylogger.markError('We not found the element')
+		}
+		WebUI.click(rbYesChangePhoneNumber)
+		TestObject changePhoneNumberReactivation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nomor handphone baru')
+		if (WebUI.waitForElementVisible(changePhoneNumberReactivation, 5)) {
+			WebUI.setText(txtNewPhoneNumberReactivation, GlobalVariable.phoneNumberWithAreaCode)
+		} else {
+			keylogger.markError('Element not find please check again')
+		}
 		WebUI.click(btnSentFormSenyumku)
+		
+		'This part i want confirm OTP'
+		TestObject otpProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kami telah mengirimkan SMS dengan kode PIN 4 digit')
+		if (WebUI.waitForElementVisible(otpProcess, 5)) {
+			
+			'We call test case for get OTP'
+			WebUI.callTestCase(findTestCase('API/CRM/TC_getOTP'), [:], FailureHandling.STOP_ON_FAILURE)
+			WebUI.delay(5)
+			WebUI.setText(sms1, GlobalVariable.dataOtp1)
+			WebUI.setText(sms2, GlobalVariable.dataOtp2)
+			WebUI.setText(sms3, GlobalVariable.dataOtp3)
+			WebUI.setText(sms4, GlobalVariable.dataOtp4)
+			if (WebUI.waitForElementVisible(btnVerification, 5)) {
+				WebUI.click(btnVerification)
+			} else {
+				keylogger.markError('Element not appear')
+			}
+			
+		} else {
+			keylogger.markError('We not find the OTP page')
+		}
+		
 		WebUI.switchToWindowIndex(0)
 		TestObject getNewReqId = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 		if (WebUI.waitForElementVisible(getNewReqId, 5)) {
@@ -302,7 +389,9 @@ while (flagLoop == false) {
 		WebUI.click(chkBirtDate)
 		WebUI.click(chkMotherName)
 		WebUI.click(chkReasonBlock)
+		WebUI.click(chkAskNewPhoneNumber)
 		WebUI.click(chkEmail)
+		WebUI.click(chkDeliveryAddress)
 		WebUI.click(chkCaptureFace)
 		WebUI.scrollToElement(btnSelfie, 5)
 		if (WebUI.verifyElementClickable(btnSelfie)) {
@@ -457,6 +546,10 @@ TestObject custDetailPageCheck = new TestObject().addProperty('text',ConditionTy
 if (WebUI.waitForElementPresent(custDetailPageCheck, 5)) {
 	TestObject reqIdCustCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 	WebUI.verifyElementPresent(reqIdCustCheck, 5)
+	if (WebUI.waitForElementClickable(dataPhoneNumber, 5)) {
+		WebUI.click(dataPhoneNumber)
+		WebUI.verifyElementAttributeValue(phoneNumber, 'value', GlobalVariable.phoneNumberWithAreaCode, 5)
+	} else {keylogger.markError("Phone number still old data")}
 	WebUI.takeScreenshot()
 	keylogger.markPassed("We are success to reactivation")
 } else {keylogger.markError("We are not in detail page of CSR")}
