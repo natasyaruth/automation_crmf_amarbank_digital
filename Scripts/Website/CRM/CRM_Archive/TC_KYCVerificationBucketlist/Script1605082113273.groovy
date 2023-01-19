@@ -27,7 +27,7 @@ WebUI.waitForPageLoad(10)
 
 WebUI.verifyTextPresent(verifyBucketlist, false, FailureHandling.CONTINUE_ON_FAILURE)
 
-List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'), 10)
+List listRequestId = WebUI.findWebElements(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'), 10)
 
 if(listRequestId.size() > 1) {
     WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnNextPage'))
@@ -42,7 +42,7 @@ if(listRequestId.size() > 1) {
 }
 
 if(listRequestId.size() == 1) {
-	WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLinkRequestID'))
+	WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/KYCVerificationLink'))
 	
 	WebUI.waitForPageLoad(5)
 	

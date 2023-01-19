@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LbFaceMatchAccuracy</name>
+   <name>BtnRequestId0</name>
    <tag></tag>
-   <elementGuidId>02ddc81f-56bf-43e5-8cdd-4998c5fb908c</elementGuidId>
+   <elementGuidId>fa035cc9-6f75-407b-8be0-400df69c11be</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@class = 'LbFaceMatchAccuracy']</value>
+         <value>//*[@id = 'BtnRequestId0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,8 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>class</name>
+      <name>id</name>
       <type>Main</type>
-      <value>LbFaceMatchAccuracy</value>
+      <value>BtnRequestId0</value>
+      <webElementGuid>767da4a3-bf09-4307-9e6b-18345df8c797</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

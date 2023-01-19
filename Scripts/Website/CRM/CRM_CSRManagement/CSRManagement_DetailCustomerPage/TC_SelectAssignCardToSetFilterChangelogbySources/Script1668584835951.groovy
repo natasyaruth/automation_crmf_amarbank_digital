@@ -113,7 +113,6 @@ for (int i = 0; i < customerType.size(); i++) {
 
                         WebUI.delay(3)
 
-				WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
 				WebUI.verifyElementVisible(txtFirstRowChangelogDate,FailureHandling.OPTIONAL)
 				
 				WebUI.waitForElementVisible(txtFirstRowChangelogSources, 5)

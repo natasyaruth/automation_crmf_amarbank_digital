@@ -39,11 +39,11 @@ WebUI.click(BtnLiveness)
 
 WebUI.click(BtnLivenessConfirmation)
 
-WebUI.scrollToElement(BtnCekDataDukcapil, 5)
+WebUI.scrollToElement(BtnCekDataDukcapil, 10)
 
 WebUI.click(BtnCekDataDukcapil)
 
-WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 5)
+WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 10)
 
 WebUI.verifyElementClickable(BtnCekDataDukcapilConfirmation)
 
@@ -51,13 +51,15 @@ WebUI.verifyElementClickable(BtnCancelCekDataDukcapil)
 
 WebUI.click(BtnCekDataDukcapilConfirmation)
 
-WebUI.scrollToElement(BtnAccept1, 5)
+WebUI.scrollToElement(BtnAccept1, 10)
 
 WebUI.click(BtnAccept1)
 
-WebUI.scrollToElement(BtnAccept2, 5)
+WebUI.scrollToElement(BtnAccept2, 10)
 
 WebUI.click(BtnAccept2)
+
+WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal'), 20)
 
 WebUI.verifyElementClickable(BtnCloseModal)
 

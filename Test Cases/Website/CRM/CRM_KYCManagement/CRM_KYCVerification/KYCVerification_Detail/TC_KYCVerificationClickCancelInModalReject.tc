@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_ClickCancelInModalReject</name>
+   <name>TC_KYCVerificationClickCancelInModalReject</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>3d039e8a-0e31-462d-a3f6-ce6e2b949c7c</testCaseGuid>

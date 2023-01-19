@@ -1,424 +1,268 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_KYCVerificationClickFmDukcapil</name>
+   <name>TC_KYCVerificationClickFMDukcapil</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>8bb25227-3306-49a4-acb6-ff3d086b11f2</testCaseGuid>
+   <testCaseGuid>23dccb33-a605-4c28-8c8b-5f7d40560f33</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d7a1c268-08ce-473b-be5b-9d7294e6da45</variableId>
+      <variableId>fa1d0d64-9768-470d-a0c0-ca28178e0c81</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>eb2c5806-8d4a-4bc7-8149-d523bdd51492</variableId>
+      <variableId>3b0e5c22-e3f5-49d9-a796-3d2c09af9b50</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a92d3ec2-e09d-4218-8f1e-34f77a08e456</variableId>
+      <variableId>27211e51-33b7-4225-9d95-ef65e85be084</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3797a66d-0d46-45e0-95e0-6b8188f38e2c</variableId>
+      <variableId>95e7ca5b-5499-43db-9895-20e9f952252d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>4e6cbf58-948e-4861-9888-db16396f9382</variableId>
+      <variableId>e30cf5a2-327b-4160-be73-608648114f23</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>14fa61aa-8b7c-407f-a5f2-765babed63fb</variableId>
+      <variableId>767a6ed3-7b9d-48a1-ac58-62a262c3240e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>326ef91e-eca5-4d40-a6d8-c9cbbe21e4c7</variableId>
+      <variableId>5507cde4-52ef-4fa1-881e-6fefba39f71a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>1a74daf4-e165-4bac-8a36-9c07d45c66ad</variableId>
+      <variableId>74e0eb2a-826a-4832-8ec8-0a0e1b76659a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ffdbcaed-33a7-4367-a21d-623d7127f2a9</variableId>
+      <variableId>2f7192c3-1a9d-4295-9f80-1af55a0691ee</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a8262d75-4975-4247-96be-3697dc1a70e8</variableId>
+      <variableId>c650d706-6d78-480c-977d-d8b4e6cebc1c</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>fb9ef34c-a61a-41b1-a488-013f77b59a88</variableId>
+      <variableId>15f8fedb-5e02-41bc-b154-091cbf85ae40</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ebfcf852-d5fe-4296-ace8-9b811c600f1d</variableId>
+      <variableId>022ca442-bba1-43e3-a794-ad5272e2d0ae</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>abc942f8-ef6a-4fcd-ab98-2b6b9924de9e</variableId>
+      <variableId>f9767e28-a317-4843-b96f-2390e1e44373</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>306cb3d9-9219-48b8-b508-02474ed35d05</variableId>
+      <variableId>a79476b6-823d-4f50-9325-6f573155d994</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2433ac23-db04-4d15-84db-4f4bed2b82c6</variableId>
+      <variableId>d1abd804-760a-4066-8ccb-9e6bb023848a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3e773c7d-5790-461a-b7cc-09f892361f5a</variableId>
+      <variableId>1c65a8eb-7a44-45e3-bd1c-f1a53eec345a</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>739043f3-5216-4547-8256-fc55e9f4501d</variableId>
+      <variableId>72ab16fa-06d9-4c3a-b630-91d92fbad338</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>239b3425-590d-4dad-9780-6ea74d1c88ca</variableId>
+      <variableId>6431b857-1710-4d37-b0fa-5e7269bbb611</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>35ae227a-3cc1-48c5-871f-6dbd85fa71e4</variableId>
+      <variableId>4dbf66e3-1078-4348-ae6e-718b020652c6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>808d7840-e603-4c69-8cdb-947d39f86b55</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>33e6ad18-3c29-43d5-bf38-b6625bd794da</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>0d24cd4e-5b8c-4f8a-8e4e-b7d91b938d53</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>8c96ab6c-af05-423d-a446-2d02c3bd17db</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>da4d5b31-e50a-49c9-92f1-482b9ac9e1a2</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>82a76005-7e60-4d3c-9553-145b51b6267e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>f73b0634-f0f4-464f-adfb-3eea31ba926e</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>7848e588-ac5a-4514-93bd-1aca286b67c5</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>208d676d-0179-4a59-b866-c903c930cd2b</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>0e85df1b-9695-481a-9300-af865795f6d3</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>97a9aa77-2e0b-4fb7-a6bc-6e178815d220</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>a30f9993-0ba7-4d91-b5c8-1db6f6d142fa</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>52354013-8f92-4032-8960-4067ca1779b9</variableId>
+      <variableId>711a02a4-da9d-49e5-9b96-4f8e2d4aa339</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>''</defaultValue>
+      <defaultValue>'1'</defaultValue>
       <description></description>
-      <id>d7a1c268-08ce-473b-be5b-9d7294e6da45</id>
+      <id>fa1d0d64-9768-470d-a0c0-ca28178e0c81</id>
       <masked>false</masked>
-      <name>reqId</name>
+      <name>indexCustType</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
+      <defaultValue>'1'</defaultValue>
       <description></description>
-      <id>eb2c5806-8d4a-4bc7-8149-d523bdd51492</id>
+      <id>3b0e5c22-e3f5-49d9-a796-3d2c09af9b50</id>
       <masked>false</masked>
-      <name>menuKycManagement</name>
+      <name>indexEmailType</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink')</defaultValue>
+      <defaultValue>'Image is not match'</defaultValue>
       <description></description>
-      <id>a92d3ec2-e09d-4218-8f1e-34f77a08e456</id>
+      <id>27211e51-33b7-4225-9d95-ef65e85be084</id>
       <masked>false</masked>
-      <name>menuKycVerification</name>
+      <name>msgErrorImgNotmatch</name>
+   </variable>
+   <variable>
+      <defaultValue>'NIK not found'</defaultValue>
+      <description></description>
+      <id>95e7ca5b-5499-43db-9895-20e9f952252d</id>
+      <masked>false</masked>
+      <name>msgErrorNIKNotFound</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack')</defaultValue>
       <description></description>
-      <id>3797a66d-0d46-45e0-95e0-6b8188f38e2c</id>
+      <id>e30cf5a2-327b-4160-be73-608648114f23</id>
       <masked>false</masked>
-      <name>btnBackDashboard</name>
+      <name>btnBack</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustType')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtCurrentPage')</defaultValue>
       <description></description>
-      <id>4e6cbf58-948e-4861-9888-db16396f9382</id>
+      <id>767a6ed3-7b9d-48a1-ac58-62a262c3240e</id>
       <masked>false</masked>
-      <name>drpDwnCustType</name>
+      <name>txtCurrentPage</name>
    </variable>
    <variable>
-      <defaultValue>['Semua', 'Nasabah Baru', 'Nasabah Senyumku', 'Tunaiku Leadgen', 'Senyumku Deposito']</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtLastPage')</defaultValue>
       <description></description>
-      <id>14fa61aa-8b7c-407f-a5f2-765babed63fb</id>
+      <id>5507cde4-52ef-4fa1-881e-6fefba39f71a</id>
       <masked>false</masked>
-      <name>listCustType</name>
+      <name>txtLastPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnNextPage')</defaultValue>
+      <description></description>
+      <id>74e0eb2a-826a-4832-8ec8-0a0e1b76659a</id>
+      <masked>false</masked>
+      <name>btnNextPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TableKYCBucketlist')</defaultValue>
+      <description></description>
+      <id>2f7192c3-1a9d-4295-9f80-1af55a0691ee</id>
+      <masked>false</masked>
+      <name>table</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustomerType')</defaultValue>
+      <description></description>
+      <id>c650d706-6d78-480c-977d-d8b4e6cebc1c</id>
+      <masked>false</masked>
+      <name>drpCustType</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType')</defaultValue>
       <description></description>
-      <id>326ef91e-eca5-4d40-a6d8-c9cbbe21e4c7</id>
+      <id>15f8fedb-5e02-41bc-b154-091cbf85ae40</id>
       <masked>false</masked>
-      <name>drpDwnEmailVerif</name>
-   </variable>
-   <variable>
-      <defaultValue>['Semua', 'Terverifikasi', 'Belum Terverifikasi']</defaultValue>
-      <description></description>
-      <id>1a74daf4-e165-4bac-8a36-9c07d45c66ad</id>
-      <masked>false</masked>
-      <name>listEmailVerif</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnEdit')</defaultValue>
-      <description></description>
-      <id>ffdbcaed-33a7-4367-a21d-623d7127f2a9</id>
-      <masked>false</masked>
-      <name>btnEditKycVerif</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK')</defaultValue>
-      <description></description>
-      <id>a8262d75-4975-4247-96be-3697dc1a70e8</id>
-      <masked>false</masked>
-      <name>txtNik</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtName')</defaultValue>
-      <description></description>
-      <id>fb9ef34c-a61a-41b1-a488-013f77b59a88</id>
-      <masked>false</masked>
-      <name>txtNameBaseNik</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DtpBirthDate')</defaultValue>
-      <description></description>
-      <id>ebfcf852-d5fe-4296-ace8-9b811c600f1d</id>
-      <masked>false</masked>
-      <name>txtBirthDate</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtBirthPlace')</defaultValue>
-      <description></description>
-      <id>abc942f8-ef6a-4fcd-ab98-2b6b9924de9e</id>
-      <masked>false</masked>
-      <name>txtBirthPlace</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRT')</defaultValue>
-      <description></description>
-      <id>306cb3d9-9219-48b8-b508-02474ed35d05</id>
-      <masked>false</masked>
-      <name>txtRt</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRW')</defaultValue>
-      <description></description>
-      <id>2433ac23-db04-4d15-84db-4f4bed2b82c6</id>
-      <masked>false</masked>
-      <name>txtRw</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave')</defaultValue>
-      <description></description>
-      <id>3e773c7d-5790-461a-b7cc-09f892361f5a</id>
-      <masked>false</masked>
-      <name>btnSimpan</name>
+      <name>drpEmailType</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbReqId')</defaultValue>
       <description></description>
-      <id>739043f3-5216-4547-8256-fc55e9f4501d</id>
+      <id>022ca442-bba1-43e3-a794-ad5272e2d0ae</id>
       <masked>false</masked>
-      <name>lbReqId</name>
+      <name>txtReqID</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnLiveness')</defaultValue>
       <description></description>
-      <id>239b3425-590d-4dad-9780-6ea74d1c88ca</id>
+      <id>f9767e28-a317-4843-b96f-2390e1e44373</id>
       <masked>false</masked>
-      <name>menuCsrManagement</name>
+      <name>btnCheckLiveness</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/AlertConfirmationText')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbFaceMatchDukcapilAccuracy')</defaultValue>
       <description></description>
-      <id>35ae227a-3cc1-48c5-871f-6dbd85fa71e4</id>
+      <id>a79476b6-823d-4f50-9325-6f573155d994</id>
       <masked>false</masked>
-      <name>alretText</name>
+      <name>txtValueFMDukcapil</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFaceMatchDukcapil')</defaultValue>
       <description></description>
-      <id>808d7840-e603-4c69-8cdb-947d39f86b55</id>
+      <id>d1abd804-760a-4066-8ccb-9e6bb023848a</id>
       <masked>false</masked>
-      <name>abortBtn</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtRequestId')</defaultValue>
-      <description></description>
-      <id>33e6ad18-3c29-43d5-bf38-b6625bd794da</id>
-      <masked>false</masked>
-      <name>txtReqIdCsr</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnSearch')</defaultValue>
-      <description></description>
-      <id>0d24cd4e-5b8c-4f8a-8e4e-b7d91b938d53</id>
-      <masked>false</masked>
-      <name>btnSearchCsr</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnDataChangeLog')</defaultValue>
-      <description></description>
-      <id>8c96ab6c-af05-423d-a446-2d02c3bd17db</id>
-      <masked>false</masked>
-      <name>btnChangeLog</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/DrpFilterAction')</defaultValue>
-      <description></description>
-      <id>da4d5b31-e50a-49c9-92f1-482b9ac9e1a2</id>
-      <masked>false</masked>
-      <name>drpDwnFilterByActivity</name>
-   </variable>
-   <variable>
-      <defaultValue>['Semua', 'Viewed', 'Edited']</defaultValue>
-      <description></description>
-      <id>82a76005-7e60-4d3c-9553-145b51b6267e</id>
-      <masked>false</masked>
-      <name>listFilterByActivity</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/DrpFilterSource')</defaultValue>
-      <description></description>
-      <id>f73b0634-f0f4-464f-adfb-3eea31ba926e</id>
-      <masked>false</masked>
-      <name>drpDwnFilterBySource</name>
-   </variable>
-   <variable>
-      <defaultValue>['Semua', 'KYC Video Request', 'KYC Verification', 'Assign Card', 'CSR Management']</defaultValue>
-      <description></description>
-      <id>7848e588-ac5a-4514-93bd-1aca286b67c5</id>
-      <masked>false</masked>
-      <name>listFilterBySource</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>208d676d-0179-4a59-b866-c903c930cd2b</id>
-      <masked>false</masked>
-      <name>retName</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>0e85df1b-9695-481a-9300-af865795f6d3</id>
-      <masked>false</masked>
-      <name>retRt</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>97a9aa77-2e0b-4fb7-a6bc-6e178815d220</id>
-      <masked>false</masked>
-      <name>retRw</name>
-   </variable>
-   <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFaceMatch')</defaultValue>
-      <description></description>
-      <id>a30f9993-0ba7-4d91-b5c8-1db6f6d142fa</id>
-      <masked>false</masked>
-      <name>btnFaceMatch</name>
+      <name>btnCheckFMDukcapil</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFaceMatchConfirmation')</defaultValue>
       <description></description>
-      <id>52354013-8f92-4032-8960-4067ca1779b9</id>
+      <id>1c65a8eb-7a44-45e3-bd1c-f1a53eec345a</id>
       <masked>false</masked>
-      <name>btnFmConfirmation</name>
+      <name>btnConfirmFMDukcapil</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/SnckbrServerError')</defaultValue>
+      <description></description>
+      <id>72ab16fa-06d9-4c3a-b630-91d92fbad338</id>
+      <masked>false</masked>
+      <name>snackBarError</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbFaceMatchDukcapilMessageError')</defaultValue>
+      <description></description>
+      <id>6431b857-1710-4d37-b0fa-5e7269bbb611</id>
+      <masked>false</masked>
+      <name>txtMsgErrorFMDukcapil</name>
+   </variable>
+   <variable>
+      <defaultValue>'svg-inline--fa fa-check-circle fa-w-16 fa-lg u-Color-success u-MarginRight-small'</defaultValue>
+      <description></description>
+      <id>4dbf66e3-1078-4348-ae6e-718b020652c6</id>
+      <masked>false</masked>
+      <name>iconGreenFMDukcapil</name>
+   </variable>
+   <variable>
+      <defaultValue>'svg-inline--fa fa-times-circle fa-w-16 fa-lg u-Color-danger u-MarginRight-small'</defaultValue>
+      <description></description>
+      <id>711a02a4-da9d-49e5-9b96-4f8e2d4aa339</id>
+      <masked>false</masked>
+      <name>iconRedFMDukcapil</name>
    </variable>
 </TestCaseEntity>

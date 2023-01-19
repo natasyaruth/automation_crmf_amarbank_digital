@@ -221,7 +221,7 @@
       <guid>757d0bff-f285-42ec-b3e6-20e39d33cce2</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_Detail/TC_KYCVerificationClickFmDukcapil</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_KYCManagement/CRM_KYCVerification/KYCVerification_Detail/TC_KYCVerificationClickFmDukcapilThenCheckToChangeLog</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

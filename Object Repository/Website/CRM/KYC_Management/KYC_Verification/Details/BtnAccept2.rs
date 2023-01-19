@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='BtnAccept2']</value>
+         <value>//*/text()[normalize-space(.)='Terima']/parent::*</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,6 +22,6 @@
       <name>id</name>
       <type>Main</type>
       <value>BtnAccept2</value>
-      <webElementGuid>bc9934fb-564a-46aa-a389-13507425557d</webElementGuid>
+      <webElementGuid>5756868b-8fd0-4e5c-953f-41ba70b290ea</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
