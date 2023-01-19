@@ -225,7 +225,7 @@ while (flagLoop == false) {
 			loopValidation = false
 			validateReactivation:
 			while (loopValidation == false) {
-				int optionRand = 4
+				int optionRand = 3
 				Random random = new Random()
 				int indexElement = random.nextInt(optionRand + 1)
 				println(indexElement)
@@ -243,24 +243,28 @@ while (flagLoop == false) {
 					if (WebUI.waitForElementVisible(drpProvinceReactivation, 5)) {
 						WebUI.selectOptionByIndex(drpProvinceReactivation, indexElement)
 						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 					} else {
 						keylogger.markError('We not found the province')
 					}
 					if (WebUI.waitForElementVisible(drpDistrictReactivation, 5)) {
 						WebUI.selectOptionByIndex(drpDistrictReactivation,indexElement)
 						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 					} else {
 						keylogger.markError('We not found the District')
 					}
 					if (WebUI.waitForElementVisible(drpSubDistrictReactivation, 5)) {
 						WebUI.selectOptionByIndex(drpSubDistrictReactivation, indexElement)
 						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 					} else {
 						keylogger.markError('We not found the Sub-District')
 					}
 					if (WebUI.waitForElementVisible(drpVillageReactivation, 5)) {
 						WebUI.selectOptionByIndex(drpVillageReactivation, indexElement)
 						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 					} else {
 						keylogger.markError('We not found the Village')
 					}
@@ -328,11 +332,12 @@ while (flagLoop == false) {
 		TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 		if (WebUI.waitForElementVisible(videoCallValidation, 5)) {
 			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
 			if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 				WebUI.delay(5)
 				WebUI.click(btnCallSenyumku)
 				TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-				if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+				if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 					WebUI.switchToWindowIndex(0)
 					TestObject backToCsrDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 					WebUI.verifyElementPresent(backToCsrDetail, 5)
@@ -343,6 +348,8 @@ while (flagLoop == false) {
 						WebUI.click(menuKycManagement)
 						if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
 							WebUI.click(menuKycVideo)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							if (WebUI.waitForElementPresent(txtAlertNotification, 5)) {
 								WebUI.click(abortNotification)
 							} else {keylogger.logInfo("We are not have active request")}
@@ -493,22 +500,18 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 colsKycVerif.get(7).findElement(By.xpath('a')).click()
 TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
-		if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
+		if (WebUI.waitForElementVisible(txtPersentageDukcapil, 5)) {
 			WebUI.scrollToElement(btnTerima1, 5)
 			WebUI.verifyElementClickable(btnTerima1)
 			WebUI.click(btnTerima1)
+			WebUI.waitForPageLoad(5)
 			WebUI.delay(5)
 		} else { keylogger.markError("Element not present")}
-		if (WebUI.waitForElementPresent(btnTerima2, 5)) {
+		if (WebUI.waitForElementVisible(btnTerima2, 5)) {
 			WebUI.scrollToElement(btnTerima2, 5)
 		   WebUI.verifyElementClickable(btnTerima2)
 		   WebUI.click(btnTerima2)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
+		   WebUI.waitForPageLoad(5)
 		   WebUI.delay(5)
 	   } else {keylogger.logInfo("element not present")}
 	   WebUI.delay(5)
