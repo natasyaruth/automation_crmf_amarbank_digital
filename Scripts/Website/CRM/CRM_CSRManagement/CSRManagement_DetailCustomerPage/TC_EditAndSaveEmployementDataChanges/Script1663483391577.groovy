@@ -61,7 +61,7 @@ LoopPage:
 while(flagLoopPage == false) {
 	
 	/* Storing table to variable tableCSR*/
-	tableCSR = driver.findElement(By.xpath('//tbody'))
+	tableCSR = driver.findElement(By.xpath('//table/tbody'))
 	
 	/* Storing all rows to variable listRows*/
 	listRows = tableCSR.findElements(By.tagName('tr'))
@@ -174,7 +174,7 @@ while(flagLoopPage == false) {
 					WebUI.waitForPageLoad(3)
 					
 					/* Storing again table to variable tableCSR to prevent stale element*/
-					tableCSR = driver.findElement(By.xpath('//tbody'))
+					tableCSR = driver.findElement(By.xpath('//table/tbody'))
 					
 					/* Storing again rows to variable listRows to prevent stale element*/
 					listRows = tableCSR.findElements(By.tagName('tr'))
@@ -190,10 +190,11 @@ while(flagLoopPage == false) {
 				WebUI.click(btnBack)
 				
 				/* We will wait for 3 second till page finish load*/
+				WebUI.delay(3)
 				WebUI.waitForPageLoad(3)
 				
 				/* Storing again table to variable tableCSR to prevent stale element*/
-				tableCSR = driver.findElement(By.xpath('//tbody'))
+				tableCSR = driver.findElement(By.xpath('//table/tbody'))
 				
 				/* Storing again rows to variable listRows to prevent stale element*/
 				listRows = tableCSR.findElements(By.tagName('tr'))
@@ -234,7 +235,7 @@ while(flagLoopPage == false) {
 			} else {
 				
 				/* Storing again table to variable tableCSR to prevent stale element*/
-				tableCSR = driver.findElement(By.xpath('//tbody'))
+				tableCSR = driver.findElement(By.xpath('//table/tbody'))
 				
 				/* Storing again rows to variable listRows to prevent stale element*/
 				listRows = tableCSR.findElements(By.tagName('tr'))

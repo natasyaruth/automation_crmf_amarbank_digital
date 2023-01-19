@@ -32,6 +32,7 @@ if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 		WebUI.verifyElementText(wrdBlockNotif, "Konfirmasi")
 		WebUI.click(btnCancelBlockNotif)
 		WebUI.verifyElementVisible(txtheaderCsrManagement)
+		WebUI.waitForPageLoad(5)
 	} else {keylogger.logInfo('We can continue the process')
 		WebUI.verifyElementVisible(txtheaderCsrManagement)
 	}
@@ -63,7 +64,8 @@ while (flagLoop == false) {
 				String custName = colsBucketList.get(1).getText()
 				colsBucketList.get(6).findElement(By.xpath('button')).click()
 				TestObject detailCsrDtl = new TestObject().addProperty('text',ConditionType.CONTAINS,'Detil Nasabah')
-				if (WebUI.verifyElementPresent(detailCsrDtl, 5,FailureHandling.OPTIONAL)) {
+				TestObject statusCsrDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
+				if (WebUI.waitForElementVisible(detailCsrDtl, 5) && WebUI.waitForElementVisible(statusCsrDetail, 5)) {
 					WebUI.scrollToElement(btnDataAtmCard, 5)
 					WebUI.click(btnDataAtmCard)
 					if (WebUI.verifyElementClickable(btnReqNewCard,FailureHandling.OPTIONAL)) {
@@ -96,6 +98,10 @@ while (flagLoop == false) {
 					}
 				} else {
 					keylogger.markError('element not present')
+					WebUI.click(btnBack)
+					WebUI.delay(5)
+					tblBucketList = driver.findElement(By.xpath('//table/tbody'))
+					rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
 					}
 			} else { keylogger.logInfo('Something wrong!!')}
 		} else {

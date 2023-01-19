@@ -101,5 +101,6 @@ if (WebUI.waitForElementPresent(menuCardManagement, 5)) {
 } else {keylogger.markError('Menu Card Management is disable')}
 WebUI.waitForElementPresent(menuCSRManagement, 5)
 WebUI.waitForElementPresent(menuLeadsManagement, 5)
+WebUI.waitForElementPresent(menuUploadPhoto, 5)
 WebUI.waitForElementPresent(menuLogout, 5)
 WebUI.click(menuDashboard)

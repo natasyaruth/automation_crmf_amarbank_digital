@@ -34,7 +34,7 @@ public class RandomFakerData {
 		String randomFullName = faker.name().fullName()
 		return randomFullName
 	}
-	
+
 	@Keyword
 	public static String set_faker_email(){
 		/**
@@ -44,7 +44,7 @@ public class RandomFakerData {
 		String randomEmail = faker.name().fullName() +"@gmail.com"
 		return randomEmail
 	}
-	
+
 	@Keyword
 	public static String set_faker_last_name(){
 		/**
@@ -54,7 +54,7 @@ public class RandomFakerData {
 		String randomLastName = faker.name().lastName()
 		return randomLastName
 	}
-	
+
 	@Keyword
 	public static String set_faker_phone_number() {
 		/**
@@ -73,5 +73,15 @@ public class RandomFakerData {
 		Faker faker = new Faker()
 		String randomFirstName = faker.name().firstName()
 		return randomFirstName
+	}
+
+	@Keyword
+	public static String set_faker_full_address() {
+		/**
+		 * This Part for set custom keyword for Random Data first name
+		 */
+		Faker fake = new Faker()
+		String randomFakeAddress = fake.address().fullAddress()
+		return randomFakeAddress
 	}
 }

@@ -115,7 +115,7 @@ for (File awb :listFile) {
 		document.close()
 		keylogger.logInfo("Text from pdf =" +text)
 	} else {
-		keylogger.loginfo("Document cannot found")
+		keylogger.logInfo("Document cannot found")
 	}
 }
 File deleteFile = new File("Download Path/")
