@@ -34,15 +34,34 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	-User has access to KYC video request active calls
-	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
+	- Already Login to CRMF Web
+	- Already on CSR Detail
+	- New phonenumber should be whitelisted first
 	
 	Steps:
-	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
+	- Edit phonenumber
+	- Click button 'Simpan'
+	- Open the KYC Video
+	- Trigger the video call of customer from mobile or from this link
+	- DEV: https://dev-kyc.senyumku.com/?reqid= {input the request id}
+	- staging: https://staging-kyc.senyumku.com/?reqid= {input the request id}
+
+	- Go to active calls
+	- Click the detail video of the customer
+	- Process all the data
+	- Click button 'Selesai KYC Video'
+	- Choose the reason
+	- Click button 'Kirim'
+	- Open the KYC Verification
+	- Click the detail customer
+	- Click button 'Terima'
+	- Click button 'Terima'
+	- Back again to CSR Detail
 	
 	Expected Result:
-	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
-	-System display new phone number in "Nomor HP Baru" section
+	- Phonenumber will updated in CSR
+	- Display data on changelog as picture on the Jira ticket:
+	- https://amarbank.atlassian.net/jira/software/c/projects/CRMF/boards/58/backlog?view=detail&selectedIssue=CRMF-772&issueLimit=100
  */
 
 'We want to process CSR Detail'

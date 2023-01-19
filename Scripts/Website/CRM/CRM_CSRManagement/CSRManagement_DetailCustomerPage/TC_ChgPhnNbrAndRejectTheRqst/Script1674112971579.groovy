@@ -34,15 +34,35 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	-User has access to KYC video request active calls
-	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
+	- Already Login to CRMF Web
+	- Already on CSR Detail
+	- New phonenumber should be whitelisted first
 	
 	Steps:
-	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
+	- Edit phonenumber
+	- Click button 'Simpan'
+	- Open the KYC Video
+	- Trigger the video call of customer from mobile or from this link
+	- DEV: https://dev-kyc.senyumku.com/?reqid= {input the request id}
+	- staging: https://staging-kyc.senyumku.com/?reqid= {input the request id}
+
+	- Go to active calls
+	- Click the detail video of the customer
+	- Process all the data
+	- Click button 'Selesai KYC Video'
+	- Choose the reason
+	- Click button 'Kirim'
+	- Open the KYC Verification
+	- Click the detail customer
+	- Click button 'Tolak'
+	- Choose the reason
+	- Click button 'Tolak'
+	- Back again to CSR Detail
 	
 	Expected Result:
-	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
-	-System display new phone number in "Nomor HP Baru" section
+	- Phonenumber will updated in CSR
+	- Display data on changelog as picture on the Jira ticket:
+	- https://amarbank.atlassian.net/jira/software/c/projects/CRMF/boards/58/backlog?view=detail&selectedIssue=CRMF-772&issueLimit=100
  */
 
 'We want to process CSR Detail'
@@ -82,6 +102,7 @@ while (checkData == false) {
 			TestObject statusCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 			if (WebUI.waitForElementVisible(statusCust, 5)) {
 				WebUI.click(linkDataPhoneNumber)
+				oldPhoneNumberText = WebUI.getAttribute(txtPhoneNumber, "value")
 				WebUI.click(btnEditPhoneNumber)
 				if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
 					WebUI.setText(txtPhoneNumber, GlobalVariable.phoneNumberWithAreaCode)
@@ -111,6 +132,8 @@ while (checkData == false) {
 }
 
 reqIdCsr = csrReqId
+String oldPhoneNumber = oldPhoneNumberText
+println(oldPhoneNumber)
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
@@ -151,7 +174,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
 			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+			if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(backToKycVideo, 5)
@@ -282,36 +305,40 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 colsKycVerif.get(7).findElement(By.xpath('a')).click()
 TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
-		if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
-			WebUI.scrollToElement(btnTerima1, 5)
-			WebUI.verifyElementClickable(btnTerima1)
-			WebUI.click(btnTerima1)
+	
+	'I want to reject the verification with reason'
+	   WebUI.scrollToElement(btnRejectKycVerif, 5)
+	   if (WebUI.waitForElementVisible(btnRejectKycVerif, 5)) {
+		WebUI.click(btnRejectKycVerif)
+		TestObject reasonRejectKycVerif = new TestObject().addProperty('text',ConditionType.CONTAINS,'Alasan Penolakan')
+		if (WebUI.waitForElementVisible(reasonRejectKycVerif, 5)) {
+			WebUI.click(chkBlankKtp)
+			WebUI.click(chkBlankSelfie)
+			WebUI.click(chkBlankEditedSelfie)
+			WebUI.click(chkFMScoreLow)
+			if (WebUI.waitForElementVisible(btnSendReason, 5)) {
+				WebUI.click(btnSendReason)
+			} else {
+				keylogger.markError('Button sent reason not visible')
+			}
+			WebUI.waitForPageLoad(5)
 			WebUI.delay(5)
-		} else { keylogger.markError("Element not present")}
-		if (WebUI.waitForElementPresent(btnTerima2, 5)) {
-			WebUI.scrollToElement(btnTerima2, 5)
-		   WebUI.verifyElementClickable(btnTerima2)
-		   WebUI.click(btnTerima2)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
+			TestObject abortVerification = new TestObject().addProperty('text',ConditionType.CONTAINS,'Akun ini ditolak')
+			if (WebUI.waitForElementVisible(abortVerification, 5)) {
+				WebUI.click(btnCloseTolakKycVerif)
+			} else {
+				keylogger.markError('Button kembali KYC Management list not available')
+			}
+		}
+	} else {
+		keylogger.markError('Button Reject Not Available')
+		}
+	
 	   WebUI.delay(5)
-	   TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
-	   if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
-		   WebUI.click(btnBackToKycManagement)
-	   } else {keylogger.logInfo('Element not present')}
-	   if (WebUI.waitForElementPresent(txtReqIdKycVerif, 5)) {
-		   WebUI.setText(txtReqIdKycVerif, reqIdCsr)
-	   } else {keylogger.logInfo("Element not present")}
 } else {keylogger.markError('Element not present')}
 } else {keylogger.logInfo('Text is not found')}
 
-'We want validate changes phone number'
+'We want check phone number has no change'
 WebUI.click(linkMenuCsrManagement)
 TestObject notifProcessCsrDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
 if (WebUI.verifyElementPresent(notifProcessCsrDetail, 5,FailureHandling.OPTIONAL)) {
@@ -322,6 +349,8 @@ if (WebUI.verifyElementPresent(csrManagementDetailCsrManagement, 5, FailureHandl
 	WebUI.delay(3)
 	WebUI.setText(txtRequestId, reqIdCsr)
 	WebUI.sendKeys(txtRequestId, Keys.chord(Keys.ENTER))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {keylogger.markError('We are not in CSR Management')}
 
 'We want access the changes phone number'
@@ -337,6 +366,6 @@ if (WebUI.verifyElementPresent(csrManagementDetailCheck, 5)) {
 	WebUI.click(linkDataPhoneNumber)
 	WebUI.click(btnEditPhoneNumber)
 	String phoneNumberChanges = WebUI.getAttribute(txtPhoneNumber, "value")
-	WebUI.verifyEqual(phoneNumberChanges, GlobalVariable.phoneNumberWithAreaCode)
+	WebUI.verifyEqual(phoneNumberChanges, oldPhoneNumber)
 	WebUI.click(btnBack)
 } else {keylogger.markError('We not in detail request Id')}
