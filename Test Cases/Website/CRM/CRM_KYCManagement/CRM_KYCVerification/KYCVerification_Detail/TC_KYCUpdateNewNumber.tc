@@ -473,6 +473,18 @@
       <value></value>
       <variableId>abcdb37c-8794-4c4e-b2cc-ab82ecd2ff7c</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9d0431c3-21f0-4932-a6c0-d3d26af66037</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6b694110-15ae-4024-a26e-f98c71deaa9b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -1018,5 +1030,19 @@
       <id>abcdb37c-8794-4c4e-b2cc-ab82ecd2ff7c</id>
       <masked>false</masked>
       <name>txtRequestId</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilterByCardStatus')</defaultValue>
+      <description></description>
+      <id>9d0431c3-21f0-4932-a6c0-d3d26af66037</id>
+      <masked>false</masked>
+      <name>drpDwnCardStats</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListDrpFilterByCustomerType')</defaultValue>
+      <description></description>
+      <id>6b694110-15ae-4024-a26e-f98c71deaa9b</id>
+      <masked>false</masked>
+      <name>drpDwnCstType</name>
    </variable>
 </TestCaseEntity>

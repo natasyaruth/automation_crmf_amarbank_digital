@@ -55,6 +55,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 	keylogger.markPassed('We are in back office')
 	if (WebUI.verifyOptionsPresent(drpDwnStatus, listDrpDwnStatus)) {
 		WebUI.setText(fieldSearch, 'Open')
+		WebUI.selectOptionByLabel(drpDwnShowRow, "10", false)
 		if (WebUI.waitForElementVisible(chkAllData, 5)) {
 			tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))
 			rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
@@ -65,13 +66,13 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 				WebUI.click(chkAllData)
 			} else {keylogger.markError('Text open not found')}
 		} else {keylogger.markError('We are not find the check all data')}
-		WebUI.selectOptionByLabel(drpDwnStatus, "Open", false)
+		WebUI.selectOptionByLabel(drpDwnStatus, "Pending", false)
 		WebUI.click(btnUpdate)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb
 	println(numberQueue)
-	WebUI.setText(fieldSearch, 'Open')
+	WebUI.setText(fieldSearch, 'Pending')
 	WebUI.selectOptionByLabel(drpDwnShowRow, "50", false)
 	'We want to check update data'
 	boolean flag = false
@@ -82,8 +83,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 			tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))
 			rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
 			List<WebElement> colsBackOffice = rowsBackOffice.get(i).findElements(By.tagName('td'))
-			if (colsBackOffice.get(1).getText().equalsIgnoreCase(numberQueue)) {
-				colsBackOffice.get(12).getText().equalsIgnoreCase("Pending")
+			if (colsBackOffice.get(1).getText().equalsIgnoreCase(numberQueue) && colsBackOffice.get(12).getText().equalsIgnoreCase("Pending")) {
 				break dataCheck
 				keylogger.markPassed("We already changes status")
 			} else {

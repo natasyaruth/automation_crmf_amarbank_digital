@@ -16,7 +16,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://staging-api-registration-svc.senyumku.com/'</initValue>
+      <initValue>'https://staging-api-registration-svc.otoku.io/'</initValue>
       <name>hostnameServices</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -238,5 +238,30 @@
       <description></description>
       <initValue>''</initValue>
       <name>randomFirstNameWhitelist</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>otpOldPhoneNumber</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dataOtp1</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dataOtp2</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dataOtp3</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>dataOtp4</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

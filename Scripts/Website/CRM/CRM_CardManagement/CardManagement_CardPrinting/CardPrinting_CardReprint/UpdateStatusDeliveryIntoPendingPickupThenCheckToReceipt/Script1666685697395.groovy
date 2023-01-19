@@ -34,6 +34,8 @@ WebUI.click(tabCardReprint)
 
 /* We will wait until table 'Cetak ulang' is appear */
 WebUI.waitForElementPresent(table, 10)
+WebUI.waitForPageLoad(10)
+WebUI.delay(5)
 
 /* We will declarated variable 'driverReprint' and 'driverReceipt'
  * to store function of webdriver.
@@ -296,6 +298,7 @@ while (flagNextLoop == false) {
 
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
+			WebUI.delay(5)
 		}
 	}
 }

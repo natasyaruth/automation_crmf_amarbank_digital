@@ -179,6 +179,12 @@
       <value></value>
       <variableId>b06e0305-2d53-42b6-b37a-5759a6a2fd70</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f717ffbf-c794-43a7-9778-86e808c1787d</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Login by Email Amarbank'</defaultValue>
       <description></description>
@@ -381,5 +387,12 @@
       <id>b06e0305-2d53-42b6-b37a-5759a6a2fd70</id>
       <masked>false</masked>
       <name>menuLogout</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/UploadPhoto/LinkUploadPhoto')</defaultValue>
+      <description></description>
+      <id>f717ffbf-c794-43a7-9778-86e808c1787d</id>
+      <masked>false</masked>
+      <name>menuUploadPhoto</name>
    </variable>
 </TestCaseEntity>

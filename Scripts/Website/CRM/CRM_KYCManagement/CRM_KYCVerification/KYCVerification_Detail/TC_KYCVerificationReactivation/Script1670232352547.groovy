@@ -71,7 +71,7 @@ List<WebElement> colsCsr
 flagLoop = false
 csrManagement:
 while (flagLoop == false) {
-	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	tblCsr = driverCsr.findElement(By.xpath('//table/tbody'))
 	rowsCsr = tblCsr.findElements(By.tagName('tr'))
 	for (i = 0; i < rowsCsr.size(); i ++) {
@@ -157,6 +157,7 @@ while (flagLoop == false) {
 	String dataPhoneNumber = phoneNumberUser
 	String dataAccountId = accountIdPersonalUser
 	String dataAccountNumber = accountNumberUser
+	WebUI.waitForPageLoad(5)
 	
 	TestObject blockAccount = new TestObject().addProperty('text',ConditionType.CONTAINS,'Formulir pemblokiran akun')
 	if (WebUI.waitForElementPresent(blockAccount, 5)) {
@@ -239,6 +240,7 @@ while (flagLoop == false) {
 		WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + callValidation.substring(8))
 		TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 		if (WebUI.waitForElementVisible(videoCallValidation, 5)) {
+			WebUI.waitForPageLoad(5)
 			if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 				WebUI.delay(5)
 				WebUI.click(btnCallSenyumku)
@@ -372,9 +374,11 @@ while (flagLoop == false) {
 				WebUI.click(menuKycManagement)
 				if (WebUI.verifyElementClickable(menuKycVerification)) {
 					WebUI.click(menuKycVerification)
+					WebUI.delay(3)
 				} else {keylogger.markError('Button KYC video request')}
 			}else {keylogger.markError('Button cannot click able')}
 			if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
+				WebUI.waitForPageLoad(5)
 				tblKycVerif = driverKycVerif.findElement(By.xpath('//table/tbody'))
 				rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 				colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
@@ -434,6 +438,8 @@ if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 	WebUI.click(linkMenuCsrManagement)
 	if (WebUI.waitForElementPresent(txtAlertNotification, 5)) {
 		WebUI.click(abortNotification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.logInfo("We are not have active request")}
 } else {keylogger.markError("Element not found")}
 WebUI.setText(txtReqIdCsrCheckData, reqIdVidCall)

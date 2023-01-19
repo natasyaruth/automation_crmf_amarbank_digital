@@ -63,40 +63,59 @@ if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 	} else {keylogger.logInfo("We not found the element")}
 } else {keylogger.markError("We not found the CSR Management")}
 
-TestObject csrManagementBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
-if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
-	WebUI.delay(3)
-	WebUI.setText(txtRequestIdCsr, "10000041")
-	WebUI.sendKeys(txtRequestIdCsr, Keys.chord(Keys.ENTER))
-} else {keylogger.markError('We are not in CSR Management')}
-
+'init HTML Webdriver'
 WebDriver driverCsr = DriverFactory.getWebDriver()
-WebElement tblCsr = driverCsr.findElement(By.xpath("//table/tbody"))
-List<WebElement> rawCsr = tblCsr.findElements(By.tagName("tr"))
-List<WebElement> colsCsr = rawCsr.get(0).findElements(By.tagName('td'))
-if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
-	colsCsr.get(6).findElement(By.xpath('button')).click()
-} else {keylogger.markError('We not found the element')}
-TestObject csrManagementDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
-		WebUI.click(linkDataPhoneNumber)
-		WebUI.click(btnEditPhoneNumber)
-	if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
-		WebUI.setText(txtPhoneNumber, GlobalVariable.phoneNumberWithAreaCode)
-		if (WebUI.waitForElementVisible(btnSavePhoneNumber, 5)) {
-			WebUI.verifyElementClickable(btnSavePhoneNumber)
-			WebUI.click(btnSavePhoneNumber)
-		} else {keylogger.markError("Element not visible")}
-	} else {keylogger.markError("Element not present")}
-	TestObject successSaveNumber = new TestObject().addProperty('text',ConditionType.CONTAINS,'No. Handphone berhasil disimpan')
-	if (WebUI.verifyElementPresent(successSaveNumber, 5)) {
-		WebUI.refresh()
-		WebUI.delay(5)
-		WebUI.scrollToElement(btnBack, 5)
-		csrReqId = WebUI.getText(csrReqIdDetail)
-		WebUI.click(btnBack)
-	} else {keylogger.markError('element not present')}
-} else {keylogger.markError('We not in detail request Id')}
+WebElement tblCsr
+List<WebElement> rawCsr
+
+checkData = false
+loopCheckData:
+while (checkData == false) {
+	tblCsr = driverCsr.findElement(By.xpath("//table/tbody"))
+	rawCsr = tblCsr.findElements(By.tagName("tr"))
+	for (int i=0; i < rawCsr.size(); i++) {
+	TestObject csrManagementBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
+	if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
+		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
+		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+	} else {keylogger.markError('We are not in CSR Management')}
+		List<WebElement> colsCsr = rawCsr.get(i).findElements(By.tagName('td'))
+		if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
+			colsCsr.get(6).findElement(By.xpath('button')).click()
+		} else {keylogger.markError('We not found the element')}
+		TestObject csrManagementDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
+		if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
+			TestObject statusCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
+			if (WebUI.waitForElementVisible(statusCust, 5)) {
+				WebUI.click(linkDataPhoneNumber)
+				WebUI.click(btnEditPhoneNumber)
+				if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
+					WebUI.setText(txtPhoneNumber, GlobalVariable.phoneNumberWithAreaCode)
+					if (WebUI.waitForElementVisible(btnSavePhoneNumber, 5)) {
+						WebUI.verifyElementClickable(btnSavePhoneNumber)
+						WebUI.click(btnSavePhoneNumber)
+					} else {keylogger.markError("Element not visible")}
+				} else {keylogger.markError("Element not present")}
+				TestObject successSaveNumber = new TestObject().addProperty('text',ConditionType.CONTAINS,'No. Handphone berhasil disimpan')
+				if (WebUI.verifyElementPresent(successSaveNumber, 5)) {
+					WebUI.refresh()
+					WebUI.delay(5)
+					WebUI.scrollToElement(btnBack, 5)
+					csrReqId = WebUI.getText(csrReqIdDetail)
+					WebUI.click(btnBack)
+					WebUI.refresh()
+					break loopCheckData
+				} else {keylogger.markError('element not present')}
+			} else {
+				WebUI.click(btnBack)
+				WebUI.delay(3)
+				tblCsr = driverCsr.findElement(By.xpath("//table/tbody"))
+				rawCsr = tblCsr.findElements(By.tagName("tr"))
+			}
+		} else {keylogger.markError('We not in detail request Id')}
+	}
+}
+
 reqIdCsr = csrReqId
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 	WebUI.click(menuKYCManagement)
@@ -240,6 +259,7 @@ if (WebUI.verifyElementClickable(menuKYCManagement)) {
 WebUI.click(menuKYCManagement)
 if (WebUI.verifyElementClickable(menuKycVerification)) {
 WebUI.click(menuKycVerification)
+WebUI.waitForPageLoad(5)
 } else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
 if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
