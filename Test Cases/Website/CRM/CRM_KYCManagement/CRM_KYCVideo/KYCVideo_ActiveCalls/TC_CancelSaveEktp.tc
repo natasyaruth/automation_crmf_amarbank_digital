@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_CancelSaveEktp</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4b8f04a0-4e95-4c20-854a-4e69ddd35f08</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>315c582f-49a0-437f-b916-92439e4a9bf1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>315c582f-49a0-437f-b916-92439e4a9bf1</id>
+      <masked>false</masked>
+      <name>requestIdKycVideo</name>
+   </variable>
+</TestCaseEntity>
