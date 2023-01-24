@@ -31,13 +31,15 @@ KeywordUtil keylogger = new KeywordUtil()
 
 'Scenario Testing'
 /* 	PRECONDITION
- * 	User has access to confirmation save pop up
+ * 	User has take eKTP photo
 	
 	STEPS
-	Click "Batal" button in confirmation pop up
+	Click "Simpan" button
+	Click "Simpan" button in confirmation pop up
 
 	EXPECTED RESULT
-	System close the confirmation pop up and display KYC video call active calls customer details
+	-System display confirmation save pop up
+	-System send the eKTP photo result to database, then "Foto berhasil disimpan" toast appear
  */
 
 'We want to access KYC Video Request'
@@ -172,8 +174,10 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 			WebUI.click(btnSaveKtpPhoto)
 			TestObject saveConfirmation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
 			if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
-				WebUI.click(btnCancelSaveKtp)
-				keylogger.markPassed('Foto cancel to save')
+				WebUI.click(btnSaveKyc)
+				TestObject saveIdPhoto = new TestObject().addProperty('text',ConditionType.CONTAINS,'Foto berhasil disimpan')
+				WebUI.verifyElementPresent(saveIdPhoto, 5)
+				keylogger.markPassed('Foto Success to save')
 				WebUI.takeScreenshot()
 			} else {keylogger.markError('element not present')}
 		} else {keylogger.markError('Photo not enable')}

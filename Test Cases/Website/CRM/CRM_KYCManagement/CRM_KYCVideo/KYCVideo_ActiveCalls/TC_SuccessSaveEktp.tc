@@ -1,384 +1,384 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CancelSaveEktp</name>
+   <name>TC_SuccessSaveEktp</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>4b8f04a0-4e95-4c20-854a-4e69ddd35f08</testCaseGuid>
+   <testCaseGuid>0896b45c-2438-4f39-a828-87cba7da2b4f</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>315c582f-49a0-437f-b916-92439e4a9bf1</variableId>
+      <variableId>958a6878-238d-47e8-9df0-1700380996fb</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>69dbf194-6181-452c-8b7a-1439acb45e78</variableId>
+      <variableId>8f0faf7a-c082-4a5d-a274-41a5b555df47</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>5c01d6df-b6ba-4010-922e-edc68dc1866f</variableId>
+      <variableId>102157b5-27d6-4446-a9b1-57ec6d0ccd35</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>824f8e36-681d-4632-8228-c9d43e152abe</variableId>
+      <variableId>916caaee-e17f-4b21-8ff7-8fa5cc2ed600</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>089f1639-b228-4bdf-8091-e42570d5c382</variableId>
+      <variableId>2c849389-db9e-4c1d-b262-346f28d8d008</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c41464c6-5f6f-4fab-9386-af7874417285</variableId>
+      <variableId>5088421c-2e12-48e3-aa55-b9239bf66437</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>388ab876-0db8-4734-bbc6-8f13117ec02c</variableId>
+      <variableId>7035ddf3-8a58-41d7-831c-1815704d01aa</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6d0729d6-0014-4f3b-bd3c-70225c7fbd93</variableId>
+      <variableId>3c286978-462c-42b0-aef4-7fe92b5af77b</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>54b41fa0-9490-4a3b-8e55-1335e3357448</variableId>
+      <variableId>30f5e4b3-51e9-4a32-a77c-9121be492431</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d6de475f-2243-47ba-8fcc-7d0e218ee782</variableId>
+      <variableId>ebb68d06-2802-48e5-ab8f-a6eba757e1a9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>aaaa62be-113c-40a7-ad5f-15098f8057af</variableId>
+      <variableId>cc63c566-a851-4e4c-be4e-1ce1d275bbcc</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>7fb09efa-5921-4ab6-8a53-83574307b039</variableId>
+      <variableId>10675ad1-baab-43d4-acd6-69377a2691e5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8eef7560-6c2a-4780-ad39-ee30fe25f33d</variableId>
+      <variableId>7018b39a-dd8b-4d15-8a9d-e9a7046633c9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>f5e41cb9-1009-4600-af10-fa558ae84f5a</variableId>
+      <variableId>803d8cce-02e7-4180-8f5c-1cdd43af71c3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6570b937-4f5e-4976-a59f-2c293b412c62</variableId>
+      <variableId>8ca04b4e-e378-4b17-a8d3-e6c2c82ed3a2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3d7a1fc5-6326-4ffd-8620-1570b4f0c31d</variableId>
+      <variableId>b2ba86f6-245f-41b6-becc-254345132266</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8daa0704-d7f5-405d-83b0-b5c3b3aab0f6</variableId>
+      <variableId>cf052bed-5654-4ae7-a6a7-b4acb979f4b2</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3810ea97-b335-4d1a-9315-de73b0e1e9d1</variableId>
+      <variableId>6b89f8e3-500d-48c8-8919-925dba066851</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bb2e091d-8310-4e90-8e26-afdd5e5c876b</variableId>
+      <variableId>85131476-0a8f-4a68-840f-0bd90dc1e950</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>4ffd0796-e788-4817-aaad-2e71385bd10c</variableId>
+      <variableId>f3022dd0-fdca-4a9a-8ff4-7c66d9d208f6</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>bb19be09-4e5e-4e38-b966-b71e7278722a</variableId>
+      <variableId>e78828d1-d4a2-4dbf-abf4-a1bfb3182fb3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>a5028927-2558-40d1-af1b-21642e794528</variableId>
+      <variableId>9c76d351-c86d-42cd-b616-bacc0eb1b86d</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>18ab731a-d312-44cf-a55f-9f544abf5e94</variableId>
+      <variableId>a02d33b6-93af-4492-aeab-07ffc645ed13</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>67268ddd-19fb-4855-a268-0ef65d8d1329</variableId>
+      <variableId>383e208a-a84e-4145-80a8-f28ebce9e657</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d85f2c69-4ddb-4ad7-9fdc-1bbfdb9df1c3</variableId>
+      <variableId>be91f590-2897-47f0-8130-ff21c42677f5</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>ef0751ea-a71c-45ae-8e6f-ae95398ff3bc</variableId>
+      <variableId>fa590fd1-7db6-4921-8e1c-104c2a224aa9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>8eca080d-9085-46f4-8d59-3988481d1cb8</variableId>
+      <variableId>b06713d6-9a39-4597-8d2f-1148c892d9b3</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d73a9c93-d5f6-443f-a6e9-d24f06ed3e65</variableId>
+      <variableId>12cc1d6a-cd0a-47bc-8794-7205ce497426</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>408df3c3-76b3-434a-8d9d-e180f20d8991</variableId>
+      <variableId>b7024695-e33b-40da-b5a7-8344c104e2da</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>315c582f-49a0-437f-b916-92439e4a9bf1</id>
+      <id>958a6878-238d-47e8-9df0-1700380996fb</id>
       <masked>false</masked>
       <name>requestIdKycVideo</name>
    </variable>
    <variable>
       <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
       <description></description>
-      <id>69dbf194-6181-452c-8b7a-1439acb45e78</id>
+      <id>8f0faf7a-c082-4a5d-a274-41a5b555df47</id>
       <masked>false</masked>
       <name>path</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
       <description></description>
-      <id>5c01d6df-b6ba-4010-922e-edc68dc1866f</id>
+      <id>102157b5-27d6-4446-a9b1-57ec6d0ccd35</id>
       <masked>false</masked>
       <name>linkMenuKycManagement</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/BlockConfirmation/AlertConfirmationText')</defaultValue>
       <description></description>
-      <id>824f8e36-681d-4632-8228-c9d43e152abe</id>
+      <id>916caaee-e17f-4b21-8ff7-8fa5cc2ed600</id>
       <masked>false</masked>
       <name>alertText</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
       <description></description>
-      <id>089f1639-b228-4bdf-8091-e42570d5c382</id>
+      <id>2c849389-db9e-4c1d-b262-346f28d8d008</id>
       <masked>false</masked>
       <name>btnCancelPending</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/KYCVideoBucketListIdleCallsTab')</defaultValue>
       <description></description>
-      <id>c41464c6-5f6f-4fab-9386-af7874417285</id>
+      <id>5088421c-2e12-48e3-aa55-b9239bf66437</id>
       <masked>false</masked>
       <name>tabIdleCalls</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType')</defaultValue>
       <description></description>
-      <id>388ab876-0db8-4734-bbc6-8f13117ec02c</id>
+      <id>7035ddf3-8a58-41d7-831c-1815704d01aa</id>
       <masked>false</masked>
       <name>drpCustType</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/txtReqIdKycVideo')</defaultValue>
       <description></description>
-      <id>6d0729d6-0014-4f3b-bd3c-70225c7fbd93</id>
+      <id>3c286978-462c-42b0-aef4-7fe92b5af77b</id>
       <masked>false</masked>
       <name>reqId</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnVideoCallCustomer')</defaultValue>
       <description></description>
-      <id>54b41fa0-9490-4a3b-8e55-1335e3357448</id>
+      <id>30f5e4b3-51e9-4a32-a77c-9121be492431</id>
       <masked>false</masked>
       <name>btnCallSenyumku</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardLink')</defaultValue>
       <description></description>
-      <id>d6de475f-2243-47ba-8fcc-7d0e218ee782</id>
+      <id>ebb68d06-2802-48e5-ab8f-a6eba757e1a9</id>
       <masked>false</masked>
       <name>linkDashboard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardCntrPendingRequestNotification')</defaultValue>
       <description></description>
-      <id>aaaa62be-113c-40a7-ad5f-15098f8057af</id>
+      <id>cc63c566-a851-4e4c-be4e-1ce1d275bbcc</id>
       <masked>false</masked>
       <name>pendingRequest</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnTakePhoto')</defaultValue>
       <description></description>
-      <id>7fb09efa-5921-4ab6-8a53-83574307b039</id>
+      <id>10675ad1-baab-43d4-acd6-69377a2691e5</id>
       <masked>false</masked>
       <name>btnSelfie</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkNameConf')</defaultValue>
       <description></description>
-      <id>8eef7560-6c2a-4780-ad39-ee30fe25f33d</id>
+      <id>7018b39a-dd8b-4d15-8a9d-e9a7046633c9</id>
       <masked>false</masked>
       <name>chkNamaKtp</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkIdNo')</defaultValue>
       <description></description>
-      <id>f5e41cb9-1009-4600-af10-fa558ae84f5a</id>
+      <id>803d8cce-02e7-4180-8f5c-1cdd43af71c3</id>
       <masked>false</masked>
       <name>chkKtpNumber</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkBirtDate')</defaultValue>
       <description></description>
-      <id>6570b937-4f5e-4976-a59f-2c293b412c62</id>
+      <id>8ca04b4e-e378-4b17-a8d3-e6c2c82ed3a2</id>
       <masked>false</masked>
       <name>chkBirtDate</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkMotherName')</defaultValue>
       <description></description>
-      <id>3d7a1fc5-6326-4ffd-8620-1570b4f0c31d</id>
+      <id>b2ba86f6-245f-41b6-becc-254345132266</id>
       <masked>false</masked>
       <name>chkMotherName</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkDelvAddress')</defaultValue>
       <description></description>
-      <id>8daa0704-d7f5-405d-83b0-b5c3b3aab0f6</id>
+      <id>cf052bed-5654-4ae7-a6a7-b4acb979f4b2</id>
       <masked>false</masked>
       <name>chkAddressDeliveryCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkKtpImage')</defaultValue>
       <description></description>
-      <id>3810ea97-b335-4d1a-9315-de73b0e1e9d1</id>
+      <id>6b89f8e3-500d-48c8-8919-925dba066851</id>
       <masked>false</masked>
       <name>chkShowIdCard</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkPhotoCapture')</defaultValue>
       <description></description>
-      <id>bb2e091d-8310-4e90-8e26-afdd5e5c876b</id>
+      <id>85131476-0a8f-4a68-840f-0bd90dc1e950</id>
       <masked>false</masked>
       <name>chkCaptureFace</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/imgSelfPhoto')</defaultValue>
       <description></description>
-      <id>4ffd0796-e788-4817-aaad-2e71385bd10c</id>
+      <id>f3022dd0-fdca-4a9a-8ff4-7c66d9d208f6</id>
       <masked>false</masked>
       <name>imgSelfPhoto</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnSaveSelfiePhoto')</defaultValue>
       <description></description>
-      <id>bb19be09-4e5e-4e38-b966-b71e7278722a</id>
+      <id>e78828d1-d4a2-4dbf-abf4-a1bfb3182fb3</id>
       <masked>false</masked>
       <name>btnSaveSelfPhoto</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnSaveKycImage')</defaultValue>
       <description></description>
-      <id>a5028927-2558-40d1-af1b-21642e794528</id>
+      <id>9c76d351-c86d-42cd-b616-bacc0eb1b86d</id>
       <masked>false</masked>
       <name>btnSaveKyc</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/imgKtpPhoto')</defaultValue>
       <description></description>
-      <id>18ab731a-d312-44cf-a55f-9f544abf5e94</id>
+      <id>a02d33b6-93af-4492-aeab-07ffc645ed13</id>
       <masked>false</masked>
       <name>imgKtpPhoto</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnSaveKtpPhoto')</defaultValue>
       <description></description>
-      <id>67268ddd-19fb-4855-a268-0ef65d8d1329</id>
+      <id>383e208a-a84e-4145-80a8-f28ebce9e657</id>
       <masked>false</masked>
       <name>btnSaveKtpPhoto</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancelSaveKycImage')</defaultValue>
       <description></description>
-      <id>d85f2c69-4ddb-4ad7-9fdc-1bbfdb9df1c3</id>
+      <id>be91f590-2897-47f0-8130-ff21c42677f5</id>
       <masked>false</masked>
-      <name>btnCancelSaveKtp</name>
+      <name>btnSaveKtpKyc</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/btnEndVideoCall')</defaultValue>
       <description></description>
-      <id>ef0751ea-a71c-45ae-8e6f-ae95398ff3bc</id>
+      <id>fa590fd1-7db6-4921-8e1c-104c2a224aa9</id>
       <masked>false</masked>
       <name>btnEndVideoCall</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel')</defaultValue>
       <description></description>
-      <id>8eca080d-9085-46f4-8d59-3988481d1cb8</id>
+      <id>b06713d6-9a39-4597-8d2f-1148c892d9b3</id>
       <masked>false</masked>
       <name>btnCancelKyc</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkKtpFace')</defaultValue>
       <description></description>
-      <id>d73a9c93-d5f6-443f-a6e9-d24f06ed3e65</id>
+      <id>12cc1d6a-cd0a-47bc-8794-7205ce497426</id>
       <masked>false</masked>
       <name>ChkShowClearFace</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/KYC_Video/KYCVideoLinkVideoRequest')</defaultValue>
       <description></description>
-      <id>408df3c3-76b3-434a-8d9d-e180f20d8991</id>
+      <id>b7024695-e33b-40da-b5a7-8344c104e2da</id>
       <masked>false</masked>
       <name>linkMenuKycVideoReq</name>
    </variable>
