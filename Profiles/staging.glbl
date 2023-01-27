@@ -36,6 +36,11 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
+      <initValue>'https://staging-api-crm-svc.otoku.io/'</initValue>
+      <name>hostnameCRMNew</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
       <initValue>''</initValue>
       <name>sessionCRM</name>
    </GlobalVariableEntity>
@@ -263,5 +268,10 @@
       <description></description>
       <initValue>''</initValue>
       <name>dataOtp4</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>accountBank</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
