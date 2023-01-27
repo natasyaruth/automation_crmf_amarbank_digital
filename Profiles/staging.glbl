@@ -274,4 +274,9 @@
       <initValue>''</initValue>
       <name>accountBank</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>fullName</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

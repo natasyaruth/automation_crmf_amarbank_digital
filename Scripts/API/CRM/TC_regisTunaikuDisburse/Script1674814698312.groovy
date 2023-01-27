@@ -27,14 +27,20 @@ import com.tunaiku.keyword.RandomFakerData as DataRandom
 
 'Initial'
 KeywordUtil keylogger = new KeywordUtil()
-String randomPhoneNumber = "+62857" +RandomStringUtils.randomNumeric(9)
-String randomKtp = "3171" +RandomStringUtils.randomNumeric(12)
-String randomFirstName = DataRandom.set_faker_first_name()
-String randomLastName = DataRandom.set_faker_last_name()
-String randomEmail = DataRandom.set_faker_email()
+//String randomPhoneNumber = "+62857" +RandomStringUtils.randomNumeric(9)
+//String randomKtp = "3171" +RandomStringUtils.randomNumeric(12)
+//String randomFirstName = DataRandom.set_faker_first_name()
+String randomFirstName = "Yono"
+//String randomLastName = DataRandom.set_faker_last_name()
+String randomLastName = "Purwanto"
+//String randomEmail = DataRandom.set_faker_email()
+String fullName = randomFirstName +' '+ randomLastName
+GlobalVariable.fullName = fullName
+println(fullName)
 
 'Prepare http request'
-def request = WS.sendRequest(findTestObject('API/CRM/API_regisTunaikuDisburse',[('phoneNumber') : randomPhoneNumber,('pin') : randomKtp,('firstName') : randomFirstName, ('lastName') : randomLastName, ('email') : randomEmail]))
+//def request = WS.sendRequest(findTestObject('API/CRM/API_regisTunaikuDisburse',[('phoneNumber') : randomPhoneNumber,('pin') : randomKtp, ('firstName') : randomFirstName, ('lastName') : randomLastName, ('email') : randomEmail]))
+def request = WS.sendRequest(findTestObject('API/CRM/API_regisTunaikuDisburse'))
 
 'Get JSON Respons'
 String JSONResponse = request.getResponseText()
