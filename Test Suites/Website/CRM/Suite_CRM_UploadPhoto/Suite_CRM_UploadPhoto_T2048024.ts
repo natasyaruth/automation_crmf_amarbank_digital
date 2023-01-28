@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
-   <description></description>
-   <name>Suite_CRM_Card_Printing_T105002</name>
+   <description>https://bankamar.testrail.io/index.php?/tests/view/2048024</description>
+   <name>Suite_CRM_UploadPhoto_T2048024</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,9 +10,9 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>false</rerunImmediately>
-   <testSuiteGuid>9d44a71b-9f30-4670-bb36-fc208c4e33b4</testSuiteGuid>
+   <testSuiteGuid>068ac2d5-14f8-4069-8b8a-17803cad78bb</testSuiteGuid>
    <testCaseLink>
-      <guid>57308458-f839-49e2-8cbe-3593a752ebcb</guid>
+      <guid>9d15caaf-b31e-4893-81aa-5b72c1cc91df</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -31,7 +31,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>e2fe4372-9d27-4490-a74f-194baad89698</guid>
+      <guid>27ec5bfe-9b85-433e-97e3-a69f6e18644f</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
@@ -218,190 +218,123 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>c29cc494-47ce-4a6d-b48b-ea3cd640e2ef</guid>
+      <guid>af85b510-8bfb-427a-b03b-2d73dd38a44a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement/TC_CardManagement</testCaseId>
+      <testCaseId>Test Cases/API/CRM/TC_regisTunaikuDisburse</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>8a161e10-e961-4d99-a858-1624caa2e5b0</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_UploadPhoto/TC_UpldPhotoWithKtpNSelfieBlank</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>c56aafc5-9b92-4787-b9c6-48393a59e5c1</variableId>
+         <variableId>8b1c0296-82c3-4756-a1ee-e914205ac8a7</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>e41a7859-6e4c-4423-83b3-b847be8d0d15</variableId>
+         <variableId>1facfe75-c857-4dd5-9899-76e147910aa2</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>94d7f5d7-cf30-4d1a-94dc-24b0107ea98a</variableId>
+         <variableId>b6fe037f-3c39-4343-adf3-1d203c880ad9</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>3b8f22f1-f62b-4fb9-8717-2424ae40dcbd</variableId>
+         <variableId>14684cbd-f4c3-434e-a474-1479c3cfe78c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>27991755-3d73-4857-8789-ca5642d99d4d</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4ec5c071-9fbc-4350-a3fa-bdffaa660232</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>23f84dd8-6263-474a-b947-abe6ce7b31a3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ec5dd6a9-d4b6-497d-8c1b-2b840c31b5c3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52a00c06-afe7-406b-bbd8-715988d1fb2e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>675d68f8-f73c-4978-bc02-b078eaff3fac</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f3faaede-241b-4dc2-8d3d-19bcd8081638</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>09b56412-9d67-466d-be9d-14780c11267e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>74a90def-f4c8-484e-a467-8182a55f04ea</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>caffabf5-b6d7-4367-a3ea-4a494ad640dd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9bfafb30-792a-4614-acab-7a2d0b5c68a4</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>afb8a84a-d98c-4671-a8d1-b4e76bdcf96f</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>285cd363-9792-48fa-8935-8c337a061d09</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>3b034d94-0ae2-4e57-8d65-6634dac9f1e1</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement_CardPrinting/TC_CardPrinting</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4df2362f-c639-477a-ab7b-fa8e79f79b6c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>150b7482-d0fa-401e-ab53-d03349b9d3de</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>56e72d3d-94a5-4224-a402-61f34159e403</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d23454ee-4d0e-469c-842a-af164258ac9d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ea63c498-b631-4171-b021-2618e1442944</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f6418ace-7639-4465-b11e-ff0190ff11af</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7e35d8c2-4728-4baf-80f4-fa933afedea3</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>5254f5f1-82a5-4324-9345-cbeb55b157ef</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CardManagement/CardManagement_CardPrinting/CardPrinting_CardReprint/UpdtStsDelivToVanEnrtToPickupChkRecpt</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2c5eb45a-a1a4-4902-a86f-aa6fdc4daee9</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>5e554d74-7817-4b6e-a5a9-4ec4b5a23e2c</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>1e976fff-e10c-4728-b9ba-a316fe3b24fe</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>78bd039d-575f-4bc7-8e9d-b85dca853832</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>7f0e70a5-1eab-4d6e-bd83-245de6fc4c1f</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>cc43c5f1-23fc-4a98-a14f-17079813c442</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>edc2d26e-19ea-4c2a-bf0f-a74c46f68123</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f2fef685-ae0b-4d0b-b41f-0634a7a1ce08</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>ef88d219-c902-4ac7-bed0-5b9a4758b54a</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>aa52bccc-270b-4957-93ed-f1404219562e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f8897631-3721-440d-8320-9019c828914e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>f722897d-04f5-4909-9f8a-d16ba05e7825</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>dfa995d8-748d-4804-91a7-abbe6c3ef034</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>522dbd5d-d4f6-486a-a1d9-f2fcbdd62e48</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4f625646-f3db-4db0-9a01-83a93723a3e0</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>42037830-ba9b-45ee-944d-d8043d09f577</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>43ae0114-d117-4dbf-88f9-986323575315</guid>
+      <guid>5c168ccb-5e06-493b-a302-1a8124963723</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Logout/TC_Logout</testCaseId>

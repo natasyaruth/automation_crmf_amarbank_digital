@@ -41,7 +41,7 @@ public class RandomFakerData {
 		 * This Part for set custom keyword for Random Data Email
 		 */
 		Faker faker = new Faker()
-		String randomEmail = faker.name().fullName() +"@gmail.com"
+		String randomEmail = faker.name().fullName() +"@yopmail.com"
 		return randomEmail
 	}
 
