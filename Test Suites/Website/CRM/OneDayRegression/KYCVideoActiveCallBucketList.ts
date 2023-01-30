@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteCollectionEntity>
    <description></description>
-   <name>KYCVerificationDetail</name>
+   <name>KYCVideoActiveCallBucketList</name>
    <tag></tag>
    <delayBetweenInstances>0</delayBetweenInstances>
    <executionMode>SEQUENTIAL</executionMode>
@@ -12,30 +12,40 @@
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_CRM_KYCVerification_Detail_T1350227</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_ActiveCall/Suite_CRM_KYCVideo_Active_Call_T1350012</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_CRM_KYCVerification_Detail_T1350229</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_ActiveCalls/Suite_ActiveCalls_T2287521</testSuiteEntity>
       </TestSuiteRunConfiguration>
       <TestSuiteRunConfiguration>
          <configuration>
             <groupName>Web Desktop</groupName>
             <profileName>staging</profileName>
             <requireConfigurationData>false</requireConfigurationData>
-            <runConfigurationId>Edge Chromium</runConfigurationId>
+            <runConfigurationId>Chrome</runConfigurationId>
          </configuration>
          <runEnabled>true</runEnabled>
-         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_KYCVerification/Suite_CRM_KYCVerification_Detail_T1350230</testSuiteEntity>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_ActiveCalls/Suite_ActiveCalls_T1350018</testSuiteEntity>
+      </TestSuiteRunConfiguration>
+      <TestSuiteRunConfiguration>
+         <configuration>
+            <groupName>Web Desktop</groupName>
+            <profileName>staging</profileName>
+            <requireConfigurationData>false</requireConfigurationData>
+            <runConfigurationId>Chrome</runConfigurationId>
+         </configuration>
+         <runEnabled>true</runEnabled>
+         <testSuiteEntity>Test Suites/Website/CRM/Suite_CRM_KYCManagement/Suite_CRM_KYCVideo/Suite_KYCVideo_ActiveCalls/Suite_ActiveCalls_T1350023</testSuiteEntity>
       </TestSuiteRunConfiguration>
    </testSuiteRunConfigurations>
 </TestSuiteCollectionEntity>
