@@ -221,7 +221,7 @@
       <guid>b1313f03-3579-44aa-832e-69ac0cc7bcdd</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_CheckContentDetailsToCancelUnblockCardWithSeveralThingsInputReason</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_ChkCtntDtlsCnclUnblkCrdWthSvrlThgsInptRsn</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>

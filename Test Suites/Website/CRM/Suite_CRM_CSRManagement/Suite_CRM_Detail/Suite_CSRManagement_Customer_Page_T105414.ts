@@ -221,7 +221,7 @@
       <guid>62d06fa4-6e8f-44d4-a974-d26dee675d20</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_CheckContentDetailsToCancelBlockCardWithNoThingsToConfirm</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_ChkCtntDtlsCnclBlkCrdWthNoThgsCnfrm</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
