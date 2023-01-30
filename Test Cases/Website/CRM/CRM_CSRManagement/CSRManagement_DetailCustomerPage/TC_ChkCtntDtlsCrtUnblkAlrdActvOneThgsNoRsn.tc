@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CheckContentDetailsToCreateUnblockAlreadyActivationOneThingsNoReason</name>
+   <name>TC_ChkCtntDtlsCrtUnblkAlrdActvOneThgsNoRsn</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>58bdf376-b0a8-4f59-9971-e4b2857ead1b</testCaseGuid>

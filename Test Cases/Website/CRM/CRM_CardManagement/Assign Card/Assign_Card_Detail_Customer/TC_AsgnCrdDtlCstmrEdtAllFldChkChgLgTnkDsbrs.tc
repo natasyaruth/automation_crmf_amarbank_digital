@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>https://bankamar.testrail.io/index.php?/tests/view/104943</description>
-   <name>TC_AssignCardDetailCustomerToEditAllFieldCheckChangeLogsTunaikuDisbursement</name>
+   <name>TC_AsgnCrdDtlCstmrEdtAllFldChkChgLgTnkDsbrs</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>350274dd-fbad-44de-8ffe-78cbeb5084ed</testCaseGuid>
