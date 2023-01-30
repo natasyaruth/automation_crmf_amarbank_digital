@@ -221,7 +221,7 @@
       <guid>5c173dd5-0962-4795-b34a-45c776adaf61</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_CheckContentCancelTheUnblockPinWithSeveralThingConfirmInputReason</testCaseId>
+      <testCaseId>Test Cases/Website/CRM/CRM_CSRManagement/CSRManagement_DetailCustomerPage/TC_ChkCtntCnclUnblWthSvrlThgsCfrmInpt</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
