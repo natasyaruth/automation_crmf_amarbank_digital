@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description>TC_CardPrintingUpdateStatusDeliveryIntoEnrouteSortingHub</description>
-   <name>TC_CardPrintingUpdateStatusDeliveryIntoEnrouteSortingHub</name>
+   <name>TC_CrdUpdStsDelIntoEnrSortHub</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>f94dfbfa-e569-407d-9da9-152d40862e1d</testCaseGuid>

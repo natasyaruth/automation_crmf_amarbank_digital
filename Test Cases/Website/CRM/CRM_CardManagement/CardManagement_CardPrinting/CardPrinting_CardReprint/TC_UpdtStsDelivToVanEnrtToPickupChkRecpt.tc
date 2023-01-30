@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>UpdtStsDelivToVanEnrtToPickupChkRecpt</name>
+   <name>TC_UpdtStsDelivToVanEnrtToPickupChkRecpt</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>806b7967-78fe-4d64-96ec-f591829a927a</testCaseGuid>

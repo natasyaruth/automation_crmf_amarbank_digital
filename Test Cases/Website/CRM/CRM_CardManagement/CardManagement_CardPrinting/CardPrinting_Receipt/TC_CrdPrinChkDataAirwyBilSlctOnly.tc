@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>TC_CardPrintingCheckDataAirwayBillSelectedOnly</name>
+   <name>TC_CrdPrinChkDataAirwyBilSlctOnly</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5e32fab3-7fb5-403a-a955-b5cf61c1cfcc</testCaseGuid>
