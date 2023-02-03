@@ -240,6 +240,8 @@ if (WebUI.verifyElementClickable(menuKYCManagement, FailureHandling.OPTIONAL)) {
 WebUI.click(menuKYCManagement)
 if (WebUI.verifyElementClickable(menuKycVerification, FailureHandling.OPTIONAL)) {
 WebUI.click(menuKycVerification)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 } else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
 if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
@@ -278,12 +280,6 @@ if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
 			WebUI.scrollToElement(btnTerima2, 5)
 		   WebUI.verifyElementClickable(btnTerima2)
 		   WebUI.click(btnTerima2)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
 		   WebUI.delay(5)
 	   } else {keylogger.logInfo("element not present")}
 	   WebUI.delay(5)

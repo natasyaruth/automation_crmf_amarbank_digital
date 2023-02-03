@@ -34,6 +34,8 @@ WebUI.click(tabCardReprint)
 
 /* We will wait until table 'Cetak ulang' is appear */
 WebUI.waitForElementPresent(table, 10)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 /* We will declarated variable 'driverReprint' and 'driverReceipt'
  * to store function of webdriver.
@@ -75,6 +77,8 @@ while (flagNextPageReprint == false) {
 
 		/* We will wait until table 'Resi' is appear */
 		WebUI.waitForElementPresent(table, 10)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 
 		/* Initiate the loop process with name 'LoopReceipt'.
 		 * This loop will run until flagNextPageReceipt change into 'true'*/
@@ -308,6 +312,8 @@ WebUI.click(tabReceipt)
 
 /* We will wait until table 'Resi' is appear */
 WebUI.waitForElementPresent(table, 10)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 /* Storing again tableReceipt to prevent the stale element */
 tableReceipt = driverReceipt.findElement(By.xpath('//tbody'))

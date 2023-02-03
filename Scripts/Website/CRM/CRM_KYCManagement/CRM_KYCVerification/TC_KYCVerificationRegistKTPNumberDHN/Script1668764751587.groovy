@@ -21,11 +21,7 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagem
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink'))
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustomerType'), 'Nasabah Baru', 
-    true)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType'), 'Belum Terverifikasi', 
-    true)
+WebUI.setText(fieldReqId, reqIdDhn)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnDetailKYCVerification'))
 
@@ -33,7 +29,11 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/
 
 WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtNIK'), nik)
 
+WebUI.waitForPageLoad(5)
+WebUI.delay(5)
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnSave'))
+WebUI.waitForPageLoad(5)
+WebUI.delay(8)
 
 WebUI.verifyElementVisible(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRejectedDHN'), FailureHandling.STOP_ON_FAILURE)
 

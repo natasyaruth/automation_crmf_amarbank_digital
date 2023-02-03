@@ -50,15 +50,22 @@ boolean flagLoopPage = false
 /* This looping is represent to search new customer with origin from embed banking such as eFishery, Dagangan or Finku. */
 LoopPage:
 while(flagLoopPage == false) {
-	
 	/* Storing table to variable tableKYC*/
 	tableKYC = driver.findElement(By.xpath('//tbody'))
 	
 	/* Storing all rows to variable listRows*/
 	listRows = tableKYC.findElements(By.tagName('tr'))
-
+	
 	/* Looping through number of rows of bucketlist KYC Verification*/
 	for(int i=0;i<listRows.size();i++) {
+	
+	/* Select filter customer type*/
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
+	
+	/* Select filter email verification */
+	WebUI.selectOptionByLabel(drpDwnEmailVerf, "Terverifikasi", false)	
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 		
 		/* Storing again column to variable listColumn to prevent stale element*/
 		listColumn = listRows.get(i).findElements(By.tagName('td'))

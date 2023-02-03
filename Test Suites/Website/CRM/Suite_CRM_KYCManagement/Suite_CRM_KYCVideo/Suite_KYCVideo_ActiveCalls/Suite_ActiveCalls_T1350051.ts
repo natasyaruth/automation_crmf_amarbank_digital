@@ -403,6 +403,12 @@
          <value></value>
          <variableId>6afee5b8-f156-43bf-b6d8-ac2fc2eece17</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5d769191-4043-48ac-9fe7-d85b7a2d6da2</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>bc1fc6c3-405f-41d3-afa6-e8cf176bac1a</guid>

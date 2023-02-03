@@ -54,12 +54,16 @@ WebUI.click(BtnCekDataDukcapilConfirmation)
 WebUI.scrollToElement(BtnAccept1, 10)
 
 WebUI.click(BtnAccept1)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 WebUI.scrollToElement(BtnAccept2, 10)
 
 WebUI.click(BtnAccept2)
+WebUI.waitForPageLoad(5)
+WebUI.delay(9)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal'), 20)
+WebUI.waitForElementVisible(BtnCloseModal, 20)
 
 WebUI.verifyElementClickable(BtnCloseModal)
 

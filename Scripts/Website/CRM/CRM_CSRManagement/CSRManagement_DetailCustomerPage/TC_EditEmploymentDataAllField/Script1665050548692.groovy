@@ -56,6 +56,8 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
         WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 
         WebUI.click(btnCancelPopUpElement)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 
         if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
             WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
@@ -102,159 +104,160 @@ for (int i = 0; i < customerType.size(); i++) {
         if (dataPekerjaan == true) {
             WebUI.click(elementEmploymentData)
 
-            int optionListLength = 3
+            int optionListLength = 1
 
             Random rand = new Random()
 
             String index = rand.nextInt(optionListLength + 1)
-
-            if (WebUI.waitForElementVisible(DrpWorkType, 5, FailureHandling.OPTIONAL)) {
-                if (WebUI.verifyElementClickable(BtnEditEmploymentData, FailureHandling.OPTIONAL)) {
-                    WebUI.click(BtnEditEmploymentData)
-
-                    def FieldWorkType = WebUI.getText(LabelWorkType)
-
-                    oldData = WebUI.getAttribute(DrpWorkType, 'value')
-					
-					if (WebUI.verifyElementVisible(DrpSourceIncome, FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(DrpSourceIncome, index)
-					} else {keyLogger.logInfo("We Not find the source income field")}
-                    
-					if (WebUI.verifyElementVisible(DrpMonthlyIncome, FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(DrpMonthlyIncome, index)
-					} else {keyLogger.logInfo("We Not find the source income field")}
+			loopCondition = false
+			loopIndex:
+			while (loopCondition == false) {
+				if (index !=0) {
+					if (WebUI.waitForElementVisible(DrpWorkType, 5, FailureHandling.OPTIONAL)) {
+						if (WebUI.verifyElementClickable(BtnEditEmploymentData, FailureHandling.OPTIONAL)) {
+							WebUI.click(BtnEditEmploymentData)
 		
-					if (WebUI.verifyElementVisible(DrpWorkType, FailureHandling.OPTIONAL)) {
-                        WebUI.selectOptionByIndex(DrpWorkType, index)
-
-                        newData = WebUI.getAttribute(DrpWorkType, 'value')
-                    } else {
-                        keyLogger.logInfo('We Not find the work type')
-                    }
-					WebUI.delay(2)
-					if (WebUI.verifyElementVisible(DrpCompanyField, FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(DrpCompanyField, index)
-					} else {
-						keyLogger.logInfo('We Not find the company field')
+							def FieldWorkType = WebUI.getText(LabelWorkType)
+		
+							oldData = WebUI.getAttribute(DrpWorkType, 'value')
+							
+							if (WebUI.verifyElementVisible(DrpSourceIncome, FailureHandling.OPTIONAL)) {
+								WebUI.selectOptionByIndex(DrpSourceIncome, index)
+							} else {keyLogger.logInfo("We Not find the source income field")}
+							
+							if (WebUI.verifyElementVisible(DrpMonthlyIncome, FailureHandling.OPTIONAL)) {
+								WebUI.selectOptionByIndex(DrpMonthlyIncome, index)
+							} else {keyLogger.logInfo("We Not find the source income field")}
+				
+							if (WebUI.verifyElementVisible(DrpWorkType, FailureHandling.OPTIONAL)) {
+								WebUI.selectOptionByIndex(DrpWorkType, index)
+		
+								newData = WebUI.getAttribute(DrpWorkType, 'value')
+							} else {
+								keyLogger.logInfo('We Not find the work type')
+							}
+							WebUI.delay(2)
+							if (WebUI.verifyElementVisible(DrpCompanyField, FailureHandling.OPTIONAL)) {
+								WebUI.selectOptionByIndex(DrpCompanyField, index)
+							} else {
+								keyLogger.logInfo('We Not find the company field')
+							}
+							WebUI.delay(1)
+							if (WebUI.verifyElementVisible(DrpPosition, FailureHandling.OPTIONAL)) {
+								WebUI.selectOptionByIndex(DrpPosition, index)
+							} else {
+								keyLogger.logInfo('We Not find the position')
+							}
+							WebUI.delay(2)
+							if (WebUI.verifyElementVisible(TxtCompanyName, FailureHandling.OPTIONAL)) {
+								WebUI.setText(TxtCompanyName, RandomStringUtils.randomAlphabetic(10))
+							} else {
+								keyLogger.logInfo('We Not find the company name')
+							}
+							if (WebUI.verifyElementVisible(BtnSaveEmploymentData, FailureHandling.OPTIONAL)) {
+								WebUI.takeScreenshot()
+		
+								WebUI.click(BtnSaveEmploymentData)
+		
+								WebUI.delay(5)
+		
+								/*Check the changelog after update reference Number*/
+								WebUI.click(SectionChangelog)
+		
+								/*We want verify date*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
+		
+								def currentDate = new Date().format('dd/MM/yyyy')
+		
+								println(currentDate)
+		
+								dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
+		
+								println(dateInChangeLog)
+		
+								if (dateInChangeLog.contains(currentDate)) {
+									keyLogger.markPassed('Tanggal --> date with time when the changes was created')
+		
+									WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
+								}
+								
+								/*We want verify user name  */
+								def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
+		
+								println(userInChangeLog)
+		
+								WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
+		
+								WebUI.verifyMatch(userInChangeLog, userName, false)
+		
+								/*We want verify sources*/
+								SourcesLabel = WebUI.getText(LabelSources)
+		
+								ChangelogSources = WebUI.getText(txtFirstRowChangelogSources)
+		
+								WebUI.verifyMatch(SourcesLabel, ChangelogSources, false)
+		
+								/*We want verify field*/
+								WebUI.delay(5)
+		
+								WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
+		
+								String ChangelogField = WebUI.getText(txtFirstRowChangelogField)
+								String FieldWorkTypelog =WebUI.getText(txtFirstRowChangelogField)
+		
+								WebUI.verifyMatch(ChangelogField, FieldWorkTypelog, false)
+		
+								String oldDataLog = oldData
+		
+								println(oldDataLog)
+		
+								String newDataLog = newData
+		
+								println(newDataLog)
+		
+								/*We want verify old Data number*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
+		
+								def ChangelogoldData = WebUI.getText(txtFirstRowChangelogOldData)
+		
+								oldDatachangelog = WebUI.getText(txtFirstRowChangelogOldData)
+		
+								WebUI.verifyMatch(ChangelogoldData, oldDatachangelog, false)
+		
+								/*We want verify new Data number*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
+		
+								def ChangelognewData = WebUI.getText(txtFirstRowChangelogNewData)
+		
+								newDatachangelog = WebUI.getText(txtFirstRowChangelogNewData)
+		
+								WebUI.verifyMatch(ChangelognewData, newDatachangelog, false)
+		
+								WebUI.delay(5)
+		
+								WebUI.takeScreenshot()
+		
+								WebUI.waitForElementVisible(btnBackToBucketList, 5)
+		
+								WebUI.click(btnBackToBucketList)
+		
+								if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
+									WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+								} else {
+									keyLogger.loginfo('We not find the element')
+								}
+								
+								WebUI.refresh()
+		
+								WebUI.waitForPageLoad(50)
+								break loopIndex
+							}
+						}
 					}
-					WebUI.delay(1)
-                    if (WebUI.verifyElementVisible(DrpPosition, FailureHandling.OPTIONAL)) {
-                        WebUI.selectOptionByIndex(DrpPosition, index)
-                    } else {
-                        keyLogger.logInfo('We Not find the position')
-                    }
-					WebUI.delay(2)
-                    if (WebUI.verifyElementVisible(TxtCompanyName, FailureHandling.OPTIONAL)) {
-                        WebUI.setText(TxtCompanyName, RandomStringUtils.randomAlphabetic(10))
-                    } else {
-                        keyLogger.logInfo('We Not find the company name')
-                    }
-                    if (WebUI.verifyElementVisible(BtnSaveEmploymentData, FailureHandling.OPTIONAL)) {
-                        WebUI.takeScreenshot()
-
-                        WebUI.click(BtnSaveEmploymentData)
-
-                        WebUI.delay(5)
-
-                        /*Check the changelog after update reference Number*/
-                        WebUI.click(SectionChangelog)
-
-                        /*We want verify date*/
-                        WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
-
-                        def currentDate = new Date().format('dd/MM/yyyy')
-
-                        println(currentDate)
-
-                        dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
-
-                        println(dateInChangeLog)
-
-                        if (dateInChangeLog.contains(currentDate)) {
-                            keyLogger.markPassed('Tanggal --> date with time when the changes was created')
-
-                            WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
-                        }
-                        
-                        /*We want verify user name  */
-                        def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
-
-                        println(userInChangeLog)
-
-                        WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
-
-                        WebUI.verifyMatch(userInChangeLog, userName, false)
-
-                        /*We want verify sources*/
-                        SourcesLabel = WebUI.getText(LabelSources)
-
-                        ChangelogSources = WebUI.getText(txtFirstRowChangelogSources)
-
-                        WebUI.verifyMatch(SourcesLabel, ChangelogSources, false)
-
-                        /*We want verify field*/
-                        WebUI.delay(5)
-
-                        WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
-
-                        String ChangelogField = WebUI.getText(txtFirstRowChangelogField)
-						String FieldWorkTypelog =WebUI.getText(txtFirstRowChangelogField)
-
-                        WebUI.verifyMatch(ChangelogField, FieldWorkTypelog, false)
-
-                        String oldDataLog = oldData
-
-                        println(oldDataLog)
-
-                        String newDataLog = newData
-
-                        println(newDataLog)
-
-                        /*We want verify old Data number*/
-                        WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
-
-                        def ChangelogoldData = WebUI.getText(txtFirstRowChangelogOldData)
-
-                        oldDatachangelog = WebUI.getText(txtFirstRowChangelogOldData)
-
-                        WebUI.verifyMatch(ChangelogoldData, oldDatachangelog, false)
-
-                        /*We want verify new Data number*/
-                        WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
-
-                        def ChangelognewData = WebUI.getText(txtFirstRowChangelogNewData)
-
-                        newDatachangelog = WebUI.getText(txtFirstRowChangelogNewData)
-
-                        WebUI.verifyMatch(ChangelognewData, newDatachangelog, false)
-
-                        /*We want verify old action*/
-                        WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-
-                        def ChangelogAction = WebUI.getText(txtFirstRowChangelogActions)
-
-                        WebUI.verifyMatch(ChangelogAction, txtAction, false)
-
-                        WebUI.delay(5)
-
-                        WebUI.takeScreenshot()
-
-                        WebUI.waitForElementVisible(btnBackToBucketList, 5)
-
-                        WebUI.click(btnBackToBucketList)
-
-                        if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
-                            WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-                        } else {
-                            keyLogger.loginfo('We not find the element')
-                        }
-                        
-                        WebUI.refresh()
-
-                        WebUI.waitForPageLoad(50)
-                    }
-                }
-            }
+				} else {
+					keyLogger.logInfo('We want try again')
+				}
+			}
         }
     }
 }

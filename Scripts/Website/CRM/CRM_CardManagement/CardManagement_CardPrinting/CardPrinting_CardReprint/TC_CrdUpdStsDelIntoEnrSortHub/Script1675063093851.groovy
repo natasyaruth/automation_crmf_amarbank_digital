@@ -88,6 +88,8 @@ while (flagNextPageReprint == false) {
 
 		/* We will wait until table 'Resi' is appear */
 		WebUI.waitForElementPresent(reprintData, 10)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 
 		/* Initiate the loop process with name 'LoopReceipt'.
 		 * This loop will run until flagNextPageReceipt change into 'true'*/
@@ -167,7 +169,7 @@ while (flagNextPageReprint == false) {
 	
 						/* We will wait for 3 second till page finish load*/
 						WebUI.waitForPageLoad(3)
-				
+						WebUI.delay(3)
 				}
 			}
 		}

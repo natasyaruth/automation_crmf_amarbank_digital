@@ -56,6 +56,8 @@ WebUI.click(BtnSendRejectionReason)
 
 WebUI.click(BtnModalBackToBucketlist)
 
+WebUI.click(btnCloseReject)
+
 WebUI.verifyElementVisible(headerKYCVerificationElement)
 
 /* We want capture the result*/

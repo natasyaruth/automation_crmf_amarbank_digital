@@ -71,6 +71,12 @@
       <value></value>
       <variableId>ef7c186a-4cb3-41de-8f5a-f5408f7b3180</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>33daa8e9-12c4-4469-beed-85cebe473075</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'11/08/2018'</defaultValue>
       <description></description>
@@ -147,5 +153,12 @@
       <id>ef7c186a-4cb3-41de-8f5a-f5408f7b3180</id>
       <masked>false</masked>
       <name>BtnLivenessConfirmation</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancelLiveness')</defaultValue>
+      <description></description>
+      <id>33daa8e9-12c4-4469-beed-85cebe473075</id>
+      <masked>false</masked>
+      <name>BtnCancelLiveness</name>
    </variable>
 </TestCaseEntity>

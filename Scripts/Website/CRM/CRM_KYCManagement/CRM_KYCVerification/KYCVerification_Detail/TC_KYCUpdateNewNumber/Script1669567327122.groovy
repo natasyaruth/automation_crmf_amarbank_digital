@@ -300,12 +300,6 @@ if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
 		   WebUI.click(btnTerima2)
 		   WebUI.delay(5)
 	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
 	   WebUI.delay(5)
 	   TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
 	   if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
@@ -328,6 +322,8 @@ if (WebUI.verifyElementPresent(csrManagementDetailCsrManagement, 5, FailureHandl
 	WebUI.delay(3)
 	WebUI.setText(txtRequestId, reqIdCsr)
 	WebUI.sendKeys(txtRequestId, Keys.chord(Keys.ENTER))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {keylogger.markError('We are not in CSR Management')}
 
 'We want access the changes phone number'

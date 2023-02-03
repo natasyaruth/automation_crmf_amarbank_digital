@@ -67,6 +67,11 @@ if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 		keylogger.logInfo('We dont see pending request active call')
 	}
 	WebUI.click(tabIdleCalls)
+	if (WebUI.waitForElementVisible(alertText, 5)) {
+		WebUI.click(btnCancel)
+	} else {
+		keylogger.logInfo('We can continue the process')
+	}
 	WebUI.waitForPageLoad(5)
 	WebUI.delay(3)
 	WebDriver driver = DriverFactory.getWebDriver()

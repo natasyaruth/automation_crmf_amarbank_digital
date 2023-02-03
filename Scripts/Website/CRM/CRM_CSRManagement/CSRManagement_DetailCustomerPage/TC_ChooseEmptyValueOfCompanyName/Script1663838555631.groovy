@@ -187,6 +187,7 @@ while(flagLoopPage == false) {
 				
 				/* We will wait for 3 second till page finish load*/
 				WebUI.waitForPageLoad(3)
+				WebUI.delay(3)
 				
 				/* Storing again table to variable tableCSR to prevent stale element*/
 				tableCSR = driver.findElement(By.xpath('//tbody'))

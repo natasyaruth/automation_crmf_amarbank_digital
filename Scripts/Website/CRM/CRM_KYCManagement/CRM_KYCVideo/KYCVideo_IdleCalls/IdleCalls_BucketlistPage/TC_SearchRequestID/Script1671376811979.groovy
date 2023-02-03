@@ -57,6 +57,8 @@ WebUI.waitForPageLoad(3)
 WebUI.setText(searchReqID, reqID)
 
 WebUI.click(btnSearch)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 /* We will declarated variable 'tableKYC' to store the location of the table*/
 tableKYC = driver.findElement(By.xpath('//tbody'))

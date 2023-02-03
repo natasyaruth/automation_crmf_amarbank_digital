@@ -216,7 +216,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/1416?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/1415?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
       <name>requestStatusFinishCondition</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

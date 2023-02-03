@@ -123,12 +123,16 @@ while (flagDataReqId == false) {
 							} else {
 								keyLogger.logInfo("We cannot click the button")
 								WebUI.click(btnBack)
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
 								tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 								listRows = tableCsrMgt.findElements(By.tagName('tr'))
 								}
 						} else {
 							keyLogger.logInfo("The element contains "+reqDetailStatus+" try again")
 							WebUI.click(btnBack)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 							listRows = tableCsrMgt.findElements(By.tagName('tr'))
 							}

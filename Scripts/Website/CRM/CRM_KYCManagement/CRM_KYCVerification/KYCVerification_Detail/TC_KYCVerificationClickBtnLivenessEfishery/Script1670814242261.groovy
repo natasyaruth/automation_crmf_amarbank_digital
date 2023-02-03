@@ -238,6 +238,8 @@ if (WebUI.verifyElementClickable(menuKYCManagement)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.verifyElementClickable(menuKycVerification)) {
 		WebUI.click(menuKycVerification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
 if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
