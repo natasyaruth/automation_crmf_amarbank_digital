@@ -12,7 +12,7 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>c792b827-1bca-4aeb-a3c4-7307988e3d4d</testSuiteGuid>
    <testCaseLink>
-      <guid>8f679407-1285-4960-ad4d-799062c0aaee</guid>
+      <guid>af1d0329-e59c-42bb-8697-23a6ed1e19c0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
@@ -31,7 +31,7 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>64554b19-3173-49d6-9387-cff2d5ba5605</guid>
+      <guid>f9b2e2f2-cfdc-429e-8675-0df25776b21a</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/Website/CRM/CRM_Login/TC_Login</testCaseId>
