@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnReject1</name>
+   <name>BtnUploadPhoto</name>
    <tag></tag>
-   <elementGuidId>f20a370e-fe7b-4db4-bf07-52a4bdfe14a9</elementGuidId>
+   <elementGuidId>689c1e8e-a263-44f0-b4c4-184e76149497</elementGuidId>
    <selectorCollection>
       <entry>
          <key>CSS</key>
-         <value>#BtnReject1</value>
+         <value>#BtnUploadPhoto</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//button[@id='BtnReject1']</value>
+         <value>//button[@id='BtnUploadPhoto']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,110 +22,118 @@
       <name>tag</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>34a0b3c5-6538-4a64-9194-f9e4faccab46</webElementGuid>
+      <webElementGuid>493935e0-d386-418b-9ae7-ef4d87a68ff3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>Button Button--danger Button--outlined u-BgColor-white</value>
-      <webElementGuid>2dd988d8-6edc-48d9-ac5c-05e7e06c69fc</webElementGuid>
+      <value>Button Button--primary</value>
+      <webElementGuid>0aa49602-4bde-4d37-9aaf-d40f0059e28a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>submit</value>
+      <webElementGuid>710432ed-8972-45a2-b575-a8df41661a51</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnReject1</value>
-      <webElementGuid>e8859f68-5c51-4094-bd40-51cbbf0269c6</webElementGuid>
+      <value>BtnUploadPhoto</value>
+      <webElementGuid>d92b10df-7657-433b-91c6-302aae3a0276</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>Tolak </value>
-      <webElementGuid>a2fc1b3e-58b4-499c-9ded-48357489761c</webElementGuid>
+      <value>Upload Foto </value>
+      <webElementGuid>56a541d0-3461-48d0-a864-92a09eba4f7a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;BtnReject1&quot;)</value>
-      <webElementGuid>f5c8eda9-114c-4fb0-a7fd-b9684344b462</webElementGuid>
+      <value>id(&quot;BtnUploadPhoto&quot;)</value>
+      <webElementGuid>840c4d9e-a7bf-44b6-acf2-e9d0d6ac06dc</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//button[@id='BtnReject1']</value>
-      <webElementGuid>4355a1fb-b0c0-49d0-9609-fadd71f9f989</webElementGuid>
+      <value>//button[@id='BtnUploadPhoto']</value>
+      <webElementGuid>a5fca668-8889-4ba9-9dfd-94c1130eea96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//div[@id='root']/div/div/section/div/section/div/div/div[2]/div/button[3]</value>
-      <webElementGuid>24fd8831-154a-4dcb-a37c-7765f3e4c1fd</webElementGuid>
+      <value>//div[@id='root']/div/div/section/form[2]/div/section[2]/div[2]/div/button</value>
+      <webElementGuid>f7988a91-0aaa-4f16-9e7f-19d759a8aca2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lanjutkan KYC'])[1]/following::button[1]</value>
-      <webElementGuid>e4369f20-a3ec-4690-af7f-bb047bea1c4f</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='FotoSelfie.jpeg'])[1]/following::button[1]</value>
+      <webElementGuid>c9e1a8b1-132a-49c7-b579-aadd56050241</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Terima'])[1]/following::button[2]</value>
-      <webElementGuid>8c8e4ead-f4f8-4b5c-ae4e-41abf370ba53</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Foto Diri'])[1]/following::button[1]</value>
+      <webElementGuid>094770eb-db1d-48b4-8451-370acd2df3ce</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Histori Call Masuk'])[1]/preceding::button[1]</value>
-      <webElementGuid>46838103-9982-4dad-87fe-c6da52966086</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
+      <webElementGuid>6ffa8528-5b0a-42dd-8c86-8f0b44be5349</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Wajah customer tidak cocok dengan ID E-KTP dan foto selfie'])[1]/preceding::button[1]</value>
-      <webElementGuid>3d6c0def-5a1d-42bb-b396-d172b486a746</webElementGuid>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
+      <webElementGuid>0290c5eb-a037-4891-a29a-f3d69d3340c4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//*/text()[normalize-space(.)='Tolak']/parent::*</value>
-      <webElementGuid>64efa252-bef0-411f-b66d-5047dd277647</webElementGuid>
+      <value>//*/text()[normalize-space(.)='Upload Foto']/parent::*</value>
+      <webElementGuid>975fc5dd-cb88-4aaa-9fb1-83c943cba50e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//button[3]</value>
-      <webElementGuid>4341f4f1-f303-40e7-b58f-cd98a88af14b</webElementGuid>
+      <value>//div[2]/div/button</value>
+      <webElementGuid>4490ca00-21c7-4062-9945-6b0b63284af1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//button[@id = 'BtnReject1' and (text() = 'Tolak ' or . = 'Tolak ')]</value>
-      <webElementGuid>10cfa9d2-316a-4765-9156-f6dd15dab216</webElementGuid>
+      <value>//button[@type = 'submit' and @id = 'BtnUploadPhoto' and (text() = 'Upload Foto ' or . = 'Upload Foto ')]</value>
+      <webElementGuid>812f597a-e680-4f20-8b1a-8a1d72a4ea1c</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
