@@ -4,7 +4,7 @@
    <name>BackOffice</name>
    <tag></tag>
    <delayBetweenInstances>5</delayBetweenInstances>
-   <executionMode>PARALLEL</executionMode>
+   <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>

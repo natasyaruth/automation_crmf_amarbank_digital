@@ -74,6 +74,8 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
 		WebUI.click(menuKycVerification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 		tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 		rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 		colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
@@ -132,6 +134,8 @@ if (WebUI.verifyElementPresent(notFoundReqId, 5)) {
 	WebUI.click(tabIdleCalls)
 	WebUI.setText(txtReqIdKycVideo, reqIdKyc)
 	WebUI.sendKeys(txtReqIdKycVideo, Keys.chord(Keys.ENTER))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	WebUI.verifyElementText(btnReqIdKycVideo, reqIdKyc)
 } else {keylogger.markError('Element is present')}
 

@@ -58,7 +58,7 @@ while (flagLoop == false) {
 			} else {keylogger.logInfo('element not visible')}
 		} else {keylogger.markError('Menu cannot click able')}
 		println(' Total of Data : ' +rowsBucketList.size()+ ' and existing row is : ' +i)
-		List<WebElement> colsBucketList = rowsBucketList.get(4).findElements(By.xpath('td'))
+		List<WebElement> colsBucketList = rowsBucketList.get(5).findElements(By.xpath('td'))
 		if (i != (rowsBucketList.size() - 1)) {
 			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				String custName = colsBucketList.get(1).getText()
@@ -76,6 +76,8 @@ while (flagLoop == false) {
 						WebUI.click(rbLostCard)
 						if (WebUI.verifyElementClickable(btnSubmitReqNewCard,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnSubmitReqNewCard)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(5)
 							WebUI.click(btnBack)
 						} else {keylogger.markError('button submit is disable')}
 					} else {
@@ -85,8 +87,12 @@ while (flagLoop == false) {
 						tblBucketList = driver.findElement(By.xpath('//table/tbody'))
 						rowsBucketList = tblBucketList.findElements(By.tagName('tr'))
 					}
-					WebUI.click(menuCardManagementElement)
-					WebUI.click(menuAssignCardElement)
+					if (WebUI.waitForElementVisible(menuCardManagementElement, 5)) {
+						WebUI.click(menuCardManagementElement)
+						if (WebUI.waitForElementVisible(menuAssignCardElement, 5)) {
+							WebUI.click(menuAssignCardElement)
+						} else {keylogger.markError('element not found')}
+					} else {keylogger.markError('element not found')}
 					if (WebUI.waitForElementVisible(cardTypeDropDown, 5)) {
 						WebUI.verifyOptionsPresent(cardTypeDropDown, listDrpCardType)
 						WebUI.selectOptionByLabel(cardTypeDropDown, 'Permintaan Kartu Baru', false)

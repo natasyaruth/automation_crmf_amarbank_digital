@@ -55,6 +55,8 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
         WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 
         WebUI.click(btnCancelPopUpElement)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 
         if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
             WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
@@ -209,6 +211,8 @@ for (int i = 0; i < customerType.size(); i++) {
 				WebUI.waitForElementVisible(btnBackToBucketList, 5)
 
 				WebUI.click(btnBackToBucketList)
+				WebUI.waitForPageLoad(5)
+				WebUI.delay(3)
 
 				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
 					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)

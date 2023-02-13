@@ -28,7 +28,6 @@ import internal.GlobalVariable
 import org.openqa.selenium.By
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebDriver
-import org.openqa.selenium.WebDriver as Keys
 import org.openqa.selenium.WebElement
 
 'Init Logging'
@@ -237,7 +236,7 @@ if (colsCsrBack.get(4).getText().equalsIgnoreCase(GlobalVariable.accountBank)) {
 TestObject weBackInTheDetailCsr = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 if (WebUI.waitForElementVisible(weBackInTheDetailCsr, 5)) {
 	keylogger.markPassed('We already in CSR Details')
-	WebUI.scrollToElement(dataFotoAndKtp, 5)
+	WebUI.scrollToElement(dataEmail, 5)
 	WebUI.click(dataFotoAndKtp)
 	WebUI.waitForPageLoad(5)
 	WebUI.delay(3)

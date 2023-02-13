@@ -34,6 +34,8 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
 	WebUI.click(menuCsrManagement)
 	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
 		WebUI.click(btnCancelBlock)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 		keylogger.logInfo("We cancel the block")
 		WebUI.verifyElementVisible(txtHeaderCsrManagement)
 	} else {
@@ -86,11 +88,13 @@ while (loopPageCsr == false) {
 					TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 					if (WebUI.verifyElementPresent(reqDetailStatus, 5,FailureHandling.OPTIONAL)) {
 						WebUI.click(linkDataDeliveryCard)
-						int optionListLength = 5
+						int optionListLength = 2
 						Random rand = new Random()
-						String index = rand.nextInt(optionListLength)
+						String index = rand.nextInt(optionListLength + 1)
 						if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnEditDeliveryAddress)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							/* We want to check address type*/
 							boolean loopAddressTypeCondition = false
 							loopAddressType:
@@ -111,14 +115,20 @@ while (loopPageCsr == false) {
 							/* We want to check input field address*/
 							if (WebUI.verifyElementClickable(fieldInputAddress,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldInputAddress, RandomStringUtils.randomAlphanumeric(150))
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
 							} else {keylogger.markError('Element not click able')}
 							/* We want to check neigbourhood*/	
 							if (WebUI.verifyElementClickable(fieldNeighbourhood,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldNeighbourhood, RandomStringUtils.randomNumeric(3))
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
 							} else {keylogger.markError('Element not click able')}	
 							/* We want to check hamlet*/
 							if (WebUI.verifyElementClickable(fieldHamlet,FailureHandling.OPTIONAL)) {
 								WebUI.setText(fieldHamlet, RandomStringUtils.randomNumeric(3))
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
 							} else {keylogger.markError('Element not click able')}
 							boolean loopChoosenDeliveryAddress = false
 							loopChoosenAddress:
@@ -130,18 +140,26 @@ while (loopPageCsr == false) {
 										/* We want to check province*/
 										if (WebUI.verifyElementClickable(drpDwnProvince,FailureHandling.OPTIONAL)) {
 											WebUI.selectOptionByIndex(drpDwnProvince, index)
+											WebUI.waitForPageLoad(5)
+											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check district*/
 										if (WebUI.verifyElementClickable(drpDwnDistrict,FailureHandling.OPTIONAL)) {
 											WebUI.selectOptionByIndex(drpDwnDistrict, index)
+											WebUI.waitForPageLoad(5)
+											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check sub-district*/
 										if (WebUI.verifyElementClickable(drpDwnSubDistrict,FailureHandling.OPTIONAL)) {
 											WebUI.selectOptionByIndex(drpDwnSubDistrict, index)
+											WebUI.waitForPageLoad(5)
+											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check village*/
 										if (WebUI.verifyElementClickable(drpDwnVillage,FailureHandling.OPTIONAL)) {
 											WebUI.selectOptionByIndex(drpDwnVillage, index)
+											WebUI.waitForPageLoad(5)
+											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check Postal-Code*/
 										newPostalCode = WebUI.getAttribute(postalCode, 'value')
@@ -204,11 +222,15 @@ while (loopPageCsr == false) {
 							} else {keylogger.markError('Element simpan not click able')}
 						} else {keylogger.logInfo("The element contains "+reqDetailStatus+" try again")
 							WebUI.click(btnBack)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 							listRows = tableCsrMgt.findElements(By.tagName('tr'))
 						}
 					} else {keylogger.logInfo("The element contains "+reqDetailStatus+" try again")
 						WebUI.click(btnBack)
+						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
 					}

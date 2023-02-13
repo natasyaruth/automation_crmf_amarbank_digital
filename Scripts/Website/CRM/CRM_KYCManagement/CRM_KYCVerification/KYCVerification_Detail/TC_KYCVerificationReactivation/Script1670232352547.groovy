@@ -416,13 +416,6 @@ if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
 		   WebUI.click(btnTerima2)
 		   WebUI.delay(5)
 	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
-	   WebUI.delay(5)
 	   TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
 	   if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
 		   WebUI.click(btnBackToKycManagement)

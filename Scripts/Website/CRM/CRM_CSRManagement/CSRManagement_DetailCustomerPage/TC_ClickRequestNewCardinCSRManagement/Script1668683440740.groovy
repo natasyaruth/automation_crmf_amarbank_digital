@@ -43,11 +43,15 @@ linkCsrManagement = WebUI.getText(menuCsrManagement)
 if (linkCsrManagement.contains(wordingCsrMgt)) {
 	WebUI.verifyElementVisible(menuCsrManagement)
 	WebUI.click(menuCsrManagement)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	if (WebUI.verifyElementVisible(alertConfirmationContProcess,FailureHandling.OPTIONAL)) {
 		wordingBlockConfirmation = WebUI.getText(alertConfirmationContProcess)
 		if (wordingBlockConfirmation.contains('Konfirmasi')) {
 			WebUI.verifyElementVisible(alertConfirmationContProcess)
 			WebUI.click(btnCancel)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
 		} else {'We cannot doing this condition'}
 	} else {
 		WebUI.verifyElementVisible(headerCsrMgt)
@@ -123,12 +127,16 @@ while (flagDataReqId == false) {
 							} else {
 								keyLogger.logInfo("We cannot click the button")
 								WebUI.click(btnBack)
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
 								tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 								listRows = tableCsrMgt.findElements(By.tagName('tr'))
 								}
 						} else {
 							keyLogger.logInfo("The element contains "+reqDetailStatus+" try again")
 							WebUI.click(btnBack)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 							listRows = tableCsrMgt.findElements(By.tagName('tr'))
 							}

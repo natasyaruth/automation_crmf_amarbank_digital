@@ -73,12 +73,14 @@ while (loopPageCsr == false) {
 			println('No. of rows: ' + listRows.size()+ ' row number '+i)
 				if (WebUI.waitForElementVisible(drpCustType, 5)) {
 					WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
-					WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
+					WebUI.selectOptionByLabel(drpCustType, "Semua", false)
 					if (WebUI.waitForElementVisible(drpCardStatus, 5)) {
 						WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
-						WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
+						WebUI.selectOptionByLabel(drpCardStatus, "Semua", false)
 						WebUI.setText(txtAccountNumb, accountNumb)
 						WebUI.click(btnSubmitSearch)
+						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
 					} else {keylogger.logInfo("Element Not Found")}
 				} else {keylogger.logInfo("Element Not Found")}
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
