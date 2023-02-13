@@ -82,6 +82,8 @@ while (checkLoop == false) {
 		if (rowsIdleCalls.size() != 9) {
 			WebUI.verifyOptionsPresent(drpDwnCustType, listDrpDwnCustType)
 			WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
 			colsIdleCalls = rowsIdleCalls.get(i).findElements(By.tagName("td"))
 			if (colsIdleCalls.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
 				colsIdleCalls.get(3).getText().equalsIgnoreCase("Registrasi Baru")
@@ -92,9 +94,11 @@ while (checkLoop == false) {
 				TestObject openPii = new TestObject().addProperty('text',ConditionType.CONTAINS,'PII (Personally Identifying Information)')
 				if (WebUI.waitForElementClickable(openPii, 5)) {
 					WebUI.click(btnEditEmail)
-					WebUI.setText(txtEmailDetails, GlobalVariable.randomFirstNameWhitelist)
-					if (WebUI.waitForElementVisible(btnSaveEmail, 5)) {
-						WebUI.click(btnSaveEmail)
+					if (WebUI.waitForElementVisible(txtEmailDetails, 5)) {
+						WebUI.setText(txtEmailDetails, GlobalVariable.randomFirstNameWhitelist)
+						if (WebUI.waitForElementVisible(btnSaveEmail, 5)) {
+							WebUI.click(btnSaveEmail)
+						} else {keylogger.markError('Element not visible')}
 					} else {keylogger.markError('Element not visible')}
 					TestObject successToChangeEmail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Email berhasil disimpan')
 					WebUI.verifyElementPresent(successToChangeEmail, 5)
@@ -102,6 +106,8 @@ while (checkLoop == false) {
 					reqIdChangeEmail = WebUI.getText(reqIdKycVideoRequest)
 					WebUI.takeScreenshot()
 					WebUI.click(btnBackBucketList)
+					WebUI.waitForPageLoad(5)
+					WebUI.delay(3)
 					break emailNotVerify
 				} else {
 					keylogger.logInfo('We must check another request Id')

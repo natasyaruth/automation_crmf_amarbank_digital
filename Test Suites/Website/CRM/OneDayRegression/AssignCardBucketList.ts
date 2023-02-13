@@ -4,7 +4,7 @@
    <name>AssignCardBucketList</name>
    <tag>1dayregression</tag>
    <delayBetweenInstances>5</delayBetweenInstances>
-   <executionMode>PARALLEL</executionMode>
+   <executionMode>SEQUENTIAL</executionMode>
    <maxConcurrentInstances>2</maxConcurrentInstances>
    <testSuiteRunConfigurations>
       <TestSuiteRunConfiguration>

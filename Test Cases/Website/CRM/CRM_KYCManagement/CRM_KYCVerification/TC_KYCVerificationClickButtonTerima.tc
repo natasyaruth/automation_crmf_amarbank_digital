@@ -329,7 +329,7 @@
       <name>BtnAccept2</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/btnCloseModalKycVerf')</defaultValue>
       <description></description>
       <id>5e218cc3-6206-4b4c-93f5-963601033df2</id>
       <masked>false</masked>
@@ -343,7 +343,7 @@
       <name>BtnBack</name>
    </variable>
    <variable>
-      <defaultValue>'10005177'</defaultValue>
+      <defaultValue>'10005266'</defaultValue>
       <description></description>
       <id>fe1b3013-986c-430f-b11a-119d687a40f8</id>
       <masked>false</masked>
@@ -364,7 +364,7 @@
       <name>BtnShow</name>
    </variable>
    <variable>
-      <defaultValue>'10005177'</defaultValue>
+      <defaultValue>'10005266'</defaultValue>
       <description></description>
       <id>a1a38fb2-4c4b-414e-80d3-8c35dfcd87ae</id>
       <masked>false</masked>
