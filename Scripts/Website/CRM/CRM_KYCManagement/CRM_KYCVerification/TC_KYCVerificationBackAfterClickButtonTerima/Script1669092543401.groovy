@@ -10,12 +10,16 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
+
+'Init Keylogger for this cases'
+KeywordUtil keylogger = new KeywordUtil()
 
 WebUI.click(KYCManagementLink)
 
@@ -41,26 +45,38 @@ WebUI.click(BtnLivenessConfirmation)
 
 WebUI.scrollToElement(BtnCekDataDukcapil, 10)
 
-WebUI.click(BtnCekDataDukcapil)
+if (WebUI.waitForElementClickable(BtnCekDataDukcapil, 5)) {
 
-WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 10)
-
-WebUI.verifyElementClickable(BtnCekDataDukcapilConfirmation)
-
-WebUI.verifyElementClickable(BtnCancelCekDataDukcapil)
-
-WebUI.click(BtnCekDataDukcapilConfirmation)
+	WebUI.click(BtnCekDataDukcapil)
+	
+	WebUI.waitForElementPresent(TxtCekDataDukcapilConfirmation, 10)
+	
+	WebUI.verifyElementClickable(BtnCekDataDukcapilConfirmation)
+	
+	WebUI.verifyElementClickable(BtnCancelCekDataDukcapil)
+	
+	WebUI.click(BtnCekDataDukcapilConfirmation)
+		
+} else {
+	
+	keylogger.logInfo('This condition button cek already check on dukcapil')
+	
+}
 
 WebUI.scrollToElement(BtnAccept1, 10)
 
 WebUI.click(BtnAccept1)
+
 WebUI.waitForPageLoad(5)
+
 WebUI.delay(3)
 
 WebUI.scrollToElement(BtnAccept2, 10)
 
 WebUI.click(BtnAccept2)
+
 WebUI.waitForPageLoad(5)
+
 WebUI.delay(9)
 
 WebUI.waitForElementVisible(BtnCloseModal, 20)
