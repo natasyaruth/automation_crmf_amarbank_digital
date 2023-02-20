@@ -145,6 +145,8 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	String requestIdProcess = path +reqIdCsr
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 	if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
@@ -282,27 +284,21 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 colsKycVerif.get(7).findElement(By.xpath('a')).click()
 TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
-		if (WebUI.waitForElementPresent(txtPersentageDukcapil, 5)) {
+		if (WebUI.waitForElementVisible(txtPersentageDukcapil, 5)) {
 			WebUI.scrollToElement(btnTerima1, 5)
 			WebUI.verifyElementClickable(btnTerima1)
 			WebUI.click(btnTerima1)
 			WebUI.delay(5)
 		} else { keylogger.markError("Element not present")}
-		if (WebUI.waitForElementPresent(btnTerima2, 5)) {
+		if (WebUI.waitForElementVisible(btnTerima2, 5)) {
 			WebUI.scrollToElement(btnTerima2, 5)
 		   WebUI.verifyElementClickable(btnTerima2)
 		   WebUI.click(btnTerima2)
 		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
-	   if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-		   WebUI.scrollToElement(btnTerima3, 5)
-		   WebUI.verifyElementClickable(btnTerima3)
-		   WebUI.click(btnTerima3)
-		   WebUI.delay(5)
-	   } else {keylogger.logInfo("element not present")}
+	   } else {keylogger.logInfo("element not present")} 
 	   WebUI.delay(5)
 	   TestObject successProcessKyc = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah berhasil diverifikasi')
-	   if (WebUI.verifyElementPresent(successProcessKyc, 5)) {
+	   if (WebUI.waitForElementVisible(successProcessKyc, 5)) {
 		   WebUI.click(btnBackToKycManagement)
 	   } else {keylogger.logInfo('Element not present')}
 	   if (WebUI.waitForElementPresent(txtReqIdKycVerif, 5)) {

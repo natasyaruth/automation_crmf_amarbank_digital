@@ -46,12 +46,12 @@ WebUI.click(btnFacematchDukcapil)
 
 WebUI.click(btnConfirmationFacematch)
 
-WebUI.click(btnFacematchVerihub)
-
-/* We want capture the result*/
-WebUI.takeScreenshot()
-
-WebUI.click(btnCancelFacematch)
+//WebUI.click(btnFacematchVerihub)
+//
+///* We want capture the result*/
+//WebUI.takeScreenshot()
+//
+//WebUI.click(btnCancelFacematch)
 
 WebUI.verifyElementNotClickable(btnFacematchVerihub)
 /* We want capture the result*/

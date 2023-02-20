@@ -95,6 +95,24 @@
       <value></value>
       <variableId>37c17392-2186-435e-81be-ee89c136cf94</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>41947bc6-d1c5-4c7a-9688-7dcd52e6cbc6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>727b8316-368b-435d-b5ea-62f36f0014f2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eaeb15f8-514c-4ab0-8f8a-b5b21c5c2bbc</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'eFishery'</defaultValue>
       <description></description>
@@ -199,5 +217,26 @@
       <id>37c17392-2186-435e-81be-ee89c136cf94</id>
       <masked>false</masked>
       <name>table</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustType')</defaultValue>
+      <description></description>
+      <id>41947bc6-d1c5-4c7a-9688-7dcd52e6cbc6</id>
+      <masked>false</masked>
+      <name>drpDwnCustType</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType')</defaultValue>
+      <description></description>
+      <id>727b8316-368b-435d-b5ea-62f36f0014f2</id>
+      <masked>false</masked>
+      <name>drpDwnEmailVerf</name>
+   </variable>
+   <variable>
+      <defaultValue>'Senyumku'</defaultValue>
+      <description></description>
+      <id>eaeb15f8-514c-4ab0-8f8a-b5b21c5c2bbc</id>
+      <masked>false</masked>
+      <name>srcOriginSenyumku</name>
    </variable>
 </TestCaseEntity>

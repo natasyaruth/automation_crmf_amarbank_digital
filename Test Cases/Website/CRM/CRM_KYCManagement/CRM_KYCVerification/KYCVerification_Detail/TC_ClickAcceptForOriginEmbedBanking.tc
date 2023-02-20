@@ -337,7 +337,7 @@
       <name>TxtRejectionReason</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/btnCloseModalKycVerf')</defaultValue>
       <description></description>
       <id>662b7288-e0d9-4725-9821-98ca5d2c9783</id>
       <masked>false</masked>

@@ -173,6 +173,12 @@
       <value></value>
       <variableId>daca5ada-f01b-4022-acb8-164363f5b658</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>199068dc-32e7-4c4f-987c-d0b75804d61a</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
       <description></description>
@@ -368,5 +374,12 @@
       <id>daca5ada-f01b-4022-acb8-164363f5b658</id>
       <masked>false</masked>
       <name>BtnModalBackToBucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/btnCloseModalKycVerf')</defaultValue>
+      <description></description>
+      <id>199068dc-32e7-4c4f-987c-d0b75804d61a</id>
+      <masked>false</masked>
+      <name>btnCloseReject</name>
    </variable>
 </TestCaseEntity>

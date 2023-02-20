@@ -11,11 +11,37 @@
       <value></value>
       <variableId>e59610fa-7e52-48c3-b18b-c1c9de2c5c93</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e682366d-f8ba-408f-88b6-f9d30779c442</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f50ce634-6cdf-4ee6-b541-a34f0cff3614</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'5171036810600002'</defaultValue>
       <description></description>
       <id>e59610fa-7e52-48c3-b18b-c1c9de2c5c93</id>
       <masked>false</masked>
       <name>nik</name>
+   </variable>
+   <variable>
+      <defaultValue>'10004874'</defaultValue>
+      <description></description>
+      <id>e682366d-f8ba-408f-88b6-f9d30779c442</id>
+      <masked>false</masked>
+      <name>reqIdDhn</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID')</defaultValue>
+      <description></description>
+      <id>f50ce634-6cdf-4ee6-b541-a34f0cff3614</id>
+      <masked>false</masked>
+      <name>fieldReqId</name>
    </variable>
 </TestCaseEntity>

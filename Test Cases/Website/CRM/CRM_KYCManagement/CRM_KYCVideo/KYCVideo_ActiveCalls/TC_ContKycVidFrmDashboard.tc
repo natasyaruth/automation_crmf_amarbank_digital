@@ -185,6 +185,12 @@
       <value></value>
       <variableId>6afee5b8-f156-43bf-b6d8-ac2fc2eece17</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5d769191-4043-48ac-9fe7-d85b7a2d6da2</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -394,5 +400,12 @@
       <id>6afee5b8-f156-43bf-b6d8-ac2fc2eece17</id>
       <masked>false</masked>
       <name>linkCsrMgt</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
+      <description></description>
+      <id>5d769191-4043-48ac-9fe7-d85b7a2d6da2</id>
+      <masked>false</masked>
+      <name>btnCancel</name>
    </variable>
 </TestCaseEntity>

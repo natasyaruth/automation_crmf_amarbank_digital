@@ -31,16 +31,24 @@ WebUI.setText(TxtSearchRequestID, InputReqIDCSR)
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
 
 WebUI.click(BtnDetailKYCVerification)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 WebUI.click(BtnFaceMatchDukcapil)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 WebUI.click(BtnFaceMatchConfirmation)
 
 WebUI.click(BtnLiveness)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 WebUI.click(BtnLivenessConfirmation)
 
 WebUI.scrollToElement(BtnCekDataDukcapil, 5)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 
 WebUI.click(BtnCekDataDukcapil)
 
@@ -60,8 +68,10 @@ WebUI.click(BtnAccept1)
 WebUI.scrollToElement(BtnAccept2, 10)
 
 WebUI.click(BtnAccept2)
+WebUI.waitForPageLoad(5)
+WebUI.delay(5)
 
-WebUI.waitForElementPresent(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCloseModal'), 20)
+WebUI.waitForElementPresent(BtnCloseModal, 20)
 
 WebUI.verifyElementClickable(BtnCloseModal)
 

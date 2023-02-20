@@ -20,7 +20,7 @@ import com.kms.katalon.core.configuration.RunConfiguration as RunConfiguration
 /* Set up list value set web driver preferences property*/
 RunConfiguration.setWebDriverPreferencesProperty('args', listValue)
 RunConfiguration.setWebDriverPreferencesProperty('prefs', listOfPrefs)
-RunConfiguration.setWebDriverPreferencesProperty('pageLoadStrategy', 'none')
+RunConfiguration.setWebDriverPreferencesProperty('pageLoadStrategy', 'eager')
 
 
 /* Set input username & password basic auth on browser web page */

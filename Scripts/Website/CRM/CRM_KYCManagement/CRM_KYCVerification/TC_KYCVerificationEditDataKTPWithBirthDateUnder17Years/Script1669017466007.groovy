@@ -21,11 +21,8 @@ WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagem
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink'))
 
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustomerType'), 'Nasabah Baru', 
-    true)
-
-WebUI.selectOptionByLabel(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType'), 'Belum Terverifikasi', 
-    true)
+WebUI.setText(fieldReqIdBucket, reqIdTest)
+WebUI.sendKeys(fieldReqIdBucket, Keys.chord(Keys.ENTER))
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnDetailKYCVerification'))
 
