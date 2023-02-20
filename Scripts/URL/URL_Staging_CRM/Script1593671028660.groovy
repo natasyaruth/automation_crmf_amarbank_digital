@@ -22,6 +22,7 @@ RunConfiguration.setWebDriverPreferencesProperty('args', listValue)
 RunConfiguration.setWebDriverPreferencesProperty('prefs', listOfPrefs)
 RunConfiguration.setWebDriverPreferencesProperty('pageLoadStrategy', 'eager')
 
+
 /* Set input username & password basic auth on browser web page */
 WebUI.openBrowser((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + GlobalVariable.siteUrl.substring(
         8))

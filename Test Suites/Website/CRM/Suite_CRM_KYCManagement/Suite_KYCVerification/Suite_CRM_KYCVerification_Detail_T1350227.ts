@@ -323,7 +323,7 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>6782bfb1-0766-41e1-aba5-1e2f137eb95d</variableId>
+         <variableId>0ddbeb16-7f9c-4312-b687-ddef3cc04506</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>

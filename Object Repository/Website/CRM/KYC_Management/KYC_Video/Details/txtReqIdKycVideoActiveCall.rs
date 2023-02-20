@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnCancelSaveKycImage</name>
+   <name>txtReqIdKycVideoActiveCall</name>
    <tag></tag>
-   <elementGuidId>e760147c-8764-45ac-8c14-cb8b884d6cbc</elementGuidId>
+   <elementGuidId>1796242b-ba0e-4ba9-967c-8e095e828eef</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//button[@id='BtnCancelSaveKYCImage']</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Detil Nasabah'])[1]/following::p[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

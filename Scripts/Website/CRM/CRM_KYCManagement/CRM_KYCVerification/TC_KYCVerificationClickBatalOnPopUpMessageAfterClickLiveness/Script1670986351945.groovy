@@ -42,6 +42,7 @@ WebUI.click(BtnDetailKYCVerification)
 WebUI.click(BtnLiveness)
 
 TestObject txtConfLiveness = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+
 WebUI.waitForElementVisible(txtConfLiveness, 5)
 
 WebUI.verifyElementClickable(BtnLivenessConfirmation)
@@ -55,4 +56,3 @@ WebUI.verifyElementText(findTestObject('Website/CRM/KYC_Management/KYC_Verificat
 WebUI.scrollToElement(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'), 5)
 
 WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack'))
-

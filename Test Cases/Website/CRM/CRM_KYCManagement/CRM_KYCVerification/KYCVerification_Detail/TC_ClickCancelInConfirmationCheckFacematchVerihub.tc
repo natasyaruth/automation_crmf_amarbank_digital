@@ -105,7 +105,7 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>6782bfb1-0766-41e1-aba5-1e2f137eb95d</variableId>
+      <variableId>0ddbeb16-7f9c-4312-b687-ddef3cc04506</variableId>
    </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
@@ -220,10 +220,10 @@
       <name>btnCancelFacematch</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnBack')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID')</defaultValue>
       <description></description>
-      <id>6782bfb1-0766-41e1-aba5-1e2f137eb95d</id>
+      <id>0ddbeb16-7f9c-4312-b687-ddef3cc04506</id>
       <masked>false</masked>
-      <name>btnBack</name>
+      <name>txtFieldReqIdKyc</name>
    </variable>
 </TestCaseEntity>
