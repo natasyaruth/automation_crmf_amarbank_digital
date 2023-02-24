@@ -32,20 +32,34 @@ import com.tunaiku.keyword.RandomDate as RandomDate
 
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
+
 /*Setup faker email*/
 Faker faker = new Faker()
+
+/* Setup fake Full name */
 String fullName = faker.name().fullName()
+
 /* We want handling block condition*/
 if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
+	
 	WebUI.click(menuCsrManagement)
+	
 	WebUI.waitForPageLoad(5)
+	
 	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+		
 		WebUI.click(btnCancelBlock)
+		
 		keylogger.logInfo("We cancel the block")
+		
 		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		
 	} else {
+		
 		keylogger.logInfo("We dont get block")
+		
 		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		
 	}
 } else {keylogger.markError("We don't see Csr Management Menu")}
 
@@ -63,30 +77,53 @@ if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	-User name that access detail is recorded and it will be displayed on change log action "Succeed" and field "Security Question"
 	-User name that access detail is recorded and it will be displayed on change log action "Viewed"
 */
+
 WebDriver driverTblCsrMgt = DriverFactory.getWebDriver()
+
 WebElement tableCsrMgt
+
 List<WebElement> listRows
+
 boolean loopPageCsr = false
 loopPage:
 while (loopPageCsr == false) {
+	
 	tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+	
 	listRows = tableCsrMgt.findElements(By.tagName('tr'))
+	
 		for (int i = 0; i < listRows.size(); i++) {
+			
 			println('No. of rows: ' + listRows.size()+ ' row number '+i)
+			
 				if (WebUI.waitForElementVisible(drpCustType, 5)) {
+					
 					WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
+					
 					WebUI.selectOptionByLabel(drpCustType, "Semua", false)
+					
 					if (WebUI.waitForElementVisible(drpCardStatus, 5)) {
+						
 						WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
+						
 						WebUI.selectOptionByLabel(drpCardStatus, "Semua", false)
+						
 						WebUI.setText(txtAccountNumb, accountNumb)
+						
 						WebUI.click(btnSubmitSearch)
+						
 						WebUI.waitForPageLoad(5)
+						
 						WebUI.delay(3)
+						
 					} else {keylogger.logInfo("Element Not Found")}
+					
 				} else {keylogger.logInfo("Element Not Found")}
+				
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
+				
 				if (listCols.get(4).getText().equalsIgnoreCase(accountNumb)) {
+					
 					listCols.get(6).findElement(By.tagName('button')).click()
 					WebDriver driverTblChangeLog = DriverFactory.getWebDriver()
 					WebElement tableChangeLog

@@ -68,16 +68,16 @@ WebDriver driverKycVideo = DriverFactory.getWebDriver()
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 	WebUI.delay(5)
 	int optionRand = 4
 	Random randTimes = new Random()
 	int indexElement = randTimes.nextInt(optionRand + 1)
-	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
-	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+	List<WebElement> colsKycVideo = rowsKycVideo.get(0).findElements(By.tagName('td'))
+	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 		keylogger.markPassed('We already to click the Kyc Vidio')
 		colsKycVideo.get(1).findElement(By.tagName('a')).click()
-	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
+	} else {keylogger.logInfo('we cannot get name Nasabah Senyumku')}
 } else {keylogger.markError('Drop down not present')}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -122,43 +122,6 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	} else {keylogger.markError('We are not in verification data')}
 } else {keylogger.markError('we are not in KYC video detail')}
 
-'We want to confirmation process'
-TestObject checkConfProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Hal-hal yang perlu dikonfirmasi')
-if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
-	WebUI.click(chkNamaKtp)
-	WebUI.click(chkKtpNumber)
-	WebUI.click(chkBirtDate)
-	WebUI.click(chkMotherName)
-	WebUI.click(chkDeliveryAddress)
-	WebUI.click(chkShowKtp)
-	WebUI.click(chkShowFace)
-	WebUI.click(chkCaptureFace)
-	WebUI.scrollToElement(btnSelfie, 5)
-	if (WebUI.verifyElementClickable(btnSelfie)) {
-		WebUI.click(btnSelfie)
-		if (WebUI.verifyElementVisible(imgSelfPhoto)) {
-			keylogger.markPassed('Photo is enable')
-			WebUI.click(btnSaveSelfPhoto)
-			TestObject saveConfirmation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
-			if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
-				WebUI.click(btnSaveKyc)
-				TestObject saveSelfPhoto = new TestObject().addProperty('text',ConditionType.CONTAINS,'Foto berhasil disimpan')
-				WebUI.verifyElementPresent(saveSelfPhoto, 5)
-			} else {keylogger.markError('element not present')}
-		} else {keylogger.markError('Photo not enable')}
-		WebUI.click(btnSelfie)
-		if (WebUI.verifyElementVisible(imgKtpPhoto)) {
-			keylogger.markPassed('Photo is enable')
-			WebUI.click(btnSaveKtpPhoto)
-			TestObject saveConfirmation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
-			if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
-				WebUI.click(btnSaveKyc)
-				TestObject saveKtpPhoto = new TestObject().addProperty('text',ConditionType.CONTAINS,'Foto berhasil disimpan')
-				WebUI.verifyElementPresent(saveKtpPhoto, 5)
-			} else {keylogger.markError('element not present')}
-		} else {keylogger.markError('Photo not enable')}
-	} else {keylogger.markError('Button selfie belum dapat di lakukan')}
-} else {keylogger.markError('Element not present')}
 'We want ended the video call'
 if (WebUI.verifyElementClickable(btnEndVideoCall)) {
 	WebUI.click(btnEndVideoCall)
@@ -168,13 +131,7 @@ if (WebUI.verifyElementClickable(btnEndVideoCall)) {
 boolean checkData = false
 loopCheckKelurahan:
 while (checkData == false) {
-	int optionListLength = 4
-	Random rand = new Random()
-	String index = rand.nextInt(optionListLength + 1)
-	if (index != 0) {
-		WebUI.scrollToElement(drpDwnVillage, 5)
-		if (WebUI.verifyElementVisible(drpDwnVillage)) {
-			WebUI.selectOptionByIndex(drpDwnVillage, index)
+		WebUI.scrollToElement(btnAbortKyc, 5)
 			WebUI.delay(5)
 			if (WebUI.verifyElementVisible(btnAbortKyc)) {
 				WebUI.takeScreenshot()
@@ -188,6 +145,4 @@ while (checkData == false) {
 				} else {keylogger.markError('Pending request still visible')}
 				break loopCheckKelurahan
 			}else {keylogger.markError('button not visible')}
-		} else {keylogger.markError('Element not visible')}
-	} else {keylogger.logInfo('try again until index not zero')}
 }

@@ -51,6 +51,8 @@ if (cardManagement == true) {
 boolean reprintTab = WebUI.verifyElementVisible(reprintTabMenu)
 if (reprintTab) {
 	WebUI.click(reprintTabMenu)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	boolean dataReprint = WebUI.verifyElementVisible(reprintData)
 	if (dataReprint) {
 		keyLogger.markPassed("We can see the data "+reprintData+" its correct condition")
@@ -204,6 +206,7 @@ while (flagNextPageReprint == false) {
 			
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
+			WebUI.delay(3)
 		}
 	}
 }

@@ -191,6 +191,12 @@
       <value></value>
       <variableId>a91f58b1-0298-4d79-b510-656bbad7f9f0</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>376e5c10-d58d-487f-8a00-21677eef01cd</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'11/08/2018'</defaultValue>
       <description></description>
@@ -407,5 +413,12 @@
       <id>a91f58b1-0298-4d79-b510-656bbad7f9f0</id>
       <masked>false</masked>
       <name>BtnBack</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbReqId')</defaultValue>
+      <description></description>
+      <id>376e5c10-d58d-487f-8a00-21677eef01cd</id>
+      <masked>false</masked>
+      <name>reqIdKycVerif</name>
    </variable>
 </TestCaseEntity>

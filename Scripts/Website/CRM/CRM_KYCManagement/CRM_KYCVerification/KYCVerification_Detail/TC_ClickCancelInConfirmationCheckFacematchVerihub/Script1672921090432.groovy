@@ -39,7 +39,7 @@ WebUI.selectOptionByLabel(drpEmailType, EmailisVerified, false)
 
 WebUI.selectOptionByLabel(drpCustomerType, NewCustomer, false)
 
-WebUI.setText(txtFieldReqIdKyc, "10005588")
+WebUI.setText(txtFieldReqIdKyc, "10005584")
 
 WebUI.click(btnRequestid)
 

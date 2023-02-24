@@ -179,11 +179,11 @@
       <name>btnBatalSecQuest</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtMotherNameSecQuest')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListTxtEmailSecQuest')</defaultValue>
       <description></description>
       <id>953ac4f3-589c-4d89-9c2d-045b9c6d23a9</id>
       <masked>false</masked>
-      <name>fieldInputMotherSecQuest</name>
+      <name>fieldEmailSecQuetion</name>
    </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListAlertWrongSecQuest')</defaultValue>

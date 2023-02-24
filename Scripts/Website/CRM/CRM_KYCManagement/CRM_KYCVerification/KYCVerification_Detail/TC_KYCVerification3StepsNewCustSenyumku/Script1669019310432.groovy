@@ -105,16 +105,17 @@ WebDriver driverKycVideo = DriverFactory.getWebDriver()
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
-	WebUI.delay(5)
-	int optionRand = 4
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
+	int optionRand = 1
 	Random randTimes = new Random()
 	int indexElement = randTimes.nextInt(optionRand + 1)
 	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
-	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 		keylogger.markPassed('We already to click the Kyc Vidio')
 		colsKycVideo.get(1).findElement(By.tagName('a')).click()
-	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
+	} else {keylogger.logInfo('we cannot get name Nasabah Senyumku')}
 } else {keylogger.markError('Drop down not present')}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -299,11 +300,6 @@ if (colsKycVerif.get(7).getText().equalsIgnoreCase('Menunggu')) {
 					 	WebUI.scrollToElement(btnTerima2, 5)
 						WebUI.verifyElementClickable(btnTerima2)
 						WebUI.click(btnTerima2)
-						if (WebUI.waitForElementPresent(btnTerima3, 5)) {
-							WebUI.scrollToElement(btnTerima3, 5)
-							WebUI.verifyElementClickable(btnTerima3)
-							WebUI.click(btnTerima3)
-						} else {keylogger.logInfo("element not present")}
 					} else {keylogger.logInfo("element not present")}
 					WebUI.waitForPageLoad(5)
 					WebUI.delay(15)

@@ -161,6 +161,12 @@
       <value></value>
       <variableId>662b7288-e0d9-4725-9821-98ca5d2c9783</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>313fb6c0-1d71-4831-9969-3ff5287a91eb</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
       <description></description>
@@ -342,5 +348,12 @@
       <id>662b7288-e0d9-4725-9821-98ca5d2c9783</id>
       <masked>false</masked>
       <name>BtnModalBackToBucketlist</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnBack')</defaultValue>
+      <description></description>
+      <id>313fb6c0-1d71-4831-9969-3ff5287a91eb</id>
+      <masked>false</masked>
+      <name>btnBack</name>
    </variable>
 </TestCaseEntity>

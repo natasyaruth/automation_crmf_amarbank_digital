@@ -88,7 +88,7 @@ while (loopPageCsr == false) {
 					TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 					if (WebUI.verifyElementPresent(reqDetailStatus, 5,FailureHandling.OPTIONAL)) {
 						WebUI.click(linkDataDeliveryCard)
-						int optionListLength = 2
+						int optionListLength = 1
 						Random rand = new Random()
 						String index = rand.nextInt(optionListLength + 1)
 						if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
