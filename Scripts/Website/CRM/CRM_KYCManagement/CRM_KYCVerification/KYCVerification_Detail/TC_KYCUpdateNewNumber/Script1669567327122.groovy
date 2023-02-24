@@ -58,8 +58,12 @@ KeywordUtil keylogger = new KeywordUtil()
 'We want to process CSR Detail'
 if (WebUI.waitForElementPresent(linkMenuCsrManagement, 5)) {
 	WebUI.click(linkMenuCsrManagement)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
 		WebUI.click(btnAbort)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.logInfo("We not found the element")}
 } else {keylogger.markError("We not found the CSR Management")}
 
