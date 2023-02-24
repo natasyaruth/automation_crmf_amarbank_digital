@@ -106,8 +106,12 @@ List<WebElement> colsCsrMgt
 'We want check in CSR Management'
 if (WebUI.waitForElementVisible(linkMenuCsrManagement, 5)) {
 	WebUI.click(linkMenuCsrManagement)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	if (WebUI.waitForElementVisible(alertNotif, 5)) {
 		WebUI.click(btnAbort)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.logInfo('We can continue the process')}
 	WebUI.setText(txtReqIdCsrMgt, reqIdWithImageNotMatch)
 	WebUI.sendKeys(txtReqIdCsrMgt, Keys.chord(Keys.ENTER))

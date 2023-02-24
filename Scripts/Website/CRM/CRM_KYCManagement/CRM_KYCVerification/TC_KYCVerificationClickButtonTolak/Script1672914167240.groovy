@@ -26,11 +26,11 @@ WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
-WebUI.setText(TxtSearchRequestID, InputReqID)
-
 WebUI.click(BtnShow)
 
 WebUI.click(BtnDetailKYCVerification)
+
+String ReqId = WebUI.getText(reqIdKycVerif)
 
 WebUI.scrollToElement(BtnReject1, 3)
 
@@ -84,7 +84,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 	WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 
-WebUI.setText(CSRManagementBucketListTxtRequestId, InputReqIDCSR)
+WebUI.setText(CSRManagementBucketListTxtRequestId, ReqId)
 
 WebUI.click(CSRManagementBucketListBtnSearch)
 

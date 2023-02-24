@@ -118,9 +118,13 @@ while (loopPageCsr == false) {
 						keylogger.logInfo("We are didn't get security question Email")
 						if (WebUI.verifyElementClickable(btnBatalSecQuest,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnBatalSecQuest)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 						} else {
 							WebUI.verifyElementClickable(btnBackCloseLockModal)
 							WebUI.click(btnBackCloseLockModal)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 						}
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
@@ -128,6 +132,8 @@ while (loopPageCsr == false) {
 						if (i == (listRows.size() - 1)) {
 							keylogger.logInfo('We move next page')
 							WebUI.click(btnNextPage)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 							listRows = tableCsrMgt.findElements(By.tagName('tr'))
 							WebUI.takeScreenshot()

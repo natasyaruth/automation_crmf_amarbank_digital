@@ -72,14 +72,14 @@
       <variableId>266cbd30-2e03-451a-9296-592ba59dfcc3</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'2'</defaultValue>
       <description></description>
       <id>3827a3ce-6078-41d2-bd46-23d0c887affd</id>
       <masked>false</masked>
       <name>optionCustType</name>
    </variable>
    <variable>
-      <defaultValue>'Nasabah Baru'</defaultValue>
+      <defaultValue>'Nasabah Senyumku'</defaultValue>
       <description></description>
       <id>27beb674-d5c0-40a8-a0d3-2e00087ff877</id>
       <masked>false</masked>

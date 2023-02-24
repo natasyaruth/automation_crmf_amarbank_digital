@@ -34,7 +34,8 @@ import com.tunaiku.keyword.RandomDate as RandomDate
 KeywordUtil keylogger = new KeywordUtil()
 /*Setup faker email*/
 Faker faker = new Faker()
-String fullName = faker.name().fullName()
+String fullName = faker.name().firstName()
+String EmailFaker = fullName+ "@yomail.com"
 /* We want handling block condition*/
 if (WebUI.waitForElementVisible(menuCsrManagement, 5)) {
 	WebUI.click(menuCsrManagement)
@@ -81,13 +82,15 @@ while (loopPageCsr == false) {
 				List<WebElement> listCols = listRows.get(i).findElements(By.tagName('td'))
 				if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 					listCols.get(6).findElement(By.tagName('button')).click()
-					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nama Ibu Kandung')
+					TestObject csrSecurityQuestion = new TestObject().addProperty('text',ConditionType.CONTAINS,'Email')
 					if (WebUI.verifyElementPresent(csrSecurityQuestion, 5,FailureHandling.OPTIONAL)) {
 						boolean loopSecQuestion = false
 						loopSecQuestion:
 						while (loopSecQuestion == false) {
-							WebUI.setText(fieldInputMotherSecQuest, fullName)
+							WebUI.setText(fieldEmailSecQuetion, EmailFaker)
 							WebUI.click(btnSubmitSecQuest)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							TestObject alertCantAccessCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah tidak bisa di akses')
 							if (WebUI.verifyElementPresent(alertCantAccessCust, 5,FailureHandling.OPTIONAL)) {
 								WebUI.verifyElementClickable(btnBackCloseLockModal)
@@ -109,6 +112,8 @@ while (loopPageCsr == false) {
 						WebUI.takeScreenshot()
 						if (WebUI.verifyElementClickable(btnBatalSecQuest,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnBatalSecQuest)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 						} else {
 							keylogger.logInfo('We are already finished')
 							WebUI.takeScreenshot()
@@ -118,9 +123,13 @@ while (loopPageCsr == false) {
 						keylogger.logInfo("We are didn't get security question Email")
 						if (WebUI.verifyElementClickable(btnBatalSecQuest,FailureHandling.OPTIONAL)) {
 							WebUI.click(btnBatalSecQuest)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 						} else {
 							WebUI.verifyElementClickable(btnBackCloseLockModal)
 							WebUI.click(btnBackCloseLockModal)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 						}
 						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 						listRows = tableCsrMgt.findElements(By.tagName('tr'))
@@ -128,6 +137,8 @@ while (loopPageCsr == false) {
 						if (i == (listRows.size() - 1)) {
 							keylogger.logInfo('We move next page')
 							WebUI.click(btnNextPage)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
 							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 							listRows = tableCsrMgt.findElements(By.tagName('tr'))
 							WebUI.takeScreenshot()

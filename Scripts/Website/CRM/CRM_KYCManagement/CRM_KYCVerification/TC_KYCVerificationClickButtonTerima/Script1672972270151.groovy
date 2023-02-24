@@ -26,13 +26,11 @@ WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
-WebUI.setText(TxtSearchRequestID, InputReqIDCSR)
-
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnSearch'))
-
 WebUI.click(BtnDetailKYCVerification)
 WebUI.waitForPageLoad(5)
 WebUI.delay(3)
+
+String reqIdKyc = WebUI.getText(txtReqIdKycVerif)
 
 WebUI.click(BtnFaceMatchDukcapil)
 WebUI.waitForPageLoad(5)
@@ -106,7 +104,7 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
     WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 }
 
-WebUI.setText(CSRManagementBucketListTxtRequestId, InputReqIDCSR)
+WebUI.setText(CSRManagementBucketListTxtRequestId, reqIdKyc)
 
 WebUI.click(CSRManagementBucketListBtnSearch)
 

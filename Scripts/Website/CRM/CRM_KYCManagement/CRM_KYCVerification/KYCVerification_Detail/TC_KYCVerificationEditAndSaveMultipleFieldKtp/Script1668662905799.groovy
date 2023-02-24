@@ -74,6 +74,8 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 	WebUI.click(menuKycManagement)
 	if (WebUI.waitForElementPresent(menuKycVerification, 5)) {
 		WebUI.click(menuKycVerification)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 		tblKycVerif = driver.findElement(By.xpath('//table/tbody'))
 		rowsKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 		colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
@@ -92,7 +94,7 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 'we want choose the filter'
 if (WebUI.waitForElementPresent(drpDwnCustType, 5)) {
 	WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)
-	WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+	WebUI.selectOptionByLabel(drpDwnCustType, "Senyumku Deposito", false)
 } else {keylogger.markError("Element not present")}
 if (WebUI.waitForElementPresent(drpDwnEmailVerif, 5)) {
 	WebUI.verifyOptionsPresent(drpDwnEmailVerif, listEmailVerif)
@@ -155,7 +157,7 @@ if (WebUI.waitForElementPresent(menuCsrManagement, 5)) {
 	tblCsr = driverCsr.findElement(By.xpath('//table/tbody'))
 	rowsCsr = tblCsr.findElements(By.tagName('tr'))
 	colsCsr = rowsCsr.get(0).findElements(By.tagName('td'))
-	if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
+	if (colsCsr.get(5).getText().equalsIgnoreCase("Senyumku Deposito")) {
 		colsCsr.get(6).findElement(By.xpath('button')).click()
 	} else {keylogger.markError('Text not found Check Nasabah Baru')}
 } else {keylogger.markError('Element not found CSR Management')}
