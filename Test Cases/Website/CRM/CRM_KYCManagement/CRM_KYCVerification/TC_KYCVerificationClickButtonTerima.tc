@@ -209,6 +209,12 @@
       <value></value>
       <variableId>a816e4de-72e2-411c-838a-74a30eeb6288</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>d048d89d-81d8-41de-9aed-c3a46133d096</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'11/08/2018'</defaultValue>
       <description></description>
@@ -446,5 +452,12 @@
       <id>a816e4de-72e2-411c-838a-74a30eeb6288</id>
       <masked>false</masked>
       <name>TxtTerimaChangeLog</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbReqId')</defaultValue>
+      <description></description>
+      <id>d048d89d-81d8-41de-9aed-c3a46133d096</id>
+      <masked>false</masked>
+      <name>txtReqIdKycVerif</name>
    </variable>
 </TestCaseEntity>

@@ -103,7 +103,7 @@ for (int i = 0; i < customerType.size(); i++) {
         if (dataAddress == true) {
             WebUI.click(elementAddressSentCard)
 
-            int optionListLength = 3
+            int optionListLength = 1
 
             Random rand = new Random()
 

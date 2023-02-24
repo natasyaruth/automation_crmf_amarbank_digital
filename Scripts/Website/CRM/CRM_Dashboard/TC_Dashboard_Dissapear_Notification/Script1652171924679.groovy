@@ -47,6 +47,8 @@ if (WebUI.verifyElementClickable(menuKYCManagement)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.verifyElementClickable(videoKYCRequest)) {
 		WebUI.click(videoKYCRequest)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Button KYC video request')}
 }else {keylogger.markError('Button cannot click able')}
 
@@ -56,9 +58,13 @@ if (WebUI.verifyElementPresent(kycVideoPage, 5)) {
 	keylogger.markPassed('We are in kyc page')
 	if (WebUI.verifyElementClickable(idleCallsTab)) {
 		WebUI.click(idleCallsTab)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 		'We want unblock process'
 		if (WebUI.waitForElementPresent(txtNotifBlockConfirmation,3)) {
 			WebUI.click(btnAbortBlock)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
 		} else {keylogger.logInfo('notification not pop up')}
 	} else {keylogger.markError('Tab idle calls is disable')}
 } else {keylogger.markError('We are not in kyc page')}
@@ -67,18 +73,25 @@ if (WebUI.verifyElementPresent(kycVideoPage, 5)) {
 WebDriver driverKycVideo = DriverFactory.getWebDriver()
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
-if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
-	WebUI.delay(5)
-	int optionRand = 4
-	Random randTimes = new Random()
-	int indexElement = randTimes.nextInt(optionRand + 1)
-	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
-	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
-		keylogger.markPassed('We already to click the Kyc Vidio')
-		colsKycVideo.get(1).findElement(By.tagName('a')).click()
-	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
-} else {keylogger.markError('Drop down not present')}
+checkData = false
+loopCheckData:
+while (checkData == false) {
+	for (i = 0;i < rowsKycVideo.size();i++) {
+		if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
+			WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
+			WebUI.delay(5)
+			List<WebElement> colsKycVideo = rowsKycVideo.get(i).findElements(By.tagName('td'))
+			if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP')) {
+				colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')
+				keylogger.markPassed('We already to click the Kyc Vidio')
+				colsKycVideo.get(1).findElement(By.tagName('a')).click()
+				break loopCheckData
+			} else {
+				keylogger.logInfo('we cannot get name Nasabah Baru retry to check again')
+				}
+		} else {keylogger.markError('Drop down not present')}
+	}
+}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
@@ -129,9 +142,9 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 	WebUI.click(chkKtpNumber)
 	WebUI.click(chkBirtDate)
 	WebUI.click(chkMotherName)
-	WebUI.click(chkDeliveryAddress)
-	WebUI.click(chkShowKtp)
-	WebUI.click(chkShowFace)
+	WebUI.click(chkChangePhoneNumber)
+	WebUI.click(chkEmail)
+	WebUI.click(chkReasonChangePhoneNumber)
 	WebUI.click(chkCaptureFace)
 	WebUI.scrollToElement(btnSelfie, 5)
 	if (WebUI.verifyElementClickable(btnSelfie)) {

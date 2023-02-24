@@ -39,21 +39,18 @@ WebUI.selectOptionByLabel(drpEmailType, EmailisVerified, false)
 
 WebUI.selectOptionByLabel(drpCustomerType, NewCustomer, false)
 
+WebUI.setText(txtFieldReqIdKyc, "10005584")
+
 WebUI.click(btnRequestid)
 
+WebUI.click(btnFacematchVerihub)
 
-WebUI.click(btnFacematchDukcapil)
+/* We want capture the result*/
+WebUI.takeScreenshot()
 
-WebUI.click(btnConfirmationFacematch)
+WebUI.click(btnCancelFacematch)
 
-//WebUI.click(btnFacematchVerihub)
-//
-///* We want capture the result*/
-//WebUI.takeScreenshot()
-//
-//WebUI.click(btnCancelFacematch)
-
-WebUI.verifyElementNotClickable(btnFacematchVerihub)
+WebUI.verifyElementClickable(btnFacematchVerihub)
 /* We want capture the result*/
 WebUI.takeScreenshot()
 /* We want to refresh for the next process*/

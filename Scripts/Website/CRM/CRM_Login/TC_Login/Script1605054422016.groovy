@@ -22,8 +22,8 @@ import internal.GlobalVariable as GlobalVariable
 KeywordUtil keylogger = new KeywordUtil()
 
 /* We want to force to wait the page loaded*/
-WebUI.waitForPageLoad(10)
-
+WebUI.waitForPageLoad(20)
+WebUI.delay(5)
 /* We want to maximize the window*/
 WebUI.maximizeWindow()
 
@@ -71,6 +71,8 @@ WebUI.sendKeys(fieldPasswordLogin, CryptoUtil.decode(CryptoUtil.getDefault(gmail
 
 /* We will click submit the password */
 WebUI.click(btnPasswordNext)
+
+WebUI.delay(3)
 
 WebUI.waitForElementPresent(gridInfoLogin, 100)
 

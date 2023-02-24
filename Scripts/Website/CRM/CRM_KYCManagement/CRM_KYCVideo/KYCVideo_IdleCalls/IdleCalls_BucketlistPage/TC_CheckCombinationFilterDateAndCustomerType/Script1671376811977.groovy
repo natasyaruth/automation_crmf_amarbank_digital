@@ -70,7 +70,9 @@ WebUI.setText(dtpEndDate, endMonth)
 /* Click button 'Tampilkan' */
 WebUI.click(btnShow)
 
-WebUI.delay(2)
+WebUI.waitForPageLoad(5)
+
+WebUI.delay(3)
 
 /* Choose customer type based on the index optionCustType */
 WebUI.selectOptionByValue(drpCustType, optionCustType, false)
@@ -82,7 +84,7 @@ WebUI.waitForPageLoad(3)
 WebDriver driver = DriverFactory.getWebDriver()
 
 /* We will declarated variable 'tableKYC' to store the location of the table*/
-WebElement tableKYC = driver.findElement(By.xpath('//tbody'))
+WebElement tableKYC = driver.findElement(By.xpath('//table/tbody'))
 
 /* We will declarated variable 'listRows' with type List to store
  all the element with tag 'tr' which means element that represent rows*/
@@ -96,6 +98,7 @@ while(flagLoop == false) {
 		
 		/* Get all column and storing to variable 'listColumn' at row with index i*/
 		List<WebElement> listColumn = listRows.get(i).findElements(By.tagName('td'))
+		println(listRows.size())
 		
 		/* Get text and storing to variable 'actDate' at column with index 5*/
 		String actDate = listColumn.get(6).getText()

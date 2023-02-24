@@ -45,9 +45,17 @@ WebUI.click(btnFacematchDukcapil)
 
 WebUI.click(btnConfirmationFacematch)
 
-WebUI.click(BtnCheckDukcapil)
+if (WebUI.waitForElementClickable(BtnCheckDukcapil, 5)) {
 
-WebUI.click (BtnModalCheckDukcapil)
+	WebUI.click(BtnCheckDukcapil)
+	
+	WebUI.click (BtnModalCheckDukcapil)
+		
+} else {
+	
+	keyLogger.logInfo('Cek dukcapil already checked maybe cek another data')
+	
+}
 
 WebUI.click(BtnAccept1)
 

@@ -59,6 +59,8 @@ if (WebUI.verifyElementPresent(kycVideoPage, 5)) {
 		'We want unblock process'
 		if (WebUI.waitForElementVisible(txtNotifBlockConfirmation,5)) {
 			WebUI.click(btnAbortBlock)
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
 		} else {keylogger.logInfo('notification not pop up')}
 	} else {keylogger.markError('Tab idle calls is disable')}
 } else {keylogger.markError('We are not in kyc page')}
@@ -68,16 +70,13 @@ WebDriver driverKycVideo = DriverFactory.getWebDriver()
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 	WebUI.delay(5)
-	int optionRand = 4
-	Random randTimes = new Random()
-	int indexElement = randTimes.nextInt(optionRand + 1)
-	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
-	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+	List<WebElement> colsKycVideo = rowsKycVideo.get(0).findElements(By.tagName('td'))
+	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 		keylogger.markPassed('We already to click the Kyc Vidio')
 		colsKycVideo.get(1).findElement(By.tagName('a')).click()
-	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
+	} else {keylogger.logInfo('we cannot get name Nasabah Senyumku')}
 } else {keylogger.markError('Drop down not present')}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -125,14 +124,6 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 'We want to confirmation process'
 TestObject checkConfProcess = new TestObject().addProperty('text',ConditionType.CONTAINS,'Hal-hal yang perlu dikonfirmasi')
 if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
-	WebUI.click(chkNamaKtp)
-	WebUI.click(chkKtpNumber)
-	WebUI.click(chkBirtDate)
-	WebUI.click(chkMotherName)
-	WebUI.click(chkDeliveryAddress)
-	WebUI.click(chkShowKtp)
-	WebUI.click(chkShowFace)
-	WebUI.click(chkCaptureFace)
 	WebUI.scrollToElement(btnSelfie, 5)
 	if (WebUI.verifyElementClickable(btnSelfie)) {
 		WebUI.click(btnSelfie)
@@ -168,15 +159,7 @@ if (WebUI.verifyElementClickable(btnEndVideoCall)) {
 boolean checkData = false
 loopCheckKelurahan:
 while (checkData == false) {
-	int optionListLength = 4
-	Random rand = new Random()
-	String index = rand.nextInt(optionListLength + 1)
-	if (index != 0) {
-		if (WebUI.verifyElementVisible(drpDwnVillage)) {
-			WebUI.delay(5)
-			WebUI.selectOptionByIndex(drpDwnVillage, index)
-			WebUI.delay(5)
-		} else {keylogger.markError('Element not visible')}
+	WebUI.scrollToElement(btnKycReject, 5)
 		if (WebUI.verifyElementVisible(btnKycReject)) {
 			WebUI.click(btnKycReject)
 			WebUI.delay(5)
@@ -204,5 +187,4 @@ while (checkData == false) {
 				} else {keylogger.markError('Button send KYC video not click able')}
 			} else {keylogger.markError('We cannot in check history')}
 		}else {keylogger.markError('button not visible')}
-	} else {keylogger.logInfo('try again until index not zero')}
 }

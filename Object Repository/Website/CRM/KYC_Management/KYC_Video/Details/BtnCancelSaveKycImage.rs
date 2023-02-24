@@ -3,121 +3,17 @@
    <description></description>
    <name>BtnCancelSaveKycImage</name>
    <tag></tag>
-   <elementGuidId>adeac153-c70a-4773-870d-09030db9c36b</elementGuidId>
+   <elementGuidId>e760147c-8764-45ac-8c14-cb8b884d6cbc</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>CSS</key>
-         <value>#BtnCancelSaveKYCImage</value>
-      </entry>
       <entry>
          <key>XPATH</key>
          <value>//button[@id='BtnCancelSaveKYCImage']</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
-   <useRalativeImagePath>true</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tag</name>
-      <type>Main</type>
-      <value>button</value>
-      <webElementGuid>0249bcdb-0f33-4289-bc74-1930d58d59a5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>Button Button--fullWidth</value>
-      <webElementGuid>e94e66c4-258d-422b-9ca4-256cf734f4a5</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>text</name>
-      <type>Main</type>
-      <value>Batal </value>
-      <webElementGuid>c24953c9-5a7c-400a-b738-fcd4f78c2147</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>BtnCancelSaveKYCImage</value>
-      <webElementGuid>be912f84-07ee-4cbc-9204-2db388da1c31</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath</name>
-      <type>Main</type>
-      <value>id(&quot;BtnCancelSaveKYCImage&quot;)</value>
-      <webElementGuid>76a05246-603f-454c-9398-255f8e921fd9</webElementGuid>
-   </webElementProperties>
-   <webElementXpaths>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
-      <type>Main</type>
-      <value>//button[@id='BtnCancelSaveKYCImage']</value>
-      <webElementGuid>b0b241e0-6ed2-44a8-a42c-6d792a2c964e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:idRelative</name>
-      <type>Main</type>
-      <value>//div[@id='outer-root']/div/div/section/div/button[2]</value>
-      <webElementGuid>b3bdf3e5-f9f4-4193-93bc-6cb99b3dd4d0</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Simpan'])[2]/following::button[1]</value>
-      <webElementGuid>14de332b-8354-4528-b546-d62ca993b351</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Konfirmasi'])[1]/following::button[2]</value>
-      <webElementGuid>99bf3776-359f-4c9e-9d27-e892eb634a37</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
-      <webElementGuid>f88eb88a-3efb-4ba6-905c-c5e72892f348</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:neighbor</name>
-      <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
-      <webElementGuid>ee58e5a8-879a-473b-b095-327ea36d1f7e</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:position</name>
-      <type>Main</type>
-      <value>//section/div/button[2]</value>
-      <webElementGuid>872c7f87-f259-4375-8b36-50fc6ca5060b</webElementGuid>
-   </webElementXpaths>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>xpath:customAttributes</name>
-      <type>Main</type>
-      <value>//button[(text() = 'Batal ' or . = 'Batal ') and @id = 'BtnCancelSaveKYCImage']</value>
-      <webElementGuid>0d1b3262-3bcc-444e-b098-ef7fdc8f0861</webElementGuid>
-   </webElementXpaths>
+   <useRalativeImagePath>false</useRalativeImagePath>
 </WebElementEntity>
