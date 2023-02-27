@@ -87,99 +87,122 @@ for(int j=0;j<listOptionEmail.size();j++) {
 	/* We will wait for 3 second till page finish load*/
 	WebUI.delay(3)
 	
-	/* If state loop is in index 2, break the loop */
-	if(j==2){
-		
-		break
+	/* Declarate variable isObjectNotFound as boolean
+	 * to save value from verify element objectNotFound is exists or not*/
+	boolean isObjectNotFound = WebUI.waitForElementPresent(objectNotFound, 3)
 	
+	if(isObjectNotFound) {
+		
+		WebUI.takeScreenshot()
+		
+		keyLogger.markPassed("No available data between date "+startDate+" until "+endDate+", with type email is "+listContentEmail.get(j))
+		
 	} else {
 		
-		/* Store the location of the table*/
-		tableKYCVerif = driver.findElement(By.xpath('//tbody'))
-		
-		/* Store all rows table*/		
-		listRows = tableKYCVerif.findElements(By.tagName('tr'))
-		
-		/* This looping is represent to check data in bucketlist showed based on the choosen date and email type*/
-		while(flagLoop == false) {
+		/* If state loop is in index 2, break the loop */
+		if(j==2){
 			
-			/* Looping through number of rows of bucketlist KYC Verification*/
-			for(int i=0;i<listRows.size();i++){
-				
-				/* Get all column and storing to variable 'listColumn' at row with index i*/
-				listColumn = listRows.get(i).findElements(By.tagName('td'))
-				
-				/* Get text and storing to variable 'actDate' at column with index 5*/
-				String actDate = listColumn.get(5).getText()
-				
-				/* Get attribute class and storing to variable 'actIconEmail' at column with index 6*/
-				String actIconEmail = listColumn.get(6).findElement(By.tagName('svg')).getAttribute('class')
+			break
 		
-				/* Compare actual date with expected date */
-				if(actDate != startDate || actDate != endDate) {
-					
-					/* Increment variable countFalseDate */
-					countFalseDate++
-					
-					println "Actual date: "+actDate+", Start Date: "+startDate+", End Date: "+endDate
-					
-				/* Compare actual icon email type and expected icon email type */
-				} else if (actIconEmail != listClass.get(j)){
-					
-					/* Increment variable countEmailFalse */
-					countEmailFalse++
-				}
-					
-			}
+		} else {
 			
-			/* This conditional represent if the all the data was check in current page,
-			 * system will direct to the next page. */
-			if (flagLoop == false) {
+			/* Store the location of the table*/
+			tableKYCVerif = driver.findElement(By.xpath('//tbody'))
+			
+			/* Store all rows table*/
+			listRows = tableKYCVerif.findElements(By.tagName('tr'))
+			
+			/* This looping is represent to check data in bucketlist showed based on the choosen date and email type*/
+			while(flagLoop == false) {
 				
-				/* Define variable 'expectedCurrentPage' and store the current page */
-				def expectedCurrentPage = WebUI.getText(txtCurrentPage)
-		
-				/* Define variable 'expectedLastPage' and store the last page */
-				def expectedLastPage = WebUI.getText(txtLastPage)
-		
-				/* This conditional represent if it's on the last page,
-				 * system will stop the looping by change the flag loop 'flagLoop' into true.
-				 * But if it still not in the last page, it will go to the next page */
-				if (expectedCurrentPage.equals(expectedLastPage)) {
+				/* Looping through number of rows of bucketlist KYC Verification*/
+				for(int i=0;i<listRows.size();i++){
 					
-					/* Assert flagNextLoop into true*/
-					flagLoop = true
+					/* Get all column and storing to variable 'listColumn' at row with index i*/
+					listColumn = listRows.get(i).findElements(By.tagName('td'))
 					
-				} else {
+					/* Get text and storing to variable 'actDate' at column with index 5*/
+					String actDate = listColumn.get(5).getText()
 					
-					/* We will click the next page */
-					WebUI.click(btnNextPage)
-		
-					/* We will wait for 3 second till page finish load*/
-					WebUI.waitForPageLoad(3)
+					/* Get attribute class and storing to variable 'actIconEmail' at column with index 6*/
+					String actIconEmail = listColumn.get(6).findElement(By.tagName('svg')).getAttribute('class')
+			
+					/* Compare actual date with expected date */
+					if(actDate != startDate) {
+						
+						if(actDate != endDate) {
+							
+							/* Increment variable countFalseDate */
+							countFalseDate++
+							
+							println "Actual date: "+actDate+", Start Date: "+startDate+", End Date: "+endDate
+							
+						} else if (actIconEmail != listClass.get(j)){
+						
+							/* Increment variable countEmailFalse */
+							countEmailFalse++
+						}
+						
+					/* Compare actual icon email type and expected icon email type */
+					} else if (actIconEmail != listClass.get(j)){
+						
+						/* Increment variable countEmailFalse */
+						countEmailFalse++
+					}
+						
+				}
+				
+				/* This conditional represent if the all the data was check in current page,
+				 * system will direct to the next page. */
+				if (flagLoop == false) {
+					
+					/* Define variable 'expectedCurrentPage' and store the current page */
+					def expectedCurrentPage = WebUI.getText(txtCurrentPage)
+			
+					/* Define variable 'expectedLastPage' and store the last page */
+					def expectedLastPage = WebUI.getText(txtLastPage)
+			
+					/* This conditional represent if it's on the last page,
+					 * system will stop the looping by change the flag loop 'flagLoop' into true.
+					 * But if it still not in the last page, it will go to the next page */
+					if (expectedCurrentPage.equals(expectedLastPage)) {
+						
+						/* Assert flagNextLoop into true*/
+						flagLoop = true
+						
+					} else {
+						
+						/* We will click the next page */
+						WebUI.click(btnNextPage)
+			
+						/* We will wait for 3 second till page finish load*/
+						WebUI.waitForPageLoad(3)
+					}
 				}
 			}
+	
 		}
-
-	}
-}
-
-/* Make sure there is no customer out of the range date */
-if(countFalseDate.equals(0)) {
-	
-	/* Make sure there is no email type other than email verified */
-	if(countEmailFalse.equals(0)) {
 		
-		/* Mark case is passed */
-		keyLogger.markPassed("All data in bucketlist are in range from "+startDate+" until "+endDate+" with email is "+listContentEmail.get(j)+". Case SUCCESS")
+		/* Make sure there is no customer out of the range date */
+		if(countFalseDate.equals(0)) {
+			
+			/* Make sure there is no email type other than email verified */
+			if(countEmailFalse.equals(0)) {
+				
+				/* Mark case is passed */
+				keyLogger.markPassed("All data in bucketlist are in range from "+startDate+" until "+endDate+" with email choosen in filter email type. Case SUCCESS")
+				
+			/* If there is email type other than verified will mark as failed */
+			} else {
+				keyLogger.markFailed("There is data customer other than email choosen in filter email type. Case FAILED")
+			}
+			
+		/* If there is customer out of the range date will mark as failed */
+		} else {
+			keyLogger.markFailed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
+			
+		}
 		
-	/* If there is email type other than verified will mark as failed */
-	} else {
-		keyLogger.markFailed("There is data customer other than email "+listContentEmail.get(j)+". Case FAILED")
 	}
 	
-/* If there is customer out of the range date will mark as failed */
-} else {
-	keyLogger.markFailed("There is data customer not in range "+startDate+" until "+endDate+". Case FAILED")
 }
-

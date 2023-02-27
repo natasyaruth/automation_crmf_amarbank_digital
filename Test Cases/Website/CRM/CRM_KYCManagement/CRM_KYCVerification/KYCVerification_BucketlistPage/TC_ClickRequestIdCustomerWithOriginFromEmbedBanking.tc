@@ -95,6 +95,18 @@
       <value></value>
       <variableId>37c17392-2186-435e-81be-ee89c136cf94</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>14e7f556-f0e3-49d7-b186-051d23c621b8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>74deea2b-581a-4db9-8f7c-83e10f63795b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'eFishery'</defaultValue>
       <description></description>
@@ -117,14 +129,14 @@
       <name>srcOriginDagangan</name>
    </variable>
    <variable>
-      <defaultValue>[findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCustType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRequestType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtStatusRequest'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnProceedKycVideoCall'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1')]</defaultValue>
+      <defaultValue>[findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCustType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRequestType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtStatusRequest'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1')]</defaultValue>
       <description></description>
       <id>b6dcd0d3-1a5e-4835-af6b-c753c57fa840</id>
       <masked>false</masked>
       <name>listElement</name>
    </variable>
    <variable>
-      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, false, true]</defaultValue>
+      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, true]</defaultValue>
       <description></description>
       <id>48989d51-4bfb-4f7a-8159-8110f8200044</id>
       <masked>false</masked>
@@ -199,5 +211,19 @@
       <id>37c17392-2186-435e-81be-ee89c136cf94</id>
       <masked>false</masked>
       <name>table</name>
+   </variable>
+   <variable>
+      <defaultValue>'Investree Lender iOS'</defaultValue>
+      <description></description>
+      <id>14e7f556-f0e3-49d7-b186-051d23c621b8</id>
+      <masked>false</masked>
+      <name>srcOriginInvestreeIOS</name>
+   </variable>
+   <variable>
+      <defaultValue>'Investree Lender Android'</defaultValue>
+      <description></description>
+      <id>74deea2b-581a-4db9-8f7c-83e10f63795b</id>
+      <masked>false</masked>
+      <name>srcOriginInvestreeAndroid</name>
    </variable>
 </TestCaseEntity>

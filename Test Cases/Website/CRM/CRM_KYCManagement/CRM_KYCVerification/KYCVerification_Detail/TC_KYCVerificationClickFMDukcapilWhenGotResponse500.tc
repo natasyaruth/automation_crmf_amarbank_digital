@@ -95,6 +95,18 @@
       <value></value>
       <variableId>a0f10941-d029-4e86-8465-da1ac0f5a48c</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e53fa5f5-1fa5-4f20-8188-318301bde353</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>eafa2327-851b-4c70-a908-ec50fa1146d4</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'1'</defaultValue>
       <description></description>
@@ -199,5 +211,19 @@
       <id>a0f10941-d029-4e86-8465-da1ac0f5a48c</id>
       <masked>false</masked>
       <name>btnCheckFMVerihub</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/LbFaceMatchVerihubAccuracy')</defaultValue>
+      <description></description>
+      <id>e53fa5f5-1fa5-4f20-8188-318301bde353</id>
+      <masked>false</masked>
+      <name>txtValueFMVerihub</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/SnckbrServerError')</defaultValue>
+      <description></description>
+      <id>eafa2327-851b-4c70-a908-ec50fa1146d4</id>
+      <masked>false</masked>
+      <name>snackBarError</name>
    </variable>
 </TestCaseEntity>

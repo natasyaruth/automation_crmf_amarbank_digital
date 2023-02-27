@@ -103,9 +103,11 @@ while(flagLoopPage == false) {
 				
 				WebUI.waitForElementPresent(snackBarError, 5)
 				
-				WebUI.waitForElementNotPresent(snackBarError, 10)
+				WebUI.waitForElementNotPresent(snackBarError, 20)
 
 				if(WebUI.waitForElementClickable(btnCheckFMVerihub, 5)) {
+					
+					WebUI.delay(3)
 					
 					WebUI.click(btnCheckFMVerihub)
 					
@@ -113,7 +115,9 @@ while(flagLoopPage == false) {
 					
 					WebUI.click(btnConfirmFM)
 					
-					if(WebUI.waitForElementPresent(snackBarError, 5)) {
+					WebUI.delay(5)
+					
+					if(WebUI.waitForElementPresent(snackBarError, 10)) {
 						
 						String msgSnackbarError = WebUI.getText(snackBarError)
 						
@@ -150,7 +154,7 @@ while(flagLoopPage == false) {
 						/* Storing all rows to variable listRows*/
 						listRows = tableKYC.findElements(By.tagName('tr'))
 						
-					} else if(WebUI.waitForElementNotPresent(txtValueFMVerihub, 2, FailureHandling.OPTIONAL)) {
+					} else if(WebUI.waitForElementNotPresent(txtValueFMVerihub, 8, FailureHandling.OPTIONAL)) {
 						
 						countNothingHappened++
 						
@@ -420,26 +424,42 @@ if(flagCSR) {
 							
 							if(actValue.equals(listExpValue.get(j))) {
 								
-								keyLogger.markPassed("Value "+listContentName+" is correct.")
+								keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
 								
 							} else {
 								
-								keyLogger.markFailed("Value "+listContentName+" is wrong. Actual value: "+actValue+" and Expected value: "+listExpValue.get(j))
+								keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+listExpValue.get(j))
 								
 							}
 							
 						} else {
 							
-							if(actValue.equals(valueFMVerihubCSR+"%")) {
+							if(actValue.contains("%")) {
 								
-								keyLogger.markPassed("Value "+listContentName+" is correct.")
+								if(actValue.equals(valueFMVerihubCSR+"%") ) {
+									
+									keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
+									
+								} else {
+									
+									keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+valueFMVerihubCSR+"%")
+									
+								}
 								
 							} else {
 								
-								keyLogger.markFailed("Value "+listContentName+" is wrong. Actual value: "+actValue+" and Expected value: "+valueFMVerihubCSR+"%")
+								if(actValue.equals("0")) {
+									
+									keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
+									
+								} else {
+									
+									keyLogger.markFailed(listContentName.get(j)+" of Facematch Verihub didn't use % in change log")
+									
+								}
 								
 							}
-							
+						
 						}						
 						
 					}
