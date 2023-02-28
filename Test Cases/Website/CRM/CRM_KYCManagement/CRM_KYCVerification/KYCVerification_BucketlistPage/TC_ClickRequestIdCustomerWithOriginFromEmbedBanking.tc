@@ -136,7 +136,7 @@
       <name>listElement</name>
    </variable>
    <variable>
-      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, 'false', true]</defaultValue>
+      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, false, true]</defaultValue>
       <description></description>
       <id>48989d51-4bfb-4f7a-8159-8110f8200044</id>
       <masked>false</masked>
