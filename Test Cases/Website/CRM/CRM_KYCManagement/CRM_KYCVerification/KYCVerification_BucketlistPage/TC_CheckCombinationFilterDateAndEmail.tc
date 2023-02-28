@@ -65,6 +65,12 @@
       <value></value>
       <variableId>cbc28b59-811c-47f1-b143-36c0c4c5ff42</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8416bc6c-ce5d-4b33-812b-41a3fd2bd321</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>['1', '0', '3']</defaultValue>
       <description></description>
@@ -134,5 +140,12 @@
       <id>cbc28b59-811c-47f1-b143-36c0c4c5ff42</id>
       <masked>false</masked>
       <name>btnNextPage</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/ImgObjectNotFound')</defaultValue>
+      <description></description>
+      <id>8416bc6c-ce5d-4b33-812b-41a3fd2bd321</id>
+      <masked>false</masked>
+      <name>objectNotFound</name>
    </variable>
 </TestCaseEntity>

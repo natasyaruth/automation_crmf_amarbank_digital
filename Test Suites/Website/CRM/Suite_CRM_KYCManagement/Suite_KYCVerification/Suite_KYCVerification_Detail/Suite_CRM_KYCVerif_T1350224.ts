@@ -368,6 +368,18 @@
          <value></value>
          <variableId>a0f10941-d029-4e86-8465-da1ac0f5a48c</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e53fa5f5-1fa5-4f20-8188-318301bde353</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>eafa2327-851b-4c70-a908-ec50fa1146d4</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a7f89b24-9765-43b8-b4f8-dec1f53456f3</guid>
