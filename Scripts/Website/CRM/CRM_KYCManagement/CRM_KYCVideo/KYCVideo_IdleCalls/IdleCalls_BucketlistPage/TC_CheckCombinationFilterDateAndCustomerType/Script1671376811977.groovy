@@ -53,7 +53,7 @@ def calendar = Calendar.getInstance()
 calendar.add(Calendar.MONTH, -1)
 
 /* Set format date with MM/yyyy */
-startMonth = "01/"+calendar.getTime().format('MM/yyyy')
+startMonth = "1/"+calendar.getTime().format('M/yyyy')
 
 /* Set start date*/
 WebUI.setText(dtpStartDate, startMonth)
@@ -62,7 +62,7 @@ WebUI.setText(dtpStartDate, startMonth)
 calendar.add(Calendar.MONTH, 1)
 
 /* Set format date with MM/yyyy */
-endMonth = "01/"+calendar.getTime().format('MM/yyyy')
+endMonth = "1/"+calendar.getTime().format('M/yyyy')
 
 /* Set month with end month */
 WebUI.setText(dtpEndDate, endMonth)
@@ -79,6 +79,8 @@ WebUI.selectOptionByValue(drpCustType, optionCustType, false)
 	
 /* We will wait for 3 second till page finish load*/
 WebUI.waitForPageLoad(3)
+
+WebUI.delay(2)
 	
 /* Declarate variable driver */
 WebDriver driver = DriverFactory.getWebDriver()
@@ -88,7 +90,11 @@ WebElement tableKYC = driver.findElement(By.xpath('//table/tbody'))
 
 /* We will declarated variable 'listRows' with type List to store
  all the element with tag 'tr' which means element that represent rows*/
-List<WebElement> listRows = driver.findElements(By.tagName('tr'))
+List<WebElement> listRows = tableKYC.findElements(By.tagName('tr'))
+
+String expStartMonth = startMonth.substring(2)
+
+String expEndMonth = endMonth.substring(2)
 
 /* This looping is represent to check data in bucketlist showed based on the choosen date and cust type*/
 while(flagLoop == false) {
@@ -100,21 +106,41 @@ while(flagLoop == false) {
 		List<WebElement> listColumn = listRows.get(i).findElements(By.tagName('td'))
 		println(listRows.size())
 		
-		/* Get text and storing to variable 'actDate' at column with index 5*/
-		String actDate = listColumn.get(6).getText()
+		String actDate
+		
+		String charIndex = listColumn.get(6).getText().getAt(2)
+		
+		if(charIndex.equals("/")) {
+			
+			actDate = listColumn.get(6).getText().substring(3)
+			
+		} else {
+			
+			/* Get text and storing to variable 'actDate' at column with index 5*/
+			actDate = listColumn.get(6).getText().substring(2)
+			
+		}
 		
 		/* Get text and storing to variable 'actCustType' at column with index 6*/
 		String actCustType = listColumn.get(5).getText()
 
-		println actDate+" , "+startMonth
+		println actDate+" , "+expStartMonth
 		
-		println actDate+" , "+endMonth
+		println actDate+" , "+expEndMonth
 		
 		/* Compare actual date with expected date */
-		if(actDate != startMonth || actDate != endMonth) {
+		if(actDate != expStartMonth) {
 			
-			/* Increment variable countFalseDate */
-			countFalseDate++
+			if(actDate != expEndMonth){
+				
+				/* Increment variable countFalseDate */
+				countFalseDate++
+				
+			} else if (actCustType != custType){
+			
+			/* Increment variable countCustTypeFalse */
+				countCustTypeFalse++
+			}
 			
 		/* Compare actual cust type and expected cust type */
 		} else if (actCustType != custType){
@@ -141,7 +167,7 @@ while(flagLoop == false) {
 		if (expectedCurrentPage.equals(expectedLastPage)) {
 			
 			/* Assert flagNextLoop into true*/
-			flagLoopPage = true
+			flagLoop = true
 			
 		} else {
 			

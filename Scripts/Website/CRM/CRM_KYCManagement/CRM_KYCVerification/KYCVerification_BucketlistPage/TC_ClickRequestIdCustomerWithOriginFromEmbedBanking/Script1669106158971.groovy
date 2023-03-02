@@ -87,7 +87,8 @@ while(flagLoopPage == false) {
 			
 			/* Verify if the origin customer is from eFishery or Finku or Dagangan */
 			if(actSourceOrigin.equals(srcOriginEfishery) || actSourceOrigin.equals(srcOriginFinku) || 
-				actSourceOrigin.equals(srcOriginDagangan)) {
+				actSourceOrigin.equals(srcOriginDagangan) || actSourceOrigin.equals(srcOriginInvestreeIOS) ||
+				actSourceOrigin.equals(srcOriginInvestreeAndroid)){
 				
 				/* Looping through number of rows of listElement. ListElement consist of all element web that we want to check*/
 				for(int j=0;j<listElement.size();j++) {

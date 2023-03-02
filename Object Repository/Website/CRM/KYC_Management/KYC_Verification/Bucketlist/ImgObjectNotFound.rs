@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>LbFaceMatchVerihubAccuracy</name>
+   <name>ImgObjectNotFound</name>
    <tag></tag>
-   <elementGuidId>cb19323f-8fae-490f-8a3c-bcb2c2888055</elementGuidId>
+   <elementGuidId>8339f67d-508a-470c-8a7d-e77d94e5f5b5</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;DivFacematchVerihub&quot;]/span</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value></value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;root&quot;]//tbody/tr/td/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
