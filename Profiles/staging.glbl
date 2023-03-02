@@ -279,4 +279,9 @@
       <initValue>''</initValue>
       <name>fullName</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-auth.tunaiku.com/auth/realms/Staging-Amarbank-Officer/protocol/openid-connect/auth?response_type=code&amp;client_id=senyumku-crm&amp;scope=openid&amp;redirect_uri=https%3A%2F%2Fstaging-crm-rekol.tunaiku.com%2Fdashboard'</initValue>
+      <name>siteUrlKeyclock</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

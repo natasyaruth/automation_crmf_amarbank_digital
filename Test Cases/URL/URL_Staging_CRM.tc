@@ -17,6 +17,36 @@
       <value></value>
       <variableId>91dc2b1a-941d-4528-9e9a-686b8ccd402b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4348dd33-86dc-4f59-9c4d-67bbb0fc4677</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6032f729-d80e-4525-97b5-13e6c0d34ad2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>585d95a3-94f9-4949-a96d-4a9c05ce0a8d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b295f90a-5f17-4122-9a18-654f3f60c646</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e9cdaae5-c4e9-4c21-8d8f-bc63c0eada6c</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>['--enable-automation', '--no-sandbox', '--disable-infobars', '--disable-extensions', '--enable-async-dns', '--managed-user-id', '--sync-url', '--use-fake-device-for-media-stream', '--dom-automation', '--file-system-sync-access-handle-async-interface-enabled', '--oobe-trigger-sync-timeout-for-tests', 'disable-dev-shm-usage', '--disable-gpu']</defaultValue>
       <description></description>
@@ -30,5 +60,40 @@
       <id>91dc2b1a-941d-4528-9e9a-686b8ccd402b</id>
       <masked>false</masked>
       <name>listOfPrefs</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/Keyclock/LoginPage/txtUsernameKeyClock')</defaultValue>
+      <description></description>
+      <id>4348dd33-86dc-4f59-9c4d-67bbb0fc4677</id>
+      <masked>false</masked>
+      <name>FieldUsernameKeyclock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/Keyclock/LoginPage/txtPasswordKeyclock')</defaultValue>
+      <description></description>
+      <id>6032f729-d80e-4525-97b5-13e6c0d34ad2</id>
+      <masked>false</masked>
+      <name>FieldPasswordKeyclock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/Keyclock/LoginPage/btnLoginKeyclock')</defaultValue>
+      <description></description>
+      <id>585d95a3-94f9-4949-a96d-4a9c05ce0a8d</id>
+      <masked>false</masked>
+      <name>btnLoginKeyclock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(1, 3)</defaultValue>
+      <description></description>
+      <id>b295f90a-5f17-4122-9a18-654f3f60c646</id>
+      <masked>false</masked>
+      <name>usernameKeyclock</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(2, 3)</defaultValue>
+      <description></description>
+      <id>e9cdaae5-c4e9-4c21-8d8f-bc63c0eada6c</id>
+      <masked>false</masked>
+      <name>passwordKeyclock</name>
    </variable>
 </TestCaseEntity>

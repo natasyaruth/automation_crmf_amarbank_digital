@@ -18,13 +18,34 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 /* this is testcase we put from TC_Login_Non_Roles */
+WebUI.callTestCase(findTestCase('URL/URL_Staging_CRM'), [('listValue') : ['--enable-automation', '--no-sandbox', '--disable-infobars'
+            , '--disable-extensions', '--enable-async-dns', '--managed-user-id', '--sync-url', '--use-fake-device-for-media-stream'
+            , '--dom-automation', '--file-system-sync-access-handle-async-interface-enabled', '--oobe-trigger-sync-timeout-for-tests'
+            , 'disable-dev-shm-usage', '--disable-gpu'], ('listOfPrefs') : [('profile.default_content_setting_values.geolocation') : 1
+            , ('profile.default_content_setting_values.media_stream_mic') : 1, ('profile.default_content_setting_values.media_stream_camera') : 1
+            , ('profile.default_content_setting_values.notifications') : 1, ('download.default_directory') : 'C:\\Users\\AMAR BANK\\Documents\\Repository\\tunaiku_funding_crmf_automation\\Download Path'
+            , ('download.directory_upgrade') : true, ('download.prompt_for_download') : false, ('plugins.always_open_pdf_externally') : true
+            , ('profile.default_content_settings.popups') : '0', ('profile.content_settings.exceptions.automatic_downloads.*.setting') : '1']
+        , ('FieldUsernameKeyclock') : findTestObject('Website/Keyclock/LoginPage/txtUsernameKeyClock'), ('FieldPasswordKeyclock') : findTestObject(
+            'Website/Keyclock/LoginPage/txtPasswordKeyclock'), ('btnLoginKeyclock') : findTestObject('Website/Keyclock/LoginPage/btnLoginKeyclock')
+        , ('usernameKeyclock') : findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(1, 4), ('passwordKeyclock') : findTestData(
+            'Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(2, 4)], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.callTestCase(findTestCase('Website/CRM/CRM_Login/TC_Login'), [('btnLoginText') : 'Login by Email Amarbank', ('verifyFieldEmail') : 'Masukkan email Anda'
-        , ('gmailAccount') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 7), ('gmailPassword') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 7)
-        , ('verifyFieldPassword') : 'Masukkan sandi Anda', ('verifyDasboardPage') : 'Welcome to Senyumku CRM', ('username') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 7)
+        , ('gmailAccount') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 5), ('gmailPassword') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 5)
+        , ('verifyFieldPassword') : 'Masukkan sandi Anda', ('verifyDasboardPage') : 'Welcome to Senyumku CRM', ('username') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 5)
         , ('logoLoginPage') : findTestObject('Website/CRM/Login/LoginImageSenyumku'), ('btnLogin') : findTestObject('Website/CRM/Login/LoginBtn')
         , ('fieldEmailLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailAccount'), ('btnNext') : findTestObject('Website/CRM/Login/LoginBtnNext')
         , ('fieldPasswordLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailPassword'), ('btnPasswordNext') : findTestObject('Website/CRM/Login/LoginBtnPasswordNext')
-        , ('gridInfoLogin') : findTestObject('Website/CRM/Login/LoginGridInfoLogin')], FailureHandling.STOP_ON_FAILURE)
+        , ('gridInfoLogin') : findTestObject('Website/CRM/Login/LoginGridInfoLogin'), ('menuDashboard') : findTestObject('Website/CRM/Dashboard/DashboardLink')
+        , ('menuReporting') : findTestObject('Website/CRM/Reporting/Reporting/ReportingLink'), ('menuLiveReport') : findTestObject('Website/CRM/Reporting/LiveReporting/LiveReportingLink')
+        , ('menuAgentReporting') : findTestObject('Website/CRM/Reporting/AgentReporting/AgentReportingLink'), ('menuKycManagement') : findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')
+        , ('menuKYCVideo') : findTestObject('Website/CRM/KYC_Management/KYC_Video/KYC_Video/KYCVideoLinkVideoRequest'), ('menuKYCVerif') : findTestObject('Website/CRM/KYC_Management/KYC_Verification/KYC_Verification/KYCVerificationLink')
+        , ('menuKYCAutomate') : findTestObject('Website/CRM/KYC_Management/KYC_AutomateProcess/linkKycAutomate'), ('menuCardManagement') : findTestObject('Website/CRM/Card Management/Card_Management/CardManagementLink')
+        , ('menuAssignCard') : findTestObject('Website/CRM/Card Management/Assign_Card/AssignCardLink'), ('menuCardPrinting') : findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')
+        , ('menuDeliveryStatus') : findTestObject('Website/CRM/Card Management/Delivery Status/DeliveryStatusLink'), ('menuCSRManagement') : findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')
+        , ('menuLeadsManagement') : findTestObject('Website/CRM/Leads_Management/LeadsManagement/LeadsManagementLink'), ('menuLogout') : findTestObject('Website/CRM/Logout/LogoutLink')
+        , ('menuUploadPhoto') : findTestObject('Website/CRM/UploadPhoto/LinkUploadPhoto')], FailureHandling.STOP_ON_FAILURE)
 
 /* We will direct to video verification*/
 WebUI.navigateToUrl(siteURL_CSR_Management + '/csr-management')
