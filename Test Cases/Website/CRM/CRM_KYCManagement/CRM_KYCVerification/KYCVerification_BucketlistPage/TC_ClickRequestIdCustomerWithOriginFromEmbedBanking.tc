@@ -99,19 +99,13 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>41947bc6-d1c5-4c7a-9688-7dcd52e6cbc6</variableId>
+      <variableId>0cbe77e3-50d1-4622-802a-d9ca4defd9af</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>727b8316-368b-435d-b5ea-62f36f0014f2</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>eaeb15f8-514c-4ab0-8f8a-b5b21c5c2bbc</variableId>
+      <variableId>af0ebb55-989e-4323-b99e-04ed49126d90</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'eFishery'</defaultValue>
@@ -135,14 +129,14 @@
       <name>srcOriginDagangan</name>
    </variable>
    <variable>
-      <defaultValue>[findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCustType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRequestType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtStatusRequest'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnProceedKycVideoCall'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1')]</defaultValue>
+      <defaultValue>[findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtCustType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtRequestType'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtStatusRequest'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnAccept1'), findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnReject1')]</defaultValue>
       <description></description>
       <id>b6dcd0d3-1a5e-4835-af6b-c753c57fa840</id>
       <masked>false</masked>
       <name>listElement</name>
    </variable>
    <variable>
-      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, false, true]</defaultValue>
+      <defaultValue>['Nasabah Baru', 'Registrasi Baru', 'Sedang diproses', true, true]</defaultValue>
       <description></description>
       <id>48989d51-4bfb-4f7a-8159-8110f8200044</id>
       <masked>false</masked>
@@ -219,24 +213,17 @@
       <name>table</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpCustType')</defaultValue>
+      <defaultValue>'Investree Lender iOS'</defaultValue>
       <description></description>
-      <id>41947bc6-d1c5-4c7a-9688-7dcd52e6cbc6</id>
+      <id>0cbe77e3-50d1-4622-802a-d9ca4defd9af</id>
       <masked>false</masked>
-      <name>drpDwnCustType</name>
+      <name>srcOriginInvestreeIOS</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/DrpEmailType')</defaultValue>
+      <defaultValue>'Investree Lender Android'</defaultValue>
       <description></description>
-      <id>727b8316-368b-435d-b5ea-62f36f0014f2</id>
+      <id>af0ebb55-989e-4323-b99e-04ed49126d90</id>
       <masked>false</masked>
-      <name>drpDwnEmailVerf</name>
-   </variable>
-   <variable>
-      <defaultValue>'Senyumku'</defaultValue>
-      <description></description>
-      <id>eaeb15f8-514c-4ab0-8f8a-b5b21c5c2bbc</id>
-      <masked>false</masked>
-      <name>srcOriginSenyumku</name>
+      <name>srcOriginInvestreeAndroid</name>
    </variable>
 </TestCaseEntity>
