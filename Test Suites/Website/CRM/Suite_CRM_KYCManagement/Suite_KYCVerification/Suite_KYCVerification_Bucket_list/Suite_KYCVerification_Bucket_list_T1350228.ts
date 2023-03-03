@@ -402,19 +402,13 @@
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>41947bc6-d1c5-4c7a-9688-7dcd52e6cbc6</variableId>
+         <variableId>0cbe77e3-50d1-4622-802a-d9ca4defd9af</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>727b8316-368b-435d-b5ea-62f36f0014f2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>eaeb15f8-514c-4ab0-8f8a-b5b21c5c2bbc</variableId>
+         <variableId>af0ebb55-989e-4323-b99e-04ed49126d90</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
