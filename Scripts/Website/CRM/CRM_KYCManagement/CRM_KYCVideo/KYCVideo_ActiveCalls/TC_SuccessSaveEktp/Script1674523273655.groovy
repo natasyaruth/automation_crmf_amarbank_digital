@@ -78,12 +78,12 @@ if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 	checkReqId = false
 	loopCheckData:
 	while (checkReqId == false) {
-		WebUI.selectOptionByLabel(drpCustType, 'Nasabah Baru', false)
+		WebUI.selectOptionByLabel(drpCustType, 'Semua', false)
 		tableBucketList = driver.findElement(By.xpath('//table/tbody'))
 		rowBucketList = tableBucketList.findElements(By.tagName('tr'))
 		for (int i=0;i < rowBucketList.size();i++) {
 			colsBucketList = rowBucketList.get(i).findElements(By.tagName('td'))
-			if (colsBucketList.get(3).getText().equalsIgnoreCase('Registrasi Baru') && colsBucketList.get(7).getText().equalsIgnoreCase('Menunggu')) {
+			if (colsBucketList.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				colsBucketList.get(1).findElement(By.xpath('a')).click()
 				WebUI.waitForPageLoad(5)
 				TestObject inKycVideoReq = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -151,10 +151,11 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 	WebUI.click(chkKtpNumber)
 	WebUI.click(chkBirtDate)
 	WebUI.click(chkMotherName)
-	WebUI.click(chkAddressDeliveryCard)
-	WebUI.click(chkShowIdCard)
-	WebUI.click(ChkShowClearFace)
+	WebUI.click(chkChangePhoneNumber)
+	WebUI.click(chkEmail)
+	WebUI.click(chkReasonChangePhoneNumber)
 	WebUI.click(chkCaptureFace)
+	
 	WebUI.scrollToElement(btnSelfie, 5)
 	if (WebUI.verifyElementClickable(btnSelfie)) {
 		WebUI.click(btnSelfie)

@@ -81,12 +81,11 @@ while (checkLoop == false) {
 	for (int i ; i < rowsIdleCalls.size() ; i ++) {
 		if (rowsIdleCalls.size() != 9) {
 			WebUI.verifyOptionsPresent(drpDwnCustType, listDrpDwnCustType)
-			WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+			WebUI.selectOptionByLabel(drpDwnCustType, "Semua", false)
 			WebUI.waitForPageLoad(5)
 			WebUI.delay(3)
 			colsIdleCalls = rowsIdleCalls.get(i).findElements(By.tagName("td"))
-			if (colsIdleCalls.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
-				colsIdleCalls.get(3).getText().equalsIgnoreCase("Registrasi Baru")
+			if (colsIdleCalls.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsIdleCalls.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				colsIdleCalls.get(1).findElement(By.xpath('a')).click()
 				TestObject accessToDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(accessToDetail, 5)
@@ -124,10 +123,9 @@ while (checkLoop == false) {
 			for (int j ; j < rowsIdleCalls.size() ; j ++) {
 				if (rowsIdleCalls.size() != 9) {
 					WebUI.verifyOptionsPresent(drpDwnCustType, listDrpDwnCustType)
-					WebUI.selectOptionByLabel(drpDwnCustType, "Nasabah Baru", false)
+					WebUI.selectOptionByLabel(drpDwnCustType, "Semua", false)
 					colsIdleCalls = rowsIdleCalls.get(i).findElements(By.tagName("td"))
-					if (colsIdleCalls.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
-						colsIdleCalls.get(3).getText().equalsIgnoreCase("Registrasi Baru")
+					if (colsIdleCalls.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsIdleCalls.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 						colsIdleCalls.get(1).findElement(By.xpath('a')).click()
 					} else {keylogger.markError("Element Not Found")}
 				} else {keylogger.markError("We must check again the data")} 
@@ -159,7 +157,7 @@ if (WebUI.waitForElementVisible(linkMenuCsrManagement, 5)) {
 		tblCsrBucketList = driverCsrBucketList.findElement(By.xpath('//table/tbody'))
 		rowsCsrBucketList = tblCsrBucketList.findElements(By.tagName('tr'))
 		colsCsrBucketList = rowsCsrBucketList.get(0).findElements(By.tagName('td'))
-		if (colsCsrBucketList.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
+		if (colsCsrBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 			colsCsrBucketList.get(6).findElement(By.xpath('button')).click()
 		} else {keylogger.markError('Text not found')}
 		if (WebUI.waitForElementVisible(btnDataEmail, 5)) {
