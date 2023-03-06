@@ -6,18 +6,14 @@
    <elementGuidId>cb19323f-8fae-490f-8a3c-bcb2c2888055</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;DivFacematchVerihub&quot;]/span</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'LbFaceMatchVerihubAccuracy']</value>
+         <value></value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>LbFaceMatchVerihubAccuracy</value>
-      <webElementGuid>761b625f-3527-412f-9f89-27e2bf592054</webElementGuid>
-   </webElementProperties>
 </WebElementEntity>

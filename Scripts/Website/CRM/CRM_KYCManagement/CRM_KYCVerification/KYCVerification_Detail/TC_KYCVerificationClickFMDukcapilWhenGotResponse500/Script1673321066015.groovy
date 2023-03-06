@@ -90,13 +90,19 @@ while(flagLoopPage == false) {
 			WebUI.scrollToElement(btnCheckLiveness, 3)
 			
 			/* Verify if the origin customer is from eFishery or Finku or Dagangan */
-			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2)) {
+			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2) && WebUI.waitForElementNotPresent(txtValueFMVerihub, 2)) {
 					
+				WebUI.verifyElementClickable(btnCheckFMDukcapil)
+				
 				WebUI.click(btnCheckFMDukcapil)
 						
 				WebUI.waitForElementPresent(btnConfirmFMDukcapil, 3)
 						
 				WebUI.click(btnConfirmFMDukcapil)
+				
+				WebUI.waitForElementPresent(snackBarError, 5)
+				
+				WebUI.waitForElementNotPresent(snackBarError, 20)
 						
 				if(WebUI.waitForElementClickable(btnCheckFMDukcapil, 5)) {
 							

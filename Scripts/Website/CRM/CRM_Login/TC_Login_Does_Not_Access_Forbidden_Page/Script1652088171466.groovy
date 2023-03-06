@@ -19,17 +19,16 @@ import org.openqa.selenium.Keys as Keys
 
 /* this is testcase we put from TC_Login_Non_Roles */
 WebUI.callTestCase(findTestCase('Website/CRM/CRM_Login/TC_Login_Non_Roles'), [('btnLoginText') : 'Login by Email Amarbank'
-        , ('verifyFieldEmail') : 'Masukkan email Anda', ('gmailAccount') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(1, 6)
-        , ('gmailPassword') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(2, 6), ('verifyFieldPassword') : 'Masukkan sandi Anda'
-        , ('verifyDasboardPage') : 'Welcome to Senyumku CRM', ('username') : findTestData('Website/Dataset_CRMLogin/Dataset_Login').getValue(3, 6)
-        , ('logoLoginPage') : findTestObject('Website/CRM/Login/LoginImageSenyumku')
-        , ('btnLogin') : findTestObject('Website/CRM/Login/LoginBtn'), ('fieldEmailLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailAccount')
-        , ('btnNext') : findTestObject('Website/CRM/Login/LoginBtnNext'), ('fieldPasswordLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailPassword')
-        , ('btnPasswordNext') : findTestObject('Website/CRM/Login/LoginBtnPasswordNext'), ('gridInfoLogin') : findTestObject('Website/CRM/Login/LoginGridInfoLogin')], 
-    FailureHandling.OPTIONAL)
+        , ('verifyFieldEmail') : 'Masukkan email Anda', ('gmailAccount') : findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(1, 6)
+        , ('gmailPassword') : findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(2, 6), ('verifyFieldPassword') : 'Masukkan sandi Anda'
+        , ('verifyDasboardPage') : 'Welcome to Senyumku CRM', ('username') : findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(3, 6)
+        , ('logoLoginPage') : findTestObject('Website/CRM/Login/LoginImageSenyumku'), ('btnLogin') : findTestObject('Website/CRM/Login/LoginBtn')
+        , ('fieldEmailLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailAccount'), ('btnNext') : findTestObject('Website/CRM/Login/LoginBtnNext')
+        , ('fieldPasswordLogin') : findTestObject('Website/CRM/Login/LoginTxtGmailPassword'), ('btnPasswordNext') : findTestObject('Website/CRM/Login/LoginBtnPasswordNext')
+        , ('gridInfoLogin') : findTestObject('Website/CRM/Login/LoginGridInfoLogin')], FailureHandling.STOP_ON_FAILURE)
 
 /* We will direct to forbidden page*/
-WebUI.navigateToUrl(forbidden+"/forbidden")
+WebUI.navigateToUrl(forbidden + '/forbidden')
 
 /* we see the notif alert cannot access */
 WebUI.verifyElementPresent(alertNotAccessText, 10)
@@ -43,5 +42,3 @@ WebUI.waitForElementVisible(btnBack, 10)
 /* We will capture the page*/
 WebUI.takeScreenshot(FailureHandling.OPTIONAL)
 
-/* we click button back */
-WebUI.click(btnBack)

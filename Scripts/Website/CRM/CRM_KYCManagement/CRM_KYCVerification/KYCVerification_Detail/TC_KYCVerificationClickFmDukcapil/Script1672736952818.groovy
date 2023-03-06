@@ -88,7 +88,7 @@ while(flagLoopPage == false) {
 			WebUI.scrollToElement(btnCheckLiveness, 3)
 			
 			/* Verify if the origin customer is from eFishery or Finku or Dagangan */
-			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2)) {
+			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2) && WebUI.verifyElementClickable(btnCheckFMDukcapil)) {
 				
 				WebUI.click(btnCheckFMDukcapil)
 				
@@ -96,7 +96,7 @@ while(flagLoopPage == false) {
 				
 				WebUI.click(btnConfirmFMDukcapil)
 				
-				if(WebUI.waitForElementPresent(snackBarError, 5)) {
+				if(WebUI.waitForElementPresent(snackBarError, 35)) {
 					
 					String msgSnackbarError = WebUI.getText(snackBarError)
 					
@@ -133,7 +133,7 @@ while(flagLoopPage == false) {
 					/* Storing all rows to variable listRows*/
 					listRows = tableKYC.findElements(By.tagName('tr'))
 					
-				} else if(WebUI.waitForElementVisible(txtMsgErrorFMDukcapil, 1)) {
+				} else if(WebUI.waitForElementVisible(txtMsgErrorFMDukcapil, 8)) {
 					
 					String msgErrorFMDukcapil = WebUI.getText(txtMsgErrorFMDukcapil)
 					
