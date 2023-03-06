@@ -304,4 +304,9 @@
       <initValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(2, 4)</initValue>
       <name>passwordKeyclockSec</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'0'</initValue>
+      <name>tempIndexKycVidReq</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

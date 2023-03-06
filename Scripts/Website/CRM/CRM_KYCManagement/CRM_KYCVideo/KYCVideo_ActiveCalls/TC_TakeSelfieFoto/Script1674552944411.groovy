@@ -73,7 +73,7 @@ WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 
 List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 
-List<WebElement> colsKycVideo = rawKycVideo.get(2).findElements(By.tagName('td'))
+List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
 
 if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 

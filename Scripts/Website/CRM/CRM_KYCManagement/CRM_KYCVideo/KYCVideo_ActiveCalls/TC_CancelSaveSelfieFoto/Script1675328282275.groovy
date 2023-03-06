@@ -30,15 +30,13 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	-User has access to KYC video request active calls
-	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
+	User has access to confirmation save pop up
 	
 	Steps:
-	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
+	Click "Batal" button in confirmation pop up
 	
 	Expected Result:
-	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
-	-System display new phone number in "Nomor HP Baru" section
+	System close the confirmation pop up and display KYC video call active calls customer details
  */
 
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
@@ -73,13 +71,13 @@ WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 
 List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 
-List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
+List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
 
 if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 
     colsKycVideo.get(1).findElement(By.xpath('a')).click()
 } else {
-    keylogger.markError('We not found the ')
+    keylogger.markError('We not found the data')
 }
 
 

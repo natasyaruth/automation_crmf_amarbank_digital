@@ -30,19 +30,14 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	-User has access to KYC video request active calls
-	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
+	User has take eKTP photo
 	
 	Steps:
-	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
+	Click "Ambil Foto" button
 	
 	Expected Result:
-	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
-	-System display new phone number in "Nomor HP Baru" section
+	System display updated eKTP photo result with timestamp in "Foto eKTP Detail Sesi KYC" section
  */
-/*csrReqId = WebUI.getText(txtReqIdKycVideo)*/
-//reqIdCsr = csrReqId
-
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
     WebUI.click(menuKYCManagement)
 
@@ -67,26 +62,22 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
     keylogger.markError('Menu KYC management not present')
 }
 
-WebUI.selectOptionByValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), '1', true)
+WebUI.selectOptionByValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), '0', true)
 
-//WebUI.setText(txtReqIdKycVideo, reqIdCsr)
-//WebUI.sendKeys(txtReqIdKycVideo, Keys.chord(Keys.ENTER))
 WebDriver driverKycVideo = DriverFactory.getWebDriver()
 
 WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 
 List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 
-List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
+List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
 
-if (colsKycVideo.get(3).getText().equalsIgnoreCase('Registrasi Baru')) {
-    colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')
+if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 
     colsKycVideo.get(1).findElement(By.xpath('a')).click()
 } else {
     keylogger.markError('We not found the ')
 }
-
 
 reqIdCsr = WebUI.getText(txtReqIdKycVideoActiveCall)
 TestObject kycVideoDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video Request')
@@ -164,20 +155,13 @@ TestObject checkConfProcess = new TestObject().addProperty('text', ConditionType
 
 if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
     WebUI.click(chkNamaKtp)
-
-    WebUI.click(chkKtpNumber)
-
-    WebUI.click(chkBirtDate)
-
-    WebUI.click(chkMotherName)
-
-    WebUI.click(ChkCardDeliveryAddress)
-
-    WebUI.click(ChkKtpImage)
-
-    WebUI.click(ChkKtpFace)
-
-    WebUI.click(ChkPhotoCapture)
+	WebUI.click(chkKtpNumber)
+	WebUI.click(chkBirtDate)
+	WebUI.click(chkMotherName)
+	WebUI.click(chkChangePhoneNumber)
+	WebUI.click(chkEmail)
+	WebUI.click(chkReasonChangePhoneNumber)
+	WebUI.click(chkCaptureFace)
 
     WebUI.scrollToElement(btnSelfie, 5)
 
@@ -210,22 +194,6 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
         if (WebUI.verifyElementVisible(imgKtpPhoto)) {
 			WebUI.takeScreenshot()
 			
-		
-//            keylogger.markPassed('Photo is enable')
-//
-//            WebUI.click(btnSaveKtpPhoto)
-//
-//            TestObject saveConfirmation = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Konfirmasi')
-
-//            if (WebUI.verifyElementPresent(saveConfirmation, 5)) {
-//                WebUI.click(btnSaveKyc)
-//
-//                TestObject saveKtpPhoto = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Foto berhasil disimpan')
-//
-//                WebUI.verifyElementPresent(saveKtpPhoto, 5)
-//            } else {
-//                keylogger.markError('element not present')
-//            }
         } else {
             keylogger.markError('Photo not enable')
         }
@@ -241,67 +209,3 @@ WebUI.click(btnSelfie)
 WebUI.takeScreenshot()
 WebUI.scrollToElement(BtnCancel, 5)
 WebUI.click(BtnCancel)
-
-
-'We want ended the video call'
-//if (WebUI.verifyElementClickable(btnEndVideoCall)) {
-//    WebUI.click(btnEndVideoCall)
-//
-//    WebUI.takeScreenshot()
-//} else {
-//    keylogger.markError('button is disable')
-//}
-//
-//WebUI.scrollToElement(btnKycFinished, 5)
-//
-//if (WebUI.verifyElementVisible(btnKycFinished)) {
-//    WebUI.click(btnKycFinished)
-//
-//    WebUI.delay(5)
-//
-//    'We try to fill the history call'
-//    TestObject historyCallCheck = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Keterangan History Call')
-//
-//    if (WebUI.verifyElementPresent(historyCallCheck, 5)) {
-//        WebUI.click(chkCustNotSame)
-//
-//        WebUI.delay(5)
-//
-//        if (WebUI.verifyElementClickable(btnSentKycVideo)) {
-//            WebUI.click(btnSentKycVideo)
-//
-//            WebUI.delay(10)
-//
-//            TestObject successSendKyc = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video berhasil dikirim')
-//
-//            if (WebUI.verifyElementPresent(successSendKyc, 5)) {
-//                WebUI.takeScreenshot()
-//
-//                WebUI.click(btnCloseKyc)
-//
-//                WebUI.delay(5)
-//
-//                WebUI.click(linkDashboard)
-//
-//                WebUI.waitForPageLoad(5)
-//
-//                if (WebUI.waitForElementNotPresent(pendingRequest, 5)) {
-//                    WebUI.takeScreenshot()
-//
-//                    keylogger.markPassed('Notification dissapear')
-//                } else {
-//                    keylogger.markError('Pending request still visible')
-//                }
-//            } else {
-//                keylogger.markError('Element not present')
-//            }
-//        } else {
-//            keylogger.markError('Button send KYC video not click able')
-//        }
-//    } else {
-//        keylogger.markError('We cannot in check history')
-//    }
-//} else {
-//    keylogger.markError('button not visible')
-//}
-

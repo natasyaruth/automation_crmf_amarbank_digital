@@ -30,15 +30,13 @@ KeywordUtil keylogger = new KeywordUtil()
 
 /*Scenario Test
  * Precondition:
-	-User has access to KYC video request active calls
-	-Active incoming call for "Ganti Nomor Hp Nasabah Senyumku"
+	User has take selfie photo
 	
 	Steps:
-	- Click incoming call "Ganti Nomor Hp Nasabah Senyumku" request id
+	Click "Ambil Foto" button
 	
 	Expected Result:
-	-System display detail customer "Ganti Nomor Hp Nasabah Senyumku" with active KYC video call page
-	-System display new phone number in "Nomor HP Baru" section
+	System display updated selfie photo result with timestamp in "Foto Diri Detail Sesi KYC" section
  */
 
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
@@ -73,7 +71,7 @@ WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
 
 List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 
-List<WebElement> colsKycVideo = rawKycVideo.get(2).findElements(By.tagName('td'))
+List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
 
 if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 

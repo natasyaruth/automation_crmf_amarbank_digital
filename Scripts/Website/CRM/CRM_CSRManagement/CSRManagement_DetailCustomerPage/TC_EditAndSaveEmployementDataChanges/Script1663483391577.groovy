@@ -80,6 +80,8 @@ while(flagLoopPage == false) {
 		
 		/* Verify if the button 'Kembali' is exists, if it's not exists will move to else statement */
 		if(WebUI.waitForElementClickable(btnBack, 5)) {
+			/* Give delay for check the status*/
+			WebUI.delay(5)			
 			
 			/* Insert value status customer by get the text customer status from CSR detail */
 			actStatusCust = WebUI.getText(txtStatusRequest)
@@ -90,6 +92,8 @@ while(flagLoopPage == false) {
 			/* Verify if actual status is 'Dalam Proses' or 'Selesai',
 			 * other than will move to else statement */
 			if(actStatusCust.equals(onProcessStat) || actStatusCust.equals(completedStat)) {
+				/* Check button until available*/
+				WebUI.waitForElementVisible(sectionEmployementData, 5)				
 				
 				/* Click section employment data */
 				WebUI.click(sectionEmployementData)
@@ -122,8 +126,8 @@ while(flagLoopPage == false) {
 							/* Select dropdown based on random index*/
 							WebUI.selectOptionByIndex(listDropDown.get(j), index)
 							
-							/* Give delay 1 second after choose value*/
-							WebUI.delay(1)
+							/* Give delay 3 second after choose value*/
+							WebUI.delay(3)
 							
 							/* Statement if will run if the index is 1, to prevent the behaviour other fields that will
 							 * dissappear after choose index 5,6,7 and 8.*/
@@ -170,6 +174,9 @@ while(flagLoopPage == false) {
 					/* Click button 'Kembali' */
 					WebUI.click(btnBack)
 					
+					/* Adding delay*/
+					WebUI.delay(5)					
+					
 					/* We will wait for 3 second till page finish load*/
 					WebUI.waitForPageLoad(3)
 					
@@ -204,6 +211,9 @@ while(flagLoopPage == false) {
 			
 			/* Refresh the page */
 			WebUI.refresh()
+			
+			/* Adding delay*/
+			WebUI.delay(5)
 			
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
@@ -266,6 +276,9 @@ while(flagLoopPage == false) {
 			
 			/* We will click the next page */
 			WebUI.click(btnNextPage)
+			
+			/* Adding delay*/
+			WebUI.delay(5)
 
 			/* We will wait for 3 second till page finish load*/
 			WebUI.waitForPageLoad(3)
