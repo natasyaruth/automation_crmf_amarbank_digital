@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>MdlLockedActiveCall</name>
+   <tag></tag>
+   <elementGuidId>26ab3f74-40aa-4359-94d8-7ed3e8d24817</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[2]/following::section[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>section.u-ta-center.u-pd-large</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>section</value>
+      <webElementGuid>f20d00fd-6d50-4ca5-aa46-669fae7619ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>u-ta-center u-pd-large</value>
+      <webElementGuid>739090c0-ab3f-470d-9f6d-e80e78a33e87</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Nasabah ini sudah dikunciSilahkan pilih nasabah lain untuk kamu prosesKembali </value>
+      <webElementGuid>e9954534-0340-4804-a609-575b944e959a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;outer-root&quot;)/div[@class=&quot;Modal is-opened&quot;]/div[@class=&quot;Modal-dialog&quot;]/section[@class=&quot;u-ta-center u-pd-large&quot;]</value>
+      <webElementGuid>66f42ad2-fe62-42c2-af3e-66361a546386</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section</value>
+      <webElementGuid>c3156ef7-42e9-4803-a7bd-597f303de204</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[2]/following::section[1]</value>
+      <webElementGuid>7fcdb527-82aa-4942-9eff-b8af4242d53f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='KYC Video Request'])[3]/following::section[1]</value>
+      <webElementGuid>3178e16a-801e-43e2-8496-b1ff34ab6e94</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/section</value>
+      <webElementGuid>d1357caa-f977-4115-8ee6-04fb366f2125</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//section[(text() = 'Nasabah ini sudah dikunciSilahkan pilih nasabah lain untuk kamu prosesKembali ' or . = 'Nasabah ini sudah dikunciSilahkan pilih nasabah lain untuk kamu prosesKembali ')]</value>
+      <webElementGuid>61b512e7-6d61-44c7-ae2f-b30c8639cdb1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
