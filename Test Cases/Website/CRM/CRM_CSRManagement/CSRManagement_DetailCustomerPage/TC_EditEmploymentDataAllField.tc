@@ -503,6 +503,12 @@
       <value></value>
       <variableId>68f1e3ac-d6f9-4592-9cca-debeec9dc9ce</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f4798754-92f3-4785-b06c-cbaafc730c3f</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -917,7 +923,7 @@
       <name>LabelSources</name>
    </variable>
    <variable>
-      <defaultValue>'qa.testing@amarbank.co.id'</defaultValue>
+      <defaultValue>'qa.testing+99@amarbank.co.id'</defaultValue>
       <description></description>
       <id>935e172b-0552-4d58-a8f8-fecef22d3731</id>
       <masked>false</masked>
@@ -1083,5 +1089,12 @@
       <id>68f1e3ac-d6f9-4592-9cca-debeec9dc9ce</id>
       <masked>false</masked>
       <name>LabelAccountPurpose</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/BtnBack')</defaultValue>
+      <description></description>
+      <id>f4798754-92f3-4785-b06c-cbaafc730c3f</id>
+      <masked>false</masked>
+      <name>btnBack</name>
    </variable>
 </TestCaseEntity>
