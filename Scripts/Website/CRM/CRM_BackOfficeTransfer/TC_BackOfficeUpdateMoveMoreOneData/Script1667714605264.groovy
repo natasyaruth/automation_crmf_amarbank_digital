@@ -70,13 +70,13 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 			} else {keylogger.markError('Text open not found')}
 		}
 		WebUI.click(btnNextPage)
-		WebUI.selectOptionByLabel(drpDwnStatus, "Pending", false)
+		WebUI.selectOptionByLabel(drpDwnStatus, "On Process", false)
 		WebUI.click(btnUpdate)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb
 	println(numberQueue)
-	WebUI.setText(fieldSearch, 'Pending')
+	WebUI.setText(fieldSearch, 'On Process')
 	WebUI.selectOptionByLabel(drpDwnShowRow, "50", false)
 	'We want to check update data'
 	boolean flag = false
@@ -88,7 +88,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 			rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
 			List<WebElement> colsBackOffice = rowsBackOffice.get(i).findElements(By.tagName('td'))
 			if (colsBackOffice.get(1).getText().equalsIgnoreCase(numberQueue)) {
-				colsBackOffice.get(12).getText().equalsIgnoreCase("Pending")
+				colsBackOffice.get(12).getText().equalsIgnoreCase("On Process")
 				break dataCheck
 				keylogger.markPassed("We already changes status")
 			} else {
