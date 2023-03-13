@@ -148,6 +148,10 @@ while (loopPageCsr == false) {
 							
 							WebUI.click(linkDataChangeLog)
 							
+							WebUI.waitForPageLoad(5)
+							
+							WebUI.delay(3)
+							
 						} else {keylogger.markError('We are not in customer detail')}
 						
 						WebDriver driverTblChangeLog = DriverFactory.getWebDriver()
@@ -217,6 +221,10 @@ while (loopPageCsr == false) {
 							
 							WebUI.click(linkDataChangeLog)
 							
+							WebUI.waitForPageLoad(5)
+							
+							WebUI.delay(3)
+							
 							TestObject checkWording = new TestObject().addProperty('text',ConditionType.CONTAINS,'Security Question')
 							
 							if (WebUI.waitForElementVisible(checkWording, 5)) {
@@ -280,6 +288,10 @@ while (loopPageCsr == false) {
 									WebUI.scrollToElement(linkDataChangeLog, 5)
 									
 									WebUI.click(linkDataChangeLog)
+									
+									WebUI.waitForPageLoad(5)
+									
+									WebUI.delay(3)
 									
 								} else {keylogger.markError('We are not in customer detail')}
 								
