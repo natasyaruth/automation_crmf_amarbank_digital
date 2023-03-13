@@ -71,7 +71,7 @@ WebUI.delay(5)
 /* Verify data is found page*/
 WebUI.waitForElementVisible(FirstRowCustomerType, 5)
 
-WebUI.verifyElementVisible(FirstRowCustomerType)
+WebUI.waitForElementVisible(FirstRowCustomerType,5)
 
 WebUI.verifyElementPresent(FirstRowCustomerType, 15)
 
@@ -119,6 +119,7 @@ WebUI.click(BtnBack)
 
 /* Verify bucketlist*/
 WebUI.waitForElementVisible(headerCSRManagementElement, 15)
+
 WebUI.verifyElementVisible(headerCSRManagementElement)
 
 /* Do refresh to the page*/

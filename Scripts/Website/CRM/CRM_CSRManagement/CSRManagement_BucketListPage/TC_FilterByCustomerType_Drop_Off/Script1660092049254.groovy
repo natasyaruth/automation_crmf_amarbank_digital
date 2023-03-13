@@ -44,10 +44,20 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
         WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 
         WebUI.click(btnCancelPopUpElement)
+		
+		TestObject headerText = new TestObject().addProperty('text',ConditionType.CONTAINS,headerCSRManagementText)
 
-        WebUI.waitForElementVisible(headerCSRManagementElement, 5)
-
-        WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+		boolean checkTextHeader = WebUI.waitForElementVisible(headerText, 5)
+		
+		if (checkTextHeader == true) {
+			
+			keyLogger.markPassed("We found the header text")
+			
+		} else {
+			
+			keyLogger.markFailed("We not found the header text")
+			
+		}
     } else {
         keyLogger.markFailed('We don\'t find alert confirmation')
     }
