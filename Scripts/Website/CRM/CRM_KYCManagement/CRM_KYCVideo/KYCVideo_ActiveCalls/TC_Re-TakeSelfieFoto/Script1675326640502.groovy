@@ -44,47 +44,140 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 
     if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
         WebUI.click(menuKycVideo)
+		
+		TestObject checkActiveCalls = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+		
+		boolean notifActiveCalls = WebUI.waitForElementVisible(checkActiveCalls, 5)
+		
+		if (notifActiveCalls == true) {
+			
+			keylogger.logInfo("We process the active calls")
+			
+			WebUI.click(btnLanjutActiveCalls)
+			
+			TestObject kycVidReqText = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+			
+			boolean inKycVidReq = WebUI.waitForElementVisible(kycVidReqText, 5)
+			
+			if (inKycVidReq == true) {
+				
+				WebUI.click(btnBatalKycVid)
+				
+			} else {
+				
+				keylogger.markFailed("Button Batal KYC Not Available")
+				
+			}
+			
+		} else {
+			
+			keylogger.logInfo("We can continue the process")
+			
+		}
 
-        if (WebUI.verifyElementPresent(idleCallsTab, 5)) {
+        if (WebUI.waitForElementVisible(idleCallsTab, 5)) {
+			
             WebUI.click(idleCallsTab)
 
-            if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
+            if (WebUI.waitForElementVisible(alertConfirmation, 5)) {
+				
                 WebUI.click(btnAbort)
+				
             } else {
+				
                 keylogger.logInfo('We not found the element')
+				
             }
+			
         } else {
+			
             keylogger.markError('We not found tab Idle Calls')
+			
         }
+		
     } else {
+		
         keylogger.markError('Menu KYC video not present')
+		
     }
+	
 } else {
+	
     keylogger.markError('Menu KYC management not present')
+	
 }
 
 WebUI.selectOptionByValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), '0', true)
 
-WebDriver driverKycVideo = DriverFactory.getWebDriver()
+WebUI.waitForPageLoad(5)
 
-WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+WebUI.delay(3)
 
-List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+checkDataLoop = false
 
-List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
+loopData:
 
-if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
-
-    colsKycVideo.get(1).findElement(By.xpath('a')).click()
-} else {
-    keylogger.markError('We not found the ')
+while (checkDataLoop == false) {
+	
+	WebDriver driverKycVideo = DriverFactory.getWebDriver()
+	
+	WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+	
+	List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+	
+	
+	for (i = 0;i < rawKycVideo.size();i++) {
+		
+		List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
+		
+		if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
+			
+				colsKycVideo.get(1).findElement(By.xpath('a')).click()
+				
+				WebUI.waitForPageLoad(5)
+				
+				WebUI.delay(3)
+				
+				break loopData
+				
+			} else {
+				
+				keylogger.logInfo('We not found the Data please check again')
+				
+				boolean totalData = WebUI.verifyEqual(rawKycVideo.size(), 9)
+				
+				if (totalData == true) {
+					
+					keylogger.logInfo("We check anoter page")
+					
+					WebUI.click(btnNextPageKycVid)
+					
+					WebUI.waitForPageLoad(5)
+					
+					tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+					
+					rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					
+				} else {
+					
+					keylogger.logInfo(" We continue the process")
+					
+					tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+					
+					rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					
+				}
+		}
+	}
+	
 }
 
-
 reqIdCsr = WebUI.getText(txtReqIdKycVideoActiveCall)
+
 TestObject kycVideoDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video Request')
 
-if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
+if (WebUI.waitForElementVisible(kycVideoDetail, 5)) {
+	
     String currentPage = WebUI.getUrl()
 
     int currentTab = WebUI.getWindowIndex()
@@ -101,11 +194,15 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
     WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
             8))
+	
+	WebUI.waitForPageLoad(5)
 
     TestObject videoCallValidation = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Verifikasi datamu lewat video call!')
 
-    if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
+    if (WebUI.waitForElementVisible(videoCallValidation, 5)) {
+		
         if (WebUI.verifyElementClickable(btnCallSenyumku)) {
+			
             WebUI.delay(5)
 
             WebUI.click(btnCallSenyumku)
@@ -113,6 +210,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
             TestObject txtVerifConnect = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Kamu akan terhubung dengan tim Senyumku')
 
             if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+				
                 WebUI.switchToWindowIndex(0)
 
                 TestObject backToKycVideo = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video Request')
@@ -123,9 +221,13 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
                 'We want to check notification'
                 if (WebUI.waitForElementVisible(pendingRequest, 5)) {
+					
                     WebUI.click(pendingRequest)
+					
                 } else {
+					
                     keylogger.markError('Notification didnt shown')
+					
                 }
                 
                 WebUI.delay(5)
@@ -139,17 +241,29 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
                 WebUI.scrollToElement(btnSelfie, 5)
 
                 WebUI.delay(10)
+				
             } else {
+				
                 keylogger.logInfo('Element not present')
+				
             }
+			
         } else {
+			
             keylogger.markError('button cannot click able')
+			
         }
+		
     } else {
+		
         keylogger.markError('We are not in verification data')
+		
     }
+	
 } else {
+	
     keylogger.markError('We aren\'t in KYC video detail')
+	
 }
 
 'We want to confirmation process'

@@ -521,6 +521,24 @@
       <value></value>
       <variableId>3f8bcd48-7e60-47aa-9c3c-3e7284a419c1</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>61fd9a28-cf4a-4e92-9a6d-9c3a3c1efad0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ff1d6b47-04af-4ad4-a640-b0c2c61144ac</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f0e33383-34f6-40b3-9bb0-346717b895a9</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -1122,5 +1140,26 @@
       <id>3f8bcd48-7e60-47aa-9c3c-3e7284a419c1</id>
       <masked>false</masked>
       <name>BtnCancel</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnNextPage')</defaultValue>
+      <description></description>
+      <id>61fd9a28-cf4a-4e92-9a6d-9c3a3c1efad0</id>
+      <masked>false</masked>
+      <name>btnNextPageKycVid</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnResume')</defaultValue>
+      <description></description>
+      <id>ff1d6b47-04af-4ad4-a640-b0c2c61144ac</id>
+      <masked>false</masked>
+      <name>btnLanjutActiveCalls</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel')</defaultValue>
+      <description></description>
+      <id>f0e33383-34f6-40b3-9bb0-346717b895a9</id>
+      <masked>false</masked>
+      <name>btnBatalKycVid</name>
    </variable>
 </TestCaseEntity>

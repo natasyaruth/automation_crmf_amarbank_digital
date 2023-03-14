@@ -41,47 +41,143 @@ KeywordUtil keylogger = new KeywordUtil()
 	-System send the selfie photo result to database, then "Foto berhasil disimpan" toast appear
  */
 
-if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
+if (WebUI.waitForElementVisible(menuKYCManagement, 5)) {
+	
     WebUI.click(menuKYCManagement)
 
-    if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
+    if (WebUI.waitForElementVisible(menuKycVideo, 5)) {
+		
         WebUI.click(menuKycVideo)
-		WebUI.waitForPageLoad(5)
-		WebUI.delay(3)
-        if (WebUI.verifyElementPresent(idleCallsTab, 5)) {
+		
+		TestObject checkActiveCalls = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+		
+		boolean notifActiveCalls = WebUI.waitForElementVisible(checkActiveCalls, 5)
+		
+		if (notifActiveCalls == true) {
+			
+			keylogger.logInfo("We process the active calls")
+			
+			WebUI.click(btnLanjutActiveCalls)
+			
+			TestObject kycVidReqText = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+			
+			boolean inKycVidReq = WebUI.waitForElementVisible(kycVidReqText, 5)
+			
+			if (inKycVidReq == true) {
+				
+				WebUI.click(btnBatalKycVid)
+				
+			} else {
+				
+				keylogger.markFailed("Button Batal KYC Not Available")
+				
+			}
+			
+		} else {
+			
+			keylogger.logInfo("We can continue the process")
+			
+		}
+		
+        if (WebUI.waitForElementVisible(idleCallsTab, 5)) {
+			
             WebUI.click(idleCallsTab)
+			
 			WebUI.waitForPageLoad(5)
+			
 			WebUI.delay(3)
-            if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
+			
+            if (WebUI.waitForElementVisible(alertConfirmation, 5)) {
+				
                 WebUI.click(btnAbort)
+				
             } else {
+				
                 keylogger.logInfo('We not found the element')
+				
             }
+			
         } else {
+			
             keylogger.markError('We not found tab Idle Calls')
+			
         }
+		
     } else {
+		
         keylogger.markError('Menu KYC video not present')
+		
     }
+	
 } else {
+	
     keylogger.markError('Menu KYC management not present')
+	
 }
 
 WebUI.selectOptionByValue(findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/DrpCustomerType'), '0', true)
 
-WebDriver driverKycVideo = DriverFactory.getWebDriver()
+WebUI.waitForPageLoad(5)
 
-WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+WebUI.delay(3)
 
-List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+checkDataLoop = false
 
-List<WebElement> colsKycVideo = rawKycVideo.get(GlobalVariable.tempIndexKycVidReq).findElements(By.tagName('td'))
+loopData:
 
-if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
-
-    colsKycVideo.get(1).findElement(By.xpath('a')).click()
-} else {
-    keylogger.markError('We not found the ')
+while (checkDataLoop == false) {
+	
+	WebDriver driverKycVideo = DriverFactory.getWebDriver()
+	
+	WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+	
+	List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+	
+	
+	for (i = 0;i < rawKycVideo.size();i++) {
+		
+		List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
+		
+		if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
+			
+				colsKycVideo.get(1).findElement(By.xpath('a')).click()
+				
+				WebUI.waitForPageLoad(5)
+				
+				WebUI.delay(3)
+				
+				break loopData
+				
+			} else {
+				
+				keylogger.logInfo('We not found the Data please check again')
+				
+				boolean totalData = WebUI.verifyEqual(rawKycVideo.size(), 9)
+				
+				if (totalData == true) {
+					
+					keylogger.logInfo("We check anoter page")
+					
+					WebUI.click(btnNextPageKycVid)
+					
+					WebUI.waitForPageLoad(5)
+					
+					tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+					
+					rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					
+				} else {
+					
+					keylogger.logInfo(" We continue the process")
+					
+					tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+					
+					rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					
+				}
+		}
+	}
+	
 }
 
 

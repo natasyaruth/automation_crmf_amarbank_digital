@@ -209,6 +209,18 @@
       <value></value>
       <variableId>e5bbea41-a246-4a3d-bade-5296279f31e6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4aa4fb2e-6a3a-4270-8213-fbe5e69f2321</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b38c57a0-28a6-448a-811a-6366c17810c3</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -446,5 +458,19 @@
       <id>e5bbea41-a246-4a3d-bade-5296279f31e6</id>
       <masked>false</masked>
       <name>chkReasonChangePhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnResume')</defaultValue>
+      <description></description>
+      <id>4aa4fb2e-6a3a-4270-8213-fbe5e69f2321</id>
+      <masked>false</masked>
+      <name>btnLanjutActiveCalls</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel')</defaultValue>
+      <description></description>
+      <id>b38c57a0-28a6-448a-811a-6366c17810c3</id>
+      <masked>false</masked>
+      <name>btnBatalKycVid</name>
    </variable>
 </TestCaseEntity>

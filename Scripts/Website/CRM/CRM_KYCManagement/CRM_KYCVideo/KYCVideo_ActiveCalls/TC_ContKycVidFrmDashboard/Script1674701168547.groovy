@@ -46,6 +46,21 @@ KeywordUtil keylogger = new KeywordUtil()
 WebUI.click(linkMenuKycManagement)
 if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 	WebUI.click(linkMenuKycVideoReq)
+	TestObject checkActiveCalls = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+	boolean notifActiveCalls = WebUI.waitForElementVisible(checkActiveCalls, 5)
+	if (notifActiveCalls == true) {
+		keylogger.logInfo("We process the active calls")
+		WebUI.click(btnLanjutActiveCalls)
+		TestObject kycVidReqText = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
+		boolean inKycVidReq = WebUI.waitForElementVisible(kycVidReqText, 5)
+		if (inKycVidReq == true) {
+			WebUI.click(btnBatalKycVid)
+		} else {
+			keylogger.markFailed("Button Batal KYC Not Available")
+		}
+	} else {
+		keylogger.logInfo("We can continue the process")
+	}
 	'I want handle if any pending items in active calls'
 	if (WebUI.waitForElementVisible(alertText, 5)) {
 		WebUI.click(btnResume)
