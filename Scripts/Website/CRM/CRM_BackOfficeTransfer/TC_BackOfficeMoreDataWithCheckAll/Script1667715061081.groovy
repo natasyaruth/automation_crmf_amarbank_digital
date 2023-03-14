@@ -73,6 +73,8 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 		WebUI.click(btnNextPage)
 		WebUI.selectOptionByLabel(drpDwnStatus, "On Process", false)
 		WebUI.click(btnUpdate)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb
