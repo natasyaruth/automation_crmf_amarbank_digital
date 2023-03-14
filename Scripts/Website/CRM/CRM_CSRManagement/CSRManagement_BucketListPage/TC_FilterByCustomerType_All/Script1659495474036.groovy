@@ -38,6 +38,7 @@ if (checkMenuCsr == true) {
 /*'We want to check blocked notification and check for text blocked 
  * if alert confirmation pop up enable is true'*/
 if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
+	
     boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 
     if (checkAlertProcess == true) {
@@ -46,10 +47,26 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
         WebUI.click(btnCancelPopUpElement)
 
         WebUI.waitForElementVisible(headerCSRManagementElement, 5)
+		
+		TestObject headerText = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
+		
+		boolean checkHeader = WebUI.waitForElementVisible(headerText, 5)
+		
+		if (checkHeader == true) {
+			
+			keyLogger.markPassed("We found the header text")
+			
+		} else {
+			
+			keyLogger.markFailed("Header text not found")
+			
+		}
 
         WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
     } else {
+		
         keyLogger.markFailed('We don\'t find alert confirmation')
+		
     }
     
     WebUI.waitForElementVisible(headerCSRManagementElement, 5)
