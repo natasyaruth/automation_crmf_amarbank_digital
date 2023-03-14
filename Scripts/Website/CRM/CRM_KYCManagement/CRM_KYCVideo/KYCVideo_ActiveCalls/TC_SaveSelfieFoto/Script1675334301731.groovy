@@ -136,7 +136,7 @@ while (checkDataLoop == false) {
 	
 	for (i = 0;i < rawKycVideo.size();i++) {
 		
-		List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
+		List<WebElement> colsKycVideo = rawKycVideo.get(i).findElements(By.tagName('td'))
 		
 		if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP') && colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 			
@@ -152,7 +152,7 @@ while (checkDataLoop == false) {
 				
 				keylogger.logInfo('We not found the Data please check again')
 				
-				boolean totalData = WebUI.verifyEqual(rawKycVideo.size(), 9)
+				boolean totalData = WebUI.verifyEqual(i, 9, FailureHandling.OPTIONAL)
 				
 				if (totalData == true) {
 					
@@ -169,10 +169,6 @@ while (checkDataLoop == false) {
 				} else {
 					
 					keylogger.logInfo(" We continue the process")
-					
-					tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
-					
-					rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 					
 				}
 		}
