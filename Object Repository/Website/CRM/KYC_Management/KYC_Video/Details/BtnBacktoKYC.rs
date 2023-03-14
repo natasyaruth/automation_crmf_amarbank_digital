@@ -1,22 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>BtnBacktoKYC</name>
+   <name>BtnBackToKYC</name>
    <tag></tag>
-   <elementGuidId>51400651-07b5-456d-9c55-069880dfcf6e</elementGuidId>
+   <elementGuidId>7968fb1a-07ad-4180-a76d-b8dee2cfe499</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@id = 'BtnBacktoKYC']</value>
+         <key>XPATH</key>
+         <value>//button[@id='BtnBackToKYC']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#BtnBackToKYC</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
-   <useRalativeImagePath>false</useRalativeImagePath>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>10ae8548-4e2d-4325-a50c-5024ecba16c3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>Button Button--fullWidth u-MarginTop</value>
+      <webElementGuid>919e88c2-a0e2-4f07-99aa-3af82f15e323</webElementGuid>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>BtnBacktoKYC</value>
+      <value>BtnBackToKYC</value>
+      <webElementGuid>57e4b9ab-7022-40da-a62a-00af7ef03196</webElementGuid>
    </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>42af6b59-b7d2-4876-b1dd-2d8ada82a6ef</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Tutup </value>
+      <webElementGuid>5ef62915-a582-4002-b110-ab2e204d9b35</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;BtnBackToKYC&quot;)</value>
+      <webElementGuid>72741dae-d576-4311-8093-fbe9edb541eb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//button[@id='BtnBackToKYC']</value>
+      <webElementGuid>f0886616-22c8-41f5-a1f6-3db3c84099b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='outer-root']/div/div/section/form/button[2]</value>
+      <webElementGuid>99a5698e-2068-496b-9ad3-f8f725e261fd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kirim KYC Video'])[1]/following::button[1]</value>
+      <webElementGuid>c28f9d0e-876a-4be5-a9d1-5933629b4175</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Lainnya'])[1]/following::button[2]</value>
+      <webElementGuid>d662723c-f35d-4f99-9fe1-9dff107419c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::button[1]</value>
+      <webElementGuid>00dfec45-0bb3-401c-b5fc-e7d227f44404</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::button[1]</value>
+      <webElementGuid>b1b65cc6-af2e-4737-83c8-731314a46a74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Tutup']/parent::*</value>
+      <webElementGuid>fe0c2c69-d7f8-46ad-afd9-1bb55438173a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//form/button[2]</value>
+      <webElementGuid>f7614428-3dae-4ed5-9f32-0bd3f3a0a3b6</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@id = 'BtnBackToKYC' and @type = 'button' and (text() = 'Tutup ' or . = 'Tutup ')]</value>
+      <webElementGuid>76d6a48b-524d-4aae-a1c2-7fd9cd2e3c22</webElementGuid>
+   </webElementXpaths>
 </WebElementEntity>
