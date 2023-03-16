@@ -9,6 +9,18 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
+      <variableId>c3a85a70-bfea-44e3-8658-8566f8a2c2aa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2f897fbc-fbba-45c7-bfe6-fd3a4dc4918f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
       <variableId>124f2141-78ff-4acf-b7b9-365ec5ffbd86</variableId>
    </variableLinks>
    <variableLinks>
@@ -33,12 +45,6 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>c3a85a70-bfea-44e3-8658-8566f8a2c2aa</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
       <variableId>0a96e1d9-99f8-4464-813b-a645eb4d7562</variableId>
    </variableLinks>
    <variableLinks>
@@ -51,8 +57,34 @@
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>2f897fbc-fbba-45c7-bfe6-fd3a4dc4918f</variableId>
+      <variableId>e745f4f6-9f73-47cb-8fbc-e333ca296a33</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8c65f292-ca64-4f98-be0f-a5e20ee9ee79</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>64d72f12-b4b5-4af4-96a4-8e1996e0b236</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Konfirmasi'</defaultValue>
+      <description></description>
+      <id>c3a85a70-bfea-44e3-8658-8566f8a2c2aa</id>
+      <masked>false</masked>
+      <name>alertConfirmationPopUpText</name>
+   </variable>
+   <variable>
+      <defaultValue>'KYC Video Request'</defaultValue>
+      <description></description>
+      <id>2f897fbc-fbba-45c7-bfe6-fd3a4dc4918f</id>
+      <masked>false</masked>
+      <name>headerKYCVideoRequestText</name>
+   </variable>
    <variable>
       <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Management/KYCManagementLink')</defaultValue>
       <description></description>
@@ -82,13 +114,6 @@
       <name>alertConfirmationPopUpElement</name>
    </variable>
    <variable>
-      <defaultValue>'Konfirmasi'</defaultValue>
-      <description></description>
-      <id>c3a85a70-bfea-44e3-8658-8566f8a2c2aa</id>
-      <masked>false</masked>
-      <name>alertConfirmationPopUpText</name>
-   </variable>
-   <variable>
       <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnAbortConfirmation')</defaultValue>
       <description></description>
       <id>0a96e1d9-99f8-4464-813b-a645eb4d7562</id>
@@ -103,10 +128,24 @@
       <name>headerKYCVideoRequestElement</name>
    </variable>
    <variable>
-      <defaultValue>'KYC Video Request'</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel')</defaultValue>
       <description></description>
-      <id>2f897fbc-fbba-45c7-bfe6-fd3a4dc4918f</id>
+      <id>e745f4f6-9f73-47cb-8fbc-e333ca296a33</id>
       <masked>false</masked>
-      <name>headerKYCVideoRequestText</name>
+      <name>btnCancelKycVideoActiveCalls</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/KYCVideoBucketListIdleCallsTab')</defaultValue>
+      <description></description>
+      <id>8c65f292-ca64-4f98-be0f-a5e20ee9ee79</id>
+      <masked>false</masked>
+      <name>tabIddleCalls</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnResume')</defaultValue>
+      <description></description>
+      <id>64d72f12-b4b5-4af4-96a4-8e1996e0b236</id>
+      <masked>false</masked>
+      <name>btnResumeKycVideo</name>
    </variable>
 </TestCaseEntity>
