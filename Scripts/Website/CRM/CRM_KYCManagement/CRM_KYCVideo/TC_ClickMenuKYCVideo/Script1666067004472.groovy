@@ -33,17 +33,33 @@ if (checkMenuKYC == true) {
 /*'We want to check blocked notification and check for text blocked
  * if alert confirmation pop up enable is true'*/
 if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
-	boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
+	
+	boolean checkAlertProcess = WebUI.waitForElementPresent(btnCancelPopUpElement, 5)
+	
 	if (checkAlertProcess == true) {
+		
 		WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 		WebUI.click(btnCancelPopUpElement)
-		WebUI.waitForElementVisible(headerKYCVideoRequestElement, 5)
+		WebUI.waitForElementVisible(headerKYCVideoRequestElement, 10)
 		WebUI.verifyElementText(headerKYCVideoRequestElement, headerKYCVideoRequestText)
+		
 	} else {
-		keyLogger.markFailed("We don't find alert confirmation")
+		
+		WebUI.click(btnResumeKycVideo)
+		WebUI.waitForElementVisible(headerKYCVideoRequestElement, 10)
+		WebUI.verifyElementText(headerKYCVideoRequestElement, headerKYCVideoRequestText)
+		WebUI.scrollToElement(btnCancelKycVideoActiveCalls, 3)
+		WebUI.click(btnCancelKycVideoActiveCalls)
+		WebUI.waitForPageLoad(5)
+		WebUI.waitForElementVisible(headerKYCVideoRequestElement, 10)
+		WebUI.verifyElementText(headerKYCVideoRequestElement, headerKYCVideoRequestText)
+		WebUI.click(tabIddleCalls)
+		WebUI.waitForPageLoad(5)
+		
 	}
-	WebUI.waitForElementVisible(headerKYCVideoRequestElement, 5)
-	WebUI.verifyElementText(headerKYCVideoRequestElement, headerKYCVideoRequestText)
+	
 } else {
+	
 	WebUI.verifyElementText(headerKYCVideoRequestElement, headerKYCVideoRequestText)
+	
 }

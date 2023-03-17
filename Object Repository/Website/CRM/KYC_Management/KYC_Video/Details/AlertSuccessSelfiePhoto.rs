@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>AlertSuccessSelfiePhoto</name>
+   <tag></tag>
+   <elementGuidId>1b84f980-d06d-4cc5-bac5-6242b75a5801</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>AlertSuccessSelfiePhoto</value>
+      <webElementGuid>32b9f533-a938-4e5f-a3b6-c1611cc3db5d</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>
