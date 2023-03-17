@@ -269,6 +269,18 @@
       <value></value>
       <variableId>dae319af-9955-4ba5-9f42-571b3b01f6bf</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>87223700-b9a0-4e2f-a7fd-1e128607ec37</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8c015e90-1112-4c80-a0f7-212319590b5f</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -576,5 +588,19 @@
       <id>dae319af-9955-4ba5-9f42-571b3b01f6bf</id>
       <masked>false</masked>
       <name>pendingRequest</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/BlockConfirmation/BtnResume')</defaultValue>
+      <description></description>
+      <id>87223700-b9a0-4e2f-a7fd-1e128607ec37</id>
+      <masked>false</masked>
+      <name>btnResumActive</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/BtnCancel')</defaultValue>
+      <description></description>
+      <id>8c015e90-1112-4c80-a0f7-212319590b5f</id>
+      <masked>false</masked>
+      <name>btnCancel</name>
    </variable>
 </TestCaseEntity>

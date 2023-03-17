@@ -6,12 +6,11 @@
    <elementGuidId>c06cd900-793b-4192-a806-291b136192e9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='GROWTHSTG ARIBZ'])[1]/following::td[1]</value>
+         <key>CSS</key>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery Status'])[4]/following::td[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +21,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>td</value>
-      <webElementGuid>2c894631-7b83-4a4a-b8e4-f4d7b892a5d6</webElementGuid>
+      <webElementGuid>dcc4298d-26dd-4072-9e7e-d0cb1649547a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +29,7 @@
       <name>class</name>
       <type>Main</type>
       <value>Table-cell</value>
-      <webElementGuid>7a6a9fea-1b2b-4d46-9834-3b72d164495d</webElementGuid>
+      <webElementGuid>0e715ba6-136d-4c2c-9d56-2cf6dd03dcc6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +37,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Permintaan Kartu Baru</value>
-      <webElementGuid>8a3dd66b-9726-4696-9eff-25c0f1bfdcbb</webElementGuid>
+      <webElementGuid>b65f1559-a298-49a4-a42f-5641fb94658d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +45,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;block-content&quot;]/div[@class=&quot;u-Overflow-auto&quot;]/table[@class=&quot;Table&quot;]/tbody[1]/tr[@class=&quot;Table-row&quot;]/td[@class=&quot;Table-cell&quot;]</value>
-      <webElementGuid>6243f310-6c13-4763-88f8-2faf579124b9</webElementGuid>
+      <webElementGuid>8ce1f9da-0bf5-4ba9-a4f2-795fec6a55c1</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +53,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/section/div/section/div/table/tbody/tr/td[5]</value>
-      <webElementGuid>245e4660-85ec-405c-9a05-e4582f8afecc</webElementGuid>
+      <webElementGuid>937c9cb8-da2e-4ed5-802f-846aecc06e88</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +61,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='GROWTHSTG ARIBZ'])[1]/following::td[1]</value>
-      <webElementGuid>192d0f6e-e6b5-4bb8-93c4-b5c7c59dd96b</webElementGuid>
+      <webElementGuid>b8330172-17d8-430c-b491-c8a7562794b7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +69,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Delivery Status'])[4]/following::td[5]</value>
-      <webElementGuid>c3e89c71-1b6b-4e13-8a15-f746dfe41987</webElementGuid>
+      <webElementGuid>c242b0cc-459f-4b83-8b0e-1cd4c7189bc6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +77,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='External'])[1]/preceding::td[2]</value>
-      <webElementGuid>bf95079c-8207-4005-b0fe-69470100e70a</webElementGuid>
+      <webElementGuid>8358d31b-da58-4927-8d48-b2fb3e02839b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +85,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Terkirim'])[2]/preceding::td[3]</value>
-      <webElementGuid>88ac066d-1f0c-463a-aefb-015dddb3cf3b</webElementGuid>
+      <webElementGuid>2283b667-6119-457f-b377-cc750daab902</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +93,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td[5]</value>
-      <webElementGuid>7b52cf53-e703-4bf5-85b6-374df010862c</webElementGuid>
+      <webElementGuid>faab51d0-88bc-4c16-ab75-5888a6d5560a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,6 +101,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//td[(text() = 'Permintaan Kartu Baru' or . = 'Permintaan Kartu Baru')]</value>
-      <webElementGuid>590f1f73-3cfa-4fa0-a6ea-bf2c04380031</webElementGuid>
+      <webElementGuid>aea678a8-c5f4-413b-b83d-a918ed111773</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

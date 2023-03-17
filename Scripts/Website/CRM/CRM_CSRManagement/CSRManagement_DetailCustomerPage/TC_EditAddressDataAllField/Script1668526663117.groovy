@@ -41,6 +41,8 @@ boolean checkMenuCsr = WebUI.verifyElementVisible(menuCSRManagement, FailureHand
 
 if (checkMenuCsr == true) {
     WebUI.click(menuCSRManagement)
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {
     keyLogger.markFailed('Something happen with menu CSR Management')
 }
@@ -48,19 +50,21 @@ if (checkMenuCsr == true) {
 WebUI.delay(5)
 /*'We want to check blocked notification and check for text blocked
  * if alert confirmation pop up enable is true'*/
-if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
     boolean checkAlertProcess = WebUI.verifyElementVisible(alertConfirmationPopUpElement)
 
     if (checkAlertProcess == true) {
         WebUI.verifyElementText(alertConfirmationPopUpElement, alertConfirmationPopUpText)
 
         WebUI.click(btnCancelPopUpElement)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 
-        if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
+        if (WebUI.waitForElementVisible(headerCSRManagementElement, 5)) {
             WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
         } else {
             (txtCsrManagement == false).call({ 
-                    keyLogger.loginfo('We not find the element')
+                    keyLogger.logInfo('We not find the element')
                 })
         }
     } else {
@@ -77,13 +81,13 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 /* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
 
-    boolean filterCustType = WebUI.verifyElementVisible(drpDwnCustType)
+    boolean filterCustType = WebUI.waitForElementVisible(drpDwnCustType,5)
 
     if (filterCustType == true) {
 
         WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 
-        if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
+        if (WebUI.waitForElementVisible(drpDwnCustType,5)) {
             WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
         } else {
             keyLogger.markFailed('We not find the drop down by cust type')
@@ -98,139 +102,148 @@ for (int i = 0; i < customerType.size(); i++) {
     /*We want to check and input field reference name in personal Data
  *We want to Check and click button save*/
     if (WebUI.waitForElementVisible(elementAddressSentCard, 5)) {
-        boolean dataAddress = WebUI.verifyElementText(elementAddressSentCard, 'Alamat Pengiriman Kartu')
-
-        if (dataAddress == true) {
-            WebUI.click(elementAddressSentCard)
-
-            int optionListLength = 1
-
-            Random rand = new Random()
-
-            String index = rand.nextInt(optionListLength + 1)
-
-            if (WebUI.waitForElementVisible(btnEditAddressDelivery, 5, FailureHandling.OPTIONAL)) {
-                if (WebUI.verifyElementClickable(btnEditAddressDelivery, FailureHandling.OPTIONAL)) {
-                    WebUI.click(btnEditAddressDelivery)
+		delivCheck = false
+		loopData:
+		while (delivCheck == false) {
+			boolean dataAddress = WebUI.verifyElementText(elementAddressSentCard, 'Alamat Pengiriman Kartu')
+			
+					if (dataAddress == true) {
+						WebUI.click(elementAddressSentCard)
+						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
+			
+						int optionListLength = 2
+			
+						Random rand = new Random()
+			
+						String index = rand.nextInt(optionListLength + 1)
+						
+						if (WebUI.verifyNotEqual(index, 0, FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementVisible(btnEditAddressDelivery, 5)) {
+								if (WebUI.waitForElementClickable(btnEditAddressDelivery,5)) {
+									WebUI.click(btnEditAddressDelivery)
+									
+									if (WebUI.waitForElementVisible(drpAddressDelivery,5)) {
+										WebUI.selectOptionByIndex(drpAddressDelivery, index)
+									} else {keyLogger.logInfo("We Not find the address type")}
 					
-					if (WebUI.verifyElementVisible(drpAddressDelivery,FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(drpAddressDelivery, index)
-					} else {keyLogger.logInfo("We Not find the address type")}
-	
-						oldData = WebUI.getAttribute(txtFullAddress, 'value')
-					if (WebUI.verifyElementVisible(txtFullAddress, FailureHandling.OPTIONAL)) {
-						WebUI.setText(txtFullAddress, RandomStringUtils.randomAlphabetic(150))
-						newData = WebUI.getAttribute(txtFullAddress, 'value')
+										oldData = WebUI.getAttribute(txtFullAddress, 'value')
+									if (WebUI.verifyElementVisible(txtFullAddress, FailureHandling.OPTIONAL)) {
+										WebUI.setText(txtFullAddress, RandomStringUtils.randomAlphabetic(150))
+										newData = WebUI.getAttribute(txtFullAddress, 'value')
+										} else {
+										keyLogger.logInfo('We Not find the reference name')
+									}
+									
+									if (WebUI.waitForElementVisible(txtRt,5)) {
+										WebUI.setText(txtRt, RandomStringUtils.randomNumeric(3))
+									} else {keyLogger.logInfo("We Not update reference phone number")}
+									
+									if (WebUI.waitForElementVisible(txtRw,5)) {
+										WebUI.setText(txtRw, RandomStringUtils.randomNumeric(3))
+									} else {keyLogger.logInfo("We Not update reference phone number")}
+									
+									if (WebUI.waitForElementVisible(drpProvince,5)) {
+										WebUI.selectOptionByIndex(drpProvince, index)
+									} else {keyLogger.logInfo("We Not find the province")}
+									
+									if (WebUI.waitForElementVisible(drpDistrict,5)) {
+										WebUI.selectOptionByIndex(drpDistrict, index)
+									} else {keyLogger.logInfo("We Not find the province")}
+									
+									if (WebUI.waitForElementVisible(drpSubDistricts,5)) {
+										WebUI.selectOptionByIndex(drpSubDistricts, index)
+									} else {keyLogger.logInfo("We Not find the Sub District")}
+									
+									if (WebUI.waitForElementVisible(drpVillage,5)) {
+										WebUI.selectOptionByIndex(drpVillage, index)
+									} else {keyLogger.logInfo("We Not find the Village")}
+									
+									if (WebUI.waitForElementVisible(txtPostalCode,5)) {
+									} else {keyLogger.logInfo("We Not find postal code")}
+											
+									if (WebUI.waitForElementVisible(btnSaveAddressDelivery, 5)) {
+										WebUI.takeScreenshot()
+				
+										WebUI.click(btnSaveAddressDelivery)
+				
+										WebUI.delay(3)
+				
+								/*Check the changelog after update delivery card address*/
+								WebUI.click(SectionChangelog)
+								/*We want verify date*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
+								def currentDate = new Date().format('dd/MM/yyyy')
+								println(currentDate)
+								dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
+								println(dateInChangeLog)
+									if (dateInChangeLog.contains(currentDate)) {
+										keyLogger.markPassed('Tanggal --> date with time when the changes was created')
+										WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
+									} else {
+										keyLogger.markFailed("Date is not valid")
+									}
+								/*We want verify user name  */
+								def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
+								println(userInChangeLog)
+								WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
+								WebUI.verifyMatch(userInChangeLog, userName, false)
+				
+								/*We want verify sources*/
+								SourcesLabel = WebUI.getText(LabelSources)
+								ChangelogSources = WebUI.getText(txtFirstRowChangelogSources)
+								WebUI.verifyMatch(SourcesLabel, ChangelogSources, false)
+									
+								/*We want verify field*/
+								WebUI.delay(5)
+								WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
+								String ChangelogField = WebUI.getText(txtFirstRowChangelogField)
+								String logChangeRandom = WebUI.getText(txtFirstRowChangelogField)
+								WebUI.verifyMatch(ChangelogField, logChangeRandom , false)
+											
+								String oldDataLog = oldData
+								println(oldDataLog)
+								String newDataLog = newData
+								println(newDataLog)
+					
+								/*We want verify old Data number*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
+								def ChangelogoldData = WebUI.getText(txtFirstRowChangelogOldData)
+								oldDatachangelog = WebUI.getText(txtFirstRowChangelogOldData)
+								WebUI.verifyMatch(ChangelogoldData, oldDatachangelog, false)
+				
+								/*We want verify new Data number*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
+								def ChangelognewData = WebUI.getText(txtFirstRowChangelogNewData)
+								newDatachangelog = WebUI.getText(txtFirstRowChangelogNewData)
+								WebUI.verifyMatch(ChangelognewData, newDatachangelog, false)
+				
+								/*We want verify old action*/
+								WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
+								TestObject actionLog = new TestObject().addProperty('text',ConditionType.CONTAINS,'-')
+								WebUI.verifyElementPresent(actionLog, 5)
+				
+								WebUI.delay(5)
+				
+								WebUI.takeScreenshot()
+				
+								WebUI.waitForElementVisible(btnBackToBucketList, 5)
+				
+								WebUI.click(btnBackToBucketList)
+				
+								if (WebUI.waitForElementVisible(headerCSRManagementElement, 5)) {
+									WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
+									break loopData
+									} else {
+									keyLogger.logInfo('We not find the element')
+								}
+							}
+						}
+					}
 						} else {
-                        keyLogger.logInfo('We Not find the reference name')
-                    }
-					
-					if (WebUI.verifyElementVisible(txtRt,FailureHandling.OPTIONAL)) {
-						WebUI.setText(txtRt, RandomStringUtils.randomNumeric(3))
-					} else {keyLogger.logInfo("We Not update reference phone number")}
-					
-					if (WebUI.verifyElementVisible(txtRw,FailureHandling.OPTIONAL)) {
-						WebUI.setText(txtRw, RandomStringUtils.randomNumeric(3))
-					} else {keyLogger.logInfo("We Not update reference phone number")}
-					
-					if (WebUI.verifyElementVisible(drpProvince,FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(drpProvince, index)
-					} else {keyLogger.logInfo("We Not find the province")}
-					
-					if (WebUI.verifyElementVisible(drpDistrict,FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(drpDistrict, index)
-					} else {keyLogger.logInfo("We Not find the province")}
-					
-					if (WebUI.verifyElementVisible(drpSubDistricts,FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(drpSubDistricts, index)
-					} else {keyLogger.logInfo("We Not find the Sub District")}
-					
-					if (WebUI.verifyElementVisible(drpVillage,FailureHandling.OPTIONAL)) {
-						WebUI.selectOptionByIndex(drpVillage, index)
-					} else {keyLogger.logInfo("We Not find the Village")}
-					
-					if (WebUI.verifyElementVisible(txtPostalCode,FailureHandling.OPTIONAL)) {
-					} else {keyLogger.logInfo("We Not find postal code")}
-							
-                    if (WebUI.verifyElementVisible(btnSaveAddressDelivery, FailureHandling.OPTIONAL)) {
-                        WebUI.takeScreenshot()
-
-                        WebUI.click(btnSaveAddressDelivery)
-
-                        WebUI.delay(3)
-
-				/*Check the changelog after update delivery card address*/
-				WebUI.click(SectionChangelog)
-				/*We want verify date*/
-				WebUI.waitForElementVisible(txtFirstRowChangelogDate, 5)
-				def currentDate = new Date().format('dd/MM/yyyy')
-				println(currentDate)
-				dateInChangeLog = WebUI.getText(txtFirstRowChangelogDate)
-				println(dateInChangeLog)
-					if (dateInChangeLog.contains(currentDate)) {
-						keyLogger.markPassed('Tanggal --> date with time when the changes was created')
-						WebUI.verifyElementVisible(txtFirstRowChangelogDate, FailureHandling.OPTIONAL)
-					}
-				/*We want verify user name  */
-				def userInChangeLog = WebUI.getText(txtFirstRowChangelogUser)
-				println(userInChangeLog)
-				WebUI.waitForElementVisible(txtFirstRowChangelogUser, 5)
-				WebUI.verifyMatch(userInChangeLog, userName, false)
-
-				/*We want verify sources*/
-                SourcesLabel = WebUI.getText(LabelSources)
-                ChangelogSources = WebUI.getText(txtFirstRowChangelogSources)
-                WebUI.verifyMatch(SourcesLabel, ChangelogSources, false)
-					
-				/*We want verify field*/
-				WebUI.delay(5)
-                WebUI.waitForElementVisible(txtFirstRowChangelogField, 5)
-                String ChangelogField = WebUI.getText(txtFirstRowChangelogField)
-				String logChangeRandom = WebUI.getText(txtFirstRowChangelogField)
-                WebUI.verifyMatch(ChangelogField, logChangeRandom , false)
-							
-				String oldDataLog = oldData
-				println(oldDataLog)
-				String newDataLog = newData
-				println(newDataLog)
-	
-				/*We want verify old Data number*/
-                WebUI.waitForElementVisible(txtFirstRowChangelogOldData, 5)
-				def ChangelogoldData = WebUI.getText(txtFirstRowChangelogOldData)
-                oldDatachangelog = WebUI.getText(txtFirstRowChangelogOldData)
-                WebUI.verifyMatch(ChangelogoldData, oldDatachangelog, false)
-
-                /*We want verify new Data number*/
-                WebUI.waitForElementVisible(txtFirstRowChangelogNewData, 5)
-                def ChangelognewData = WebUI.getText(txtFirstRowChangelogNewData)
-                newDatachangelog = WebUI.getText(txtFirstRowChangelogNewData)
-                WebUI.verifyMatch(ChangelognewData, newDatachangelog, false)
-
-				/*We want verify old action*/
-				WebUI.waitForElementVisible(txtFirstRowChangelogActions, 5)
-				TestObject actionLog = new TestObject().addProperty('text',ConditionType.CONTAINS,'-')
-				WebUI.verifyElementPresent(actionLog, 5)
-
-				WebUI.delay(5)
-
-				WebUI.takeScreenshot()
-
-				WebUI.waitForElementVisible(btnBackToBucketList, 5)
-
-				WebUI.click(btnBackToBucketList)
-
-				if (WebUI.waitForElementVisible(headerCSRManagementElement, 5, FailureHandling.OPTIONAL)) {
-					WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
-					} else {
-					keyLogger.logInfo('We not find the element')
-					}
-    
-				WebUI.refresh()
-
-				WebUI.waitForPageLoad(50)
-                }
-                }
-            }
-        }
+							keyLogger.logInfo("Try again until we get index not 0")
+				}
+			}
+		}
     }
 }

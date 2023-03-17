@@ -16,6 +16,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import com.sun.org.apache.xpath.internal.operations.NotEquals
+
 import internal.GlobalVariable
 
 import org.apache.commons.lang.RandomStringUtils
@@ -30,17 +32,17 @@ import com.kms.katalon.core.util.KeywordUtil
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
 /* We want handling block condition*/
-if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCsrManagement,5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(notifBlockCsr,5)) {
 		WebUI.click(btnCancelBlock)
 		WebUI.waitForPageLoad(5)
 		WebUI.delay(3)
 		keylogger.logInfo("We cancel the block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	} else {
 		keylogger.logInfo("We cannot get block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	}
 } else {keylogger.markError("We don't see Csr Management Menu")}
 
@@ -72,10 +74,10 @@ while (loopPageCsr == false) {
 	listRows = tableCsrMgt.findElements(By.tagName('tr'))
 		for (int i = 0; i < listRows.size(); i++) {
 			println('No. of rows: ' + listRows.size()+ ' row number '+i)
-			if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
+			if (WebUI.waitForElementVisible(drpCustType,5)) {
 				WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 				WebUI.selectOptionByLabel(drpCustType, "Nasabah Senyumku", false)
-				if (WebUI.verifyElementVisible(drpCardStatus,FailureHandling.OPTIONAL)) {
+				if (WebUI.waitForElementVisible(drpCardStatus,5)) {
 					WebUI.verifyOptionsPresent(drpCardStatus, listDrpCardStatus)
 					WebUI.selectOptionByLabel(drpCardStatus, "Sudah Aktivasi", false)
 				} else {keylogger.logInfo("Element Not Found")}
@@ -84,14 +86,11 @@ while (loopPageCsr == false) {
 			if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 				listCols.get(6).findElement(By.tagName('button')).click()
 				TestObject csrDetaiPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-				if (WebUI.verifyElementPresent(csrDetaiPage, 5,FailureHandling.OPTIONAL)) {
+				if (WebUI.waitForElementVisible(csrDetaiPage, 5)) {
 					TestObject reqDetailStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
-					if (WebUI.verifyElementPresent(reqDetailStatus, 5,FailureHandling.OPTIONAL)) {
+					if (WebUI.waitForElementVisible(reqDetailStatus, 5)) {
 						WebUI.click(linkDataDeliveryCard)
-						int optionListLength = 1
-						Random rand = new Random()
-						String index = rand.nextInt(optionListLength + 1)
-						if (WebUI.verifyElementClickable(btnEditDeliveryAddress,FailureHandling.OPTIONAL)) {
+						if (WebUI.waitForElementClickable(btnEditDeliveryAddress,5)) {
 							WebUI.click(btnEditDeliveryAddress)
 							WebUI.waitForPageLoad(5)
 							WebUI.delay(3)
@@ -99,7 +98,11 @@ while (loopPageCsr == false) {
 							boolean loopAddressTypeCondition = false
 							loopAddressType:
 							while (loopAddressTypeCondition == false) {
-								if (index != 0) {
+								int optionListLength = 2
+								Random rand = new Random()
+								String index = rand.nextInt(optionListLength + 1)
+								if (WebUI.verifyNotEqual(index, 0,FailureHandling.OPTIONAL)) {
+									println(index)
 									if (WebUI.verifyOptionsPresent(drpDwnAddressType, listAddressType,FailureHandling.OPTIONAL)) {
 										Select selectOldAddressType = new Select(DriverFactory.getWebDriver().findElement(By.xpath("//select[@id='DrpAddressType']")))
 										oldDataAddressType = selectOldAddressType.getFirstSelectedOption().getText()
@@ -113,19 +116,19 @@ while (loopPageCsr == false) {
 								} else {keylogger.logInfo('try again to check')}
 							}
 							/* We want to check input field address*/
-							if (WebUI.verifyElementClickable(fieldInputAddress,FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementClickable(fieldInputAddress,5)) {
 								WebUI.setText(fieldInputAddress, RandomStringUtils.randomAlphanumeric(150))
 								WebUI.waitForPageLoad(5)
 								WebUI.delay(3)
 							} else {keylogger.markError('Element not click able')}
 							/* We want to check neigbourhood*/	
-							if (WebUI.verifyElementClickable(fieldNeighbourhood,FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementClickable(fieldNeighbourhood,5)) {
 								WebUI.setText(fieldNeighbourhood, RandomStringUtils.randomNumeric(3))
 								WebUI.waitForPageLoad(5)
 								WebUI.delay(3)
 							} else {keylogger.markError('Element not click able')}	
 							/* We want to check hamlet*/
-							if (WebUI.verifyElementClickable(fieldHamlet,FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementClickable(fieldHamlet,5)) {
 								WebUI.setText(fieldHamlet, RandomStringUtils.randomNumeric(3))
 								WebUI.waitForPageLoad(5)
 								WebUI.delay(3)
@@ -133,30 +136,34 @@ while (loopPageCsr == false) {
 							boolean loopChoosenDeliveryAddress = false
 							loopChoosenAddress:
 							while (loopChoosenDeliveryAddress == false) {
-								if (index != 0) {
+								int optionListLength = 2
+								Random rand = new Random()
+								String index = rand.nextInt(optionListLength + 1)
+								if (WebUI.verifyNotEqual(index, 0,FailureHandling.OPTIONAL)) {
+									println(index)
 									if (WebUI.verifyElementVisible(postalCode,FailureHandling.OPTIONAL)) {
 										oldPostalCode = WebUI.getAttribute(postalCode, 'value')
 										println(oldPostalCode)
 										/* We want to check province*/
-										if (WebUI.verifyElementClickable(drpDwnProvince,FailureHandling.OPTIONAL)) {
+										if (WebUI.waitForElementClickable(drpDwnProvince,5)) {
 											WebUI.selectOptionByIndex(drpDwnProvince, index)
 											WebUI.waitForPageLoad(5)
 											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check district*/
-										if (WebUI.verifyElementClickable(drpDwnDistrict,FailureHandling.OPTIONAL)) {
+										if (WebUI.waitForElementClickable(drpDwnDistrict,5)) {
 											WebUI.selectOptionByIndex(drpDwnDistrict, index)
 											WebUI.waitForPageLoad(5)
 											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check sub-district*/
-										if (WebUI.verifyElementClickable(drpDwnSubDistrict,FailureHandling.OPTIONAL)) {
+										if (WebUI.waitForElementClickable(drpDwnSubDistrict,5)) {
 											WebUI.selectOptionByIndex(drpDwnSubDistrict, index)
 											WebUI.waitForPageLoad(5)
 											WebUI.delay(3)
 										} else {keylogger.markError('Element not click able')}
 										/* We want to check village*/
-										if (WebUI.verifyElementClickable(drpDwnVillage,FailureHandling.OPTIONAL)) {
+										if (WebUI.waitForElementClickable(drpDwnVillage,5)) {
 											WebUI.selectOptionByIndex(drpDwnVillage, index)
 											WebUI.waitForPageLoad(5)
 											WebUI.delay(3)
@@ -165,15 +172,19 @@ while (loopPageCsr == false) {
 										newPostalCode = WebUI.getAttribute(postalCode, 'value')
 										println(newPostalCode)
 										break loopChoosenAddress
-									} else {keylogger.markError('Element not click able')}
+									} else {keylogger.logInfo('Element not click able')}
 								} else {keylogger.logInfo('try again to check')}
 							}
 							oldPostalCode = oldPostalCode // purposed after edit all we check the old postal code
 							newPostalCode = newPostalCode // purposed after edit all we check the new postal code
-							if (WebUI.verifyElementClickable(btnSimpanUpdateDeliveryAddress,FailureHandling.OPTIONAL)) {
+							if (WebUI.waitForElementClickable(btnSimpanUpdateDeliveryAddress, 5)) {
 								WebUI.click(btnSimpanUpdateDeliveryAddress)
-								if (WebUI.verifyElementClickable(btnDataChangeLog,FailureHandling.OPTIONAL)) {
+								WebUI.waitForPageLoad(5)
+								WebUI.delay(3)
+								if (WebUI.waitForElementClickable(btnDataChangeLog,5)) {
 									WebUI.click(btnDataChangeLog)
+									WebUI.waitForPageLoad(5)
+									WebUI.delay(3)
 									boolean rowZero = true
 									if (rowZero == true) {
 										WebDriver oldDriverZero = DriverFactory.getWebDriver()
@@ -187,6 +198,8 @@ while (loopPageCsr == false) {
 										println(dateInChangeLog)
 										if (dateInChangeLog.contains(currentDate)) {
 											keylogger.markPassed('Tanggal --> date with time when the changes was created')
+										} else {
+											keylogger.markFailed('We have error about the date')
 										}
 										/*We want verify text from change log
 										 * when this script created change log is dynamic if I want to choose first row

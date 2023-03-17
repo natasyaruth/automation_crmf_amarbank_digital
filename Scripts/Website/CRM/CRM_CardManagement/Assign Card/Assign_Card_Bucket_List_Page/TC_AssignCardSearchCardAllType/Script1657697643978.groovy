@@ -58,8 +58,9 @@ while (flagLoop == false) {
 			} else {keylogger.logInfo('element not visible')}
 		} else {keylogger.markError('Menu cannot click able')}
 		println(' Total of Data : ' +rowsBucketList.size()+ ' and existing row is : ' +i)
-		List<WebElement> colsBucketList = rowsBucketList.get(5).findElements(By.xpath('td'))
-		if (i != (rowsBucketList.size() - 1)) {
+		List<WebElement> colsBucketList = rowsBucketList.get(i).findElements(By.xpath('td'))
+		boolean checkData = WebUI.verifyNotEqual(i, 9, FailureHandling.OPTIONAL)
+		if (checkData == true) {
 			if (colsBucketList.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
 				String custName = colsBucketList.get(1).getText()
 				colsBucketList.get(6).findElement(By.xpath('button')).click()
@@ -103,7 +104,7 @@ while (flagLoop == false) {
 						}
 					}
 				} else {
-					keylogger.markError('element not present')
+					keylogger.logInfo('element not present')
 					WebUI.click(btnBack)
 					WebUI.delay(5)
 					tblBucketList = driver.findElement(By.xpath('//table/tbody'))

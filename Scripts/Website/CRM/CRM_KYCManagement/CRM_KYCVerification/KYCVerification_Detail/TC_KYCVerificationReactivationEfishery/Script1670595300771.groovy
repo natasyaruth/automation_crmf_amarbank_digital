@@ -83,7 +83,7 @@ List<WebElement> colsCsr
 				TestObject processStatus = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 				if (WebUI.waitForElementPresent(processStatus, 5)) {
 					WebUI.scrollToPosition(0, 0)
-					TestObject sourceOriginFirstCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Dagangan')
+					TestObject sourceOriginFirstCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'eFishery')
 					WebUI.verifyElementPresent(sourceOriginFirstCheck, 5)
 					phoneShown = false
 					phoneShownLoop:
@@ -432,7 +432,7 @@ TestObject custDetailPageCheck = new TestObject().addProperty('text',ConditionTy
 if (WebUI.waitForElementPresent(custDetailPageCheck, 5)) {
 	TestObject reqIdCustCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 	WebUI.verifyElementPresent(reqIdCustCheck, 5)
-	TestObject sourceOriginLastCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Dagangan')
+	TestObject sourceOriginLastCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'eFishery')
 	WebUI.verifyElementPresent(sourceOriginLastCheck, 5)
 	WebUI.takeScreenshot()
 	keylogger.markPassed("We are success to reactivation")

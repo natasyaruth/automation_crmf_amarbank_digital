@@ -258,6 +258,8 @@ while(flagLoopPage == false) {
 										  "Case FAILED")
 						
 					WebUI.click(btnBack)
+					WebUI.waitForPageLoad(5)
+					WebUI.delay(3)
 					break LoopPage
 					
 				}
@@ -349,8 +351,8 @@ while(flagLoopPage == false) {
 
 }
 
-listRowsFace.clear()
-listColumnFace.clear()
+//listRowsFace.clear()
+//listColumnFace.clear()
 
 if(flagCSR) {
 	

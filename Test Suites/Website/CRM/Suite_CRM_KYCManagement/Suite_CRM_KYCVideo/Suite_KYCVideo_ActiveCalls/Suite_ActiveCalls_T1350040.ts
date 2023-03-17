@@ -433,6 +433,24 @@
          <value></value>
          <variableId>62419462-25e1-4c5e-82c8-1479c5985a26</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd14ea3c-df60-418e-b374-e812d11b0ada</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>861b03f8-97e9-4c62-b927-c91d31fbc7de</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c6032641-7d4c-4307-8738-175c5375c64f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>c77d99f1-d6a4-4b5d-9193-1fe62da09591</guid>

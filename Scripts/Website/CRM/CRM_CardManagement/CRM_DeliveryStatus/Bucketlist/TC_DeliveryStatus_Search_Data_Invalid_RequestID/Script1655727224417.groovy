@@ -43,6 +43,12 @@ WebUI.setText(TextfieldSearchRefID, InvalidReqID)
 /* We want to click button Search*/
 WebUI.click(ButtonSearch)
 
+/* We want to makesure data not found with give delay and wait*/
+WebUI.delay(3)
+
+/* We want to give wait for page load*/
+WebUI.waitForPageLoad(5)
+
 /* We want to verify text on page data not found page*/
 WebUI.verifyTextPresent(DataNotFoundPage, false)
 

@@ -22,17 +22,17 @@ import com.kms.katalon.core.util.KeywordUtil
 /*We Declare Keyword Util*/
 KeywordUtil keylogger = new KeywordUtil()
 /* We want handling block condition*/
-if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(menuCsrManagement,5)) {
 	WebUI.click(menuCsrManagement)
-	if (WebUI.verifyElementVisible(notifBlockCsr,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(notifBlockCsr,5)) {
 		WebUI.click(btnCancelBlock)
 		keylogger.logInfo("We cancel the block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	} else {
 		keylogger.logInfo("We cannot get block")
-		WebUI.verifyElementVisible(txtHeaderCsrManagement)
+		WebUI.waitForElementVisible(txtHeaderCsrManagement,5)
 	}
-} else {keylogger.markError("We don't see Csr Management Menu")}
+} else {keylogger.markFailed("We don't see Csr Management Menu")}
 
 /* We want to verify design section
  * Step : Click on button "Details" one of the "Nasabah Senyumku" 's data
@@ -46,25 +46,25 @@ if (WebUI.verifyElementVisible(menuCsrManagement,FailureHandling.OPTIONAL)) {
 	Can maximize/minimize*/
 
 /* We want choose request ID with condition is Nasabah Senyumku*/
-if (WebUI.verifyElementVisible(drpCustType,FailureHandling.OPTIONAL)) {
+if (WebUI.waitForElementVisible(drpCustType,5)) {
 	WebUI.verifyOptionsPresent(drpCustType, listDrpCustType)
 	WebUI.selectOptionByLabel(drpCustType, "Nasabah Baru", false)
 	WebUI.navigateToUrl(ReqIdWithCondtionalZeplin)
 	TestObject csrDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-	if (WebUI.verifyElementPresent(csrDetailPage, 5,FailureHandling.OPTIONAL)) {
+	if (WebUI.waitForElementVisible(csrDetailPage, 5)) {
 		WebUI.click(linkDeviceData)
 		TestObject expDataFraud = new TestObject().addProperty('text',ConditionType.CONTAINS,'Stopper')
-		if (WebUI.verifyElementPresent(expDataFraud, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(expDataFraud, 5)) {
 			WebUI.takeScreenshot()
 			keylogger.markPassed("Show Stopper when data is fraud")
 		} else {keylogger.logInfo("Element Not Found")}
 		TestObject redWording = new TestObject().addProperty('text',ConditionType.CONTAINS,'Push Notification Permission is Not Allowed')
-		if (WebUI.verifyElementPresent(redWording, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(redWording, 5)) {
 			WebUI.takeScreenshot()
 			keylogger.markPassed("Show red wording when device permission is not allowed")
 		} else {keylogger.logInfo("Element Not Found")}
 		TestObject blackWording = new TestObject().addProperty('text',ConditionType.CONTAINS,'Phone is Allowed')
-		if (WebUI.verifyElementPresent(blackWording, 5,FailureHandling.OPTIONAL)) {
+		if (WebUI.waitForElementVisible(blackWording, 5)) {
 			WebUI.takeScreenshot()
 			keylogger.markPassed("Show black wording when device permission is allowed")
 		}else {keylogger.logInfo("Element Not Found")}
