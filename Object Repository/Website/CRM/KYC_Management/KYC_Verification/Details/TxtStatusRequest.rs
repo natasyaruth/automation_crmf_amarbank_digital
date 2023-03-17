@@ -6,11 +6,11 @@
    <elementGuidId>1a799677-98e3-40fc-a1cd-b3a787141603</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//span[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(.//*[normalize-space(text()) and normalize-space(.)='Automate Process'])[1]/following::span[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

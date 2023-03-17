@@ -65,6 +65,8 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 		} else {keylogger.markError('Text open not found')}
 		WebUI.selectOptionByLabel(drpDwnStatus, "Open", false)
 		WebUI.click(btnUpdate)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb

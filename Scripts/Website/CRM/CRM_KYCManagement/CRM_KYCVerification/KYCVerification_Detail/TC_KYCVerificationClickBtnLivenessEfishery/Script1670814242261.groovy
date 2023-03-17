@@ -102,7 +102,7 @@ List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
 if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
 	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
 	WebUI.delay(5)
-	int optionRand = 4
+	int optionRand = 3
 	Random randTimes = new Random()
 	int indexElement = randTimes.nextInt(optionRand + 1)
 	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
@@ -304,22 +304,32 @@ if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
 }
 
 'Init selected web element CSR Detail'
-WebDriver driverCsrDetail = DriverFactory.getWebDriver()
-WebElement tblCsrDetail
-List<WebElement> rowsCsrDetail
-List<WebElement> colsCsrDetail
-TestObject loginCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-if (WebUI.waitForElementPresent(loginCustDetail, 5)) {
-	WebUI.scrollToElement(btnDataChangeLog, 5)
-	WebUI.click(btnDataChangeLog)
-	WebUI.selectOptionByLabel(drpDwnFilterSource, "KYC Verification", false)
-	tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
-	rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
-	colsCsrDetail = rowsCsrDetail.get(0).findElements(By.tagName('td'))
-	if (colsCsrDetail.get(2).getText().equalsIgnoreCase("KYC Verification")) {
-		colsCsrDetail.get(6).getText().equalsIgnoreCase("Melakukan liveness")
-		WebUI.takeScreenshot()
-		keylogger.markPassed("We have done to check in CSR Management")
-		WebUI.click(btnBackCsrBucket)
-	} else {keylogger.markError("We not found text KYC Verification")}
-} else {keylogger.markError("We are not in Customer Detail")}
+boolean checkData = false
+loopData:
+while (checkData == false) {
+	WebDriver driverCsrDetail = DriverFactory.getWebDriver()
+	WebElement tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
+	List<WebElement> rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
+	List<WebElement> colsCsrDetail
+	for (i = 0;i < rowsCsrDetail.size();i++) {
+		TestObject loginCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
+		if (WebUI.waitForElementPresent(loginCustDetail, 5)) {
+			WebUI.scrollToElement(btnDataChangeLog, 5)
+			WebUI.click(btnDataChangeLog)
+			WebUI.selectOptionByLabel(drpDwnFilterSource, "KYC Verification", false)
+			tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
+			rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
+			colsCsrDetail = rowsCsrDetail.get(i).findElements(By.tagName('td'))
+			if (colsCsrDetail.get(2).getText().equalsIgnoreCase("KYC Verification")) {
+				colsCsrDetail.get(6).getText().equalsIgnoreCase("Melakukan liveness")
+				WebUI.takeScreenshot()
+				keylogger.markPassed("We have done to check in CSR Management")
+				WebUI.click(btnBackCsrBucket)
+				break loopData
+			} else {
+				keylogger.logInfo("We not found text KYC Verification")
+				
+				}
+		} else {keylogger.markError("We are not in Customer Detail")}
+	}
+}
