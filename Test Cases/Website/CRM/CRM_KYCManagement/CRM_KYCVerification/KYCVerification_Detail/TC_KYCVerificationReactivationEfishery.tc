@@ -935,7 +935,7 @@
       <name>reqIdForVideoCall</name>
    </variable>
    <variable>
-      <defaultValue>'10003798'</defaultValue>
+      <defaultValue>'10006444'</defaultValue>
       <description></description>
       <id>6b444caf-e63a-4df9-b477-9760febd2a1a</id>
       <masked>false</masked>

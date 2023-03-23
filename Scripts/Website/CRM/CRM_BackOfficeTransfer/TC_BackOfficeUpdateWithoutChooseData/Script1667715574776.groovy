@@ -54,22 +54,24 @@ TestObject txtDashboard = new TestObject().addProperty('text',ConditionType.CONT
 if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 	keylogger.markPassed('We are in back office')
 	if (WebUI.verifyOptionsPresent(drpDwnStatus, listDrpDwnStatus)) {
-		WebUI.setText(fieldSearch, 'On Process')
+		WebUI.setText(fieldSearch, 'Open')
 		tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))
 		rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
 		List<WebElement> colsBackOffice = rowsBackOffice.get(0).findElements(By.tagName('td'))
-		if (colsBackOffice.get(12).getText().equalsIgnoreCase("On Process")) {
+		if (colsBackOffice.get(12).getText().equalsIgnoreCase("Open")) {
 			seqNumb = colsBackOffice.get(1).getText()
 			println(seqNumb)
 			colsBackOffice.get(0).findElement(By.xpath('input'))
 		} else {keylogger.markError('Text open not found')}
-		WebUI.selectOptionByLabel(drpDwnStatus, "Pending", false)
+		WebUI.selectOptionByLabel(drpDwnStatus, "Open", false)
 		WebUI.click(btnUpdate)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb
 	println(numberQueue)
-	WebUI.setText(fieldSearch, 'Pending')
+	WebUI.setText(fieldSearch, 'Open')
 	WebUI.selectOptionByLabel(drpDwnShowRow, "10", false)
 	'We want to check update data'
 	boolean flag = false
@@ -81,7 +83,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 			rowsBackOffice = tableBackOffice.findElements(By.tagName('tr'))
 			List<WebElement> colsBackOffice = rowsBackOffice.get(i).findElements(By.tagName('td'))
 			if (i != rowsBackOffice.size()) {
-				colsBackOffice.get(12).getText().equalsIgnoreCase("Pending")
+				colsBackOffice.get(12).getText().equalsIgnoreCase("Open")
 				break dataCheck
 				keylogger.markPassed("We already changes status")
 			} else {

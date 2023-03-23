@@ -79,30 +79,106 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5, FailureHandling.OPT
 
 /* We want to check status is customer type is "Nasabah Senyumku"*/
 for (int i = 0; i < customerType.size(); i++) {
+	
+	'Adding check selection data with condition button edit is enable'
+	WebDriver driver = DriverFactory.getWebDriver()
+	WebElement tableCsr
+	List<WebElement> rowsCsr
+	List<WebElement> colsCsr
+	
     boolean filterChooseCard = WebUI.verifyElementVisible(drpDwnCardStatus)
 
     if (filterChooseCard == true) {
         WebUI.selectOptionByLabel(drpDwnCardStatus, 'Semua', false)
-
-        if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
-            WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
-        } else {
-            keyLogger.markFailed('We not find the drop down by cust type')
-        }
-        
-        WebUI.navigateToUrl(GlobalVariable.requestStatusFinishCondition.get(i))
+		
+		loopCheckData = false
+		loopBreak:
+		while (loopCheckData == false) {
+			
+			if (WebUI.verifyElementVisible(drpDwnCustType, FailureHandling.OPTIONAL)) {
+				WebUI.selectOptionByLabel(drpDwnCustType, customerType.get(i), false)
+				
+			'Give delay and wait time limit'
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
+			
+			} else {
+				keyLogger.markFailed('We not find the drop down by cust type')
+			}
+			
+			tableCsr = driver.findElement(By.xpath("//table/tbody"))
+			
+			rowsCsr = tableCsr.findElements(By.tagName("tr"))
+			
+			for (j = 0 ;j < rowsCsr.size(); j++) {
+				
+				colsCsr = rowsCsr.get(j).findElements(By.tagName("td"))
+				
+				if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
+					
+					colsCsr.get(6).findElement(By.xpath("button")).click()
+					
+					WebUI.waitForPageLoad(5)
+					
+					WebUI.delay(3)
+					
+					TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
+					
+					if (WebUI.waitForElementVisible(kycDetailPage, 5)) {
+						
+						boolean dataPekerjaan = WebUI.verifyElementText(elementEmploymentData, 'Data Pekerjaan')
+						
+						WebUI.click(elementEmploymentData)
+						
+						if (WebUI.verifyElementClickable(BtnEditEmploymentData, FailureHandling.OPTIONAL)) {
+							
+							keyLogger.markPassed("Button already enable")
+							
+							break loopBreak
+							
+						} else {
+							
+							keyLogger.logInfo("We check other Request ID")
+							
+							WebUI.click(btnBack)
+							
+							WebUI.waitForPageLoad(5)
+							
+							WebUI.delay(3)
+							
+							tableCsr = driver.findElement(By.xpath("//table/tbody"))
+							
+							rowsCsr = tableCsr.findElements(By.tagName("tr"))
+							
+						}
+						
+					} else {
+						
+						keyLogger.markFailed("We are not in customer detail")
+						
+					}
+					
+				} else {
+					
+					keyLogger.markFailed("Data at Nasabah Senyumku Not Available")
+					
+				}
+			}
+		}
+		
     } else {
+		
         keyLogger.markFailed('We don\'t find the drop down Card Status')
+		
     }
     
     WebUI.delay(5)
 
     /*We want to check and input field work type in employment data*/
-    if (WebUI.waitForElementVisible(elementEmploymentData, 5)) {
-        boolean dataPekerjaan = WebUI.verifyElementText(elementEmploymentData, 'Data Pekerjaan')
+    if (WebUI.waitForElementVisible(BtnEditEmploymentData, 5)) {
+        boolean dataPekerjaan = WebUI.verifyElementClickable(BtnEditEmploymentData)
 
         if (dataPekerjaan == true) {
-            WebUI.click(elementEmploymentData)
 
             int optionListLength = 1
 
@@ -113,7 +189,7 @@ for (int i = 0; i < customerType.size(); i++) {
 			loopIndex:
 			while (loopCondition == false) {
 				if (index !=0) {
-					if (WebUI.waitForElementVisible(DrpWorkType, 5, FailureHandling.OPTIONAL)) {
+					if (WebUI.waitForElementVisible(BtnEditEmploymentData, 5, FailureHandling.OPTIONAL)) {
 						if (WebUI.verifyElementClickable(BtnEditEmploymentData, FailureHandling.OPTIONAL)) {
 							WebUI.click(BtnEditEmploymentData)
 		
@@ -252,6 +328,10 @@ for (int i = 0; i < customerType.size(); i++) {
 								WebUI.waitForPageLoad(50)
 								break loopIndex
 							}
+						}
+						else {
+							keyLogger.logInfo("Button edit is disable")
+							
 						}
 					}
 				} else {

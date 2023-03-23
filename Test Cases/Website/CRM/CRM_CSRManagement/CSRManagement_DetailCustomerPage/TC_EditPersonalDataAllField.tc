@@ -930,7 +930,7 @@
       <name>LabelSources</name>
    </variable>
    <variable>
-      <defaultValue>'qa.testing@amarbank.co.id'</defaultValue>
+      <defaultValue>'qa.testing+99@amarbank.co.id'</defaultValue>
       <description></description>
       <id>f3a79514-2e9f-4873-a3d1-df2fa8a38067</id>
       <masked>false</masked>

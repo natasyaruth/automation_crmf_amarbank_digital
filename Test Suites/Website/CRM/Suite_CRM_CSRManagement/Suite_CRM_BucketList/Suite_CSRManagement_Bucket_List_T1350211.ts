@@ -12,55 +12,6 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>ea7cc18a-a635-4d3a-8c1c-2aa932cfe3d3</testSuiteGuid>
    <testCaseLink>
-      <guid>7b88a78e-9629-442e-90df-6486e3313224</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/URL/URL_Staging_CRM</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>56816ae0-de95-4d26-b12c-87f914ebfa19</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>91dc2b1a-941d-4528-9e9a-686b8ccd402b</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>4348dd33-86dc-4f59-9c4d-67bbb0fc4677</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6032f729-d80e-4525-97b5-13e6c0d34ad2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>585d95a3-94f9-4949-a96d-4a9c05ce0a8d</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b295f90a-5f17-4122-9a18-654f3f60c646</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e9cdaae5-c4e9-4c21-8d8f-bc63c0eada6c</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
       <guid>284d77e3-177f-4f11-98bc-f9f481ed9456</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>

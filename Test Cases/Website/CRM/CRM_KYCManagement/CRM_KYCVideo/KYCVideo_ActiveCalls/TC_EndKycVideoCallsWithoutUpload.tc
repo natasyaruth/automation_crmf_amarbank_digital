@@ -197,6 +197,24 @@
       <value></value>
       <variableId>1b796b48-591e-4ea9-8071-1de4ae49636a</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e1f41baa-5187-41cd-9d0d-e586edd5c560</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>80ee9988-c477-4b67-8a3f-34f1a2c4bf69</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>51a11a4e-d8c3-447e-af80-e0e3d2186153</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -420,5 +438,26 @@
       <id>1b796b48-591e-4ea9-8071-1de4ae49636a</id>
       <masked>false</masked>
       <name>btnResume</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkNewPhoneNumber')</defaultValue>
+      <description></description>
+      <id>e1f41baa-5187-41cd-9d0d-e586edd5c560</id>
+      <masked>false</masked>
+      <name>chkChangePhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkEmail')</defaultValue>
+      <description></description>
+      <id>80ee9988-c477-4b67-8a3f-34f1a2c4bf69</id>
+      <masked>false</masked>
+      <name>chkEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkChangePhoneReason')</defaultValue>
+      <description></description>
+      <id>51a11a4e-d8c3-447e-af80-e0e3d2186153</id>
+      <masked>false</masked>
+      <name>chkReasonChangePhoneNumber</name>
    </variable>
 </TestCaseEntity>

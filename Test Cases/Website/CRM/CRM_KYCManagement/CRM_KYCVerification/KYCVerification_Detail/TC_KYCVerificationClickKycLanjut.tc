@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
-   <description></description>
+   <description>Button Lanjut KYC Current is disabled</description>
    <name>TC_KYCVerificationClickKycLanjut</name>
    <tag></tag>
    <comment></comment>

@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='root']/div/div/section/div/section/form/div[5]/section[2]/div/div[2]/div/div[2]/img</value>
+         <value>(//img[@alt='kyc-selfie'])[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>img</value>
-      <webElementGuid>e36401fa-4173-4849-9444-3ef5ab678fd2</webElementGuid>
+      <webElementGuid>82098f1e-f526-44f9-9f48-6830b8ccf550</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>alt</name>
       <type>Main</type>
       <value>kyc-selfie</value>
-      <webElementGuid>90303cd5-bed8-413c-9840-1184e20866f4</webElementGuid>
+      <webElementGuid>3343dfcb-3ba1-4123-90c4-5db23312a7d4</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>src</name>
       <type>Main</type>
       <value>https://storage.googleapis.com/staging-ab-kyc-vcall/1514-ktp-kyc?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=dev-ab-kyc-vcall%40amarbank-sre.iam.gserviceaccount.com%2F20221027%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20221027T072035Z&amp;X-Goog-Expires=604799&amp;X-Goog-Signature=57829de57aed86e1289b48f7834d7b4991268de09cede107183059052f3d052b9c539bec443af76dc68746b976aa095bad658c5c8e9f1a2a1253c844907a838ad4f05eba872e9596cd694ddc4f481d0a95e9cbfc91b79306f1eaadf30d73b83309d660a91637d60d668d609ec0c2b01ed916247c7807b0eed60bd55270cbfd39390385a3aceb86cd104eed20735cb562a4573ce1bb6f96d0fa0ccbe748526bc1224582c38f74a7f7b3eb3d8cf84c26ab1d495b50d31552463051a2cc3826b8080fe929601923f7dfac273187c7fd68f8ff8dae895c5a93d03da90a78ed704328c2784d6fe788949e239f2ed1ccd811e122faa73bfe895faffb9b6abddc06d843&amp;X-Goog-SignedHeaders=host</value>
-      <webElementGuid>1072a4c2-a2e0-41cd-b144-5cf1bdb34c71</webElementGuid>
+      <webElementGuid>2ef70fbd-2498-4d9e-9b1c-7f436674fa74</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>class</name>
       <type>Main</type>
       <value>KycPhoto-image</value>
-      <webElementGuid>6ce7be76-c182-4da0-b2fe-d8616c4e7eb1</webElementGuid>
+      <webElementGuid>240fa41e-0fd5-4a5f-80ad-95f1a695df45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/div[1]/section[@class=&quot;wrapper has--navigation&quot;]/div[1]/section[@class=&quot;VideoDetailContent&quot;]/form[1]/div[@class=&quot;Card u-MarginBottom&quot;]/section[@class=&quot;Card-body&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-sm-12 Grid-md-6&quot;]/div[@class=&quot;KycPhoto&quot;]/div[@class=&quot;KycPhoto-taken&quot;]/img[@class=&quot;KycPhoto-image&quot;]</value>
-      <webElementGuid>caf792bf-2770-447f-bff6-175f1ac6a9e5</webElementGuid>
+      <webElementGuid>7b31858c-385e-43c0-a53b-41f677b4c277</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/div/div/section/div/section/form/div[5]/section[2]/div/div[2]/div/div[2]/img</value>
-      <webElementGuid>48dfef78-5f06-4193-bb59-a10e525231d7</webElementGuid>
+      <webElementGuid>39fe253c-ddb5-420d-b3d5-d3416b6fba72</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:img</name>
       <type>Main</type>
       <value>(//img[@alt='kyc-selfie'])[2]</value>
-      <webElementGuid>adbe1b8d-dc66-4184-9218-bd7e741854de</webElementGuid>
+      <webElementGuid>bee1afe3-a01d-4227-9cbd-1d5e84928815</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div/div[2]/img</value>
-      <webElementGuid>67cdeb3e-95ad-40d3-b781-346c30988f94</webElementGuid>
+      <webElementGuid>26e41ff1-fff3-4499-8d2d-7d98e08297bc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +86,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//img[@alt = 'kyc-selfie' and @src = 'https://storage.googleapis.com/staging-ab-kyc-vcall/1514-ktp-kyc?X-Goog-Algorithm=GOOG4-RSA-SHA256&amp;X-Goog-Credential=dev-ab-kyc-vcall%40amarbank-sre.iam.gserviceaccount.com%2F20221027%2Fauto%2Fstorage%2Fgoog4_request&amp;X-Goog-Date=20221027T072035Z&amp;X-Goog-Expires=604799&amp;X-Goog-Signature=57829de57aed86e1289b48f7834d7b4991268de09cede107183059052f3d052b9c539bec443af76dc68746b976aa095bad658c5c8e9f1a2a1253c844907a838ad4f05eba872e9596cd694ddc4f481d0a95e9cbfc91b79306f1eaadf30d73b83309d660a91637d60d668d609ec0c2b01ed916247c7807b0eed60bd55270cbfd39390385a3aceb86cd104eed20735cb562a4573ce1bb6f96d0fa0ccbe748526bc1224582c38f74a7f7b3eb3d8cf84c26ab1d495b50d31552463051a2cc3826b8080fe929601923f7dfac273187c7fd68f8ff8dae895c5a93d03da90a78ed704328c2784d6fe788949e239f2ed1ccd811e122faa73bfe895faffb9b6abddc06d843&amp;X-Goog-SignedHeaders=host']</value>
-      <webElementGuid>7b1c0866-a91f-42cf-9083-421ac3a3805e</webElementGuid>
+      <webElementGuid>8787a16c-1d1a-4283-ac29-3a42ac7b2a74</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

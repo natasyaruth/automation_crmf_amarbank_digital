@@ -31,6 +31,49 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>3ace6a77-f6d6-44c3-a9c7-f885d710f2ce</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_BackOfficeTransfer/TC_BackOfficeSetOnProcessToOpen</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f8e15d15-f860-4bfe-b40f-0e7403f0d4d0</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e0771580-c996-4234-a458-1a50a3e0e6df</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>365eb3ad-bde8-44d2-a89a-940a9580766e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1ea4c009-012a-4a77-9844-c8db0b47662b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>06a98f83-d17a-4d28-b646-13ed953bbb13</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d5099e0a-bfc4-409c-b25c-5594b70d807a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>2cc92d8b-d3ac-4b11-9da6-b89642201777</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
