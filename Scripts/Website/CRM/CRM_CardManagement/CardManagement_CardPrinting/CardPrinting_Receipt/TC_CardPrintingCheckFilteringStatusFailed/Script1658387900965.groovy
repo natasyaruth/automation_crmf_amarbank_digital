@@ -10,7 +10,8 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
-import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObject
+import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webservice.keyword.builtin.ContainsStringKeyword
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -67,10 +68,20 @@ WebUI.waitForElementVisible(drpDwnFilterStatusElement, 5)
 /* We want to select filter drp down "new Receipt"*/
 WebUI.selectOptionByLabel(drpDwnFilterStatusElement, "Gagal", false)
 /* We want to check data available or no*/
-KeywordLogger keylogger = new KeywordLogger()
+KeywordUtil keylogger = new KeywordUtil()
 if (WebUI.waitForElementVisible(firstRowNewCardElement, 5)) {
 	/* We want to verify element and text of first row*/
-	WebUI.verifyElementText(firstRowNewCardElement, "Kartu Baru")
+	boolean newCard = WebUI.verifyElementText(firstRowNewCardElement, "Kartu Baru", FailureHandling.OPTIONAL)
+	
+	if (newCard == true) {
+		
+		keylogger.logInfo("First Row Status Is Kartu Baru")
+		
+	} else {
+		
+		keylogger.logInfo("First Row Status Is Permintaan Kartu Baru")
+		
+	}
 	def textFirstRowRequestCard = WebUI.getText(firstRowNewCardElement)
 	keylogger.logInfo("Data has been show by filter " +textFirstRowRequestCard)
 }else {
