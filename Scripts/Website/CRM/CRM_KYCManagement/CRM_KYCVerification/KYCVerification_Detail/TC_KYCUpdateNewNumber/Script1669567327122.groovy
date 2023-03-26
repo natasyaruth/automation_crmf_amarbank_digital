@@ -82,11 +82,15 @@ while (checkData == false) {
 	if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('We are not in CSR Management')}
 		List<WebElement> colsCsr = rawCsr.get(i).findElements(By.tagName('td'))
 		if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 			colsCsr.get(6).findElement(By.xpath('button')).click()
-		} else {keylogger.markError('We not found the element')}
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
+		} else {keylogger.markFailed('We not found the element')}
 		TestObject csrManagementDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 		if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
 			TestObject statusCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
@@ -112,6 +116,7 @@ while (checkData == false) {
 				} else {keylogger.markError('element not present')}
 			} else {
 				WebUI.click(btnBack)
+				WebUI.waitForPageLoad(5)
 				WebUI.delay(3)
 				tblCsr = driverCsr.findElement(By.xpath("//table/tbody"))
 				rawCsr = tblCsr.findElements(By.tagName("tr"))

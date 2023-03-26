@@ -299,6 +299,8 @@ rowsCsrBucket = tblCsrBucket.findElements(By.tagName("tr"))
 colsCsrBucket = rowsCsrBucket.get(0).findElements(By.tagName("td"))
 if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
 	colsCsrBucket.get(6).findElement(By.xpath("button")).click()
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {
 	keylogger.markError("We not found the cases")
 }
@@ -308,8 +310,8 @@ boolean checkData = false
 loopData:
 while (checkData == false) {
 	WebDriver driverCsrDetail = DriverFactory.getWebDriver()
-	WebElement tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
-	List<WebElement> rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
+	WebElement tblCsrDetail
+	List<WebElement> rowsCsrDetail
 	List<WebElement> colsCsrDetail
 	for (i = 0;i < rowsCsrDetail.size();i++) {
 		TestObject loginCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
