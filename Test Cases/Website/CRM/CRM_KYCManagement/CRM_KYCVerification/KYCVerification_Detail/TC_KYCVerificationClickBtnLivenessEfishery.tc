@@ -431,6 +431,30 @@
       <value></value>
       <variableId>157b368a-afd9-4fe0-9864-f21956cf2684</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f46f4771-b023-4153-bef0-0cdf6b151290</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4dbe4744-7195-4678-9fd9-f9859fb619b8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9d04d9cb-7b69-45f6-bfd6-865e7d3c1e60</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>25cce843-3df7-442a-b0f9-ce784deaa45b</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Dashboard/DashboardText')</defaultValue>
       <description></description>
@@ -927,5 +951,33 @@
       <id>157b368a-afd9-4fe0-9864-f21956cf2684</id>
       <masked>false</masked>
       <name>btnBackCsrBucket</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkNewPhoneNumber')</defaultValue>
+      <description></description>
+      <id>f46f4771-b023-4153-bef0-0cdf6b151290</id>
+      <masked>false</masked>
+      <name>chkNewPhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkEmail')</defaultValue>
+      <description></description>
+      <id>4dbe4744-7195-4678-9fd9-f9859fb619b8</id>
+      <masked>false</masked>
+      <name>chkNewEmail</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/chkChangePhoneReason')</defaultValue>
+      <description></description>
+      <id>9d04d9cb-7b69-45f6-bfd6-865e7d3c1e60</id>
+      <masked>false</masked>
+      <name>chkReasonChange</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Bucketlist/BtnNextPage')</defaultValue>
+      <description></description>
+      <id>25cce843-3df7-442a-b0f9-ce784deaa45b</id>
+      <masked>false</masked>
+      <name>btnNextPage</name>
    </variable>
 </TestCaseEntity>
