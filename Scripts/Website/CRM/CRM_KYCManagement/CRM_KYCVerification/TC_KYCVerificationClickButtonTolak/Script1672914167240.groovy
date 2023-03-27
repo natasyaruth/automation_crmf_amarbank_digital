@@ -22,7 +22,7 @@ WebUI.click(KYCManagementLink)
 
 WebUI.click(KYCVerificationLink)
 
-WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
+WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Senyumku', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
