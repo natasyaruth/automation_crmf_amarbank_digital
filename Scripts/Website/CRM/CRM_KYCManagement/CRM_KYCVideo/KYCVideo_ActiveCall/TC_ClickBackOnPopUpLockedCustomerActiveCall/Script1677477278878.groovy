@@ -10,6 +10,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -25,11 +26,35 @@ KeywordUtil keyLogger = new KeywordUtil()
 boolean checkMenuKYC = WebUI.verifyElementVisible(menuKYCManagement, FailureHandling.OPTIONAL)
 
 if (checkMenuKYC == true) {
+	
     WebUI.click(menuKYCManagement)
 
     WebUI.click(menuKYCVideo)
+	
 } else {
+	
     keyLogger.markFailed('Something happen with menu KYC Management')
+	
+}
+
+TestObject checkNotifActiveCall = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+
+boolean notifInActiveCall = WebUI.waitForElementVisible(checkNotifActiveCall, 5, FailureHandling.OPTIONAL)
+
+if (notifInActiveCall == true) {
+	
+	keyLogger.logInfo("We handle notif block")
+	
+	WebUI.click(btnContinue)
+	
+	WebUI.scrollToElement(btnCancel, 5)
+	
+	WebUI.click(btnCancel)
+	
+} else {
+	
+	keyLogger.logInfo("We not handle notif block")
+	
 }
 
 /* Open Tab Active Call KYC Video*/
@@ -57,11 +82,17 @@ WebUI.verifyMatch(firstRowRequestID, SearchRequestID1, false)
 WebUI.click(BtnRequestID)
 
 WebUI.verifyElementVisible(MdlCustomerisLocked, FailureHandling.OPTIONAL)
+
 WebUI.takeScreenshot()
+
 WebUI.verifyElementVisible(BtnCloseModal, FailureHandling.OPTIONAL)
+
 WebUI.click(BtnCloseModal)
+
 WebUI.waitForElementVisible(TabActiveCall, 5)
+
 WebUI.verifyElementVisible(TabActiveCall, FailureHandling.OPTIONAL)
+
 WebUI.takeScreenshot()
 
 /* We want to refresh for the next process*/
