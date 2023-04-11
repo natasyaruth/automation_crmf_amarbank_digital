@@ -65,6 +65,8 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 		} else {keylogger.markError('Text open not found')}
 		WebUI.selectOptionByLabel(drpDwnStatus, "On Process", false)
 		WebUI.click(btnUpdate)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {keylogger.markError('Drop Down Status Not Shown')}
 	'We want to check box'
 	numberQueue = seqNumb
@@ -84,6 +86,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 				colsBackOffice.get(12).getText().equalsIgnoreCase("On Process")
 				break dataCheck
 				keylogger.markPassed("We already changes status")
+				WebUI.closeBrowser()
 			} else {
 				keylogger.logInfo("We not find the sequence number")
 				tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))
