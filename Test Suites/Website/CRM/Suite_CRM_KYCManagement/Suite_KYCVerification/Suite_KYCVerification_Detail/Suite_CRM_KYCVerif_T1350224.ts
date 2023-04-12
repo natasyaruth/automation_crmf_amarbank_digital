@@ -12,6 +12,49 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>33e644a7-e3b6-4e50-8751-572364bb94d9</testSuiteGuid>
    <testCaseLink>
+      <guid>f8a39b18-bd10-4f61-bf32-f84053b4fd36</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMDukcapil_Staging/Rc_500_FMDukcapil</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>da193da7-45ad-45c4-8162-864cca3633c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>90c29b8f-a4b9-4b2b-b304-aa8fc8cf46ce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>89e864e4-fbfe-4c1e-8172-8b4f8320f003</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>868d2306-d633-4eaf-87f5-ea88a5c2e189</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>200d0bad-f129-4dc5-9de0-9c93d4dd6d82</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>67977af7-fede-472b-9a0b-84b08b115646</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>33ab7b9a-0b42-41f0-ae2f-c7966304f7b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -428,6 +471,49 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>469c9a65-336a-46ce-92ec-13754252de72</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>61ff675c-f8a0-490f-8a56-a311ce398bed</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMDukcapil_Staging/Rc_200_FMDukcapil</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b05d15b2-5d35-4eae-923a-cd90f7646e73</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef4fdc24-660f-4e1e-91d2-37e8d18537fb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a008f624-493b-45a4-95a1-f23276500e1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2674d7c6-93f6-41f5-be94-a2a834b7d617</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52ca944f-cc3e-4808-a5bf-add0ee1cdb91</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fd8c8ccd-48c6-4274-b90c-68baaef16bf7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

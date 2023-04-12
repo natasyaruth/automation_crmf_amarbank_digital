@@ -309,4 +309,9 @@
       <initValue>'0'</initValue>
       <name>tempIndexKycVidReq</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-wiremock.otoku.io/mappings'</initValue>
+      <name>UrlWiremock</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

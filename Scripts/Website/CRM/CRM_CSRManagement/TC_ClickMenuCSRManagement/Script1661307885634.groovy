@@ -48,6 +48,8 @@ if (WebUI.waitForElementVisible(blockBylockedUserElement, 5)) {
 		
 		WebUI.waitForElementVisible(headerCSRManagementElement, 5)
 		
+		WebUI.delay(3)
+		
 		WebUI.verifyElementText(headerCSRManagementElement, headerCSRManagementText)
 		
 	} else {
