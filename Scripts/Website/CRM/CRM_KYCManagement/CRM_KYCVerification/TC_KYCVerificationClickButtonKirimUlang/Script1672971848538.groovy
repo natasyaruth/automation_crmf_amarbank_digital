@@ -73,6 +73,8 @@ WebUI.setText(findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagemen
 
 WebUI.click(CSRManagementBucketListBtnSearch)
 
+WebUI.delay(3)
+
 WebUI.click(CSRManagementBucketListBtnDetail)
 
 WebUI.scrollToElement(BtnDataChangeLog, 5)

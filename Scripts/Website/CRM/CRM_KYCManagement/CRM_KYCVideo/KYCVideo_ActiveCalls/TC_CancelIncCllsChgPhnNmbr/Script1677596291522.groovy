@@ -78,6 +78,7 @@ while (checkData == false) {
 	if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+		WebUI.delay(3)
 	} else {keylogger.markError('We are not in CSR Management')}
 		List<WebElement> colsCsr = rawCsr.get(i).findElements(By.tagName('td'))
 		if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
@@ -140,6 +141,7 @@ List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td')
 if (colsKycVideo.get(3).getText().equalsIgnoreCase("Ganti Nomor HP")) {
 	colsKycVideo.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")
 	colsKycVideo.get(1).findElement(By.xpath('a')).click()
+	WebUI.delay(3)
 } else {keylogger.markError('We not found the ')}
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
@@ -255,6 +257,7 @@ List<WebElement> rawCsrCheck = tblCsrCheck.findElements(By.tagName("tr"))
 List<WebElement> colsCsrCheck = rawCsrCheck.get(0).findElements(By.tagName('td'))
 if (colsCsrCheck.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 	colsCsrCheck.get(6).findElement(By.xpath('button')).click()
+	WebUI.delay(3)
 } else {keylogger.markError('We not found the ')}
 TestObject csrManagementDetailCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 if (WebUI.verifyElementPresent(csrManagementDetailCheck, 5)) {

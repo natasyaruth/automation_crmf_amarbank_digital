@@ -206,7 +206,7 @@
       <name>btnConfirmationFacematch</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFacematchVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFacematchVerihubBiometric')</defaultValue>
       <description></description>
       <id>3f81b9a2-b3b8-4aeb-811f-241be7df720d</id>
       <masked>false</masked>

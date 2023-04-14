@@ -56,6 +56,7 @@ TestObject kycVerifBucketList = new TestObject().addProperty('text',ConditionTyp
 if (WebUI.verifyElementPresent(kycVerifBucketList, 5)) {
 	WebUI.setText(txtReqIdKycVerif, reqIdStopper3)
 	WebUI.sendKeys(txtReqIdKycVerif, Keys.chord(Keys.ENTER))
+	WebUI.delay(3)
 } else {keylogger.markError("Element not present")}
 WebDriver driverKycVerif = DriverFactory.getWebDriver()
 WebElement tblKycVerif = driverKycVerif.findElement(By.xpath("//table/tbody"))
@@ -85,6 +86,7 @@ if (WebUI.waitForElementPresent(notifAlert, 5)) {
 }
 WebUI.setText(txtReqIdCsrBucketList, reqIdStopper3)
 WebUI.sendKeys(txtReqIdCsrBucketList, Keys.chord(Keys.ENTER))
+WebUI.delay(3)
 WebDriver driverCsrBucket = DriverFactory.getWebDriver()
 WebElement tblCsrBucket = driverCsrBucket.findElement(By.xpath("//table/tbody"))
 List<WebElement> rowCsrBucket = tblCsrBucket.findElements(By.tagName('tr'))

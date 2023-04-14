@@ -434,7 +434,7 @@
       <name>txtValueFMVerihub</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFmVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFacematchVerihubBiometric')</defaultValue>
       <description></description>
       <id>4faf64f6-b36e-4432-a7e8-01f4eeeeb074</id>
       <masked>false</masked>

@@ -89,6 +89,12 @@
       <value></value>
       <variableId>15e30124-32c5-4f83-8e23-146aadeb09a8</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>db85f99d-c177-4d13-ab67-554038aea5ea</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -186,5 +192,12 @@
       <id>15e30124-32c5-4f83-8e23-146aadeb09a8</id>
       <masked>false</masked>
       <name>btnSubmitSecQuest</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Bucketlist/CSRManagementBucketListBtnBackCloseModalSecQuest')</defaultValue>
+      <description></description>
+      <id>db85f99d-c177-4d13-ab67-554038aea5ea</id>
+      <masked>false</masked>
+      <name>btnCancel</name>
    </variable>
 </TestCaseEntity>
