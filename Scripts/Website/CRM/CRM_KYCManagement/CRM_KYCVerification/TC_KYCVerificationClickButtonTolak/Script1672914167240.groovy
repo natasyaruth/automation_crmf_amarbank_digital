@@ -94,6 +94,8 @@ WebUI.scrollToElement(BtnDataChangeLog, 5)
 
 WebUI.click(BtnDataChangeLog, FailureHandling.STOP_ON_FAILURE)
 
+WebUI.selectOptionByLabel(filterChgLog, "KYC Verification", false)
+
 WebUI.verifyElementText(TxtTolakChangeLog, 'Tolak')
 
 WebUI.click(BtnBack)

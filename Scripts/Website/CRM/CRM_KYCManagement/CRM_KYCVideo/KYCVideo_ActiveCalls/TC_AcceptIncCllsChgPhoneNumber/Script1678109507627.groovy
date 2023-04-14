@@ -79,23 +79,28 @@ while (checkData == false) {
 	if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+		WebUI.delay(3)
 	} else {keylogger.markError('We are not in CSR Management')}
 		List<WebElement> colsCsr = rawCsr.get(i).findElements(By.tagName('td'))
 		if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 			colsCsr.get(6).findElement(By.xpath('button')).click()
+			WebUI.delay(3)
 		} else {keylogger.markError('We not found the element')}
 		TestObject csrManagementDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 		if (WebUI.verifyElementPresent(csrManagementDetail, 5)) {
 			TestObject statusCust = new TestObject().addProperty('text',ConditionType.CONTAINS,'Selesai')
 			if (WebUI.waitForElementVisible(statusCust, 5)) {
 				WebUI.click(linkDataPhoneNumber)
-				WebUI.click(btnEditPhoneNumber)		
+				WebUI.delay(3)
+				WebUI.click(btnEditPhoneNumber)	
+				WebUI.delay(3)
 					if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
 						WebUI.setText(txtPhoneNumber, '+6285'+RandomStringUtils.randomNumeric(7))
 					
 					if (WebUI.waitForElementVisible(btnSavePhoneNumber, 5)) {
 						WebUI.verifyElementClickable(btnSavePhoneNumber)
 						WebUI.click(btnSavePhoneNumber)
+						WebUI.delay(3)
 					} else {keylogger.markError("Element not visible")}
 				} else {keylogger.markError("Element not present")}
 				TestObject successSaveNumber = new TestObject().addProperty('text',ConditionType.CONTAINS,'No. Handphone berhasil disimpan')
@@ -127,6 +132,7 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 			WebUI.click(idleCallsTab)
 			if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
 				WebUI.click(btnAbort)
+				WebUI.delay(3)
 			} else {keylogger.logInfo("We not found the element")}
 		} else {keylogger.markError("We not found tab Idle Calls")}
 	} else {keylogger.markError("Menu KYC video not present")}

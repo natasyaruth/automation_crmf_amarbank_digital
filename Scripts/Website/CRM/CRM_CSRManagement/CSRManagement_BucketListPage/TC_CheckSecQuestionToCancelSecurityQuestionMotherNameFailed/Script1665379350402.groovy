@@ -92,16 +92,36 @@ while (loopPageCsr == false) {
 					} else {keylogger.markError('Alert not shown')}
 					if (listCols.get(6).getText().equalsIgnoreCase('Detail')) {
 						listCols.get(6).findElement(By.tagName('button')).click()
-						WebUI.verifyElementVisible(alertWrongSecQuest)
-						keylogger.markPassed('Count down still running (not reset)')
+						boolean shownText = WebUI.verifyElementVisible(alertWrongSecQuest,FailureHandling.OPTIONAL)
+						if (shownText == false) {
+							TestObject alertLock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah tidak bisa di akses')
+							WebUI.waitForElementVisible(alertLock, 5)
+							WebUI.click(btnCancel)
+							WebUI.waitForPageLoad(5)
+							WebUI.delay(3)
+							tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+							listRows = tableCsrMgt.findElements(By.tagName('tr'))
+							} else {
+							keylogger.markPassed('Count down still running (not reset)')
+							WebUI.verifyElementClickable(btnBatalSecQuest)
+							WebUI.takeScreenshot()
+							WebUI.click(btnBatalSecQuest)
+							break loopPage
+							}
 						} else {keylogger.logInfo('We not found the detail')}
-					WebUI.verifyElementClickable(btnBatalSecQuest)
-					WebUI.takeScreenshot()
-					WebUI.click(btnBatalSecQuest)
-					break loopPage
 				} else {
 					keylogger.logInfo("We are didn't get security question mother name")
-					WebUI.click(btnBatalSecQuest)
+					boolean btnVisible = WebUI.click(btnBatalSecQuest,FailureHandling.OPTIONAL)
+					if (btnVisible == false) {
+						TestObject alertLock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Nasabah tidak bisa di akses')
+						WebUI.waitForElementVisible(alertLock, 5)
+						WebUI.click(btnCancel)
+						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
+						tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
+						listRows = tableCsrMgt.findElements(By.tagName('tr'))
+						
+					}
 					tableCsrMgt = driverTblCsrMgt.findElement(By.xpath('//table/tbody'))
 					listRows = tableCsrMgt.findElements(By.tagName('tr'))
 					}

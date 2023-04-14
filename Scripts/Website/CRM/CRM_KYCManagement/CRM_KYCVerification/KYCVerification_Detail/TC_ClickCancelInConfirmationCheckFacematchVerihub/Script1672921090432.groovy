@@ -35,11 +35,11 @@ if (checkMenuKYC == true) {
 /* Verify KYC Verification Bucketlist*/
 WebUI.verifyElementVisible(headerKYCVerificationElement)
 
-WebUI.selectOptionByLabel(drpEmailType, EmailisVerified, false)
+WebUI.setText(txtFieldReqIdKyc, "10006157")
 
-WebUI.selectOptionByLabel(drpCustomerType, NewCustomer, false)
+WebUI.sendKeys(txtFieldReqIdKyc, Keys.chord(Keys.ENTER))
 
-WebUI.setText(txtFieldReqIdKyc, "10005584")
+WebUI.delay(3)
 
 WebUI.click(btnRequestid)
 

@@ -180,7 +180,7 @@
       <name>listDrpCustType</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/29?type=2'</defaultValue>
+      <defaultValue>'https://staging-crm-rekol.tunaiku.com/csr-management/205?type=2'</defaultValue>
       <description></description>
       <id>48c9be3f-c365-4cea-a2f5-e1ce04ddfa2c</id>
       <masked>false</masked>
@@ -264,7 +264,7 @@
       <name>fieldInputBirthdaySecQuest</name>
    </variable>
    <variable>
-      <defaultValue>'1503571672'</defaultValue>
+      <defaultValue>'1503570692'</defaultValue>
       <description></description>
       <id>13696997-82c0-4726-b5e6-9a027386252e</id>
       <masked>false</masked>

@@ -123,6 +123,8 @@ WebUI.scrollToElement(BtnDataChangeLog, 10)
 
 WebUI.click(BtnDataChangeLog)
 
+WebUI.selectOptionByLabel(fltrChgLog, "KYC Verification", false)
+
 WebUI.verifyElementText(TxtTerimaChangeLog, 'Terima')
 
 WebUI.click(BtnBack)

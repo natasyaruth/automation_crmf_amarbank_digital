@@ -86,6 +86,7 @@ loopCheckData: while (checkData == false) {
             WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 
             WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+			WebUI.delay(3)
         } else {
             keylogger.markError('We are not in CSR Management')
         }
@@ -94,6 +95,7 @@ loopCheckData: while (checkData == false) {
 
         if (colsCsr.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')) {
             colsCsr.get(6).findElement(By.xpath('button')).click()
+			WebUI.delay(3)
         } else {
             keylogger.markError('We not found the element')
         }
@@ -105,9 +107,9 @@ loopCheckData: while (checkData == false) {
 
             if (WebUI.waitForElementVisible(statusCust, 5)) {
                 WebUI.click(linkDataPhoneNumber)
-
+				WebUI.delay(3)
                 WebUI.click(btnEditPhoneNumber)
-
+				WebUI.delay(3)
                 if (WebUI.waitForElementPresent(txtPhoneNumber, 5)) {
                     WebUI.setText(txtPhoneNumber, '+6285'+RandomStringUtils.randomNumeric(7))
 

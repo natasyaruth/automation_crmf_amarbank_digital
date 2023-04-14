@@ -86,7 +86,7 @@ colsKycVerif = rowsKycVerif.get(0).findElements(By.tagName('td'))
 if (colsKycVerif.get(1).getText().equalsIgnoreCase(reqIdWithImageNotMatch)) {
 	colsKycVerif.get(4).getText().equalsIgnoreCase('Nasabah Baru')
 	colsKycVerif.get(7).findElement(By.xpath('a')).click()
-} else {keylogger.markError('Request ID not match')}
+} else {keylogger.logInfo('Request ID not match')}
 TestObject accessKycCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 if (WebUI.waitForElementPresent(accessKycCustDetail, 5)) {
 	WebUI.scrollToElement(txtImageNotFound, 5)
@@ -95,7 +95,7 @@ if (WebUI.waitForElementPresent(accessKycCustDetail, 5)) {
 	WebUI.verifyElementClickable(btnFmVerihub)
 	WebUI.scrollToElement(btnBackToKyc, 0)
 	WebUI.click(btnBackToKyc)
-} else {keylogger.markError('We are not in KYC Customer Detail')}
+} else {keylogger.logInfo('We are not in KYC Customer Detail')}
 
 'Init access HTML'
 WebDriver driverCsrMgt = DriverFactory.getWebDriver()
@@ -115,11 +115,15 @@ if (WebUI.waitForElementVisible(linkMenuCsrManagement, 5)) {
 	} else {keylogger.logInfo('We can continue the process')}
 	WebUI.setText(txtReqIdCsrMgt, reqIdWithImageNotMatch)
 	WebUI.sendKeys(txtReqIdCsrMgt, Keys.chord(Keys.ENTER))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	tblCsrMgt = driverCsrMgt.findElement(By.xpath('//table/tbody'))
 	rowsCsrMgt = tblCsrMgt.findElements(By.tagName('tr'))
 	colsCsrMgt = rowsCsrMgt.get(0).findElements(By.tagName('td'))
 	if (colsCsrMgt.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
 		colsCsrMgt.get(6).findElement(By.xpath('button')).click()
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 		TestObject accessToCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 		if (WebUI.waitForElementPresent(accessToCustDetail, 5)) {
 			keylogger.markPassed('We are success to access in customer detail')

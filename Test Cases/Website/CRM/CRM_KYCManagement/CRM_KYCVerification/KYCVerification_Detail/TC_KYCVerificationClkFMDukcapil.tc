@@ -126,7 +126,7 @@
       <variableId>607a4561-0821-42c9-a0e9-46d1e2229e77</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'0'</defaultValue>
       <description></description>
       <id>30604433-6365-4df0-8574-fd6b689f7b42</id>
       <masked>false</masked>

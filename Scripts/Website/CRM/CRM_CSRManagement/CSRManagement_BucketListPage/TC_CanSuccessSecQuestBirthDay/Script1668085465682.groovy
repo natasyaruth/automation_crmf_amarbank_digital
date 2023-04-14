@@ -205,7 +205,7 @@ while (loopPageCsr == false) {
 					if (WebUI.waitForElementVisible(csrSecurityQuestion, 5)) {
 						
 						'Please check the question from CSR detail if you want make it succeed'
-						WebUI.setText(fieldInputBirthdaySecQuest, "07/09/1987")
+						WebUI.setText(fieldInputBirthdaySecQuest, "23/01/1987")
 						
 						WebUI.sendKeys(fieldInputBirthdaySecQuest,Keys.chord(Keys.ENTER))
 						
@@ -251,7 +251,7 @@ while (loopPageCsr == false) {
 							
 							if (WebUI.waitForElementVisible(csrMotherNameSecQuest, 5)) {
 								
-								WebUI.setText(fieldInputMotherSecQuest, "OWEN")
+								WebUI.setText(fieldInputMotherSecQuest, "HHH")
 								
 								WebUI.click(btnSubmitSecQuest)
 								
@@ -265,7 +265,7 @@ while (loopPageCsr == false) {
 								
 								if (WebUI.waitForElementVisible(csrEmailSecQuest, 5)) {
 									
-									WebUI.setText(fieldInputEmailSecQuest, "senyumku28214301@yopmail.com")
+									WebUI.setText(fieldInputEmailSecQuest, "put0029003@maildrop.cc")
 									
 									WebUI.click(btnSubmitSecQuest)
 									
