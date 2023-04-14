@@ -84,8 +84,6 @@ while (checkData == false) {
 	rawCsr = tblCsr.findElements(By.tagName("tr"))
 	
 	for (int i=0; i < rawCsr.size(); i++) {
-		
-	}
 	
 	TestObject csrManagementBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'CSR Management')
 	
@@ -94,6 +92,10 @@ while (checkData == false) {
 		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 		
 		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+		
+		WebUI.waitForPageLoad(5)
+		
+		WebUI.delay(3)
 		
 	} else {keylogger.markError('We are not in CSR Management')}
 	
@@ -166,6 +168,8 @@ while (checkData == false) {
 		} else {keylogger.markError('We not in detail request Id')}
 		
 	}
+	
+}
 
 reqIdCsr = csrReqId
 
