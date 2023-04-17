@@ -55,6 +55,49 @@
       </variableLink>
    </testCaseLink>
    <testCaseLink>
+      <guid>9791b63e-6abb-472c-8df4-a8fd3b7bc402</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMVerifhubV2_Staging/Rc_200_VHBiometric</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>18c77ca2-b9a8-4691-ace3-8ea622eb8cd6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1169d189-12d2-4e8f-9a8a-245a8d9d7af7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5d62d212-df34-41b7-8fd9-49410fcdf521</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3178e1d7-37f9-4f02-855c-88d952252c81</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>99058228-0f53-4c5e-8242-e4972a28967b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>37c7cc65-ee64-4254-8ec5-8f5a8bc190a0</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>33ab7b9a-0b42-41f0-ae2f-c7966304f7b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -658,6 +701,49 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>fd8c8ccd-48c6-4274-b90c-68baaef16bf7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>318f7461-700b-4243-8be9-7c53c42ad923</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMVerifhubV2_Staging/Rc_500_VHBiometric</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c0f7ad7a-c4cb-4ce9-9aaf-9e0fa1294eb2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d7976d4c-56ad-47e5-be6d-c43f97359b7e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c97b7e6-c5d8-425b-bafc-15d53a94fe37</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd1e572a-dde6-4217-aca8-50ca4dcbf955</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a1946290-3eae-476e-bbf0-c12588d0c0de</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e8125ff0-c661-4796-bfef-072b435d9aeb</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

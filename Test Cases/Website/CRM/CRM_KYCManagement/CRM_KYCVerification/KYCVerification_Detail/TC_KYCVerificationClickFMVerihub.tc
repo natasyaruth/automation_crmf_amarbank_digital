@@ -427,7 +427,7 @@
       <name>txtMsgErrorFMDukcapil</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtResultFMVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtResultFMVerihubBiometric')</defaultValue>
       <description></description>
       <id>579bbdb2-8573-47d8-91f9-14fd96d2be78</id>
       <masked>false</masked>
