@@ -304,4 +304,14 @@
       <initValue>findTestData('Website/Dataset_CRMLogin/Dataset_Login_Keyclock').getValue(2, 2)</initValue>
       <name>passwordKeyclockSec</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-wiremock.otoku.io/mappings'</initValue>
+      <name>UrlWiremock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-kyc-retail.amarbank.co.id/'</initValue>
+      <name>urlKycVidCall</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

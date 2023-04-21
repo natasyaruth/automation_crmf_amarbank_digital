@@ -210,7 +210,7 @@
       <variableId>95e0d756-245a-4d52-a338-6a0db3e64357</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>97f7db9a-b146-4b7f-a62a-fe4a11d23acb</id>
       <masked>false</masked>

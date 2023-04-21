@@ -314,4 +314,9 @@
       <initValue>'https://dev-wiremock.otoku.io/mappings'</initValue>
       <name>UrlWiremock</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-kyc-retail.amarbank.co.id/'</initValue>
+      <name>urlKycVidCall</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

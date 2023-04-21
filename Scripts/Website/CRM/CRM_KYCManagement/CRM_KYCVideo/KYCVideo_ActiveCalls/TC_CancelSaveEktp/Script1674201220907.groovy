@@ -3,6 +3,9 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
+
+import javax.wsdl.Import
+
 import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
@@ -25,6 +28,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebDriver as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import com.tunaiku.keyword.Hash256
 
 'init Keylogger'
 KeywordUtil keylogger = new KeywordUtil()
@@ -69,6 +73,8 @@ if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 	WebUI.click(tabIdleCalls)
 	if (WebUI.waitForElementVisible(alertText, 5)) {
 		WebUI.click(btnCancel)
+		WebUI.waitForPageLoad(5)
+		WebUI.delay(3)
 	} else {
 		keylogger.logInfo('We can continue the process')
 	}
@@ -92,6 +98,7 @@ if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 				TestObject inKycVideoReq = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				if (WebUI.waitForElementVisible(inKycVideoReq, 5)) {
 					requestIdKycVideo = WebUI.getText(reqId)
+					referenceIdKycVideo = WebUI.getText(refId)
 					break loopCheckData
 				}
 			} else {
@@ -107,6 +114,9 @@ if (WebUI.waitForElementVisible(linkMenuKycVideoReq, 5)) {
 
 'I want store request ID'
 reqIKycVideo = requestIdKycVideo
+refIdKycVideo = referenceIdKycVideo
+String hashRefId = Hash256.hash(refIdKycVideo)
+println(hashRefId)
 
 'I want to open KYC Video Call'
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -117,16 +127,20 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	JavascriptExecutor js = ((driver) as JavascriptExecutor)
 	js.executeScript('window.open();')
 	WebUI.switchToWindowIndex(currentTab + 1)
-	String requestIdProcess = path +reqIKycVideo
+	String requestIdProcess = path +"?reqid=" +reqIKycVideo+ "&customer=" +hashRefId
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 	if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
-			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
-			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
+			WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
+			if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 				WebUI.verifyElementPresent(backToKycVideo, 5)
