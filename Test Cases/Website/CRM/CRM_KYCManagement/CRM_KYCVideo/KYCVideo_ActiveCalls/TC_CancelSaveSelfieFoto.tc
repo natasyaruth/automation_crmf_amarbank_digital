@@ -651,7 +651,7 @@
       <name>reqIdDetail</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>dca769ea-1197-4c69-a654-b96097131ce0</id>
       <masked>false</masked>
@@ -1169,10 +1169,10 @@
       <name>btnLanjutActiveCalls</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnCancel')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/LbRefId')</defaultValue>
       <description></description>
-      <id>3325568c-c83c-427b-803f-91db51796224</id>
+      <id>60686f43-0342-4d9b-88f4-3d0da202fcb0</id>
       <masked>false</masked>
-      <name>btnBatalKycVid</name>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>
