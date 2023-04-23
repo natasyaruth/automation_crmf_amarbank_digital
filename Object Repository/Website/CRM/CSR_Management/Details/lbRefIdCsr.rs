@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>lbRefIdCsr</name>
+   <tag></tag>
+   <elementGuidId>bffdac9b-6362-4b63-a209-1c20b20f118e</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[2]/following::span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>li.Breadcrumb-item > span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>0ace4a2d-c74f-4327-a5fe-34f96ab6b281</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>6149</value>
+      <webElementGuid>4541c7aa-6343-46ea-aafb-3f2c068d843e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;root&quot;)/div[@class=&quot;Main theme-primary&quot;]/section[@class=&quot;wrapper has--navigation&quot;]/section[@class=&quot;CustomerDetail-content&quot;]/div[@class=&quot;CustomerDetail-heading u-Flex u-jc-between&quot;]/div[1]/ul[@class=&quot;Breadcrumb u-MarginBottom-large&quot;]/li[@class=&quot;Breadcrumb-item&quot;]/span[1]</value>
+      <webElementGuid>53426a04-28a1-4969-b315-58dcfc443ebe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='root']/div/section/section/div/div/ul/li[3]/span</value>
+      <webElementGuid>750006d7-ad1c-43c7-8806-0a45070b5245</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='>'])[1]/following::span[1]</value>
+      <webElementGuid>bb342c56-a2b5-4b83-b495-3ce19e0eb4fc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='CSR Management'])[2]/following::span[2]</value>
+      <webElementGuid>e961f963-1bc3-4d44-961d-0c17c344a5cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Kembali'])[1]/preceding::span[1]</value>
+      <webElementGuid>8cb30349-1e1c-4ea3-a1c1-eb125cc4a467</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Detil Nasabah'])[1]/preceding::span[1]</value>
+      <webElementGuid>bce449b6-70b9-468b-b103-4a9410bb297b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='6149']/parent::*</value>
+      <webElementGuid>50b13e16-aad9-481a-a9e8-45706044505c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li[3]/span</value>
+      <webElementGuid>309b43f5-424c-47d8-b979-613adea17842</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = '6149' or . = '6149')]</value>
+      <webElementGuid>aaec3294-485e-4942-8600-a8167606f56c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

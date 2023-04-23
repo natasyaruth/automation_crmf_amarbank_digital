@@ -33,6 +33,7 @@ import groovy.transform.ConditionalInterrupt as ConditionalInterrupt
 import org.openqa.selenium.remote.server.handler.RefreshPage as RefreshPage
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import com.github.javafaker.Faker as Faker
+import com.tunaiku.keyword.Hash256
 
 
 
@@ -109,6 +110,7 @@ while (checkData == false) {
 					WebUI.delay(5)
 					WebUI.scrollToElement(btnBack, 5)
 					csrReqId = WebUI.getText(csrReqIdDetail)
+					referenceIdKycVideo = WebUI.getText(refId)
 					WebUI.click(btnBack)
 					WebUI.refresh()
 					break loopCheckData
@@ -124,6 +126,9 @@ while (checkData == false) {
 }
 
 reqIdCsr = csrReqId
+refIdKycVideo = referenceIdKycVideo
+String hashRefId = Hash256.hash(refIdKycVideo)
+println(hashRefId)
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
@@ -156,7 +161,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	JavascriptExecutor js = ((driver) as JavascriptExecutor)
 	js.executeScript('window.open();')
 	WebUI.switchToWindowIndex(currentTab + 1)
-	String requestIdProcess = path +reqIdCsr
+	String requestIdProcess = path +"?reqid=" +reqIdCsr+ "&customer=" +hashRefId
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
 	WebUI.waitForPageLoad(5)
@@ -166,7 +171,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
-			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')

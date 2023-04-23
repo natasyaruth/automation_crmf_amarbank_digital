@@ -319,4 +319,14 @@
       <initValue>'https://staging-kyc-retail.amarbank.co.id/'</initValue>
       <name>urlKycVidCall</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-support.senyumku.com/reactivate-account'</initValue>
+      <name>pathReactivation</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-support.senyumku.com/block-account'</initValue>
+      <name>pathBlock</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
