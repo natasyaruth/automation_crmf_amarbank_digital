@@ -34,6 +34,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.tunaiku.keyword.Hash256
 
 'Initial loggin in katalon'
 KeywordUtil keylogger = new KeywordUtil()
@@ -137,8 +138,12 @@ TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CO
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	if (WebUI.verifyElementVisible(txtReqId)) {
 		reqIdDetail = WebUI.getText(txtReqId)
+		referenceIdKycVideo = WebUI.getText(refId)
 	} else {keylogger.markError('We not find the request Id')}
 	reqIdUsed = reqIdDetail
+	refIdKycVideo = referenceIdKycVideo
+	String hashRefId = Hash256.hash(refIdKycVideo)
+	println(hashRefId)
 	println(reqIdUsed)
 	String currentPage = WebUI.getUrl()
 	int currentTab = WebUI.getWindowIndex()
@@ -146,7 +151,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	JavascriptExecutor js = ((driver) as JavascriptExecutor)
 	js.executeScript('window.open();')
 	WebUI.switchToWindowIndex(currentTab + 1)
-	String requestIdProcess = path +reqIdUsed
+	String requestIdProcess = path +"?reqid=" +reqIdUsed+ "&customer=" +hashRefId
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
@@ -155,7 +160,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 			WebUI.waitForPageLoad(5)
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
-			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
