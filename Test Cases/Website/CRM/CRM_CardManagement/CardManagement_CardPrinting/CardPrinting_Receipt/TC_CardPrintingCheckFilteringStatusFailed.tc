@@ -47,6 +47,12 @@
       <value></value>
       <variableId>b9585f65-d596-4ca6-ab05-52550ff80565</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0f33e8f4-3e0f-401b-ad70-6fe0594de92e</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/Card Management/Card Printing/LinkCardPrinting')</defaultValue>
       <description></description>
@@ -95,5 +101,12 @@
       <id>b9585f65-d596-4ca6-ab05-52550ff80565</id>
       <masked>false</masked>
       <name>firstRowNewCardElement</name>
+   </variable>
+   <variable>
+      <defaultValue>[]</defaultValue>
+      <description></description>
+      <id>0f33e8f4-3e0f-401b-ad70-6fe0594de92e</id>
+      <masked>false</masked>
+      <name>listRowCard</name>
    </variable>
 </TestCaseEntity>

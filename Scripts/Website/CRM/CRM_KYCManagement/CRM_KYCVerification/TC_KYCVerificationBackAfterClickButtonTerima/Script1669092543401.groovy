@@ -13,10 +13,14 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject
 import com.kms.katalon.core.util.KeywordUtil
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
 
 'Init Keylogger for this cases'
 KeywordUtil keylogger = new KeywordUtil()
@@ -25,15 +29,33 @@ WebUI.click(KYCManagementLink)
 
 WebUI.click(KYCVerificationLink)
 
-WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Senyumku', true)
+WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
-WebUI.setText(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/TxtSearchRequestID'), InputReqID)
+WebDriver driver = DriverFactory.getWebDriver()
 
-WebUI.click(findTestObject('Website/CRM/KYC_Management/KYC_Verification/Bucketlist/BtnShow'))
+WebElement tableKyc = driver.findElement(By.xpath('//*[@id="root"]/div/div/section/div/div[2]/table/tbody'))
 
-WebUI.click(BtnDetailKYCVerification)
+List<WebElement> rowKyc = tableKyc.findElements(By.tagName('tr'))
+
+List<WebElement> colKyc = rowKyc.get(0).findElements(By.tagName('td'))
+
+if (colKyc.get(2).getText().equalsIgnoreCase('Registrasi Baru')) {
+	
+	keylogger.markPassed('We already to click request Id')
+	
+	colKyc.get(7).findElement(By.xpath('a')).click()
+	
+	WebUI.waitForPageLoad(5)
+	
+	WebUI.delay(3)
+	
+} else {
+	
+	keylogger.markFailed('We not found the data')
+	
+}
 
 WebUI.click(BtnFaceMatchDukcapil)
 

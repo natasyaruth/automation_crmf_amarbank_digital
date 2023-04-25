@@ -25,6 +25,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebDriver as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import com.tunaiku.keyword.Hash256
 
 KeywordUtil keylogger = new KeywordUtil()
 
@@ -43,6 +44,8 @@ List<WebElement> rowBucketList, colsBucketList
 checkReqId = false
 
 String requestIdKycVideo
+
+String referenceIdKycVideo
 
 loopCheckData:
 while (checkReqId == false) {
@@ -63,6 +66,8 @@ while (checkReqId == false) {
 			
 			requestIdKycVideo = colsBucketList.get(1).findElement(By.xpath('a')).getText()
 			
+			referenceIdKycVideo = colsBucketList.get(2).getText()
+			
 			break loopCheckData
 			
 		} else {
@@ -78,6 +83,14 @@ while (checkReqId == false) {
 
 println "Request id that will be processed: "+requestIdKycVideo
 
+println "Reference id that will be processed: "+referenceIdKycVideo
+
+refIdKycVideo = referenceIdKycVideo
+
+String hashRefId = Hash256.hash(refIdKycVideo)
+
+println(hashRefId)
+
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
@@ -92,7 +105,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	
 	WebUI.switchToWindowIndex(currentTab + 1)
 	
-	String requestIdProcess = path+requestIdKycVideo
+	String requestIdProcess = path +"?reqid=" +requestIdKycVideo+ "&customer=" +hashRefId
 	
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
@@ -144,7 +157,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	
 	if(checkVideoCall) {
 		
-		TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+		TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 		
 		if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 			

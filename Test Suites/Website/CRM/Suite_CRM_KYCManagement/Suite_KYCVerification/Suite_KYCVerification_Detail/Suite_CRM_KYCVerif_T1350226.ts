@@ -12,6 +12,92 @@
    <rerunImmediately>false</rerunImmediately>
    <testSuiteGuid>5e858475-2891-49e4-8e68-134d7d416a66</testSuiteGuid>
    <testCaseLink>
+      <guid>2a052681-0a39-4598-958c-48d368100ec7</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMDukcapil_Staging/Rc_500_FMDukcapil</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>da193da7-45ad-45c4-8162-864cca3633c1</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>90c29b8f-a4b9-4b2b-b304-aa8fc8cf46ce</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>89e864e4-fbfe-4c1e-8172-8b4f8320f003</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>868d2306-d633-4eaf-87f5-ea88a5c2e189</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>200d0bad-f129-4dc5-9de0-9c93d4dd6d82</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>67977af7-fede-472b-9a0b-84b08b115646</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>9791b63e-6abb-472c-8df4-a8fd3b7bc402</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMVerifhubV2_Staging/Rc_200_VHBiometric</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>18c77ca2-b9a8-4691-ace3-8ea622eb8cd6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1169d189-12d2-4e8f-9a8a-245a8d9d7af7</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>5d62d212-df34-41b7-8fd9-49410fcdf521</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>3178e1d7-37f9-4f02-855c-88d952252c81</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>99058228-0f53-4c5e-8242-e4972a28967b</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>37c7cc65-ee64-4254-8ec5-8f5a8bc190a0</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
       <guid>33ab7b9a-0b42-41f0-ae2f-c7966304f7b4</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
@@ -572,6 +658,92 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>469c9a65-336a-46ce-92ec-13754252de72</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>972a3279-8eb2-45a4-8acd-4ef6d1ed7bae</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMDukcapil_Staging/Rc_200_FMDukcapil</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b05d15b2-5d35-4eae-923a-cd90f7646e73</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>ef4fdc24-660f-4e1e-91d2-37e8d18537fb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a008f624-493b-45a4-95a1-f23276500e1e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2674d7c6-93f6-41f5-be94-a2a834b7d617</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>52ca944f-cc3e-4808-a5bf-add0ee1cdb91</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>fd8c8ccd-48c6-4274-b90c-68baaef16bf7</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>318f7461-700b-4243-8be9-7c53c42ad923</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMVerifhubV2_Staging/Rc_500_VHBiometric</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>c0f7ad7a-c4cb-4ce9-9aaf-9e0fa1294eb2</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>d7976d4c-56ad-47e5-be6d-c43f97359b7e</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>2c97b7e6-c5d8-425b-bafc-15d53a94fe37</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>bd1e572a-dde6-4217-aca8-50ca4dcbf955</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a1946290-3eae-476e-bbf0-c12588d0c0de</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e8125ff0-c661-4796-bfef-072b435d9aeb</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

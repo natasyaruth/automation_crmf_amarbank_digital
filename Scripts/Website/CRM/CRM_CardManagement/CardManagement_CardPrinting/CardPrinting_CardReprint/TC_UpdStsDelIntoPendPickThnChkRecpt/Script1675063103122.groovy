@@ -65,6 +65,10 @@ while (flagNextPageReprint == false) {
 	/* Looping through number of rows of bucketlist Reprint card*/
     for (int i = 0; i < listRowsReprint.size(); i++) {
 		
+		'adding get element check the column'
+		tableReprint = driverReprint.findElement(By.xpath('//tbody'))
+		listRowsReprint = tableReprint.findElements(By.tagName('tr'))
+		
 		/* Storing column from listRowsReprint*/
         listColumnReprint = listRowsReprint.get(i).findElements(By.tagName('td'))
 		
@@ -158,6 +162,7 @@ while (flagNextPageReprint == false) {
 					/* We will wait for 3 second till page finish load*/
                     WebUI.waitForPageLoad(3)
 					WebUI.delay(3)
+					
                 }
             }
         }
@@ -191,13 +196,16 @@ while (flagNextPageReprint == false) {
             WebUI.click(btnNextPageReprint)
 			
 			/* We will wait for 3 second till page finish load*/
-            WebUI.waitForPageLoad(3)
+            WebUI.waitForPageLoad(5)
+			WebUI.delay(3)
+			
         }
     }
 }
 
 /* Store value requestIdReprint into requestId */
 requestId = requestIdReprint
+println(requestId)
 
 /* We want to set API testing for enroute route ninja*/
 String body = '{"shipper_id": 921,"status": "'+currentStatus+'","shipper_ref_no": "10001253","tracking_ref_no": "10001253","shipper_order_ref_no": "8374","timestamp": "2017-04-03T11:50:44+0800","id": "3b7327b9-54bf-417f-3104-f4e155a22308","previous_status": "'+previousStatus+'","tracking_id": "AMAR-'+requestId+'","comments": "SG-Singapore-Ninja Van Sorting Facility"}'

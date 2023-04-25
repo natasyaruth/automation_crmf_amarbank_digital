@@ -215,6 +215,12 @@
       <value></value>
       <variableId>51a11a4e-d8c3-447e-af80-e0e3d2186153</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60686f43-0342-4d9b-88f4-3d0da202fcb0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -223,7 +229,7 @@
       <name>requestIdKycVideo</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>2fb457d5-b2c4-4bfd-b8ef-01ca1e52382f</id>
       <masked>false</masked>
@@ -459,5 +465,12 @@
       <id>51a11a4e-d8c3-447e-af80-e0e3d2186153</id>
       <masked>false</masked>
       <name>chkReasonChangePhoneNumber</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/LbRefId')</defaultValue>
+      <description></description>
+      <id>60686f43-0342-4d9b-88f4-3d0da202fcb0</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>

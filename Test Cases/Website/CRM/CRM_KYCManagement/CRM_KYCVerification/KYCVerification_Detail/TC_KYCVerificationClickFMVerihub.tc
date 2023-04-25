@@ -427,14 +427,14 @@
       <name>txtMsgErrorFMDukcapil</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtResultFMVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/TxtResultFMVerihubBiometric')</defaultValue>
       <description></description>
       <id>579bbdb2-8573-47d8-91f9-14fd96d2be78</id>
       <masked>false</masked>
       <name>txtValueFMVerihub</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFmVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFacematchVerihubBiometric')</defaultValue>
       <description></description>
       <id>4faf64f6-b36e-4432-a7e8-01f4eeeeb074</id>
       <masked>false</masked>

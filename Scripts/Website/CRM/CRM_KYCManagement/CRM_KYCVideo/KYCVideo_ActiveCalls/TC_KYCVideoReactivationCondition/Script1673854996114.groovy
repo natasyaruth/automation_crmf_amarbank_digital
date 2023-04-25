@@ -28,6 +28,7 @@ import org.openqa.selenium.WebDriver
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import com.tunaiku.keyword.RandomFakerData as fakerData
+import com.tunaiku.keyword.Hash256
 
 'Init logging in katalon studio'
 KeywordUtil keylogger = new KeywordUtil()
@@ -171,7 +172,7 @@ while (flagLoop == false) {
 		} else {keylogger.markError('We cannot click the radio button account number senyumku')}
 		WebUI.setText(txtReasonBlock, RandomStringUtils.randomAlphabetic(160))
 		WebUI.click(btnFormSubmit)
-		TestObject notifDecisionBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Anda yakin ingin memblokir akun Senyumku?')
+		TestObject notifDecisionBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Anda yakin ingin memblokir akun Amar Bank?')
 		if (WebUI.waitForElementPresent(notifDecisionBlock, 5)) {
 			WebUI.click(btnBlockUserSenyumkuPage)
 		} else {keylogger.markError("We not found the decision notification")}
@@ -318,16 +319,20 @@ while (flagLoop == false) {
 			WebUI.delay(5)
 			WebUI.waitForPageLoad(10)
 			reqIdForVideoCall = WebUI.getText(requestIdCsrDetail)
+			referenceIdKycVideo = WebUI.getText(refId)
 			println(reqIdForVideoCall)
 			WebUI.switchToWindowIndex(1)
 		} else {keylogger.markError("Element not found please check again")}
 		WebUI.delay(5)
 	} else {keylogger.markError("Text or page validation account not shown")}
 	reqIdVidCall = reqIdForVideoCall
+	refIdKycVideo = referenceIdKycVideo
+	String hashRefId = Hash256.hash(refIdKycVideo)
+	println(hashRefId)
 	validateVideoCall = false
 	validateVideoCallLoop:
 	while (validateVideoCall == false) {
-		String callValidation = pathVideoCall +reqIdVidCall
+		String callValidation = pathVideoCall +"?reqid=" +reqIdVidCall+ "&customer=" +hashRefId
 		WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + callValidation.substring(8))
 		TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
 		if (WebUI.waitForElementVisible(videoCallValidation, 5)) {
@@ -336,7 +341,7 @@ while (flagLoop == false) {
 			if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 				WebUI.delay(5)
 				WebUI.click(btnCallSenyumku)
-				TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+				TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 				if (WebUI.verifyElementPresent(txtVerifConnect, 5)) {
 					WebUI.switchToWindowIndex(0)
 					TestObject backToCsrDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')

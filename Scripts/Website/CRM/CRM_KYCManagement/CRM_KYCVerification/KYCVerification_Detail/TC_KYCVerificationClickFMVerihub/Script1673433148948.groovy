@@ -83,7 +83,10 @@ while(flagLoopPage == false) {
 		listColumn.get(7).findElement(By.tagName('a')).click()
 		
 		/* We will wait for 2 second till page finish load*/
-		WebUI.waitForPageLoad(2)
+//		WebUI.waitForPageLoad(2)
+		
+		/* We will add for 3 delay*/
+		WebUI.delay(5)				
 		
 		/* Verify if the button 'Kembali' is clickable, if it's not clickable will move to else statement */
 		if(WebUI.waitForElementClickable(btnBack, 5)) {
@@ -115,7 +118,7 @@ while(flagLoopPage == false) {
 					
 					WebUI.click(btnConfirmFM)
 					
-					WebUI.delay(5)
+					WebUI.delay(2)
 					
 					if(WebUI.waitForElementPresent(snackBarError, 10)) {
 						

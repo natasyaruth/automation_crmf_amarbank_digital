@@ -108,7 +108,7 @@
       <variableId>eafa2327-851b-4c70-a908-ec50fa1146d4</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'1'</defaultValue>
+      <defaultValue>'0'</defaultValue>
       <description></description>
       <id>c9f9ab01-32c1-4e80-8923-7cd70eb60256</id>
       <masked>false</masked>
@@ -206,7 +206,7 @@
       <name>btnConfirmFMDukcapil</name>
    </variable>
    <variable>
-      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFmVerihub')</defaultValue>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Verification/Details/BtnFacematchVerihubBiometric')</defaultValue>
       <description></description>
       <id>a0f10941-d029-4e86-8465-da1ac0f5a48c</id>
       <masked>false</masked>

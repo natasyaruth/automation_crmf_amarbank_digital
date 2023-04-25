@@ -216,7 +216,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/1415?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/10?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/18?type=2']</initValue>
       <name>requestStatusFinishCondition</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -308,5 +308,30 @@
       <description></description>
       <initValue>'0'</initValue>
       <name>tempIndexKycVidReq</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://dev-wiremock.otoku.io/mappings'</initValue>
+      <name>UrlWiremock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-kyc-retail.amarbank.co.id/'</initValue>
+      <name>urlKycVidCall</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-support-retail.amarbank.co.id/reactivate-account'</initValue>
+      <name>pathReactivation</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://staging-support-retail.amarbank.co.id/block-account'</initValue>
+      <name>pathBlock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'18688'</initValue>
+      <name>embedEfisehry</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

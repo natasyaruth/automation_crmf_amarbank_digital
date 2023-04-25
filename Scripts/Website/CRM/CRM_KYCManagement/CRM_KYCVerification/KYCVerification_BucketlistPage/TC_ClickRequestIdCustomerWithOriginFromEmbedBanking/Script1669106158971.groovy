@@ -60,7 +60,7 @@ while(flagLoopPage == false) {
 	for(int i=0;i<listRows.size();i++) {
 	
 	/* Select filter customer type*/
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
+	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Senyumku', false)
 	
 	/* Select filter email verification */
 	WebUI.selectOptionByLabel(drpDwnEmailVerf, "Terverifikasi", false)	

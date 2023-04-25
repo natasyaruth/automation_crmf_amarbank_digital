@@ -112,7 +112,7 @@ for (int i = 0; i < customerType.size(); i++) {
 						WebUI.waitForPageLoad(5)
 						WebUI.delay(3)
 			
-						int optionListLength = 2
+						int optionListLength = 1
 			
 						Random rand = new Random()
 			

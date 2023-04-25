@@ -10,6 +10,7 @@ import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
+import com.kms.katalon.core.testobject.ConditionType
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
@@ -25,11 +26,34 @@ KeywordUtil keyLogger = new KeywordUtil()
 boolean checkMenuKYC = WebUI.verifyElementVisible(menuKYCManagement, FailureHandling.OPTIONAL)
 
 if (checkMenuKYC == true) {
+	
     WebUI.click(menuKYCManagement)
 
     WebUI.click(menuKYCVideo)
 } else {
+	
     keyLogger.markFailed('Something happen with menu KYC Management')
+	
+}
+
+TestObject checkNotifActiveCall = new TestObject().addProperty('text',ConditionType.CONTAINS,'Konfirmasi')
+
+boolean notifInActiveCall = WebUI.waitForElementVisible(checkNotifActiveCall, 5, FailureHandling.OPTIONAL)
+
+if (notifInActiveCall == true) {
+	
+	keyLogger.logInfo("We handle notif block")
+	
+	WebUI.click(btnContinue)
+	
+	WebUI.scrollToElement(btnCancel, 5)
+	
+	WebUI.click(btnCancel)
+	
+} else {
+	
+	keyLogger.logInfo("We not handle notif block")
+	
 }
 
 /* Open Tab Active Call KYC Video*/
@@ -73,7 +97,9 @@ WebUI.delay(1)
 WebUI.click(BtnSearch)
 
 def SearchRequestID1 = WebUI.getAttribute(TxtSearchRequestID,'value')
+
 def firstRowRequestID = WebUI.getText(BtnRequestID)
+
 WebUI.verifyMatch(firstRowRequestID, SearchRequestID1, false)
 
 WebUI.takeScreenshot()

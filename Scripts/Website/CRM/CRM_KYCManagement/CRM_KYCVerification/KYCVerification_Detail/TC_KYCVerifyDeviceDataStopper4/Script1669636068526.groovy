@@ -56,13 +56,15 @@ TestObject kycVerifBucketList = new TestObject().addProperty('text',ConditionTyp
 if (WebUI.verifyElementPresent(kycVerifBucketList, 5)) {
 	WebUI.setText(txtReqIdKycVerif, reqIdStopper4)
 	WebUI.sendKeys(txtReqIdKycVerif, Keys.chord(Keys.ENTER))
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {keylogger.markError("Element not present")}
 WebDriver driverKycVerif = DriverFactory.getWebDriver()
 WebElement tblKycVerif = driverKycVerif.findElement(By.xpath("//table/tbody"))
 List<WebElement> rowKycVerif = tblKycVerif.findElements(By.tagName('tr'))
 List<WebElement> colsKycVerif = rowKycVerif.get(0).findElements(By.tagName('td'))
-if (colsKycVerif.get(2).getText().equalsIgnoreCase("Registrasi Baru")) {
-	colsKycVerif.get(4).getText().equalsIgnoreCase("Nasabah Baru")
+if (colsKycVerif.get(2).getText().equalsIgnoreCase("Ganti Nomor HP")) {
+	colsKycVerif.get(4).getText().equalsIgnoreCase("Nasabah Senyumku")
 	newUserName = colsKycVerif.get(3).getText()
 	colsKycVerif.get(1).getText().equalsIgnoreCase(reqIdStopper4)
 	keylogger.markPassed("We verify request Id in new registration in KYC verif")
@@ -89,7 +91,7 @@ WebDriver driverCsrBucket = DriverFactory.getWebDriver()
 WebElement tblCsrBucket = driverCsrBucket.findElement(By.xpath("//table/tbody"))
 List<WebElement> rowCsrBucket = tblCsrBucket.findElements(By.tagName('tr'))
 List<WebElement> colsCsrBucket = rowCsrBucket.get(0).findElements(By.tagName('td'))
-if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah baru")) {
+if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 	colsCsrBucket.get(1).getText().equalsIgnoreCase(newUserName)
 	colsCsrBucket.get(6).findElement(By.xpath('button')).click()
 } else {keylogger.markError("Request Id not in Bucket List")}

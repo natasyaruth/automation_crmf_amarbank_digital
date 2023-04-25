@@ -699,7 +699,7 @@
       <name>reqIdDetail</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>32328768-2cac-4150-a7e2-912e41013bb3</id>
       <masked>false</masked>
@@ -1278,5 +1278,12 @@
       <id>86b1954d-6c78-4813-92a5-4fd94c48d8fd</id>
       <masked>false</masked>
       <name>variable</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/LbRefId')</defaultValue>
+      <description></description>
+      <id>60686f43-0342-4d9b-88f4-3d0da202fcb0</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>

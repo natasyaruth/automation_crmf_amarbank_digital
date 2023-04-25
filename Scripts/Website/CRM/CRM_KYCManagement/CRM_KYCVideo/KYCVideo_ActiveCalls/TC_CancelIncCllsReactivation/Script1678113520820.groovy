@@ -28,6 +28,7 @@ import groovy.transform.ConditionalInterrupt as ConditionalInterrupt
 import org.openqa.selenium.remote.server.handler.RefreshPage as RefreshPage
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
 import com.github.javafaker.Faker as Faker
+import com.tunaiku.keyword.Hash256
 
 'Init keylogger'
 KeywordUtil keylogger = new KeywordUtil()
@@ -118,6 +119,10 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 WebUI.delay(5)
 LabelReqid = WebUI.getText(LabelRequestID)
 println(LabelReqid)
+referenceIdKycVideo = WebUI.getText(refId)
+refIdKycVideo = referenceIdKycVideo
+String hashRefId = Hash256.hash(refIdKycVideo)
+println(hashRefId)
 TestObject kycVideoDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video Request')
 
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
@@ -133,7 +138,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
     WebUI.switchToWindowIndex(currentTab + 1)
 
-    String requestIdProcess = path+LabelReqid
+    String requestIdProcess = path +"?reqid=" +LabelReqid+ "&customer=" +hashRefId
 
     WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(8))
     WebUI.waitForPageLoad(5)
@@ -147,7 +152,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
             WebUI.click(btnCallSenyumku)
 
-            TestObject txtVerifConnect = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Kamu akan terhubung dengan tim Senyumku')
+            TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 
             if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
                 WebUI.switchToWindowIndex(0)

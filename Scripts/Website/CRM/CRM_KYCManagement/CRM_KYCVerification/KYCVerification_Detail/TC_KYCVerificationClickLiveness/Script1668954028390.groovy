@@ -76,7 +76,7 @@ if (WebUI.waitForElementPresent(menuKycManagement, 5)) {
 			colsKycVerif.get(7).findElement(By.xpath('a')).click()
 			TestObject kycDetailPage = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Customer Detail')
 			if (WebUI.verifyElementPresent(kycDetailPage, 5)) {
-				WebUI.click(btnBackDashboard)
+				WebUI.click(btnBackDashboard) 
 				TestObject kycBucketList = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Verification')
 				WebUI.verifyElementPresent(kycBucketList, 5)
 			} else {keylogger.markError('Element not present')}
