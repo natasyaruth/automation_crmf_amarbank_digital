@@ -316,12 +316,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-support.senyumku.com/reactivate-account'</initValue>
+      <initValue>'https://dev-support-retail.amarbank.co.id/reactivate-account'</initValue>
       <name>pathReactivation</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-support.senyumku.com/block-account'</initValue>
+      <initValue>'https://dev-support-retail.amarbank.co.id/block-account'</initValue>
       <name>pathBlock</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'18688'</initValue>
+      <name>embedEfisehry</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

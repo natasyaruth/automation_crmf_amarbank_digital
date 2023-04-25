@@ -172,7 +172,7 @@ while (flagLoop == false) {
 		} else {keylogger.markError('We cannot click the radio button account number senyumku')}
 		WebUI.setText(txtReasonBlock, RandomStringUtils.randomAlphabetic(160))
 		WebUI.click(btnFormSubmit)
-		TestObject notifDecisionBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Anda yakin ingin memblokir akun Senyumku?')
+		TestObject notifDecisionBlock = new TestObject().addProperty('text',ConditionType.CONTAINS,'Anda yakin ingin memblokir akun Amar Bank?')
 		if (WebUI.waitForElementPresent(notifDecisionBlock, 5)) {
 			WebUI.click(btnBlockUserSenyumkuPage)
 		} else {keylogger.markError("We not found the decision notification")}

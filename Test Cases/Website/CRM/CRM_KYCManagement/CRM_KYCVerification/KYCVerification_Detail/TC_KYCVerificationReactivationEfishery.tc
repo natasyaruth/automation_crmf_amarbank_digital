@@ -941,7 +941,7 @@
       <name>reqIdForVideoCall</name>
    </variable>
    <variable>
-      <defaultValue>'18688'</defaultValue>
+      <defaultValue>GlobalVariable.embedEfisehry</defaultValue>
       <description></description>
       <id>6b444caf-e63a-4df9-b477-9760febd2a1a</id>
       <masked>false</masked>

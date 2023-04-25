@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//a[contains(text(),'support.senyumku.com/help-center/faq/aktivasi-ulang-akun')]</value>
+         <value>//a[contains(text(),'support-retail.amarbank.co.id/help-center/faq/aktivasi-ulang-akun')]</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d85d4c76-9b53-45e5-a1d9-3d100a5e0733</webElementGuid>
+      <webElementGuid>bccab066-5270-45de-8e6d-24a7a5b5427c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,7 +30,7 @@
       <name>href</name>
       <type>Main</type>
       <value>https://staging-support.senyumku.com/help-center/faq/aktivasi-ulang-akun</value>
-      <webElementGuid>88a211cb-bb99-416d-a6d9-f1427ea5ae8c</webElementGuid>
+      <webElementGuid>1d88c9f6-16e7-4efb-b467-94d38ea7a4e3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>support.senyumku.com/help-center/faq/aktivasi-ulang-akun</value>
-      <webElementGuid>aa94829e-674a-434b-962c-330b66513a5e</webElementGuid>
+      <webElementGuid>ed5ef149-189c-4ce9-a5e6-a28782bdaea6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;Global&quot;]/div[@class=&quot;GlobalContent&quot;]/div[@class=&quot;Container&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-lg-8 Grid-xs-12&quot;]/div[@class=&quot;BlockAccount u-ta-center u-mg-top-xlarge&quot;]/p[1]/a[1]</value>
-      <webElementGuid>24aeeade-d986-461a-a635-94914c2d399c</webElementGuid>
+      <webElementGuid>8cce30ef-d1d0-48d7-bc7a-ec1fc3ed463c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/div[2]/div/div/div[2]/div/p/a</value>
-      <webElementGuid>adc56b61-d2cf-440b-97ce-02d127affe87</webElementGuid>
+      <webElementGuid>182fd23b-d89f-494f-a7ce-107a514b60f4</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'support.senyumku.com/help-center/faq/aktivasi-ulang-akun')]</value>
-      <webElementGuid>9e49972f-1d1f-4599-ac36-2b06838dcbe7</webElementGuid>
+      <webElementGuid>ca80eabe-bbcd-42c3-bdd6-221e3a096fe6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Akun Anda berhasil di blokir!'])[1]/following::a[1]</value>
-      <webElementGuid>0d44d840-0840-4a07-95a0-bf3dc9b4852d</webElementGuid>
+      <webElementGuid>eda6e540-79c9-4dd9-a3be-9a0a2a7cf258</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Unduh Senyumku'])[2]/following::a[1]</value>
-      <webElementGuid>84a2cef6-1391-470a-8087-8bb8f8192312</webElementGuid>
+      <webElementGuid>57d8d27f-0382-4399-8d32-99f8980ae7b8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Senyumku adalah produk PT Bank Amar Indonesia yang terdaftar dan diawasi oleh'])[1]/preceding::a[1]</value>
-      <webElementGuid>a42f469b-5366-4c86-8728-1f0565b3f19a</webElementGuid>
+      <webElementGuid>8e96134f-cf14-4560-af9a-9a3ee0b07fab</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Tentang Senyumku'])[1]/preceding::a[1]</value>
-      <webElementGuid>4253a199-4af4-45e2-9cd0-107aa7c6ed11</webElementGuid>
+      <webElementGuid>6c82c51c-316e-421a-ab95-13731bd21d96</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='support.senyumku.com/help-center/faq/aktivasi-ulang-akun']/parent::*</value>
-      <webElementGuid>63b60108-0313-40f9-9f83-bdc1bb94c39b</webElementGuid>
+      <webElementGuid>b3ff46e0-258e-4732-bc17-36d7de3fd29b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +110,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, 'https://staging-support.senyumku.com/help-center/faq/aktivasi-ulang-akun')]</value>
-      <webElementGuid>b7117cc3-5ffb-4cab-a7b0-43583a770d4d</webElementGuid>
+      <webElementGuid>1dbb0636-a93b-4dfc-9657-ac9eecf35aba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +118,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//p/a</value>
-      <webElementGuid>83bd147c-94c5-44d4-8a8d-5bd74d2878bd</webElementGuid>
+      <webElementGuid>3c277f05-e06e-4405-bfa4-fac857b6867d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +126,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@href = 'https://staging-support.senyumku.com/help-center/faq/aktivasi-ulang-akun' and (text() = 'support.senyumku.com/help-center/faq/aktivasi-ulang-akun' or . = 'support.senyumku.com/help-center/faq/aktivasi-ulang-akun')]</value>
-      <webElementGuid>79b89409-eb88-446e-9dbe-a75043a66f8d</webElementGuid>
+      <webElementGuid>c7a0e73b-2dbe-490d-81e1-873ca64083d7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
-      <webElementGuid>79ceab84-8235-44d3-9302-ff0dfa8fddbd</webElementGuid>
+      <webElementGuid>4529d8f7-672b-4125-9ba1-998f2e0eeb6b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>AccordionLink-list-item u-fw-bold</value>
-      <webElementGuid>130d8e35-ac02-414c-88eb-4330965c0e67</webElementGuid>
+      <webElementGuid>2ccff2c6-ad2b-429f-83cd-526fb63aff0b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,7 +38,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Formulir reaktivasi akun</value>
-      <webElementGuid>9761834e-3403-4abf-b624-47d0b988eeef</webElementGuid>
+      <webElementGuid>64ef118a-0b4d-44e9-98fa-610b5819c0a3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;root&quot;)/main[@class=&quot;Global&quot;]/div[@class=&quot;GlobalContent&quot;]/section[@class=&quot;Section&quot;]/section[@class=&quot;Section&quot;]/section[@class=&quot;Section&quot;]/section[@class=&quot;Section&quot;]/div[@class=&quot;Container display-only-desktop u-pd-top-xlarge&quot;]/div[@class=&quot;Grids&quot;]/div[@class=&quot;Grid Grid-8&quot;]/div[@class=&quot;AccordionLink FaqDetail-accordion&quot;]/a[@class=&quot;u-fw-bold&quot;]/div[@class=&quot;Container&quot;]/div[@class=&quot;AccordionLink-list-item u-fw-bold&quot;]</value>
-      <webElementGuid>ff7e791c-0091-4fcb-98e6-df098606d50a</webElementGuid>
+      <webElementGuid>3849b3f5-d4d4-4188-b87a-3fe8a6e7d204</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='root']/main/div[2]/section/section[2]/section/section/div/div/div[2]/div[3]/a/div/div</value>
-      <webElementGuid>ee7105f0-3ff5-4333-a74f-1cb07315e3ba</webElementGuid>
+      <webElementGuid>f2ef74b3-9740-475f-886d-76bfe8248699</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,7 +62,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Mohon menunggu 1 x 24 jam hingga proses aktivasi akun selesai kami lakukan.'])[1]/following::div[3]</value>
-      <webElementGuid>c6b1009d-57ed-4d8a-b9d2-d7ad5fc8f4e7</webElementGuid>
+      <webElementGuid>1ee8487b-744e-4ff1-b7a7-6289c758d2c3</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +70,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Siapkan kartu KTP dan beri akses untuk membuka kamera handphone/webcam.'])[1]/following::div[3]</value>
-      <webElementGuid>59b91f7b-006c-4242-abce-7ccce4a8e8e1</webElementGuid>
+      <webElementGuid>1306103d-aa55-4ea1-8db6-b4512c07f1a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +78,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Klik link untuk diarahkan ke halaman formulir.'])[2]/preceding::div[1]</value>
-      <webElementGuid>e38ae5e3-a3ce-4f97-8a89-de3d8eaee4f2</webElementGuid>
+      <webElementGuid>37676a9c-3640-4458-b99d-e37c272ce1ec</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +86,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Isi formulir.'])[2]/preceding::div[1]</value>
-      <webElementGuid>a33117e7-a9bb-4ede-a987-937932a8ddb1</webElementGuid>
+      <webElementGuid>4e36d235-61a2-4ed0-9279-3354e710b3a9</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +94,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Formulir reaktivasi akun']/parent::*</value>
-      <webElementGuid>fe5ffc5f-684b-462c-b57f-eeaa0081588a</webElementGuid>
+      <webElementGuid>6abec348-6ee1-46d2-a2a9-bc5d225e8308</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +102,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//a/div/div</value>
-      <webElementGuid>178248a0-22e3-4e36-91b8-0e83f70541e6</webElementGuid>
+      <webElementGuid>a01233f9-257f-4e25-ac3e-f1f8f316da41</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +110,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//div[(text() = 'Formulir reaktivasi akun' or . = 'Formulir reaktivasi akun')]</value>
-      <webElementGuid>0b0903bd-170b-47b8-aeeb-8311d2c3cc34</webElementGuid>
+      <webElementGuid>156ccbbb-a6a7-4868-b555-69e05b52548e</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
