@@ -359,6 +359,12 @@
       <value></value>
       <variableId>909e8ded-b29e-4180-b9b0-9ca7fc14e1c3</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60686f43-0342-4d9b-88f4-3d0da202fcb0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Testing Reject KYC Video'</defaultValue>
       <description></description>
@@ -388,7 +394,7 @@
       <name>pathElement</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>2a7a2ba4-bc49-44b7-b138-a36ffe012c85</id>
       <masked>false</masked>
@@ -771,5 +777,12 @@
       <id>909e8ded-b29e-4180-b9b0-9ca7fc14e1c3</id>
       <masked>false</masked>
       <name>btnReqIdCSR</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/LbRefId')</defaultValue>
+      <description></description>
+      <id>60686f43-0342-4d9b-88f4-3d0da202fcb0</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>

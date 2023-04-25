@@ -215,6 +215,12 @@
       <value></value>
       <variableId>d048d89d-81d8-41de-9aed-c3a46133d096</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ee72f7dc-3c43-4d16-b076-0acdcf3bee4c</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'11/08/2018'</defaultValue>
       <description></description>
@@ -459,5 +465,12 @@
       <id>d048d89d-81d8-41de-9aed-c3a46133d096</id>
       <masked>false</masked>
       <name>txtReqIdKycVerif</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/DrpFilterSource')</defaultValue>
+      <description></description>
+      <id>ee72f7dc-3c43-4d16-b076-0acdcf3bee4c</id>
+      <masked>false</masked>
+      <name>fltrChgLog</name>
    </variable>
 </TestCaseEntity>

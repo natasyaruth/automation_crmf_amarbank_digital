@@ -22,7 +22,7 @@ WebUI.click(KYCManagementLink)
 
 WebUI.click(KYCVerificationLink)
 
-WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
+WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Senyumku', true)
 
 WebUI.selectOptionByLabel(DrpEmailType, 'Terverifikasi', true)
 
@@ -93,6 +93,8 @@ WebUI.click(CSRManagementBucketListBtnDetail)
 WebUI.scrollToElement(BtnDataChangeLog, 5)
 
 WebUI.click(BtnDataChangeLog, FailureHandling.STOP_ON_FAILURE)
+
+WebUI.selectOptionByLabel(filterChgLog, "KYC Verification", false)
 
 WebUI.verifyElementText(TxtTolakChangeLog, 'Tolak')
 

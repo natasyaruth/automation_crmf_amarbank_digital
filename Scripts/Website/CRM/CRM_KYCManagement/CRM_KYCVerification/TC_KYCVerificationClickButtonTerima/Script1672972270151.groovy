@@ -12,15 +12,24 @@ import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
+import com.kms.katalon.core.webui.driver.DriverFactory
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
+import internal.GlobalVariable
+
+import org.openqa.selenium.By
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
 
 WebUI.click(KYCManagementLink)
 
 WebUI.click(KYCVerificationLink)
+
+//WebDriver driver = DriverFactory.getWebDriver()
+//WebElement tblKycVerif = driver.findElement(By.)
 
 WebUI.selectOptionByLabel(DrpCustomerType, 'Nasabah Baru', true)
 
@@ -113,6 +122,8 @@ WebUI.click(CSRManagementBucketListBtnDetail)
 WebUI.scrollToElement(BtnDataChangeLog, 10)
 
 WebUI.click(BtnDataChangeLog)
+
+WebUI.selectOptionByLabel(fltrChgLog, "KYC Verification", false)
 
 WebUI.verifyElementText(TxtTerimaChangeLog, 'Terima')
 

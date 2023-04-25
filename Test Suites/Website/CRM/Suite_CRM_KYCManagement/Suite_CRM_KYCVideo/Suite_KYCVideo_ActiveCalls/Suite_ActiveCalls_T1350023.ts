@@ -800,6 +800,12 @@
          <value></value>
          <variableId>d1ab0637-82be-4a53-b115-76b23224e6ed</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7381dcd1-d553-4c00-bf33-360705abbd1f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a7079316-1ec9-448a-b89c-d27088265476</guid>

@@ -26,6 +26,7 @@ import org.openqa.selenium.WebDriver as Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.apache.commons.lang.RandomStringUtils as RandomStringUtils
+import com.tunaiku.keyword.Hash256
 
 KeywordUtil keylogger = new KeywordUtil()
 
@@ -335,7 +336,17 @@ if(checkVideoCall) {
 		
 		requestIdKycVideo = WebUI.getText(txtReqIdCSR)
 		
+		referenceIdKycVideo = WebUI.getText(refId)
+		
+		refIdKycVideo = referenceIdKycVideo
+		
+		String hashRefId = Hash256.hash(refIdKycVideo)
+		
+		println(hashRefId)
+		
 		println "Request id that will be processed: "+requestIdKycVideo
+		
+		println "Reference id that will be processed: "+referenceIdKycVideo
 		
 		WebUI.click(btnBack)
 		
@@ -349,7 +360,7 @@ if(checkVideoCall) {
 		
 		WebUI.switchToWindowIndex(1)
 		
-		String pathProcessVidCall = pathVidCall+requestIdKycVideo
+		String pathProcessVidCall = pathVidCall+ "?reqid=" +requestIdKycVideo+ "&customer=" +hashRefId
 		
 		WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + pathProcessVidCall.substring(
 			8))
@@ -407,7 +418,7 @@ if(checkVideoCall) {
 	
 	if(checkKYCVerif) {
 		
-		TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+		TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 	
 		if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 			

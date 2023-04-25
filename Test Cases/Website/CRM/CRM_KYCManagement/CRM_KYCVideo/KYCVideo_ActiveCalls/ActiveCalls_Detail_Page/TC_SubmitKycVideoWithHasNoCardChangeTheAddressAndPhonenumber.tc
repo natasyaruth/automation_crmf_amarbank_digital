@@ -749,6 +749,12 @@
       <value></value>
       <variableId>79ca749a-26f8-45b2-b0f8-6cd7a35894d1</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>42e09795-4649-434b-9b6f-b8b21f19e2f8</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Testing Submit KYC Video'</defaultValue>
       <description></description>
@@ -778,21 +784,21 @@
       <name>pathElement</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-support.senyumku.com/block-account'</defaultValue>
+      <defaultValue>GlobalVariable.pathBlock</defaultValue>
       <description></description>
       <id>76caaee6-06b5-436b-91b5-009de4c2d02f</id>
       <masked>false</masked>
       <name>pathBlock</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-support.senyumku.com/reactivate-account'</defaultValue>
+      <defaultValue>GlobalVariable.pathReactivation</defaultValue>
       <description></description>
       <id>d7632354-8efc-4e8f-9eef-c4c3fa81a211</id>
       <masked>false</masked>
       <name>pathReactivation</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>3c3c1dcf-265f-450f-a76e-5de0d45d9654</id>
       <masked>false</masked>
@@ -1616,5 +1622,12 @@
       <id>79ca749a-26f8-45b2-b0f8-6cd7a35894d1</id>
       <masked>false</masked>
       <name>btnSaveNoHP</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/lbRefIdCsr')</defaultValue>
+      <description></description>
+      <id>42e09795-4649-434b-9b6f-b8b21f19e2f8</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>

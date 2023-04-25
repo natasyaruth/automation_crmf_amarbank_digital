@@ -599,6 +599,12 @@
       <value></value>
       <variableId>1b8fc116-2ea6-4efb-880b-8ba2e076f468</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>60686f43-0342-4d9b-88f4-3d0da202fcb0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -705,7 +711,7 @@
       <name>reqIdDetail</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>f71eec63-616b-460c-9d1e-99c770cf7516</id>
       <masked>false</masked>
@@ -1291,5 +1297,12 @@
       <id>1b8fc116-2ea6-4efb-880b-8ba2e076f468</id>
       <masked>false</masked>
       <name>TxtRejectionReason</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/KYC_Management/KYC_Video/Details/LbRefId')</defaultValue>
+      <description></description>
+      <id>60686f43-0342-4d9b-88f4-3d0da202fcb0</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>

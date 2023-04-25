@@ -24,6 +24,7 @@ import org.openqa.selenium.Keys as Keys
 import org.openqa.selenium.WebDriver as WebDriver
 import org.openqa.selenium.WebElement as WebElement
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
+import com.tunaiku.keyword.Hash256
 
 'Init keylogger'
 KeywordUtil keylogger = new KeywordUtil()
@@ -50,7 +51,13 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
             WebUI.click(idleCallsTab)
 
             if (WebUI.waitForElementPresent(alertConfirmation, 5)) {
+				
                 WebUI.click(btnAbort)
+				
+				WebUI.waitForPageLoad(5)
+				
+				WebUI.delay(3)
+				
             } else {
                 keylogger.logInfo('We not found the element')
             }
@@ -63,31 +70,64 @@ if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 } else {
     keylogger.markError('Menu KYC management not present')
 }
-
-'init HTML Webdriver'
-WebUI.selectOptionByLabel(drpDwnCustType, SenyumkuCustomer, false)
-
-WebDriver driverKycVideo = DriverFactory.getWebDriver()
-
-WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
-
-List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
-
-List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td'))
-
-if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP')) {
-    colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')
-
-    colsKycVideo.get(1).findElement(By.xpath('a')).click()
-} else {
-    keylogger.markError('We not found the ')
+checkCondition = false
+loopCondition:
+while (checkCondition == false) {
+	
+	'init HTML Webdriver'
+	WebUI.selectOptionByLabel(drpDwnCustType, SenyumkuCustomer, false)
+	
+	WebDriver driverKycVideo = DriverFactory.getWebDriver()
+	
+	WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+	
+	List<WebElement> rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+	
+	for (int i = 0 ;i < rawKycVideo.size(); i++) {
+		
+		List<WebElement> colsKycVideo = rawKycVideo.get(i).findElements(By.tagName('td'))
+		
+		if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP')) {
+			
+			colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Senyumku')
+		
+			colsKycVideo.get(1).findElement(By.xpath('a')).click()
+			
+			WebUI.waitForPageLoad(5)
+			
+			WebUI.delay(3)
+			
+			keylogger.logInfo('We already got the condition')
+			
+			break loopCondition
+			
+		} else {
+			
+			keylogger.logInfo('check another row')
+			
+			tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+			
+			rawKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+		}
+	}
 }
 
 TestObject kycVideoDetail = new TestObject().addProperty('text', ConditionType.CONTAINS, 'KYC Video Request')
 
 String reqID = WebUI.getText(lbRequestID)
+
 println(reqID)
+
+referenceIdKycVideo = WebUI.getText(refId)
+
+refIdKycVideo = referenceIdKycVideo
+
+String hashRefId = Hash256.hash(refIdKycVideo)
+
+println(hashRefId)
+
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
+	
     String currentPage = WebUI.getUrl()
 
     int currentTab = WebUI.getWindowIndex()
@@ -100,7 +140,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
     WebUI.switchToWindowIndex(currentTab + 1)
 
-    String requestIdProcess = path + reqID
+    String requestIdProcess = path +"?reqid=" +reqID+ "&customer=" +hashRefId
 
     WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
             8))
@@ -117,7 +157,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 
             WebUI.click(btnCallSenyumku)
 
-            TestObject txtVerifConnect = new TestObject().addProperty('text', ConditionType.CONTAINS, 'Kamu akan terhubung dengan tim Senyumku')
+            TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 
             if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
                 WebUI.switchToWindowIndex(0)

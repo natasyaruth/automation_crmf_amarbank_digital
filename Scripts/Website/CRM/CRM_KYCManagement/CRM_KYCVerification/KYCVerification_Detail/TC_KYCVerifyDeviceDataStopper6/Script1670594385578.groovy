@@ -85,6 +85,8 @@ if (WebUI.waitForElementPresent(notifAlert, 5)) {
 }
 WebUI.setText(txtReqIdCsrBucketList, reqIdStopper6)
 WebUI.sendKeys(txtReqIdCsrBucketList, Keys.chord(Keys.ENTER))
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
 WebDriver driverCsrBucket = DriverFactory.getWebDriver()
 WebElement tblCsrBucket = driverCsrBucket.findElement(By.xpath("//table/tbody"))
 List<WebElement> rowCsrBucket = tblCsrBucket.findElements(By.tagName('tr'))

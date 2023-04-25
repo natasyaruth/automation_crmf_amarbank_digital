@@ -94,6 +94,7 @@ if (WebUI.verifyElementPresent(txtDashboard, 5)) {
 				colsBackOffice.get(12).getText().equalsIgnoreCase("On Process")
 				break dataCheck
 				keylogger.markPassed("We already changes status")
+				WebUI.closeBrowser()
 			} else {
 				keylogger.logInfo("We not find the sequence number")
 				tableBackOffice = driverBackOffice.findElement(By.xpath('//table/tbody'))

@@ -34,6 +34,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.JavascriptExecutor as JavascriptExecutor
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
+import com.tunaiku.keyword.Hash256
 
 'Initial loggin in katalon'
 KeywordUtil keylogger = new KeywordUtil()
@@ -96,28 +97,53 @@ if (WebUI.verifyElementPresent(kycVideoPage, 5)) {
 } else {keylogger.markError('We are not in kyc page')}
 
 'Initial HTML choosen process'
-WebDriver driverKycVideo = DriverFactory.getWebDriver()
-WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
-List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
-if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
-	WebUI.selectOptionByLabel(drpDwnCustType, 'Nasabah Baru', false)
-	WebUI.delay(5)
-	int optionRand = 3
-	Random randTimes = new Random()
-	int indexElement = randTimes.nextInt(optionRand + 1)
-	List<WebElement> colsKycVideo = rowsKycVideo.get(indexElement).findElements(By.tagName('td'))
-	if (colsKycVideo.get(5).getText().equalsIgnoreCase('Nasabah Baru')) {
-		keylogger.markPassed('We already to click the Kyc Vidio')
-		colsKycVideo.get(1).findElement(By.tagName('a')).click()
-	} else {keylogger.logInfo('we cannot get name Nasabah Baru')}
-} else {keylogger.markError('Drop down not present')}
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
+checkData = false
+loopDataCheck:
+while (checkData == false) {
+	WebDriver driverKycVideo = DriverFactory.getWebDriver()
+	WebElement tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+	List<WebElement> rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+	
+		for (reqId = 0 ; reqId < rowsKycVideo.size() ; reqId++) {
+			if (WebUI.verifyOptionsPresent(drpDwnCustType, listCustType)) {
+				WebUI.selectOptionByLabel(drpDwnCustType, 'Semua', false)
+				WebUI.delay(5)
+				List<WebElement> colsKycVideo = rowsKycVideo.get(reqId).findElements(By.tagName('td'))
+				if (colsKycVideo.get(3).getText().equalsIgnoreCase('Ganti Nomor HP')) {
+					keylogger.markPassed('We already to choose the data')
+					colsKycVideo.get(1).findElement(By.tagName('a')).click()
+					break loopDataCheck
+				} else {
+					boolean checkOnePage = WebUI.verifyNotEqual(rowsKycVideo.size(), 9)
+					if (checkOnePage == true) {
+						keylogger.logInfo('We try again to search the data')
+						tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+						rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					} else {
+						keylogger.logInfo('We try again to search the data in another page')
+						WebUI.click(btnNextPage)
+						WebUI.waitForPageLoad(5)
+						WebUI.delay(3)
+						tblKycVideo = driverKycVideo.findElement(By.xpath('//table/tbody'))
+						rowsKycVideo = tblKycVideo.findElements(By.tagName('tr'))
+					}
+				}
+			} else {keylogger.markError('Drop down not present')}
+		}	
+	}
 
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	if (WebUI.verifyElementVisible(txtReqId)) {
 		reqIdDetail = WebUI.getText(txtReqId)
+		referenceIdKycVideo = WebUI.getText(refId)
 	} else {keylogger.markError('We not find the request Id')}
 	reqIdUsed = reqIdDetail
+	refIdKycVideo = referenceIdKycVideo
+	String hashRefId = Hash256.hash(refIdKycVideo)
+	println(hashRefId)
 	println(reqIdUsed)
 	String currentPage = WebUI.getUrl()
 	int currentTab = WebUI.getWindowIndex()
@@ -125,16 +151,16 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	JavascriptExecutor js = ((driver) as JavascriptExecutor)
 	js.executeScript('window.open();')
 	WebUI.switchToWindowIndex(currentTab + 1)
-	String requestIdProcess = path +reqIdUsed
+	String requestIdProcess = path +"?reqid=" +reqIdUsed+ "&customer=" +hashRefId
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
 	TestObject videoCallValidation = new TestObject().addProperty('text',ConditionType.CONTAINS,'Verifikasi datamu lewat video call!')
-	if (WebUI.verifyElementPresent(videoCallValidation, 5)) {
+	if (WebUI.waitForElementVisible(videoCallValidation, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 			WebUI.waitForPageLoad(5)
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
-			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -163,9 +189,9 @@ if (WebUI.verifyElementPresent(checkConfProcess, 5)) {
 	WebUI.click(chkKtpNumber)
 	WebUI.click(chkBirtDate)
 	WebUI.click(chkMotherName)
-	WebUI.click(chkDeliveryAddress)
-	WebUI.click(chkShowKtp)
-	WebUI.click(chkShowFace)
+	WebUI.click(chkNewPhoneNumber)
+	WebUI.click(chkNewEmail)
+	WebUI.click(chkReasonChange)
 	WebUI.click(chkCaptureFace)
 	WebUI.scrollToElement(btnSelfie, 5)
 	if (WebUI.verifyElementClickable(btnSelfie)) {
@@ -233,7 +259,7 @@ WebElement tblKycVerif
 List<WebElement> rowsKycVerif
 List<WebElement> colsKycVerif
 
-'We want do the 3 Steps button "terima"'
+'We want do the 2 Steps button "terima"'
 if (WebUI.verifyElementClickable(menuKYCManagement)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.verifyElementClickable(menuKycVerification)) {
@@ -297,29 +323,33 @@ List<WebElement> colsCsrBucket
 tblCsrBucket = driverCsrBucket.findElement(By.xpath("//table/tbody"))
 rowsCsrBucket = tblCsrBucket.findElements(By.tagName("tr"))
 colsCsrBucket = rowsCsrBucket.get(0).findElements(By.tagName("td"))
-if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah Baru")) {
+if (colsCsrBucket.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 	colsCsrBucket.get(6).findElement(By.xpath("button")).click()
+	WebUI.waitForPageLoad(5)
+	WebUI.delay(3)
 } else {
 	keylogger.markError("We not found the cases")
 }
 
 'Init selected web element CSR Detail'
+TestObject loginCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
+WebUI.waitForElementVisible(loginCustDetail, 5)
+WebUI.scrollToElement(btnDataChangeLog, 5)
+WebUI.click(btnDataChangeLog)
+WebUI.selectOptionByLabel(drpDwnFilterSource, "KYC Verification", false)
+WebUI.waitForPageLoad(5)
+WebUI.delay(3)
+
 boolean checkData = false
 loopData:
 while (checkData == false) {
 	WebDriver driverCsrDetail = DriverFactory.getWebDriver()
-	WebElement tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
+	WebElement tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]/div/div/div[2]/section/div/div[2]/table/tbody'))
 	List<WebElement> rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
-	List<WebElement> colsCsrDetail
 	for (i = 0;i < rowsCsrDetail.size();i++) {
-		TestObject loginCustDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
-		if (WebUI.waitForElementPresent(loginCustDetail, 5)) {
-			WebUI.scrollToElement(btnDataChangeLog, 5)
-			WebUI.click(btnDataChangeLog)
-			WebUI.selectOptionByLabel(drpDwnFilterSource, "KYC Verification", false)
-			tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]//table/tbody'))
-			rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
-			colsCsrDetail = rowsCsrDetail.get(i).findElements(By.tagName('td'))
+		TestObject changeLogArea = new TestObject().addProperty('text',ConditionType.CONTAINS,'Change Log')
+		if (WebUI.waitForElementVisible(changeLogArea, 5)) {
+			List<WebElement> colsCsrDetail = rowsCsrDetail.get(i).findElements(By.tagName('td'))
 			if (colsCsrDetail.get(2).getText().equalsIgnoreCase("KYC Verification")) {
 				colsCsrDetail.get(6).getText().equalsIgnoreCase("Melakukan liveness")
 				WebUI.takeScreenshot()
@@ -327,8 +357,9 @@ while (checkData == false) {
 				WebUI.click(btnBackCsrBucket)
 				break loopData
 			} else {
-				keylogger.logInfo("We not found text KYC Verification")
-				
+				keylogger.logInfo("We not found text In a Row")
+				tblCsrDetail = driverCsrDetail.findElement(By.xpath('//*[@id="changelog"]/div/div/div[2]/section/div/div[2]/table/tbody'))
+				rowsCsrDetail = tblCsrDetail.findElements(By.tagName('tr'))
 				}
 		} else {keylogger.markError("We are not in Customer Detail")}
 	}

@@ -7,14 +7,14 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;outer-root&quot;]/div</value>
+         <value>//div[(text() = 'Sedang terjadi kesalahan sistem. Silakan coba beberapa saat lagi!' or . = 'Sedang terjadi kesalahan sistem. Silakan coba beberapa saat lagi!')]</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@class = 'Snackbar is-opening']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -22,6 +22,6 @@
       <name>class</name>
       <type>Main</type>
       <value>Snackbar is-opening</value>
-      <webElementGuid>0facec52-dc45-4c0e-a4ca-2cbdba37278c</webElementGuid>
+      <webElementGuid>e45d2fba-fd5f-4802-8a27-1a5b543cbb4e</webElementGuid>
    </webElementProperties>
 </WebElementEntity>

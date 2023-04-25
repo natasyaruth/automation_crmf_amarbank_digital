@@ -35,6 +35,7 @@ import org.openqa.selenium.Keys
 import org.openqa.selenium.remote.server.handler.RefreshPage
 import org.apache.commons.lang.RandomStringUtils
 import com.github.javafaker.Faker
+import com.tunaiku.keyword.Hash256
 
 'Init keylogger'
 KeywordUtil keylogger = new KeywordUtil()
@@ -78,6 +79,7 @@ while (checkData == false) {
 	if (WebUI.verifyElementPresent(csrManagementBucketList, 5, FailureHandling.OPTIONAL)) {
 		WebUI.selectOptionByLabel(drpDwnCardStats, 'Sudah Aktivasi', false)
 		WebUI.selectOptionByLabel(drpDwnCstType, 'Nasabah Senyumku', false)
+		WebUI.delay(3)
 	} else {keylogger.markError('We are not in CSR Management')}
 		List<WebElement> colsCsr = rawCsr.get(i).findElements(By.tagName('td'))
 		if (colsCsr.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
@@ -103,6 +105,7 @@ while (checkData == false) {
 					WebUI.delay(5)
 					WebUI.scrollToElement(btnBack, 5)
 					csrReqId = WebUI.getText(csrReqIdDetail)
+					referenceIdKycVideo = WebUI.getText(refId)
 					WebUI.click(btnBack)
 					WebUI.refresh()
 					break loopCheckData
@@ -118,6 +121,9 @@ while (checkData == false) {
 }
 
 reqIdCsr = csrReqId
+refIdKycVideo = referenceIdKycVideo
+String hashRefId = Hash256.hash(refIdKycVideo)
+println(hashRefId)
 if (WebUI.waitForElementPresent(menuKYCManagement, 5)) {
 	WebUI.click(menuKYCManagement)
 	if (WebUI.waitForElementPresent(menuKycVideo, 5)) {
@@ -140,6 +146,7 @@ List<WebElement> colsKycVideo = rawKycVideo.get(0).findElements(By.tagName('td')
 if (colsKycVideo.get(3).getText().equalsIgnoreCase("Ganti Nomor HP")) {
 	colsKycVideo.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")
 	colsKycVideo.get(1).findElement(By.xpath('a')).click()
+	WebUI.delay(3)
 } else {keylogger.markError('We not found the ')}
 TestObject kycVideoDetail = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
 if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
@@ -149,7 +156,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 	JavascriptExecutor js = ((driver) as JavascriptExecutor)
 	js.executeScript('window.open();')
 	WebUI.switchToWindowIndex(currentTab + 1)
-	String requestIdProcess = path +reqIdCsr
+	String requestIdProcess = path +"?reqid=" +refIdKycVideo+ "&customer=" +hashRefId
 	WebUI.navigateToUrl((((('https://' + GlobalVariable.authUsername) + ':') + GlobalVariable.authPassword) + '@') + requestIdProcess.substring(
 		8))
 	WebUI.waitForPageLoad(5)
@@ -159,7 +166,7 @@ if (WebUI.verifyElementPresent(kycVideoDetail, 5)) {
 		if (WebUI.verifyElementClickable(btnCallSenyumku)) {
 			WebUI.delay(5)
 			WebUI.click(btnCallSenyumku)
-			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Senyumku')
+			TestObject txtVerifConnect = new TestObject().addProperty('text',ConditionType.CONTAINS,'Kamu akan terhubung dengan tim Amar Bank')
 			if (WebUI.verifyElementPresent(txtVerifConnect, 0)) {
 				WebUI.switchToWindowIndex(0)
 				TestObject backToKycVideo = new TestObject().addProperty('text',ConditionType.CONTAINS,'KYC Video Request')
@@ -255,6 +262,7 @@ List<WebElement> rawCsrCheck = tblCsrCheck.findElements(By.tagName("tr"))
 List<WebElement> colsCsrCheck = rawCsrCheck.get(0).findElements(By.tagName('td'))
 if (colsCsrCheck.get(5).getText().equalsIgnoreCase("Nasabah Senyumku")) {
 	colsCsrCheck.get(6).findElement(By.xpath('button')).click()
+	WebUI.delay(3)
 } else {keylogger.markError('We not found the ')}
 TestObject csrManagementDetailCheck = new TestObject().addProperty('text',ConditionType.CONTAINS,'Customer Detail')
 if (WebUI.verifyElementPresent(csrManagementDetailCheck, 5)) {

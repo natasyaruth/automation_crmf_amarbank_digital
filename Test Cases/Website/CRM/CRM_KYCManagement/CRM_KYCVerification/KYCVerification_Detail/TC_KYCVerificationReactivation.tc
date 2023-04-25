@@ -431,6 +431,12 @@
       <value></value>
       <variableId>1e992876-de66-408d-b99e-754a6c17317b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6121d6b9-e01a-4547-bb6b-988207bcafef</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>findTestObject('Website/CRM/CSR_Management/CSRManagement/CSRManagementLink')</defaultValue>
       <description></description>
@@ -523,7 +529,7 @@
       <name>accountNumber</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-support.senyumku.com/block-account'</defaultValue>
+      <defaultValue>GlobalVariable.pathBlock</defaultValue>
       <description></description>
       <id>8a36a82f-dee9-4575-920c-13e8420bd148</id>
       <masked>false</masked>
@@ -915,7 +921,7 @@
       <name>btnBackCsrBucketList</name>
    </variable>
    <variable>
-      <defaultValue>'https://staging-kyc.senyumku.com/?reqid='</defaultValue>
+      <defaultValue>GlobalVariable.urlKycVidCall</defaultValue>
       <description></description>
       <id>d14b5451-007e-45be-b134-d6fbfe828706</id>
       <masked>false</masked>
@@ -927,5 +933,12 @@
       <id>1e992876-de66-408d-b99e-754a6c17317b</id>
       <masked>false</masked>
       <name>reqIdForVideoCall</name>
+   </variable>
+   <variable>
+      <defaultValue>findTestObject('Website/CRM/CSR_Management/Details/lbRefIdCsr')</defaultValue>
+      <description></description>
+      <id>6121d6b9-e01a-4547-bb6b-988207bcafef</id>
+      <masked>false</masked>
+      <name>refId</name>
    </variable>
 </TestCaseEntity>
