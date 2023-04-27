@@ -251,6 +251,18 @@
       <value></value>
       <variableId>45b2deb8-0be4-4cb0-8b10-6224d7c9c34f</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>06487017-da5f-4349-80d3-d232f9c0c1fb</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>42af588d-3762-4e30-becd-4469a0c0733f</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'1'</defaultValue>
       <description></description>
@@ -315,7 +327,7 @@
       <name>optionSource</name>
    </variable>
    <variable>
-      <defaultValue>['KYC Verification', 'Facematch Verihub', '0', '', 'Melakukan face match']</defaultValue>
+      <defaultValue>['KYC Verification', 'Facematch Verihub 2.0', '-', '', 'Melakukan face match']</defaultValue>
       <description></description>
       <id>22ca0651-43fe-48f0-8a59-3f4989e56095</id>
       <masked>false</masked>
@@ -537,5 +549,19 @@
       <id>45b2deb8-0be4-4cb0-8b10-6224d7c9c34f</id>
       <masked>false</masked>
       <name>btnDataNoHandphone</name>
+   </variable>
+   <variable>
+      <defaultValue>'Not Verified'</defaultValue>
+      <description></description>
+      <id>06487017-da5f-4349-80d3-d232f9c0c1fb</id>
+      <masked>false</masked>
+      <name>msgNotVerified</name>
+   </variable>
+   <variable>
+      <defaultValue>'Verified'</defaultValue>
+      <description></description>
+      <id>42af588d-3762-4e30-becd-4469a0c0733f</id>
+      <masked>false</masked>
+      <name>msgVerified</name>
    </variable>
 </TestCaseEntity>

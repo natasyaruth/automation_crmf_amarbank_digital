@@ -95,8 +95,10 @@ while(flagLoopPage == false) {
 			
 			WebUI.scrollToElement(btnCheckLiveness, 3)
 			
+			String valueFMVerihubBiometric = WebUI.getText(txtValueFMVerihub)
+			
 			/* Verify if the origin customer is from eFishery or Finku or Dagangan */
-			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2) && WebUI.waitForElementNotPresent(txtValueFMVerihub, 2)) {
+			if(WebUI.waitForElementNotPresent(txtValueFMDukcapil, 2) && valueFMVerihubBiometric.equals("-")) {
 				
 				WebUI.click(btnCheckFMDukcapil)
 				
@@ -198,20 +200,18 @@ while(flagLoopPage == false) {
 						
 						listRowsFace = tableFaceAccuracy.findElements(By.tagName('tr'))
 						
-						listColumnFace = listRowsFace.get(2).findElements(By.tagName('td'))
+						listColumnFace = listRowsFace.get(3).findElements(By.tagName('td'))
 						
 						actIconFMVerihubAccuracyKYC = listColumnFace.get(1).findElement(By.tagName('svg')).getAttribute('class')
 						
-						valueFMVerihubKYC = WebUI.getText(txtValueFMVerihub).replace("%", "")
+						valueFMVerihubKYC = WebUI.getText(txtValueFMVerihub)
 						
-						def thresholdFMVerihub = 80
-						
-						if(WebUI.verifyGreaterThanOrEqual(valueFMVerihubKYC, thresholdFMVerihub, FailureHandling.OPTIONAL)) {
+						if(valueFMVerihubKYC.equals(msgVerified)) {
 							
 							if(actIconFMVerihubAccuracyKYC.equals(iconGreenFMVerihub)) {
 								
 								WebUI.takeScreenshot()
-								println "Facematch Verihub succesfully hit with value above threshold: "+valueFMVerihubKYC+"%"
+								println "Facematch Verihub Biometric succesfully hit with value: "+valueFMVerihubKYC
 								
 								WebUI.click(btnBack)
 								
@@ -221,7 +221,7 @@ while(flagLoopPage == false) {
 							} else {
 								
 								WebUI.takeScreenshot()
-								keyLogger.markFailed("Facematch Verihub succesfully hit with value above threshold: "+valueFMVerihubKYC+"%"+"/n"+
+								keyLogger.markFailed("Facematch Verihub Biometric succesfully hit with value: "+valueFMVerihubKYC+"/n"+
 													 "But icon is not green")
 								
 								WebUI.click(btnBack)
@@ -229,12 +229,12 @@ while(flagLoopPage == false) {
 								
 							}
 							
-						} else if (WebUI.verifyLessThan(valueFMVerihubKYC, thresholdFMVerihub, FailureHandling.OPTIONAL)){
+						} else if (valueFMVerihubKYC.equals(msgNotVerified)){
 							
 							if(actIconFMVerihubAccuracyKYC.equals(iconRedFMVerihub)) {
 								
 								WebUI.takeScreenshot()
-								println "Facematch Verihub succesfully hit with value under threshold: "+valueFMVerihubKYC+"%"
+								println "Facematch Verihub Biometric succesfully hit with value: "+valueFMVerihubKYC
 								
 								flagCSR = true
 								WebUI.click(btnBack)
@@ -243,8 +243,8 @@ while(flagLoopPage == false) {
 							} else {
 								
 								WebUI.takeScreenshot()
-								keyLogger.markFailed("Facematch Verihub succesfully hit with value under threshold: "+valueFMVerihubKYC+"%"+"/n"+
-													 "But icon is not red")
+								keyLogger.markFailed("Facematch Verihub Biometric succesfully hit with value: "+valueFMVerihubKYC+"/n"+
+													 "But icon is not green")
 								
 								WebUI.click(btnBack)
 								break LoopPage
@@ -364,9 +364,13 @@ if(flagCSR) {
 					  ('btnCancelPopUpElement'):btnCancelPopUpElement, ('headerCSRManagementElement'):headerCSRManagementElement, 
 					  ('headerCSRManagementText'):headerCSRManagementText])
 	
+	println reqID
+	
 	WebUI.setText(txtReqId, reqID)
 	
 	WebUI.click(btnSearch)
+	
+	WebUI.delay(3)
 	
 	if(WebUI.waitForElementPresent(btnDetailReqID, 5)) {
 		
@@ -384,11 +388,11 @@ if(flagCSR) {
 			 
 			listRowsFace = tableFaceAccuracy.findElements(By.tagName('tr'))
 			 
-			listColumnFace = listRowsFace.get(2).findElements(By.tagName('td'))
+			listColumnFace = listRowsFace.get(3).findElements(By.tagName('td'))
 			 
 			actIconFMVerihubAccuracyCSR = listColumnFace.get(1).findElement(By.tagName('svg')).getAttribute('class')
 			 
-			valueFMVerihubCSR = WebUI.getText(txtValueFMVerihub).replace("%", "")
+			valueFMVerihubCSR = WebUI.getText(txtValueFMVerihub)
 			 
 			if(valueFMVerihubCSR.equals(valueFMVerihubKYC)) {
 				 
@@ -425,47 +429,31 @@ if(flagCSR) {
 						
 						actValue = listColumnChangeLog.get(index).getText()
 						
-						if(j!=3){
+						if(j!=3) {
 							
 							if(actValue.equals(listExpValue.get(j))) {
+								
+							keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
+								
+							} else {
+								
+							keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+listExpValue.get(j))
+								
+							}
+						
+						} else {
+							
+							if(actValue.equals(valueFMVerihubKYC)) {
 								
 								keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
 								
 							} else {
 								
-								keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+listExpValue.get(j))
+								keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+valueFMVerihubKYC)
 								
 							}
 							
-						} else {
-							
-							if(actValue.contains("%")) {
-								
-								if(actValue.equals(valueFMVerihubCSR+"%") ) {
-									
-									keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
-									
-								} else {
-									
-									keyLogger.markFailed("Value "+listContentName.get(j)+" is wrong. Actual value: "+actValue+" and Expected value: "+valueFMVerihubCSR+"%")
-									
-								}
-								
-							} else {
-								
-								if(actValue.equals("0")) {
-									
-									keyLogger.markPassed("Value "+listContentName.get(j)+" is correct.")
-									
-								} else {
-									
-									keyLogger.markFailed(listContentName.get(j)+" of Facematch Verihub didn't use % in change log")
-									
-								}
-								
-							}
-						
-						}						
+						}
 						
 					}
 					
@@ -474,7 +462,7 @@ if(flagCSR) {
 				} else {
 						
 					WebUI.takeScreenshot()
-					keyLogger.markFailed("Icon color of result Facematch verihub between KYC and CSR are different."+"/n"+
+					keyLogger.markFailed("Icon color of result Facematch verihub biometric between KYC and CSR are different."+"/n"+
 										  "Case FAILED")
 					
 				}
@@ -482,7 +470,7 @@ if(flagCSR) {
 			} else{
 				 
 				WebUI.takeScreenshot()
-				keyLogger.markFailed("Result value of Facematch verihub between KYC and CSR are different."+"/n"+
+				keyLogger.markFailed("Result value of Facematch verihub biometric between KYC and CSR are different."+"/n"+
 									  "Case FAILED")
 			}
 			

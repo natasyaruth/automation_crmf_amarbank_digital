@@ -640,6 +640,18 @@
          <value></value>
          <variableId>45b2deb8-0be4-4cb0-8b10-6224d7c9c34f</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>06487017-da5f-4349-80d3-d232f9c0c1fb</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>42af588d-3762-4e30-becd-4469a0c0733f</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>a7f89b24-9765-43b8-b4f8-dec1f53456f3</guid>
@@ -701,49 +713,6 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>fd8c8ccd-48c6-4274-b90c-68baaef16bf7</variableId>
-      </variableLink>
-   </testCaseLink>
-   <testCaseLink>
-      <guid>318f7461-700b-4243-8be9-7c53c42ad923</guid>
-      <isReuseDriver>false</isReuseDriver>
-      <isRun>true</isRun>
-      <testCaseId>Test Cases/Website/CRM/CRM_Mock/FMVerifhubV2_Staging/Rc_500_VHBiometric</testCaseId>
-      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>c0f7ad7a-c4cb-4ce9-9aaf-9e0fa1294eb2</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>d7976d4c-56ad-47e5-be6d-c43f97359b7e</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>2c97b7e6-c5d8-425b-bafc-15d53a94fe37</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>bd1e572a-dde6-4217-aca8-50ca4dcbf955</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>a1946290-3eae-476e-bbf0-c12588d0c0de</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>e8125ff0-c661-4796-bfef-072b435d9aeb</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
