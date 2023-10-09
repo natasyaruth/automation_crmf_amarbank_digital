@@ -95,7 +95,7 @@ while(flagLoopPage == false) {
 				WebUI.click(sectionSelfieAndKtpImages)
 				
 				/* Verify if images of KTP and Selfie was exists */
-				if(WebUI.verifyTextNotPresent(txtNoImages, false)) {
+				if(WebUI.waitForElementPresent(txtNoImages, 5)) {
 					
 					/* Verify images of KTP and Selfie should complete */
 					if(WebUI.verifyTextNotPresent(txtNoImagesKTP, false) && WebUI.verifyTextNotPresent(txtNoImagesSelfie, false)){
