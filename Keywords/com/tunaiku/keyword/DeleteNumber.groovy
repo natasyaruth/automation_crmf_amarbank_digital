@@ -19,9 +19,9 @@ public class DeleteNumber {
 		WebDriver driver = DriverFactory.getWebDriver()
 
 		// Launching the site
-		driver.get("https://staging-api-rekol-svc.tunaiku.com/applicants/QA")	;
+		driver.get("")	;
 		driver.manage().window().maximize()
-		driver.findElement(By.xpath("//*[contains@href, 'applicants/QA')]")).click()
+		driver.findElement(By.xpath("//*[contains@href, '')]")).click()
 
 		String MainWindow=driver.getWindowHandle();
 
@@ -37,8 +37,8 @@ public class DeleteNumber {
 			{
 				//Switching to child window
 				driver.switchTo().window(ChildWindow)
-				driver.findElement(By.name("username")).sendKeys("web-api")
-				driver.findElement(By.name("password")).sendKeys("Q!w2e3r4T%")
+				driver.findElement(By.name("username")).sendKeys("")
+				driver.findElement(By.name("password")).sendKeys("")
 				driver.findElement(By.type("Submit")).click()
 				//closing the child window.
 				driver.close()
