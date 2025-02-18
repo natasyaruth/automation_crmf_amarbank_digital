@@ -11,7 +11,7 @@ logallrefupdates = true
 	ignorecase = true
 [remote "origin"]
 
-	url = https://tryserezza@bitbucket.org/tunaiku/tunaiku_kopi_automation.git
+	url = 
 	
 fetch = +refs/heads/*:refs/remotes/origin/*
 

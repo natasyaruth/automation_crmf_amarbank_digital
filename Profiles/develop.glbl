@@ -6,32 +6,32 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-profile.senyumku.com/'</initValue>
+      <initValue>''</initValue>
       <name>hostnameProfile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.tunaiku.com/'</initValue>
+      <initValue>''</initValue>
       <name>hostnameCRM</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-registration-svc.senyumku.com/'</initValue>
+      <initValue>''</initValue>
       <name>hostnameServices</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-notification.tunaiku.com/'</initValue>
+      <initValue>''</initValue>
       <name>hostnameWhiteList</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-registration.senyumku.com/'</initValue>
+      <initValue>''</initValue>
       <name>hostnameRegistration</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://dev-kyc.senyumku.com/?reqid='</initValue>
+      <initValue>''</initValue>
       <name>initiateVideoCall</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -131,22 +131,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com/login'</initValue>
+      <initValue>''</initValue>
       <name>stagHostname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'senyuman'</initValue>
+      <initValue>''</initValue>
       <name>authUsername</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20senyumku20'</initValue>
+      <initValue>''</initValue>
       <name>authPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1'</initValue>
+      <initValue>''</initValue>
       <name>indexVillage</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -161,27 +161,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com'</initValue>
+      <initValue>''</initValue>
       <name>siteUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'web-api'</initValue>
+      <initValue>''</initValue>
       <name>usernameWebApi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <initValue>''</initValue>
       <name>passwordWebApi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.otoku.io'</initValue>
+      <initValue>''</initValue>
       <name>baseUrlRegOtoku</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com/card-management/delivery-status/11'</initValue>
+      <initValue>''</initValue>
       <name>UrlDeliveryNotFound</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -206,27 +206,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/18?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>[]</initValue>
       <name>requestStatusEditMotherName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://staging-crm-rekol.tunaiku.com/csr-management/1416?type=2', 'https://staging-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>[]</initValue>
       <name>requestStatusFinishCondition</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://staging-api-crm-svc.otoku.io/transaction/backoffice'</initValue>
+      <initValue>''</initValue>
       <name>siteUrlBackOff</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <initValue>''</initValue>
       <name>authPassBackOffice</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'5gYZhAq6uLU='</initValue>
+      <initValue>''</initValue>
       <name>authUserBackOffice</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

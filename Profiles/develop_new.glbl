@@ -6,37 +6,37 @@
    <defaultProfile>false</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-profile.senyumku.com/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameProfile</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.tunaiku.com/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameCRM</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-registration-svc.otoku.io/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameServices</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-notification.tunaiku.com/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameWhiteList</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-registration.senyumku.com/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameRegistration</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'http://dev-kyc.senyumku.com/?reqid='</initValue>
+      <initValue>'link dev'</initValue>
       <name>initiateVideoCall</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.otoku.io/'</initValue>
+      <initValue>'link dev'</initValue>
       <name>hostnameCRMNew</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -136,22 +136,22 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com/login'</initValue>
+      <initValue>'link dev'</initValue>
       <name>stagHostname</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'senyuman'</initValue>
+      <initValue>''</initValue>
       <name>authUsername</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20senyumku20'</initValue>
+      <initValue>''</initValue>
       <name>authPassword</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'1'</initValue>
+      <initValue>''</initValue>
       <name>indexVillage</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -166,27 +166,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com'</initValue>
+      <initValue>'link dev'</initValue>
       <name>siteUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'web-api'</initValue>
+      <initValue>''</initValue>
       <name>usernameWebApi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <initValue>''</initValue>
       <name>passwordWebApi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.otoku.io'</initValue>
+      <initValue>'link dev'</initValue>
       <name>baseUrlRegOtoku</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-crm-rekol.tunaiku.com/card-management/delivery-status/11'</initValue>
+      <initValue>'link dev'</initValue>
       <name>UrlDeliveryNotFound</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -211,27 +211,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://dev-crm-rekol.tunaiku.com/csr-management/18?type=2', 'https://dev-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>''</initValue>
       <name>requestStatusEditMotherName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>['https://dev-crm-rekol.tunaiku.com/csr-management/1415?type=2', 'https://dev-crm-rekol.tunaiku.com/csr-management/135?type=3']</initValue>
+      <initValue>[]</initValue>
       <name>requestStatusFinishCondition</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-api-crm-svc.otoku.io/transaction/backoffice'</initValue>
+      <initValue>'link dev'</initValue>
       <name>siteUrlBackOff</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'0bAHVUJcNgKjab5FeCKPog=='</initValue>
+      <initValue>''</initValue>
       <name>authPassBackOffice</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'5gYZhAq6uLU='</initValue>
+      <initValue>''</initValue>
       <name>authUserBackOffice</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -281,7 +281,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-auth.tunaiku.com/auth/realms/Development-Amarbank-Officer/protocol/openid-connect/auth?response_type=code&amp;client_id=senyumku-crm&amp;scope=openid&amp;redirect_uri=https%3A%2F%2Fdev-crm-rekol.tunaiku.com%2Fdashboard'</initValue>
+      <initValue>'link dev'</initValue>
       <name>siteUrlKeyclock</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -306,27 +306,27 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-wiremock.otoku.io/mappings'</initValue>
+      <initValue>''</initValue>
       <name>UrlWiremock</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-kyc-retail.amarbank.co.id/'</initValue>
+      <initValue>''</initValue>
       <name>urlKycVidCall</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-support-retail.amarbank.co.id/reactivate-account'</initValue>
+      <initValue>''</initValue>
       <name>pathReactivation</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://dev-support-retail.amarbank.co.id/block-account'</initValue>
+      <initValue>''</initValue>
       <name>pathBlock</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'18688'</initValue>
+      <initValue>''</initValue>
       <name>embedEfisehry</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
